@@ -1,0 +1,45 @@
+# Node
+node_modules/
+**/node_modules/
+
+# Next.js build
+.next/
+out/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+
+# Database
+*.sqlite3
+*.db
+chroma_db/
+rag model/chroma_db/
+
+# IDEs and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+
+# secrets
+.env
+
+# build / packed files
+build/
+*.tgz
+
+# large research PDFs and binary data (consider tracking with Git LFS)
+*.pdf
+*.bin
+*.zip
