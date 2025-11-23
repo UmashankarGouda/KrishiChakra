@@ -1,0 +1,31 @@
+### DOCUMENT INFO  
+- **Title/Topic:** Optimal Crop Rotation based on Soil Composition  
+- **Type:** Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed:** Crop rotation pairs to sustain soil fertility and maximize yield.  
+- **Crops mentioned:** Not explicitly listed, but the focus is on crop pairs suitable for specific soil conditions (e.g., based on NPK levels, pH, temperature).  
+- **Regions covered:** India (general), with specific mention of Muzaffarnagar for a case study.  
+
+### KEY FINDINGS  
+- **Yield improvements:** Crop rotation increases farmer income by ensuring land remains fertile and productive during off-seasons.  
+- **Soil health benefits:** Proper crop rotation maintains soil nutrition, reducing reliance on fertilizers.  
+- **Disease reduction:** Not explicitly mentioned, but implied through sustained soil fertility.  
+- **Economic impact:** Contributes ~20% to India’s GDP (2020–2021) and employs 60% of the rural population.  
+
+### NUMERICAL DATA/TABLES  
+- **Soil parameters:** pH, NPK (Nitrogen, Phosphorus, Potassium), organic carbon content, temperature, rainfall.  
+- **Accuracy of algorithms:** Random Forest and XG Boost showed highest accuracy; Recursive Feature Elimination also performed well.  
+- **Dataset split:** 70:30 ratio for training and testing.  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers:**  
+  - Select crop pairs based on soil composition (NPK, pH, etc.) and environmental factors (temperature, rainfall).  
+  - Use machine learning tools (e.g., Random Forest, LSTM) to predict optimal crops.  
+- **Best practices for crop rotation:**  
+  - Prioritize soil nutrient retention and economic return.  
+  - Integrate predictive analytics for irrigation and crop selection.  
+  - Avoid monocropping to prevent soil degradation.  
+
+---  
+*Output cleaned for RAG: Removed citations, references, and navigation text.*

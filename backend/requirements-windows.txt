@@ -1,0 +1,23 @@
+# Windows-compatible requirements (without compiled dependencies)
+fastapi>=0.104.1
+uvicorn[standard]>=0.24.0
+redis>=5.0.1
+sqlalchemy>=2.0.23
+alembic>=1.13.1
+# asyncpg - skip for now, can use psycopg for async if needed
+pydantic>=2.10.0
+pydantic-settings>=2.1.0
+python-multipart==0.0.6
+python-dotenv==1.0.0
+loguru==0.7.2
+aiofiles==23.2.1
+httpx==0.25.2
+openai==1.6.1
+groq==0.4.1
+requests>=2.31.0
+
+# Optional - only if you need these features:
+# psycopg2-binary - requires PostgreSQL dev tools (skip if using asyncpg)
+# torch - very large, Windows needs specific wheel
+# pyaudio - needs portaudio compiled (for voice features)
+# SpeechRecognition - depends on pyaudio

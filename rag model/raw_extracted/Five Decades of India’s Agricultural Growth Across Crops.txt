@@ -1,0 +1,2546 @@
+ 
+ 
+ 
+ 
+ 
+                                     Working Paper 2022-1 
+ 
+ 
+ 
+Five Decades of India’s Agricultural Growth Across Crops: 
+Emerging Trends and Patterns  
+ 
+ 
+Dr. Vinod Kumar, GM 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+राष्ट्रीय कृषि और ग्रामीण षिकास बैंक 
+National Bank for Agriculture and Rural Development 
+आषथिक षिश्लेिणऔरअनुसंधान षिभाग,प्रधान कायािलय, मुंबई 
+Department of Economic Analysis and Research 
+Head Office, Mumbai 
+ 
+ 12 July 2022 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The views expressed in this paper are authors’ only. This is work in progress and any 
+use of material may be done keeping this in mind.  
+ 
+Suggestions/comments may be sent to the e-mail : dear@nabard.org 
+ 
+ 
+ 
+2022                                                                      Vinod Kumar 
+ 1 
+ 
+ 
+Five Decades of India’s Agricultural Growth Across  
+Crops: Emerging Trends and Patterns 
+ 
+Dr. Vinod Kumar1 
+GM, DEAR, NABARD, HO, MUMBAI 
+E-mail: vinod.vidyarthi4@gmail.com 
+ 
+SUMMARY 
+ 
+This paper has analysed the trends and pattern in agricultural growth and crop output 
+growth at the national level, using time series data from 1967-68 to 2020-21 from published 
+sources. The area under foodgrains in gross cropped area (GCA) declined by 11.62% mainly 
+due to the fall in area under coarse cereals by 16.78% between triennium ending (TE) 1970-
+71 and TE 2020-21. There was a definite shift from foodgrains to non-foodgrains, such as 
+fruits and vegetables, oilseeds, fiber, and condiments and spices, whose share in both area 
+and in value of output has been increasing during the study period. While the contribution 
+of cereals declined from 32.46% in TE 1970-1971 to 27.41% in TE 2020-21, the share of fruits 
+and vegetables increased considerably from 14.11% to 27.77% during the same period. In TE 
+2020-21, fruits and vegetables accounted for the largest share of the total value of crop 
+output followed by cereals, oilseeds, fiber and pulses. The study also reveals that 
+diversification towards high value crops (HVCs) offers great scope to enhance farmers’ 
+income. The staple crops such as cereals, pulses and oilseeds occupy 77.33% of the GCA but 
+contribute only 46.37% of total value of output of crop sector. Interestingly, almost same 
+value of output (43.58%) was contributed by HVCs (fruits and vegetables, fibres, 
+condiments and spices and sugarcane) which occupy 20.12% of GCA during TE 2020-21. 
+These changes in the relative shares of crops in agricultural growth provide a clear 
+indication of the growing importance of high-value crops in Indian agriculture. However, 
+the long-term growth rate (during 1967-68 to 2020-21) shows that not a single crop 
+registered production growth of more than 4.0% per annum. The results of the crop output 
+growth model indicate that better irrigation facilities, normal rainfall and improved 
+fertilizer consumption will help boost crop output in the country. It may be concluded that 
+there is also a need to improve productivity of small and marginal farmers through 
+development and implementation of small holding farm technologies. The regenerative 
+agriculture through suitable integrated farming system (IFS) models is the need of the hour 
+to improve soil health, make agriculture profitable and sustainable in the long run. Crop 
+diversification towards oilseeds, pulses and horticulture needs to be given priority by 
+addressing the core issues of irrigation, investment, credit and markets in their cultivation. 
+While the Government has adopted the use of MSP as signal to encourage crop 
+diversification, there is also a need for coordinated action from the State Governments to 
+facilitate the shift to high value and less water guzzling crops to enable realization of the 
+objective of doubling farmers’ income in a sustainable way. 
+                                                 
+1General Manager, NABARD, Department of Economic Analysis and Research, Mumbai. The views 
+expressed are those of the author and not of the organization he belongs to, usual disclaimer applies. 
+2022                                                        Agricultural Growth                                                                        2 
+ 
+ 
+INTRODUCTION 
+ 
+Over the past seven decades, the Indian economy has undergone a significant structural 
+transformation away from agriculture and towards non-agricultural sectors. The share of 
+agriculture in the country’s gross domestic product (GDP) has consistently declined, from 
+an average 55.12 per cent in 1950-51 to 15.51 per cent in the 2021-22. Despite this rapid 
+decline, agriculture continues to be a key sector of the Indian economy because of its 
+strategic importance to food security, employment generation, exports and poverty 
+reduction. The sector employs close to 49 per cent (Periodic Labour Force Survey, 2020) 
+of the country’s total workforce and has been important for poverty reduction, especially 
+in the rural areas (Sharma 2011). 
+The experiences of developed countries show that the transfer of labour force from 
+agriculture to non-agriculture, particularly manufacturing, has promoted production 
+growth in agriculture and thus higher income (Gollin et al. 2002). However, India’s 
+manufacturing sector witnessed volatile growth and its share in total GVA at basic prices 
+has almost remained constant at 18 per cent in the recent times. Further, since the present 
+economic growth pattern in the country is driven by the services sector (53.74% share in 
+2021-22 at constant prices), labour absorption outside agriculture sector will continue to 
+be slow until technical education and skill upgradation in rural area improve 
+considerably. 
+ 
+Under these circumstances, higher agricultural growth is critical. It is a matter of concern 
+for policy planners, planners and researchers in recent times (Chand et al. 2007; Bhalla 
+and Singh 2009; Vaidyanathan 2010). Sustained agricultural growth, which is facilitated 
+by constant policy and institutional support, could foretell growth in the rural economy 
+and associated secondary activities (e.g., food processing and retail trading). However, 
+policy makers in the country have not given enough attention to agriculture-led rural 
+industrialization. This is despite the fact that agricultural growth per se was not visible 
+during the 1990s (Rao 2003). It is pertinent to note that, the growth performance of 
+agriculture was remarkable during the 1980s. In fact, deceleration during the 1990s was 
+attributed to the reduction in and/or stagnation of public expenditure on agricultural 
+infrastructure, defunct extension services, and biased economic reforms (Mahendra Dev, 
+2022                                                                      Vinod Kumar 
+ 3 
+ 
+2000). The first two decades of the twenty first century has shown the remarkable 
+agriculture growth, particularly during COVID-19 period when other sectors of the 
+economy contracted. This can be largely attributed to the renewed policy thrust from the 
+government (since 2005) to revive agricultural growth through various development 
+programmes,  such as are Interest Subvention on crop loans and interest subvention on 
+prompt repayment, National Food Security Mission, the National Agriculture 
+Development Programme (Rashtriya Krishi Vikas Yojana), Pulses Development 
+Programme, E-NAM, National Mission for Sustainable Agriculture, Pradhan Mantri 
+Krishi SinchaiYojana, Paramparagat Krishi Vikas Yojana, Pradhan Mantri Fasal Bima 
+Yojana, Gramin Bahndaran Yojana, Livestock Insurance Scheme, Micro Irrigation Fund, 
+PM-Kisan, Soil Health Card (SHC) Scheme, Agricultural Export Policy-2018, Agri 
+Startups, KCC scheme extended to animal husbandry and fishery farmers, Kisan 
+Sampada Yojana, Mission for Integrated Development of Horticulture, Agriculture 
+Infrastructure Fund, National Mission on Oilseeds and Oilpalm, Promotion of Farmer 
+Producers Organisations, National Project on Organic Farming and MSP at levels of one 
+and half times of the cost of production of 23 major crops, etc. Implementation of these 
+programmes has contributed to agricultural growth and augmented farmers’ income in 
+the country while allowing state governments to better leverage and allocate resources to 
+the priority areas of development.  
+In recent times, trends in India’s agricultural growth are relatively well researched 
+themes. Systematic efforts have been made to examine crop output growth and its 
+elements through decomposition analysis (Joshi et al. 2006). The present paper is likely 
+to contributes to the existing knowledge on Indian agriculture by estimating crop output 
+growth through econometric methods. It also discusses the trends in agricultural growth 
+at national levels. 
+ 
+DATA AND METHODOLOGY 
+ 
+The present study is based on the secondary data compiled from various published 
+sources. Data on area, production and yield were collected from the Directorate of 
+Economics and Statistics (DES), Ministry of Agriculture and Farmers' Welfare. Data were 
+collected for major crops for the period 1968-69 to 2020-21. The study period has been 
+divided into five phases, viz., early green revolution (1967-68 to 1980-81), mature green 
+2022                                                        Agricultural Growth                                                                        4 
+ 
+revolution (1981-82 to 1990-91), early economic reforms (1991-92 to 2000-01), economic 
+reforms (2001-02 to 2020-21) and overall period (1967-68 to 2020-21). Compound 
+annual growth rates (CAGR) have been calculated by using the semi-log method. State-
+wise and agriculture and allied sector data on value of crop output were compiled from 
+the National Statistical Office, MoSPI, Government of India. Data on Agricultural Gross 
+Value Added (AgGVA), value of output from agriculture and allied sector and capital 
+formation in agriculture and allied sector were compiled from National Accounts 
+Statistics, MoSPI and Agricultural Statistics at a Glance, MoAFW, GoI.  For trend analysis, 
+three years’ average (triennium ending) of different variables were calculated to even out 
+the inter-year fluctuations and then presented.  
+ 
+Crop Output Growth Model 
+ 
+The growth performance of the crop sector is influenced by several factors such as use of 
+physical inputs by farmers, markets, irrigation, credit availability, weather conditions and 
+government policies. It is difficult to analyse the effect of all the variables in a simple 
+framework because these variables affect crop output through various mechanisms. 
+However, an attempt has been made here to examine the determinants of aggregate 
+growth of crop output at the national level through the neo-classical growth model, which 
+is described as follows. 
+ 
+The aggregate production function can be specified as 
+ 
+Y = F (F, K, R, CI, IRR) ............................. (1) 
+ 
+Where Y is the aggregate crop output value (2011-12 prices), F is fertiliser consumption, 
+IRR is the gross irrigated area, CI is cropping intensity and R is the rainfall.  
+ 
+The basis for the inclusion of rainfall in the production function is that a significant 
+proportion of cultivated area depends on rainfall and its variation affects crop output 
+substantially. Similarly, as the net sown area remains more or less constant over time 
+during the study period, cropping intensity is taken as proxy for land. The gross irrigated 
+area represents use of water from all sources of irrigation for crop production. Gross 
+capital formation in agriculture is considered as agricultural capital (2011-12 prices). 
+2022                                                                      Vinod Kumar 
+ 5 
+ 
+ 
+Assuming the Cobb-Douglas Production Function and taking differentiation of equation 
+(1), the following equation is obtained. 
+ 
+∆Yt = ß0 + ß1∆Ft + ß2∆Kt + ß3∆IRRt + ß4∆CI + ß5∆R + ei 
+ 
+ 
+RESULTS AND DISCUSSION 
+ 
+Trends in Gross State Domestic Product and Agricultural Gross Value 
+Added 
+ 
+The share of Agricultural Gross Value Added (AgGVA) in gross state domestic product 
+(GSDP) during 2011-12 to 2019-20 have continuously decreased in all states except in 
+Manipur and Meghalaya. The GSDP at constant prices has been grew at compound annual 
+growth rate (CAGR) of 6.03 per cent per annum during 2011-12 to 2019-20, which has 
+given a positive signal regarding the economic growth of the states. Out of 29 states, while 
+CAGR of 20 states are grew more than the national average, CAGR of rest of the states 
+were still at less than 6 per cent (Table 1). During 2011-12 to 2019-20, the agricultural 
+gross value added (AgGVA) in the country showed an increasing trend and grew at the 
+rate of 3.63 per cent per annum, which, though appreciable is still below the target of 4 
+per cent set by the India's policymakers. Further, the trend in agricultural growth differs 
+significantly (-15.74% in Chhattisgarh to 8.53% in Maharashtra) across the states. While 
+4 states, viz., Kerala, Maharashtra, Rajasthan and Telangana have agricultural growth 
+rates more than the national average, the rest of the states have shown less than 3.5 per 
+cent growth in AgGVA. Interestingly, states like Kerala (5.72%), Maharashtra (8.53%), 
+Rajasthan (6.81%) and Telangana (5.90%) have shown an impressive performance in 
+terms of agricultural growth rate, However, the progress of these states are not reflected 
+in terms of percentage share of AgGVA in GSDP in 2019-20 (4-12%). 
+ 
+Some of the major states like Gujarat, Haryana, Madhya Pradesh, Punjab, and Tamil 
+Nadu though displaying steady growth for the entire state economy, have failed to achieve 
+even 3 per cent growth in agriculture and it is a cause of concern. The agricultural sector 
+in the states of Andhra Pradesh, Assam, Bihar, Chhattisgarh, Jammu and Kashmir, 
+2022                                                        Agricultural Growth                                                                        6 
+ 
+Karnataka, Odisha and Uttar Pradesh needs special attention as their growth rates are 
+negative. 
+ 
+Table 1: State-wise Share of AgGVA in GSDP in the Economy at Constant 
+(2011-12) Prices (%) 
+Source: Author’s estimates from Handbook of Statistics on Indian States, 2020-21, Reserve Bank of India. 
+ 
+State 
+2011-
+12 
+2012-
+13 
+2013-
+14 
+2014-
+15 
+2015-
+16 
+2016-
+17 
+2017-
+18 
+2018-
+19 
+2019-
+20 
+Share 
+of 
+AgGVA 
+in 
+SGDP 
+in 
+2019-
+20 
+CAGR 
+of Ag 
+GVA 
+CAGR 
+of 
+GSDP 
+Andhra 
+Pradesh 
+13.72 
+13.81 
+14.89 
+13.72 
+11.72 
+11.90 
+12.46 
+11.12 
+11.58 
+11.58 
+-4.64 
+8.15 
+Arunachal 
+Pradesh 
+23.12 
+24.87 
+23.97 
+21.12 
+18.80 
+12.80 
+12.49 
+11.78 
+12.72 
+12.72 
+2.36 
+6.16 
+Assam 
+14.40 
+16.95 
+15.35 
+14.79 
+13.39 
+12.99 
+12.11 
+11.77 
+10.70 
+10.70 
+-1.38 
+7.41 
+Bihar 
+17.24 
+18.49 
+13.76 
+12.61 
+11.92 
+12.16 
+12.13 
+10.30 
+8.97 
+8.97 
+-1.27 
+6.58 
+Chhattisgarh 
+11.38 
+11.59 
+10.86 
+11.01 
+10.38 
+11.48 
+9.06 
+9.53 
+9.17 
+9.17 
+-15.74 
+5.87 
+Goa 
+2.42 
+2.87 
+3.48 
+2.66 
+2.23 
+2.16 
+2.08 
+1.94 
+1.90 
+1.90 
+2.18 
+6.15 
+Gujarat 
+12.92 
+9.23 
+11.78 
+10.38 
+8.71 
+8.53 
+8.62 
+6.64 
+7.06 
+7.06 
+1.46 
+9.63 
+Haryana 
+13.74 
+12.02 
+11.27 
+9.71 
+8.85 
+8.93 
+8.62 
+8.29 
+7.84 
+7.84 
+0.58 
+8.41 
+Himachal 
+Pradesh 
+9.26 
+9.59 
+10.51 
+8.87 
+9.15 
+7.53 
+6.53 
+6.03 
+6.94 
+6.94 
+1.08 
+6.91 
+Jammu and 
+Kashmir 
+10.16 
+9.08 
+9.29 
+7.04 
+8.31 
+7.98 
+7.44 
+6.91 
+6.75 
+6.75 
+-1.28 
+5.86 
+Jharkhand 
+8.89 
+9.18 
+8.63 
+8.08 
+6.48 
+7.56 
+7.43 
+5.49 
+5.10 
+5.10 
+2.60 
+5.76 
+Karnataka 
+8.81 
+7.65 
+7.66 
+7.55 
+5.81 
+5.23 
+6.24 
+5.38 
+5.72 
+5.72 
+-3.61 
+8.87 
+Kerala 
+7.98 
+7.40 
+6.45 
+5.89 
+5.05 
+4.78 
+4.56 
+4.09 
+3.78 
+3.78 
+5.72 
+5.96 
+Madhya 
+Pradesh 
+23.24 
+26.72 
+25.23 
+24.31 
+21.37 
+25.02 
+23.15 
+21.08 
+21.59 
+21.59 
+0.70 
+7.76 
+Maharashtra 
+7.96 
+7.37 
+8.17 
+6.40 
+5.53 
+6.33 
+5.67 
+5.06 
+5.23 
+5.23 
+8.53 
+6.83 
+Manipur 
+10.67 
+12.27 
+11.86 
+11.62 
+9.29 
+8.31 
+14.27 
+12.27 
+14.14 
+14.14 
+2.55 
+6.45 
+Meghalaya 
+8.19 
+9.54 
+9.57 
+10.33 
+10.34 
+9.82 
+9.58 
+8.86 
+8.47 
+8.47 
+3.38 
+2.78 
+Mizoram 
+10.45 
+9.38 
+9.17 
+7.72 
+6.79 
+6.39 
+6.00 
+5.97 
+5.46 
+5.46 
+2.89 
+12.35 
+Nagaland 
+16.78 
+18.30 
+20.03 
+20.22 
+19.81 
+18.86 
+17.48 
+15.91 
+15.32 
+15.32 
+-0.25 
+4.84 
+Odisha 
+11.06 
+12.96 
+10.77 
+11.65 
+8.40 
+8.97 
+6.68 
+6.82 
+7.50 
+7.50 
+-1.20 
+4.86 
+Punjab 
+18.78 
+17.86 
+17.28 
+15.46 
+14.53 
+14.51 
+14.11 
+13.33 
+12.72 
+12.72 
+0.56 
+5.78 
+Rajasthan 
+16.90 
+16.64 
+16.85 
+15.01 
+12.99 
+12.73 
+11.62 
+11.65 
+12.33 
+12.33 
+6.81 
+6.14 
+Sikkim 
+7.00 
+7.15 
+6.90 
+6.48 
+5.95 
+6.21 
+6.28 
+6.67 
+6.55 
+6.55 
+-1.05 
+8.07 
+Tamil Nadu 
+7.15 
+5.33 
+5.93 
+5.87 
+5.17 
+3.38 
+3.99 
+3.84 
+3.93 
+3.93 
+0.75 
+7.05 
+Telangana 
+9.01 
+9.60 
+9.55 
+7.10 
+5.21 
+5.61 
+5.63 
+4.82 
+7.05 
+7.05 
+5.90 
+8.30 
+Tripura 
+16.61 
+16.18 
+16.10 
+13.79 
+13.74 
+12.88 
+12.80 
+12.83 
+13.39 
+13.39 
+2.23 
+9.64 
+Uttar Pradesh 
+17.15 
+17.20 
+15.89 
+14.45 
+13.92 
+13.32 
+13.22 
+12.96 
+12.66 
+12.66 
+-1.17 
+6.60 
+Uttarakhand 
+6.62 
+6.24 
+5.41 
+5.06 
+4.27 
+4.13 
+3.85 
+3.63 
+3.56 
+3.56 
+2.16 
+7.39 
+West Bengal 
+13.92 
+13.91 
+13.25 
+13.78 
+12.89 
+12.33 
+12.19 
+11.45 
+10.86 
+10.86 
+2.16 
+5.37 
+India 
+17.19 
+16.54 
+16.42 
+15.25 
+14.21 
+14.02 
+14.00 
+13.43 
+13.66 
+14.62 
+3.63 
+6.03 
+2022                                                                      Vinod Kumar 
+ 7 
+ 
+Share of Agriculture Sector in Total GVA  
+The share of agriculture, forestry & fishing sectors in total GVA at 2011-12 basic prices has 
+seen a steady decrease over the years from 18.53 per cent in 2011-12 to 16.27 per cent in 
+2020-21, growing with Compound Annual Growth Rate (CAGR) of 3.63 per cent. The 
+decline was mainly due to the decline in the share of crops in AgGVA from 65.39 per cent 
+in 2011-12 to 55.06 per cent in 2020-21. The share of the fisheries in AgGVA has increased 
+to 6.72 per cent in 2020-21 from 4.53 per cent in 2011-12. The share of the livestock in 
+AgGVA has also increased significantly from 21.79 per cent in 2011-12 to 30.13 per cent 
+2020-21. The share of forestry & logging has remained constant at about 8 per cent during 
+the entire period (Table 2). The livestock and fishing sectors have grown at a CAGR of 
+7.66 per cent and 8.90 per cent over the last ten years ending 2020-21. Development of 
+livestock sector has led to the improvement in per capita availability of milk, eggs and 
+meat. 
+The Gross Value of Output (GVO) at constant (2011-12) prices of the four main sub-
+sectors, namely crop, livestock, forestry and logging and fishing and aquaculture which 
+together are called as agriculture and allied sectors are presented in Table 3. It may be 
+observed that the crops sub-sector which had accounted for 62.44 per cent of the 
+agriculture and allied sectors in 2011-12, consistently declined to 55.05 per cent in 2020-
+21. The GVO of livestock sector increased steadily from 25.56 per cent in 2011-12 to 30.98 
+per cent in 2020-21. During this period, the output of milk, meat and eggs also recorded 
+an increasing trend. The share of milk, meat and eggs in output of livestock sub-sector 
+was 66.71 per cent, 23.12 per cent and 3.57 per cent, respectively in 2020-21, compared 
+to 67.20 per cent, 19.73 per cent and 3.41 per cent, respectively in the base year 2011-12. 
+The output of fishing and aquaculture sub-sector increased steadily from about Rs.80105 
+crore in 2011-12 to Rs.162449 crore in 2020-21. In percentage terms, the output of fishing 
+and aquaculture sub-sector has increased from 4.20 per cent in 2011-12 to 6.30 per cent 
+in 2020-21. However, the share of inland fisheries decreased from 57.65 per cent to 51.45 
+per cent during the period 2011-12 to 2020-21. The share of value of output of forestry 
+and logging is remained constant at around 8 per cent during the period.
+2022                                                        Agricultural Growth                                                                        8 
+ 
+Table 2: Share of Agriculture, Forestry & Fishing at 2011-12 Prices  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(Rs.crore) 
+Item 
+2011-12 
+2012-
+13 
+2013-14 
+2014-
+15 
+2015-16 
+2016-17 
+2017-18 
+2018-19 
+2019-20 
+2020-21 
+CAGR(%) 
+Agriculture, 
+forestry 
+& 
+fishing 
+1501947 
+(18.53) 
+1524288 
+(17.84) 
+1609198 
+(17.75) 
+1605715 
+(16.53) 
+1616146 
+(15.40) 
+1726004 
+(15.24) 
+1840023 
+(15.29) 
+1878598 
+(14.75) 
+1982303 
+(16.27) 
+2048032 
+(16.27) 
+3.63 
+Crops 
+982151 
+(65.39) 
+983809 
+(64.54) 
+1037060 
+(64.45) 
+998425 
+(62.18) 
+969344 
+(59.98) 
+1020258 
+(59.11) 
+1075111 
+(58.43) 
+1049211 
+(55.85) 
+1106545 
+(55.82) 
+1127575 
+(55.06) 
+1.46 
+Livestock 
+327334 
+(21.79) 
+344375 
+(22.59) 
+363558 
+(22.59) 
+390449 
+(24.32) 
+419637 
+(25.97) 
+461572 
+(26.74) 
+497830 
+(27.06) 
+540970 
+(28.80) 
+581450 
+(29.33) 
+617117 
+(30.13) 
+7.66 
+Forestry & 
+logging 
+124436 
+(8.28) 
+124743 
+(8.18) 
+132093 
+(8.21) 
+134609 
+(8.38) 
+136960 
+(8.47) 
+144547 
+(8.37) 
+152351 
+(8.28) 
+163949 
+(8.73) 
+164416 
+(8.29) 
+165624 
+(8.09) 
+3.71 
+Fishing 
+& 
+aquaculture 
+68027 
+(4.53) 
+71362 
+(4.68) 
+76487 
+(4.75) 
+82232 
+(5.12) 
+90205 
+(5.58) 
+99627 
+(5.77) 
+114730 
+(6.24) 
+124468 
+(6.63) 
+129893 
+(6.55) 
+137716 
+(6.72) 
+8.90 
+Total GVA 
+at 
+basic 
+prices 
+8106946 
+8546275 
+9063649 
+9712133 
+10491870 
+11328285 
+12034171 
+12733798 
+13219476 
+12585074 
+5.88 
+Source: National Accounts Statistics 2022, MoSPI, Government of India. 
+  Figures in parentheses indicate the percentage share in the total GVA. 
+ 
+Table 3: Value of Output from Agriculture and Allied Sectors at Constant (2011-12) Prices 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(Rs. crore) 
+Items 
+2011-12 
+2012-13 
+2013-14 
+2014-15 
+2015-16 
+2016-17 
+2017-18 
+2018-19 
+2019-
+20 
+2020-
+21 
+CAGR 
+Crop Sector 
+1191483 
+(62.44) 
+1198611 
+(61.79) 
+1257133 
+(61.75) 
+1228006 
+(59.97) 
+1206717 
+(58.23) 
+1277532 
+(57.83) 
+1331828 
+(55.39) 
+1317811 
+(55.42) 
+1382420 
+(55.47) 
+1419431 
+(55.05) 
+1.90 
+Livestock Sector 
+487751 
+(25.56) 
+508074 
+(26.19) 
+530953 
+(26.08) 
+562026 
+(27.44) 
+595242 
+(28.72) 
+641217 
+(29.06) 
+671244 
+(28.92) 
+717125 
+(30.16) 
+760025 
+(30.50) 
+798726 
+(30.98) 
+5.84 
+Fishing & 
+Aquaculture 
+80105 
+(4.20) 
+83911 
+(4.33) 
+89865 
+(4.41) 
+96648 
+(4.72) 
+106504 
+(5.14) 
+117573 
+(5.32) 
+135811 
+(5.85) 
+147275 
+(6.19) 
+153326 
+(6.15) 
+162449 
+(6.30) 
+8.97 
+Forestry & Logging 
+148748 
+(7.80) 
+149062 
+(7.68) 
+157748 
+(7.75) 
+161184 
+(7.87) 
+163778 
+(7.90) 
+172821 
+(7.82) 
+181894 
+(7.84) 
+195801 
+(8.23) 
+196282 
+(7.88) 
+197773 
+(7.67) 
+3.70 
+Ag, Forestry & 
+Fishing 
+1908087 
+(100) 
+1939658 
+(100) 
+2035699 
+(100) 
+2047864 
+(100) 
+2072241 
+(100) 
+2209144 
+(100) 
+2320777 
+(100) 
+2378013 
+(100) 
+2492053 
+(100) 
+2578378 
+(100) 
+3.50 
+Source: National Accounts Statistics 2022, MoSPI, Government of India. 
+  Figures in parentheses indicate the percentage share in the total GVA. 
+ 
+2022                                                                      Vinod Kumar 
+ 9 
+ 
+Investment in Agriculture and Allied Sectors 
+Investment is critical to the sustained growth of any sector.  The Gross Capital Formation 
+(GCF) in agriculture and allied sectors relative to AgGVA in the sector has been showing 
+a fluctuating trend as shown in Table 4. Fluctuation in the GCF in the sector arises mainly 
+because of wide fluctuations in private investment in agriculture and allied sectors. As 
+may be observed from the table, while public investment has remained stable between 2-
+3 per cent during 2011-12 to 2020-21, the private investment has fluctuated and the total 
+agricultural GCF has moved in sync with variation in private investment. Recognising that 
+there exists a direct correlation between capital investments in agriculture and its growth 
+rate, there should be a focused and targeted approach to ensure higher public and private 
+investment in the sector. Higher access to concessional institutional credit to farmers and 
+greater participation of private corporate sector, whose investment rates are currently as 
+low as 2 to 3 per cent in agriculture (Report on Doubling of Farmers' Income, 2018), may 
+help in improving private investment in agriculture. Private corporate investments need 
+to be roped in by offering appropriate policy framework coupled with increase in public 
+investment in the entire agricultural value system. Further, Gross Capital Formation 
+(GCF) in agriculture and allied sectors relative to AgGVA has been showing a fluctuating 
+trend from 14.70 per cent in 2015-16 to 15.94 per cent in 2020-21. The GCF in agriculture 
+and allied sectors in absolute terms increased from Rs.237648 crore in 2015-16 to 
+Rs.326533 crore in 2020-21 at 2011-12 prices. Further, public investment in and for 
+agriculture have remained low as only 2.28 per cent of AgGVA at constant (2011-12) prices 
+is spent for infrastructure development in agriculture in 2020-21. This must be raised to 
+4 per cent as recommended by the high empowered committee (GoI, 2007). That a deficit 
+in public expenditure on agricultural infrastructure and extension services substantially 
+contributed to the slowdown in agricultural growth has been pointed out by studies such 
+as Mahendra Dev (2000), Vyas (2001), Rao (2003) and Chand and Kumar (2004). 
+ 
+Ensuring steady investment in agriculture is crucial to ensure that quality inputs are made 
+available for agriculture production while also addressing the infrastructural bottlenecks. 
+Quality seed and optimum use of fertilisers are important pillars of growth in agricultural 
+productivity. It is also observed that a steady supply of electricity to agriculture brings 
+economic efficiency in production. Supply adequate and quality power (electricity) to 
+2022                                                        Agricultural Growth                                                                        10 
+ 
+agriculture sector is very low in most of states. These three inputs should be promoted 
+appropriately to raise output and farmers' income. 
+ 
+Table 4: Gross Capital Formation (GCF) in Agriculture and Allied Sectors 
+Relative to Agriculture Gross Value Added (AgGVA) at 2011 -12 Basic Prices 
+ 
+Year 
+GCF in Agriculture & Allied 
+Sector (Rs. crore) 
+GVA of 
+Agriculture & 
+Allied Sector 
+(Rs. crore) 
+ 
+GCF of Agriculture & Allied 
+Sector as percentage of GVA of 
+Agriculture & Allied Sector (%) 
+Public 
+Private 
+Total 
+Public 
+Private 
+Total 
+2011-12 
+35696 
+238175 
+273870 
+1501947 
+2.38 
+15.86 
+18.23 
+2012-13 
+36019 
+215075 
+251094 
+1524288 
+2.36 
+14.11 
+16.47 
+2013-14 
+33925 
+250499 
+284424 
+1609198 
+2.11 
+15.57 
+17.67 
+2014-15 
+37172 
+235491 
+272663 
+1605715 
+2.31 
+14.67 
+16.98 
+2015-16 
+42522 
+195127 
+237648 
+1616146 
+2.63 
+12.07 
+14.70 
+2016-17 
+47767 
+219386 
+267153 
+1726004 
+2.77 
+12.71 
+15.48 
+2017-18 
+46032 
+226290 
+272321 
+1840023 
+2.50 
+12.30 
+14.80 
+2018-19 
+53493 
+243138 
+296631 
+1878598 
+2.85 
+12.94 
+15.79 
+2019-20 
+47040 
+254632 
+301671 
+1982303 
+2.37 
+12.85 
+15.22 
+2020-21 
+46728 
+279805 
+326533 
+2048032 
+2.28 
+13.66 
+15.94 
+Source: National Accounts Statistics 2022, MoSPI, Government of India and Agricultural Statistics at a Glance, 2021. 
+ 
+Changes in Cropping Pattern at All India Level 
+The cropping pattern in India has undergone significant changes over time. As the 
+cultivated area remains more or less constant, the increased demand for food due to 
+increase in population and urbanisation and change in food habits puts agricultural land 
+under stress resulting in crop intensification and substitution of food crops with high 
+value commercial crops. In fact, it is remarkable to observe that area under foodgrains in 
+gross cropped area (GCA) declined by 11.62 per cent mainly due to fall in area under 
+coarse cereals by 16.78 per cent between triennium ending (TE) 1970-71 and TE 2020-21 
+(Table 5). Wheat has gained importance with area allocation of only 10.42 per cent in TE 
+1970-71, and it steadily increased to 15.45 per cent in TE 2020-21. Area under rice 
+remained more or less constant during the period under study. Interestingly, area lost by 
+foodgrains was used for the cultivation of oilseeds, fruits and vegetables and non-food 
+crops to the extent of 3.67 per cent, 6.40 per cent and 3.79 per cent, respectively, between 
+TE 1970-71 and TE 2020-21. Although the shift from coarse cereals to high value crops is 
+likely to increase farm output and income to farmers, in rainfed areas it will expose 
+2022                                                                      Vinod Kumar 
+ 11 
+ 
+cultivators to serious weather related risks because high value crops have a high water 
+requirement (Bhalla and Singh, 2009). 
+ 
+Table 5: Share of Area Under Major Crops in India (Percentage of GCA) 
+ 
+Crops 
+TE 1970-
+71 
+TE 1980-
+81 
+TE 1990-
+91 
+TE 2000-
+01 
+TE 2010-
+11 
+TE 2020-
+21 
+Rice 
+23.03 
+23.18 
+23.01 
+23.82 
+21.89 
+22.27 
+Wheat 
+10.42 
+12.98 
+13.04 
+14.28 
+15.18 
+15.45 
+Coarse cereals 
+28.48 
+24.25 
+20.48 
+16.17 
+14.38 
+11.70 
+Total cereals 
+61.93 
+60.41 
+56.53 
+54.27 
+51.45 
+49.41 
+Total pulses 
+13.50 
+13.23 
+12.94 
+11.49 
+12.68 
+14.40 
+Total foodgrains 
+75.43 
+73.64 
+69.47 
+65.76 
+64.13 
+63.81 
+Total oilseeds 
+9.85 
+10.11 
+12.51 
+12.96 
+14.36 
+13.52 
+Groundnut 
+4.42 
+4.14 
+4.64 
+3.68 
+2.90 
+2.62 
+Cotton 
+4.70 
+4.27 
+4.08 
+4.70 
+5.50 
+6.55 
+Total fibers 
+5.41 
+5.08 
+4.64 
+5.27 
+6.01 
+6.89 
+Sugarcane 
+1.62 
+1.62 
+1.90 
+2.23 
+2.46 
+2.43 
+Tobacco 
+0.27 
+0.25 
+0.22 
+0.21 
+0.20 
+0.20 
+Condiments & 
+spices 
+1.04 
+1.23 
+1.32 
+1.52 
+1.71 
+2.16 
+Potato 
+0.31 
+0.43 
+0.51 
+0.69 
+0.91 
+1.08 
+Onion 
+- 
+0.14 
+0.17 
+0.24 
+0.51 
+0.72 
+Total fruits & 
+vegetables 
+2.24 
+2.77 
+3.57 
+4.35 
+4.78 
+8.64 
+Fodder crops 
+4.15 
+4.50 
+4.59 
+4.55 
+3.98 
+4.53 
+Gross Cropped Area 
+(GCA) 
+100 
+100 
+100 
+100 
+100 
+100 
+Source: Authors' estimates from Directorate of Economics and Statistics, Ministry of Agriculture and Farmers’ Welfare, 
+GoI. 
+ 
+Changes in Cropping Area at All India Level 
+Increase in area under total oilseeds is not reflective of general rise in area across all 
+oilseed crops, but seemed to be limited only to rapeseed and mustard and soybean. The 
+Technology Mission on Oilseeds launched in 1986 coupled with price support and 
+favourable market conditions for refined oil and protein-rich soya food encouraged the 
+shift in the area towards oilseeds. The area under groundnut came down from 4.42 per 
+cent in TE 1970-71 to 2.62 per cent in TE 2020-21. However, the area under commercial 
+crops like cotton and sugarcane registered significant increase from 4.70 per cent to 6.55 
+per cent and from 1.62 per cent to 2.43 per cent during TE 1970-71 to TE 2020-21, 
+respectively. Assured prices by Cooperatives and Sugar mills for sugarcane and 
+2022                                                        Agricultural Growth                                                                        12 
+ 
+guaranteed price for cotton through the government's monopoly procurement scheme 
+encourage the production of these crops while various schemes announced by the 
+National Horticulture Board accelerated the expansion of area under fruits and 
+vegetables. 
+ 
+It is quite understandable from the above discussion that high value commercial crops 
+are taking the lead in terms of area share. However, it would be interesting to analyse the 
+contribution of different crops in total value of output. Besides the level of physical output, 
+this will also capture the producer price of various crops in the country. Among crop 
+groups, fruits and vegetables accounted for the largest share of total value of crop output 
+followed by cereals, oilseeds, fiber and pulses in TE 2020-21 (Table 6). While the 
+contribution of cereals declined from 32.46 per cent in TE 1970-1971 to 27.41 per cent in 
+TE 2020-21, the share of fruits and vegetables increased considerably from 14.11 per cent 
+to 27.77 per cent during the same period. The change in share was determined largely by 
+commodity price, which rose proportionately higher for fruits and vegetables than cereals 
+in the recent decade (Chand et al. 2011). The growth in the horticultural sector has been 
+largely demand-driven and has been facilitated by improvements in roads, 
+transportation, communication, and electricity (Joshi et al. 2004) and the development 
+of retail chains that could establish linkages with farmers for procurement of their crops 
+through institutions such as contract farming and producers’ organizations (Birthal, 
+Joshi, and Gulati 2005; Roy and Thorat 2008). Further, to cater to the rising demand for 
+horticultural products without importing as much, the government of India has been 
+promoting the horticultural sector by establishing the National Horticulture Board (NHB) 
+in 1985 and then launching the National Horticulture Mission (NHM) in 2005.  
+ 
+Changes in Crop Output at All India Level 
+Among individual crops, rice accounted for the major share in the total value of crop 
+output but declined from 2000 onwards. Similarly, the value of wheat output reported a 
+steady increase until 2000-01 and declined thereafter. Pulses which registered a drop in 
+their contribution to the total value of output from 8.39 per cent in TE 1970-1971 to 4.45 
+per cent in TE 2010-11, however increased to 5.26 per cent in TE 2020-2021, due to 
+significant increase in the MSP of pulses. Meanwhile, the value of output of cotton 
+2022                                                                      Vinod Kumar 
+ 13 
+ 
+increased to 5.15 per cent in TE 2020-21 from 3.11 per cent in TE 2000-01. Cotton 
+production escalated primarily because of the widespread cultivation of Bt cotton. It was 
+found that productivity and profit from cultivation of Bt Cotton is substantially higher 
+than the conventional hybrid cotton varieties (Naik et al. 2005). The share of condiments 
+and spices in the total value of crop output also increased from 2.17 per cent in TE 1970-
+71 to 5.45 per cent in TE2020-21. Overall, data analysis shows that agricultural 
+production in the 1980s was broad. However, commercialization of agricultural 
+production seems to have gained momentum in the early 1990s. There was a definite shift 
+from foodgrains to non-foodgrains such as fruits and vegetables, oilseeds, fiber, and 
+condiments and spices, whose share in both area and in value of output has been 
+increasing during the study period. Further, the study reveals that diversification towards 
+high value crops (HVCs) offers great scope to increase farmers’ income. The staple crops 
+such as cereals, pulses and oilseeds occupy 77.33 per cent of the gross cropped area (GCA) 
+but contribute only 46.37 per cent of total value of output of crop sector. Interestingly, 
+almost same value of output (43.58%) was contributed by HVCs (fruits and vegetables, 
+fibres, condiments and spices and sugarcane which occupy 20.12 per cent of GCA during 
+TE 2020-21. These changes in the relative shares of crops in agricultural growth provide 
+a clear indication of the growing importance of high-value crops in Indian agriculture. 
+ 
+Table 6: Share of Various Crops in Value of Output (at 2011-12 prices) 
+                                                                                                                  (Per cent) 
+Crops 
+TE 1970-
+71 
+TE 1980-
+81 
+TE 1990-
+91 
+TE 
+2000-01 
+TE 2010-
+11 
+TE 
+2020-21 
+Rice 
+17.26 
+17.23 
+18.14 
+16.67 
+14.68 
+13.96 
+Wheat 
+6.67 
+9.09 
+10.05 
+10.63 
+9.87 
+9.68 
+Coarse Cereals 
+8.93 
+7.66 
+6.28 
+4.47 
+4.26 
+3.78 
+Cereals 
+32.46 
+33.60 
+34.24 
+31.74 
+28.81 
+27.41 
+Gram 
+3.50 
+2.54 
+2.03 
+1.71 
+1.98 
+2.28 
+Arhar 
+1.51 
+1.33 
+1.34 
+1.02 
+0.80 
+0.94 
+Pulses 
+8.39 
+6.53 
+6.23 
+4.73 
+4.45 
+5.26 
+Groundnut 
+4.70 
+3.91 
+4.40 
+2.79 
+2.27 
+2.28 
+Rapeseed and Mustard 
+1.33 
+1.31 
+2.15 
+1.90 
+2.26 
+2.22 
+Oilseeds 
+8.27 
+7.30 
+9.79 
+8.75 
+9.11 
+8.44 
+Sugarcane 
+5.35 
+4.74 
+5.05 
+5.09 
+4.37 
+4.93 
+Sugars 
+6.20 
+5.47 
+5.78 
+7.64 
+6.47 
+6.13 
+Cotton 
+3.22 
+3.62 
+3.55 
+3.11 
+5.11 
+5.15 
+Fibres 
+3.78 
+4.25 
+4.03 
+3.57 
+5.52 
+5.43 
+Tea 
+0.59 
+0.63 
+0.57 
+0.58 
+0.58 
+0.62 
+2022                                                        Agricultural Growth                                                                        14 
+ 
+Coffee 
+0.42 
+0.51 
+0.49 
+0.66 
+0.58 
+0.46 
+Tobacco 
+0.96 
+0.96 
+0.84 
+0.68 
+0.73 
+0.40 
+Tomato 
+0.75 
+0.87 
+0.80 
+1.03 
+1.37 
+1.65 
+Onion 
+0.44 
+0.52 
+0.48 
+0.57 
+0.90 
+1.71 
+Potato 
+0.77 
+1.16 
+1.33 
+1.63 
+1.84 
+2.12 
+Fruits & Vegetables 
+14.11 
+16.73 
+15.88 
+20.55 
+23.58 
+27.77 
+Condiments & Spices 
+2.17 
+2.57 
+2.80 
+3.36 
+3.79 
+5.45 
+Others* 
+21.63 
+20.68 
+18.47 
+15.45 
+14.51 
+11.48 
+Total value of crop 
+output 
+100 
+100 
+100 
+100 
+100 
+100 
+Source:  Author’s estimates from National Statistical Office data, MoSPI, Government of India. 
+Note.  *includes other crops, by-products, kitchen garden, indigo, dyes and tanning materials. 
+ 
+ 
+Growth Performance of Major Crops at National Level 
+ 
+It is well documented in the literature that growth in area was the major source of 
+production growth until early 1960s (Bhalla and Singh, 2001; Vaidyanathan, 2010). The 
+high yielding varieties introduced in wheat and rice during the late Sixties heralded 
+India’s green revolution. Along with technology, new institutional structures enabled the 
+farmers to adopt improved methods of cultivation. The major changes included provision 
+of better irrigation facilities, government procurement system, guaranteed minimum 
+support price and supply of inputs at subsidized rates.  As evident from Table 7, wheat 
+production registered compound annual growth of 5.48 per cent during the early green 
+revolution period (1967-68 to 1980-81). Both yield and area contributed to higher growth 
+in production. In the case of rice, growth in yield contributed to production growth of 2.18 
+per cent per annum. For foodgrains as a whole, the growth in area and yield were 0.39 
+per cent and 1.87 per cent, respectively and resulted in production growth of 2.27 per cent. 
+2022                                                                      Vinod Kumar 
+ 15 
+ 
+Table 7: Compound Annual Growth Rates of Area, Production and Yield of Major Crops in India 
+(Per cent) 
+Crops 
+1967-68 to 1980-81 
+1981-82 to 1990-91 
+1991-92 to 2000-01 
+2001-02 to 2010-11 
+2011-12 to 2020-21 
+1967-68 to 2020-21 
+Area 
+Prod 
+Yield 
+Area 
+Prod 
+Yield 
+Area 
+Prod 
+Yield 
+Area 
+Prod 
+Yield 
+Area 
+Prod 
+Yield 
+Area 
+Prod 
+Yield 
+Rice 
+0.75 
+2.18 
+1.42 
+0.60 
+4.20 
+3.58 
+0.78 
+1.87 
+1.08 
+0.11 
+1.71 
+1.60 
+0.24 
+3.58 
+1.54 
+0.34 
+2.22 
+1.87 
+Wheat 
+2.96 
+5.48 
+2.45 
+0.37 
+3.39 
+3.02 
+1.37 
+3.11 
+1.69 
+1.36 
+2.51 
+1.16 
+0.24 
+3.02 
+1.65 
+1.09 
+3.21 
+2.10 
+Coarse 
+Cereals 
+-1.00 
+0.71 
+1.74 
+-1.49 
+0.72 
+2.24 
+-1.60 
+0.36 
+1.99 
+-0.50 
+3.10 
+3.62 
+-1.13 
+2.24 
+3.28 
+-1.39 
+1.01 
+2.43 
+Cereals 
+0.38 
+2.59 
+2.20 
+-0.25 
+3.12 
+3.38 
+0.18 
+2.03 
+1.84 
+0.27 
+2.25 
+1.98 
+-0.10 
+3.38 
+1.99 
+-.08 
+2.25 
+2.33 
+Pulses 
+0.43 
+-0.53 
+-0.95 
+0.13 
+1.50 
+1.41 
+-0.63 
+0.15 
+0.68 
+1.45 
+3.09 
+1.62 
+2.71 
+1.41 
+1.86 
+0.29 
+1.28 
+0.98 
+Foodgrains 
+0.39 
+2.27 
+1.87 
+-0.19 
+2.99 
+3.18 
+0.04 
+1.91 
+1.87 
+0.49 
+2.31 
+1.80 
+0.49 
+3.18 
+1.59 
+0.00 
+2.17 
+2.18 
+Groundnut 
+-0.30 
+0.64 
+0.94 
+1.70 
+2.92 
+1.20 
+-2.75 
+-2.27 
+0.51 
+-0.81 
+1.95 
+2.77 
+0.60 
+4.74 
+4.36 
+-0.77 
+0.72 
+1.49 
+Rapeseed & 
+Mustard 
+1.34 
+1.50 
+0.17 
+3.55 
+9.10 
+5.36 
+-1.78 
+-1.15 
+0.63 
+2.59 
+4.85 
+2.20 
+0.83 
+4.06 
+3.16 
+1.54 
+3.79 
+2.22 
+Oilseeds 
+1.12 
+1.66 
+0.53 
+3.02 
+5.80 
+2.70 
+-0.87 
+0.56 
+1.45 
+2.21 
+5.37 
+3.09 
+0.19 
+1.70 
+1.57 
+-0.73 
+3.06 
+1.87 
+Sugarcane 
+1.65 
+2.64 
+1.38 
+1.35 
+2.97 
+1.61 
+1.91 
+2.74 
+0.82 
+1.30 
+2.31 
+1.01 
+-0.73 
+1.34 
+2.12 
+1.48 
+2.38 
+0.91 
+Cotton 
+0.08 
+2.62 
+2.55 
+-0.97 
+3.32 
+4.31 
+2.18 
+0.24 
+-1.90 
+3.17 
+14.20 
+10.70 
+0.95 
+-0.55 
+-1.58 
+1.02 
+3.91 
+2.87 
+Source: Author’s estimates from Directorate of Economics and Statistics, Ministry of Agriculture and Farmers' Welfare, Government of India. 
+2022                                                        Agricultural Growth                                                                        16 
+ 
+However, it is interesting to observe a relatively higher growth in yield of all major crops 
+during 1981-82 to 1990-91, i.e., the mature green revolution period. It indicates that crops 
+other than rice and wheat shared the technological benefits. With decline in area, 
+impressive growth in production of most crops was mainly contributed by growth in yield. 
+Rice registered production and yield growth rate of 4.20 per cent and 3.58 per cent, 
+respectively. Wheat yield also showed splendid growth of 3.02 per cent. Growth in yield 
+of pulses (1.41%) and coarse cereals (2.24%) was significant. However, negative growth  
+(-0.19%) was reflected in the decline in area under foodgrains. Despite this, production of 
+foodgrains was high at 2.99 per cent, which was contributed by yield growth of 3.18 per 
+cent. Oilseeds recorded a growth rate of 5.80 per cent in production and 2.70 per cent in 
+yield. This could be attributed to Technology Mission on Oilseeds launched in 1986, which 
+laid emphasis on increasing productivity of oilseeds and bridging yield gaps between 
+experimental stations and farmers’ fields by adopting improved package of practices. 
+Similarly, cotton showed high growth in production by 3.32 per cent and yield by 4.31 per 
+cent. However, the impressive growth in crop production observed during the 1981-82 to 
+1990-91 was not sustained during the 1990-91 to 2000-01. Growth in the yield of almost 
+all crops declined during 1991-92 to 2000-01, i.e., the early economic reforms period. This 
+was, in fact, a alarming scenario, which resulted in low growth in crop output. However, 
+there was increase in area for rice and wheat during this period. Growth in area under 
+sugarcane and cotton increased during this period. Even though recording almost the 
+same level of growth in yield, the negative growth in area (-1.60%) resulted in a fall in 
+production for coarse cereals. In the case of pulses, the decline in the growth of yield and 
+negative growth in area (-0.63) led to fall in production. Consequently, growth in 
+foodgrains production declined to 1.91 per cent during the economic reforms period when 
+compared to 3.18 per cent in the mature green revolution period. There was significantly 
+improvement in production and yield of all most all crops during 2001-02 to 2010-11 and 
+2011-12 to 2020-21. Growth in yield of rice increased at 1.60 per cent but very low growth 
+in area resulted in sluggish growth in production when compared to the early economic 
+reforms period. In contrast, growth in both area and yield of wheat declined. Impressive 
+growth in yield of coarse cereals at 3.62 per cent and 3.28 per cent led to 3.10 per cent 
+and 2.24 per cent growth in production during 2001-02 to 2010-11 and 2011-12 to 2020-
+21, respectively. Groundnut, which witnessed negative growth in area and production in 
+2022                                                                      Vinod Kumar 
+ 17 
+ 
+the previous decade (1991-92 to 2000-01), registered growth of 1.95 per cent and 4.74 per 
+cent in production due to high growth in yield (2.77% and 4.36%) during 2001-02 to 
+2020-21. Thus, impressive growth in groundnut along with rapeseed and mustard led to 
+increase in production of oilseeds. Cotton witnessed a whopping growth of 14.20 per cent 
+in production as a result of impressive growth of 10.70 per cent in yield during 2001-02 
+to 2010-11. The India's policymakers have envisaged an annual growth rate of 4 per cent 
+in agriculture and allied sectors since the 9th Five-Year Plan (1996-97 to 2001-02). As the 
+crop sector constitutes over three-fourth of total output its growth performance assumes 
+great importance in achieving this target. However, the long-term growth rate (during 
+1967-68 to 2020-21) shows that not a single crop registered production growth of more 
+than 4.0 per cent annum. However, few crops that showed decent growth in production 
+were cotton, rapeseed and mustard, wheat and rice. Further, growth in foodgrains 
+production was 2.17 per cent, which was only a little higher than the annual population 
+growth of 1.64 per cent as per Census 2011. This implies that production of foodgrains has 
+to be enhanced to achieve long-term sustainable food and nutritional security in the 
+country. It is also noticeable from the long term growth that area shifts have been taking 
+place from coarse cereals and oilseeds towards high value crops like sugarcane and the 
+more remunerative cotton.  
+ 
+Indian agriculture is dominated by small and marginal farmers (86.21%), who suffer 
+serious disadvantage in terms of scale, small farm size discourages many farmers to go 
+for diversification of fruits and vegetables mainly because of the price risk and 
+uneconomic lot for marketing. Most of the SMF have been facing several major 
+constraints such as input supply, credit availability, proper transport, and market facility, 
+etc. Their share nearly 60 per cent in total foodgrains production: 49 per cent rice, 40 per 
+cent wheat, 29 per cent coarse cereals and 27 per cent pulses as well as over half of the 
+country’s fruits and vegetable production, according to Agricultural Census 2015-16. 
+Small sized of farmers are also disadvantaged in terms of bargaining power in various 
+transactions in the inputs and output markets (Chand, 2017). These constraints can be 
+resolved with the promotion of farmer producers organisations (FPOs). SFAC and 
+NABARD are promoting FPOs to enable small and marginal farmers to reduce transaction 
+costs, access technology, raise bargaining power and integrate with value chains.  
+2022                                                        Agricultural Growth                                                                        18 
+ 
+Similarly, policy interventions are required to encourage production of oilseeds and 
+coarse cereals. Further, crop productivity has to be improved through better soil and 
+water management, profitable crop rotation, innovative marketing and investment in 
+farm education and rural infrastructure. Among these factors, the former two are 
+essential in ensuring sustainability of agricultural production through effective 
+maintenance of soil fertility through balancing use of chemical and organic fertilisers and 
+developing drought and pests and diseases varieties. The latter factors are important in 
+making agriculture more profitable through efficient marketing, access to and adoption 
+of new technologies like artificial intelligence, internet of things, block chain technology, 
+agri drone and providing incentives for making on-farm investment. 
+ 
+Analysis of Agriculture Performance in Indian States 
+ 
+State-wise CAGR of Value of Output from Agriculture and Allied Sectors 
+ 
+State-wise CAGR of value of output from agriculture and allied sectors during the period 
+between 2011-12 to 2018-19 at constant (2011-12) prices are presented in Table 8 and 
+Figure 1. It may be seen that the value of output from crop sector was grew highest in 
+Madhya Pradesh (6.59%) and followed by Andhra Pradesh (4.48%) and Chhattisgarh 
+(3.00%). In case of livestock sector, highest growth was observed in Tamil Nadu (11.97%) 
+and followed by Madhya Pradesh (9.93%) and Andhra Pradesh (8.40%). The fisheries and 
+aquaculture, Andhra Pradesh grew highest (22.92%) followed by Jharkhand (12.90%) 
+and Madhya Pradesh (12.07%). Forestry and logging sector grew highest in Goa (24.54%) 
+and followed by Sikkim (9.18%) and Chhattisgarh (7.77%).  Total agriculture and allied 
+sectors grew highest in Mizoram with CAGR of 14.97 per cent due to diversification 
+towards high value crops followed by Andhra Pradesh (9.18%) and Madhya Pradesh 
+(6.97%). At the all India level, crop, livestock, fishing, forestry and tot al agriculture and 
+allied sectors grew by 1.53 per cent, 5.76 per cent, 9.48 per cent, 3.91 per cent and 3.27 
+per cent, respectively during the period 2011-12 to 2018-19.     
+ 
+ 
+ 
+ 
+ 
+2022                                                                      Vinod Kumar 
+ 19 
+ 
+Table 8: State-wise CAGR of Value of Output of Agriculture and Allied Sectors 
+During 2011-12 to 2018-19 at Constant (2011-12) Prices (%) 
+ 
+State 
+Crops 
+Livestock Fisheries Forestry 
+Total 
+agriculture 
+and allied 
+sectors 
+Andhra Pradesh 
+4.48 
+8.40 
+22.92 
+2.02 
+9.18 
+Arunachal Pradesh 
+-5.94 
+5.07 
+5.72 
+5.76 
+0.37 
+Assam 
+1.98 
+2.15 
+4.52 
+-0.41 
+2.15 
+Bihar 
+1.20 
+5.56 
+7.89 
+4.12 
+3.13 
+Chhattisgarh 
+3.00 
+4.06 
+11.77 
+7.77 
+4.64 
+Goa 
+0.47 
+-3.81 
+4.31 
+24.54 
+3.86 
+Gujarat 
+-0.14 
+4.43 
+3.52 
+5.47 
+1.40 
+Haryana 
+0.33 
+6.22 
+9.52 
+-1.26 
+2.42 
+Himachal Pradesh 
+1.02 
+3.53 
+7.90 
+4.50 
+2.68 
+Jammu & Kashmir 
+1.34 
+4.80 
+0.10 
+6.76 
+3.05 
+Jharkhand 
+0.59 
+3.76 
+12.90 
+6.47 
+2.68 
+Karnataka 
+2.08 
+4.36 
+2.20 
+2.22 
+2.59 
+Kerala 
+-3.13 
+0.37 
+2.87 
+2.91 
+-1.15 
+Madhya Pradesh 
+6.59 
+9.93 
+12.07 
+3.12 
+6.97 
+Maharashtra 
+0.60 
+4.92 
+0.85 
+6.01 
+2.20 
+Manipur 
+2.18 
+0.90 
+4.70 
+7.53 
+2.83 
+Meghalaya 
+0.89 
+2.95 
+20.46 
+4.33 
+2.47 
+Mizoram 
+2.62 
+15.41 
+5.38 
+29.37 
+14.89 
+Nagaland 
+3.26 
+-10.59 
+4.41 
+6.10 
+1.64 
+Odisha 
+-0.17 
+2.36 
+12.26 
+5.55 
+2.09 
+Punjab 
+1.20 
+4.09 
+5.81 
+0.39 
+2.02 
+Rajasthan 
+-0.27 
+7.48 
+9.74 
+4.58 
+3.00 
+Sikkim 
+3.26 
+3.07 
+2.04 
+9.18 
+3.50 
+Tamil Nadu 
+-0.30 
+11.97 
+3.48 
+1.57 
+4.82 
+Telangana 
+-1.92 
+6.57 
+3.94 
+0.28 
+1.75 
+Tripura 
+3.17 
+7.18 
+5.28 
+3.89 
+4.08 
+Uttar Pradesh 
+2.77 
+3.29 
+6.87 
+2.09 
+2.95 
+Uttarakhand 
+-1.02 
+3.19 
+3.42 
+0.62 
+0.48 
+West Bengal 
+1.93 
+3.31 
+2.92 
+1.42 
+2.35 
+All India  
+1.53 
+5.76 
+9.48 
+3.91 
+3.27 
+             Source. Authors’ estimates using National Statistical Office data, MoSPI, GoI.  
+2022                                                        Agricultural Growth                                                                        20 
+ 
+Figure 1: State-wise CAGR of value of output from agriculture and allied sectors 
+2022                                                                      Vinod Kumar 
+ 21 
+ 
+State-wise Value of output of Agriculture and Allied Sectors at Constant 
+(2011-12) Prices for Top Six States   
+ 
+State-wise percentage share of crops, livestock, forestry& logging, fishing & aquaculture 
+and total agriculture and allied sectors during the period 2011-12 to 2018-19 for top-6 
+States have been presented in Figure 2. Uttar Pradesh recorded the highest output of 
+crops in all the years, although its share in all India output has marginally increased from 
+12.96 per cent in 2011-12 to 14.05 per cent in 2018-19. The share of Madhya Pradesh has 
+gone up considerably from 7.06 per cent in 2011-12 to 10.28 per cent in 2018-19. The 
+share of Gujarat in all India output reduced from 8.87 per cent in 2011-12 to 6.84 per cent 
+in 2018-19. Uttar Pradesh and Rajasthan together accounted for about a quarter of output 
+of livestock at constant prices. The output of Tamil Nadu has increased faster during this 
+period.  
+ 
+Maharashtra and Rajasthan have together accounted for 25.87 per cent of output of 
+forestry and logging. The share of Assam and Uttar Pradesh has decreased during this 
+period. West Bengal has reported the increasing output in fishing and aquaculture yet its 
+share in all India output has reduced from 24.63 per cent in 2011-12 to 16.39 per cent in 
+2018-19. The total share of Assam and Kerala in all India output has reduced in 2018-19 
+compared to that in 2011-12. Andhra Pradesh share in all-India output increased 
+significantly from 17.74 per cent in 2011-12 to almost 37.52 per cent in 2018-19. The share 
+of Assam and Kerala in all India output reduced during these years, although these 
+recorded a small increase in value of output.  
+ 
+Among the top 6 states, Andhra Pradesh and Madhya Pradesh share in the total 
+Agriculture and allied sectors has increased from 5.55 per cent and 6.16 per cent in 2011-
+12 to 7.97 per cent and 8.09 per cent in 2018-19, respectively.  
+2022                                                        Agricultural Growth                                                                        22 
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                 Figure 2. State-wise Value of Output of Agriculture and Allied Sectors in Percentage. 
+8.9
+7.1
+10.0
+7.9
+13.0
+7.1
+6.8
+10.3
+9.1
+7.4
+14.1
+7.4
+0
+5
+10
+15
+Gujarat
+Madhya Pradesh
+Maharashtra
+Rajasthan
+Uttar Pradesh
+West Bengal
+Crop 
+2018-19
+2011-12
+7.0
+6.4
+7.7
+10.6
+6.8
+14.9
+8.1
+5.9
+7.2
+11.5
+9.7
+12.8
+0
+5
+10
+15
+20
+Andhra Pradesh
+Gujarat
+Maharashtra
+Rajasthan
+Tamil Nadu
+Uttar Pradesh
+Livestock
+2018-19
+2011-12
+17.7
+5.9
+7.1
+24.6
+5.5
+5.3
+37.5
+4.0
+4.8
+16.4
+4.0
+3.6
+0
+10
+20
+30
+40
+Andhra Pradesh
+Kerala
+Tamil Nadu
+West Bengal
+Assam
+Gujarat
+Fishing and Aquaculture
+2018-19
+2011-12
+5.51
+7.5
+12.2
+5.8
+11.4
+10.0
+4.03
+7.3
+14.4
+4.3
+11.4
+8.7
+0
+5
+10
+15
+20
+Assam
+Madhya Pradesh
+Maharashtra
+Punjab
+Rajasthan
+Uttar Pradesh
+Forestry and logging
+2018-19
+2011-12
+5.5
+7.8
+6.2
+9.4
+8.6
+12.8
+7.9
+6.2
+8.1
+8.6
+8.5
+12.6
+0
+5
+10
+15
+Andhra Pradesh
+Gujarat
+Madhya Pradesh
+Maharashtra
+Rajasthan
+Uttar Pradesh
+Agriculture, forestry & fishing
+2018-19
+2011-12
+2022                                                                      Vinod Kumar 
+ 23 
+ 
+Crop Output Growth Model 
+ 
+The ordinary least squares (OLS) approach was used to estimate the model, and all the 
+variables are in logarithmic form. It may be observed from the model that effect of gross 
+irrigated area and rainfall was positive and significant on crop output growth while the 
+effect of fertilizer was negative and significant on crop output growth (Table 9). Rainfall 
+and gross irrigated area were found to be significant at 1 per cent, while fertiliser was 
+significant at 5 per cent level of significance. In the model, the variable cropping intensity 
+was not significant. This might be as a result of the more or less fixed nature of cultivated 
+land. Additionally, the value of crop output is not considerably impacted by the 
+intensification of land use. The regression results model shows that normal rainfall and 
+better irrigation facilities have a positive and significant impact while improved fertiliser 
+consumption have negative but significant impact on the crop output growth in the 
+country. 
+ 
+Table 9: Regression Results of Agricultural Growth Model: Regression 
+Results for Crop Output Value: 1992-93 to 2020-21 
+Dependent Variable: ∆2 Crop Output Value 
+Variables 
+ 
+Constant 
+0.002427 
+∆2Fertiliser 
+-0.267648** 
+(-2.424380) 
+∆2Capital_Formation 
+0.018726 
+(0.473433) 
+∆2Cropping_Intensity 
+-0.778854 
+(-1.121397) 
+∆2Rainfall 
+0.196410*** 
+(3.780314) 
+∆2Gross_Irrigated_Area 
+1.376566*** 
+(6.765945) 
+R-squared 
+0.874118 
+Durbin-Watson Statistics 
+2.543177 
+No. of Observations 
+29 
+ 
+             
+Note: Figures in parentheses are t values, *** significant at 1%, **Significant at 5%. 
+ 
+ 
+ 
+ 
+2022                                                        Agricultural Growth                                                                        24 
+ 
+ 
+CONCLUSIONS 
+ 
+There has been significantly changes in the cropping pattern in India with a noticeable 
+shift from foodgrains cultivation to commercial and high value crops. Among foodgrains, 
+the area for coarse cereals declined by 16.78 per cent between TE 1970- 1971 and TE 2020-
+2021 due to the lack of appropriate technological breakthrough. The performance of 
+pulses in terms of area and output was not impressive during the study period. However, 
+increase in crop yield was a major factor in accelerating crop production in the country 
+since the green revolution. High yielding varieties/improved varieties, increased 
+irrigation facilities particularly precision irrigation, and adequate and timely availability 
+of fertilizers have impressively contributed to higher crop production growth in the 
+country. The results of the crop output growth model indicate that better irrigation 
+facilities, normal rainfall, and improved fertilizer consumption will help boost crop 
+output in the country. 
+ 
+Technology and institutional support for a few crops such as wheat, rapeseed and 
+mustard, sugarcane and cotton brought significant changes in crop area and output 
+composition in the country. Wheat occupied only 10.42 per cent of GCA in TE 1970-71 
+and this increased to 15.45 per cent in TE 2020-21 in the country. The expansion of area 
+for wheat, rapeseed and mustard, sugarcane and cotton crops resulted in a reduction of 
+area planted to coarse cereals and groundnut. The share of wheat, cotton, fruits and 
+vegetables and condiments and spices in the total value of crop output increased from 
+6.67 per cent, 3.22 per cent, 14.11 per cent and 2.17 per cent, respectively in TE 1970-71 to 
+9.68 per cent, 5.15 per cent, 27.77 per cent and 5.45 per cent, respectively in TE 2020-21. 
+Further, the share of rice, coarse cereals and pulses in the total value of crop output has 
+decreased from 17.26 per cent, 8.93 per cent and 8.39 per cent, respectively in TE 1970-
+71 to 13.96 per cent, 3.78 per cent and 5.26 per cent, respectively in TE 2020-21. The area 
+for cotton increased from the 1980s and constituted about 5 per cent of the total value of 
+crop output in recent years. Meanwhile, the annual yield growth during 1967-1968 to 
+2020- 2021 for major crops was low. 
+ 
+2022                                                                      Vinod Kumar 
+ 25 
+ 
+International comparisons based on Food and Agriculture Organization (FAO) data for 
+the year 2019 (Agricultural Statistics at a Glance, 2021) show that yield per hectare of rice 
+was 7060 kg in China and 5837 kg in Indonesia against the all-India average of 4058 kg. 
+Similarly, the yield of wheat was 5630 kg in China and 7743 kg in France against the all-
+India average of 3533 kg. In case of pulses, yield per hectare was 2050 kg in Canada 
+against the all-India average of 697 kg only. Hence, there is potential for enhancing the 
+yield of major crops through better soil and water management, profitable crop rotation, 
+innovative marketing, genetic engineering, and investment in farm education, research 
+and development and rural infrastructure. It may be concluded that there is also a need 
+to improve productivity of small and marginal farmers through development and 
+implementation of small holding farm technologies. The regenerative agriculture through 
+suitable integrated farming system (IFS) models is the need of the hour to improve soil 
+health, make agriculture profitable and sustainable in the long run. 
+ 
+WAY FORWARD 
+ 
+Crop diversification towards oilseeds, pulses and horticulture needs to be given priority 
+by addressing the core issues of irrigation, investment, credit and markets in their 
+cultivation. While the Government has adopted the use of MSP as signal to encourage 
+crop diversification, there is also a need for coordinated action from the State 
+Governments to facilitate the shift to high value and less water guzzling crops to enable 
+realization of the objective of doubling farmers’ income in a sustainable way. Research 
+shows that every rupee spent on agricultural research and development, yields better 
+returns compared to returns on money spent on subsidies or other expenditures on 
+inputs. The increase in agriculture research and development (R&D), from the present 
+0.65 per cent of GDP to at least one per cent, therefore, may improve productivity in crop 
+and allied sectors. Further, integrated farming on small farm holdings – crop, horticulture, 
+household dairy, backyard poultry, small pond-culture, and home-grown ducks – will cross-
+hold risks and pave the way for farmer doubling his income erelong. Sustainability of 
+agricultural growth is assured thus through heavy capital investments in climate resistant 
+technologies, cashing in carbon credits sooner than later. 
+ 
+2022                                                        Agricultural Growth                                                                        26 
+ 
+ 
+REFERENCES 
+ 
+Bhalla, G.S., and G. Singh (2001), Indian Agriculture: Four Decades of Development. New 
+Delhi, India: Sage Publications. 
+Bhalla, G.S., and G. Singh (2009), “Economic Liberalization and Indian Agriculture: A 
+Statewise Analysis.” Economic and Political Weekly 44 (52): 34-44.  
+Birthal, P. S., P. K. Joshi, and A. Gulati (2005), Vertical Coordination in High-Value Food 
+Commodities: Implications for Smallholders. MTID Discussion Paper No. 85. 
+Washington, DC: International Food Policy Research Institute. 
+Chand, R., P. Shinoj, A. Gulati, and K. Ganguly (2011), “Managing Food Inflation in India: 
+Reforms and Policy Options”, Policy Brief 35, National Center for Agricultural Economics 
+and Policy Research, New Delhi 
+Chand, R., S.S. Raju, and L.M. Pandey (2007), “Growth Crisis in Agriculture: Severity and 
+Options at National and State Levels.” Economic and Political Weekly Vol.42, No.26, 
+pp.2528-2533.  
+Chand, Ramesh and Pramod Kumar (2004), “Determinants of Capital Formation and 
+Agriculture Growth: Some New Explorations”, Economic & Political Weekly, Vol.39, 
+No.52, pp.5611-16. 
+Chand Ramesh (2017), "Doubling Farmers' Income: Rationale, Strategy, Prospects and 
+Action Plan", NITI Policy Paper No. 1, NITI Aayag, GoI. 
+Gollin, D., S. Parente, and R. Rogerson (2002), “Role of Agriculture in Development”, The 
+American Economic Review, Vol.92, No.2, pp.160-164.  
+Joshi, P. K., A. Gulati, P. S. Birthal, and L. Tewari (2004), “Agriculture Diversification in 
+South Asia: Patterns, Determinants and Policy Implications”, Economic and Political 
+Weekly, Vol.39, No.24, pp.2457–2467. 
+Government of India (2007), Report of the Steering Committee on Agriculture and Allied 
+Sectors for Formulation of the Eleventh Five Year Plan (2007-08), Planning Commission, 
+April 15. 
+Government of India,  National Statistical Office, Ministry of Statistics and Programme 
+Implementation, New Delhi. 
+Government of India (2022), Agricultural Statistics at a Glance, 2021, Ministry of 
+Agriculture & Farmers Welfare Department of Agriculture & Farmers Welfare, 
+Directorate of Economics & Statistics, 17 May. 
+Mahendra Dev, S. (1987), “Growth and Instability in Foodgrains Production: An Inter-
+State Analysis”, Economic and Political Weekly, Vol.22, No.39, pp.A82-A92.  
+Mahendra Dev, S. (2000), “Economic Reforms, Poverty, Income Distribution and 
+Employment”, Economic & Political Weekly, Vol.35 No.10, pp. 823-35. 
+2022                                                                      Vinod Kumar 
+ 27 
+ 
+Naik, G., M. Qaim, A. Subramanian, and D. Zilberman (2005), “Bt Cotton Controversy, 
+Some Paradoxes Explained”, Economic and Political Weekly, Vol.40, No.15, pp.1514-
+1517.  
+Rao, C H Hanumantha (2003), “Reform Agenda for Agriculture”, Economic & Political 
+Weekly, Vol.21, No.29, pp.1943-48. 
+Rao, V.M. (1996), “Agricultural Development with a Human Face: Experiences and 
+Prospects.” Economic and Political Weekly, Vol.31, No.26, pp. A50-A62.  
+RBI (2021), Handbook of Statistics on Indian States, Reserve Bank of India, Mumbai. 
+ 
+Roy, D., and A. Thorat (2008), “Success in High-Value Horticultural Export Markets for 
+the Small Farmers: The Case of Mahagrapes in India”, World Development, Vol. 36, 
+No.10, pp.1874-1890. 
+Vaidyanathan, A. (2010), Agricultural Growth in India, Role of Technology, Incentives, 
+and Institutions. New Delhi, India: Oxford University Press.  
+Vyas, V. S. (2001), “Agriculture: Second Round of Economic Reforms”, Economic & 
+Political Weekly, Vol.36, No.14, pp.829-836. 
+ 

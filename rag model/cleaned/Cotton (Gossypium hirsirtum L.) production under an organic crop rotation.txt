@@ -1,0 +1,48 @@
+### DOCUMENT INFO  
+- **Title/Topic:** Cotton (Gossypium hirsutum L.) production under an organic crop rotation system and weather vagaries in the humid tropics  
+- **Type:** Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed:**  
+  - Continuous cropping with/without organic fertilizer  
+  - Crop rotation with/without organic fertilizer (preceding crops: sesame and soybeans)  
+  - Conventional cropping (inorganic fertilizer + herbicides)  
+- **Crops mentioned:** Cotton, soybean, sesame  
+- **Regions covered:** Humid tropics (Abeokuta, Nigeria)  
+
+### KEY FINDINGS  
+- **Yield improvements:**  
+  - Cotton in rotation systems (CS3, CS4) and continuous cropping with organic fertilizer (CS2) showed higher boll count (22.3–24.3/plant), seed weight (16.0–19.3 g), and seed yield (631.96–677.88 kg/ha) compared to continuous cropping without fertilizer (CS1).  
+  - Soybean as a preceding crop improved cotton yield due to nitrogen fixation.  
+- **Soil health benefits:**  
+  - Crop rotation enhanced nutrient recycling and soil microbial diversity.  
+  - Organic fertilizer reduced nutrient leaching/volatilization compared to inorganic inputs.  
+- **Disease reduction:**  
+  - Rotation systems lowered soil-borne disease prevalence by reducing pathogen buildup.  
+- **Economic impact:**  
+  - Organic rotation systems (CS3, CS4) and continuous organic fertilization (CS2) are viable for smallholders, reducing reliance on agrochemicals.  
+
+### NUMERICAL DATA/TABLES  
+- **Weather data (2019 vs. 2020):**  
+  - Rainfall: 693.1 mm (2019) vs. 493.3 mm (2020).  
+  - Rainy days: 53 (2019) vs. 32 (2020).  
+- **Soil properties:**  
+  - Loamy sand texture (except CS1: sandy).  
+  - Slightly acidic to alkaline pH (7.4 highest in CS2/CS4).  
+  - Low N, P, K, and organic carbon across systems.  
+- **Yield metrics (2019):**  
+  - CS3 (rotation + organic): 675.08 kg/ha seed yield.  
+  - CS4 (rotation without organic): 677.88 kg/ha.  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers:**  
+  - Adopt cotton-soybean/sesame rotations with (CS3) or without (CS4) organic fertilizer.  
+  - Use continuous organic fertilization (CS2) if rotation is not feasible.  
+  - Implement near real-time climate information services to mitigate weather risks.  
+- **Best practices for crop rotation:**  
+  - Include legumes (e.g., soybean) to boost soil nitrogen.  
+  - Combine rotation with organic amendments for soil health.  
+  - Avoid monocropping to reduce disease pressure.  
+
+---  
+*Output cleaned for RAG: Citations, page numbers, and navigation text removed.*

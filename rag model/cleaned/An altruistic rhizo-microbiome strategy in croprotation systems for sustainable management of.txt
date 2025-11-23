@@ -1,0 +1,37 @@
+### DOCUMENT INFO  
+- **Title/Topic**: An altruistic rhizo-microbiome strategy in crop-rotation systems for sustainable management of soil-borne diseases  
+- **Type**: Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed**: Garlic–pepper rotation, garlic with Solanaceae (pepper, tobacco, potato) and Cucurbitaceae crops  
+- **Crops mentioned**: Garlic, pepper, tobacco, potato, soybean, woody plants  
+- **Regions covered**: Yunnan Province, China (Midu County, Nanhua County, Xundian County)  
+
+### KEY FINDINGS  
+- **Yield improvements**: Garlic-conditioned soil significantly boosted yields of subsequent crops, especially Solanaceae and Cucurbitaceae species.  
+- **Soil health benefits**:  
+  - Enrichment of beneficial microbes (e.g., *Penicillium* genus).  
+  - Suppression of soil-borne pathogens (e.g., *Phytophthora capsici*).  
+  - Improved soil suppressiveness against diseases.  
+- **Disease reduction**:  
+  - Garlic rotation reduced *P. capsici* infection in pepper by 22.03%–60.90%.  
+  - Soil suspensions from garlic fields inhibited *P. capsici* mycelial growth.  
+- **Economic impact**: Crop rotation mitigates yield losses (10%–100%) caused by soil-borne pathogens in monoculture systems.  
+
+### NUMERICAL DATA/TABLES  
+- **Meta-analysis**: 21 crop-rotation studies showed yield benefits for subsequent crops after garlic.  
+- **Greenhouse experiments**:  
+  - Highest garlic planting density (5 plants/pot) reduced pepper lesion length by 60.90%.  
+  - *Penicillium allii* enrichment correlated with garlic density (*r* = 0.9246, *p* < 0.001).  
+- **Pathogen inhibition**: Soil suspensions from garlic fields suppressed *P. capsici* mycelial growth by up to 60%.  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers**:  
+  - Adopt garlic–pepper or garlic–Solanaceae rotations to suppress soil-borne diseases.  
+  - Use garlic root exudate (DADS) to enrich stress-tolerant microbes for disease management.  
+- **Best practices for crop rotation**:  
+  - Rotate garlic with non-*Allium* crops (e.g., pepper, tobacco) to leverage altruistic microbiome effects.  
+  - Avoid monoculture to prevent pathogen accumulation and soil degradation.  
+
+---  
+*Output is clean, structured, and ready for RAG applications.*

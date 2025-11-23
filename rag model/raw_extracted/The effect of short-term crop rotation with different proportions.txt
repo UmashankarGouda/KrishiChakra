@@ -1,0 +1,803 @@
+1
+156097
+SOIL SCIENCE ANNUAL
+2022, 73(4), 156097
+https://doi.org/10.37501/soilsa/156097
+© 2022 by the authors. Licensee Soil Science Society of Poland. This article is an open
+access article distributed under the terms and conditions of the Creative Commons
+Attribution (CC BY NC ND 4.0) license (https://creativecommons.org/licenses/by-nc-nd/4.0/).
+*
+The effect of short-term crop rotation with different proportions 
+of sunﬂ ower on cellulolytic activity of the soil
+Zinaida Dehtiarova*
+State Biotechnological University, Faculty of Agronomy and Plant Protection, Department of Farming and Herbology named after 
+O. M. Mozheyko, Kharkiv district, Kharkiv region, p/о Dokuchaevske, 62483, Ukraine
+PhD student, Z. Dehtiarova, zinaidasamosvat@gmail.com, ORCID ID: https://orcid.org/0000-0002-1055-4811 
+Received: 2022-04-21
+Accepted: 2022-10-27
+Published online: 2022-10-27
+Associated editor: E. Błońska
+Abstract
+The article presents the results of the 2020‒2021 research carried out in the experimental ﬁ eld of 
+Kharkiv National Agrarian University named after V. V. Dokuchaev, located in the area of the Left 
+Bank Forest-Steppe of Ukraine. We aimed to ﬁ nd out whether the cellulosolytic activity of the soil 
+depends on the increase in the proportion of sunﬂ ower in short-term crop rotations. The climate of 
+the region is moderately continental with insuﬃ  cient and unstable level of hydration. The inﬂ uence 
+of short-term crop rotations with different sunﬂ ower saturation on the degree of cellulosolithic ac-
+tivity of the arable soil layer were studied. The study of the general cellulosolytic activity of the soil 
+was carried out by the method that is based on the intensity of cellulose decomposition. Probably 
+activity of cellulosolithic microorganisms depends not only on the weather and climatic conditions 
+and certain agrophysical indicators of soil fertility, but also on the amount of plant remains left by 
+the sunﬂ ower. The higher the percentage of saturation of crop rotation with sunﬂ ower is the higher 
+is the intensity of the decomposition of the canvas. On average, over the years of research, the high-
+est intensity of development of cellulose-destroying microorganisms (28.6%) in the arable soil layer 
+(0‒30 cm) was in the ﬁ eld of ﬁ ve-ﬁ eld crop rotation, where the share of sunﬂ ower was 60%. Al-
+though clean fallow contributes to the accumulation of moisture in the soil, practically the absence 
+of plants does not ensure its cellulosolithic activity. Research showed that fallow and sunﬂ ower 
+have different effects on soil moisture. The crop rotation ﬁ eld with 20% sunﬂ ower saturation in the 
+0-30 cm layer of soil contained the maximum – 15.6% of moisture.
+Keywords:
+Cellulosolithic activity of the soil
+Typical chernozem
+Microorganisms
+Crop rotation
+Sunﬂ ower saturation
+1. 
+Introduction
+Soil microorganisms play a key role in preserving and 
+restoring soil fertility. This is due to the mineralization of or-
+ganic material into available plant nutrients. Therefore, it is 
+important to maintain a high microbiological activity in the 
+soil (Volkohon, 2005; Yan et al., 2015). The direction and pace of 
+transformation of organic material entering the soil are limited 
+by the activity of soil microorganisms (Manzoni and Porporato, 
+2009). It is precisely with this part of the soil biota where trans-
+formations of organic compounds take place. (Shykula and De-
+mydenko, 2000; Bastida et al., 2006; Stuart Chapin et al., 2009). 
+Plant remains play an important role in improving the mor-
+phological and genetic properties of chernozem. Their amount 
+is directly related to the action of abiotic factors of the soil en-
+vironment: temperature, moisture, nutrient availability (De-
+mydenko, 2005). The period of biological activity of the soil can 
+be extended due to the optimal agrophysical condition, pres-
+ence of a layer of mulch on the soil surface and ideal perfect 
+structure of the arable soil layer (0–30 cm). At the same time, 
+the soil moisture should not be lower than the wilting moisture 
+(Demydenko, 2013). This is especially important for the driest 
+period of the year in Ukraine (July–August).
+Cellulolytic activity is an indicator of soil biological activ-
+ity (Iutynska, 2006; Varbanets and Borzova, 2010; Veum et al., 
+2014). There are representatives of the genera Pseudomonas, 
+Cytophaga, Sporocytophaga, Cellvibrio, Vibrio, Polyangium, 
+Sporangium, as well as bacteria of Actinomycetaceae species 
+and micromycetes among cellulose-destroying microorgan-
+isms (Hatami et al., 2008; Vostrykova, 2012). Decomposing cel-
+lulose, they secrete into the environment some enzymes that 
+contribute to creation of humic substances and the formation 
+of structural aggregates. The more intense this process is, the 
+faster the cycle of elements occurs and the better the plant are 
+provided with nutrients (Kurdysh, 2009; Gupta et al., 2012; 
+Hepenko, 2013; Kovalov et al., 2015). Both anthropogenic and 
+natural origin various factors influence soil microbial activity. 
+(Lyko et al., 2017). Climate influence microbial communities by 
+determining both temperature and humidity, which influence 
+microbial communities and activities (Prescott et al., 2004; 
+2
+SOIL SCIENCE ANNUAL
+Z. Dehtiarova
+156097
+Hackl et al., 2005; Fenoy et al., 2016). The available soil mois-
+ture is important for the development of microorganisms.
+The study of the cellulolytic activity of the soil makes it 
+possible to understanding deeper and reveal regularities in 
+the processes of organic matter transformation. At this an-
+thropogenic impact on the soil and its properties are taken 
+into account (Symochko, 2008). Crop rotation, precursors and 
+technologies of growing crops including sunflower have a sig-
+nificant influence on cellulolytic activity. As the intensity of 
+microorganisms increases, the productivity of crops increases 
+too, organic matter accumulates in the soil, and its physical and 
+chemical properties and fertility improve as well (Zinchenko, 
+2001; Boiko et al., 2005; Iutynska, 2006). 
+Organic remains of plant origin are transformed in the 
+soil under the influence of microorganisms. This ultimately 
+leads to its humification and complete mineralization, with 
+the formation of intermediate products that can have a physi-
+ological effect on the next crop of rotation (Iutynska, 2006). 
+Although soil microorganisms play a central role in the soil 
+processes we are only beginning to understand how microbial 
+communities are shaped by environmental factors (Brockett 
+et al., 2012).
+To date, the problem of the interrelationship between 
+crops and soil microorganisms has been insufficiently studied. 
+It becomes especially relevant due to changes in weather and 
+climatic conditions and needs to be solved by crop rotation fac-
+tors. The purpose of this study is to determine the effect on the 
+cellulolytic activity of the soil of short-term crop rotations with 
+different percentages of sunflower.
+2. 
+Materials and methods
+Studies to determine the cellulolytic activity of the soil in 
+sunflower crops were performed based on the chair of Farming 
+named after O. M. Mozheiko of the experimental field of Kharkiv 
+National Agrarian University named after V. V. Dokuchaev. De-
+termining the intensity of decomposition of the canvas objec-
+tively reflects the state and activity of the microbiota in specific 
+soil and climatic conditions. The place of research is located in 
+the eastern part of the Kharkiv region of Ukraine. The complex-
+ity of the climatic conditions of the Kharkiv region of Ukraine 
+for agriculture is also revealed in not existing guaranteed an-
+nual sufficient moisture apart from it in certain years warm re-
+sources are much lower than are needed for crops. According to 
+the meteorological station of KhNAU, during the growing season 
+of sunflower (May–September) the average long-term precipita-
+tion is 278 mm, air temperature + 17.7°С. The peculiarity of the 
+conditions for 2020–2021 research in the period of exposure of 
+the canvas was insufficient moisture. During the vegetation pe-
+riod of sunflower in 2020, precipitation was 114 mm less than 
+normal, and the average air temperature was 19.8°C, which is 
+2.1°C above the climatic norm. Atmospheric precipitation of the 
+vegetation period of sunflower in 2021 had a torrential charac-
+ter in June – 81.9 mm, which is 22.9 mm higher than the average 
+long-term norm. In July and August, precipitation was lower by 
+long-term averages of 51.5 and 44.2 mm, respectively. Precipita-
+tion in 2021 was 197.7 mm, which is 81.3 mm less than the long-
+term norm, and the excess of the average daily air temperature 
+by 2.5°C compared to the perennial. Therefore, the vegetation of 
+sunflowers in this period took place in relatively unfavorable 
+conditions.
+The soil cover of the experimental field is represented by 
+typical chernozem heavy loam on loess-like loam (Chernozem 
+Haplic). This soil is characterized by good physical and mechani-
+cal, agrochemical, and some chemical properties, fairly high 
+reserves of nutrients available to plants, high humus content, 
+and intensive biological activity. The arable layer of the soil 
+(0–30 cm) contains humus (according to Tyurin) – 4.9–5.1%, eas-
+ily hydrolyzable nitrogen (according to Kornfield) – 81 mg/kg of 
+soil, mobile forms of phosphorus and potassium (according to 
+Chirikov) – 100 and 200 mg/kg of soil. Content of exchangeable 
+cations: calcium – 37.8%, magnesium – 6.6%, sodium – 0.49%, po-
+tassium – 0.5%, hydrogen – 21 mg-equiv./kg soil. The soil reaction 
+‒ pH: aqueous – 7.0, salt – 5.2–5.6. Groundwater lies at a depth of 
+about 18 m (Tykhonenko and Dehtiarov, 2016). Chernozem soils 
+are characterized by a fairly high cellulolytic activity (70–80%) 
+(Ellanska et al, 2008).
+Variants of short-term (5-field) crop rotations with differ-
+ent proportions of sunflower in the structure of the sown areas 
+were studied (Table 1). Сontrol variant ‒ fallow.
+Sunflower hybrid – Cruiser LG59580. The size of the sowing 
+area is 750 m2, the accounting area is 100 m2. The technology of 
+sunflower cultivation is generally accepted for the conditions of 
+the Forest-Steppe zone of Ukraine. After harvesting the precur-
+sor, disking is carried out to a depth of 6–8 cm and plowing to 
+a depth of 25–27 cm. In the spring, harrowing with heavy har-
+rows, pre-sowing cultivation to a depth of 6–8 cm. For the main 
+fertilization, nitrophosk is used at the rate of 400 kg/ha. Sunflow-
+er is sown at a soil temperature of 8–10°С. The rate of sowing is 
+50–55 thousand seeds per hectare. The depth of seed wrapping 
+is 6–8 cm. The width of the rows is 70 cm. Protection of crops 
+from weeds is carried out by cultivation and application of the 
+herbicide Harness (2 l/ha). Harvesting was carried out by direct 
+combining at a seed moisture content of 10–12% (Tishchenko et 
+al., 2015).
+Table 1
+Crop rotation structure (in %)
+Crop rotation structure
+Pea
+Winter wheat
+Corn
+Winter rye
+Sunﬂ ower
+20
+20
+20
+20
+20
+20
+20
+‒
+20
+40
+‒
+20
+‒
+20
+60
+3
+SOIL SCIENCE ANNUAL
+Cellulolytic activity of typical chernozem
+156097
+Studies were performed by a method based on the inten-
+sity of cellulosolytic decomposition. This gives a fairly accurate 
+idea of the effect of sunflower cultivation in short-term crop 
+rotations on the intensity of decomposition of plant residues in 
+the soil (Béguin and Aubert, 1994; Lynd et al., 2002). To deter-
+mine the intensity of cellulose decomposition, a flax tissue mea-
+suring 10 cm was attached to the polymer film. The film was 
+sterilized with alcohol and the tissue in an autoclave. A cut is 
+made in the soil and a canvas is attached to its vertical wall. On 
+the other hand, polyethylene is pressed by the soil. The canvas 
+was laid every 10 cm to a depth of 30 cm. Fabric applications 
+are left in the soil for 45 days. The experiment was repeated 
+three times. After 45 days, the cloth is taken out, washed from 
+the soil, dried, and weighed. The fact of decomposition of the 
+canvas was determined by the loss of its initial mass. The for-
+mula was used to determine cellulolytic activity based on mass 
+loss (in percent):
+ͳԟʹ
+ͳ
+έͳͲͲ 
+Equation 1
+where: m1 ‒ the starting mass, m2 ‒ the mass of the remaining 
+fabric. To assess the cellulolytic activity of the soil used the scale: 
+10% – very weak, 10–30 – weak, 30–50 – medium, 50–80 – strong, 
+and over 80% – very strong.
+Soil moisture was determined by the thermostatic weight 
+method (Soil survey standard test method, 1994). The method is 
+based on removing soil moisture by oven-drying a soil sample 
+until the weight remains constant. The moisture content (%) 
+is calculated from the sample weight before and after drying. 
+The aluminum containers are weighed beforehand. Containers 
+with soil samples are closed with a lid and weighed again with 
+an accuracy of 0.1 g. Next, the open boxes together with the lid 
+are placed in a drying cabinet and the soil is dried to a constant 
+weight (at a temperature of 105°C). After drying, the containers 
+are removed from the drying cabinet and weighed again, ob-
+taining the value of the weight of completely dry soil.
+The formula for calculating moisture:
+ʛʠǡΨα ʹԟ͵
+͵ԟͳ έͳͲͲ
+ 
+Equation 2
+where: W1 ‒ the weight of the container (g), W2 ‒ the weight 
+of moist soil + container (g), and W3 ‒ the weight of dried soil + 
+container (g).
+The statistical assessment of the reliability of the differences 
+in the measurement results was carried out using the least sig-
+nificant difference (LSD0.95) by comparing the calculated Fisher 
+criterion with the theoretical one. If the calculated criterion is 
+greater than the theoretical one, it is possible to conclude the 
+statistical reliability of the entire experiment.
+3. 
+Results and discussion
+Studies of the cellulolytic activity of typical chernozem in 
+2020 showed that the intensity of cellulose-destroying microor-
+ganisms was very weak. In the process of estimating the inten-
+sity of cellulose decomposition, the dependence of this process 
+on the share of sunflower in crop rotation was revealed. The 
+higher the percentage of crop rotation sunflower saturation 
+is, the higher of the intensity of canvas decomposition. In plots 
+with sunflower crops, there was an increase in cellulolytic activ-
+ity of the soil in the layer of 10–20 cm by an average of 37% and 
+20–30 cm by 59% compared to the surface layer of soil of 0–10 
+cm (Table 2).
+In the plot with 60% sunflower saturation, the highest activ-
+ity of cellulose decomposition was observed in all soil layers. In 
+the arable soil layer (0–30 cm) of this variant, the level of bio-
+logical activity was 5.1%. Saturation of rotation with grain crops 
+up to 60% and sunflower at 40% causes a decrease in cellulose 
+decomposition activity. In the surface layer of the soil (0–10 cm) 
+it was equal to 2.2%, 10–20 cm – 2.9%, and 20–30 cm – 4.1%. The 
+use of rotation with a share of grain crops up to 80% and sun-
+flower 20% negatively affected the intensity of decomposition of 
+the canvas in all soil layers. Due to the favorable combination of 
+moisture content in the soil in 2021 (compared to 2020) (Table 3) 
+and the availability of sufficient reserves of energy material, the 
+conditions for the activity of microorganisms in all research ar-
+eas have significantly improved. The crop rotation areas with 
+sunflower saturation from 20 up to 60% had an average inten-
+sity of cellulose decomposition with increasing depth of the ar-
+able layer. Higher cellulolytic activity of the soil was observed at 
+saturation of crop rotations with sunflower up to 60%.
+This indicator is the lowest in the control variant (Table 4). 
+In the plot with clean fallow, the maximum cellulolytic activity 
+of the soil (14.6%) was recorded in the lower (20–30 cm) layer, 
+and in the layers 0–10 and 10–20 cm, this figure decreased to 
+4.8 and 11.3%, respectively. The highest transformation of plant 
+Table 2
+The intensity of cellulose decomposition in sunflower crops, 2020 (in % to initial weight)
+The share of sunﬂ ower in crop 
+rotation, %
+The intensity of decomposition of the canvas
+a layer of soil, cm
+0–10
+10–20
+20–30
+0–30
+fallow (control)
+1.7
+2.1
+2.5
+2.1
+20
+2.0
+2.9
+3.0
+2.6
+40
+2.2
+2.9
+4.1
+3.1
+60
+3.8
+5.6
+5.8
+5.1
+LSD0.95
+1.9
+4
+SOIL SCIENCE ANNUAL
+Z. Dehtiarova
+156097
+residues (66.4%) was recorded in the soil layer of 20–30 cm in 
+the area with crop rotation, where the share of sunflower is 
+60%. For 45 days, the decrease in tissue weight to the initial in 
+the soil layers 0–10 and 10–20 cm was: 43.3 and 46.5%. In the 
+crop rotation field with 20% sunflower saturation, the intensity 
+of cellulose decomposition was increased from very weak (4.8%) 
+in the soil layer 0–10 cm, weak (11.3%) in the layer 10–20 cm to 
+medium (53.1%) in the soil layer 20–30 cm. On average, over the 
+years of research, the highest intensity of cellulolytic microor-
+ganisms in the arable soil layer (0–30 cm) occurred in the field of 
+five-year crop rotation, where the share of sunflower was 60% 
+(28.6%) (Fig. 1). Crop rotations with sunflower saturation of 20 
+and 40% had a slightly smaller effect on the intensity of cellulose 
+decomposition: 13.3 and 23.6%. The lowest figure was in crop 
+rotation with fallow (6.2%), which can be explained by the low 
+amount of crop residues.
+The obtained data coincide with the conclusions of Hepenko 
+(2013), that crop rotations with row crops, which leave behind 
+coarse residues (including sunflower) and slowly decompose 
+provide a high intensity of cellulose decomposition (15.8%). The 
+Table 3
+The moisture of the studied soils (in %)
+The share of sunﬂ ower
+in crop rotation, %
+Soil moisture
+a layer of soil, cm
+the year is 2020
+the year is 2021
+0–10
+10–20
+20–30
+0–30
+0–10
+10–20
+20–30
+0–30
+fallow (control)
+13.4
+10.5
+15.7
+13.2
+14.0
+17.3
+19.6
+17.0
+20
+11.0
+14.7
+16.4
+14.0
+15.6
+17.7
+18.3
+17.2
+40
+11.6
+13.3
+15.3
+13.4
+15.5
+15.7
+18.2
+16.4
+60
+9.8
+10.2
+14.6
+11.5
+15.9
+17.3
+15.5
+16.2
+LSD0.95 
+0.8
+3.15
+Table 4
+The intensity of cellulose decomposition in sunflower crops in 2021 (in % to initial weight)
+The share of sunﬂ ower
+in crop rotation, %
+The intensity of decomposition of the canvas
+a layer of soil, cm
+0–10
+10–20
+20–30
+0–30
+fallow (control)
+4.8
+11.3
+14.6
+10.2
+20
+8.2
+30.2
+53.1
+30.5
+40
+41.4
+44.4
+46.9
+44.1
+60
+43.3
+46.5
+66.4
+52.1
+LSD0.95
+1.2
+Fig. 1. The intensity of the decomposition of the 
+canvas on average for 2020‒2021 (20%, 40%, 60% 
+– the share of sunflower in crop rotation)
+5
+SOIL SCIENCE ANNUAL
+Cellulolytic activity of typical chernozem
+156097
+lowest cellulolytic activity is revealed in crop rotation with clean 
+fallow (9.4%). In the studies of Kaziuta and Yaremenko (2020), it 
+was shown that cellulose-destroying activity decreases with in-
+creasing depth, and this contradicts our data. The maximum cel-
+lulose activity (18%) of chernozem under sunflower is revealed 
+in a layer of 0–10 cm. Deeper, this figure decreases two or more 
+times, and cellulose activity is assessed as very weak.
+As mentioned above, moisture reserves play an important 
+role in the cellulolytic activity of the soil. Studies have shown 
+that clean fallow and sunflower have different effects on soil 
+moisture (Fig. 2). The crop rotation field with 20% sunflower 
+saturation in the 0–30 cm layer of soil contains a maximum of 
+– 15.6% of moisture. A slightly worse result was observed in 
+a field with clean fallow. In this variant, the arable soil layer 
+was provided with moisture at the level of 15.1%. In the 30-cen-
+timeter layer of soil, the least moisture was left after sunflow-
+er with a saturation of crop rotation of 40 and 60%: 14.9 and 
+13.9% respectively. This is because weather conditions (high 
+air temperature and lack of precipitation) cause severe drying 
+of the soil under this crop.
+These results are confirmed by data from other research-
+ers. In the case when sunflower occupies 50% of the crop rota-
+tion area, the moisture content of the soil layer 0–150 cm is the 
+lowest – 1203 m3/ha. With a decrease in the share of sunflower 
+from 50.0 to 33.3, 25.0, 20.0, and 14.3% there is an increase in 
+the accumulation of precipitation in the soil, in general on crop 
+rotations, by 47, 49, 42 and 58 m3/ha (Hanhur, 2019). The ac-
+tivity of soil microbiota is directly proportional to the condi-
+tions of moisture in the arable layer (0–30 cm) of soil. There 
+is a tendency to reduce the decomposition of linen fabric with 
+the deterioration of the intra-soil microclimate. This is due to 
+arid conditions with progressive dehydration and compaction 
+of the arable layer of typical chernozem (Tsyliuryk et al., 2017; 
+Tsentylo, 2019). 
+So, the main principle of creation crop rotations is scien-
+tifically based placement and rotation of field crops. Previous 
+research showed that having a higher diversity of crops in 
+a rotation might increase crop productivity through ecological 
+stability and soil resilience (Gaudin et al., 2015; Woźniak and 
+Soroka, 2018). Modern realities are such that the constant cul-
+tivation of sunflower in crop rotation is quite often practiced. 
+Most farms abandon the scientifically based technologies of 
+their cultivation for the sake of profit maximization. Nowadays, 
+on most farms, it returns to its previous place after 2‒3 years. 
+Mono-cropping exosts soil nutrients and reduces of coefficient 
+nutrient utilization and microbial resistance to environmental 
+changes (Lithourgidis et al., 2006; McDaniel et al., 2014; Li et al., 
+2019). Studies show that the use of disease-resistant varieties 
+and hybrids can come back the return period of sunflower to 
+five years (Lebid, 2006). 
+Crop rotation is a major cropping management system used 
+in agroecosystems. Crop rotation is effective due to the improved 
+richness of residual roots and litter in cropping soils which may 
+improve crop yields (Smith et al., 2008). Crop rotations increase 
+soil fertility and tend to promote microbial diversity, and it has 
+been hypothesized that crop rotations can enhance disease sup-
+pressive capacity, either through the influence of plant diversity 
+impacting soil bacterial composition or through the increased 
+abundance of disease suppressive microorganisms (Peralta et 
+al., 2018).
+Increasing dependence on a small number of crops, such as 
+sunflower, is leading to reductions in agricultural biodiversity 
+(McDaniel et al., 2014). Plant-microbe interactions are not only 
+crucial for a better understanding of plant growth and health 
+but also for sustainable agriculture and environmental protec-
+tion (Philippot et al., 2013).
+The decomposition of cellulose is significantly influenced 
+by hydrothermal conditions, soil structure, the chemical com-
+Fig. 2. Moisture reserves in the soil, mm; on 
+average for 2020–2021 (20%, 40%, 60% – the 
+share of sunflower in crop rotation).
+6
+SOIL SCIENCE ANNUAL
+Z. Dehtiarova
+156097
+position of organic material, and other factors. Soil moisture 
+has a significant impact on the growth and development of 
+crops (Adl, 2003), as well as on the biological activity of the soil 
+(Paul et al., 2003). The temperature of 30°C and moisture of 
+80–90% out of the total moisture content are the optimal con-
+ditions for the mineralization of plant residues (Sozinov and 
+Prister, 1994). Excessive moisture content in the soil leads to 
+increased activity of microorganisms (Kozlowski, 1984; Skopp 
+et al., 1990), and lack of reduces it (Bottner, 1985; Kieft et al., 
+1987). Temperature is important for the intensity of microbiota 
+development (Snitynskyi et al., 2014). At low temperatures and 
+moisture, the biological decomposition of the substrate slows 
+down, increasing temperature and moisture stimulates its in-
+creage. However, high moisture at a favorable temperature 
+can inhibit the aerobic direction of its development (Sozinov 
+and Prister, 1994). At sufficient moisture, but low temperature, 
+the destruction of organic residues also slows down. Significant 
+fluctuations of soil temperature activate the mineralization 
+processes, as the physicochemical properties of water-soluble 
+organic substances change increase (Sozinov and Prister, 1994; 
+Voroney, 2007). The high dependence of cellulolytic activity 
+on weather and climatic conditions is confirmed by correla-
+tion analysis (r=0.76) (Prescott et al., 2004; Kovalov et al., 2015). 
+Soil moisture drastically negatively highly is correlated with 
+the variation in amount of microbial which degrade cellulose. 
+Hackl et al. (2005) also found that soil moisture was an impor-
+tant factor of overall microbial activity.
+It has been noted in some studies that microorganisms 
+destroy cellulose when moisture is low (Bardgett, 2005). De-
+creased activity of cellulose-destroying microorganisms is as-
+sociated with adverse conditions, including high temperatures 
+and low soil moisture. The process of cellulose decomposition 
+is closely related to the biological activity of the soil (Karaca 
+et al., 2010; Stuart Chapin et al., 2009). In this regard, the task 
+of further study of the interrelation between the saturation of 
+short-term crop rotations with sunflower, moisture, and inten-
+sity of microbiological processes in the soil remains actual.
+4. 
+Conclusions
+According to the indicator of the cellulolytic activity of 
+the soil, the possibility of increasing the share of sunflower 
+in short-term crop rotations has been established. Conditions 
+of insufficient soil moisture do not contribute strong cellulose 
+activity. Growing sunflower with an increase in sown area 
+in crop rotation causes the accumulation of coarse residues, 
+thereby increasing the cellulose activity of the soil. At this, the 
+optimal water regime is created by pure steam and sunflower 
+with a share in crop rotation of 20%. However, the cellulose 
+activity of the soil in the field under fallow is low due to the 
+insufficient amount of plant residues, which are used by the 
+microbiome as a nutrient and energy material. Reducing the 
+amount of precipitation negatively affects the intensity of cel-
+lulose decomposition in the surface layers of the soil (0–10 
+cm) and contributes to its high activity in the deeper layers 
+of the soil.
+References
+Adl, S.M., 2003. The ecology of soil decomposition. CABI.
+Bardgett, R., 2005. The biology of soil: a community and ecosystem ap-
+proach. Oxford university press, 232. https://doi.org/10.1093/acprof:
+oso/9780198525035.001.0001 
+Bastida, F., Moreno, J.L., Hernandez, T., García, C., 2006. Microbio-
+logical activity in a soil 15 years after its devegetation. Soil Biol-
+ogy and Biochemistry 38(8), 2503‒2507. https://doi.org/10.1016/
+j.soilbio.2006.02.022 
+Béguin, P., Aubert, J.P., 1994. The biological degradation of cellulose. FEMS 
+microbiology reviews 13(1), 25‒58. https://doi.org/10.1111/J.1574-
+6976.1994.TB00033.X 
+Boiko, P.I., Borodan, V.O., Kovalenko, N.P., 2005. Ekolohichno zbalanso-
+vani sivozminy – osnova biolohichnoho zemlerobstva [Ecologically 
+balanced crop rotations are the basis of organic farming]. Visnyk 
+ ahrarnoi nauky 2, 9–13. (in Ukrainian)
+Bottner, P., 1985. Response of microbial biomass to alternate moist and 
+dry conditions in a soil incubated with 14C-and 15N-labelled plant 
+material. Soil Biology and Biochemistry 17(3), 329–337. https://doi.
+org/10.1016/0038-0717(85)90070-7 
+Brockett, B.F., Prescott, C.E., Grayston, S.J., 2012. Soil moisture is the ma-
+jor factor influencing microbial community structure and enzyme 
+activities across seven biogeoclimatic zones in western Canada. 
+Soil Biology and Biochemistry 44(1), 9‒20. https://doi.org/10.1016/
+j.soilbio.2011.09.003 
+Demydenko, O.V., 2005. Hruntovidnovna aktyvnist silskohospodarskykh 
+kultur [Soil-restoring activity of agricultural crops]. Ahroekolohich-
+nyi zhurnal 2, 37–44. (in Ukrainian)
+Demydenko, O.V., 2013. Fiziolohichna aktyvnist silskohospodarskykh 
+kultur ta vidtvorennia rodiuchosti chornozemiv v ahrotsenozakh 
+[Physiological activity of agricultural crops and reproduction of cher-
+nozem fertility in agrocenoses]. Fiziolohiia i biokhimiia kulturnykh 
+roslyn 45(3), 213–221. (in Ukrainian)
+Ellanska, N.E., Karpenko, O. Yu., Yunosheva, O.P., Khokhlova, I.H., 2008. 
+Aktyvnist mikrobnoho uhrupovannia ryzosfery kukurudzy za ri-
+znykh typiv sivozmin [The activity of the microbial grouping of the 
+rhizosphere of maize in different types of crop rotations]. Silskoho-
+spodarska mikrobiolohiia 7, 29–35. (in Ukrainian)
+Fenoy, E., Casas, J.J., Díaz-López, M., Rubio, J., Guil-Guerrero, J.L., Moyano-
+López, F.J., 2016. Temperature and substrate chemistry as major driv-
+ers of interregional variability of leaf microbial decomposition and 
+cellulolytic activity in headwater streams. FEMS microbiology ecol-
+ogy 92(11). https://doi.org/10.1093/femsec/fiw169, Epub 2016 Aug 10
+Gaudin, A.C., Tolhurst, T.N., Ker, A.P., Janovicek, K., Tortora, C., Martin, 
+R.C., Deen, W., 2015. Increasing crop diversity mitigates weather 
+variations and improves yield stability. PloS One 10(2). https://doi.
+org/10.1371/journal.pone.0113261 
+Gupta, P., Samant, K., Sahu, A., 2012. Isolation of cellulose-degrading bac-
+teria and determination of their cellulolytic potential. International 
+Journal of Microbiology. https://doi.org/10.1155/2012/578925 
+Hackl, E., Pfeffer, M., Donat, C., Bachmann, G., Zechmeister-Boltenstern, 
+S., 2005. Composition of the microbial communities in the mineral 
+soil under different types of natural forest. Soil Biology and Biochem-
+istry 37(4), 661‒671. https://doi.org/10.1016/j.soilbio.2004.08.023 
+Hanhur, V.V., 2019. Ahrobiolohichni osnovy formuvannia sivozmin ko-
+rotkoi rotatsii v Livoberezhnomu Lisosotepu Ukrainy [Agrobiological 
+bases of formation of crop rotations of short rotation in the Left-Bank 
+Forest-steppe of Ukraine]. (Doctor’s thesis). National Scientific Cen-
+ter «Institute of Agriculture of the National Academy of Agricultural 
+Sciences of Ukraine». Chabany. (in Ukrainian)
+Hatami, S., Alikhani, H.A., Besharati, H., Salehrastin, N., Afrousheh, M., 
+Yazdani, Z.J., Jahromi, Z., 2008. Investigation on aerobic cellulolytic 
+bacteria in some of north forest and farming soils. American-Eurasian 
+Journal of Agricultural and Environmental Sciences 3(5), 713–716.
+7
+SOIL SCIENCE ANNUAL
+Cellulolytic activity of typical chernozem
+156097
+Hepenko, O.V., 2013. Tseliulozolitychna aktyvnist gruntu v riznykh ko-
+rotkorotatsiinykh sivozminakh [Cellulolytic activity of soil in diffe-
+rent short-term crop rotations.]. Visnyk Kharkivskoho natsionalnoho 
+ahrarnoho universytetu imeni V. V. Dokuchaieva. Gruntoznavstvo, 
+ahrokhimiia, zemlerobstvo, lisove hospodarstvo, ekolohiia gruntiv, 
+1, 176–180. (in Ukrainian)
+Iutynska, H.O., 2006. Gruntova mikrobiolohiia [Soil microbiology]. Kyiv: 
+Aristei. (in Ukrainian)
+Karaca, A., Cetin, S.C., Turgay, O.C., Kizilkaya, R., 2010. Soil enzymes as 
+indication of soil quality. [In] Soil enzymology 22, 119–148. https://doi.
+org/10.1007/978-3-642-14225-3_7 
+Kaziuta, A.O., Yaremenko, M.O., 2020. Tseliulazna aktyvnist chornozemu 
+typovoho pid soniashnykom [Cellulase activity of typical chernozem 
+under sunflower]. Naukovi zasady pidvyshchennia efektyvnosti sil-
+skohospodarskoho vyrobnytstva, materialy IV Mizhnarodnoi nauko-
+vo-praktychnoi konferentsii [Scientific basis to raise agricultural pro-
+duction effectiveness, Proceedings of the 4th International Scientific 
+and Practical Conference]. Kharkiv: KhNAU, 277–279. (in Ukrainian)
+Kieft, T.L, Soroker, E., Firestone, M.K., 1987. Microbial biomass response 
+to a rapid increase in water potential when dry soil is wetted. Soil 
+ Biology and Biochemistry 19(2), 119–126. https://doi.org/10.1016/0038-
+0717(87)90070-8 
+Kovalov, V.B., Trembitska, O.I., Radko, T.V., 2015. Biolohichna aktyvnist 
+gruntu za orhanichnoi systemy vyroshchuvannia kultur u korotko-
+rotatsiinii sivozmini [Biological activity of the soil under the organic 
+system of growing crops in short-term crop rotation]. Ahropromyslo-
+ve vyrobnytstvo Polissia, 8, 15–20. (in Ukrainian)
+Kozlowski, T.T. (Ed.), 1984. Flooding and plant growth. Orlando: Academic 
+Press.
+Kurdysh, I.K., 2009. Rol mikroorhanizmiv u vidtvorenni rodiuchosti grun-
+tiv [The role of microorganisms in the reproduction of soil fertility]. 
+Zahalna i gruntova mikrobiolohiia 9, 7–32. (in Ukrainian)
+Lebid, Ye. M., 2006. Naukovyi fundament problem stepovoho zemlerob-
+stva [The scientific foundation of the problems of steppe agriculture]. 
+Visnyk ahrarnoi nauky 3–4, 23–25. (in Ukrainian)
+Li, H., Wang, J., Liu, Q., Zhou, Z., Chen, F., Xiang, D., 2019. Effects of con-
+secutive monoculture of sweet potato on soil bacterial community as 
+determined by pyrosequencing. Journal of Basic Microbiology 59(2), 
+181‒191. https://doi.org/10.1002/jobm.201800304 
+Lithourgidis, A.S., Damalas, C.A., Gagianas, A.A., 2006. Long-term yield pat-
+terns for continuous winter wheat cropping in northern Greece. Eu-
+ropean Journal of Agronomy 25(3), 208‒214. https://doi.org/10.1016/
+j.eja.2006.05.003 
+Lyko, D.V., Lyko, S.M., Portukhai, O.I., Bezverkha, O.V., 2017. Tseliulozoli-
+tychna aktyvnist dernovo-pidzolystoho gruntu riznykh biotopiv [Cel-
+lulolytic activity of sod-podzolic soil of different biotopes]. Ahroeko-
+lohichnyi zhurnal 4, 53–57. (in Ukrainian)
+Lynd, L.R., Weimer, P.J., Van Zyl, W.H., Pretorius, I.S., 2002. Microbial cel-
+lulose utilization: fundamentals and biotechnology. Microbiology and 
+Molecular Biology Reviews 66(3), 506–577. https://doi.org/10.1128/
+MMBR.66.3.506–577.2002 
+Manzoni, S., Porporato, A., 2009. Soil carbon and nitrogen mineralization: 
+Theory and models across scales. Soil Biology and Biochemistry 41(7), 
+1355‒1379. https://doi.org/10.1016/j.soilbio.2009.02.031 
+McDaniel, M.D., Tiemann, L.K., Grandy, A.S., 2014. Does agricultural crop 
+diversity enhance soil microbial biomass and organic matter dynam-
+ics? A meta-analysis. Ecological Applications 24(3), 560‒570. https://
+doi.org/10.1890/13-0616.1 
+Paul, K.I., Polglase, P.J., O’Connell, A.M., Carlyle, J.C., Smethurst, P.J., Khan-
+na, P.K., 2003. Defining the relation between soil water content and 
+net nitrogen mineralization. European Journal of Soil Science 54(1), 
+39–48. https://doi.org/10.1046/j.1365-2389.2003.00502 
+Peralta, A.L., Sun, Y., McDaniel, M.D., Lennon, J.T., 2018. Crop rotational 
+diversity increases disease suppressive capacity of soil microbiomes. 
+Ecosphere 9(5), https://doi.org/10.1002/ecs2.2235 
+Philippot, L., Raaijmakers, J.M., Lemanceau, P., van der Putten, W.H., 2013. 
+Going back to the roots: The microbial ecology of the rhizosphere. 
+Nature Reviews Microbiology 11, 789–799. https://doi.org/10.1038/nr-
+micro3109 
+Prescott, C.E., Blevins, L.L., Staley, C., 2004. Litter decomposition in Brit-
+ish Columbia forests: controlling factors and influences of forestry 
+activities. BC J. Ecosyst. Manage, 5(2), 44‒57.
+Shykula, M.K., Demydenko, O.V., 2000. Dyskretnist zminy rivnia rodiu-
+chosti chornozemu pid vplyvom hruntozakhysnykh tekhnolohii 
+biolohichnoho zemlerobstva [Discreteness of changes in the level of 
+chernozem fertility under the influence of soil protection technolo-
+gies of organic farming]. Hruntozakhysna biolohichna systema ze-
+mlerobstva v Ukraini. Kyiv: Oranta, 245–259. (in Ukrainian)
+Skopp, J., Jawson, M.D., Doran, J.W., 1990. Steady-state aerobic micro-
+bial activity as a function of soil water content. Soil Science Soci-
+ety of America Journal 54(6), 1619–1625. https://doi.org/10.2136/
+sssaj1990.03615995005400060018 
+Smith, R.G., Gross, K.L., Robertson, G.P., 2008. Effects of crop diversity 
+on agroecosystem function: crop yield response. Ecosystems 11(3), 
+355‒366. https://doi.org/10.1007/s10021-008-9124-5 
+Snitynskyi, V.V., Habryiel, A.Y., Hermanovych, O.M., Olifir, Yu. M., 2014. 
+Biolohichna aktyvnist yasno-siroho lisovoho poverkhnevo-ohleieno-
+ho gruntu zalezhno vid antropohennoho vplyvu [Biological activity 
+of light gray forest surface-gleied soil depending on anthropogenic 
+impact]. Silskohospodarska mikrobiolohiia 19, 47–52. (in Ukrainian)
+Soil survey standard test method, 1994. Soil moisture content, 1, 5.
+Sozinov, O.O., Prister, B.S. (Eds.), 1994. Metodyka sutsilnoho gruntovo-
+ahrokhimichnoho monitorynhu silskohospodarskykh uhid Ukrainy 
+[Methods of continuous soil and agrochemical monitoring of agricul-
+tural lands of Ukraine]. Kyiv. (in Ukrainian)
+Stuart Chapin III, F., McFarland, J., David McGuire, A., Euskirchen, E.S., 
+Ruess, R.W., Kielland, K., 2009. The changing global carbon cycle: link-
+ing plant–soil carbon dynamics to global consequences. Journal of 
+Ecology 97(5), 840‒850. https://doi.org/10.1111/j.1365-2745.2009.01529.x
+Symochko, L. Yu., 2008. Biolohichna aktyvnist gruntu pryrodnykh ta an-
+tropohennykh ekosystem v umovakh nyzynnoi chastyny Zakarpattia 
+[Biological activity of soil of natural and anthropogenic ecosystems 
+in the lowlands of Transcarpathia]. Naukovyi visnyk Uzhhorodskoho 
+u niversytetu. Uzhhorod, 22, 152–154. (in Ukrainian)
+Tishchenko, L.M. et al., 2015. Tekhnolohichni karty vyroshchuvannia 
+silskohospodarskykh kultur [Technological maps of growing crops]. 
+[In:] Tishchenko, L.M., Korniienko, S.I. (Eds.). Kharkiv: KhNTUSH. (in 
+Ukrainian)
+Tsentylo, L.V., 2019. Biolohichna aktyvnist gruntu za riznykh system udo-
+brennia soniashnyku ta obrobitku gruntu [Biological activity of soil 
+under different systems of sunflower fertilization and tillage]. Tav-
+riiskyi naukovyi visnyk. Zemlerobstvo, roslynnytstvo, ovochivnyt-
+stvo ta bashtannytstvo 108, 117–122. https://doi.org/10.32851/2226-
+0099.2019.108.16 (in Ukrainian)
+Tsyliuryk, O.I., Kulik, A.F., Honchar, N.V., 2017. Biolohichna aktyvnist 
+gruntu za riznykh sposobiv yoho obrobitku ta udobrennia v posivakh 
+soniashnykuiu [Biological activity of soil by different methods of its 
+cultivation and fertilization in sunflower crops.]. Visnyk Dnipropetro-
+vskoho derzhavnoho ahrarno-ekonomichnoho uhiversytetu. Silsko-
+hospodarska ekolohiia. Ahronomichni nauky 2, 42–48. (in Ukrainian)
+Tykhonenko, D.H., Dehtiarov, Yu.V., 2016. Gruntovyi pokryv doslidnoho 
+polia «Rohanskoho statsionaru» Kharkivskoho NAU im. V. V. Doku-
+chaieva [Soil cover of the research field “Rogansky hospital” of Khar-
+kiv NAU named after V. V. Dokuchaev]. Visnyk KhNAU imeni V. V. 
+Dokuchaieva. Gruntoznavstvo, ahrokhimiia, zemlerobstvo, lisove 
+hospodarstvo 2, 5‒15. (in Ukrainian)
+Woźniak, A., Soroka, M., 2018. Effect of crop rotation and tillage system 
+on weed infestation and yield of spring wheat and on soil properties. 
+Applied Ecology and Environmental Research 16, 3087–3096. doi.
+org/10.15666/aeer/1603_30873096 
+8
+SOIL SCIENCE ANNUAL
+Z. Dehtiarova
+156097
+Varbanets, L.D., Borzova, N.V., 2010. Hlikozydazy mikroorhanizmiv 
+i metody yikh doslidzhennia [Glycosidases of microorganisms and 
+methods of their research]. Kyiv: Naukova dumka. (in Ukrainian)
+Veum, K.S., Goine, K.W., Kremer, R.J., Miles, R.J., Sudduth, K.A., 2014. Bio-
+logical indicators of soil quality and soil organic matter characteris-
+tics in an agricultural management continuum. Biogeochemistry 117, 
+81–99. https://doi.org/10.1007/s10533-013-9868-7 
+Volkohon, V.V., 2005. Mikrobiolohiia u suchasnomu ahrarnomu vyrobnyt-
+stvi [Microbiology in modern agricultural production]. Silskohospo-
+darska mikrobiolohiia. Mizhvidomchyi tematychnyi naukovyi zbir-
+nyk. Chernihiv, 1–2, 6–29. (in Ukrainian)
+Voroney, R.P., 2007. The soil habitat. [In:] Paul, E.A. (Ed.). Soil Microbi-
+ology, Ecology and Biochemistry, third ed. Elsevier Academic Press, 
+Burlington and Oxford, 25‒52.
+Vostrykova, V.M., 2012. Analiz patohennoho vplyvu tseliuloz hrybiv rodu 
+Fusarium na tseliulozovmisni materialy [Analysis of the pathogenic 
+effect of celluloses of fungi of the genus Fusarium on cellulose-con-
+taining materials]. Problemy ekolohichnoi biotekhnolohii, 2, 130–138. 
+(in Ukrainian)
+Yan, N., Marschner, P., Cao, W., Zuo, C., Qin, W., 2015. Influence of salin-
+ity and water content on soil microorganisms. International Soil and 
+Water Conservation Research, 3(4), 316–323. https://doi.org/10.1016/
+j.iswcr.2015.11.003 
+Zinchenko, O.I., Salatenko V.N., Bilonozhko M.A., 2001. Roslynnytstvo. 
+[In:] Zinchenko, O.I. (Ed.). Kyiv: Ahrarna osvita. (in Ukrainian)

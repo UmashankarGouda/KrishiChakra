@@ -1,0 +1,2691 @@
+Frontiers in Sustainable Food Systems
+01
+frontiersin.org
+Managing climatic risks in rice–
+wheat cropping system for 
+enhanced productivity in middle 
+Gangetic plains of India
+Ratnesh Kumar Jha 1, Abdus Sattar 1*, Anil Kumar Singh 2, 
+Madhu Sudan Kundu 2, Ravindra Kumar Tiwari 3, 
+Abhay Kumar Singh 4, Arbind Kumar Singh 5, Sudhir Das 6, 
+Ram Pal 7, Sunita Kushwah 8, Anuradha Ranjan Kumari 9, 
+Motilal Meena 10, Pushpa Singh 2, Santosh Kumar Gupta 11, 
+Divyanshu Shekhar 12, Sanjay Kumar Rai 13, 
+Shishir Kumar Gangwar 14, Ram Krishna Rai 15, 
+Ram Ishwar Prasad 16, Abhishek Pratap Singh 17, 
+Rajendra Pratap Singh 18, Prabhat Kumar Singh 10, 
+Pawan Kumar Srivastawa 19, Bipul Kumar Jha 19, 
+Rupashree Senapati 19, Sudeshna Das 19, Sandeep Kumar Suman 12, 
+Gulab Singh 19, Shailendra Kumar Rajak 20, Nidhi Kumari 10, 
+Ashish Rai 20, Sarvesh Kumar 2, Vinita Kashyap 3, Sunita Kumari 8, 
+Krishna Bahadur Chhetri 9, Tarun Kumar 11, 
+Sachchidanand Prasad 21, Anshu Gangwar 5, Arpita Nalia 10, 
+Abhik Patra 18, Rajneesh Singh 11, Chelpuri Ramulu 14, 
+Shubhashisa Praharaj 14, Kanhaiya Lal Regar 4, 
+Saurabh Shankar Patel 4, Vandana Kumari 13, Leela Chauhan 13, 
+B. R. Harsh 9, Shirsat Tejaswini Kapil 5, Jogendra Soren 6, 
+Sourav Choudhury 6, Sushma Tamta 7, Naveen Kumar 15 and 
+Dhiru Kumar Tiwari 22
+1 Centre for Advanced Studies on Climate Change, Dr. Rajendra Prasad Central Agriculture University 
+(RPCAU), Samastipur, Bihar, India, 2 Rajendra Prasad Central Agriculture University (RPCAU), Samastipur, 
+Bihar, India, 3 KVK Birauli, RPCAU, Samastipur, Bihar, India, 4 KVK Saran, RPCAU, Samastipur, Bihar, India, 
+5 KVK Piprakothi, RPCAU, Samastipur, Bihar, India, 6 KVK Sukhet, RPCAU, Samastipur, Bihar, India, 7 KVK 
+Begusarai, RPCAU, Samastipur, Bihar, India, 8 KVK Vaishali, RPCAU, Samastipur, Bihar, India, 9 KVK Siwan, 
+RPCAU, Samastipur, Bihar, India, 10 KVK Turki, RPCAU, Samastipur, Bihar, India, 11 KVK Saraiya, RPCAU, 
+Samastipur, Bihar, India, 12 KVK Jale, RPCAU, Samastipur, Bihar, India, 13 KVK Sheohar, RPCAU, Samastipur, 
+Bihar, India, 14 KVK Madhopur, RPCAU, Samastipur, Bihar, India, 15 KVK Gopalganj, RPCAU, Samastipur, 
+Bihar, India, 16 KVK Sitamadhi, RPCAU, Samastipur, Bihar, India, 17 KVK Lada, RPCAU, Samastipur, Bihar, 
+India, 18 KVK Narkatiyaganj, RPCAU, Samastipur, Bihar, India, 19 CASCC, RPCAU, Samastipur, Bihar, India, 
+20 KVK Parsauni, RPCAU, Samastipur, Bihar, India, 21 KVK Sitamarhi, RPCAU, Samastipur, Bihar, India, 22 KVK 
+West Champaran, RPCAU, Samastipur, Bihar, India
+Rice followed by wheat is the dominant cropping system in the middle Indo-
+Gangetic plains (IGP). Lower productivity (4.8  t ha−1) of this cropping system in 
+Bihar, compared to the national average (6.8  t  ha−1) due to several climate- 
+and production-related issues, is a matter of concern for the farmers and the 
+policymakers. Keeping all these in view, an experiment with rice–wheat cropping 
+system was carried out during 2020–21 and 2021–22 in 17 adopted villages of 13 
+districts of Bihar under the Project “Climate Resilient Agriculture Program (CRAP)” 
+OPEN ACCESS
+EDITED BY
+Siemen Van Berkum, 
+Wageningen University and Research, 
+Netherlands
+REVIEWED BY
+Ganesh Malik, 
+Palli-Siksha Bhavana Institute of Agriculture, 
+India 
+Pintoo Bandopdhyay, 
+Bidhan Chandra Krishi Viswavidyalaya, India 
+Amnah Alsuhaibani, 
+Princess Nourah Bint Abdulrahman University, 
+Saudi Arabia
+*CORRESPONDENCE
+Abdus Sattar 
+ asattar@rpcau.ac.in
+RECEIVED 16 July 2023
+ACCEPTED 10 November 2023
+PUBLISHED 15 December 2023
+CITATION
+Jha RK, Sattar A, Singh AK, Kundu MS, 
+Tiwari RK, Singh AK, Singh AK, Das S, 
+Pal R, Kushwah S, Kumari AR, Meena M, 
+Singh P, Gupta SK, Shekhar D, Rai SK, 
+Kumar Gangwar S, Rai RK, Prasad RI, Singh AP, 
+Singh RP, Singh PK, Srivastawa PK, Jha BK, 
+Senapati R, Das S, Suman SK, Singh G, Rajak SK, 
+Kumari N, Rai A, Kumar S, Kashyap V, 
+Kumari S, Chhetri KB, Kumar T, Prasad S, 
+Gangwar A, Nalia A, Patra A, Singh R, 
+Ramulu C, Praharaj S, Regar KL, Patel SS, 
+Kumari V, Chauhan L, Harsh BR, Kapil ST, 
+Soren J, Choudhury S, Tamta S, Kumar N and 
+Tiwari DK (2023) Managing climatic risks in 
+rice–wheat cropping system for enhanced 
+productivity in middle Gangetic plains of India.
+Front. Sustain. Food Syst. 7:1259528.
+doi: 10.3389/fsufs.2023.1259528
+COPYRIGHT
+© 2023 Jha, Sattar, Singh, Kundu, Tiwari, Singh, 
+Singh, Das, Pal, Kushwaha, Kumari, Meena, 
+Singh, Gupta, Shekhar, Rai, Kumar Gangwar, 
+Rai, Prasad, Singh, Singh, Singh, Srivastawa, 
+Jha, Senapati, Das, Suman, Singh, Rajak, 
+Kumari, Rai, Kumar, Kashyap, Kumari, Chhetri, 
+Kumar, Prasad, Gangwar, Nalia, Patra, Singh, 
+Ramulu, Praharaj, Regar, Patel, Kumari, 
+Chauhan, Harsh, Kapil, Soren, Choudhury, 
+Tamta, Kumar and Tiwari. This is an open-
+access article distributed under the terms of 
+the Creative Commons Attribution License 
+(CC BY). The use, distribution or reproduction 
+in other forums is permitted, provided the 
+original author(s) and the copyright owner(s) 
+are credited and that the original publication in 
+this journal is cited, in accordance with 
+accepted academic practice. No use, 
+distribution or reproduction is permitted which 
+does not comply with these terms.
+TYPE  Original Research
+PUBLISHED  15 December 2023
+DOI  10.3389/fsufs.2023.1259528
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+02
+frontiersin.org
+to evaluate the feasibility of early transplanting of rice in the month of June with 
+the aim of achieving higher system productivity by early harvesting of rice and 
+subsequent timely sowing of wheat before 15 November with the provision of 
+assured irrigation. In this study, the concept of an innovative community irrigation 
+approach and single-phase 3-hp submersible pump was employed. Long-
+duration rice variety (150 days) Rajendra Mahsuri-1 was sown during 20–25 May in 
+the nursery and transplanted through puddling operation during 15–20 June in 17 
+locations. Under delayed conditions, the nursery sowing and transplanting window 
+were 10–15 June and 10–15 July, respectively. Timely sown rice grown with the 
+provision of a community irrigation system achieved a grain yield of 5.2  t  ha−1 and 
+85.8% higher water productivity, compared to late-sown crops. Following the 
+harvest of rice, the HD-2967 variety of wheat was planted in the first fortnight 
+of November and harvested in the first week of April, yielding 4.9 t  ha−1 with the 
+application of 2–3 irrigations based on soil type and evaporative demand. Timely 
+harvesting of wheat facilitated farmers of the region to take an additional crop of 
+summer green gram. With an assured irrigation system and shifting planting dates 
+and thereby managing climatic risks, the overall productivity of the rice–wheat 
+cropping system was achieved to the tune of 10.1 t  ha−1 with a cropping intensity 
+of 300% for better adaptation and sustainable production.
+KEYWORDS
+rice–wheat, climate resilience, assured irrigation, risk management, adaptation
+1 Introduction
+Rice–wheat cropping system (RWCS) is the most prevalent 
+agricultural production system covering nearly 14 million hectares in 
+the Indo-Gangetic Plains (IGP) of South Asia (Alam et al., 2016), of 
+which 10 million hectares lies in India alone. This cropping system is 
+predominantly followed in the states of Punjab, Haryana, Bihar, Uttar 
+Pradesh, and Madhya Pradesh contributing around 75% of the 
+national food grain production. However, the sustainability of RWCS 
+in India is facing severe challenges mainly due to resource paucity (Jat 
+et al., 2018; Mondal et al., 2020), water scarcity (Bhatt et al., 2016), and 
+climatic variability (Jain et al., 2014). In the state of Bihar located in 
+the middle IGP, the major food demand is met through RWCS, which 
+contributes about 77.4% of the total food grain production from 
+around 70% of the gross cropped area, but the productivity of both 
+crops is very low due to the frequent occurrence of climatic stresses 
+such as abnormal temperature, erratic rainfall, increased frequency 
+and duration of dry spells, and early withdrawal and erratic nature of 
+monsoon, which adversely affects the production potential and food 
+security (Lal, 2019; Arunrat et al., 2020). The mean productivity of rice 
+in Bihar stands at 2.5 t ha−1, that too, with a decreasing compound 
+agricultural growth rate of (−) 3.61% in 2017–2018, as compared to 
+2014–2015 (Economic Survey of Bihar, 2019–2020).
+In Bihar such as in all other states of eastern India, the major 
+constraint in getting the potential yield of rice is late transplanting 
+(Sattar et al., 2017) due to delays in obtaining water for puddling 
+operations following the late onset of monsoon on many occasions 
+and the lack of irrigation facility at an affordable rate. There should 
+be ponded water in the initial stage of transplanting for the smooth 
+recovery of plants. For ensuring timely sowing and transplanting of 
+rice, the major source of irrigation is groundwater, which is extracted 
+by a diesel pump set. The diesel pump sets have centrifugal pumps, 
+and they are not able to extract groundwater during peak hours in 
+summer when the water table goes down and there is a great rush for 
+transplanting. Diesel pump sets have high diesel consumption with 
+comparatively lesser water discharge and higher greenhouse gas 
+emission. In view of this, the government recently started electrifying 
+the irrigation system with the installation of three-phase 5/7.5 hp. 
+diesel pumps. These pumps operated by the farmers do not perform 
+well as it requires a constant supply of electricity in all three phases. 
+Moreover, the electricity consumption is almost 5 times per hour, 
+compared to a 3-hp single-phase tube well. Accordingly, it requires an 
+investment of significant funds. Considering the cost of irrigation, it 
+is around INR 6000.00 per hectare for a diesel pump set, INR 3000.00 
+per hectare for a three-phase electrified irrigation system, and INR 
+300.00 per hectare for a 3-hp single-phase pump set. Hence, the high 
+cost of irrigation coupled with the late onset of monsoon is also a 
+major factor that compels the farmers of the region for late 
+transplanting of rice. Consequently, late transplanting tends to 
+significantly impact the occurrence of critical phenological stages of 
+the crop. Under delayed transplanting, the flowering of the crop 
+coincides with the prevalence of low temperatures beyond September. 
+Under such a situation, there is a greater possibility that a large 
+percentage of chaffy grains would be produced. Not only this but also 
+the delay in transplanting affects the sowing of succeeding wheat 
+crops. In this region, when wheat is sown beyond November, the 
+problem of terminal heat stress during the flowering to the milking 
+stage of the crop arises in most of the years and consequently, it affects 
+grain setting and wheat productivity significantly. About 80% of wheat 
+sowing is delayed in the region beyond the period of 25 November, 
+forcing the crop to encounter higher temperatures (terminal heat) 
+during the growing season (end of February to March) (Sattar et al., 
+2023). Therefore, terminal heat stress associated with dry westerly 
+wind is a serious climatic constraint for successful wheat cultivation 
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+03
+frontiersin.org
+in India, particularly when it occurs during the grain-filling stage 
+(Sandhu et al., 2016; Sattar et al., 2020). In one study on wheat, Poudel 
+et  al. (2021) observed that the optimum temperature during the 
+anthesis and grain-filling stage ranges from 12 to 22°C. As evident, 
+among all the weather factors, temperature plays a crucial role in 
+determining the sowing time and consequently the duration of 
+different phenophases, which ultimately affect crop productivity. 
+Moreover, when the farmers go for delayed sowing (beyond 25 
+November), there is always a greater chance that the crop will face the 
+fury of a hailstorm during the ripening and harvesting stage in the 
+month of April as the region experiences a greater probability (>70%) 
+of hailstorms during this month.
+Participatory rural appraisal (PRA) provides an opportunity to 
+analyze the livelihood issues of the farmers and helps scientists to 
+understand the problems. It is an important tool to identify the 
+location-specific researchable issues and find out possible short- and 
+long-term benefits. Kumari et al. (2019) used the PRA tool in some 
+districts of Bihar to develop problem-solution tree of the issues faced 
+by the farmers. The climatic issues affecting rice–wheat production in 
+the region were reported by Srivastava et al. (2018). In the present 
+study, the PRA tool was used to address the problems faced by the 
+farmers of rice–wheat cropping system, and based on this, villages in 
+different districts were selected for this study.
+Considering the above facts, the present study was undertaken to 
+evaluate the feasibility of early transplanting of rice through an assured 
+irrigation system and its impact on phenology, yield, and yield 
+attributes. Early transplanting of rice ensured its early harvesting and 
+timely sowing of subsequent wheat crops. Accordingly, the yield 
+potential of RWCS by advancing planting dates and water productivity 
+of rice under timely and late transplanted conditions were evaluated 
+by employing an innovative approach through the Climate Resilient 
+Agriculture (CRA) Program for higher system productivity, better 
+adaptation, and sustainability under changing climatic scenarios. The 
+innovation in this case refers to the early transplanting of rice through 
+assured community irrigation by a 3-hp single-phase tube well.
+2 Materials and methods
+2.1 Study area
+Bihar is located in the middle Gangetic Plains of India. The study 
+was conducted in 17 different adopted villages of different Farm 
+Science Centres (Popularly known as Krishi Vigyan Kendras, KVKs) 
+of Dr. Rajendra Prasad Central Agricultural University, Pusa, namely, 
+(1) Sukhet (Madhubani), (2) Jale (Darbhanga), (3) Manjhi (Saran), (4) 
+Bhagwanpur Hat (Siwan), (5) Sipaya (Gopalganj), (6) Sheohar, (7) 
+Sitamarhi, (8) Madhopur (West Champaran), (9) Narkatiaganj (West 
+Champaran), (10) Parsauni (East Champaran), (11) Piprakothi (East 
+Champaran), (12) Lada (Samastipur), (13) Birauli (Samastipur), (14) 
+Vaishali, (15) Turki (Muzaffarpur), (16) Saraiya (Muzaffarpur), and 
+(17) Khodabanpur (Begusarai), under the Project “Climate Resilient 
+Agriculture (CRA) Program” funded by the Government of Bihar, 
+India, during kharif seasons of 2020 and 2021, rabi seasons of 2020–
+2021 and 2021–2022, and summer seasons of 2021 and 2022. The 
+location of the study area is given in Figure 1. The depth of the water 
+table in the study area varies from 2 to 5 m below ground level 
+(Anon, 2022).
+2.2 Climate, soil, and cropping system
+The region has a sub-humid subtropical monsoon climate. About 
+85% of the annual rainfall occurs during the monsoon season. 
+Considering the cropping season, it is known as kharif season, during 
+which rice crop is grown. The region experiences four seasons, viz., 
+Summer (March–May), Monsoon (June–September), Post-Monsoon 
+(October–November), and Winter (December–February). The 
+average annual rainfall of the region ranges from 1,230 to 1,400 mm. 
+The month-wise rainfall distribution pattern is given in Figure 2. May 
+is the warmest summer month of the year with a daily maximum 
+temperature of 37–41°C, while the coldest winter month is January 
+with a daily minimum temperature of 5–8°C in January (Bal et al., 
+2023). Although December, January, and February are the main 
+winter months, temperature decreases significantly from November. 
+The average temperature falls appreciably from 26.9°C in October to 
+21.9°C in November.
+Soils of the study area are mainly young alluvium, calcareous, and 
+predominantly sandy loam to loamy in texture. Soils are deep having 
+calcium carbonate more than 10%. The water holding capacity varies 
+from moderate to high. It has moderate drainage behavior. There is a 
+wide variation in the nitrogen and available potassium status of these 
+soils. Soil pH varies from 6.5 to 8.4. Rice–wheat is the major cropping 
+system of the region and comprises about 60% of all crops and 
+cropping sequences followed by the farmers (Kumari et al., 2022).
+2.3 Methodology
+2.3.1 Field criteria adopted for the study
+The villages were selected through the Participatory Rural 
+Appraisal Survey. In this region, late sowing and transplanting of rice 
+are a usual practice due to the lack of affordable irrigation facilities and 
+farmers’ dependency on monsoon rains both for transplanting and for 
+meeting further irrigation requirements during its growing period 
+(Najmuddin et al., 2018). While selecting the villages, it was kept in 
+mind that wheat sowing gets delayed in the area due to late harvesting 
+of paddy, thus forcing the crop to be affected by terminal heat stress. 
+In addition, another criterion was that the successive green gram crop 
+was either non-productive or non-remunerative due to the late 
+harvesting of wheat in these villages. In case of late harvesting of wheat 
+following late planting, subsequent summer green gram is affected on 
+many occasions due to the initial burst of pre-monsoon showers and 
+monsoon rains, leading to crop damage. An area of 15 acres was 
+selected in each of 17 villages, and one 4-inch tube well fitted with a 
+3-hp single-phase submersible pump was installed with a discharge 
+capacity of 7–9 lps and irrigation command capacity of 15–20 acres 
+each costing around 1.6 lakhs. While comparing the cost with a 15-hp 
+three-phase tube well, it comes to around 17 lakhs per tube well. 
+Moreover, these pumps do not perform well due to voltage 
+fluctuations. It has a higher discharge rate as compared to the water 
+demand of crops, it causes losses in irrigation water, and consequently, 
+low water use efficiency is observed when compared with a 3-hp 
+single-phase tube well. A group of 10–20 farmers from each village 
+was formed with an agreement that all participating farmers will have 
+an equal right and equal opportunity to avail irrigation facility as and 
+when needed by the crop. One rural youth of the same adopted village 
+was given the task of scheduling irrigation with a nominal cost of INR 
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+04
+frontiersin.org
+15 per hour. The amount, thus collected, was deposited in a revolving 
+account for future management of the tube wells, operational cost, and 
+honorarium for the youth facilitator.
+Long-duration high-yielding rice variety (Rajendra Mahsuri-1) of 
+150-day duration was sown on 20–25 May in the nursery and 
+transplanted on 15–20 June after puddling. In total, 2–3 irrigations 
+were applied to the crop to maintain soil moisture above field capacity. 
+Scheduling of irrigation was based on the disappearance of standing 
+water from the crop field, and it was ensured that cracking in the rice 
+field does not develop. The same variety of rice was sown during 
+10–15 June in the nursery and transplanted during 10–15 July, which 
+is generally practiced by the farmers near the experimental plots. After 
+the harvest of paddy, HD-2967 variety of wheat was sown on 7 
+November, and 2–3 irrigations were provided as per soil type and 
+physiological demand of the crop. The same variety of wheat was sown 
+during 25–30 November (regarded as delayed sowing) after the 
+FIGURE 1
+Location of the study area.
+FIGURE 2
+Comparative distribution pattern of normal rainfall (mm) and actual rainfall over the study area.
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+05
+frontiersin.org
+harvest of paddy crops during 15–20 November. The third crop of 
+green gram was sown on 10 and 25 April, respectively, at different 
+locations. All the agronomic parameters and yield attributing 
+characters were studied, recorded, and analyzed.
+Nitrogen, phosphorus, and potassium were applied to the rice 
+crop in the ratio of 120:60:40. During the growing period of the crop, 
+50% of nitrogen and full doses of phosphorus and potassium were 
+used as basal application. The remaining nitrogen was applied in two 
+equal splits: one at tillering and another at the panicle initiation stage. 
+For weed management, two hand weedings were done at 30 and 
+60 days after transplanting. In the case of wheat, nitrogen, phosphorus, 
+and potassium at 120, 60, and 40 kg ha−1 were applied. All the 
+phosphorus and potassium and half dose of nitrogen were applied at 
+sowing as basal dose. The remaining half dose of nitrogen was top 
+dressed in two equal splits at crown root initiation and boot stages.
+2.3.2 Calculation of water productivity
+Crop water productivity, irrigation water productivity, and 
+effective rainfall were calculated using standard methodologies. 
+Renfro equation as quoted by Chow (1964) has been employed in this 
+study to work out effective rainfall as follows:
+	
+Re = (
+) +
+∗
+E Rg
+A
+where Re is effective rainfall, Rg is growing season rainfall, A is 
+average irrigation application, and E is the ratio of consumptive use of 
+water (CU) to rainfall during the growing season.
+The water productivity of rice was determined as the grain yield 
+obtained per unit of rainfall plus irrigation water applied (Chahal 
+et al., 2007).
+2.3.3 Detection of change in rainfall pattern
+As mentioned earlier, 17 locations were selected for the study. To 
+detect the change in rainfall pattern over the study area, the daily rainfall 
+of four stations (located in the study area) based on the availability of data 
+for a period of 1990–2019 was analyzed. These stations are, viz., Pusa 
+(25.98°N, 85.67°E; Samastipur district), Muzaffarpur (26.07°N, 85.24°E; 
+Muzaffarpur district), Motihari (26.65°N, 84.91°E, East Champaran 
+district), and Chhapra (25.78°N, 84.73°E, Saran district). Two sets of data, 
+viz., 1990–2019 and 2010–2019, were considered to detect the changes in 
+mean values of annual rainfall and rainy days, and number of dry days 
+during monsoon. Trends and significance of these parameters were 
+determined based on the Mann-Kendall Test (Mann, 1945; Kendall, 1975; 
+Yadav et al., 2014), which is a function of the ranks of the observations 
+rather than their actual values (Oguntunde et al., 2011). The test is 
+non-parametric for identifying trends and is not affected by the actual 
+distribution of the data and is less sensitive to outliers. Trends of 
+maximum and minimum temperature during different months of the 
+wheat growing season were also worked out.
+3 Results and discussion
+3.1 Effect of preponing sowing dates on 
+yield attributes and yield of rice
+The grain yield of rice sown during 20–25 May with assured 
+irrigation was found to be 5.2 t ha−1, whereas the yield obtained for 
+10–15 June sown rice with farmers’ practice was 3.2 t ha−1, which was 
+62.5% higher over the later sown crop (Table 1). This quantum jump 
+was only because of higher physiological maturity days of the timely 
+sown crop and the availability of proper moisture regimes in the rice 
+field, fed through assured irrigation. In the late-sown crops, the 
+growth period was short that ultimately limited the leaf surface area, 
+panicle length, and number of grains per panicle, probably due to 
+limited moisture in the field during dry spells, as this crop was not 
+scientifically managed by the farmers. Delayed sowing had a bearing 
+on the seed-setting rate. Ahmed et al. (2011) while working on rice 
+observed that the 1,000-grain weight and the seed-setting rate 
+decreased beyond the temperature of 27.0°C. Considering the 1,000-
+grain weight, it was found to be 6.4% higher in the case of early sown 
+crops (23.0 g) as compared to late-sown crops (21.6 g). Quite contrary 
+to this, the number of unfilled tillers per m2 was found to be 5.8% 
+higher in late-sown crops (24.3), compared to early sown crops (22.9). 
+The critical temperature for inducing spikelet sterility in rice varied 
+from 10 to 15°C (Tinarelli, 1989). Alvarado (2002) found that the 
+average temperature under 20°C for 5 days during flowering stage 
+increased the probability of obtaining spikelet sterility greater than 
+10–12%. The total biological yield (including both grains and straw) 
+was found to be 52.3% higher in early sown crops (12.18 t ha−1) as 
+compared to late-sown crops (8.0 t ha−1) with harvest index of 42.8 and 
+39.8%, respectively. Harvest index refers to quantify the grain yield 
+versus total amount of biological yield that a crop produces, signifying 
+the reproductive efficiency of the crop.
+Early sown crops of rice recorded a 19.9% higher number of tillers 
+(245.4 per m2) in comparison with the late-sown crops (204.8 per m2) 
+(Table 2 and Figures 3, 4), which might be ascribed to the fact that 
+younger age (21 days) of the seedlings with higher tillering capacity 
+contributed to this increase. The old aged seedlings, of 30 days or more 
+duration, as in the case of late transplanted rice might have produced 
+a lesser number of tillers, probably some of its early vigor and tiller-
+bearing capacity got exhausted in the nursery itself because of its age. 
+The aged seedlings as transplanted for late-sown crops might have 
+experienced greater uprooting and transplanting shocks, prompting 
+the crop to remain at an initial slow rate of growth. The number of 
+panicles per m2 and number of grains per panicle in early sown rice 
+were found to be 23.4 and 24.5% higher (222.5 and 142.2, respectively), 
+compared to late transplanted crops (180.5 and 114.3, respectively). 
+The number of empty spikelets increased with shading and low 
+temperature, and a decrease in filled grain percentage was observed 
+due to the lower solar radiation. In long-duration varieties, low light 
+stress synchronizing with the vegetative lag phase resulted in 
+considerable tiller mortality and fewer productive panicles per square 
+meter (Murty et  al., 1975). The reasons for higher yield, higher 
+number of tillers per m2, higher number of panicles per m2, and 
+number of grains per panicle might be due to congenial thermal and 
+as well field moisture balance in the timely sown crop than the crops 
+conventionally raised by the farmers. Moisture stress after 10 days of 
+50% flowering significantly reduced single panicle weight, test weight, 
+fertile spikelets per panicle, and total spikelets per panicle and 
+significantly increased sterile spikelets per panicle.
+Weather data presented in Figure 2 revealed that there was hardly 
+any variation in actual and normal rainfall during May. However, June 
+and July experienced deficit rainfall. Under such a water-stressed 
+environment, the resource-poor farmers and the farmers with limited 
+or no provision of irrigation sowed rice during 10–15 June in the 
+nursery and transplanted during 10–15 July in the main field. The 
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+06
+frontiersin.org
+TABLE 1  Grain yield, total biological yield, and harvest index of rice under timely sown and late-sown conditions.
+Locations
+Grain yield (t ha−1)
+Straw yield (t ha−1)
+Biological yield (t ha−1)
+Harvest Index (%)
+Timely 
+sown
+Late 
+sown
+% increase
+Timely 
+sown
+Late 
+sown
+% increase
+Timely 
+sown
+Late 
+sown
+% increase
+Timely 
+sown
+Late 
+sown
+% increase
+Khodabanpur
+4.99
+3.05
+63.6
+6.49
+4.62
+40.5
+11.49
+7.67
+49.7
+43.5
+39.8
+9.3
+Jale
+4.77
+2.91
+63.9
+5.72
+4.41
+29.7
+10.49
+7.32
+43.3
+45.5
+39.7
+14.4
+Piprakothi
+5.22
+3.2
+63.3
+7.31
+4.83
+51.3
+12.53
+8.03
+56.1
+41.7
+39.8
+4.6
+Parsauni
+4.99
+3.08
+62.2
+7.49
+4.62
+62.1
+12.49
+7.70
+62.2
+42.0
+40.0
+0.0
+Madhopur
+6.13
+3.69
+65.9
+7.35
+5.67
+29.7
+13.48
+9.36
+44.0
+45.5
+39.5
+15.2
+Narkatiaganj
+5.45
+3.31
+64.4
+7.08
+5.04
+40.5
+12.53
+8.35
+50.0
+43.5
+39.7
+9.6
+Manjhi
+5.22
+3.17
+64.7
+6.27
+4.83
+29.7
+11.49
+8.00
+43.6
+45.5
+39.6
+14.7
+Bhagwanpur Hat
+4.99
+3.05
+63.6
+6.49
+4.62
+40.5
+11.49
+7.67
+49.7
+43.5
+39.8
+9.3
+Sipaya
+5.45
+3.34
+63.1
+8.17
+5.04
+62.1
+13.62
+8.38
+62.5
+40.0
+39.9
+0.4
+Sitamarhi
+5.22
+3.18
+64.2
+6.79
+4.83
+40.5
+12.01
+8.01
+49.9
+43.5
+39.7
+9.4
+Turki
+4.77
+2.95
+61.7
+7.15
+4.41
+62.1
+11.92
+7.36
+62.0
+42.2
+40.1
+5.3
+Saraiya
+5.22
+3.2
+63.3
+7.31
+4.83
+51.3
+12.53
+8.03
+56.1
+41.7
+39.8
+4.6
+Sukhet
+4.77
+2.93
+62.5
+6.67
+4.41
+51.3
+11.44
+7.34
+55.8
+41.7
+40.0
+4.3
+Sheohar
+5.22
+3.17
+64.7
+6.27
+4.83
+29.7
+11.49
+8.00
+43.6
+45.5
+39.6
+14.7
+Vaishali
+5.45
+3.3
+65.2
+6.54
+5.04
+29.7
+11.99
+8.34
+43.7
+45.5
+39.6
+14.9
+Birauli
+5.22
+3.2
+63.3
+7.31
+4.83
+51.3
+12.53
+8.03
+56.1
+41.7
+39.8
+4.6
+Lada
+5.45
+3.34
+63.1
+8.17
+5.04
+62.1
+13.62
+8.38
+62.5
+40.0
+39.9
+0.4
+Mean
+5.21
+3.18
+63.7
+6.98
+4.82
+44.8
+12.18
+8.00
+52.3
+42.8
+39.8
+8.0
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+07
+frontiersin.org
+TABLE 2  Yield attributes of rice in timely sown and late-sown conditions.
+Locations
+Number of tillers (per m2)
+Number of panicles (per m2)
+Number of grains per 
+panicle
+Number of unfilled tillers 
+(per m2)
+1,000-grain weight (g)
+Timely 
+sown
+Late 
+sown
+% 
+increase
+Timely 
+sown
+Late 
+sown
+% 
+increase
+Timely 
+sown
+Late 
+sown
+% 
+increase
+Timely 
+sown
+Late 
+sown
+% 
+decrease
+Timely 
+sown
+Late 
+sown
+% 
+increase
+Khodabanpur
+235.4
+196.7
+19.7
+213.4
+173.4
+23.1
+136.4
+109.7
+24.3
+22.1
+23.3
+5.43
+22.1
+20.8
+6.3
+Jale
+224.7
+188.1
+19.5
+203.7
+165.9
+22.8
+130.2
+104.9
+24.1
+21.0
+22.2
+5.71
+20.8
+19.6
+6.1
+Piprakothi
+246.1
+205.2
+19.9
+223.1
+180.8
+23.4
+142.6
+114.5
+24.6
+23.2
+24.4
+5.17
+22.9
+21.5
+6.5
+Parsauni
+235.4
+194.8
+20.9
+213.4
+171.3
+24.6
+136.4
+108.7
+25.5
+21.9
+23.5
+7.31
+22.3
+20.8
+7.2
+Madhopur
+288.9
+245.1
+17.9
+261.9
+216.9
+20.7
+167.4
+136.7
+22.4
+27.1
+28.2
+4.06
+26.9
+25.7
+4.7
+Narkatiaganj
+256.8
+215.7
+19.1
+232.8
+190.4
+22.3
+148.8
+120.3
+23.7
+24.2
+25.3
+4.55
+24.1
+22.8
+5.7
+Manjhi
+246.1
+207.1
+18.8
+223.1
+182.9
+22.0
+142.6
+115.5
+23.4
+22.9
+24.2
+5.68
+22.9
+21.7
+5.5
+Bhagwanpur 
+Hat
+235.4
+196.7
+19.7
+213.4
+173.4
+23.1
+136.4
+109.7
+24.3
+21.8
+23.3
+6.88
+21.6
+20.3
+6.4
+Sipaya
+256.8
+211.9
+21.2
+232.8
+186.2
+25.1
+148.8
+118.2
+25.9
+24.1
+25.7
+6.64
+24.4
+22.7
+7.5
+Sitamarhi
+246.1
+206.2
+19.4
+223.1
+181.9
+22.7
+142.6
+115.0
+24.0
+22.9
+24.3
+6.11
+22.8
+21.5
+6.0
+Turki
+224.7
+185.3
+21.3
+203.7
+162.8
+25.2
+130.2
+103.4
+26.0
+21.2
+22.5
+6.13
+21.1
+19.6
+7.7
+Saraiya
+246.1
+205.2
+19.9
+223.1
+180.8
+23.4
+142.6
+114.5
+24.6
+23.1
+24.4
+5.63
+22.7
+21.3
+6.6
+Sukhet
+224.7
+183.4
+22.6
+203.7
+160.7
+26.8
+130.2
+102.3
+27.3
+21.7
+22.7
+4.61
+21.5
+19.8
+8.6
+Sheohar
+246.1
+207.1
+18.8
+223.1
+182.9
+22.0
+142.6
+115.5
+23.4
+22.9
+24.2
+5.68
+23.0
+21.8
+5.5
+Vaishali
+256.8
+216.6
+18.6
+232.8
+191.4
+21.6
+148.8
+120.8
+23.1
+23.8
+25.2
+5.88
+23.6
+22.4
+5.4
+Birauli
+246.1
+203.3
+21.1
+223.1
+178.7
+24.8
+142.6
+113.4
+25.7
+22.8
+24.6
+7.89
+23.1
+21.5
+7.4
+Lada
+256.8
+213.8
+20.1
+232.8
+188.3
+23.7
+148.8
+119.3
+24.8
+23.9
+25.5
+6.69
+25.5
+24.0
+6.3
+Mean
+245.5
+204.8
+19.9
+222.5
+180.5
+23.4
+142.2
+114.3
+24.5
+23.0
+24.3
+5.89
+23.0
+21.6
+6.4
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+08
+frontiersin.org
+experiment revealed that in the late transplanted rice as in the case of 
+farmers’ practice, the days taken to attain 50% flowering decreased 
+substantially as compared to early sown crops. The 15–20 June 
+transplanted rice took 91 days to attain 50% flowering and 116 days to 
+attain the dough stage, while the 10–15 July transplanted rice took 
+84 days to attain 50% flowering and 101 days to attain the dough 
+stages. Thermal time exerts great influence on the growth and yield of 
+crops. Sattar et al. (2017) observed that the rice crop sown on 15 July 
+required 2 days more to attain the maximum tillering stage than that 
+sown on 31 May. However, the duration required to attain 50% 
+flowering on 31 May and 15 July sown crops was 109 and 96 days, 
+respectively. The crop sown on 31 May attained maturity in 142 days, 
+while the crop sown on 31 July reached maturity in 119 days. 
+Kobayashi et al. (2010) concluded that higher air temperature and 
+incident radiation tend to advance anthesis in rice. Thus, delayed 
+transplanting forced the crop to pass through a relatively lower 
+temperature regime during its reproductive phase (Bal et al., 2023). 
+They also reported significant variation in rice yield in response to 
+weather variabilities during different growth phases of the crop under 
+the diverse ecosystems of India. Srivastava et al. (2018) observed that 
+with delayed transplanting, the percentage of chaffy grains per panicle 
+increased, which resulted in reduced grain yields. This is in conformity 
+with the results of previous research, where the setting of lower 
+temperature resulted in the irregular opening of flowers and 
+inadequate filling of the panicles (Venkataraman and Krishnan, 1992). 
+The maximum temperature required for proper germination of pollen 
+should be  33–34°C (Grist, 1986). Moreover, late transplanting 
+produced lower yields due to the higher percentage of chaffy grains in 
+the panicle under a non-congenial temperature regime (Anon, 2016). 
+The formation of chaffy grains coincided with the prevalence of lower 
+air temperature (Tmax < 32.5°C and Tmin < 23.0°C) during the 50% 
+flowering to dough stage of rice crop (Sattar et al., 2017).
+3.2 Effect of preponing sowing dates of 
+rice on yield and productivity of 
+succeeding wheat crop
+In the rice–wheat–green gram cropping system, the HD-2967 
+variety of wheat was sown on 7 November after the harvest of paddy 
+on 30 October under a timely sown assured irrigation system, whereas 
+in the farmers’ practice, wheat was sown during 25–30 November after 
+the harvest of paddy crops during 15–20 November. Timely sowing of 
+wheat in the cropping system in the experimental plots was made 
+possible because of the timely harvesting of the previous rice crop. 
+This resulted in a drastic change in yield and yield attributing 
+characteristics of wheat. On average, a 61% increase in grain yield was 
+observed for the crop sown at the appropriate sowing window, 
+FIGURE 3
+Yield attributing traits such as number of tillers per m2, number of panicles per m2, and number of grains per panicle under timely and late-sown rice in 
+Bihar.
+FIGURE 4
+Yield attributing traits such as number of unfilled tillers per m2 and 1,000 grain weight under timely sown and late-sown rice in Bihar.
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+09
+frontiersin.org
+compared to late sowing (Table 3). In one study at New Delhi, a 
+decrease in wheat yield by 70, 29, and 77 kg ha−1 per day due to delay 
+in sowing beyond the first week of November was observed in varieties 
+HD-2932, WR-544, and HD-2967, respectively (Dubey et al., 2019). 
+In our study, the total biological yield (both grain and straw) was 
+51.3% higher in timely sown wheat (11.8 t ha−1), as compared to late-
+sown wheat (7.8 t ha−1) with a 6.6% increase in harvest index. The 
+lower grain, straw, and biological yields in the late-sown wheat might 
+be due to the negative impact of higher temperature regimes and 
+terminal heat stress during its flowering and milking stages (Sattar 
+et al., 2020; Sattar and Srivastava, 2021). They reported enhanced 
+productivity of rice–wheat cropping system in Indo-Gangetic plains 
+through manipulation of sowing windows of both crops. The number 
+of shoots per m2, number of spikes per m2, and number of grains per 
+spike in the timely sown wheat were 9.0, 9.0, and 24.8% higher, 
+respectively, as compared to late-sown wheat (Table 4 and Figure 5). 
+The number of fertile spikelets and 1,000-grain weight were also found 
+to be, respectively, 8.9 and 6.3% higher in timely sown wheat as 
+compared to late-sown wheat, whereas the number of unfilled spikes 
+was 9.4% higher in late-sown wheat as compared to timely sown 
+wheat (Figure 6). In case of grain yield, it was observed to be 60.9% 
+higher in timely sown wheat (4.9 t ha−1) as compared to late-sown 
+wheat (3.05 t ha−1). Both maximum temperature and minimum 
+temperature played a decisive role in determining the grain yield of 
+wheat. Optimum thresholds of maximum and minimum temperatures 
+during different growth stages of wheat for achieving higher yields in 
+the study area revealed that temperature above 30.2°C during the 50% 
+flowering to the milking stage and temperature above 33.1°C during 
+the 50% flowering to maturity stage reduced grain yield below 
+2.0 t ha−1. Similarly, a minimum temperature of 16.8°C during the 50% 
+flowering to the milking stage and a minimum temperature of 18°C 
+during the 50% flowering to maturity stage significantly affected the 
+crop yield, and it produced a yield below 2.0 t ha−1. For achieving a 
+yield target of 4.0 t ha−1 or more, Sattar et al. (2020) while working on 
+crop weather relationships on wheat observed that the maximum and 
+minimum temperatures from sowing to tiller formation should 
+be  23.7 and 11.8°C, respectively. Similarly, the maximum and 
+minimum temperatures from 50% flowering to milking should be 24.6 
+and 11.6°C, respectively, and from 50% flowering to maturity, it 
+should be 29.2 and 14.4°C, respectively (Table 5).
+A comparative analysis of the ideal temperature (Table 5) suitable 
+for wheat growth and actual temperature during the experimental 
+years (Table 6) revealed that the wheat crop sown on 7 November 
+experienced optimum temperature during flowering to maturity 
+stages, while the late-sown crop encountered higher temperature, 
+resulting in lesser number of panicles per m2, lesser number of grains 
+per panicle, lesser 1,000-grain weight, and higher number of unfilled 
+grains per m2. Moreover, there is a general trend of increasing 
+minimum temperature and decreasing maximum temperature during 
+the later growing period of wheat (Table 7), which tends to increase 
+the rate of photorespiration and thereby reduces the net 
+photosynthesis. Accordingly, the increase in minimum temperature 
+in general tends to affect the process of anthesis to a great extent. It 
+could be inferred from the results that the sowing of wheat around 7 
+November instead of 25–30 November could reduce the negative 
+impact of increasing temperature during the fag end of the growing 
+season on the growth and yield of wheat and consequently help the 
+farmers to achieve higher yield.
+3.3 Changing rainfall patterns in the study 
+area, crop water productivity, and effective 
+rainfall for timely and late transplanted rice
+Since we are discussing about the importance of monsoon rainfall, 
+climatic risks and assured rainfall on rice productivity, and its 
+sustainability under timely and late conditions, it would be prudent to 
+assess the trend and variability of rainfall in the study area in relation 
+to the water use and water productivity of rice. In this context, we have 
+evaluated the change in rainfall patterns using time series data. The 
+result revealed that rainfall in the study area has decreased 
+significantly, leading to drier conditions in the recent 10-year period 
+(Table 8). The maximum number of dry days during the monsoon 
+season over the last 30 years (1990–2019) was observed to be 70 days, 
+which increased to 87 days during the recent 10-year period (2010–
+2019). The peak rate of increase in the number of dry days during 
+monsoon is calculated as 1.5 days per year, signifying the decrease in 
+annual rainy days in the region. Moreover, decreasing trends in annual 
+rainfall were found to occur over the area. This poses a threat to the 
+sustainability of rice crop production as more than 60% of rice is 
+cultivated under rainfed conditions during monsoon season. Hence, 
+erratic behavior of rainfall, decreasing number of rainy days, and 
+increasing dry spell have enormous stakes in rice productivity. In this 
+context, it is necessary to adopt climate-resilient interventions such as 
+changing planting schedule, community irrigation approach, and 
+provision of assured irrigation to sustain rice production in the region. 
+A dry spell if coincided with critical growth stages of rice leads to 
+reduced crop yield and sometimes crop failure. Sattar and Srivastava 
+(2021) evaluated the performance of rice crops under different 
+moisture regimes as induced by different planting dates and observed 
+that shifting planting dates helped achieve higher water productivity 
+and grain yield.
+The data on water productivity and effective rainfall of timely 
+and late transplanted rice grown at 17 locations of the study area 
+revealed that the water productivity of timely transplanted kharif 
+rice ranged from 0.673 kg m−3  ha−1 at Khodabanpur to 
+1.052 kg m−3 ha−1 at Madhopur (Table 9 and Figure 7). On the other 
+hand, it varied from 0.370 kg m−3  ha−1 at Bhagwanpur Hat to 
+0.560 kg m−3 ha−1 at Madhopur for late transplanted rice. The highest 
+water productivity of rice for both timely and late transplanted 
+conditions was recorded for Madhopur, while lower values were 
+observed for Khodabanpur. It was observed that the average water 
+productivity of timely transplanted rice was 85.8% higher than that 
+of late transplanted one. Studies showed that the water productivity 
+of rice can be increased by shifting transplanting dates (Jalota et al., 
+2009; Sattar and Srivastava, 2021). The higher water productivity of 
+timely transplanted rice in comparison with late transplanted one 
+may be attributed to higher yield, resulting from longer growing 
+period and assured irrigation. The water productivity decreased with 
+a decrease in crop duration when transplanting was delayed beyond 
+30 June (Sattar and Srivastava, 2021). While considering the 
+irrigation water productivity for timely and late transplanted rice, it 
+was found to vary from a low of 2.38 kg m−3  ha−1 to a high of 
+8.76 kg m−3  ha−1 and from 1.45 to 5.27 kg m−3  ha−1, respectively 
+(Figure 8). The highest and the lowest values of irrigation water 
+productivity under both conditions were associated with rice grown 
+at Bhagwanpur Hat and Madhopur, respectively. The water 
+productivity of rice in the present study under timely and late 
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+10
+frontiersin.org
+TABLE 3  Yield and yield attributes of wheat under timely sown and late-sown conditions.
+Locations
+Number of fertile spikelets/
+spike
+Grain yield (t ha−1)
+Straw yield (t ha−1)
+Biological yield (t ha−1)
+Harvest index (%)
+Timely 
+sown
+Late 
+sown
+% 
+increase
+Timely 
+sown
+Late 
+sown
+% 
+increase
+Timely 
+sown
+Late 
+sown
+% 
+increase
+Timely 
+sown
+Late 
+sown
+% 
+increase
+Timely 
+sown
+Late 
+sown
+% 
+increase
+Khodabanpur
+18.3
+16.4
+11.6
+4.69
+2.94
+59.5
+6.38
+4.5
+41.6
+11.07
+7.45
+48.7
+42.4
+39.5
+7.3
+Jale
+17.2
+15.3
+12.4
+4.47
+2.8
+59.6
+5.61
+4.29
+30.6
+10.07
+7.09
+42.1
+44.3
+39.5
+12.4
+Piprakothi
+19.4
+17.5
+10.9
+4.92
+3.09
+59.4
+7.20
+4.71
+52.7
+12.12
+7.80
+55.4
+40.6
+39.6
+2.6
+Parsauni
+18.5
+16.2
+14.2
+4.69
+2.97
+58.1
+7.38
+4.82
+53.0
+12.07
+7.79
+55.0
+38.9
+38.1
+2.0
+Madhopur
+23.2
+21.4
+8.4
+5.83
+3.58
+62.6
+7.24
+5.55
+30.4
+13.07
+9.14
+43.0
+44.6
+39.2
+13.7
+Narkatiaganj
+20.3
+18.5
+9.7
+5.15
+3.2
+60.7
+6.97
+4.92
+41.5
+12.12
+8.13
+49.1
+42.5
+39.4
+7.8
+Manjhi
+19.2
+17.2
+11.6
+4.92
+3.06
+60.8
+6.15
+4.71
+30.5
+11.07
+7.77
+42.4
+44.4
+39.4
+12.9
+Bhagwanpur 
+Hat
+18.3
+16.1
+13.7
+4.69
+2.94
+59.5
+6.38
+4.50
+41.6
+11.07
+7.45
+48.7
+42.4
+39.5
+7.3
+Sipaya
+20.7
+18.4
+12.5
+5.15
+3.03
+69.8
+8.06
+4.92
+63.7
+13.21
+7.95
+66.0
+39.0
+38.1
+2.3
+Sitamarhi
+19.3
+17.2
+12.2
+4.92
+3.07
+60.1
+6.67
+4.71
+41.6
+11.59
+7.79
+48.9
+42.4
+39.5
+7.5
+Turki
+17.5
+15.5
+12.9
+4.47
+2.84
+57.4
+7.04
+4.53
+55.3
+11.50
+7.37
+56.1
+38.8
+38.5
+0.8
+Saraiya
+19.4
+17.4
+11.5
+4.92
+3.09
+59.4
+7.20
+4.71
+52.7
+12.12
+7.80
+55.4
+40.6
+39.6
+2.6
+Sukhet
+17.7
+16.0
+10.6
+4.47
+2.82
+58.2
+6.56
+4.29
+52.8
+11.03
+7.12
+54.9
+40.5
+39.7
+2.1
+Sheohar
+19.2
+17.2
+11.6
+4.92
+3.06
+60.8
+6.15
+4.71
+30.5
+11.07
+7.77
+42.4
+44.4
+39.4
+12.9
+Vaishali
+20.2
+18.1
+11.6
+5.15
+3.19
+61.3
+6.42
+4.92
+30.5
+11.57
+8.11
+42.6
+44.5
+39.3
+13.1
+Birauli
+19.6
+17.1
+14.6
+4.92
+3.09
+59.4
+7.20
+4.71
+52.7
+12.12
+7.80
+55.4
+40.6
+39.6
+2.6
+Lada
+20.5
+18.2
+12.6
+5.1
+3.01
+69.4
+8.06
+4.95
+62.8
+13.16
+7.96
+65.3
+38.8
+37.8
+2.5
+Mean
+19.3
+17.3
+11.9
+4.90
+3.05
+61.0
+6.86
+4.73
+45.0
+11.77
+7.78
+51.3
+41.8
+39.2
+6.6
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+11
+frontiersin.org
+TABLE 4  Yield attributes of wheat under timely sown and late-sown conditions.
+Locations
+Number of shoots (per m2)
+Number of spikes (per m2)
+Number of unfilled spikes 
+(per m2)
+Number of grains per spike
+1,000-grain weight (g)
+Timely 
+sown
+Late 
+sown
+% 
+increase
+Timely 
+sown
+Late 
+sown
+% 
+increase
+Timely 
+sown
+Late 
+sown
+% 
+decrease
+Timely 
+sown
+Late 
+sown
+% 
+increase
+Timely 
+sown
+Late 
+sown
+% 
+increase
+Khodabanpur
+429.6
+395.0
+8.8
+320.1
+294.7
+8.6
+100.3
+109.5
+9.2
+52.5
+40.6
+29.1
+32.1
+30.5
+5.2
+Jale
+414.6
+382.2
+8.5
+305.6
+282.0
+8.3
+100.1
+109.0
+8.9
+48.2
+38.9
+24.1
+30.8
+29.3
+5.1
+Piprakothi
+444.5
+407.8
+9.0
+334.7
+307.4
+8.9
+100.4
+109.9
+9.4
+52.8
+42.4
+24.6
+32.9
+31.2
+5.4
+Parsauni
+429.6
+392.1
+9.5
+320.1
+291.1
+10.0
+101.0
+109.5
+8.4
+50.5
+40.2
+25.5
+32.3
+30.5
+5.9
+Madhopur
+504.5
+467.7
+7.9
+392.9
+368.7
+6.5
+98.9
+111.6
+12.8
+62.0
+50.6
+22.4
+31.9
+29.3
+8.8
+Narkatiaganj
+459.5
+423.5
+8.5
+349.2
+323.6
+7.9
+99.9
+110.3
+10.5
+55.1
+44.6
+23.7
+32.3
+30.1
+7.3
+Manjhi
+444.5
+410.7
+8.3
+334.7
+310.9
+7.6
+99.7
+109.9
+10.2
+52.8
+42.8
+23.4
+32.9
+31.4
+4.7
+Bhagwanpur 
+Hat
+429.6
+395.0
+8.8
+320.1
+294.7
+8.6
+100.3
+109.5
+9.2
+50.5
+40.6
+24.3
+31.6
+30.0
+5.3
+Sipaya
+459.5
+417.8
+10.0
+349.2
+316.5
+10.3
+101.3
+110.3
+8.9
+55.1
+43.8
+25.9
+32.1
+29.3
+9.5
+Sitamarhi
+444.5
+409.2
+8.6
+334.7
+309.1
+8.3
+100.1
+109.9
+9.8
+52.8
+42.6
+24.0
+32.8
+31.2
+5.1
+Turki
+414.6
+377.9
+9.7
+305.6
+276.7
+10.4
+101.2
+109.0
+7.7
+48.2
+38.3
+26.0
+31.1
+29.3
+6.1
+Saraiya
+444.5
+407.8
+9.0
+334.7
+307.4
+8.9
+100.4
+109.9
+9.4
+52.8
+42.4
+24.6
+32.7
+31.0
+5.4
+Sukhet
+414.6
+375.0
+10.5
+305.6
+273.1
+11.9
+101.9
+109.0
+7.0
+48.2
+37.9
+27.3
+31.5
+29.5
+6.7
+Sheohar
+444.5
+410.7
+8.3
+334.7
+310.9
+7.6
+99.7
+109.9
+10.2
+52.8
+42.8
+23.4
+33.0
+31.5
+4.7
+Vaishali
+459.5
+424.9
+8.1
+349.2
+325.4
+7.3
+99.5
+110.3
+10.9
+55.1
+44.8
+23.1
+33.6
+32.1
+4.6
+Birauli
+444.5
+405.0
+9.8
+334.7
+303.8
+10.2
+101.2
+109.9
+8.6
+52.8
+42.0
+25.7
+33.1
+31.2
+6.0
+Lada
+459.5
+420.6
+9.2
+349.2
+320.0
+9.1
+100.6
+110.3
+9.7
+55.1
+44.2
+24.8
+31.0
+27.9
+11.1
+Mean
+443.7
+407.2
+9.0
+333.8
+306.8
+8.9
+100.4
+109.9
+9.4
+52.8
+42.3
+24.8
+32.2
+30.3
+6.3
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+12
+frontiersin.org
+conditions varies with other studies conducted elsewhere, perhaps 
+due to differential growing environments, growing period length, 
+water use, and grain yield. While working on rice water productivity, 
+Tuong et al. (2005) reported an average water productivity of 0.4 kg 
+grain m−3 with respect to total water input (irrigation plus rainfall). 
+Under water-stressed environment, an increase in water productivity 
+to 0.8–1.0 kg grain m−3 was reported (Kato et al., 2009; de Vries et al., 
+2010). Zwart and Bastiaanssen (2004) estimated the water 
+productivity and evapotranspiration requirement of rice as 
+0.6–1.6 kg m−3 and 400–800 mm, respectively.
+The variations in effective rainfall during the growing season of 
+early and late transplanted rice are presented in Table 9. In general, the 
+effective rainfall was higher for the late transplanted rice. The effective 
+rainfall for timely transplanted rice ranged from a low of 553.0 mm to 
+a high of 741.3 mm across the study area. In the case of late 
+transplanted rice, it was found to vary from 658.8 to 825.3 mm. Since 
+the late transplanted crop in farmers’ field faced moisture stress of 
+varying intensity, the efficiency of rainwater utilization was much 
+higher leading to higher effective rainfall. A small amount of rainfall 
+in dry soils could be more useful and effective, whereas the same 
+TABLE 5  Thresholds of optimum temperature for wheat yield in the study area.
+Sowing to tiller initiation
+50% flowering to milking
+50% flowering to maturity
+Yield levels (t ha−1)
+Tmax (°C)
+Tmin (°C)
+Tmax (°C)
+Tmin (°C)
+Tmax (°C)
+Tmin (°C)
+22.6
+7.6
+30.2
+16.8
+33.1
+18.0
+< 2.0
+24.0
+9.2
+29.4
+15.1
+32.1
+17.2
+> 2.0 and < 3.0
+22.5
+9.8
+26.9
+13.1
+30.4
+15.7
+> 3.0 and < 4.0
+23.7
+11.8
+24.6
+11.6
+29.2
+14.4
+> 4.0
+Tmax, maximum temperature; Tmin, minimum temperature.
+FIGURE 5
+Yield attributing traits such as number of shoots per m2, number of spike per m2, and number of unfilled spike per m2 under timely sown and late-sown 
+wheat crops.
+FIGURE 6
+Yield attributing traits such as number of grains per spike, 1,000 grain weight, number of fertile spikes, and number of grains per spike under timely 
+sown and late-sown wheat crops.
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+13
+frontiersin.org
+amount of rainfall in wet soil may be insignificant. Chang (1963) 
+observed that the effective rainfall increased with the storage capacity 
+and drying condition of the soil. In the present study, lesser rainfall 
+availed for late transplanted crops might have been more effective in 
+meeting evapotranspiration requirements of the crop. On the other 
+hand, for early transplanted crops, a higher fraction might have been 
+ineffective due to seepage and percolation losses.
+Considering water-saving methods, direct seeded rice (DSR) and 
+System of Rice Intensification (SRI) planting methods of rice are gaining 
+importance under water-stressed environments in the wake of climate 
+change. At present, it is only about 2.5% of the total rice-growing area in 
+Bihar. In the study area, the farmers tend to opt it for upland areas under 
+conditions of erratic monsoon. On the other hand, the SRI method does 
+not find any taker among the farmers of the region.
+3.4 Effect of early wheat harvesting on the 
+yield of subsequent green gram
+The manipulation of sowing dates of both rice and wheat in the 
+cropping system provided sufficient space and opportunity for the 
+sowing of green gram at appropriate time with the provision of 
+assured irrigation. Thus, the early sowing of rice–wheat helped us to 
+achieve a grain yield of green gram to the tune of 7.21 t ha−1 (Table 10), 
+whereas in the farmers’ practice, the yield was much lower (6.09 t ha−1). 
+An obvious increase of 18.4% in the grain yield of green gram 
+was recorded.
+3.5 Effect of optimization of the sowing 
+window on the system productivity and 
+economics of rice–wheat–green gram 
+system
+The cropping intensity of experimental plots and the farmers’ 
+practice was found to be >300%. However, the rice equivalent yield 
+(REY) of timely sown assured irrigation plots was found to 
+be 13.25 t ha−1, whereas under farmers’ practice (delayed condition), 
+REY was observed as 8.89 t ha−1. The production efficiency was 
+found to be 35.3 kg ha−1 day−1 for timely sown assured irrigation 
+plots. On the other hand, it was paltry (24.0 kg ha−1 day−1) under 
+farmers’ practice. In the case of the land use efficiency, it was found 
+TABLE 6  Average thermal time and maximum temperature during different phenological stages of wheat.
+Date of 
+sowing
+50% flowering stage
+Milk stage
+Dough stage
+Physiological maturity
+Thermal 
+time
+Temp 
+(°C)
+Thermal 
+time
+Temp 
+(°C)
+Thermal 
+time
+Temp 
+(°C)
+Thermal 
+time
+Temp 
+(°C)
+7 Nov
+5 Feb
+25.0
+16 Feb
+25.8
+15 Mar
+29.8
+7 Apr
+34.6
+25 Nov
+14 Feb
+26.8
+23 Feb
+27.8
+25 Mar
+34.03
+20 Apr
+37.0
+TABLE 7  Temperature trends during the wheat growing season at Pusa located in the study area (database 1990–2019).
+Parameters
+November
+December
+January
+February
+March
+Annual
+Tmax (°C)
+*(D)
+**(D)
+**(D)
+NS(D)
+*(D)
+**(D)
+Tmin (°C)
+*(I)
+**(I)
+**(I)
+**(I)
+*(I)
+**(I)`
+D, decreasing trend; I, increasing trend; NS, non-significant; Tmax, maximum temperature; Tmin, minimum temperature. *p = 0.05, **p = 0.01.
+TABLE 8  Trend statistics of annual rainfall, number of dry days during monsoon, and annual rainy days at different locations over the study area.
+Stations
+Parameters
+Annual rainfall 
+(mm)
+No. of dry days during 
+monsoon
+No. of annual 
+rainy days
+Pusa
+Average (30 years, 1990–2019)
+1258.9
+66.0
+58.0
+Preceding 10-year average (2010–2019)
+1012.8
+73.0
+49.0
+Trends over 30 years (1990–2019)
+−9.6
++0.543*
+−0.380
+Muzaffarpur
+Average (30 years, 1990–2019)
+1222.8
+67.0
+56.0
+Preceding 10-year average (2010–2019)
+850.6
+71.0
+46.0
+Trends over 30 years (1990–2019)
+−18.9*
++0.289
+−0.557*
+Chhapra
+Average (30 years, 1990–2019)
+1151.2
+70.0
+54.0
+Preceding 10-year average (2010–2019)
+817.3
+87.0
+39.0
+Trends over 30 years (1990–2019)
+−21.8**
++1.456**
+−0.988**
+Motihari
+Average (30 years, 1990–2019)
+1406.2
+68.0
+59.0
+Preceding 10-year average (2010–2019)
+1294.8
+70.0
+58.0
+Trends over 30 years (1990–2019)
+3.6
++0.224
+−0.099
+*p = 0.05, **p = 0.01.
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+14
+frontiersin.org
+TABLE 9  Yield, water productivity, and effective rainfall for timely and late transplanted kharif rice at different locations over the study area.
+Yield, water productivity, and effective rainfall for 
+timely transplanted rice
+Yield, water productivity, and effective rainfall for 
+late transplanted rice
+Location
+Yield 
+(kg ha−1)
+Water 
+requirement 
+(mm)
+Water 
+productivity 
+(kg  m−3 ha−1)
+Effective 
+rainfall 
+(mm)
+Yield 
+(kg  ha−1)
+Water 
+requirement 
+(mm)
+Water 
+productivity 
+(kg  m−3 ha−1)
+Effective 
+rainfall 
+(mm)
+Khodabanpur
+4,990
+531.3
+0.673
+741.3
+3,054
+585.4
+0.384
+795.4
+Jale
+4,770
+524.4
+0.802
+594.4
+2,911
+615.4
+0.425
+685.4
+Piprakothi
+5,220
+522.8
+0.788
+662.7
+3,220
+606.6
+0.431
+746.6
+Parsauni
+4,991
+517.7
+0.759
+657.7
+3,087
+606.6
+0.413
+746.6
+Madhopur
+6,132
+512.9
+1.052
+582.9
+3,692
+588.8
+0.560
+658.8
+Narkatiaganj
+5,452
+483.0
+0.986
+553.0
+3,310
+592.3
+0.500
+662.3
+Manjhi
+5,220
+529.2
+0.706
+739.2
+3,176
+615.3
+0.385
+825.3
+Bhagwanpur 
+Hat
+4,991
+527.9
+0.676
+737.8
+3,054
+615.3
+0.370
+825.3
+Sipaya
+5,451
+519.8
+0.747
+729.8
+3,346
+600.3
+0.413
+810.3
+Sitamarhi
+5,223
+518.7
+0.793
+658.6
+3,182
+606.1
+0.426
+746.1
+Turki
+4,770
+525.6
+0.717
+665.5
+2,958
+614.1
+0.392
+754.1
+Saraiya
+5,221
+511.8
+0.801
+651.7
+3,201
+614.1
+0.424
+754.1
+Sukhet
+4,757
+516.4
+0.725
+656.3
+2,932
+603.8
+0.394
+743.8
+Sheohar
+5,224
+517.5
+0.718
+727.5
+3,175
+606.1
+0.389
+816.1
+Vaishali
+5,450
+526.7
+0.817
+666.7
+3,300
+614.7
+0.437
+754.7
+Birauli
+5,227
+524.4
+0.787
+664.4
+3,200
+615.7
+0.423
+755.7
+Lada
+5,452
+523.3
+0.822
+663.2
+3,340
+618.7
+0.440
+758.7
+Mean
+–
+–
+0.786
+–
+–
+–
+0.423
+–
+to be 96.9% under timely sown assured irrigation plots, and under 
+farmers’ practice, it was 93.1%. Net return from rice was found to 
+be INR 76117.00 per hectare with a benefit: cost ratio of 2.15 in the 
+timely sown crop as against the net return of INR 36803.00 with 
+benefit: cost ratio of 1.04 under the farmers’ practice. Considering 
+wheat from the same piece of land, the net return was INR 86890.00 
+with benefit: cost ratio of 2.44 in the treated plots as against INR 
+59315.00 and 1.72, respectively, from the farmers’ practice. The 
+green gram provided a net return of INR 34972.00 with benefit: cost 
+ratio of 1.54 in the treated plots as against the net return of INR 
+25160.00 with benefit: cost ratio of 1.05 for the crop grown under 
+farmers’ practice.
+FIGURE 7
+Water productivity and effective rainfall for timely and late transplanted kharif rice at different locations over the study area.
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+15
+frontiersin.org
+4 Conclusion
+By manipulating the sowing dates of rice and wheat, the adverse 
+impacts of climate variability can be minimized to achieve higher 
+system productivity. Moreover, the provision of an assured irrigation 
+system can help ward off the negative impact of dry spells and 
+unfavorable soil moisture regimes on rice production. The major 
+source of irrigation is groundwater, which is extracted by diesel pump 
+sets or by a three-phase 5/7.5 hp. electric pumping system. However, 
+this requires high infrastructure, which is time taking, and voltage 
+fluctuation is a major limiting factor. The high cost of irrigation 
+coupled with the late onset of monsoon is also a major factor, which 
+compels the farmers of the region to go for late sowing and late 
+transplanting. Hence, the productivity of the crop remains low, and 
+under such situation, the state is bound to grow rice in 3.2 million 
+hectares to meet the food requirements. If infrastructure is created for 
+less costly irrigation systems with 3-hp single-phase tube wells fitted 
+with submersible pumps, the productivity can be increased by 50–60% 
+and the food demand of the state can be supported with only 1.2–1.5 
+million hectares of land with a lower cost of cultivation and lesser 
+investment. Accordingly, the remaining land can be diversified for 
+other cash crops and agri-entrepreneurship development. 
+Alternatively, if rice cultivation is still continued in 3.2 million 
+hectares, the production can be almost doubled. The same is the case 
+with wheat, where we  can enhance the productivity from 2.9 to 
+5.0 t ha−1 with timely sowing and assured irrigation to escape the 
+impacts of terminal heat. With this productivity of wheat, the food 
+demand of the state can be achieved with just 60% of the wheat 
+growing area, and the leftover land can be  diversified for other 
+enterprises. Green gram can be best suited in the rice–wheat system, 
+if the provision of timely sowing and assured irrigation is made with 
+the 
+installation 
+of 
+3-hp 
+single-phase 
+tube 
+wells 
+with 
+submersible pumps.
+The results of the study showed that with the assured community 
+irrigation system and shifting planting dates, the productivity of rice–
+wheat cropping system can be achieved greater than 10.0 t ha−1 with a 
+cropping intensity of 300% for better adaptation and sustainable 
+production. Moreover, the water productivity of timely transplanted 
+FIGURE 8
+Irrigation water productivity of timely and late transplanted kharif rice at different locations over the study area.
+TABLE 10  Yield performance of green gram at different locations under 
+timely sown and late-sown conditions.
+Locations
+Grain yield (t ha−1)
+Timely 
+sown
+Late 
+sown
+% increase
+Khodabanpur
+6.90
+5.88
+17.3
+Jale
+6.57
+5.60
+17.3
+Piprakothi
+7.24
+6.17
+17.3
+Parsauni
+6.90
+5.94
+16.2
+Madhopur
+8.57
+7.17
+19.5
+Narkatiaganj
+7.57
+6.41
+18.1
+Manjhi
+7.24
+6.12
+18.2
+Bhagwanpur Hat
+6.90
+5.88
+17.3
+Sipaya
+7.57
+6.06
+24.9
+Sitamarhi
+7.24
+6.15
+17.7
+Turki
+6.57
+5.68
+15.7
+Saraiya
+7.24
+6.17
+17.3
+Sukhet
+6.57
+5.65
+16.3
+Sheohar
+7.24
+6.12
+18.3
+Vaishali
+7.57
+6.38
+18.7
+Birauli
+7.24
+6.17
+17.3
+Lada
+7.50
+6.02
+24.6
+Mean
+7.21
+6.09
+18.4
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+16
+frontiersin.org
+rice was observed to be 85.8% higher than that of late transplanted 
+one. With the application of our simple innovative technology, the 
+negative impacts of climatic challenges on crop production can 
+be  resolved to a large extent in the region for achieving higher 
+productivity of rice–wheat cropping system. However, it is important 
+to assess the impacts of the technology with regard to enhanced farm 
+income, alleviation of rural poverty, and lesser energy utilization. On 
+the other hand, the impact of the technology with respect to 
+groundwater depletion would be a topic for further investigation for 
+upscaling the benefits among the farmers at larger domain.
+Data availability statement
+The original contributions presented in the study are included in 
+the article/supplementary material, further inquiries can be directed 
+to the corresponding author.
+Author contributions
+RJ: Conceptualization, Investigation, Writing – original draft, Writing 
+– review & editing, Funding acquisition, Methodology, Resources. AbS: 
+Conceptualization, Writing – original draft, Writing – review & editing, 
+Methodology. AnKS: Project administration, Resources, Supervision, 
+Visualization, Writing – review & editing. MK: Investigation, Supervision, 
+Writing – review & editing. RT: Writing – review & editing. AbKS: 
+Writing – review & editing, Investigation, Project administration, 
+Resources. ArKS: Writing – review & editing, Data curation, Investigation, 
+Project administration, Resources. SudhD: Writing – review & editing, 
+Investigation, Project administration, Resources. RP: Writing – review & 
+editing, Investigation, Resources. SKus: Writing – review & editing, 
+Investigation, Methodology, Project administration, Resources. AK: 
+Writing – review & editing, Data curation, Investigation, Resources. MM: 
+Writing – review & editing, Investigation, Methodology, Project 
+administration, Resources. PS: Supervision, Visualization, Writing – 
+review & editing. SG: Writing – review & editing, Investigation, Project 
+administration, Resources. DS: Investigation, Resources, Writing – review 
+& editing. SaR: Investigation, Methodology, Resources, Writing – review 
+& editing. SKG: Writing – review & editing, Investigation, Methodology, 
+Project administration, Resources. RR: Writing – review & editing, 
+Investigation, Resources. RIP: Writing – review & editing, Investigation, 
+Resources. APS: Writing – review & editing, Investigation, Resources. 
+RPS: Writing – review & editing, Data curation, Investigation, 
+Methodology. PKSi: Resources, Writing – review & editing, Investigation, 
+Methodology. PKSr: Project administration, Resources, Writing – review 
+& editing. BJ: Data curation, Supervision, Writing – review & editing. RSe: 
+Data curation, Visualization, Writing – review & editing. SudeD: Data 
+curation, Formal analysis, Writing – review & editing. SS: Data curation, 
+Writing – review & editing. GS: Data curation, Investigation, Writing – 
+original draft, Writing – review & editing. ShR: Data curation, Writing – 
+review & editing. NiK: Data curation, Writing – review & editing. AR: 
+Data curation, Investigation, Writing – review & editing. SaK: Data 
+curation, Resources, Writing – review & editing. VKa: Data curation, 
+Methodology, Resources, Writing – review & editing. SuK: Investigation, 
+Resources, Validation, Writing – review & editing. KC: Data curation, 
+Investigation, Methodology, Writing – review & editing. TK: Investigation, 
+Methodology, Resources, Writing – review & editing. SaP: Investigation, 
+Methodology, Writing – review & editing. AG: Data curation, Resources, 
+Writing – review & editing. AN: Data curation, Investigation, Writing – 
+review & editing. AP: Investigation, Resources, Writing – review & 
+editing. RSi: Investigation, Resources, Writing – review & editing. CR: 
+Data curation, Formal analysis, Investigation, Writing – review & editing. 
+ShP: Data curation, Investigation, Visualization, Writing – review & 
+editing. KR: Data curation, Formal analysis, Validation, Writing – review 
+& editing. SSP: Data curation, Investigation, Writing – review & editing. 
+VKu: Data curation, Methodology, Writing – review & editing. LC: 
+Investigation, Resources, Writing – review & editing. BH: Investigation, 
+Resources, Writing – review & editing. STK: Data curation, Investigation, 
+Writing – review & editing. JS: Data curation, Investigation, Writing – 
+review & editing. SC: Data curation, Investigation, Writing – review & 
+editing. ST: Data curation, Investigation, Writing – review & editing. NaK: 
+Investigation, Writing – review & editing. DT: Investigation, Data 
+curation, Writing – review & editing.
+Funding
+The author(s) declare financial support was received for the 
+research, authorship, and/or publication of this article. This study was 
+funded by the Climate Resilient Agriculture Program (CRAP), Govt. 
+of Bihar, India.
+Acknowledgments
+This study has been carried out under the Climate Resilient 
+Agriculture (CRA) Program funded by the Government of Bihar, 
+India. The authors thank the authority of Dr. Rajendra Prasad Central 
+Agricultural University for providing the necessary facilities for 
+carrying out the research under the project.
+Conflict of interest
+The authors declare that the research was conducted in the 
+absence of any commercial or financial relationships that could 
+be construed as a potential conflict of interest.
+Publisher’s note
+All claims expressed in this article are solely those of the authors 
+and do not necessarily represent those of their affiliated organizations, 
+or those of the publisher, the editors and the reviewers. Any product 
+that may be evaluated in this article, or claim that may be made by its 
+manufacturer, is not guaranteed or endorsed by the publisher.
+References
+Ahmed, S., Islam, M. R., Alam, M. M., Haque, M. M., and Karim, A. J. M. S. (2011). 
+Rice production and profitability as influenced by integrated crop and resources 
+management. Eco-Friendly Agril. J. 4, 720–725.
+Alam, M. K., Biswas, W. K., and Bell, R. W. (2016). Greenhouse gas implications of 
+novel and conventional rice production technologies in the eastern-Gangetic plains. J. 
+Clean. Prod. 112, 3977–3987. doi: 10.1016/j.jclepro.2015.09.071
+Jha et al.
+10.3389/fsufs.2023.1259528
+Frontiers in Sustainable Food Systems
+17
+frontiersin.org
+Alvarado, J. R. (2002). Influence of air temperature on rice population, length of period 
+from sowing to flowering and spikelet sterility, proceedings of the second temperate rice 
+conference, Held at IRRI, Philippines.
+Anon (2016). Annual progress report, All India Coordinated Research Project on 
+Agrometeorology, DRPCAU, Bihar.
+Anon, (2022). Ground water year book. Bihar: Government of India, Ministry of Jal 
+Shakti, Department of Water Resources, River Development and Ganga Rejuvenation, 
+Central Ground Water Board.
+Arunrat, N., Pumijumnong, N., Sereenonchai, S., Chareonwong, U., and Wang, C. 
+(2020). Assessment of climate change impact on rice yield and water footprint of large-
+scale and individual farming in Thailand. Sci. Total Environ. 726:137864. doi: 10.1016/j.
+scitotenv.2020.137864
+Bal, S. K., Sattar, A., Nidhi, C., Chandran, M. A. S., Subba Rao, A. V. M., 
+Manikandan, N., et al. (2023). Critical weather limits for paddy rice under diverse 
+ecosystems of India. Front. Plant Sci. 14:1226064. doi: 10.3389/fpls.2023.1226064
+Bhatt, R., Kukal, S. S., Busari, M. A., Arora, S., and Yadav, M. (2016). Sustainability 
+issues on rice–wheat cropping system. Int. Soil Water Conserv. Res 4, 64–74. doi: 
+10.1016/j.iswcr.2015.12.001
+Chahal, G. B. S., Sood, A., Jalota, S. K., Choudhury, B. U., and Sharma, P. K. (2007). 
+Yield, evapotranspiration and water productivity of rice (Oryza sativa L.)–wheat 
+(Triticum aestivum L.) system in Punjab (India) as influenced by transplanting date of 
+rice and weather parameters. Agric. Water Manag. 88, 14–22. doi: 10.1016/j.
+agwat.2006.08.007
+Chang, J.-H. (1963). The role of climatology in the Hawaiian sugarcane industry: an 
+example of applied agricultural climatology in the tropics. Pacific Sci. 17, 379–397.
+Chow, V. T. (1964). Handbook of applied hydrology. New York, NY, McGraw Hill Book 
+Co Department of Agriculture, Govt. of Bihar.
+De Vries, M. E., Rodenburg, J., Bado, B. V., Sow, A., Leffelaar, P. A., and Giller, K. E. 
+(2010). Rice production with less irrigation water is possible in a Sahelian environment. 
+Field Crop Res. 116, 154–164. doi: 10.1016/j.fcr.2009.12.006
+Dubey, R., Pathak, H., Singh, S., Chakraborty, B., Thakur, A. K., and Fagodia, R. K. 
+(2019). Impact of sowing dates on terminal heat tolerance of different wheat (Triticum 
+aestivum L.) cultivars. Natl. Acad. Sci. Lett. 42, 445–449. doi: 10.1007/s40009-019-0786-7
+Grist, D. H. (1986). Characteristics of the plant in rice, Longman, London.
+Jain, N., Dubey, R., and Dubey, D. S. (2014). Mitigation of greenhouse gas emission 
+with system of rice intensification in the Indo-Gangetic Plains. Paddy Water Environ. 
+12, 355–363. doi: 10.1007/s10333-013-0390-2
+Jalota, S. K., Singh, K. B., Chahal, G. B. S., Gupta, R. K., Chakraborty, S., Sood, A., 
+et al. (2009). Integrated effect of transplanting date, cultivar and irrigation on yield, 
+water saving and water productivity of rice (Oryza sativa L.) in Indian Punjab: field 
+and simulation study. Agric. Water Manage. 96, 1096–1104. doi: 10.1016/j.
+agwat.2009.02.005
+Jat, H. S., Datta, A., Sharma, P. C., Kumar, V., Yadav, A. K., Choudhary, M., et al. 
+(2018). Assessing soil properties and nutrient availability under conservation agriculture 
+practices in a reclaimed sodic soil in cereal-based systems of north-West India. Arch. 
+Agron. Soil Sci. 64, 531–545. doi: 10.1080/03650340.2017.1359415
+Kato, Y., Okami, M., and Katsura, K. (2009). Yield potential and water use efficiency 
+of aerobic rice (Oryza sativa L.) in Japan. Field Crop Res. 113, 328–334. doi: 10.1016/j.
+fcr.2009.06.010
+Kendall, M. G. (1975). Rank correlation methods. Griffin, London.
+Kobayashi, K., Matsui, T., Yoshimoto, M., and Hasegawa, T. (2010). Effects of 
+temperature, solar radiation and vaporpressure deficit on flower opening time in rice. 
+Plant Prod. Sci. 13, 21–28. doi: 10.1626/pps.13.21
+Kumari, S., Seth, T., Prajapat, K., Harsur, M. M., Reddy, B. R., and Kumar, D. (2019). 
+Case study-participatory rural appraisal: an approach for identification of the problems 
+and solution for the problems. Mutilogic Sci. 16, 118–126.
+Kumari, S., Singh, A. K., and Lal, S. P. (2022). Rice varietal preference of farmers in 
+rice bowl region of Bihar: a polychotomous logistic regression analysis. Indian J. Extens. 
+Educ. 58, 48–53. doi: 10.5958/2454-552X.2022.00032.9
+Lal, R. (2019). “Adaptation and mitigation of climate change by improving agriculture 
+in India” in Climate change and agriculture in India: impact and adaptation. ed. S. Sheraz 
+Mahdi (Cham: Springer International Publishing), 217–227.
+Mann, H. B. (1945). Nonparametric tests against trend. Econometrica 13, 245–259. 
+doi: 10.2307/1907187
+Mondal, S., Poonia, S. P., Mishra, J. S., Bhatt, B. P., Karnena, K. R., and Saurabh, K. 
+(2020). Short-term (5 years) impact of conservation agriculture on soil physical 
+properties and organic carbon in a rice–wheat rotation in the Indo-Gangetic Plains of 
+Bihar. Eur. J. Soil Sci. 71, 1076–1089. doi: 10.1111/ejss.12879
+Murty, K. S., Nayak, S. K., and Sahu, G. (1975). “Effect of low light stress on rice crop” 
+in Proceedings of the Symposium on Crop Plant Response of Environmental Stresses, Held 
+at VPKAS (Almora: ICAR-Vivekananda Krishi Anusundhan Sansthan), 74–84.
+Najmuddin, O., Rasul, G., Hussain, A., Molden, D., Wahid, S., and Debnath, B. (2018). 
+Low water productivity for Rice in Bihar, India—a critical analysis. Water 10:1082. doi: 
+10.3390/w10081082
+Oguntunde, P. G., Abiodun, B. J., Olukunle, O. J., and Olufayoa, A. A. (2011). Trends 
+and variability in pan evaporation and other climatic variables at Ibadan, Nigeria, 
+1973–2008. Meteorol. Appl. 19, 464–472. doi: 10.1002/met.281
+Poudel, P. B., Poudel, M. R., and Puri, R. R. (2021). Evaluation of heat stress 
+tolerance in spring wheat (Triticum aestivum L.) genotypes using stress tolerance 
+indices in western region of Nepal. J. Agric. Food Res. 5:100179. doi: 10.1016/j.
+jafr.2021.100179
+Sandhu, S. S., Prabhjyot, K., Padmakar, T., Patel, S. R., Rajinder, P., Solanki, N. S., et al. 
+(2016). Effect of intraseasonal temperature on wheat at different locations of India: a 
+study using CERES-wheat model. J. Agrometeorol. 18, 222–233. doi: 10.54386/jam.
+v18i2.939
+Sattar, A., Gulab, S., Singh Shruti, V., Mahesh, K., Vijaya Kumar, P., and Bal, S. K. 
+(2020). Evaluating temperature thresholds and optimizing sowing dates of wheat in 
+Bihar. J. Agrometeorol. 22, 158–164. doi: 10.54386/jam.v22i2.156
+Sattar, A., Kumar, M., Vijaya Kumar, P., and Khan, S. A. (2017). Crop weather relation 
+in kharif rice for north-west alluvial plain zone of Bihar. J. Agrometorol. 19, 71–74. doi: 
+10.54386/jam.v19i1.760
+Sattar, A., Nanda, G., Singh, G., Jha, R. K., and Bal, S. K. (2023). Responses of 
+phenology, yield attributes, and yield of wheat varieties under different sowing times in 
+IndoGangetic Plains. Front. Plant Sci. 14:1224334. doi: 10.3389/fpls.2023.1224334
+Sattar, A., and Srivastava, R. C. (2021). Modelling climate smart rice-wheat production 
+system in the middle Gangetic Plains of India. Theor. Appl. Climatol. 144, 77–91. doi: 
+10.1007/s00704-020-03497-6
+Srivastava, R. C., Singh, N. K., Nilanjaya, , Singh, S. K., Sattar, A., Kumar, V., et al. 
+(2018) Enhancement of rice-wheat productivity through climate smart agriculture. 
+Publication Division, RPCAU, Bihar.
+Tinarelli, A. (1989). Climate and rice. IRRI, Philippines.
+Tuong, T. P., Bouman, B. A. M., and Mortimer, M. (2005). More rice, less water—
+integrated approaches for increasing water productivity in irrigated rice-based systems 
+in Asia. Plant Prod. Sci. 8, 231–241. doi: 10.1626/pps.8.231
+Venkataraman, S., and Krishnan, A. (1992). “Weather relations of crops” in Crops and 
+weather (New Delhi: ICAR), 302–457.
+Yadav, R., Tripathi, S. K., Pranuthi, G., and Dubey, S. K. (2014). Trend analysis by 
+Mann-Kendall test for precipitation and temperature for thirteen districts of 
+Uttarakhand. J. Agrometerol. 16, 164–171. doi: 10.54386/jam.v16i2.1507
+Zwart, S. J., and Bastiaanssen, W. G. M. (2004). Review of measured crop water 
+productivity values for irrigated wheat, rice, cotton and maize. Agric. Water Manag. 69, 
+115–133. doi: 10.1016/j.agwat.2004.04.007

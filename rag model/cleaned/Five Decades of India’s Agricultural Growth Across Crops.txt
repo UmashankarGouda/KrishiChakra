@@ -1,0 +1,42 @@
+### DOCUMENT INFO  
+- **Title/Topic**: Five Decades of India’s Agricultural Growth Across Crops: Emerging Trends and Patterns  
+- **Type**: Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed**: Shift from foodgrains (cereals, pulses) to high-value crops (fruits, vegetables, oilseeds, fibers, spices).  
+- **Crops mentioned**:  
+  - Foodgrains (cereals, coarse cereals, pulses)  
+  - Non-foodgrains (fruits, vegetables, oilseeds, fiber crops, condiments/spices, sugarcane)  
+- **Regions covered**: National-level analysis (India).  
+
+### KEY FINDINGS  
+- **Yield improvements**:  
+  - Decline in area under foodgrains (11.62%) and coarse cereals (16.78%) from TE 1970-71 to TE 2020-21.  
+  - Fruits and vegetables now contribute the largest share (27.77%) of total crop output value.  
+- **Soil health benefits**: Regenerative agriculture and integrated farming systems (IFS) recommended for sustainability.  
+- **Economic impact**:  
+  - High-value crops (HVCs) occupy 20.12% of gross cropped area (GCA) but contribute 43.58% of total output value.  
+  - Staple crops (cereals, pulses, oilseeds) occupy 77.33% of GCA but contribute only 46.37% of output value.  
+- **Disease reduction**: Not explicitly mentioned, but diversification is implied to reduce monoculture risks.  
+
+### NUMERICAL DATA/TABLES  
+- **Area shifts**:  
+  - Foodgrains’ share in GCA declined by 11.62% (TE 1970-71 to TE 2020-21).  
+  - Coarse cereals area fell by 16.78% in the same period.  
+- **Output value shares (TE 2020-21)**:  
+  - Fruits/vegetables: 27.77%  
+  - Cereals: 27.41%  
+  - Oilseeds: Significant increase (exact % not specified).  
+- **Growth rates**: No crop achieved >4% annual production growth (1967–2021).  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers**:  
+  - Diversify towards high-value crops (oilseeds, pulses, horticulture).  
+  - Adopt small-holding farm technologies and regenerative agriculture (e.g., IFS models).  
+- **Best practices for crop rotation**:  
+  - Prioritize irrigation, credit, and market access for HVCs.  
+  - Use MSP as a signal for diversification; state coordination needed for sustainable shifts.  
+  - Focus on less water-intensive crops to align with doubling farmers’ income goals.  
+
+---  
+*Note: Extracted data focuses on trends, crop shifts, and policy implications; specific rotation sequences are not detailed.*

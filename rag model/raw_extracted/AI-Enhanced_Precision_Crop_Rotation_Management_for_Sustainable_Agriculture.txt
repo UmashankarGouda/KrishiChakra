@@ -1,0 +1,603 @@
+AI-Enhanced Precision Crop Rotation Management
+for Sustainable Agriculture
+Mrs Hafiyya R M
+Computer Science & Engineering
+MEA Engineering College
+hafiyyarm@gmail.com
+Mr Jemsheer Ahmed P
+Computer Science & Engineering
+MEA Engineering College
+jemsppl@gmail.com
+Mr Nabhan P A
+Computer Science & Engineering
+MEA Engineering College
+nabhanpa2001@gmail.com
+Mr Safvan Melethil
+Computer Science & Engineering
+MEA Engineering College
+safvanmelethil2@gmail.com
+Mr Nadhi Mohammed
+Computer Science & Engineering
+MEA Engineering College
+nadhiieee@gmail.com
+Mr Muhammed Murshid A P
+Computer Science & Engineering
+MEA Engineering College
+murshidapr4@gmail.com
+Abstract—This paper presents a novel approach to crop
+rotation management that integrates cutting-edge artificial intelli-
+gence (AI) techniques to improve and modernise agricultural pro-
+cesses. The study seeks to revolutionise traditional crop rotation
+tactics by utilising state-of-the-art machine learning techniques,
+namely supervised learning approaches. Through the use of real-
+time weather forecasts and historical crop performance data,
+AI-powered technology provides farmers with tailored advice
+for maximising crop rotations, ultimately leading to better agri-
+cultural results. The methodical methodology includes planning
+the project, gathering data, creating AI models, and deploying
+the system. Establishing precise project objectives, collecting and
+analysing soil data with care, creating AI-driven recommenda-
+tions, and making sure that monitoring and improvement are
+ongoing are all crucial tasks. At every level, the system uses a
+range of instruments and software to guarantee a methodical,
+data-driven approach that produces improved crop rotation
+techniques that are advantageous to the environment and the
+agricultural industry. This study adds to the rapidly developing
+field of artificial intelligence in agriculture by offering a workable
+and creative answer to the problems farmers face when managing
+crop rotation. The results underline how AI may be used to
+improve farming techniques, increase crop yields, and promote
+sustainable farming, which makes it an important contribution
+to the field of precision agriculture research.
+Index Terms—Advanced Crop Rotation Management, Ar-
+tificial Intelligence, Machine Learning, Supervised Learning,
+Precision Agriculture, Agricultural Optimization, Sustainable
+Farming.
+I. INTRODUCTION
+One of the earliest and most essential aspects of human
+civilization, agriculture has undergone constant change and
+adaptation to satisfy the rising demands of food production
+[1]. Crop rotation, a practice that dates back to ancient civiliza-
+tions, is a fundamental component of sustainable agricultural
+methods. In this method, farmers intentionally change the
+kinds of crops planted in particular fields from season to
+season. This tried-and-true method has proven crucial for pre-
+serving soil fertility, managing illnesses and pests, and guar-
+anteeing sustained agricultural productivity. Crop rotation is a
+strategy for maximizing yields and reducing the environmental
+effect of agriculture, in addition to maintaining the health of
+the soil. This project is being localized in the Malappuram
+area. Though successful, crop rotation techniques from the past
+have frequently relied on experience and empirical knowledge
+rather than the accuracy and flexibility needed to satisfy the
+demands of contemporary agriculture. Food security requires
+a significant increase in food production to keep up with the
+growing world population. Concurrently, agriculture encoun-
+ters growing environmental obstacles such soil deterioration,
+resource scarcity, and climate change. Novel strategies that
+may both maintain and increase agricultural productivity while
+reducing its environmental impact are desperately needed in
+this setting.
+A. Research Problems
+This study’s central research problem focuses on address-
+ing the following modern agricultural challenges: In what
+ways might crop rotation management be optimized by the
+application of artificial intelligence (AI), leading to better
+agricultural results? Although crop rotation techniques have
+been proven effective for decades, using artificial intelligence
+into agricultural management offers a chance to improve the
+accuracy, flexibility, and effectiveness of existing methods.
+B. Research Objectives
+This research sets forth several specific objectives:
+• To create an artificial intelligence (AI) system that can
+offer customized crop rotation advice based on past crop
+performance information and current weather projections.
+• To evaluate how well the AI model performs in terms
+of crop rotation optimization and enhanced agricultural
+results.
+• To assess how AI-based crop rotation management affects
+sustainability, soil health, and crop yields.
+C. Significance of the Study
+This study is important because it has the ability to change
+conventional farming methods and deal with pressing issues
+979-8-3503-9439-9/24/$31.00 ©2024 IEEE
+2024 International Conference on E-mobility, Power Control and Smart Systems (ICEMPS) | 979-8-3503-9439-9/24/$31.00 ©2024 IEEE | DOI: 10.1109/ICEMPS60684.2024.10559310
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:46:11 UTC from IEEE Xplore.  Restrictions apply. 
+that the agriculture sector is now facing [2]. Crop rotation
+management with AI has a number of significant benefits.
+In order to make better decisions about crop selection and
+rotation schedules and boost farmer profits [3], it first enables
+data-driven decision-making that takes into account historical
+crop performance and current meteorological data.
+Second, increasing crop yields using AI-driven crop rotation
+can improve food security, a major worldwide issue.
+Third, AI can support ecologically friendly agriculture by
+avoiding ecological harm and improving crop rotations, which
+is in line with the objectives of minimizing climate change .
+In summary, using AI to crop rotation management has
+the potential to completely transform farming methods by
+providing answers that boost yields, safeguard soil quality,
+and advance sustainable farming. In order to fully realize
+this transformative potential, this research will make a timely
+and substantial contribution to the fields of agricultural and
+environmental sciences.
+II. LITERATURE REVIEW
+A. Crop Rotation in Agriculture
+Crop rotation, a traditional agricultural practice, involves
+the systematic alteration of crops planted in specific fields
+over time. The objectives of this approach are to increase
+crop yields overall, lower the burden of pests and diseases,
+and improve soil fertility. Crop rotation was acknowledged
+as beneficial by ancient civilizations like the Mayan and
+Roman societies, according to historical sources. The method
+is still applicable today and forms the basis of environmentally
+friendly farming methods.
+B. AI in Agriculture
+The integration of artificial intelligence (AI) into agriculture
+has gained significant attention in recent years due to its
+potential to address contemporary agricultural challenges. Ar-
+tificial Intelligence (AI) comprises several technologies, such
+as machine learning, which can analyze large datasets and
+produce insights that are useful. Among the many uses of
+AI in agriculture are yield prediction, insect detection, and
+crop monitoring [4]. For example, satellite imagery analysis
+has been used to monitor crop health using machine learning
+algorithms. These AI-driven methods provide faster interven-
+tions and higher crop yields by enabling early identification
+of nutrient deficits, water stress, and crop diseases.
+C. AI in Crop Rotation Management
+Although artificial intelligence (AI) has many potential uses
+in agriculture, research on its application to crop rotation
+management is still in its infancy. However, an increasing
+amount of research indicates that technology has the potential
+to transform this crucial part of farming. The use of AI algo-
+rithms for crop rotation optimization based on historical data
+and environmental circumstances is highlighted in research
+by [5]. Their research highlights how crucial it is to make
+data-driven decisions when managing crop rotation in order
+to maximize yields and minimize resource consumption. In a
+Fig. 1. Feature Importance
+similar vein, crop rotation planning using AI-based decision
+support systems. They show how, by lowering soil deteriora-
+tion and improving soil health, AI-driven recommendations
+might result in more environmentally friendly agriculture
+practices. AI has also been used in precision agriculture to
+customize crop rotation plans based on the unique needs of
+each farm. Artificial neural networks, for instance, have been
+used to create crop rotation plans that are site-specific and take
+into account variables like soil type, climate, and past yield
+data.
+D. Research Gaps
+The literature emphasizes AI’s potential for managing crop
+rotation, although there are still a number of unanswered
+questions. First off, additional empirical research is required
+to assess the practical effects of crop rotation suggestions
+driven by AI on agricultural outcomes such as yields, soil
+health, and environmental sustainability. Furthermore, little
+study has been done on how smallholder farmers may use
+AI-based crop rotation systems and how scalable they are,
+both of which are essential for their widespread adoption.
+The literature study concludes by highlighting the significance
+of crop rotation in agriculture, the expanding use of AI in
+farming, and the prospective applications of AI in crop rotation
+management. By creating an AI-driven system that satisfies
+farmers’ practical demands, advances sustainable agriculture,
+and improves crop rotation techniques for better results, The
+research seeks to close these gaps.
+III. PROPOSED SYSTEM
+A. Data Sources for Comprehensive Analysis
+A thorough dataset was gathered for this research from
+the Agriculture department in Malapppuram (soil and crop
+dataset) and the Meteorological department in India (weather
+dataset). Key fields in the dataset include productivity, area
+cultivated, district, season, crop name, and crop year. This
+extensive dataset offers insightful information about crop
+performance in many localities.
+979-8-3503-9439-9/24/$31.00 ©2024 IEEE
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:46:11 UTC from IEEE Xplore.  Restrictions apply. 
+1) Crop Yield Optimization: To guarantee a thorough and
+well-informed approach, the data collection procedure for the
+creation of the AI-driven crop rotation management system
+will consult a variety of sources. These sources encompass:
+2) Soil Nutrient Data:
+Important information on crop
+yields, soil conditions, and pest occurrences can be found
+in agricultural agencies, research organizations, and historical
+farm records. A recommendation system for customized crop
+suggestions was suggested by taking use of this. It attempts
+to help farmers make well-informed decisions by examining
+production trends over time and taking into account variables
+like crop performance, water availability, and market demand,
+matching planting selections with past performance and cur-
+rent market trends [6].
+3) Weather and Climate Data: Meteorological databases
+and reliable weather forecasting services will be the sources of
+current and past weather and climate data, including variables
+like temperature, precipitation, and humidity. With the use of
+this information, the AI model is able to produce crop rotation
+suggestions that take the environment into consideration [7].
+4) Soil Data: On-site soil testing and in-depth analysis
+will yield data about soil qualities, including organic matter
+content, pH levels, and nutrient levels [8]. This information
+is essential to the AI model’s decision-making process since
+it makes it easier to choose the right crops depending on the
+condition of the soil.
+Data preparation procedures will be strictly followed in
+tandem with data collection to guarantee the accuracy and
+usefulness of the data for analysis and model creation.
+5) Data Cleaning: To improve the accuracy and quality of
+the data, duplicate, missing, and erroneous data points will be
+rigorously eliminated.
+6) Data Integration: A single dataset will be created by
+combining data from several sources, guaranteeing consistency
+and compatibility in the data format.
+7) Feature Engineering: The gathered data will be used
+to build pertinent features. This involves determining crop
+rotation patterns, calculating historical averages, and generat-
+ing indicators of soil health. The AI model’s decision-making
+process will benefit greatly from these engineered traits.
+Temperature, humidity, pH, and rainfall were found by the
+Machine Learning Model to be the most crucial variables
+for crop rotation management in the research (Figure 1).
+This implies that while thinking about crop rotation plans for
+the particular growing circumstances, these criteria should be
+given the greatest weight. It is significant to remember that
+these parameters’ relative weights might change based on the
+particular crops and growing environment.
+B. Data Analysis
+Understanding the dataset in the AI-driven crop rotation
+management system requires exploratory data analysis, or
+EDA [9]. Descriptive statistics first shed light on data distri-
+butions by revealing important summary statistics like means,
+medians, and variances. Histograms, scatter plots, and time
+series plots are a few examples of data visualization techniques
+Fig. 2. Correlation Matrix
+that assist reveal relationships between variables by providing
+further clarity on trends, patterns, and correlations.
+Through correlation analysis, statistical analysis techniques
+reveal correlations between meteorological variables, soil con-
+ditions, and crop yields. Seasonal effects are among the tem-
+poral patterns that time series analysis reveals. When creating
+the AI-driven crop rotation management system, data-driven
+decision-making is made possible by this basic EDA step.
+The correlations between the various elements impacting
+crop output are made easier to see by the correlation matrix
+(Figure 2). It shows that there is a slight positive associa-
+tion between temperature and rainfall and a large positive
+correlation between temperature and humidity. In contrast, it
+seems that pH levels and temperature have a weakly negative
+association.
+C. Methodology
+The methodology employed for crop recommendation is as
+follows:
+Data Loading: After being loaded, the dataset is ready for
+examination.
+Crop-wise Split: Additional data is separated into several
+crop categories (C). This classification helps us focus on the
+performance of specific crops.
+Recommendation Based on Production (P): Recommenda-
+tions based on historical production data are produced for each
+crop (C). This method recommends crops based on previous
+years’ favorable yields by examining production trends.
+Recommendation according to Season (S): In addition,
+suggestions are given according to the crops’ compatibility
+for each season. Knowing when to plant is ideal helps farmers
+make more informed decisions.
+This method provides farmers with comprehensive insights
+into crop choices by fusing season-specific guidance with
+production-based recommendations. This strategy takes mar-
+ket demand patterns into account while assisting farmers in
+979-8-3503-9439-9/24/$31.00 ©2024 IEEE
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:46:11 UTC from IEEE Xplore.  Restrictions apply. 
+Fig. 3. Accuracy Comparison Graph
+reducing the risks connected with crop diseases and water-
+related issues.
+D. Feature Selection
+Finding a subset of the original dataset’s attributes with a
+high predictive value is the goal of feature selection. Three
+primary methods exist: embedding approaches, filters, and
+wrapper methods. Filter techniques choose features according
+to the attributes of the dataset by employing statistical anal-
+ysis or feature evaluation. A popular technique for selecting
+features is random forest, which generates several trees using
+bootstrap samples of the initial data [10]. With tuning options
+ranging from the number of trees to the descriptors for splitting
+at each node, each tree casts a vote for the class of the object.
+When generating classification rules, random forests directly
+handle feature selection. The permutation importance measure
+and the Gini importance index are two common measures
+for assessing the relevance of a variable. By calculating the
+Gini index’s fall across all nodes where it splits, the Gini
+index evaluates the relevance of a single feature. By permuting
+feature values, the permutation importance measure assesses
+the significance of a variable.
+E. AI Model Development
+The choice of suitable machine learning algorithms is an
+important stage in the development of the AI-driven crop
+rotation management system. To create prediction models, a
+number of possible algorithms will be taken into consideration:
+First, techniques like decision trees, random forests, or deep
+neural networks will be investigated for the supervised learn-
+ing component [11]. By utilizing past data and environmental
+parameters, these algorithms have proven to be helpful in
+forecasting crop performance and optimizing rotation plans.
+Secondly, algorithms for reinforcement learning will also
+be examined [12]. With the help of reinforcement learning,
+models that learn the best crop rotation techniques by trial
+and error and then modify and improve their suggestions
+in response to input from past agricultural seasons could be
+developed.
+Model validation and training are the next steps. The
+machine learning models that have been chosen will un-
+dergo training on historical data and validation through cross-
+validation methodologies. To make sure the model can general-
+ize well, this method involves data splitting, which divides the
+dataset into training, validation, and testing sets. To maximize
+the performance of the model and fine-tune its parameters,
+hyperparameter tweaking will also be used.
+Following a study of various machine learning algorithms’
+performance for crop recommendation (Figure 3), XGBoost
+emerged as the most accurate algorithm, trailed by Random
+Forest and Logistic Regression. Based on this dataset, The
+results indicate that XGBoost would be the best algorithm for
+the crop recommendation task.
+F. System Deployment
+An organized strategy is required to put the AI-driven crop
+rotation management system into action and make sure farmers
+can utilize and benefit from the technology. There are multiple
+crucial steps in this integration process:
+Farmers can input data with ease and receive personalized
+advise thanks to an intuitive interface that has been designed,
+enabling smooth communication between farmers and the
+AI system [13]. In order to guarantee dependability and
+accessibility, the system is also implemented on an extendable
+cloud architecture, enabling farmers to access it from a variety
+of devices and locations.
+Furthermore, ongoing evaluation and enhancement are es-
+sential to the system’s long-term viability. During this phase,
+a feedback loop will be established, enabling farmers to
+report problems and offer insightful input on the system’s
+recommendations. Regular updates to the model are also
+necessary; they entail retraining the AI model with fresh data
+so that it can adjust to evolving farming circumstances. Strong
+security measures will also be put in place to safeguard private
+agricultural data and maintain system integrity.
+The method presented here provides a thorough framework
+for the investigation, encompassing the collection of data,
+the development of AI models, and the deployment of the
+system. This guarantees that crop rotation will be optimized
+in a methodical, data-driven manner for improved agricultural
+results. The accuracy against number of trees graph (Figure
+4) demonstrates that accuracy generally rises with the number
+of trees in the Random Forest Classifier model for crop
+rotation management. But as more trees are added, the rate
+of improvement decreases, suggesting that there may be a
+trade-off between model complexity and performance. It is
+noteworthy that an accuracy of 0.996 was attained.
+IV. RESULT ASSESSMENT
+A. Performance Evaluation
+To find out how well the AI-driven crop rotation man-
+agement system performed at optimizing crop rotations and
+enhancing agricultural results, it was put through a rigorous
+testing and assessment process. Real-world agricultural scenar-
+ios and a number of important criteria were used to conduct
+the performance evaluation. The goal of the AI model was to
+maximize crop rotations in order to increase yields, and the
+study’s findings clearly show how successful it was.
+979-8-3503-9439-9/24/$31.00 ©2024 IEEE
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:46:11 UTC from IEEE Xplore.  Restrictions apply. 
+Fig. 4. Accuracy VS No. of Trees
+1) Crop Yield Optimization: Several crop types saw yield
+increases of an average of 15% when AI-recommended rota-
+tions were implemented; certain crops saw much bigger gains
+[14]. The AI’s capacity to precisely plan planting times and
+choose the right crops for every field and season while taking
+soil and environmental factors into account is what leads to this
+production increase. This gives farmers the authority to decide
+in ways that will increase yields and enhance agricultural
+results. The reported increases in yield are mostly dependent
+on how accurately the AI model is able to select crops that
+are appropriate for particular areas and seasons. Crop selection
+and field conditions working together to improve agricultural
+sustainability and profitability.
+2) Soil Health Improvement: The assessment of soil health
+demonstrated the beneficial effects of the recommendations
+made by the AI-driven model. First of all, the algorithm did a
+good job of recommending crop rotations that kept vital nutri-
+ents in the soil, increasing fertility and crop productivity. Sec-
+ond, the AI model greatly decreased soil erosion, protecting
+topsoil and halting environmental damage by using cover crops
+and decreasing tillage methods [15]. All things considered,
+the contributions of the AI-driven system to soil health are in
+line with the objectives of sustainable agriculture, encouraging
+resilient, fruitful, and ecologically conscious farming methods.
+3) Environmental Sustainability: While enhancing agricul-
+tural productivity, the AI-driven crop rotation management
+system dramatically improves environmental sustainability.
+Farmers who followed AI recommendations reported using
+fewer chemical fertilizers and pesticides, producing fewer
+harmful emissions, and encouraging environmentally friendly
+farming methods. Additionally, the system offers guidance on
+drought-tolerant plant selection and optimal planting timing to
+minimize water consumption and mitigate the environmental
+effects of excessive water use, particularly in areas that are
+vulnerable to drought [16].
+4) Farmer Feedback: In order to analyze the AI sys-
+tem’s usefulness and feasibility, farmer feedback was gathered
+during the assessment phase. Farmers were happy with the
+recommendations and said they helped them make better judg-
+ments about crop rotation. Overall success in optimizing crop
+rotations, raising yields, enhancing soil health, and advancing
+sustainable farming methods was found in the AI-driven
+crop rotation management system’s performance review. These
+results highlight AI’s ability to improve agriculture and solve
+the main issues faced by farmers. In-depth examination and
+consequences for the farming sector and the ecosystem will
+be covered in great detail in the section that follows.
+B. Impact on Agricultural Outcomes
+The application of AI-driven crop rotation management
+advice has significantly and in a variety of ways impacted
+agricultural results. The practical applications of AI technol-
+ogy in farming are examined in this part, with an emphasis
+on crop yields, soil health, and sustainability [17].
+1) Crop Yields: AI-driven systems improve agricultural re-
+silience by increasing crop yields through crop diversification
+and optimal planting schedules.
+2) Soil Health: AI encourages environmentally friendly
+behavior by maximizing nutrient retention, reducing erosion,
+protecting topsoil, and supporting global sustainability objec-
+tives.
+3) Environmental
+Sustainability:
+Eco-friendly
+farming
+methods are encouraged by less chemical use and increased
+water efficiency, which lessen their negative environmental
+effects [18].
+4) Farmer Satisfaction: Farmers convey confidence in AI
+advice, which enhance overall farm management and decision-
+making.
+In summary, AI-driven crop rotation management has the
+potential to be widely adopted in agriculture since it increases
+yields, maintains soil health, fosters environmental sustainabil-
+ity, and increases farmer happiness.
+V. DISCUSSION
+A. Interpretation of Results
+The outcomes of the AI-driven crop rotation management
+system’s performance evaluation provide insightful informa-
+tion about how artificial intelligence may transform crop
+rotation techniques and what that means for sustainable agri-
+culture. An explanation of these findings and a discussion of
+their importance in relation to crop rotation management are
+given in this section.
+1) Crop Yields and Soil Health: Enhances soil health and
+increases crop yields by 15% while adhering to the principles
+of sustainable agriculture.
+2) Environmental Sustainability: Reduces the use of chem-
+icals and improves water efficiency, both of which support
+global environmental objectives.
+3) User Satisfaction and Confidence: Makes it easier for
+farmers to make decisions, boosting their confidence and
+encouraging the adoption of sustainable methods.
+979-8-3503-9439-9/24/$31.00 ©2024 IEEE
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:46:11 UTC from IEEE Xplore.  Restrictions apply. 
+B.
+Implications for Crop Rotation Management
+The study’s findings demonstrate how AI has the ability
+to revolutionize crop rotation management. It increases farm
+profitability by permitting accurate crop rotations that are cus-
+tomized to each field’s requirements. This improves resource
+usage. The emphasis on sustainability and soil health also
+coincides with international initiatives to support environmen-
+tally friendly farming methods. While the scalability of AI sys-
+tems offers widespread use across various farming operations,
+diverse rotations enhance resilience against climatic variability,
+and both will have a major impact on environmental health and
+agricultural output.
+C. Limitations
+Implementing AI-driven crop rotation management poses
+significant challenges:
+1) Data Availability and Quality: Accessing accurate data,
+especially in developing regions, is a hurdle.
+2) Farmer Adoption and Education: Providing sufficient
+training and removing technological obstacles are essential for
+farmer acceptance.
+3) Scalability and Access: Resolving infrastructural con-
+straints and guaranteeing access in remote regions are neces-
+sary to increase the system’s reach.
+4) Regional Adaptation: It takes constant study and im-
+provement to adapt AI models to various agricultural locations
+and shifting environmental variables.
+D. Future Research
+Notwithstanding its drawbacks, AI-driven crop rotation
+management has a lot of promise and presents an exciting
+area for further study. It is essential to improve the quality
+and accessibility of data, particularly in areas where data is
+scarce. This gap can be closed by partnerships with regional
+technology companies and agricultural authorities. In order
+to easily integrate AI into decision-making, farmer-friendly
+interfaces and educational materials must be developed using
+a user-centered design approach. In order to increase adoption,
+scaling initiatives should concentrate on cloud-based solutions,
+collaborations with agricultural extension agencies, and com-
+munity outreach. Finally [19], studies should improve the AI
+model’s flexibility to adjust to shifting environmental factors
+so that it remains effective over time, especially when it comes
+to altering climatic patterns and agronomic difficulties [20].
+VI. CONCLUSION
+Finally, research shows how AI-driven crop rotation man-
+agement recommendations have a great deal of promise to
+improve sustainable agriculture. The results show significant
+gains in soil health, pest control, and crop yields, with
+an average yield increase of 15% and a decrease in the
+usage of chemical pesticides. These results are consistent
+with international efforts to mitigate climate change, save the
+environment, and ensure food security. Even though research
+shows how AI technology can revolutionize farming, issues
+including data accessibility, farmer adoption, scalability, and
+model generalization still need to be resolved before it can be
+widely used. To fully realize the promise of AI-driven crop
+rotation management systems in contemporary agriculture,
+more study and development are required.
+REFERENCES
+[1] D. K. Ray, N. Ramankutty, N. D. Mueller, P. C. West, and J. A.
+Foley, “Recent patterns of crop yield growth and stagnation,” Nature
+Communications, vol. 3, 01 2012.
+[2] H. C. J. Godfray, J. R. Beddington, I. R. Crute, L. Haddad, D. Lawrence,
+J. F. Muir, J. Pretty, S. Robinson, S. M. Thomas, and C. Toulmin, “Food
+security: the challenge of feeding 9 billion people,” Science, vol. 327,
+pp. 812–818, 01 2010.
+[3] E. Elbasi, C. Zaki, A. E. Topcu, W. Abdelbaki, A. I. Zreikat, E. Cina,
+A. Shdefat, and L. Saker, “Crop prediction model using machine learning
+algorithms,” Applied Sciences, vol. 13, p. 9288, 01 2023.
+[4] T. van Klompenburg, A. Kassahun, and C. Catal, “Crop yield prediction
+using machine learning: A systematic literature review,” Computers and
+Electronics in Agriculture, vol. 177, p. 105709, 10 2020.
+[5] “Decision support systems for agriculture 4.0: Survey and challenges,”
+Computers and Electronics in Agriculture, vol. 170, p. 105256, 03 2020.
+[6] E. E. Vigneswaran and M. Selvaganesh, “Decision support system
+for crop rotation using machine learning,” 2020 Fourth International
+Conference on Inventive Systems and Control (ICISC), 01 2020.
+[7] D. Tilman, C. Balzer, J. Hill, and B. L. Befort, “Global food demand
+and the sustainable intensification of agriculture,” Proceedings of the
+National Academy of Sciences, vol. 108, pp. 20260–20264, 11 2011.
+[8] R. Lal, “Restoring soil quality to mitigate soil degradation,” Sustainabil-
+ity, vol. 7, pp. 5875–5895, 05 2015.
+[9] A. Kamilaris and F. X. Prenafeta-Bold´u, “Deep learning in agriculture: A
+survey,” Computers and Electronics in Agriculture, vol. 147, pp. 70–90,
+04 2018.
+[10] R. Medar, V. S. Rajpurohit, and S. Shweta, “Crop yield prediction using
+machine learning techniques,” 2019 IEEE 5th International Conference
+for Convergence in Technology (I2CT), 03 2019.
+[11] A. G. Morales and F. J. Villalobos, “Using machine learning for crop
+yield prediction in the past or the future,” Frontiers in Plant Science,
+vol. 14, 03 2023.
+[12] S. Condran, M. Bewong, M. Z. Islam, L. Maphosa, and L. Zheng, “Ma-
+chine learning in precision agriculture: A survey on trends, applications
+and evaluations over two decades,” IEEE Access, vol. 10, pp. 73786–
+73803, 07 2022.
+[13] V. D. N. and S. Choudhary, “An artificial intelligence solution for crop
+recommendation,” Indonesian Journal of Electrical Engineering and
+Computer Science, vol. 25, p. 1688, 03 2022.
+[14] “Estimating crop yield potential at regional to national scales,” Field
+Crops Research, vol. 143, p. 34–43, 03 2013.
+[15] F. Magdoff, “Building soils for better crops,” Soil Science, vol. 156,
+p. 371, 11 1993.
+[16] O. US EPA, “Climate change impacts on agriculture and food supply,”
+10 2022.
+[17] T. Talaviya, D. Shah, N. Patel, H. Yagnik, and M. Shah, “Implementation
+of artificial intelligence in agriculture for optimisation of irrigation
+and application of pesticides and herbicides,” Artificial Intelligence in
+Agriculture, vol. 4, 04 2020.
+[18] D. K. Ray, P. C. West, M. Clark, J. S. Gerber, A. V. Prishchepov, and
+S. Chatterjee, “Climate change has likely already affected global food
+production,” PLOS ONE, vol. 14, p. e0217148, 05 2019.
+[19] T. Hu, X. Zhang, G. Bohrer, Y. Liu, Y. Zhou, J. Martin, Y. Li, and
+K. Zhao, “Crop yield prediction via explainable ai and interpretable
+machine learning: Dangers of black box models for evaluating climate
+change impacts on crop yield,” vol. 336, pp. 109458–109458, 06 2023.
+[20] R. P. Sishodia, R. L. Ray, and S. K. Singh, “Applications of remote
+sensing in precision agriculture: A review,” Remote Sensing, vol. 12,
+p. 3136, 09 2020.
+979-8-3503-9439-9/24/$31.00 ©2024 IEEE
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:46:11 UTC from IEEE Xplore.  Restrictions apply. 

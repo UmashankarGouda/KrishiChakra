@@ -1,0 +1,39 @@
+### DOCUMENT INFO  
+- **Title/Topic**: Legume-based crop rotations as a strategy to mitigate fluctuations in fertilizer prices  
+- **Type**: Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed**: Barley-wheat, rapeseed-wheat, vetch-wheat  
+- **Crops mentioned**: Bread wheat (Triticum aestivum L.), barley (Hordeum vulgare L.), rapeseed (Brassica napus L.), vetch (Vicia sativa L.)  
+- **Regions covered**: Northern Spain (Viñalta and Villamuera de la Cueza)  
+
+### KEY FINDINGS  
+- **Yield improvements**:  
+  - Vetch-wheat rotation reduced synthetic N fertilizer dependency, with wheat yield improvements under adjusted N rates.  
+  - Genotypic differences in wheat (e.g., drought-tolerant Mustang vs. susceptible Lutescens) influenced N uptake efficiency.  
+- **Soil health benefits**:  
+  - Legume pre-crops (vetch) enhanced soil N availability, reducing synthetic N requirements by 32.5 kg ha⁻¹ compared to non-legume rotations.  
+- **Disease reduction**: Not explicitly mentioned, but legume incorporation may reduce monoculture-related pressures.  
+- **Economic impact**:  
+  - Vetch-wheat rotation had 18% lower gross margin than rapeseed-wheat but 1% higher than barley-wheat.  
+  - Financial incentives (e.g., price premiums) needed to make legume rotations economically viable for farmers.  
+
+### NUMERICAL DATA/TABLES  
+- **Environmental impact**:  
+  - Vetch-wheat reduced greenhouse gas emissions by 24% vs. barley-wheat and 11% vs. rapeseed-wheat.  
+- **Fertilizer rates**:  
+  - Recommended (REC) N rate: 110.5 kg ha⁻¹ for wheat (adjusted to 78 kg ha⁻¹ with legume pre-crop).  
+  - Adjusted (ADJ) N rate: 39 kg ha⁻¹ for legume pre-crop plots.  
+- **Yield data**:  
+  - Expected wheat yield: 3700 kg ha⁻¹ (used for REC rate calculation).  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers**:  
+  - Incorporate legumes (e.g., vetch) into rotations to reduce synthetic N use and environmental impacts.  
+  - Select wheat genotypes with efficient N uptake (e.g., drought-tolerant varieties) to optimize legacy N from legumes.  
+- **Best practices for crop rotation**:  
+  - Pair legumes with reduced N fertilization (ADJ rates) to balance yield and sustainability.  
+  - Monitor soil N content to tailor fertilizer applications and avoid overuse.  
+
+---  
+*Output is clean, structured, and ready for RAG (Retrieval-Augmented Generation) applications.*

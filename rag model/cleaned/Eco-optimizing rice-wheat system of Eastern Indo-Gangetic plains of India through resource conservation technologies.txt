@@ -1,0 +1,40 @@
+### DOCUMENT INFO  
+- **Title/Topic:** Eco-optimizing rice-wheat system of Eastern Indo-Gangetic plains of India through resource conservation technologies  
+- **Type:** Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed:** Rice-Wheat Cropping System (RWCS)  
+- **Crops mentioned:** Rice (*Oryza sativa*), Wheat (*Triticum aestivum*)  
+- **Regions covered:** Eastern Indo-Gangetic Plains (India)  
+
+### KEY FINDINGS  
+- **Yield improvements:**  
+  - Direct-seeded rice (DSR) with subsurface drip fertigation (DSR-ZTW-SSD) achieved the highest system yield (12.8 t ha⁻¹).  
+  - DSR-ZTW systems with drip fertigation outperformed traditional puddled transplanted rice (PTR) in productivity.  
+- **Soil health benefits:**  
+  - Conservation agriculture (CA) and drip fertigation improved nitrogen use efficiency and water conservation.  
+  - Reduced soil compaction and structural degradation compared to conventional tillage.  
+- **Disease reduction:** Not explicitly mentioned, but reduced waterlogging and improved soil aeration likely mitigate root diseases.  
+- **Economic impact:**  
+  - Drip fertigation reduced water and nitrogen use, lowering input costs.  
+  - Higher yields and resource efficiency improve profitability for smallholder farmers.  
+
+### NUMERICAL DATA/TABLES  
+- **GHG Emissions:**  
+  - CH₄ emissions reduced by 70–80% in DSR-ZTW systems compared to PTR.  
+  - Global warming potential reduced by 56% despite higher N₂O emissions.  
+- **Water Efficiency:**  
+  - Subsurface drip fertigation (SSD) minimized water losses.  
+- **Model Accuracy:**  
+  - DNDC model predicted soil mineral N (NO₃⁻: R² = 0.74; NH₄⁺: R² = 0.79), water-filled pore space (R² = 0.85), and system productivity (R² = 0.93).  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers:**  
+  - Adopt direct-seeded rice (DSR) with zero-tilled wheat (ZTW) and subsurface drip fertigation (SSD) for higher yields and sustainability.  
+  - Shift from flood irrigation to micro-irrigation (drip fertigation) to conserve water and reduce GHG emissions.  
+- **Best practices for crop rotation:**  
+  - Combine conservation agriculture (CA) with drip fertigation to enhance soil health and system resilience.  
+  - Use 75–100% recommended nitrogen dose with drip fertigation for optimal nitrogen use efficiency.  
+
+---  
+*Output is cleaned and structured for RAG (Retrieval-Augmented Generation) applications.*

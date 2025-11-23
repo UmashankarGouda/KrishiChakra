@@ -1,0 +1,378 @@
+Citation: Zverev, A.O.; Kurchak,
+O.N.; Orlova, O.V.; Onishchuk, O.P.;
+Kichko, A.A.; Eregin, A.V.; Naliukhin,
+A.N.; Pinaev, A.G.; Andronov, E.E.
+Dynamic of the Soil Microbiota in
+Short-Term Crop Rotation. Life 2023,
+13, 400. https://doi.org/10.3390/
+life13020400
+Academic Editor: Don A. Cowan
+Received: 15 November 2022
+Revised: 27 December 2022
+Accepted: 6 January 2023
+Published: 1 February 2023
+Copyright:
+© 2023 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed
+under
+the
+terms
+and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+life
+Communication
+Dynamic of the Soil Microbiota in Short-Term Crop Rotation
+Aleksei O. Zverev 1,2,*
+, Oksana N. Kurchak 1, Olga V. Orlova 1, Olga P. Onishchuk 1, Arina A. Kichko 1
+,
+Aleksander V. Eregin 3, Aleksey N. Naliukhin 4
+, Aleksandr G. Pinaev 1 and Evgeny E. Andronov 1,2
+1
+All-Russian Research Institute for Agricultural Microbiology (ARRIAM), 3 Podbelsky Chaussee,
+St. Petersburg 196608, Russia
+2
+V.V. Dokuchaev Soil Science Institute, 7 Building 2, Pyzhyovskiy Lane, Moscow 119017, Russia
+3
+N.V. Vereshchagin Vologda State Dairy Farming Academy, 2 Shmidta Street,
+Molochnoye, Vologda 160555, Russia
+4
+Timiryazev Moscow Agricultural Academy, Russian State Agrarian University, 6 Pryanishnikova,
+Moscow 127434, Russia
+*
+Correspondence: azver.bio@gmail.com
+Abstract: Crop rotation is one of the oldest and most effective methods of restoring soil fertility,
+which declines when the same plant is grown repeatedly. One of the reasons for a reduction in fertility
+is the accumulation of pathogenic and unfavorable microbiota. The modern crop rotation schemes (a
+set of plant species and their order in the crop rotation) are highly effective but are designed without
+considering soil microbiota dynamics. The main goal of this study was to perform a short-term
+experiment with multiple plant combinations to access the microbiological effects of crop rotation. It
+could be useful for the design of long-term crop rotation schemes that take the microbiological effects
+of the crop rotation into account. For the analysis, ﬁve plants (legumes: vetch, clover, and cereals:
+oats, wheat, and barley) were used. These ﬁve plants were separately grown in pots with soil. After
+the ﬁrst phase of vegetation, the plants were removed from the soil and a new crop was planted.
+Soil samples from all 25 possible combinations of primary and secondary crops were investigated
+using v4-16S rDNA gene sequencing. It was shown that the short-term experiments (up to 40 days
+of growing) are effective enough to ﬁnd microbial shifts in bulk soil from different plants. Both
+primary and secondary cultures are signiﬁcant factors for the microbial composition of microbial soil
+communities. Changes are the most signiﬁcant in the microbial communities of vetch soils, especially
+in the case of vetch monoculture. Growing clover also leads to changes in microbiota, especially
+according to beta-diversity. Data obtained can be used to develop new crop rotation schemes that
+take into account the microbiological effects of various crops.
+Keywords: crop rotation; 16S rDNA gene sequencing; soil microbiota; soil exhaustion; soil sequencing
+1. Introduction
+It is known that the continuous growth of a single crop leads to soil exhaustion and
+fatigue. This effect includes plant growth retardation and low productivity, pest and disease
+accumulation, and soil structure and nutrition degradation [1]. Crop rotation is one of the
+most efﬁcient ways to prevent soil fatigue and increase the productivity of crops. Crop
+rotation improves soil physical structure and aggregation, increases nutritional components
+and diversity of soil microbiota and associated beneﬁcial microbes, and controls soilborne
+pathogens by disrupting their natural life cycle [2].
+The mechanism of these beneﬁcial changes is based on plant exudation and, in the
+case of cover crops (i.e., crops that are not harvested and plowed into the soil), the biomass
+of plants. The main components of plant exudates are carbohydrates, amino acids, and
+organic acids [3]. This carbon intake leads to nutrition enrichment of the soil, which is the
+most widespread and well-known effect of crop rotation. The meta-analysis of 122 reports
+reveals that adding one or more crops in rotation to a monoculture increased total soil C by
+Life 2023, 13, 400. https://doi.org/10.3390/life13020400
+https://www.mdpi.com/journal/life
+Life 2023, 13, 400
+2 of 8
+3.6% and total N by 5.3%. Moreover, when rotations include a cover crop, total C increases
+by 8.5% and total N by 12.8% [4]. In the analysis of 11 maize crop rotation schemes in North
+America, Bowels and co-authors showed that more diverse crop rotation leads to (i) yield
+growth acceleration, (ii) increased yields under harsh conditions, and (iii) yield beneﬁts in
+different growing conditions [5].
+According to different studies, microbial diversity, enzymatic activities, and soil
+respiration are generally higher in crop rotation systems than in monoculture or fallow [2].
+Exact changes in microbial communities are highly speciﬁc and are determined by a range
+of factors, including plant species, nutritional composition, and soil type [6]. For example,
+in comparison of tomato crop rotation schemes (cabbage/tomato, kidney bean/tomato,
+and celery/tomato), the celery/tomato scheme demonstrated the best performance [1].
+Another trial with a partial addition of grassland in the crop scheme (no grassland; 50%
+grassland; 75% grassland) found that forage production was higher in all crop rotation
+schemes with grassland, but there were no beneﬁts for 75% of grassland sites [7]. Despite
+all the positive information, not all crop rotation schemes are better than monoculture
+cultivation. For example, Koyama and co-authors showed a decrease in yield in some crop
+combinations (canola after alfalfa) [8]. A more wide-ranging meta-analysis also shows that
+some crop diversiﬁcation strategies are more effective than others [9].
+There is no unique formula for the best crop rotation. Alongside the whole range
+of factors (soil, climate, economic circumstances), the main concerns are: (i) greater di-
+versity of crops in time and space; (ii) alternation of crops with different rooting depths;
+(iii) restoration of soil fertility; (iv) increasing the innate capacity of crops and soils to
+suppress weeds, pests, and diseases and avoid soil fatigue; and (v) preventing soil erosion
+and drought [10]. Most of the current crop rotation schemes were constructed according to
+these recommendations.
+Today, in addition to classic nitriﬁcation and chemical analysis, the researchers can
+use another type of analysis—NGS sequencing. Multiple studies of crop rotations reveal
+changes in either bacterial or fungal rhizosphere communities [1,2,11]. More hidden and
+complicated changes in the bulk soil microbiota were also revealed [12].
+Knowing the positive effects of different plants in rotation and how the microbial
+community responds, the question arises: can we use NGS sequencing to predict an even
+more effective crop rotation scheme? What are the predictors of a good scheme?
+Kaplan and co-authors evaluate the relationship between phylogenetic distance
+and crop performance. In their estimation of tomato production within a rotation with
+35 different crops and weeds, they do not ﬁnd an effect of phylogenetic distance on crop
+performance [13], although there were signiﬁcant changes in microbial communities.
+In search of the most effective crop rotation scheme, we have to test multiple com-
+binations of crops and plants over a long period of time. This takes a lot of time and
+effort. For estimating the most effective plant combinations, prior short sub-experiments
+are reasonable. Direct evaluation of crop productivity in this short experiment is difﬁcult.
+Instead, the changes in the microbial community of the soil can be used as a strong marker
+of changes in soil nutrition. Research on these changes is also novel due to the lack of
+information about microbial changes in soils under different crop rotation schemes.
+For the analysis, five widespread agricultural plants (legumes: vetch, clover, and cereals:
+oats, wheat, and barley) were used. Initially, these five plants were grown in untreated soil.
+After this, the soil from every plant was mixed and again seeded by the same five plants. After
+a short vegetation period, the soil was sampled and stored. As a result, there were 25 samples
+with all combinations of primary and secondary cultures. The microbial diversity of soil
+samples was estimated using V4 16S rDNA gene sequencing. We calculate the crop rotation
+effect based on the impact of plants on the entire soil microbial community and forecast good
+crop rotation combinations for a large-scale crop rotation experiment.
+Despite the advantages of 16S rDNA gene sequencing, this method has its own
+limitations. In the future, whole genome sequencing or amplicone sequencing of functional
+genes will be preferable.
+Life 2023, 13, 400
+3 of 8
+2. Materials and Methods
+Both the soil and the seeds for the experiment come from the Vologda region (western
+Russia), which is one of the main crop harvesting centers. The sod-podzolic soil was
+mixed, sieved, and air-dried; enriched with NPK fertilization mix (0.071 g NH4NO3, 0.02 g
+K2HPO4, and 0.036 g KH2PO4 per pot); watered to 50% of its maximal moisture capacity;
+and placed in 10 cm × 100 cm × 15 cm pots. Plant seeds (from real crop rotation schemes)
+were disinfested in H2SO4 for 5–8 min.
+For the analysis, ﬁve widespread agricultural plants (legumes: vetch, clover, and
+cereals: oats, wheat, and barley) were used. These 5 plants were grown in 29 days (phase I).
+After sampling, the soil from every plant was mixed individually, generating ﬁve unique
+soils. Then, every unique soil was seeded again by the same 5 plants (6 repeats for every
+plant). After a 22-day vegetation period (Phase II), the soil was sampled again. As a result,
+there were 25 samples with combinations of ﬁve primary and ﬁve secondary cultures. For
+reference samples (pots without seeds), the same treatment was used.
+After every phase of the experiment, sampling was made: plants, roots, and debris
+were removed from all soil in the pot, the bulk soil was mixed, and 2 g was sampled for the
+microbial analysis.
+Total soil DNA was isolated using the MN NucleoSpin Soil Kit (Macherey-Nagel,
+Düren, Germany) using a Precellus 24 homogenizer (Bertin, Rockville, MD, USA). The
+quality control of the isolation was carried out by PCR and agarose gel electrophoresis.
+DNA sequencing using the V4 variable region of the 16S rRNA gene was performed on
+an Illumina MiSeq sequencer (Illumina Inc., San Diego, CA, USA), using the primers
+515f (GTGCCAGCMGCCGCGGTAA) and 806r (GGACTACVSGGGTATCTAAT) [14]. Raw
+reads are available on SRA (accession number PRJNA891634), or by a direct link: https:
+//www.ncbi.nlm.nih.gov/sra/PRJNA891634 (accessed on 14 November 2022).
+The general processing of sequences was carried out in R 4.2.0 (R Foundation for
+Statistical Computing, Vienna, Austria), using the dada2 (v. 1.14.1) [15] and phyloseq
+(v. 1.30.0) [16] packages, according to the authors’ recommendations. 16S rDNA gene
+sequences were processed according to the DADA2 pipeline. Sequences were trimmed
+for length (minimum 220 bp for forward reads and 180 bp for reverse reads) and quality
+(no N; maximum error rates maxEE of 2 for both forward and reverse reads). ASVs were
+determined according to the DADA2 algorithm, and chimera ASVs were removed by the
+“consensus” method. Taxonomic annotation was performed by the naive Bayesian classiﬁer
+(provided in the DADA2 package, default settings) with the SILVA 138 database [17] as the
+training set, and chloroplast and mitochondrial reads were eliminated. The ﬁnal sequence
+yield was from 10,779 to 26,577 reads per sample. The alpha-diversity calculation was
+estimated using rarefaction to minimal depth (10,779).
+The main alpha- and beta-diversity indices were calculated using ASVs and their
+abundances using the phyloseq package. PERMANOVA was performed using the vegan
+package [18].
+3. Results
+3.1. Phase I
+The richness of ASVs in soil communities is presented in Figure 1A. The alpha-diversity
+of the fallow soil microbiota is the lowest in the dataset (mean 2705 ASVs), while microbial
+communities after the setting of soil legacies are more diverse. According to a one-way
+ANOVA, the primary culture is a signiﬁcant factor (see Supplementary Table S1). Microbial
+communities after barley are signiﬁcantly less diverse than those from other crops and
+do not differ from fallow samples. The Simpson index (according to ANOVA) reveals no
+differences between all samples.
+Life 2023, 13, 400
+4 of 8
+ 
+Figure 1. Changes in the microbial community of soils in the first phase of the experiment (A): richness
+of samples; (B): Bray-Curtis distance between.
+According, to beta-diversity indices, microbial communities are similar. According to
+PCoA ordination, the values of explained variance are less than 5% (Figure 1B). Despite this,
+PERMANOVA reveals primary culture as a signiﬁcant factor (see Supplementary Table S2).
+3.2. Phase II
+The values of microbial richness are similar to those in Phase I (Figure 2). According to
+a two-way ANOVA (fallow samples were excluded), primary culture and the combination
+of primary and secondary cultures were signiﬁcant factors for Observed ASV index (see
+Supplementary Table S3).
+ 
+Figure 2. Richness of samples (according to the Observed ASVs Index, grouped by primary culture).
+Beta-diversity was calculated using Bray-Curtis distances. According to PERMANOVA,
+both primary and secondary cultures and their combination have a signiﬁcant effect (see
+Supplementary Table S4). PCoA was used to ordinate the distances (Figure 3). As for phase
+I, the values of explained variance by the ﬁrst and second axes are low, so for the clearance
+of the effect we also use Ward’s diagram (Figure 4).
+Life 2023, 13, 400
+5 of 8
+Figure 3. PCoA of Bray-Curtiss distances in soil microbial communities. Primary Culture—plant
+type in phase I; Secondary Culture—plant type in phase II.
+Figure 4. Cluster dendrogram (Ward’s clustering) of Bray-Curtiss distances in microbial communities
+of soils.
+4. Discussion
+In phase I, there were moderate changes in the soil microbial community. According
+to the richness of ASVs and ANOVA, microbial diversity in all crop soils (except barley) is
+about 2920, while microbial diversity in fallow soil and bulk soil after barley is signiﬁcantly
+less—2780. According to Bray-Curtis distances, microbial communities in all crop soils are
+different, but this difference is small. Therefore, it is reasonable to suggest that microbial
+communities in bulk soils of different crops are different, but the scale of their changes is
+comparable to intergroup variances. This result is reasonable due to the short period of
+cultivation. According to reports on the rhizosphere analysis of sorghum, the effect of plant
+genotype is observed only after 35 days [19].
+Despite moderate changes in phase I, the primary culture is signiﬁcant as a baseline
+for the microbial communities of soils in phase II. According to variance analysis, primary
+culture, and the combination of primary and secondary culture (but not the secondary
+culture itself) were signiﬁcant factors for ASVs’ richness. All factors (primary and secondary
+cultures and their combinations) were important in the PERMANOVA analysis of Bray-
+Curtis distances.
+Life 2023, 13, 400
+6 of 8
+The strength of both factors (primary and secondary cultures) is ambiguous. The vari-
+ance analysis allows us to determine primary culture as a signiﬁcant factor for both alpha
+(richness in phase II) and beta (Bray distances) diversities. But the percent of explained
+variability for the PCoA plot is very low. This effect can be explained both by a short period
+of experimentation (20–30 days for each phase) and bulk soil sampling. As it was men-
+tioned earlier, the main effect of crop rotation is connected with the rhizosphere microbial
+community, not the bulk soil one. Changes in the bulk soil microbial community have to be
+moderate. For example, in the long-term analysis of ﬁeld grassland crop rotation systems,
+the changes in microbial soil diversity were signiﬁcant but relatively weak [7]. In the
+comparison of wheat monoculture and pea-wheat crop rotation (two years of experiment),
+there was no difference in alpha-diversity and a moderate difference in beta-diversity and
+taxonomic composition [2]. Therefore, the changes in the microbial community of the bulk
+soil during crop rotation are moderate, even in long-term experiments. Both studies found
+signiﬁcant variation in fungal communities, particularly arbuscular mycorrhizal fungal
+(AMF) communities [2,7].
+Even in this relatively short experiment, it is possible to find the significant influence
+of different crop rotation schemes on the microbial composition of soils. The influence of
+cultures on soil microbiota is variable. Growing legume plants as the second culture results
+in a higher beta-distance between samples than for the cereal ones (Figure 4). Vetch has
+the greatest impact on microbial composition in this legume group. In the dendrogram of
+Bray-Curtis distances (Figure 3), all vetch samples (both for primary and secondary culture)
+are located in separate clusters. One of the possible reasons is the alteration of soil nitrogen
+metabolism, even in non-cover crop rotation. This mechanism was previously shown as
+a beneficial element in a rice-based crop rotation system in China [20]. In contrast, cereal
+plants—the barley and the wheat—have no significant effect on soil composition. Presumably,
+the oat has the strongest effect (Figure 3), but this suggestion needs additional research.
+Another point of the experiment was connected with the effects of continuous growth
+of the same plant. Due to the short period of growth, the exhaustion of the soil cannot
+be revealed. Furthermore, the microbial communities of vetch after vetch soils differ
+signiﬁcantly from others, according to Bray-Curtis distances. These changes do not include
+any speciﬁc taxonomic shifts or changes in alpha-diversity. The soil microbiota of clover
+after clover showed a similar but less pronounced effect. Both shifts can be connected with
+the alteration of nitrogen metabolism.
+Even a short period of plant growth allows us to determine changes in the microbial
+composition of soils. These changes are moderate and masked by high intergroup variance,
+but there is a clear effect of using legumes in crop rotation schemes. For clariﬁcation of
+this effect, it is required to set up the following experiments: (i) comparison of legumes,
+legumes and cereals, and cereal crop rotation schemes; (ii) analysis of both the microbial
+and fungal communities.
+5. Conclusions
+Short-term experiments (20 to 40 days) allow for the discovery of microbial shifts
+even in bulk soil from different plants. In the ﬁrst phase, the microbial communities of
+soils from all plants except barley are close. The alpha diversity of microbial communities
+in soils from any plant, except barley, is higher than the one from reference fallow soil.
+For the whole experiment, both primary and secondary cultures are signiﬁcant factors
+for the microbial composition of microbial soil communities. Despite this, the strength of
+those factors is limited. In our study, vetch showed the strongest effect on the microbial
+composition of soil, especially continuously growing vetch. According to beta-diversity,
+growing clover also leads to changes in soil microbiota. The inﬂuence of other cultures is
+moderate and, as a rule, does not exceed the intergroup variation.
+Life 2023, 13, 400
+7 of 8
+Supplementary Materials: The following supporting information can be downloaded at: https://
+www.mdpi.com/article/10.3390/life13020400/s1. Table S1. Connection between microbial richness
+(Observed ASVs) and plant culture, phase I ANOVA results. Table S2. Relationship between Bray-
+Curtis distances and plant culture, phase I PERMANOVA results. Table S3. Connection between
+microbial richness (Observed ASVs) and the culture of plants, phase II. ANOVA results. Table S4.
+The relationship between Bray-Curtis distances and plant culture, phase II PERMANOVA results.
+Author Contributions: Conceptualization, O.V.O., O.P.O. and E.E.A.; methodology, O.N.K., O.V.O.
+and O.P.O.; software, A.O.Z.; formal analysis, A.O.Z.; investigation, O.N.K., O.V.O. and O.P.O.; re-
+sources, A.A.K., A.G.P. and E.E.A.; data curation, A.O.Z.; writing—original draft preparation, A.O.Z.;
+writing—review and editing, A.O.Z., A.V.E., A.N.N. and E.E.A.; visualization, A.O.Z.; supervision,
+E.E.A.; project administration, E.E.A.; funding acquisition, A.G.P. and E.E.A. All authors have read
+and agreed to the published version of the manuscript.
+Funding: The article was made with the support of the Ministry of Science and Higher Education of
+the Russian Federation in accordance with agreement №075-15-2020-920, dated 16 November 2020,
+on providing a grant in the form of subsidies from the Federal budget of the Russian Federation. The
+grant was provided for state support for the creation and development of a world-class scientiﬁc
+center, “Agrotechnologies for the Future”.
+Institutional Review Board Statement: Not applicable.
+Informed Consent Statement: Not applicable.
+Data Availability Statement: Raw reads are available on SRA (accession number PRJNA891634) or
+by a direct link: https://www.ncbi.nlm.nih.gov/sra/PRJNA891634 (accessed on 14 November 2022).
+Conﬂicts of Interest: The authors declare no conﬂict of interest.
+References
+1.
+Jin, L.; Lyu, J.; Jin, N.; Xie, J.; Wu, Y.; Zhang, G.; Feng, Z.; Tang, Z.; Liu, Z.; Luo, S.; et al. Effects of Different Vegetable Rotations on the
+Rhizosphere Bacterial Community and Tomato Growth in a Continuous Tomato Cropping Substrate. PLoS ONE 2021, 16, e0257432.
+[CrossRef] [PubMed]
+2.
+Woo, S.; De Filippis, F.; Zotti, M.; Vandenberg, A.; Hucl, P.; Bonanomi, G. Pea-Wheat Rotation Affects Soil Microbiota Diversity,
+Community Structure, and Soilborne Pathogens. Microorganisms 2022, 10, 370. [CrossRef] [PubMed]
+3.
+Vives-Peris, V.; de Ollas Valverde, C.; Gómez-Cadenas, A.; Perez-Clemente, R. Root Exudates: From Plant to Rhizosphere and
+Beyond. Plant Cell Rep. 2020, 39, 3–17. [CrossRef] [PubMed]
+4.
+Mcdaniel, M.; Tiemann, L.; Grandy, S. Does Agricultural Crop Diversity Enhance Soil Microbial Biomass and Organic Matter
+Dynamics? A Meta-Analysis. Ecol. Appl. 2013, 24, 560–570. [CrossRef] [PubMed]
+5.
+Bowles, T.; Mooshammer, M.; Socolar, Y.; Calderon, F.; Cavigelli, M.; Culman, S.; Deen, W.; Drury, C.; Garcia y Garcia, A.; Gaudin,
+A.; et al. Long-Term Evidence Shows That Crop-Rotation Diversiﬁcation Increases Agricultural Resilience to Adverse Growing
+Conditions in North America. One Earth 2020, 2, 284–293. [CrossRef]
+6.
+Zverev, A.; Zverev, A.O.; Kichko, A.A.; Pinaev, A.G.; Provorov, N.A.; Andronov, E.E. Diversity Indices of Plant Communities and
+Their Rhizosphere Microbiomes: An Attempt to Find the Connection. Microorganisms 2021, 9, 2339. [CrossRef] [PubMed]
+7.
+Hoeffner, K.; Beylich, A.; Chabbi, A.; Cluzeau, D.; Dascalu, D.; Graefe, U.; Guzmán, G.; Hallaire, V.; Hanisch, J.; Landa, B.; et al.
+Legacy Effects of Temporary Grassland in Annual Crop Rotation on Soil Ecosystem Services. Sci. Total Environ. 2021, 780, 146140.
+[CrossRef] [PubMed]
+8.
+Koyama, A.; Dias, T.; Antunes, P. Application of Plant–Soil Feedbacks in the Selection of Crop Rotation Sequences. Ecol. Appl.
+2021, 32, e2501. [CrossRef] [PubMed]
+9.
+Beillouin, D.; Ben Ari, T.; Malézieux, E.; Seufert, V.; Makowski, D. Positive but Variable Effects of Crop Diversiﬁcation on
+Biodiversity and Ecosystem Services. Glob. Chang. Biol. 2021, 27, 4697–4710. [CrossRef] [PubMed]
+10.
+Boincean, B.; Dent, D. Crop Rotation. In Farming the Black Earth, Sustainable and Climate-Smart Management of Chernozem Soils;
+Springer: Cham, Switzerland, 2019; pp. 89–124. ISBN 978-3-030-22532-2.
+11.
+Benitez, M.-S.; Osborne, S.; Lehman, R. Previous Crop and Rotation History Effects on Maize Seedling Health and Associated
+Rhizosphere Microbiome. Sci. Rep. 2017, 7, 15709. [CrossRef] [PubMed]
+12.
+Hilton, S.; Bennett, A.; Chandler, D.; Mills, P.; Bending, G. Preceding Crop and Seasonal Effects Inﬂuence Fungal, Bacterial and
+Nematode Diversity in Wheat and Oilseed Rape Rhizosphere and Soil. Appl. Soil Ecol. 2018, 126, 34–46. [CrossRef]
+13.
+Kaplan, I.; Bokulich, N.; Caporaso, J.; Enders, L.; Ghanem, W.; Ingerslew, K. Phylogenetic Farming: Can Evolutionary History
+Predict Crop Rotation via the Soil Microbiome? Evol. Appl. 2020, 13, 1984–1999. [CrossRef] [PubMed]
+Life 2023, 13, 400
+8 of 8
+14.
+Caporaso, J.; Lauber, C.; Walters, W.; Berg-Lyons, D.; Lozupone, C.; Turnbaugh, P.; Fierer, N.; Knight, R. Global Patterns of 16S
+RRNA Diversity at a Depth of Millions of Sequences per Sample. Proc. Natl. Acad. Sci. USA 2011, 108 (Suppl. S1), 4516–4522.
+[CrossRef] [PubMed]
+15.
+Callahan, B.; Mcmurdie, P.; Rosen, M.; Han, A.; Johnson, A.J.; Holmes, S. DADA2: High-Resolution Sample Inference from
+Illumina Amplicon Data. Nat. Methods 2016, 13, 581–583. [CrossRef] [PubMed]
+16.
+Mcmurdie, P.; Holmes, S. Phyloseq: An R Package for Reproducible Interactive Analysis and Graphics of Microbiome Census
+Data. PloS ONE 2013, 8, e61217. [CrossRef] [PubMed]
+17.
+Quast, C.; Pruesse, E.; Yilmaz, P.; Gerken, J.; Schweer, T.; Yarza, P.; Peplies, J.; Glöckner, F. The SILVA Ribosomal RNA Gene
+Database Project: Improved Data Processing and Web-Based Tools. Nucleic Acids Res. 2013, 41, D590–D596. [CrossRef] [PubMed]
+18.
+Oksanen, J.; Blanchet, F.G.; Kindt, R.; Legendre, P.; Minchin, P.; O’Hara, B.; Simpson, G.; Solymos, P.; Stevens, H.; Wagner, H.
+Vegan: Community Ecology Package, R Package Version 2.2-1; R Foundation for Statistical Computing: Vienna, Austria, 2015.
+Available online: https://cran.r-project.org/package=vegan(accessed on 14 November 2022).
+19.
+Oberholster, T.; Vikram, S.; Cowan, D.; Valverde, A. Key Microbial Taxa in the Rhizosphere of Sorghum and Sunﬂower Grown in
+Crop Rotation. Sci. Total Environ. 2017, 624, 530–539. [CrossRef] [PubMed]
+20.
+Xie, Z.; He, Y.; Tu, M.; Xu, C.; Liu, G.; Wang, H.; Cao, W.; Liu, H. Chinese Milk Vetch Improves Plant Growth, Development and N
+Recovery in the Rice-Based Rotation System of South China. Sci. Rep. 2017, 7, 3577. [CrossRef] [PubMed]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.

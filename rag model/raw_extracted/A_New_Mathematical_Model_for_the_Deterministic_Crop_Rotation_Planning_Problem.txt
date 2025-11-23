@@ -1,0 +1,649 @@
+ Abstract – The objective of the crop rotation planning 
+problem addressed in this paper is to maximize the total net 
+return. An integer linear programming model is formulated 
+which optimizes the crop rotation plans using the branch and 
+bound algorithm. The model considers the maximum 
+allowable frequency for planting each crop during the 
+rotation cycle in each plot. The proposed model incorporates 
+a novel timing preference constraint, along with the 
+agronomic, 
+water 
+availability 
+and 
+seasonal 
+demand 
+restrictions. 
+An 
+analysis 
+has 
+been 
+performed 
+to 
+simultaneously visualize the temporal and spatial variations 
+during the rotation cycle.
+Keywords - Agricultural production planning, Crop 
+Rotation Planning, Integer Programming 
+I.  INTRODUCTION 
+ 
+The agri-food supply chain problem is facing major 
+challenges in satisfying global demand and preserving 
+natural resources. It includes many activities starting from 
+planting the planned crops, moving to the harvesting at the 
+correct timing until delivering the final fresh/processed 
+products to the customers. The problem could be divided 
+into cropping (i.e. farming decisions), transportation and 
+processing of the targeted crop.  
+ 
+Recent reviews of the agri-food supply chain could be 
+found in [1, 2]. Cropping decisions include: deciding on the 
+allocated area to each crop, timing of planting and 
+harvesting, and the utilization of the available resources for 
+planting the crops. Improper crop planning affects the agri-
+food supply chain activities; hence, farming decisions play 
+a crucial role in shaping the whole agri-chain. Dury et al.
+[3] classified the farming decisions into crop planning and 
+crop rotation, where this paper tackles the latter one.  
+ 
+Crop rotation is defined as the cyclic pattern of 
+planting different crops in the same plot. It increases the 
+organic matter, nitrogen and soil properties, and hence it 
+preserves the soil quality and increase yields [4]. It helps in 
+regulating the irrigation water, reducing diseases and 
+agricultural pests, as well as minimizing the use of 
+synthetic fertilizers and pesticides. The highest profitable 
+crop during the rotation cycle is called “the main crop”. 
+The rotation length is defined by replanting the main crop 
+in the plot, and the cycle is usually named for the main 
+crop. For example, the wheat rotation cycle in Egypt 
+extends for three years with two crops harvested per year.  
+ 
+In the analysis of the strategic crop rotation planning 
+problem, the main objective is to select the optimum crop 
+rotation plans. The determination of the optimum sequence 
+and schedule while optimizing single or multiple 
+objectives is a challenging task, where a set of pre-defined 
+constraints should be considered. The limitations include 
+the availability of resources (e.g. water, and cultivated 
+area), and the production time of each crop [5]. Crop 
+rotation planning problem is an NP-hard optimization 
+problem. It involves both sequencing and resource 
+allocation to find the allocations of the restricted number 
+of agriculture plots optimally amongst the various crops 
+each season.  For example, Fig.1 shows a schematic layout 
+for the crops’ succession problem, wherein each season 
+several crops could be planted in the available plots. The 
+planted crops will affect the decision of which crop to 
+cultivate in the next season. This structure makes the crop 
+rotation schedules, a complex combinatorial task with 
+many decision variables and constraints. 
+ 
+The objective of this article is to examine the crop 
+rotation problem by formulating an integer linear 
+programming model, in order to support the farmer’s 
+decision in determining the optimal crop distribution 
+across the plots. In section II, some related works for the 
+problem are addressed. The problem description is 
+presented in section III, and the proposed mathematical 
+model for the crop rotation problem is derived in section 
+IV. Section V presents the primary computational results 
+and finally, Section VI gives the conclusions and future 
+work. 
+II.  LITERATURE REVIEW 
+ 
+The recent research on the crop rotation planning 
+problem was motivated by the work of Detlefsen and 
+Jensen [6] who used a simple network model to describe 
+the problem. Many analytical and computational models 
+have been proposed for solving the crop rotation problem, 
+which can be divided into two main areas: economics and 
+agronomy. The general objective of the current work is 
+generating an optimal performance related to economic 
+decisions, where agronomic constraints should be 
+respected. A recent review that covered the mathematical 
+models of crop planning were presented in [7].
+ 
+Dos Santos et al. [8] developed a binary optimization 
+model for vegetable farming, intending to determine the 
+crop rotation schedules for multiple plots with adjacency 
+constraints. Also, the model considers the planting of 
+legume crops and fallow periods for each plot during each 
+rotation. The model was solved by means of a heuristic 
+based on column generation, and
+A New Mathematical Model for the Deterministic Crop Rotation Planning 
+Problem
+I. Fikry1, Mohamed Gheith1,2, Amr Eltawil1
+1Department of Industrial and Manufacturing Engineering, Egypt-Japan University for Science and Technology, 
+Alexandria, Egypt
+2On leave from Production Engineering Department, Faculty of Engineering, Alexandria University, Alexandria, Egypt
+(Ibrahim.fikry@ejust.edu.eg)
+314
+978-1-7281-3804-6/19/$31.00 ©2019 IEEE314
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:47:53 UTC from IEEE Xplore.  Restrictions apply. 
+Fig. 1. Schematic representation of the crop rotation problem
+compared to the default branch-and-cut approach of 
+CPLEX. Dos Santos et al. [9] have extended their original 
+model to take into account the effects of production 
+constraints, and the heterogeneity of each available plot. 
+Although they used the same solution approach with plot 
+size as a decision variable, two additional heuristics were
+added to refine the obtained results. The first one (the plot 
+elimination heuristic) guarantees that tiny plot sizes are 
+eliminated, while the second one (the plot-minimization) 
+ensures that demand is met with the minimum number of 
+plots. Similarly, Dos Santos et al. [10] developed a Branch-
+and-Price-and-Cut (BPC) algorithm that involves many 
+improved features to optimally solve the master crop 
+rotation problem.  
+ 
+Another BPC algorithm for the crop rotation planning 
+problem was proposed adapting restricted branching rules 
+[11]. Their original model involved a binary crop rotation 
+planning model, with an objective of minimizing the 
+needed area during the time horizon and covering the 
+seasonal demand [12]. On the other hand, the stochastic 
+nature of agriculture systems was handled in [13], where a 
+dynamic stochastic programming model is presented to 
+investigate the risks associated with production. The model 
+showed that higher risks in the crop’s yield and prices 
+occurred in the presence of longer rotations; hence, longer 
+crop rotations are unfavourable to farmers.  
+ 
+A linear programming model called CropRota, 
+generates typical crop rotations with the percentage share 
+of crops in rotation as the decision variables [14]. The 
+model derives the crop rotations by using an agronomic 
+score matrix and compares the obtained results with the 
+observed crop data from the Austrian region. A four-year 
+crop rotation schedule was developed using a MILP model 
+for an organic farm in Pennsylvania [15]. The developed 
+model considers crop yield requirements, required 
+harvested quantity, irrigation type, weed control, and other 
+rotation principles.  
+III.  PROBLEM DESCRIPTION 
+ 
+Since 1987, the Egyptian farmers were freely choosing 
+the crops to plant, and the area allocated to each crop. As a 
+result, the farmers took the decisions to plant the most 
+profitable crops (e.g. wheat, maize, rice) regardless of the 
+negative consequences. The consequent negative effects 
+involve excessive use of water due to the expansion of the 
+annual rice area and the decline of soil fertility and 
+properties due to mono-cropping. The main objective of 
+this work is to utilize the crop rotation concepts and 
+achieve a reasonable income for the farmer while 
+respecting the agronomic constraints. The optimal crop 
+rotation plan should contain the following conditions:  
+x
+Each crop has its own production time, planting 
+dates, deterministic demand, and the total 
+expected profit of selling the harvested quantity. 
+x
+Different crop species require varying amounts of 
+water for irrigation. 
+x
+Each Crop belongs to a known family. Crops from 
+the same family have succession constraints 
+(cannot be planted in succession). The crop 
+cannot be repeated yearly in the same land, and it 
+is controlled by the crop frequency.  
+x
+Every cycle contains a legume crop (e.g. beans 
+and soybeans), which affects the soil contents 
+positively and hence, the crop’s productivity [16].
+x
+One or more fallow periods should be allowed to 
+restore the soil’s moisture and fertility content. 
+x
+Design the rotation in a way that achieves a 
+reasonable profit by allocating a sufficient area for 
+the main cash crop. 
+ 
+Based on the above-discussed conditions, the 
+generation of optimal crop rotation schedules while 
+targeting the highest income from the suggested rotations 
+is a hard-combinatorial optimization task. In this paper, an 
+integer linear programming model is formulated for the 
+crop rotation planning problem. Fig.2 provides an initial 
+base that shapes the decision-making problem and 
+identifies the nature of factors involved in the cropping-
+plan decision-making process. The proposed mathematical 
+model can facilitate taking the decisions related to defining 
+the crops sequence in each plot within the time horizon, 
+estimating the needed area for each crop to satisfy the 
+seasonal demand, and obtaining an operational plan for 
+different agricultural activities during the rotation cycle. To 
+the best of our knowledge, no previous study has 
+considered the maximum frequency of planting the desired 
+crop within the rotation cycle, while considering the 
+necessary conditions (e.g. water, demand) to implement the 
+Proceedings of the 2019 IEEE IEEM
+315
+978-1-7281-3804-6/19/$31.00 ©2019 IEEE315
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:47:53 UTC from IEEE Xplore.  Restrictions apply. 
+proper rotation schedules successfully. This study 
+integrates all the required economic and agronomic 
+constraints through a binary crop rotation model.  
+Fig. 2. The analytical framework for the crop rotation problem. 
+IV.
+ THE PROPOSED MODEL 
+a.
+The Model Assumptions 
+x
+There is no limitation on the seasonal demand of 
+crops. 
+x
+The field consists of homogenous plots with 
+standard sizes; hence the obtained yield for the 
+desired crop is the same regardless of the plot used 
+to plant that crop. 
+x
+The expected crop yield and irrigation water do 
+not depend on the preceding crop, but on the 
+present crop. Both values are known and 
+deterministic.
+x
+The size of each plot equals to one feddan, which 
+is subdivided according to the rotation cycle. 
+b.
+Model Nomenclature 
+SETS AND INDICES
+ܥݎ݋݌ݏ= {1, . . . . . . ܫ , ܫ+ 1 . . . . . . ܯ , ܯ+ 1}, is the set of 
+crops including legumes and fallow. Where {1, … ܫ} are 
+the crops, {ܫ+ 1, … ܯ} are the legumes, and ܯ+ 1 is the 
+fallow (i.e. unplanted period). 
+݅ is the index over the set of ܿݎ݋݌ݏ
+ܨ݈ܽ݉݅݅݁ݏ= {1, . . . . . . ܨ}, is the set of crop families 
+݂ is the index over the set of ܨ݈ܽ݉݅݅݁ݏ
+ܶ݅݉݁ ݌݁ݎ݅݋݀ݏ= {1, . . . . . . ܬ}, is the set of time periods 
+݆ is the index over the set of ܶ݅݉݁ ݌݁ݎ݅݋݀ݏ
+ܻ݁ܽݎݏ= {1, . . ܶ}, is the set of years in the rotation cycle 
+݈ܲ݋ݐݏ= {1, . . ܮ}, is the set of Plots 
+݈ is the index over the set of ݈ܲ݋ݐݏ
+PARAMETERS
+ܥ௜  
+The net return of crop ݅per plot 
+ݏ௜     Starting period of the planting of crop ݅
+ݐ௜
+Required production time of crop ݅
+ܧ௜
+Ending period of harvesting of crop ݅
+ܻ௜
+Yield of crop ݅
+ܦ௜
+Demand for crop ݅
+ܤ௜    Maximum number of plots assigned to crop ݅
+during the rotation cycle
+ܹ௜   Required water for irrigating crop ݅
+ܣܹTotal available water during the rotation cycle
+݂௜  
+Frequency of crop ݅
+N௜    Frequency modification factor for crop ݅
+ܶ
+Rotation cycle in years
+ܨ௜  
+The reciprocal of frequency of crop ݅
+ܻ
+Total yearly time slots
+DECISION VARIABLES
+ܺ௜௝௟ቄ1  ݂݅ ܿݎ݋݌ ݅ is ݌݈ܽ݊ݐ݁݀ ݅݊ ݌݁ݎ݅݋݀ ݆ ݅݊ ݌݈݋ݐ ݈
+0  ݋ݐℎ݁ݎݓ݅ݏ݁
+c.
+The Mathematical Model 
+݉ܽݔ  ෍෍෍ܥ௜. ܺ௜௝௟
+௅
+௟ୀଵ
+௃
+௝ୀଵ
+ ூ
+௜ୀଵ
+(1)
+෍ܺ௜௝௟
+ெାଵ
+௜ୀଵ
+ ≤ 1             ∀ ݆∈ܬ  ∀ ݈∈ܮ
+(2)
+ܺ௜௝௟+ ෍෍ܺ௜(௝ା௧೔)௟
+௜∈௙
+௧೔∈௜
+≤1 
+∀ ݈∈ܮ         ∀ ݆∈ܬ      ∀ ݅∈ܨ
+(3)
+෍ܺ௜௝௟
+ா೔
+௝ୀ௦೔
+ =  ݐ௜ܺ௜(௝ୀ௦೔)௟ 
+∀ ݅∈ܫ/ܯ+ 1     ∀ ݈∈ܮ     ∀ ݏ௜, ܧ௜∈ ܶ
+(4)
+෍  
+෍
+ܺ௜௝௟
+௝∈௃/{௦೔,..,ா೔}
+௅
+௟ୀଵ
+= 0         ∀ ݅∈ܫ           
+(5)
+෍෍ܺ௜௝௟
+௃
+௝ୀଵ
+௅
+௟ୀଵ
+ ≤ܤ௜             
+∀ ݅∈I/(I + 1 … … . M, M + 1)      
+(6)
+෍෍ܺ௜௝௟
+ெ
+ூାଵ
+௃
+௝ୀଵ
+≥ 1                 ∀ ݈∈L
+(7)
+෍ܺ(ெାଵ)௝௟
+௃
+௝ୀଵ
+≥ 1               ∀ ݈∈L
+(8)
+෍෍෍ܹ௜. ܺ௜௝௟
+ெ
+௜ୀଵ
+௃
+௝ୀଵ
+௅
+௟ୀଵ
+ ≤ܣܹ
+(9)
+෍ܺ௜௝௟
+௝∈௦೔
+≤݂௜ܶ+ ܰ௜      ∀ ݅∈ܫ         ∀ ݆∈ܬ 
+(10)
+෍ܺ௜(௦೔ା(௝ିଵ)௒)௟
+ி೔
+௝ୀଵ
+ ≤ 1             ∀ ݅∈ܫ  ∀ ݈∈ܮ
+(11)
+ܺ௜௝௟ ∈ {0,1}      ∀ ݅∈I         ∀ ݆∈J          ∀ ݈∈L
+(12)
+Land constraints 
+Water availability 
+Crop rotation 
+constraints   
+Economic and 
+Ergonomic 
+data 
+Problem 
+formulation
+Economic 
+optimization 
+model
+Optimal 
+cropping 
+sequence, 
+rotation and
+maximum net 
+return
+Proceedings of the 2019 IEEE IEEM
+316
+978-1-7281-3804-6/19/$31.00 ©2019 IEEE316
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:47:53 UTC from IEEE Xplore.  Restrictions apply. 
+(a)
+Periods from 1 to 40 
+(b)
+Periods from 41 to 72 
+Fig. 3. Crop production schedule throughout the planning horizon for all plots.
+ 
+The objective function (1) maximizes the total profit 
+from selling the crops which grow during the rotation 
+cycle. Constraint (2) assigns at most one crop per plot per 
+period, while constraint (3) prevents the same crop or two 
+crops from the same family to be planted consecutively. 
+Constraint (4) ensures that the planted crop will occupy the 
+plot during its production cycle. Constraint (5) guarantees 
+that each crop is only grown in its planting period. 
+Constraint (6) represents the required number of plots for 
+each crop to satisfy the seasonal demand during the rotation 
+cycle. Constraints (7) and (8) adopt the presence of at least 
+single green manure crop and fallow for each plot during
+the rotation cycle, respectively. Constraint (9) limits the 
+used water for irrigation to the total available amount of 
+water. Constraint (10) ensures that the occurrence of each 
+crop will be defined according to the crop’s frequency 
+during the rotation cycle. Constraint (11) ensures that there 
+is enough time before planting the same crop again. It is 
+worth noting that constraint (10) will be enough to 
+represent the crops’ frequencies without introducing 
+constraint (12) in case that the rotation length is less than 
+or equal to the frequency reciprocal of the crops [17].
+Finally, the binary decision variable ܺ௜௝௟ is equal to one if 
+and only if crop ݅ is planted in period ݆ in plot ݈. 
+ 
+The potential contribution of the formulated model is 
+the integration of crops sequence with spatial and temporal 
+variations, while considering the agronomic constraints. 
+The model produces the crops sequence and the area 
+allocated for each crop simultaneously using a single 
+model. 
+V.
+MODEL DISCUSSION AND ANALYSIS  
+ 
+In this section, the solution of the proposed binary 
+linear programming model is discussed, and the 
+computational analysis is conducted to maximize the 
+accumulated net return at the end of the rotation cycle. The 
+model was implemented using GUROBI 8.1 and tested on 
+a 2.20 GHz Core i7 with 6 GB RAM computer. The solver 
+uses the branch and bound algorithm to find the optimal 
+rotation schedules. The study selected thirty-one crops 
+related to eleven families from old lands in Egypt. Crop 
+data1 involves planting and harvesting dates, average crop 
+water requirement, and total net return. A rotation cycle 
+length of three years is divided into weeks ( J =72), three 
+sets of plots ( L = 6,12,18), were used during the 
+computational analysis. The full optimization model 
+                                                          
+1 Data is available upon request due to limit paper space. 
+consists of 78,112 variables with 11,074 linear constraints 
+and could be solved in less than one second. 
+ 
+The verification of the proposed model is done by 
+setting L =12 with no restrictions on demand; hence, the 
+model should allocate the most profitable crop in all plots. 
+Fig.3 shows the obtained schedule in that case, where the 
+cash crop (i.e. tomatoes) is planted to get the highest profit. 
+The optimal schedule consists of one legume crop 
+(soybeans), fallow periods to utilize the crop rotation 
+concepts and restrictions on repeating the cash crop due to 
+the frequency limitation. 
+Fig.4 demonstrates how the use of different amounts 
+of water alter the range of obtained profit for the three sets 
+of plots. With small amounts of water, the different number 
+of plots have the same earned benefit as a result of low 
+utilizing of the available area regardless of the owned 
+number of plots until reaching approximately ten thousand
+cubic meters. At this point, larger number of plots will 
+continue in gaining a similar profit until a certain water 
+level is used and so on for large-size farms. As indicated in 
+Fig. 4, each set has a shaded area for maximum profit, 
+which cannot be exceeded at a certain amount of irrigation 
+water. Consequently, the projected area represents the 
+maximum allowable profit that the farmer can obtain when 
+utilizing the rotation methodology. Each curve reaches a 
+constant rate corresponding to the optimum required water 
+for irrigation (e.g. optimum needed water for eighteen plots 
+approximately equals to 405 thousand cubic meters). Table 
+1 summarizes the optimum water amounts and objective 
+values for the different number of plots. 
+TABLE I  
+PROFIT AND IRRIGATION REQUIREMENTS BY THE PROPOSED MODEL 
+Plots
+Water Requirements
+        (103 m3)
+Obj. Value 
+(Egyptian Pounds)
+6
+135
+451,614
+12
+270
+903,228
+18
+405
+1,354,842
+24
+540
+1,806,456
+30
+675
+2,258,070
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+Plot
+Tomatoes(S)
+Eggplant
+soybeans
+Tomatoes(W)
+41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72
+Plot
+Clover (long-cut)
+Eggplant
+Clover (short-cut)
+Watermelon
+Proceedings of the 2019 IEEE IEEM
+317
+978-1-7281-3804-6/19/$31.00 ©2019 IEEE317
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:47:53 UTC from IEEE Xplore.  Restrictions apply. 
+Fig. 4. Expected profit for each set of plots at different water amount 
+VI.
+CONCLUSION AND FUTURE WORK 
+ 
+The planning of crop rotation is used in maximizing 
+the farmer’s profit by determining the optimum crops’ 
+schedules. In this paper, a binary linear programming 
+model capable of solving optimally the crop rotation 
+planning problem is proposed. The combinatorial aspect 
+arises as a result of the ecological criteria that must be 
+respected in the crop rotation. These criteria include certain 
+production dates for crops, restriction on growing specific 
+crops in succession and enhancing soil ability by legumes 
+and fallows. The planted areas are considered an essential 
+parameter in investigating the crop rotation problems, 
+while achieving the efficient utilization of available water 
+resources. In this study, we have demonstrated the trade-
+offs between irrigation water and expected total profit. Two 
+important factors should be included in future work in 
+order to obtain more relevant results. First, an extension of 
+the model to include soil properties, deficit irrigation and 
+resource constraints such as used machinery and available 
+workforce. Second, incorporating risk assessment with its 
+impact on the optimal crop selection. 
+ACKNOWLEDGMENT 
+This research project was supported by the Egyptian 
+ministry of higher education grant and the Japanese 
+International Cooperation Agency (JICA) in the scope of 
+the Egypt-Japan University of Science and Technology. 
+REFERENCES 
+[1] 
+R. D. Kusumastuti, D. P. Van Donk, and R. Teunter, 
+"Crop-related harvesting and processing planning: a 
+review," 
+International 
+Journal 
+of 
+Production 
+Economics, vol. 174, pp. 76-92, 2016. 
+[2] 
+O. Ahumada and J. R. Villalobos, "Application of 
+planning models in the agri-food supply chain: A 
+review," European journal of Operational research, 
+vol. 196, no. 1, pp. 1-20, 2009. 
+[3] 
+J. Dury, N. Schaller, F. Garcia, A. Reynaud, and J. E. 
+Bergez, "Models to support cropping plan and crop 
+rotation 
+decisions. 
+A 
+review," 
+Agronomy 
+for 
+sustainable development, vol. 32, no. 2, pp. 567-580, 
+2012. 
+[4] 
+S. Dogliotti, W. A. Rossing, and M. K. Van Ittersum, 
+"Systematic design and evaluation of crop rotations 
+enhancing soil conservation, soil fertility and farm 
+income: a case study for vegetable farms in South 
+Uruguay," Agricultural Systems, vol. 80, no. 3, pp. 277-
+302, 2004. 
+[5] 
+N. M. Cid-Garcia, A. G. Bravo-Lozano, and Y. A. Rios-
+Solis, "A crop planning and real-time irrigation method 
+based on site-specific management zones and linear 
+programming," 
+Computers 
+and 
+Electronics 
+in 
+Agriculture, vol. 107, pp. 20-28, 2014. 
+[6] 
+N. K. Detlefsen and A. L. Jensen, "Modelling optimal 
+crop sequences using network flows," Agricultural 
+Systems, vol. 94, no. 2, pp. 566-572, 2007. 
+[7] 
+ W. Gomaa, N. Harraz, and A. ElTawil, "Crop planning 
+and water management: A survey," in Proceedings of 
+The 41st International Conference on Computers & 
+Industrial Engineering, 2011.  
+[8] 
+L. M. R. dos Santos, P. Michelon, M. N. Arenales, and 
+R. H. S. Santos, "Crop rotation scheduling with 
+adjacency constraints," Annals of Operations Research, 
+vol. 190, no. 1, pp. 165-180, 2011. 
+[9] 
+L. M. R. dos Santos, A. M. Costa, M. N. Arenales, and 
+R. H. S. Santos, "Sustainable vegetable crop supply 
+problem," European Journal of Operational Research, 
+vol. 204, no. 3, pp. 639-647, 2010. 
+[10] 
+L. M. R. dos Santos, P. Munari, A. M. Costa, and R. H. 
+Santos, "A branch-price-and-cut method for the 
+vegetable crop rotation scheduling problem with 
+minimal plot sizes," European Journal of Operational 
+Research, vol. 245, no. 2, pp. 581-590, 2015. 
+[11] 
+L. Alfandari, A. Plateau, and X. Schepler, "A branch-
+and-price-and-cut approach for sustainable crop 
+rotation planning," European Journal of Operational 
+Research, vol. 241, no. 3, pp. 872-879, 2015. 
+[12] 
+L. Alfandari, J.-L. Lemalade, A. Nagih, and G. Plateau, 
+"A MIP flow model for crop-rotation planning in a 
+context of forest sustainable development," Annals of 
+Operations Research, vol. 190, no. 1, pp. 149-164, 
+2011. 
+[13] 
+A. Ridier, K. Chaib, and C. Roussy, "A Dynamic 
+Stochastic Programming model of crop rotation choice 
+to test the adoption of long rotation under price and 
+production risks," European Journal of Operational 
+Research, vol. 252, no. 1, pp. 270-279, 2016. 
+[14] 
+M. Schönhart, E. Schmid, and U. A. Schneider, 
+"CropRota–A crop rotation model to support integrated 
+land use assessments," European Journal of Agronomy, 
+vol. 34, no. 4, pp. 263-277, 2011. 
+[15] 
+R. J. Forrester and M. Rodriguez, "An Integer 
+Programming Approach to Crop Rotation Planning at 
+an Organic Farm," The UMAP Journal, vol. 38, no. 4, 
+pp. 5-25, 2018. 
+[16] 
+M. Reckling et al., "A cropping system assessment 
+framework—evaluating effects of introducing legumes 
+into crop rotations," European Journal of Agronomy, 
+vol. 76, pp. 186-197, 2016. 
+[17] 
+S. Dogliotti, W. Rossing, and M. Van Ittersum, 
+"ROTAT, a tool for systematically generating crop 
+rotations," European Journal of Agronomy, vol. 19, no. 
+2, pp. 239-250, 2003. 
+Proceedings of the 2019 IEEE IEEM
+318
+978-1-7281-3804-6/19/$31.00 ©2019 IEEE318
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:47:53 UTC from IEEE Xplore.  Restrictions apply. 

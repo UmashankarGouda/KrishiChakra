@@ -1,0 +1,47 @@
+### DOCUMENT INFO  
+- **Title/Topic:** Crop Rotation Based on Space and Time  
+- **Type:** Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed:**  
+  - Rotation based on soil nutrient deficiencies (e.g., nitrogen-fixing crops like chickpea to replenish soil).  
+  - Site-specific crop management to optimize nutrient use.  
+- **Crops mentioned:**  
+  - Potato (requires 170 kg nitrogen/hectare).  
+  - Onion (requires 155 kg nitrogen/hectare).  
+  - Chickpea (requires 20 kg nitrogen/hectare; fixes nitrogen for subsequent crops).  
+- **Regions covered:**  
+  - India (focus on Gujarat’s agricultural challenges).  
+  - Developing countries with similar agro-economic conditions.  
+
+### KEY FINDINGS  
+- **Yield improvements:**  
+  - Precision agriculture (e.g., remote sensing, IR absorption spectroscopy) can optimize crop selection for soil conditions, improving yields.  
+- **Soil health benefits:**  
+  - Leguminous crops (e.g., chickpea) restore nitrogen, reducing dependency on synthetic fertilizers.  
+  - No-till farming preserves topsoil and organic humus.  
+- **Disease reduction:**  
+  - Crop rotation minimizes soil-borne diseases and pest buildup.  
+- **Economic impact:**  
+  - Reduces fertilizer costs by targeting nutrient deficiencies.  
+  - Mitigates market surplus issues (e.g., Gujarat’s potato wastage) by aligning crop choices with local demand.  
+
+### NUMERICAL DATA/TABLES  
+- **Nitrogen requirements per hectare:**  
+  - Potato: 170 kg.  
+  - Onion: 155 kg.  
+  - Chickpea: 20 kg.  
+- **IR absorption spectra ranges for nutrients:**  
+  - N-H bond: 3300–3500 cm⁻¹.  
+  - N-O bond: 1345–1385 cm⁻¹.  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers:**  
+  - Adopt precision agriculture tools (e.g., remote sensing hovers) to map soil nutrients and rotate crops accordingly.  
+  - Grow nitrogen-fixing crops (e.g., chickpea) in nitrogen-deficient zones to naturally replenish soil.  
+- **Best practices for crop rotation:**  
+  - Align crop choices with soil nutrient levels and local market demand to avoid surplus.  
+  - Prioritize organic solutions (e.g., leguminous plants) over synthetic fertilizers to sustain soil health.  
+
+---  
+*Extracted key information is clean, structured, and ready for RAG applications.*

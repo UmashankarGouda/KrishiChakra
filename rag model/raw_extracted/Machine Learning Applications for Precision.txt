@@ -1,0 +1,2804 @@
+Received December 8, 2020, accepted December 20, 2020, date of publication December 31, 2020,
+date of current version January 11, 2021.
+Digital Object Identifier 10.1109/ACCESS.2020.3048415
+Machine Learning Applications for Precision
+Agriculture: A Comprehensive Review
+ABHINAV SHARMA
+1, ARPIT JAIN
+1, PRATEEK GUPTA2, (Student Member, IEEE),
+AND VINAY CHOWDARY
+1
+1Department of Electrical and Electronics Engineering, School of Engineering, University of Petroleum and Energy Studies (UPES), Dehradun 248007, India
+2Department of Systemics, School of Computer Science, University of Petroleum and Energy Studies (UPES), Dehradun 248007, India
+Corresponding author: Arpit Jain (arpit.eic@gmail.com)
+ABSTRACT Agriculture plays a vital role in the economic growth of any country. With the increase of
+population, frequent changes in climatic conditions and limited resources, it becomes a challenging task to
+fulﬁl the food requirement of the present population. Precision agriculture also known as smart farming have
+emerged as an innovative tool to address current challenges in agricultural sustainability. The mechanism that
+drives this cutting edge technology is machine learning (ML). It gives the machine ability to learn without
+being explicitly programmed. ML together with IoT (Internet of Things) enabled farm machinery are key
+components of the next agriculture revolution. In this article, authors present a systematic review of ML
+applications in the ﬁeld of agriculture. The areas that are focused are prediction of soil parameters such as
+organic carbon and moisture content, crop yield prediction, disease and weed detection in crops and species
+detection. ML with computer vision are reviewed for the classiﬁcation of a different set of crop images
+in order to monitor the crop quality and yield assessment. This approach can be integrated for enhanced
+livestock production by predicting fertility patterns, diagnosing eating disorders, cattle behaviour based on
+ML models using data collected by collar sensors, etc. Intelligent irrigation which includes drip irrigation
+and intelligent harvesting techniques are also reviewed that reduces human labour to a great extent. This
+article demonstrates how knowledge-based agriculture can improve the sustainable productivity and quality
+of the product.
+INDEX TERMS Agricultural engineering, machine learning, intelligent irrigation, IoT, prediction.
+NOMENCLATURE
+AI
+Artiﬁcial Intelligence
+ML
+Machine Learning
+DL
+Deep Learning
+IoT
+Internet of Things
+GPS
+Global Positioning System
+UAV
+Unmanned Aerial Vehicle
+ASC
+Agriculture Supply Chain
+NLP
+Natural Language Processing
+SI
+Swarm Intelligence
+ANN
+Artiﬁcial Neural Network
+NN
+Neural Network
+kNN
+K-Nearest Neighbour
+SVM
+Support Vector Machines
+RNN
+Recurrent Neural Network
+ELM
+Extreme Learning Machines
+RELM
+Regularized Extreme Learning Machine
+The associate editor coordinating the review of this manuscript and
+approving it for publication was Wei Liu.
+XGBoost
+Extreme Gradient Boosting
+MLP
+Multi-Layer Perceptron
+CNN
+Convolutional Neural Network
+PCA
+Principal Component Analysis
+RBFN
+Radial Basis Function Network
+RF
+Random Forest
+GBM
+Gradient Boosting Model
+SVR
+Support Vector Regression
+BPNN
+Back Propagation Neural Network
+LS-SVM
+Least square support vector machine
+GRNN
+Generalized Regression Neural Networks
+RELM
+Residual Maximum Likelihood
+DBN
+Deep Belief Network
+RT
+Regression Tree
+MLR
+Multiple Linear Regression
+LASSO
+Least Absolute Shrinkage and Selection
+Operator Regression
+RIDGE
+Ridge Regression
+SNN
+Shallow Neural Network
+GCN
+Graph Convolutional Network
+VOLUME 9, 2021
+This work is licensed under a Creative Commons Attribution 4.0 License. For more information, see https://creativecommons.org/licenses/by/4.0/
+4843
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+GEP
+Gene Expressions Programming
+RCNN
+Regions-CNN
+GA
+Genetic Algorithm
+PSO
+Particle Swarm Optimization
+PLSR
+Partial Least Square Regression
+ANFIS
+Adaptive Neuro Fuzzy Inference System
+TCN
+Temporal Convolution Network
+SCC
+Somatic Cell Count
+OPF
+Optimum-Path Forest
+BVDV
+Bovine Viral Diarrhea Virus
+MC
+Moisture Content
+SOC
+Soil Organic Carbon
+TN
+Total Nitrogen
+SOM
+Soil Organic Matter
+NDVI
+Normalized Difference Vegetation Index
+CEC
+Cation Exchange Capacity
+ETc
+Estimation of evapotranspiration
+SOM
+Soil Organic Matter
+LAI
+Leaf-Area Index
+RGB
+Red Green Blue
+DW
+Accumulated Dry Weight
+VRI
+Variable Rate Irrigation
+ET
+Evapo-Transpiration
+EC
+Electrical Conductivity
+SCM
+Sub-Clinical Mastitis
+SI
+Scatter Index
+AWM
+Attribute Weighting Model
+AUC
+Area Under the Curve
+R
+Correlation Coefﬁcient
+R2
+Coefﬁcient of Determination
+MSPE
+Mean Squared Prediction Error
+MAPE
+Mean Absolute Percentage Error
+MAE
+Mean Absolute Error
+RMSE
+Root Mean Square Error
+RRMSE
+Relative Root Mean Square Error
+RPD
+Residual Prediction Deviation
+ROC
+Receiver Operating Characteristic
+RMSD
+Root Mean Square Difference
+NS
+Nash–Sutcliffe coefﬁcient
+WSN
+Wireless Sensor Network
+GWO
+Grey Wolf Optimization
+SPI
+Serial Peripheral Interface
+I2C
+Inter-Integrated Circuit
+UART
+Universal Asynchronous Receiver
+Transmitter
+USB
+Universal Serial Bus
+BLE
+Bluetooth Low Energy
+I. INTRODUCTION
+The population of the world will increase to 9.1 billion
+approximately thirty-four percent as of today by the end
+of 2050. Food requirement will increase by 70 percent and
+due to rapid urbanization, land availability for agriculture
+will decrease drastically in the coming years. India will
+be the most populated country by 2050 and presently it
+is already lagging the domestic food production. The main
+reason for reduced food production is the lack of planning,
+unpredictable weather conditions, improper harvesting and
+irrigation techniques and livestock mismanagement. In the
+last few years, nature has experienced a drastic change in
+weather conditions due to global warming. The average tem-
+perature of the earth has been increased due to which there is
+uncertainty in climatic conditions. Frequent droughts, heavy
+rainfall are the biggest challenge for poor farmers. According
+to the government of India annual economic survey, adverse
+climatic conditions, reduce the farmer’s income by 20-25%.
+Precision agriculture [1], [2] is one of the solutions to
+ensure food security for the entire world [3]. Precision agri-
+culture also abbreviated as digital agriculture is a technology-
+enabled data-driven sustainable farm management system.
+It is basically the adoption of modern information tech-
+nologies, software tools, and smart embedded devices for
+decision support in agriculture [4] as shown in ﬁgure 1.
+Mechanized agriculture and the green revolution are the two
+key components of the ﬁrst and second agriculture revolution.
+Precision farming is an important part of the third agriculture
+revolution [5].
+FIGURE 1. Precision agriculture.
+John Deere introduced this technology in 1990 for the
+sowing of seeds and spraying of fertilizers using global posi-
+tioning system (GPS) controlled tractors. The main focus
+of precision farming is to reduce the production cost and
+environmental effects to increase the farm’s proﬁtability.
+Digital technologies such as IoT [6], AI, data analytics, cloud
+computing, and block-chain technology play a key role in
+precision agriculture. In precision farming, IoT based smart
+sensors are deployed in the agriculture land for collecting
+data related to soil nutrients, fertilizers, and water require-
+ments as well as for analysing the crop growth. Autonomous
+and semi-autonomous devices such as an unmanned aerial
+vehicle (UAV) [7] and robots are used for identifying weed
+and disease in the plants using computer vision techniques.
+Satellite images are also used in precision agriculture for
+monitoring the ﬁeld and identifying the diseases in the
+plants. The data obtained from the deployed sensors [8] are
+4844
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+processed and analyzed using ML algorithms to make farm-
+ing practice more controlled and optimized. ML algorithms
+are also used for weather and rainfall prediction based on
+the data obtained from sensors, climatic records, and satellite
+images. This could save the lives of thousands of farmers
+who commit suicide because of crop loss due to uncertainty
+in weather conditions. Smart livestock management is an
+important component of precision agriculture. It helps in
+monitoring the health, welfare, productivity, and reproduction
+of animals throughout their life cycle. Sensors and cameras
+monitor animal’s health and computer vision techniques help
+in making intelligent decisions such as stopping the commu-
+nal spread of diseases. Autonomous tractors and automated
+irrigation systems provide modern farming solutions to farm-
+ers. The widespread utilization of precision farming across
+the world is due to the presence of innovative machine and
+deep learning (DL) algorithms, high-speed internet access,
+and efﬁcient computational devices. In [10] authors have dis-
+cussed applications of ML for sustainable agriculture supply
+chain (ASC) performance. Authors have presented a unique
+ML-ASC framework that can guide researchers and agri-
+culture practitioners to understand the role and importance
+of digital technologies in the agriculture industry. In [11]
+authors reviewed different ML applications in agriculture and
+discussed how digital technologies will beneﬁt the agricul-
+ture industry. In this paper, the authors have presented a
+comprehensive review of the ML application for precision
+agriculture. This review article will provide an insight into the
+research community about the adoption of digital practices
+in the agriculture management system. It is anticipated that
+government agencies will frame policies to promote precision
+farming across the world. The main contribution of the article
+is outlined as follows:
+• Applications of artiﬁcial intelligence and IoT in preci-
+sion agriculture are discussed along with their practical
+implications.
+• Foundation of ML and DL algorithms which ﬁnd their
+application in precision agriculture has been discussed.
+• Performance comparison for various ML, DL algorithms
+in precision farming has been carried out based on the
+state-of-art literature.
+• Assessment of artiﬁcial intelligence techniques in preci-
+sion agriculture is outlined along with its statistical and
+performance analysis.
+• Comparison of performance parameters of sensors used
+in IoT applications in precision agriculture is presented.
+• Integration of wireless sensor network (WSN) with
+IoT and artiﬁcial intelligence in precision agriculture is
+discussed.
+• Challenges and future trends of artiﬁcial intelligence in
+precision farming are brieﬂy outlined.
+Table 1 highlights the major differences of this review
+article with other articles published in this ﬁeld. The paper
+is organized as follows. Section 2 presents the impact of
+artiﬁcial intelligence (AI) and IoT in the ﬁeld of agricul-
+ture. Section 3 brieﬂy elucidate ML algorithms. In section 4
+different ML applications in precision farming are brieﬂy
+reviewed. Section 5 presents the IoT application in pre-
+cision agriculture. Section 6 evaluates and access the
+knowledge-based agriculture system. Section 7 outlines the
+challenges and limitation of AI in precision agriculture.
+Section 8 presents the future trends of AI in precision agri-
+culture. Section 9 provides conclusive remarks to summarize
+the paper.
+II. IMPACT OF ARTIFICIAL INTELLIGENCE AND IoT IN
+AGRICULTURE
+The term AI was ﬁrst coined in the Dartmouth conference
+in the year 1956 by John McCarthy and he deﬁned it as a
+science and engineering of making intelligent machines or
+more speciﬁcally intelligent computer programs. AI technol-
+ogy provides computational intelligence to machines so that
+they can learn, understand and react according to the situ-
+ation. ML, DL, natural language processing (NLP), swarm
+intelligence (SI), expert systems, fuzzy logic, and computer
+vision are the subﬁelds of AI as shown in ﬁgure 2. This
+ﬁeld ﬁnds endless applications across different sectors of
+human life. Intelligent AI programs are widely explored in
+health-care, agriculture, ﬁnance, robotics, e-commerce and
+the automation industry. Samsung, Apple, and other elec-
+tronics giant companies announced that they will be utiliz-
+ing this technology in every device they will manufacture
+in the near future. IoT is another emerging technology in
+which smart sensors, devices are interconnected through the
+internet. These smart sensors can be utilized to gather data
+across different disciplines such as solar plants, agriculture
+ﬁelds, disaster-prone areas, manufacturing industry for efﬁ-
+cient resource utilization. With the increase in population
+over the year’s demand for agriculture products is increasing
+day by day. However, with limited land availability for farm-
+ing and reduce interest among the young generation to adopt
+FIGURE 2. Artificial intelligence techniques.
+VOLUME 9, 2021
+4845
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+TABLE 1. Key differences of the article with published articles.
+farming as their profession, it has become a challenging task
+for the agriculture industry to satisfy the food requirement of
+millions of people. Now, the agriculture industry is widely
+adopting smart technologies like IoT and AI to efﬁciently
+cultivate organic products in limited land areas as well as to
+overcome the traditional challenges of farmers.
+IoT based smart farming system is built for monitoring soil
+nutrients and soil moisture using sensors. ML algorithms are
+explored for determining the optimum amount of fertilizers
+required for soils before the sowing of crops.
+Drones are revolutionizing the agriculture industry. These
+drones are cameras enabled and are used for different appli-
+cations such as ﬁeld and crop monitoring, spraying of pesti-
+cides, and drip irrigation. The images captured by the drones
+over the entire lifecycle of crops can be examined using
+DL and computer vision algorithms for disease and weed
+identiﬁcation. Thereafter, these drones are used for spraying
+pesticides over the weeds and infected crops. Over the years
+uncertainty in weather conditions is the main concern of farm-
+ers. Drip irrigation using drones is an efﬁcient AI-empowered
+irrigation system which is basically trained on weather pat-
+tern and can effectively reduce the water problems of farmers.
+AI-enabled robots can be used for harvesting the crops at
+a much faster pace and in large volumes. Robots can reduce
+human labour to a large extent and can be used along with
+drones for monitoring the ﬁeld. Livestock management is
+another major concern for farmers. IoT based sensors can
+be deployed in the ﬁeld for health monitoring of cattle. This
+4846
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+information can be utilized for protecting the bunch of cattle
+from diseased cattle.
+NLP based virtual assistant applications like chatbots can
+update the farmers with the latest advancement in technolo-
+gies for agriculture. Farmers can ﬁnds solutions for their
+problems and incorporate the latest technology in their farm-
+ing for improving their ﬁeld productivity. Thus, AI and IoT
+are the two major technologies that will play a vital role in
+the agriculture industry.
+III. MACHINE LEARNING ALGORITHMS
+ML is the subﬁeld of computer science that gives computers
+the ability to learn without being explicitly programmed.
+(Arthur Samuel, 1959) [12]. Alan Turing in the year 1950 pro-
+posed the concept of learning machines and wrote a research
+article ‘‘The Turing Test for Machine Intelligence’’ [13].
+He performed a test and examined the machine’s abil-
+ity to demonstrate intelligent behaviour similar to humans.
+A machine or intelligent computer program learns and extract
+knowledge from the data, builds a framework for making
+predictions or intelligent decisions. Thus, the ML process is
+divided into three key parts, i.e. data input, model building,
+and generalization as shown in ﬁgure 3. Generalization is the
+process for predicting the output for the inputs with which
+the algorithm has not been trained before. ML algorithms
+are mainly used to solve complex problems where human
+expertise fails such as weather prediction, spam ﬁltering,
+disease identiﬁcation in plants, pattern recognition.
+Today, due to the availability of innovative algorithms
+and large data sets through internet resources industries and
+research communities are widely using ML algorithms for
+solving a diverse set of problems. DL is the subﬁeld of the
+family of ML algorithms which is trained from large sets and
+uses an artiﬁcial neural network (ANN) to make intelligent
+decisions.
+ML algorithms are categorized as supervised learning,
+unsupervised learning, and reinforcement learning as shown
+in ﬁgure 4. Supervised learning as the name suggests is
+learning with the supervisor or teacher. This set of algo-
+rithms works with labeled data-set which means correspond-
+ing to each input there are outputs. The algorithm builds
+an input-output relationship with this labeled data set and
+thereafter generalize or predicts outputs for unseen inputs.
+Supervised learning algorithms used for predicting the cate-
+gorical value are known as classiﬁcation algorithms and the
+algorithms that are used for predicting the numerical value are
+known as regression algorithms. Unsupervised learning algo-
+rithms works with unlabelled data and discovers unknown
+objects by grouping similar objects. The goal of an unsuper-
+vised learning algorithm is to extract hidden knowledge from
+the training data set thus this approach is difﬁcult to imple-
+ment than supervised learning algorithms. Reinforcement
+learning is another approach that learns from the environment
+through reward and punishment. AlphaGo, a chess-playing
+game
+developed
+by
+DeepMind
+utilized
+reinforcement
+FIGURE 3. A Machine learning process.
+learning for defeating the world’s best chess-playing
+computer program.
+In this paper the performance of different ML algorithms
+are analysed and discussed in the ﬁeld of agriculture.
+Table 2 presents different types of supervised, unsupervised
+and reinforcement learning algorithms utilized for soil and
+weather prediction, disease and weed identiﬁcation, intelli-
+gent irrigation and harvesting techniques as well as livestock
+management.
+IV. MACHINE LEARNING APPLICATIONS IN PRECISION
+AGRICULTURE
+In many countries, the farmers rely on the traditional ways of
+farming which is based on the reliability of the suggestions
+from the elderly and their experience. This method leaves
+farmers at the mercy of random climatic conditions which
+are already getting random due to global warming and uneven
+rainfall patterns. The manual spraying method for pesticides
+led to improper usage of resources and harms the environ-
+ment. AI and IoT enabled precision agriculture removes the
+randomness and assist new age farmer to optimize every step
+of the farming process. Figure 5 (a) and (b) presents a pictorial
+view of traditional agriculture and technology enabled farm
+management system.
+Gaitán [14] provided a systematic study of the impact of
+extreme weather events, such as hail events, cold waves, heat
+waves, and their impact on agricultural practices. The author
+reported ﬂoods, droughts, frost, hail, heatwaves, and pest
+outbreaks are impacted by climatic conditions.
+The AI systems are applicable in each farming operation
+as depicted in ﬁgure 4 and some of them even extend beyond
+the conventionally recognized steps. In this section we will
+discuss the state of art techniques proposed/implemented by
+various researchers and practitioners worldwide.
+A. SOIL PROPERTIES AND WEATHER PREDICTION
+Prediction of soil properties is the ﬁrst and the most
+crucial step which inﬂuences the selection of crop, land
+preparation, selection of seed, crop yield, and selection of
+fertilizers/manure. The soil properties are directly related to
+the geographic and climatic conditions of the land in use
+and hence is an important factor to take into consideration.
+The soil properties prediction mostly consists of predicting
+nutrients in the soil, soil surface humidity, weather condi-
+tions during the lifecycle of the crop. Human activities have
+highly affected the properties of soil and hence our ability
+VOLUME 9, 2021
+4847
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+FIGURE 4. Categorization of machine learning algorithms.
+to cultivate the crops [15]. In general, there are 17 essential
+elements as listed in table 3 which play an important role
+in plant growth [16]. The growth of crops depends on the
+nutrients available in a particular soil. The soil nutrients are
+mostly monitored by electric and electromagnetic sensors [8].
+Depending on the nutrients farmers make informed deci-
+sions as to which crop is optimal for the land. However,
+the nutrients can be added through fertilizers, manure, etc.
+but with an additional cost. Some of them may also damage
+the environment and have an adverse effect on the soil cycle.
+A scientiﬁc analysis of soil nutrients, soil moisture, pH is
+important for determining the soil properties. Acar et al. [17]
+employed an extreme learning machine (ELM) based regres-
+sion model for prediction of soil surface humidity. The
+author selected two terrains having area 4 KM2 and
+16 KM2 located in Dicle university campus for experimen-
+tal analysis. The real-time ﬁeld data was extracted using
+polarimetric Radarsat-2 data, which was pre-processed using
+the SNAP toolbox [18] and features were added with the
+help of local measurements by separating the ﬁeld into
+square grids. Once the pre-processing and feature extrac-
+tion is done the data is passed to ELM based regression
+model to predict the soil surface humidity. The algorithm was
+tested with 5 different kernel functions and the prediction
+was validated using leave-one-out cross-validation technique.
+The experimental results conﬁrmed the lowest root mean
+square error (RMSE) of 2.19% when using ‘sine’ kernel
+function.
+Wang et al. [19] deployed soft sensors based on ELM
+for the measurement of nutrient solution composition in the
+soilless cultivation method. The soilless cultivation method
+is an emerging planting method. It is imperative to moni-
+tor the pH value, temperature and concentration changes in
+nutrient solution composition as the performance of soilless
+cultivation is highly dependent on these parameters. The
+signiﬁcant variables in a nutrient solution cannot be measured
+directly hence these are determined with the help of auxiliary
+variables. The authors utilized conductivity, pH value, ﬂow
+rate, and temperature measurements for auxiliary measure-
+ments. These auxiliary measurements are fed to a deep belief
+network-based ELM which predicts the values of signiﬁcant
+variables. For experimental analysis, the authors deployed the
+model to measure the concentration of SO2−
+4 , and H2PO−
+4 in
+a nutrient solution. The authors reported an average RMSE
+of 1.2414 for predictions in SO2−
+4
+and RMSE of 0.8892 for
+prediction of H2PO−
+4 . Park et al. [20] utilized ML algorithms
+to predict the soil moisture using data from MODIS. The
+authors downscaled the AMSR2 soil moisture to 1KM using
+random forest (RF) and Cubist algorithms. An ensemble
+of these algorithms was used to obtain soil moisture data.
+The results obtained through the ML methods were com-
+pared with the statistical ordinary least squares technique.
+The ML model exhibited a R2 (coefﬁcient of determination)
+of 0.96 and an RMSE of 0.06, whereas a R2 of 0.47 and a
+RMSE of 0.16 was associated with the statistical ordinary
+least squares.
+4848
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+TABLE 2. Machine learning algorithms.
+TABLE 3. Essential plant nutrients [2].
+Reda et al. [21] explored ML algorithms to estimate soil
+organic carbon (SOC) and total nitrogen (TN) in soil samples
+collected from four agricultural lands of Moroccan. Data
+set of near-infrared spectroscopy is utilized in comparison
+to traditional chemical methods as this technique reduces
+the computation time and resource utilization. The ensemble
+learning modeling algorithm presents the best performance
+among other regression models and back-propagation neu-
+ral networks (BPNN) algorithm. The proposed algorithm
+presents R2 of 0.96, RMSE of 1.92, performance to devia-
+tion (RPD) of 4.87 for SOC and R2 of 0.94 and RMSE of
+0.57, RPD of 4.91 for TN prediction. Morellos et al. [22]
+also utilized visible and infrared spectroscopy to determine
+TN, SOC, and moisture content (MC) in the arable ﬁeld in
+Premslin Germany. Spectroscopy dataset is used for build-
+ing the predictive ML model for estimating all three soil
+properties. Least square support vector machine (LS-SVM)
+and cubist ML algorithms outperform principal component
+regression and partial least square regression multivariate
+methods in terms of RMSE and residual prediction deviation
+(RPD). LS-SVM best predict SOC and MC with RMSE
+of 0.062 and 0.457, RPD of 2.24, and 2.20. Cubist best
+predicts for TN with RMSE of 0.071 and RPD of 1.96.
+Andrade et al. [23] build ordinary least square regression, RF,
+VOLUME 9, 2021
+4849
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+FIGURE 5. (a) Traditional agriculture cycle (b) Precision agriculture cycle.
+cubist regression, XGboost prediction model for determin-
+ing soil properties from portable X-ray ﬂuorescence (pXRF)
+spectrometry dataset in Brazilian coastal plains. Three soil
+properties total nitrogen, soil organic matter (SOM), cation
+exchange capacity (CEC) were analyzed using RF, ordi-
+nary least squares regression (OLS), cubist regression (CR),
+XGBoost (XGB). RF algorithm gives the best performance
+with R2 of 0.50 for TN, R2 0.75 for CEC and 0.56 for SOM.
+Deiss et al. [24] estimated the soil properties (clay, sand,
+pH, SOC) in northern Tanzania and USA Midwest from the
+spectroscopy dataset using ML algorithms. THE tuned SVM
+model outperforms the partial least square (PLS) regression
+model in terms of predicting all the soil parameters.
+Mahmoudzadeh et al. [25] explored the ML algorithm to
+predict SOC in the Kurdistan province of Iran. The simulation
+results suggest that RF accurately predicts SOC with R2
+of 0.60 and RMSE of 0.35% in comparison to SVM, kNN,
+Cubist, and Extreme Gradient Boosting (XGBoost) ML algo-
+rithm. The study also suggests that air temperature, annual
+rainfall, valley depth, texture of terrain surface are some of
+the important factors that inﬂuence SOC spread over the
+Kurdistan region. Veres et al. [26] explored DL architecture
+such as CNN for predicting the soil properties from the
+infra-red spectroscopy dataset. Benke et al. [27] predict soil
+electrical conductivity (EC) and SOC in different regional
+locations of Victoria, Australia using pedotransfer function
+(PTF) based on ML algorithm. PTF basically converts soil
+measurement into soil properties and provides inputs for ML
+simulation algorithms. In the proposed approach PTF use
+Generalised Linear Mixed Effects Model (GLMM) model
+and Residual Maximum Likelihood (REML) to predict‘ the
+soil properties. Traditional approaches to soil properties and
+crop yield prediction require time-consuming ﬁeld surveys
+and the deployment of expensive sensors. Khanal et al. [28]
+proposed an alternative approach in which the dataset for
+the prediction of soil properties and crop yield is generated
+using remotely sensed aerial images of agricultural land.
+Five soil properties, viz. pH value, magnesium (Mg), potas-
+sium (K), SOM, CEC, and crop yield were predicted using
+RF, SVM, Cubist, NN, Gradient Boosting Model (GBM) ML
+algorithms. NN presents the highest prediction accuracy for
+SOM having R2 of 0.64, RMSE of 0.44 and CEC having
+R2 of 0.67, RMSE of 2.35; SVM best predicts K having R2
+of 0.21, RMSE of 0.49 and Mg having R2 of 0.22, RMSE
+of 4.57; and GBM best predicts pH having R2 of 0.15,
+RMSE of 0.62. RF outperforms other algorithms in terms of
+crop yield prediction and presents higher accuracy having R2
+of 0.53 and RMSE of 0.97. Labrador et al. [29] estimate cal-
+cium and Mg content in soil using generalized regression NN
+and genetic algorithm (GA). The digital elevation model and
+satellite images were used as input to the prediction model for
+estimating the soil properties. Chlingaryan et al. [30] dis-
+cussed different ML approaches used in precision agriculture
+for accurate crop yield prediction and soil nitrogen estimation
+over the last ﬁfteen years.
+Ju-Young et al. [31] investigated a seasonal climatic fore-
+casting model using regularized ELM to predict day-wise
+mean air temperature at ﬁeld level for a period of 90 days. The
+authors selected data from Korea Metrological Administra-
+tion using the Met GloSea5GC2 model [32]. The authors fed
+240 days of forecast data and hindcast data from the ensemble
+based model to the RELM algorithm. The algorithm perfor-
+mance was evaluated by measuring: RMSE, mean absolute
+error (MAE) the model prediction vs the actual values. The
+authors achieved an RMSE in the range of 1.02 to 3.35 which
+outperformed the meteorological data which has an RMSE
+range of 1.61 to 3.37.
+Soil moisture content is an important parameter to
+acknowledge in the agriculture industry as it addresses pre-
+cise irrigation scheduling. Stamenkovic et al. [33] build a
+support vector regression (SVR) prediction model to pre-
+dict soil moisture content from remotely sensed hyper-
+spectral images. Song et al. [34] proposed a macroscopic
+4850
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+cellular automata (MCA) model and combined its deep
+belief network (DBN) to predict soil moisture content over
+a cornﬁeld in northwest china. The simulation results of
+DBN-MCA outperforms the multi-layer perceptron (MLP)-
+MCA in terms of RMSE. Acheing [35] explored the SVR
+model (i.e. RBF), ANN, DNN for simulating soil water
+retention curve (SWRC) curve of loamy sand. Dataset of
+loamy sand subjected to wetting and drying condition is
+collected using a reﬂectometer and tensiometer. RBF based
+SVR model best predicts SWRC under both wet and dry
+conditions. Feng et al. [36] estimate soil temperature at
+various soil depths of Loess Plateau of China. Four different
+ML algorithms ELM, generalized regression neural networks
+(GRNN), backpropagation neural networks (BPNN), and
+RF were investigated for predicting the soil temperature.
+ML algorithms were trained with air temperature, wind
+speed, relative humidity, and vapour pressure and solar radi-
+ation as input parameters and the simulations show that ELM
+outperforms other ML algorithms in terms of RMSE, MAE,
+Nash–Sutcliffe coefﬁcient (NS) and concordance correlation
+coefﬁcient. Mohammadi et al. [37] explored ELM for pre-
+dicting daily dew point temperature in different parts of Iran.
+This part of the world experience different climatic conditions
+throughout the year. The proposed model accurately predicts
+dew point temperature than SVM and ANN algorithms.
+Zhu et al. [38] accurately predict daily evapotranspiration
+in Northwest China using hybrid particle swarm optimiza-
+tion (PSO)-ELM model to optimize crop water requirement
+in agriculture. Alizamir et al. [39] accurately predicts soil
+temperature at different depths of 5, 10, 50 and 100 cm
+using ELM, ANN, classiﬁcation and regression trees, group
+method of data handling using dataset obtained from Mersin
+station operated by Turkish Meteorological Service. The sim-
+ulation results suggest that soil temperature can be estimated
+easily using air temperature upto depth of 50 cm while for
+depth of 100 cm additional information of solar radiation and
+wind speed is required.
+Rainfall prediction plays a critical role in the water
+resource management system, ﬂood risk assessment, and
+the agriculture industry. Acknowledging the chaotic nature
+of rainfall, it is very difﬁcult for statistical approaches to
+accurately predict the rainfall. Cramer et al. [40] evaluated
+the performance of seven ML algorithms for rainfall predic-
+tion. The statistical results show that the radial-basis func-
+tion neural network (RBFNN) shows the best performance
+among other state of the art algorithms. Sierra and Jesus [41]
+predicted the rainfall in Tenerife, an island in Spain based
+on atmospheric synoptic patterns using different ML algo-
+rithms and found NN gave the best performance among
+other ML algorithms. Kamatchi and Parvathi [42] employed
+NN for weather prediction and proposed a hybrid recom-
+mender system for enhancing the success ratio of the system.
+Lazri et al. [43] build a multi-classiﬁer model for estimating
+precipitation using MSG images (Meteosat second genera-
+tion) and dataset obtained using radar. The proposed approach
+shows that the proposed multi-classiﬁer improves the
+standard of classiﬁcation. Shardoor and Rao [44] surveyed
+three different approaches i.e. ML techniques, data mining
+techniques, and satellite forecasting techniques for rainfall
+prediction. Table 4 presents a comparative study of different
+ML algorithms for prediction of soil properties and weather
+prediction.
+B. CROP YIELD PREDICTION
+A signiﬁcant piece of information for any farmer is the
+prediction of crop yield and how the yield can be increased.
+pH value, soil type, and quality, weather pattern: temperature,
+rainfall, humidity, sunshine hours, fertilizers, and harvesting
+schedules are some of the parameters which play an important
+role in predicting the crop yield [45]. Scientiﬁcally manual
+farming can be considered as a feedback control system in
+which the corrective action is taken once a setback in a
+crop is observed. The crop yield will highly depend on the
+efﬁciency of the optimal utilization of the above-mentioned
+resources. If some kind of anomaly goes undetected in the ini-
+tial stage may harm the crop yield in an unprecedented way.
+Singh et al. [46] assessed hailstorms on India’s wheat pro-
+duction and observes that in February and March 2015 alone
+the hailstorm events caused a decline of 8.4% in national
+wheat production. For ﬁnancially weak farmers in a country
+such as India, where intermittent storage of harvested crops
+is a rare resource, accurate weather predictions may turn to
+be miraculous for farmers. ML models when systematically
+applied to a system act as feedforward control. With the help
+of accurate ML models, we can anticipate the factors which
+are going to affect the crop yield. Hence the corrective action
+can be taken before even an anomaly hits the crop production.
+Kamir et al. [47] used ML models to identify the yield
+gap hotspots in wheat production. Authors generated very
+high-resolution yield maps using data from various sources
+between 2009 and 2015. The data was collected from various
+sources:(a) NDVI time-series data across Australia using
+the MOD13Q1 data set [48], (b) rainfall and temperature
+data were collected from historic climate data at Australia
+bureau of metrology, (c) maps for observed grain yield were
+collected at source using intelligent harvesting machines. The
+dataset generated were tested with 9 ML algorithms: RF,
+XGBoost, Cubist, MLP, SVR, Gaussian Process, k-NN, and
+Multivariate Adaptive Regression Splines. The authors com-
+bined predictions from each of the algorithms into ensembles
+for prediction optimization [49]. Out of these algorithms,
+SVR with RBFNN outperformed other algorithms and inves-
+tigators were able to achieve the yield estimate with an
+R2 of 0.77 and an RMSE value of 0.55 tha−1. The results
+were validated using 10-fold cross-validation techniques
+applied to the full data set.
+Aghighi et al. [50] used various advanced regression algo-
+rithms to predict the yield of silage maize crops. The authors
+selected maize ﬁelds located at Moghan Agro-Industrial and
+Animal Husbandry Company (MAIAHC), which is about
+28,000 hectares’ area and located in Iran. The crop yield
+dataset was collected for around 40 silage maize ﬁelds
+VOLUME 9, 2021
+4851
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+TABLE 4. Different ML algorithms for prediction of soil properties and weather conditions.
+4852
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+were collected for a period from 2013-2015. In addition
+to it, the historic crop yield data the authors also gathered
+time-series NDVI data from Landsat 8 OLI satellite. The
+data was fed to advanced regression algorithms: (a) Gaussian
+Process Regression, (b) SVR, (c) Boosted Regression tree
+(d) RF Regression models and the prediction form each of
+the regression models were compared and evaluated. Authors
+found out the boosted regression tree reported best evaluation
+parameters with an average R-value of higher than 0.87, and
+RMSE in a range of 8.5 to 11.10, with a mean value of 9.5 dur-
+ing the period 2013-14. Kuwata and Shibasaki [51] employed
+DL models to estimate the crop yield. Authors deployed SVR
+for predicting the yield of corn in Illinois. For input following
+dataset was employed by the authors: (a) 5 year moving
+average of corn crop yield, (b) The enhanced vegetation index
+is obtained using the MOD09A1 dataset MODIS satellite, and
+(c) Historic climatic data. The dataset was fed to support the
+vector regression model and the authors reported an RMSE of
+8.204 and a correlation coefﬁcient of 0.644 for the model. For
+result, validation authors conducted 10-fold cross-validation
+on the full data set. Kulkarni et al. [52] utilized DL models
+to predict rice crop yield. The authors utilized soil proper-
+ties and nutrients measurements recorded over 31 years and
+historic rainfall data. The input data was fed to recurrent
+neural network models for crop yield prediction. For effective
+prediction the authors explored different activation functions
+viz. sigmoid, reLu, and linear in the neural network.
+Chu and Yu [53] builds an end to end summer and winter
+rice prediction model in 81 counties in the Guangxi Zhuang
+Autonomous Region, China. The proposed BBI model works
+in three stages, in the ﬁrst stage the original area data and
+time series metrological data is pre-processed and its output
+works as input for the second stage where BPNN and RNN
+(recurrent neural network) learns deep spatial and temporal
+features from the input data. In the third stage, BPNN learns
+the relationship between deep features and rice yield to pre-
+dict the summer and winter rice yields. The performance of
+the model is evaluated in terms of error and rate of con-
+vergence, the model presents lowest error values with MAE
+and RMSE of 0.0044 and 0.0057 for summer rice prediction
+and 0.0074 and 0.0192 for winter rice prediction while the
+algorithm converges within 100 iterations. Feng et al. [54]
+proposed a hybrid approach for wheat yield prediction in
+new-south Wales in southeastern Australia. Multiple growth
+speciﬁc indicators, viz. agricultural production system sim-
+ulators (APSIM), NDVI, and SPEI (Standardized Precip-
+itation and Evapotranspiration Index) are used before the
+prediction of wheat yield using regression models (multi-
+ple linear regression (MLR) and RF). APSIM+ RF hybrid
+model presents the best performance among other predictors
+in terms of prediction accuracy. Cai et al. [55] integrated
+two data sources, i.e. climate data and satellite data over
+fourteen years to predict the wheat yield in Australia using
+ML algorithms (SVM, RF, and NN). Simulation results show
+that climate data provides distinctive information in compar-
+ison to satellite data for yield prediction with R2 of around
+0.75. Planting the crops on accurate date plays an important
+role in improving productivity and reducing ﬁnancial loss.
+Gumuscu et al. [56] explored three supervised ML algo-
+rithms; kNN, SVM, and decision trees for predicting planting
+dates; early, normal, and late for wheat crops in Turkey.
+The authors utilized climate data of the last 300 days to
+train ML algorithms and explored GA for feature selection.
+kNN classiﬁcation ML algorithm shows robust performance
+and best predicts the planting dates of wheat crops. Several
+African, American, and Asian countries are the major pro-
+ducer of coffee in the world. Nevavuori et al. [57] explored a
+deep learning approach, i.e. CNN for wheat and barley yield
+prediction in the agriculture ﬁeld of Pori, Finland. NDVI and
+RGB dataset obtained from cameras installed in UAV is used
+to train the six-layer CNN. RGB dataset best predicts the
+crop yield in CNN with MAE of 484.3 kgha−1 and mean
+absolute percentage error (MAPE) of 8.8%. Koirala et al. [58]
+reviewed deep learning approaches for fruit detection and
+yield estimation. CNN in the context of computer vision is
+widely used for feature extraction from images that provide
+useful insight to object detection and yield estimation.
+Kouadio, et al. [59] predicted the Robusta coffee yield
+using ML techniques from soil fertility dataset of Vietnam.
+ELM model outperforms multiple linear regression and
+RF algorithm with RMSE of 496.35 kg ha−1 and MAE
+of 326.40 kg ha−1. Gamboa et al. [60] predict the cocoa
+yield in Santander, Columbia using a generalized linear
+model (GLM) and SVM. In recent decades researchers have
+explored statistical and probabilistic models for crop yield
+prediction. Gyamerah et al. [61] proposed a novel robust
+probabilistic forecasting model based on quantile random
+forest and Epanechnikov kernel function (QRF-E) for crop
+yield prediction in Ghana. The proposed approach didn’t
+only predict discrete yield values but completely showcase
+probability descriptions for prediction interval for the two
+crops groundnut and millet. The simulation result shows the
+superior performance of the proposed algorithm in terms
+of prediction intervals coverage probability and prediction
+interval normalized average width under uncertain weather
+conditions.
+Peng et al. [62] explored remote sensed satellite-based
+Solar-Induced Chlorophyll Fluorescence (SIF) dataset for
+training ML algorithms to predict maize and soybean yield
+in the mid-west region of the United States. Simulation
+results show that non-linear algorithms such as SVM, ANN,
+RF best predict the crop yield in comparison to least absolute
+shrinkage and selection operator regression (LASSO) and
+ridge regression (RIDGE) algorithm. Khaki and Wang [63]
+predicted the hybrid maize yield with a dataset of 2,267 loca-
+tions of the United States and Canada between the years
+2008 to 2016 using deep neural networks (DNN). Genotype,
+weather, and soil properties were the three components used
+to train DNN. The proposed model accurately predicts the
+maize yield with RMSE of 12% of the average yield for
+predicted weather dataset and 11% of the average yield for
+perfect weather dataset and outperforms LASSO, shallow
+VOLUME 9, 2021
+4853
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+neural network (SNN) and regression tree (RT). Simulation
+results show that environmental factors have a large impact on
+the prediction accuracy of crop yield. In most areas of Africa,
+agriculture ﬁeld data is scarcely available thus remotely
+sensed dataset is widely used for monitoring the ﬁeld.
+Leroux et al. [64] explored the ML algorithm for predicting
+the maize yield in Burkina Faso with a remotely sensed
+dataset. A process-based crop model SARRO which is basi-
+cally designed to simulate attainable agricultural yields under
+tropical conditions is used in this study. RF outperforms MLR
+in maize yield prediction with R2 of 0.59 at the end of the
+season and 0.49 before two months of harvest. Li et al. [65]
+build a statistical model for predicting the rain-fed crop
+yield using climate, satellite, and country-speciﬁc datasets in
+the mid-west region of the USA. Maimaitijiang et al. [66]
+explored the potential of UAV with DNN for soybean yield
+prediction from the ﬁelds of Columbia, Missouri, USA.
+Multi-modal information such as canopy spectral, structural,
+and thermal features extracted from images obtained from
+the sensors installed on UAV is used as the input dataset
+for training DNN. The simulation result shows that DNN
+accurately predict the crop yield and outperforms partial least
+square regression (PLSR), RF, SVR algorithms with R2 of
+0.720 and RMSE of 15.9%. Zhang et al. [67] explored ANN
+for prediction of annual crop planting utilizing a historical
+cropland data layer (CDL) dataset of corn-belt of mid-west,
+USA.
+Kocian et al. [68] utilized both approaches to predict crop
+growth in greenhouses. IoT smart sensors are installed in
+the greenhouses to monitor different environmental param-
+eters, soil properties and plant growth parameters such as
+leaf area index (LAI), accumulated dry weight (DW) and
+evapo-transpiration (ET). These parameters are in real-time
+send to the cloud through IoT devices and permit the imple-
+mentation of an agriculture decision-support system. The
+probabilistic Bayesian network is explored in the proposed
+system to predict crop development parameters. Shahinfar
+and Kahn [69] explored ML algorithms for early prediction
+of adult wool growth in Merino sheep of Australia. Model
+Tree algorithms best predict the wool growth in comparison
+with NN with a correlation coefﬁcient of 0.93, 0.90, 0.94,
+0.81 and 0.59, MAE of 0.48 kg, 0.41 kg, 0.92 µm, 6.91mm
+and 6.82 N/ktex, for predicting Greasy Fleece Weight, adult
+Clean Fleece Weight, adult Fibre Diameter and adult Staple
+Length. Table 5 presents a comparative study of different ML
+algorithms for crop yield prediction.
+C. DISEASE AND WEED DETECTION
+Disease fungi, microorganisms, and bacteria take their energy
+from the plants they live on, which in turn affects the crop
+yield. If not detected at the right time may account for a huge
+economic loss to farmers. A lot of ﬁnancial burden goes to
+a farmer in the form of pesticides, to get rid of diseases and
+restore the functioning of crops. Excessive use of pesticides
+also leads to environmental damage and the effects of the
+water and soil cycle of the agricultural land.
+Using an optimally designed AI system during crop growth
+period not only reduces the risk of crop disease and minimizes
+the economic impact, but it also results in minimizing the
+adverse impact of unsystematic farming on the environment.
+Sambasivan and Opiyo [70] used a CNN based DL model
+to detect disease in cassava crops for imbalanced datasets.
+The authors took a database of 10,000 labeled images that
+were pre-processed to improve the image contrast using
+contrast limited adaptive histogram equalization algorithm.
+The model evaluation was done using the performance met-
+rics: confusion matrix, accuracy measure, precision measure,
+sensitivity, and F1 score. The authors reported a best-case
+accuracy of 99.30% and the lowest accuracy was reported
+as 76.9%. Ramcharan et al. [71] used DL algorithms to
+detect diseases in cassava crops. Authors deployed deep
+CNN to identify three different diseases and two types of
+pests from a set of 11,670 images dataset. Author’s utilized
+GoogLeNet algorithm based Inception v3 in Tensor Flow.
+The authors achieved efﬁciency in a range of 80% to 93.0%,
+and the validation of the results was done with the help of the
+confusion matrix.
+Mohanty et al. [72] employed DL methods to detect crop
+disease from the image dataset of plant leaves. The authors
+used a public database consisting of smartphone generated
+54,306 images of diseased and healthy plants leaves. These
+images were resized to 256 × 256 pixels and were assigned
+38 different class labels of crop-disease pair, and transformed
+into 3 datasets color, grayscale and segmented. The dataset
+was then fed to two of the most common deep CNNs:
+AlexNet [73] and GoogLeNet [74]. The authors achieved
+an accuracy of 99.34% for GoogLeNet, and an accuracy
+of 85.53% for AlexNet network. The results were vali-
+dated using F1 score, authors achieved a mean F1 score of
+0.9886 for GoogLeNet, and a mean F1 score of 0.9848 for
+AlexNet.
+Amara et al. [75] used LeNet based CNN architecture
+for disease detection in banana leaves. Authors utilized data
+from open source local and digital libraries which were
+pre-processed and resized to 60 × 60 pixels, and the model
+was implemented for RGB as well as grayscale images.
+Hughes and Salathe [76] utilized this developed model for the
+identiﬁcation of diseases in the images dataset. The authors
+achieved the best F1 score of 0.9971 for detection in RGB
+images and a score of 0.976 for grayscale images.
+Ferreira et al. [77] deployed CNN for the identiﬁcation of
+weeds in soybean crops. The image dataset for soy plantation
+located at São José farm, Campo Grande Brazil was acquired
+using phantom DJI3 drone. The images are segmented using
+the SLIC algorithm into square grids. For training, the seg-
+mented images were manually annotated to their class. The
+segmented images dataset was fed to AlexNet (a convolu-
+tion neural network) for classiﬁcation. The performance of
+the AlexNet was compared with SVM, AdaBoost, and RF.
+To evaluate the performance of the AlexNet the model was
+fed with a balanced dataset and the authors reported an overall
+accuracy of above 90% and 96.3% images were correctly
+4854
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+TABLE 5. Different ML algorithms for crop yield prediction.
+VOLUME 9, 2021
+4855
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+classiﬁed. Waheed et al. [78] proposed a cost-effective opti-
+mized dense CNN (DenseNet) for disease detection in corn
+leaves with an accuracy of 98.0%. Simulation results show
+that the proposed model outperforms other CNN models
+such as EfﬁcientNet, VGG19Net, NASNet, and Xception-
+Net in terms of fewer parameters, accuracy, computation
+complexity, and computation time. Pereira et al. [79] pro-
+posed an expert system for identifying three species of
+aquatic weeds from aquatic weed leaves dataset based on
+their shape and supervised pattern recognition techniques.
+The author explored ﬁve shape descriptors with different
+shape-based skills viz. Beam Angle Statistics (BAS), Fourier
+Descriptors (FD), Moment Invariants (MI), Multi-scale Frac-
+tal dimension (MS), and Tensor Scale Descriptor (TSD) along
+with ﬁve ML algorithms viz. Optimum-Path Forest (OPF),
+SVM, Naive Bayes, ANN, MLP. Simulation results show that
+OPF using the BAS-100 descriptor presents the best results
+with a recognition rate of 96.41% in comparison to other
+approaches. Jiang et al. [80] proposed a semi-supervised
+CNN feature-based Graph Convolutional Network (GCN)
+for identifying weeds utilizing 6000 images of corn, lettuce,
+radish, and mixed weed dataset. The proposed approach
+works in two parts, i.e. in the ﬁrst part CNN model is used for
+feature extraction thereafter in the second part GCN graph is
+explored utilizing CNN feature dataset for extracting feature
+of an unlabelled dataset using labelled dataset. The proposed
+approach shows the best results in comparison with AlexNet,
+VGG16, and ResNet-101 approaches with recognition accu-
+racies of 97.80%, 99.37%, 98.93%, and 96.51% on four
+different weed datasets.
+Oppenheim and Shani [81] explored CNN for identify-
+ing four different types of diseases in potatoes. The simu-
+lation result shows that the model trained on 90% of the
+images and tested on 10% of images give the best results
+with 96% accuracy. Sugar beet contributes around 30% of
+world sugar production. Leaf spot diseases in sugar beet
+can create a loss of around 10 % to 50 % of yearly sugar
+yield. Rumpf et al. [82] proposed SVM with a radial basis
+function as a kernel based model for early detection and
+classiﬁcation of three diseases Cercospora, leaf spot, leaf
+rust, and powdery mildew in sugar beet leaves. Diseased and
+non-diseased leaves were classiﬁed with an accuracy of 97%
+and three diseases were identiﬁed with accuracy higher
+than 86%. Ozguven and Adem [83] proposed updated faster
+R-CNN for leaf spot disease identiﬁcation and classiﬁcation
+in sugar beet. Leaf spot disease initially generates as small
+circular spots and later spread over the entire leaf surface.
+The proposed R-CNN architecture changes its parameters
+according to the images and the disease infected regions,
+which improves the overall classiﬁcation rate to 95.48%.
+Bah et al. [84] explored CNN for weed detection in images
+obtained using UAV from bean and spinach ﬁelds. The pro-
+posed model ﬁrst identiﬁes the crop rows and then identiﬁes
+the inter-crop row weeds which are used as a training dataset
+for CNN for crop and weed identiﬁcation and classiﬁcation.
+Kerkech et al. [85] identiﬁed the vine diseases from visible
+and infrared UAV images obtained in the Center Val de Loire
+region in France. A CNN model is trained with this dataset of
+images to classify each pixel according to different instances,
+namely, shadow, ground, healthy, and symptom. The model
+identiﬁes with an accuracy of 92% at grapevine-level and
+87% at leaf level. Oslen et al. [86] explored robust deep learn-
+ing models Inception-v3 and ResNet-50 for weed species
+identiﬁcation and classiﬁcation from a dataset of images col-
+lected in Australian rangeland. Simulation results show that
+the average classiﬁcation performance of both the models is
+95.1% and 95.7%. These results found fruitful for automatic
+real-time robotic weed control in the agricultural ﬁeld.
+Sudars et al. [87] establish an experimental set up with
+RGB digital cameras in Latvia to collect images of the ﬁeld
+having 6 food crops and 8 weed species grown in normal
+ﬁeld conditions and controlled environment. This dataset
+can be utilized by deep learning algorithms for weed iden-
+tiﬁcation and classiﬁcation. Sethy et al. [88] identiﬁed the
+rice leaf disease based on a hybrid CNN and SVM. In this
+model, CNN is explored for deep feature extraction from
+5932 diseased rice leaf images and this data is used as
+input for SVM classiﬁer. The resnet50 with SVM classiﬁ-
+cation model best classify with respect to other models with
+F1 score of 0.9838. Garcia et al. [89] proposed an ML and
+DL learning hybrid approach for weed and crop identiﬁ-
+cation in the agriculture ﬁelds of Greece. Image dataset of
+two crops tomato and cotton and two weeds black night-
+shade and velvetleaf was generated for training and testing
+of the model. Initially CNN (Xception, Inception-Resnet,
+Vignette’s, Mobilenet, and Densenet)) is used for feature
+extraction and this feature set is later used to train ML classi-
+ﬁer (SVM, XGBoost and Logistic Regression) for classiﬁca-
+tion. The simulation result shows that Densenet and Support
+Vector Machine outperforms other approaches with F1 score
+of 99.29%. Shah and Jain [90] identiﬁed the disease in cotton
+leaf through ANN with some image pre-processing tech-
+niques. Yu et al. [91] explored deep learning algorithms with
+a dataset of images for identifying dandelion, ground ivy, and
+spotted spurge in perennial ryegrass. Parraga-Alava et al. [92]
+generated a robusta coffee leaf image dataset (RoCoLe) for
+disease identiﬁcation using ML algorithms.
+Glezakos et al. [93] proposed an innovative method
+to identify two viruses Tobacco Rattle Virus (TRV) and
+the Cucumber Green Mottle Mosaic Virus (CGMMV) in
+plants. In the proposed research Bio-Electric Recognition
+Assay (BERA) technique is utilized to obtain time-series
+information of the two viruses by measuring the waves
+through biosensors for 331s. This time-series data is
+preprocessed using GA to eliminate noise and for dimen-
+sionality reduction of a large dataset. Thereafter this meta-
+data is used to train MLP neural network classiﬁer. The
+proposed model is tested against other ML classiﬁers via
+cross-validation. Ramesh and Vydeki [94] explored opti-
+mized deep NN with the Jaya algorithm for the identiﬁca-
+tion of paddy leaf diseases. A dataset of rice plant leaves
+was taken from the agricultural ﬁeld to identify and classify
+4856
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+normal, bacterial blight, brown spot, sheath rot, and blast
+diseases. Simulation results show that the proposed model
+accurately classiﬁes the diseased and normal images with
+an accuracy of 98.9%, 95.78%, 92%, 94%, and 90.57% for
+blast affected, bacterial blight, sheath rot, brown spot, and
+normal rice leaf images. Chechlin’ ski et al. [95] explored
+CNN for weed identiﬁcation in four plant species at different
+growth level and under varying light conditions. CNN archi-
+tecture combines U-Net, MobileNets, DenseNet, and ResNet
+models for classiﬁcation of weeds in crops. In [96]–[99]
+author has reviewed machine and deep learning techniques
+for weed, pests and disease identiﬁcation, and classiﬁcation
+in crops at different growth stages. Table 6 presents a compar-
+ative study of different ML algorithms for disease and weed
+identiﬁcation.
+D. DRIP IRRIGATION
+In the modern era, irrigation for crops has been improvised
+using the concept of drip irrigation [100], where the sys-
+tem consists of thin plastic tubes placed in or above the
+soil along the vertical rows of the plants for nurturing the
+water supply to the crops. Employing the proper operational
+management of drip irrigation, minimizes the utilization of
+water supply for crop production, and provides a better yield
+of crops. Socio-economic and environmental demands have
+widely appreciated in use of drip irrigation on farmlands for
+agriculture, especially for the high cost valued crops i.e.,
+vegetables and fruits. Furthermore, drip irrigation is based on
+the low-pressure watering system in comparison to sprinkler
+systems; this makes the system more efﬁcient in terms of
+energy consumption [101].
+Various advantages have been observed using drip irriga-
+tion in agriculture over other irrigation systems which include
+sub-irrigation systems or sprinkler irrigation systems. These
+advantages are entitled to minimal usage of water supply,
+usage of soluble fertilizers through a drip irrigation system,
+automated system, minimization of soil erosion, uninter-
+rupted activities, minimized weed problems, facilitation of
+double-cropping. Precision irrigation is another innovative
+approach in intelligent farming where it uses the water intel-
+ligently that further helps the farmers to achieve better yield
+in crops with minimal water usage. It can also be featured as
+providing the right amount of water, at the right time and the
+right place in the ﬁeld. It focuses its implementation based
+on variable rate irrigation (VRI) methods employing drips
+or sprinklers. [102]–[104]. Advancements in the ﬁeld of on-
+farm sensor technologies, weather forecasting, IoT based sen-
+sor detection system of vegetation and precision-based smart
+irrigation produces a huge size of data that ultimately bene-
+ﬁts the farmers in optimizing the usage of water resources,
+improve the yield of crops and maximizes the proﬁt of
+farmers [105].
+ML and DL and reinforcement learning are employed
+on the historical data and it provides various opportuni-
+ties for real-time prediction and decision making purposes
+for smart irrigation which are solely based on the data
+collected
+by
+the
+sensors
+and
+IoT
+enabled
+systems
+[106]–[109]. Roberts et al. [110] have discussed that a
+sensor-based control system might create some bottleneck in
+terms of reducing the reliability of decision support tools on
+process-based crop models, which further may require costly
+calibration and affect in generating an uncertain representa-
+tion of soil-plant-atmosphere processes. Further, ML tech-
+niques have been employed extremely well for protection
+analysis of hydrological processes i.e., soil moisture and
+groundwater levels [111], [112]. Li et al. [113] utilized ANN
+for estimating nitrate distribution in different types of soils
+under a drip irrigation system.
+Kavianand et al. [114] proposed a fully automated drip
+irrigation system based on the ARM9 processor along with
+different kinds of sensors equipped for monitoring the PH
+content and nitrogen content of the soil and controlling the
+irrigation of the ﬁeld. Emmanuel et al. [115] establishes an
+experimental set-up in a greenhouse in Malaysia to monitor
+the growth of mustard leaf vegetable plants through IoT
+devices and alongside developed a data-driven model of drip
+irrigation system. Soil moisture, irrigation volume, evapo-
+transpiration were measured through sensors and were given
+to the Raspberry Pi 3 controller for storing it in the cloud.
+This data was utilized by different predictive models ARX,
+BJ, and state-space models to predict soil moisture content for
+an optimized drip irrigation system. ARX model outperforms
+other predictive models in terms of MSE and response time.
+Seyedzadeh et al. [116] explored ML algorithms to optimize
+the uniform emitter discharge rate of drip irrigation system
+under varying pressure and temperature conditions. In this
+model operating pressure, water temperature, discharge coef-
+ﬁcient, pressure exponent, and nominal discharge were taken
+as input parameters while ration of emitter discharge to
+nominal discharge is taken as output temperature. Authors
+explored four different ML algorithms for optimizing emitter
+discharge rate and simulation results show that LS-SVM
+presents best results with the least error of mean absolute
+error. Peng et al. [117] utilize soil moisture, soil electrical
+conductivity, air temperature, and light intensity parameters
+to build an optimized irrigation prediction model using back-
+propagation NN in China. The proposed prediction model
+presents good results with MSE of 0.00857724. The authors
+also identiﬁed an optimized layout and network arrangement
+for pipe in a drip irrigation system using computational ﬂuid
+dynamics (CFD) software. The simulation results present that
+the H-shaped network layout is more suitable for ﬁeld crop
+irrigation than the comb-shaped and ﬁsh bone-shaped layout.
+Drip irrigation system gives the best performance when the
+wetting front dimension, i.e. diameter, depth, and upward
+movement are optimized. Shiri et al. [118] explored soft-
+computing approaches viz., gene expressions programming
+(GEP), and RF techniques in modeling wetting front dimen-
+sions over different soil types for surface and sub-surface
+irrigation system. Proposed model, best predicts ETc with
+an improved correlation coefﬁcient and decreases MSE and
+MAE. Elnesr and Alazba [119] explored ANN for predicting
+VOLUME 9, 2021
+4857
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+TABLE 6. Different ML algorithms for disease and weed identification.
+4858
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+TABLE 6. (Continued.) Different ML algorithms for disease and weed identification.
+the wetting front dimensions from the dataset of a well-tested
+HYDRUS 2D/3D model. The simulation results show that the
+proposed model has a good correlation of 0.93-0.99.
+Chang et al. [120] developed a smart irrigation model
+based on ML with the LoRa P2P network to learn the
+irrigation experiences from the expert farmers working on
+greenhouse organic crops. Singh et al. [121] have discussed
+an ML and IoT based model for soil moisture prediction
+during irrigation. Torres-Sanchez et al. [122] proposed a
+decision support system for irrigation management of citric
+crops in southeast Spain. In the proposed model smart sen-
+sors are deployed in the ﬁeld to monitor water supplied
+previous week, weather data, soil water status, and based
+on this data three regression models SVM, RF, and Linear
+regression was trained to build the irrigation decision support
+system. RF best predicts with comparatively less predic-
+tion error. Hellín et al. [123] explored the Partial Least
+Square Regression (PLSR) and Adaptive Neuro-Fuzzy Infer-
+ence System (ANFIS) model for building a smart irri-
+gation decision support system crops in southeast Spain.
+Goumopoulos et al. [124] proposed a real-time adaptable
+intelligent and autonomous closed-loop irrigation manage-
+ment system. The authors built an experimental set-up in
+a greenhouse and deployed wireless sensors for monitor-
+ing the plant growth and environmental conditions along
+with plant growth control actuators. Estimation of evap-
+otranspiration (ETc) plays a vital role in water resource
+management system. Chen et al. [125] estimate crop actual
+ETc from temporal convolution network (TCN) from the
+dataset of lysimeters for maize under drip irrigation with ﬁlm
+mulch. Simulation results show that the proposed model best
+predicts ETc with an improved correlation coefﬁcient and
+decreases MSE and MAE. Table 7 presents a comparative
+study of different ML algorithms for drip irrigation.
+E. LIVESTOCK PRODUCTION AND MANAGEMENT
+Livestock production is basically related to the production
+and management of cattle i.e., sheep, pigs, etc. for human
+consumption in terms of meat. Livestock production and
+their management are based on the farming parameters of
+these cattle i.e., health, food, nutrition, and behaviour to
+optimize their production in such a way that the economic
+efﬁciency of this livestock can be maximized. In the present
+scenario, Artiﬁcial intelligence, IoT and Blockchain tech-
+nologies [126] are widely explored to improves livestock
+sustainability and for analysis of their chewing habits, eat-
+ing patterns, their movement patterns i.e., standing, moving,
+drinking and feeding habits, indicate the amount of stress
+the animal is going through which in turn helps in predict-
+ing the vulnerability to disease, weight gain, and production
+of the livestock. Furthermore, an ML-based weight predict-
+ing system can help in the estimation of their body weight
+90-180 days before the slaughtering day. According to these
+analyses and estimations, farmers can change their diet plans
+and living conditions for their better growth in terms of
+health, behaviour, and weight gain which in turn will improve
+the economic efﬁciency of these livestock [127], [128].
+Villeneuve et al. [129] build a decision support system that
+encounters not only real-time data but also expert knowledge
+for precision sheep farming.
+Livestock production and management can be further clas-
+siﬁed into two sub-categories, i.e., animal welfare and live-
+stock production. Animal welfare generally deals with the
+animal’s health and their well-being; for this ML techniques
+are applied to their health monitoring feature for prospective
+of early disease detection. Whereas, livestock production
+employs the ML on the estimation of the balanced production
+of livestock for the producers to achieve economic beneﬁts.
+Dutta et al. [130] described a procedure for the classiﬁcation
+of cattle behaviour employing the ML techniques for data
+collection using collar-based sensors i.e., magnetometers and
+three-axis accelerometers. In this study, events such as oestrus
+and dietary changes on cattle have been analyzed for their
+well-nutrition. Pegorini et al. [131] presented an automatic
+identiﬁcation and classiﬁcation of chewing habits of claves
+employing ML-based techniques for analysing their health
+and behavioural patterns. Ebrahimie et al. [132] proposed ML
+predictive model for estimating Sub-Clinical Mastitis (SCM)
+VOLUME 9, 2021
+4859
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+TABLE 7. Different ML algorithms for drip irrigation.
+from milking parameters in dairy herds. Mastitis is an
+inﬂammatory disease that is widely affecting the dairy indus-
+try. Author’s explored four classiﬁcation models decision
+trees, stump decision trees, parallel decision trees, and ran-
+dom forest to discover SCC independent of Somatic Cell
+Count (SCC) which is widely used to measure SCM world-
+wide. RF with Gini Index criteria best predicts SCM with an
+accuracy of 90%. Ebrahimie et al. [133] explored the attribute
+weighting model (AWM) for identifying lactose concentra-
+tion and electrical conductivity in milk, which are two of the
+major indicators of SCM in dairy cattle. Hyde et al. [134]
+also explored RF to predict the route of transmission of germs
+and classify them into contagious (CONT) or environmental
+(ENV) with ENV further sub-classiﬁed into non-lactating
+‘‘dry’’ period (EDP) or lactating period (EL). The simulation
+results show that an accuracy of 98% was achieved for dis-
+covering CONT vs ENV and 78% for discovering EDP and
+EL. Esener et al. [135] utilized spectral proﬁles dataset to dis-
+criminates CONT and ENV strains using GA, NN, and quick
+classiﬁer. Ebrahimi et al. [136] predicted sub-clinical bovine
+mastitis using a large milking dataset collected through an
+automated in-line monitoring system in commercial New
+Zealand dairy farm. The simulation results show that GBM
+outperforms other ML model and best predict sub-clinical
+bovine mastitis with an accuracy of 84.9%. Shariﬁet al. [137]
+explored meta-analysis and decision trees data mining tools
+to discover genes that can help to ﬁnd mastitis in dairy cattle.
+Machado et al. [138] explored the RF model to identify
+factors inﬂuencing the occurrence of Bovine viral diarrhea
+virus (BVDV) viral disease in cattle in southern Brazil. The
+proposed approach identiﬁes that insemination, the number
+of cattle in neighbouring farms, and routine rectal palpation
+are among the main factors of the occurrence of this disease.
+Matthews et al. [139] developed an ML-based automated
+monitoring system for tracking animal behaviour and move-
+ment i.e., standing, moving, feeding, and drinking by employ-
+ing the depth video cameras and sensors. Qiao et al. [140]
+explored the DL technique Mask R-CNN for examining
+cattle health and welfare information in precision livestock
+management. The proposed model extract key features from
+4860
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+image frames, enhance the image to remove non-uniform
+illumination shadow inﬂuences, segment image of cattle from
+the background image using the Mask R-CNN DL tool, and
+lastly extract cattle contour lines from the segmented image.
+The proposed approach outperforms SharpMask and Deep-
+Mask image segmentation models with mean pixel accuracy
+of 0.92 and an average distance error of 33.56 pixels.
+Liakos et al. [141] explored ML model for predicting
+healthy cattle and cattle suffering from lameness utilizing
+basic features of cattle which includes per day habits of cattle
+like steps taken, overall walking, lying, and eating habits.
+Morales et al. [142] employed a method based on SVM
+for early detection, warnings, and production issues of eggs
+in the poultry farms. The simulation results show that the
+proposed technique alerts a day before with an estimation
+accuracy of 0.9854. The identiﬁcation of livestock is an
+important aspect of monitoring growth and animal welfare.
+Hansen et al. [143] explored deep learning techniques CNN
+for identifying pigs faces from the dataset of digital images of
+pigs obtained from commercial farm environment where the
+parameters such as dirt and lighting are highly unpredictable.
+The proposed approach accurately predicts the faces with an
+accuracy of 96.7%.
+Fenlon et al. [144] build a decision support system using
+predictive ML algorithms to provide calving assistance in
+the dairy industry. Four ML techniques multimodal regres-
+sion, decision trees, RF, and NN were explored to predict
+three calving difﬁculties unassisted, slight assistance, and
+veterinary assistance. The simulation result shows that NN
+and multimodal regression models accurately classify 75% of
+calving difﬁculties with an average prediction error of 3.7%
+and 4.5%. Fenlon et al. [145] analyzed calving difﬁculties
+in dairy herds in Ireland using ML algorithms. A dataset
+of parity, log days in milk, inter-service interval, difﬁculties
+faced in the last calving, herd body conditions were built to
+predict conceptions using artiﬁcial insemination in the Iris
+dairy industry. Logistic regression outperforms RF, decision
+trees, and Naive Bayes in predicting conception using artiﬁ-
+cial insemination. Borchers et al. [146] explored RF, linear
+discriminant, and NN for calving prediction in dairy cattle
+by examining their behaviour which includes number the of
+steps, lying time, standing time, transition from one state to
+other and total motion 14 days before the predicted calving
+date. Although, the innovative algorithms play a crucial role
+in livestock management but combining livestock data with
+public data will improve precision livestock farming stan-
+dards [147]. Table 8 presents a comparative study of different
+ML algorithms for livestock production and management.
+F. INTELLIGENT HARVESTING TECHNIQUES
+Smart harvesting systems helps the farmers to harvest agri-
+culture goods by reducing human efforts. In this approach,
+technologies such as smart sensors, robotics, UAVs, and
+IoT devices [148], AI, and ML-based computer vision tech-
+niques are employed to intelligently harvest the crops. The
+research community has provided a comprehensive review of
+different intelligent techniques used to automate the agricul-
+ture industry [149]–[151] and have analyzed the potential
+and challenges of this decision support system [152]. In the
+last few years, different robots have been developed for har-
+vesting fruits and vegetables [153]. Smart harvesting offers
+better insight into the crops and helps farmers to achieve
+the potential harvest of crops which leads to increased pro-
+ductivity. Smart harvesting system has numerous advantages
+in comparison to traditional harvesting approaches like it
+requires less labour, optimized crop yield, maximum prob-
+ability, better insight into crops, reduced cost of harvesting,
+and cost-efﬁcient production.
+A signiﬁcant problem in the Japanese agriculture industry
+is a labour shortage. Sakai et al. [154] utilized machine vision
+for asparagus robot harvesting in Nagasaki prefecture. The
+speed of asparagus robot harvesting is three times faster than
+the human being. Since asparagus harvesting is modeled on
+their size and doesn’t require color properties thus laser sen-
+sor is used to collect 3D distance information in the proposed
+work. Monta et al. [155] also explored laser sensors along
+with color cameras for tomato harvesting through robots.
+Preter et al. [156] developed an autonomous system consist-
+ing of e-vehicle, cameras, robotic arm, localization system,
+gripper, quality monitoring, and logistic handling system,
+which can efﬁciently detect, plucks, and puts the strawberries
+in a box. The proposed robot prototype is fast enough to pluck
+the fruit in just 4 seconds. Hayashi et al. [157] practically
+evaluated the performance of strawberry harvesting robots
+in a greenhouse test ﬁeld. The proposed autonomous system
+efﬁciently access the fruit position and its maturity level and
+pick the fruit with and without suction in a duration of two to
+three weeks without damaging the fruit. Horng et al. [158]
+proposed a smart harvesting system that employs IoT and
+smart image recognition systems for the detection of mature
+crops using object detection feature trained on MLP neural
+network. The mature crop can be harvested using a robotic
+arm whose movement is predicted using ML algorithms.
+Zhang et al. [159] explored Regions-CNN (RCNN) for
+multi-class canopy object detection in shake and catch the
+apple harvesting system. A dataset of RGB images was
+created in the commercial orchard using a Kinect v2 sensor
+and pre-trained RCNN is utilized for real-time detection
+of apple, branches, and trunks. The authors also developed
+an estimation algorithm to predict shaking location based
+on the results of RCNN. Spectral and thermal images have
+also been explored for the detection of fruits and vegetables
+[160], [161]. Zhang et al. [162] investigated eleven canopy
+parameters using principal component analysis (PCA) and
+classiﬁed the removal status of apples into mechanically
+harvested and mechanically unharvested. Zhang et al. [163]
+reviewed technology progress in the mechanical harvest-
+ing of apples which includes shake and catch, robots, and
+harvest assist platforms. Pise and Upadhye [164] explored
+Naive Bayes and SVM ML techniques for grading of har-
+vested mangoes based on their color, size, features, quality,
+and maturity. Grading of fruits increases the proﬁt of the
+VOLUME 9, 2021
+4861
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+TABLE 8. Different ML algorithms for livestock production and management.
+agriculture and food industries. A mango image dataset
+comprising of three different colors red, green, and yellow
+is created and is used for training and testing the ML algo-
+rithm. The proposed approach presents limited scope as it
+can detect defects in a particular surface area which can be
+overcome by creating a dataset of rotational view images.
+Wu et al. [165] explored NN for recognition, classiﬁcation of
+fruits and vegetables, and obstacle avoidance in a harvesting
+robot. Table 9 presents a comparative study of different ML
+algorithms for intelligent harvesting.
+V. IoT APPLICATIONS IN PRECISION AGRICULTURE
+Precision agriculture refers to a system with minimizing
+direct involvement of the caretaker/farmer except when there
+4862
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+TABLE 9. Different ML algorithms for intelligent harvesting.
+FIGURE 6. Google trend response for keywords IoT in agriculture and
+sensor in agriculture for the last 10 years.
+is an urgent need or an emergency i.e. when there is a failure
+in the system. IoT helps in maintaining the deﬁned standards
+of parameters needed for day to day work in agriculture. The
+parameters can be measured using the required sensors and
+can be uploaded to an IoT cloud for remote monitoring so
+that the direct involvement of farmers is minimized. The IoT
+cloud can be used for control purposes also, say for example
+in detecting and avoiding animal intrusion in the agricul-
+ture ﬁeld. Sensors are an integral part of IoT for precision
+agriculture without which the monitoring and control-
+ling becomes next to impossible task. Figure 6 shows
+the trend search of keywords ‘‘IoT in agriculture’’ and
+‘‘sensor in agriculture’’ on google in the last 10 years. Apart
+from monitoring and controlling, IoT in agriculture is also
+used as data-storage technology. Parameters like properties
+of soil, crop yield, seasonal behaviour data, temperature
+changes, etc can be stored on the IoT cloud which will be
+helpful in analyses, prediction, and deciding on estimated
+crop production.
+A. SENSORS FOR IoT IN PRECISION AGRICULTURE
+IoT is deﬁned as the interconnection of things, where one
+example of a thing is a sensor. A group of sensors can
+communicate with every other sensor and thereby with the
+control center. A WSN in IoT has the beneﬁts of increasing
+the efﬁciency of production, enhancing the yield quality,
+detecting and avoiding plant-eating pets, detecting the ﬁres
+in the farms [166]. IoT has helped in increasing the scope
+of farming, animal, and pet rearing along with smart irriga-
+tion [167]. Sensors form an integral part of IoT architecture in
+agriculture. A sensor is deﬁned as a transducer that converts
+the sensed parameter (soil moisture, for example) into the
+equivalent electrical signal.
+Depending on the nature of the output signal they generate,
+sensors are classiﬁed as analog or digital sensors. An analog
+sensor’s output needs to be converted to digital before it is
+being fed, processed by any IoT system. On the other hand,
+sensors that generate signals in digital form can be directly
+connected to any IoT system. Table 10 compares the list of
+some important sensors applicable in precision agriculture.
+Addressing the complete list of sensors available for preci-
+sion agriculture is beyond the scope of this article, although,
+table 10 provides the list of sensors and their parameters that
+are very widely used and covers almost every aspect of IoT
+in agriculture. A pair of sensors and actuators can be used
+to collect information about some of the vital parameters of
+precision agriculture and react to perform predeﬁned action
+whenever required. IoT plays an important role in assuring
+that the action performed happens instantaneously with min-
+imum delay. The factors that can affect the real-time decision
+making and causes a delay is the tolerance of the measuring
+parameter and the communication protocol used. The operat-
+ing temperature where the sensors are placed have a propor-
+tional effect on tolerance. An increase temperature on either
+side will increase the tolerance of the measuring parameter
+VOLUME 9, 2021
+4863
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+TABLE 10. Sensor parameters used in precision agriculture.
+and sensor reading will deviate the value of the measurand
+from the actual value. The communication protocol is used
+to send the readings of the sensor to the microcontroller from
+where the value will be uploaded to the IoT cloud. The data
+rate of communication protocol decides the time required for
+this data transfer.
+B. WIRELESS SENSOR NETWORKS IN PRECISION
+AGRICULTURE
+WSN is the collection of spatially displaced sensor deployed
+to monitor the physical parameters of the environment and
+coordinating the collected data at central location. IoT trans-
+fers the recorded data to cloud which is further processed
+and analyzed through intelligent algorithms. In precision
+agriculture integration of artiﬁcial intelligence with WSN
+allows real time monitoring and intelligent decision making
+in agriculture ﬁelds. IoT sensor network which includes soil
+moisture senor, electrochemical sensor, optical sensors, etc.
+continuously monitor the ﬁeld data and works as a training
+data for ML and DL algorithms. Edge computing enabled AI
+systems assist in reducing the amount of data to be uploaded
+to IoT cloud by identiﬁcation of meaningful data to be
+communicated and discarding the redundant data.
+Intelligent processing of data generated from nodes result
+in better management of sensor network In [185] author
+utilized AI driven sensor network to classify land as suit-
+able, more suitable, moderately suitable and unsuitable after
+every cultivation. In [186] author developed a power efﬁcient
+4864
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+WSN using Arduino microcontroller and ZigBee module
+to monitor and control essential parameters that effect crop
+growth such as soil and weather conditions in Florida, USA.
+In [187] author integrating sensor nodes with AI systems to
+reduce the power consumption of nodes by optimizing the
+performance and data transmission of respective nodes. RNN
+based Long-Short term (LSTM) network was built which
+increases the runtime of a single sensor and guarantees
+180 days autonomous operation using Li-ion battery. The pro-
+posed system continuously monitors the growth dynamics of
+plant leaves. In [188] author presents an autonomous system
+built with low power sensor nodes and IoT based cloud plat-
+form to estimate level of phosphorous in soil through ANN.
+Author incorporates dynamic power management system to
+maintain balance between energy consumption and estima-
+tion accuracy. In [189] author presents GA optimized WSN
+for precision agriculture applications. Thus, we conclude that
+integrating artiﬁcial intelligence with WSN, IoT plays a key
+role in assuring the best yield of crops.
+VI. ASSESSMENT AND EVALUATION OF
+KNOWLEDGE-BASED AGRICULTURE SYSTEM
+In this section ML algorithms used by different researchers in
+the precision agriculture system are analyzed. The agriculture
+industry is facing many challenges across the world, and a
+knowledge-based agriculture system allows sustainable use
+of resources by the farmers aiming to get maximum output
+from the agriculture land. There are two basic stages in
+precision agriculture, i.e. pre-processing stage and processing
+stage. In the pre-processing phase market trends are studied
+and based on geographical conditions and soil properties
+of the land seeds are selected and the land is prepared for
+precision agriculture system. In the post-processing stage
+machine vision techniques are explored for disease and weed
+identiﬁcation while intelligent techniques are used for irri-
+gation and harvesting. In this article, author reviewed and
+discussed 70 articles where multiple ML algorithms are pre-
+sented for performance optimization of the agricultural cycle.
+Figure 7 shows the classiﬁcation of articles based on different
+applications of precision agriculture.
+FIGURE 7. Classification based on agriculture cycle.
+FIGURE 8. ML techniques used in precision agriculture applications.
+Figure 8 depicts the cumulative distribution of the ML
+and DL models used by researchers in precision agriculture.
+The graph depicts the broad categorisation of the techniques
+with their applications to agricultural cycle. It has been
+observed that in majority of the literature the researchers have
+applied multiple algorithms for classiﬁcation and parameter
+prediction. Regression models and ANN together make up
+around 65% of the AI techniques employed by researchers.
+Hence, it is important to investigate the techniques used and
+compared by the authors. The individual best performing
+algorithms have already been covered in appropriate sec-
+tions, however the ﬁgure 8 depicts the distribution of the
+various regression algorithms and DL models throughout the
+literature. ELM algorithm is widely explored in prediction
+of soil properties such as soil moisture, soil temperature,
+surface humidity, ETc. ANN accurately predicts the rainfall
+and crop yield across different regions of globe. DL based
+CNN model ﬁnds wide applications for accurate disease and
+weed classiﬁcation in agriculture crops. ANN model best
+predicts the nitrate content and water requirement in drip irri-
+gation system. SVM regression model estimates the emitter
+outﬂow discharge under varying temperature and pressure
+conditions. Decision Tree algorithm accurately identify the
+chewing habits and predicts SCM in dairy herds. CNN have
+widely explored for livestock identiﬁcation. Metaheuristic
+optimized ML algorithms are also explored by researchers in
+precision agriculture.
+In the reviewed articles, authors have used around 22 dif-
+ferent regression algorithms for prediction, however 5 most
+commonly used algorithms are identiﬁed and depicted in the
+ﬁgure 9. Remaining 17 algorithms which are used either only
+for comparison or employed as a support algorithms have
+been classiﬁed into others.
+VOLUME 9, 2021
+4865
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+FIGURE 9. Regression algorithm in precision agriculture.
+DL models have contributed signiﬁcantly and outperforms
+ML classiﬁcation algorithms in classiﬁcation of crop dis-
+ease and weed as well as for livestock diseases identiﬁ-
+cation. Figure 10 shows CNN, ANN and RNN algorithms
+explored in precision agriculture. In the reviewed articles,
+authors have used around 10 different DL/NN algorithms
+for prediction/classiﬁcation, however 8 most commonly used
+algorithms are identiﬁed and depicted in the ﬁgure 10.
+Remaining 2 (LeNet, and Caffee) algorithms which are
+used either only for comparison or employed as a support
+algorithms have been classiﬁed into others.
+FIGURE 10. Classification algorithm in precision agriculture.
+A. PERFORMANCE COMPARISON OF ML ALGORITHMS IN
+PRECISION AGRICULTURE
+The application of ML and DL algorithms highly depends on
+the agriculture cycle and the dataset involved. This section
+discusses the advantages and limitations of various ML
+and DL algorithms such as regression and classiﬁcation
+algorithms based on the agriculture cycle involved.
+1) SOIL PROPERTIES AND WEATHER PREDICTION
+The application of AI techniques in prediction of soil
+parameters and weather is dependent on various factors.
+The researchers generally employ around 3 to 4 algorithms
+in for prediction and select the algorithms which has most
+accurate prediction and is robust to factors such as: noise,
+non-linearity, outliers etc. the most commonly employed
+algorithms are ELM, RF, SVR, and cubist algorithm.
+Advantages of using ML in prediction of soil properties
+and weather pattern:
+1. Non-linear dataset – these predictions often attributes a
+non-linear dataset which can be utilized for accurate pre-
+diction by regression algorithms such as: ELM, RF, SVR
+2. Large dataset – the dataset for is often obtained from
+satellite which can be well handled by the regression
+algorithms with less convergence time and accurate
+predictions.
+3. Insensitivity to outliers – Weather patterns often encounter
+outlier events which may affect the prediction accuracy,
+however algorithms such as ELM, NN are robust to out-
+liers and provide accurate predictions.
+4. Accurate prediction – prediction of parameters using ML
+exhibit low error indices such as RMSE, and R2 which are
+standard measures of accuracy for statistical analysis.
+Challenges and limitations in prediction of soil proper-
+ties and weather pattern:
+1) Varying geographical conditions poses a challenge for
+universal design of the prediction algorithms.
+2) Soil parameters prediction is highly dependent on the
+sample selection philosophy.
+3) Dataset selection and ﬁltering is a challenge for
+researchers with non-computing background.
+2) CROP YIELD PREDICTION
+The application of AI techniques in prediction of crop yield is
+a mammoth task and lack of availability of a universal model
+makes designing of the algorithm challenging. The most
+promising algorithms for crop yield prediction are regression
+algorithms, and neural networks.
+Advantages of using ML in crop yield prediction:
+1. Complex dataset – crop yield prediction involves enor-
+mous dataset composing of satellite data and/or historic
+data. Faster and accurate predictions can be made by
+utilizing the AI techniques such as regression algorithms
+(SVR, RF) Neural networks (CNN).
+2. Parameter variation – the crop yield depends on a lot
+of parameters, like climatic factors, soil quality, NDVI,
+altitude, air parameters. The AI based prediction systems
+handle the parameters dependency efﬁciently.
+3. Accurate prediction – prediction of parameters using ML
+exhibit low error indices such as RMSE, and R2 which are
+standard measures of accuracy for statistical analysis.
+Challenges and limitations in prediction of crop yield:
+1. Varying parameters and complex datasets pose a challenge
+for universal design of the prediction algorithms.
+4866
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+2. Dataset selection is critical due to the complexity; as an
+improper selection of data may result in underﬁt/overﬁt
+prediction pattern.
+3) DISEASE AND WEED DETECTION
+The applications of AI techniques in disease and weed detec-
+tion primarily depends on the advances in image processing.
+CNN’s are the most prominent choice for building a disease
+identiﬁcation system. Training dataset will govern the per-
+formance of the algorithm, although these are available in
+open-source format, users have to be cautious while using the
+dataset.
+Advantages of using ML in detection of weed and
+disease in a crop ﬁeld:
+1. Prediction accuracy – AI offer accurate detection of dis-
+ease and weeds with an accuracy of 99% which is better
+compared to manual/classical techniques.
+2. Robust prediction – the algorithms can predict the
+disease/weed even with smartphone images, which is
+commonly available with farmers.
+3. Easy conﬁguration – with CNN being the most common
+and reliable technique, designing a disease/weed detection
+system is not a complex job unlike other systems discussed
+in text.
+Challenges and limitations in detection of weed and
+disease in a crop ﬁeld:
+1. The accuracy of prediction depends on the quality of train-
+ing dataset some of which is available as an open-source
+dataset, but is applicable to only a limited number of crops.
+2. Improperly labelled data may result in a disastrous pre-
+diction system, as the training of the system plays a major
+role in the performance of the system.
+3. Overtraining the model may result in a sensitive prediction
+system.
+4) DRIP IRRIGATION
+Smart irrigation systems are not only crop friendly but are
+environmental friendly too. The combination of IoT with the
+AI not only reduces the manual intervention but also utilizes
+the available in an optimum way to ensure no adverse effect
+to environment. Regression and
+Advantages of using ML in drip irrigation for an
+agricultural ﬁeld:
+1. Optimum resource utilization – accurate estimation of
+irrigation
+requirements
+results
+in
+a
+system
+which
+optimizes the resource (water, electricity) utilization
+(NN algorithms).
+2. Crop protection – optimized irrigation practices min-
+imizes water related damage to the crops and hence
+increases the crop yield.
+3. Robust to weather variations – an accurately designed AI
+based (Regression algorithms) irrigation system handles
+the random weather events in a better way when compared
+with the non-AI based irrigation methods.
+Challenges and limitations in drip irrigation for an
+agricultural ﬁeld:
+1. Accurate prediction sometimes depends on the number of
+sensors and hence increases the initial investment of the
+farmers.
+2. An incorrect sensor placement in the ﬁled affects the accu-
+racy of the system, hence sensor optimization becomes
+imperative in designing a smart irrigation system.
+3. The architecture of prediction system highly depends on
+the dataset; hence no universal guidelines can be laid out
+for system design.
+5) LIVESTOCK PRODUCTION AND MANAGEMENT
+The
+livestock
+management
+primarily
+focuses
+on
+the
+well-being of the farm animals and uses advanced image
+recognition (CNN) algorithms, and regression techniques to
+detect and predict the disease/ disease spread.
+Advantages of using ML in livestock production and
+management:
+1. Decreased risk of diseases – AI systems assists in identi-
+fying the livestock diseases and also helps in combating
+the disease, by predicting the root of diseases and trans-
+mission (Regression algorithms).
+2. Minimization
+of
+disease
+spread
+–
+timely
+diagno-
+sis and treatment reduces the risk of spreading the
+disease.
+3. Psychological analysis – advanced image recognition and
+behavioural analysis (CNN techniques) help is detecting
+the stress in animals ensuring heath of the livestock.
+Challenges and limitations in drip irrigation for an
+agricultural ﬁeld:
+1. With varying geographic and climatic conditions the
+attributes of the cattle and diseases changes hence, no uni-
+versal system can be designed to cater to the diversities.
+2. Some viruses are difﬁcult to predict even using the
+state-of-art prediction algorithms.
+6) INTELLIGENT HARVESTING
+The applications of AI techniques in harvesting is primarily
+an assistive technology for automatic harvesting systems.
+Harvesting prediction system largely relies on the advances in
+image processing and CNN’s are the most prominent choice
+for building these systems.
+Advantages of using ML in intelligent harvesting:
+1. Assistive technology – AI in conjunction with existing
+harvesting robots exhibit high accuracy in harvesting.
+2. Image processing – the identiﬁcation of harvesting relies
+on the state-of-art image processing algorithm (CNNs)
+and hence the developments in the image processing algo-
+rithms result in direct accuracy enhancement of intelligent
+harvesting techniques.
+3. Universal algorithms – the AI harvesting techniques
+largely depend on image recognition methods, hence
+CNNs can easily be deployed for implementing intelligent
+harvesting techniques.
+VOLUME 9, 2021
+4867
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+Challenges and limitations in intelligent harvesting:
+1. The accuracy of the prediction systems largely depends
+on the training dataset, hence accurately labelled dataset
+is a primary requirement of implementing an intelligent
+harvesting system.
+2. Inaccurate harvesting recognition system result in eco-
+nomic loss for farmers, as a delay in harvesting might
+lead to an overripe crop or early harvesting might lead to
+rejection of the product.
+VII. CHALLENGES AND LIMITATIONS OF ARTIFICAL
+INTELLIGENCE IN PRECISION AGRICULTURE
+Artiﬁcial intelligence has the potential of playing an impor-
+tant role in meeting the food requirement of entire world.
+However, there are certain challenges which are hampering
+its adoption in agriculture industries which are outlined as
+follows:
+• A recent government survey in India estimated that liter-
+acy rate of Indian farmers is very low therefore bridging
+the gap between farmers and technology is a challenging
+task.
+• Farmers are less motivated to come out from their com-
+fort zone and learn digital skills to improve their farming
+standards.
+• Agriculture lands are mostly situated in rural areas.
+Implementation of IoT architecture and WSN which
+requires cloud services for data storage and analysis is
+a big issue in rural areas where reliable internet connec-
+tivity is not available.
+• Accurate prediction and classiﬁcation through cognitive
+ability of machines is difﬁcult in varying geographical
+conditions.
+• Initial set up of digital farming which includes hardware
+and software requires huge investment.
+• Deployment of smart sensors and other electronic gad-
+gets requires heavy energy consumption.
+VIII. FUTURE TRENDS OF ARTIFICAL INTELLIGENCE AND
+IoT IN PRECISION AGRICULTURE
+Agriculture industry is globally US$5 trillion industry and
+now it has been revolutionized with artiﬁcial intelligence
+and IoT technologies. These innovative tools are assisting
+famers to improve crop yield, monitor soil parameters, live-
+stock health and temperature conditions, control pests and
+improve other agriculture related tasks. Conventional ML
+and DL models such as SVM, RF, ANN ﬁnds difﬁcult to
+accurately estimate soil parameters and weather conditions in
+varying ecosystem. Therefore, swarm intelligence optimized
+robust and adaptive ML and DL algorithms such as SVM-
+PSO, ANN-GWO algorithms can be explored to effectively
+forecast different parameters in precision agriculture. In large
+agriculture ﬁelds swarm intelligence inspired autonomous
+system can be built for crop health and growth monitor-
+ing. UAV swarm can be utilized for near real time ﬁeld
+and livestock monitoring through computer vision and DL
+algorithms and accordingly swarm of UAV can be used for
+spraying of pesticides and fertilizers in the infected crops.
+Greenness of crops can be identiﬁed through UAVs installed
+cameras and an automated irrigation system can be built in
+large agriculture ﬁelds. Swarm of mobile robots can be used
+in the agriculture ﬁelds to efﬁciently automate task such as
+harvesting, weed identiﬁcation and elimination, etc. Meta-
+heuristic algorithms can be explored for nodes localization
+in agriculture ﬁelds in order to optimize the sensor deploy-
+ment in the ﬁeld and keep the minimize cost to farmers.
+Ofﬂine service chatbots can be built to assist farmers in
+developing countries where farmers don’t have good internet
+connectivity. These chatbots can assist farmers by providing
+timely advice based on expert recommendations and will
+help to resolve their speciﬁc farming problems. Artiﬁcial
+intelligence assisted renewable energy plants can be installed
+in agriculture lands to maximize the power output of clean
+energy in unpredictable weather conditions. This will allow
+for sustainable agricultural practices. Artiﬁcial intelligence
+can also be explored in vertical and soilless agriculture.
+In near future artiﬁcial intelligence systems, robotics and
+smart sensor technology will automate the whole farming
+process starting from seed sowing to intelligent fruits and
+vegetables harvesting and packaging.
+IX. CONCLUSION
+Precision agriculture is empowering the farmers with tech-
+nology intending to get optimum outputs with precise inputs.
+IoT enabled smart sensors, actuators, satellite images, robots,
+drones are some of the key technological revolutions that
+boosted the agriculture industry. These components play a
+vital role in collecting real-time data and accordingly mak-
+ing decisions without human support. Artiﬁcial intelligence
+which is the automation of intelligent behaviour is continu-
+ously beneﬁting our planet and helping humans in various
+aspects of life. In this paper, authors have reviewed ML
+applications for precision agriculture. The impact of AI and
+IoT in smart farm management is discussed with a brief
+introduction to ML algorithms which are most commonly
+used in precision agriculture. Regression algorithms are the
+backbone for soil properties, weather, and crop yield pre-
+diction. DL algorithms such as CNN and ML classiﬁca-
+tion algorithms such as SVM, Decision trees, and RF were
+explored for the identiﬁcation of disease and weeds in the
+plants. Smart irrigation systems and harvesting techniques
+play an important component in precision agriculture as these
+techniques quickly complete the work and reduces human
+labour. Drones and robots enabled with a digital camera are
+employed for this work. Livestock management is an impor-
+tant concern for farmers across the world. Knowledge-based
+agriculture system which includes smart IoT devices and AI
+tools efﬁciently handle livestock management.
+As a scope of future work, NLP based chatbots can be
+built for famers and more ML, DL and hybrid algorithms can
+be explored in the agriculture industry for sustainable use of
+available resources.
+4868
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+REFERENCES
+[1] N. Zhang, M. Wang, and N. Wang, ‘‘Precision agriculture—A worldwide
+overview,’’ Comput. Electron. Agricult., vol. 36, nos. 2–3, pp. 113–132,
+2002.
+[2] V. Hakkim, E. Joseph, A. Gokul, and K. Mufeedha, ‘‘Precision farming:
+The future of Indian agriculture,’’ J. Appl. Biol. Biotechnol., vol. 4, no. 6,
+pp. 68–72, 2016.
+[3] R. Gebbers and V. I. Adamchuk, ‘‘Precision agriculture and food secu-
+rity,’’ Science, vol. 327, no. 5967, pp. 828–831, Feb. 2010.
+[4] F. J. Pierce and P. Nowak, ‘‘Aspects of precision agriculture,’’ in Advances
+in Agronomy, vol. 67. New York, NY, USA: Academic, 1999, pp. 1–85.
+[5] J. V. Stafford, ‘‘Implementing precision agriculture in the 21st century,’’
+J. Agricult. Eng. Res., vol. 76, no. 3, pp. 267–275, Jul. 2000.
+[6] J. Gubbi, R. Buyya, S. Marusic, and M. Palaniswami, ‘‘Internet of Things
+(IoT): A vision, architectural elements, and future directions,’’ Future
+Gener. Comput. Syst., vol. 29, no. 7, pp. 1645–1660, Sep. 2013.
+[7] F. Nex and F. Remondino, ‘‘UAV for 3D mapping applications: A review,’’
+Appl. Geomatics, vol. 6, no. 1, pp. 1–15, Mar. 2014.
+[8] V. I. Adamchuk, J. W. Hummel, M. T. Morgan, and S. K. Upadhyaya,
+‘‘On-the-go soil sensors for precision agriculture,’’ Comput. Electron.
+Agricult., vol. 44, no. 1, pp. 71–91, 2004.
+[9] H. Jawad, R. Nordin, S. Gharghan, A. Jawad, and M. Ismail, ‘‘Energy-
+efﬁcient wireless sensor networks for precision agriculture: A review,’’
+Sensors, vol. 17, no. 8, p. 1781, Aug. 2017.
+[10] R. Sharma, S. S. Kamble, A. Gunasekaran, V. Kumar, and A. Kumar,
+‘‘A systematic literature review on machine learning applications for
+sustainable agriculture supply chain performance,’’ Comput. Oper. Res.,
+vol. 119, Jul. 2020, Art. no. 104926.
+[11] K. G. Liakos, P. Busato, D. Moshou, S. Pearson, and D. Bochtis,
+‘‘Machine learning in agriculture: A review,’’ Sensors, vol. 18, no. 8,
+p. 2674, 2018.
+[12] A. L. Samuel, ‘‘Some studies in machine learning using the game
+of checkers,’’ IBM J. Res. Develop., vol. 3, no. 3, pp. 210–229,
+Jul. 1959.
+[13] A. M. Turing, ‘‘Computing machinery and intelligence,’’ in Parsing
+The
+Turing
+Test.
+Dordrecht,
+The
+Netherlands:
+Springer,
+2009,
+pp. 23–65.
+[14] C. F. Gaitán, ‘‘Machine learning applications for agricultural impacts
+under extreme events,’’ in Climate Extremes and Their Implications for
+Impact and Risk Assessment. Amsterdam, The Netherlands: Elsevier,
+2020, pp. 119–138.
+[15] S. J. Parikh and B. R. James, ‘‘Soil: The foundation of agriculture,’’
+Nature Educ. Knowl., vol. 3, no. 10, p. 2, 2012, Art. no. 15. [Online].
+Available: https://www.nature.com/scitable/knowledge/library/soil-the-
+foundation-of-agriculture-84224268/
+[16] F. R. Troeh and L. M. Thompson, Soils and Soil Fertility. Oxford, U.K.:
+Oxford Univ. Press, 1993.
+[17] E. Acar, M. S. Ozerdem, and B. B. Ustundag, ‘‘Machine learning based
+regression model for prediction of soil surface humidity over moder-
+ately vegetated ﬁelds,’’ in Proc. 8th Int. Conf. Agro-Geoinformat. (Agro-
+Geoinformat.), Istanbul, Turkey, Jul. 2019, pp. 1–4.
+[18] E. Tarihi. (2016). Polarimetric Decompositions Tutorial. Accessed:
+Feb. 13, 2017. [Online]. Available: https://earth.esa.int/documents/
+653194/656796/Polarimetric_Decompositions.pdf
+[19] X. Wang, W. Hu, K. Li, L. Song, and L. Song, ‘‘Modeling of soft
+sensor based on DBN-ELM and its application in measurement of nutri-
+ent solution composition for soilless culture,’’ in Proc. IEEE Int. Conf.
+Saf. Produce Informatization (IICSPI), Chongqing, China, Dec. 2018,
+pp. 93–97.
+[20] S. Park, J. Im, S. Park, and J. Rhee, ‘‘AMSR2 soil moisture downscaling
+using multisensor products through machine learning approach,’’ in Proc.
+IEEE Int. Geosci. Remote Sens. Symp. (IGARSS), Milan, Italy, Jul. 2015,
+pp. 1984–1987.
+[21] R. Reda, T. Saffaj, B. Ilham, O. Saidi, K. Issam, L. Brahim, and
+E. M. El Hadrami, ‘‘A comparative study between a new method and other
+machine learning algorithms for soil organic carbon and total nitrogen
+prediction using near infrared spectroscopy,’’ Chemometric Intell. Lab.
+Syst., vol. 195, Dec. 2019, Art. no. 103873.
+[22] A. Morellos, X. E. Pantazi, D. Moshou, T. Alexandridis, R. Whetton,
+G. Tziotzios, J. Wiebensohn, R. Bill, and A. M. Mouazen, ‘‘Machine
+learning based prediction of soil total nitrogen, organic carbon and mois-
+ture content by using VIS-NIR spectroscopy,’’ Biosyst. Eng., vol. 152,
+pp. 104–116, Dec. 2016.
+[23] R. Andrade, S. H. G. Silva, D. C. Weindorf, S. Chakraborty, W. M. Faria,
+L. F. Mesquita, L. R. G. Guilherme, and N. Curi, ‘‘Assessing models for
+prediction of some soil chemical properties from portable X-ray ﬂuores-
+cence (pXRF) spectrometry data in Brazilian coastal plains,’’ Geoderma,
+vol. 357, Jan. 2020, Art. no. 113957.
+[24] L. Deiss, A. J. Margenot, S. W. Culman, and M. S. Demyan, ‘‘Tuning
+support vector machines regression models improves prediction accuracy
+of soil properties in MIR spectroscopy,’’ Geoderma, vol. 365, Apr. 2020,
+Art. no. 114227.
+[25] H. Mahmoudzadeh, H. R. Matinfar, R. Taghizadeh-Mehrjardi, and
+R. Kerry, ‘‘Spatial prediction of soil organic carbon using machine learn-
+ing techniques in Western Iran,’’ Geoderma Regional, vol. 21, Jun. 2020,
+Art. no. e00260.
+[26] M. Veres, G. Lacey, and G. W. Taylor, ‘‘Deep learning architectures
+for soil property prediction,’’ in Proc. 12th Conf. Comput. Robot Vis.,
+Jun. 2015, pp. 8–15.
+[27] K. K. Benke, S. Norng, N. J. Robinson, K. Chia, D. B. Rees, and
+J. Hopley, ‘‘Development of pedotransfer functions by machine learning
+for prediction of soil electrical conductivity and organic carbon content,’’
+Geoderma, vol. 366, May 2020, Art. no. 114210.
+[28] S. Khanal, J. Fulton, A. Klopfenstein, N. Douridas, and S. Shearer,
+‘‘Integration of high resolution remotely sensed data and machine learn-
+ing techniques for spatial prediction of soil properties and corn yield,’’
+Comput. Electron. Agricult., vol. 153, pp. 213–225, Oct. 2018.
+[29] Y. Labrador, C. Chang, and J. Viloria, ‘‘Prediction of the calcium and
+magnesium content in soils through a generalized regression neural net-
+works and genetic algorithms,’’ in Proc. 11th Int. Conf. Mach. Learn.
+Appl., vol. 1, Dec. 2012, pp. 661–666.
+[30] A. Chlingaryan, S. Sukkarieh, and B. Whelan, ‘‘Machine learning
+approaches for crop yield prediction and nitrogen status estimation in
+precision agriculture: A review,’’ Comput. Electron. Agricult., vol. 151,
+pp. 61–69, Aug. 2018.
+[31] J.-Y. Shin, K. R. Kim, and J.-C. Ha, ‘‘Seasonal forecasting of daily
+mean air temperatures using a coupled global climate model and machine
+learning algorithm for ﬁeld-scale agricultural management,’’ Agricult.
+Forest Meteorol., vol. 281, Feb. 2020, Art. no. 107858.
+[32] C. MacLachlan, A. Arribas, K. A. Peterson, A. Maidens, D. Fereday,
+A. A. Scaife, M. Gordon, M. Vellinga, A. Williams, R. E. Comer, J. Camp,
+P. Xavier, and G. Madec, ‘‘Global seasonal forecast system version 5
+(GloSea5): A high-resolution seasonal forecast system,’’ Quart. J. Roy.
+Meteorol. Soc., vol. 141, no. 689, pp. 1072–1084, Apr. 2015.
+[33] J. Stamenkovic, D. Tuia, M. F. D. Morsier, M. Borgeaud, and
+J. P. Thiran, ‘‘Estimation of soil moisture from airborne hyperspec-
+tral imagery with support vector regression,’’ in Proc. 5th Workshop
+Hyperspectral Image Signal Process., Evol. Remote Sens. (WHISPERS),
+Jun. 2013, pp. 1–4.
+[34] X. Song, G. Zhang, F. Liu, D. Li, Y. Zhao, and J. Yang, ‘‘Modeling
+spatio-temporal distribution of soil moisture by deep learning-based
+cellular automata model,’’ J. Arid Land, vol. 8, no. 5, pp. 734–748,
+Oct. 2016.
+[35] K. O. Achieng, ‘‘Modelling of soil moisture retention curve using
+machine learning techniques: Artiﬁcial and deep neural networks vs
+support vector regression models,’’ Comput. Geosci., vol. 133, Dec. 2019,
+Art. no. 104320.
+[36] Y. Feng, N. Cui, W. Hao, L. Gao, and D. Gong, ‘‘Estimation of soil
+temperature from meteorological data using different machine learning
+models,’’ Geoderma, vol. 338, pp. 67–77, Mar. 2019.
+[37] K. Mohammadi, S. Shamshirband, S. Motamedi, D. Petković, R. Hashim,
+and M. Gocic, ‘‘Extreme learning machine based prediction of daily dew
+point temperature,’’ Comput. Electron. Agricult., vol. 117, pp. 214–225,
+Sep. 2015.
+[38] B. Zhu, Y. Feng, D. Gong, S. Jiang, L. Zhao, and N. Cui, ‘‘Hybrid particle
+swarm optimization with extreme learning machine for daily reference
+evapotranspiration prediction from limited climatic data,’’ Comput. Elec-
+tron. Agricult., vol. 173, Jun. 2020, Art. no. 105430.
+[39] M. Alizamir, O. Kisi, A. N. Ahmed, C. Mert, C. M. Fai, S. Kim,
+N. W. Kim, and A. El-Shaﬁe, ‘‘Advanced machine learning model for
+better prediction accuracy of soil temperature at different depths,’’ PLoS
+ONE, vol. 15, no. 4, Apr. 2020, Art. no. e0231055.
+[40] S. Cramer, M. Kampouridis, A. A. Freitas, and A. K. Alexandridis,
+‘‘An extensive evaluation of seven machine learning methods for rain-
+fall prediction in weather derivatives,’’ Expert Syst. Appl., vol. 85,
+pp. 169–181, Nov. 2017.
+VOLUME 9, 2021
+4869
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+[41] J. Diez-Sierra and M. D. Jesus, ‘‘Long-term rainfall prediction using
+atmospheric synoptic patterns in semi-arid climates with statistical
+and machine learning methods,’’ J. Hydrol., vol. 586, Jul. 2020,
+Art. no. 124789.
+[42] S. B. Kamatchi and R. Parvathi, ‘‘Improvement of crop production using
+recommender system by weather forecasts,’’ Procedia Comput. Sci.,
+vol. 165, pp. 724–732, 2019.
+[43] M. Lazri, K. Labadi, J. M. Brucker, and S. Ameur, ‘‘Improving satel-
+lite rainfall estimation from MSG data in Northern Algeria by using a
+multi-classiﬁer model based on machine learning,’’ J. Hydrol., vol. 584,
+May 2020, Art. no. 124705.
+[44] N. K. Shardoor and M. V. Rao, ‘‘Analysis of rainfall prediction using
+machine learning data mining and satellite techniques,’’ Int. J. Eng.
+Technol., vol. 7, no. 4, pp. 4362–4367, 2018.
+[45] S. Bhanumathi, M. Vineeth, and N. Rohit, ‘‘Crop yield prediction and
+efﬁcient use of fertilizers,’’ in Proc. Int. Conf. Commun. Signal Process.
+(ICCSP), Chennai, India, Apr. 2019, pp. 0769–0773.
+[46] S. K. Singh, R. Saxena, A. Porwal, and S. S. Ray, ‘‘Assessment of
+hailstorm damage in wheat crop using remote sensing,’’ Current Sci.,
+vol. 112, no. 10, pp. 2095–2099, 2015.
+[47] E. Kamir, F. Waldner, and Z. Hochman, ‘‘Estimating wheat yields in
+Australia using climate records, satellite image time series and machine
+learning methods,’’ ISPRS J. Photogramm. Remote Sens., vol. 160,
+pp. 124–135, Feb. 2020.
+[48] K. Didan, ‘‘MOD13Q1 MODIS/Terra vegetation indices 16-day l3 global
+250m SIN grid V006 [dataset],’’ NASA EOSDIS LP DAAC, Tech. Rep.,
+2015, doi: 10.5067/MODIS/MOD13Q1.006.
+[49] K. Tumer and J. Ghosh, ‘‘Error correlation and error reduction in
+ensemble classiﬁers,’’ Connection Sci., vol. 8, nos. 3–4, pp. 385–404,
+Dec. 1996.
+[50] H. Aghighi, M. Azadbakht, D. Ashourloo, H. S. Shahrabi, and S. Radiom,
+‘‘Machine learning regression techniques for the silage maize yield
+prediction using time-series images of Landsat 8 OLI,’’ IEEE J. Sel.
+Topics Appl. Earth Observ. Remote Sens., vol. 11, no. 12, pp. 4563–4577,
+Dec. 2018.
+[51] K. Kuwata and R. Shibasaki, ‘‘Estimating crop yields with deep learning
+and remotely sensed data,’’ in Proc. IEEE Int. Geosci. Remote Sens. Symp.
+(IGARSS), Milan, Italy, Jul. 2015, pp. 858–861.
+[52] S. Kulkarni, S. N. Mandal, G. S. Sharma, M. R. Mundada, and
+Meeradevi, ‘‘Predictive analysis to improve crop yield using a neural
+network model,’’ in Proc. Int. Conf. Adv. Comput., Commun. Informat.
+(ICACCI), Bangalore, India, Sep. 2018, pp. 74–79.
+[53] Z. Chu and J. Yu, ‘‘An end-to-end model for rice yield prediction using
+deep learning fusion,’’ Comput. Electron. Agricult., vol. 174, Jul. 2020,
+Art. no. 105471.
+[54] P. Feng, B. Wang, D. L. Liu, C. Waters, D. Xiao, L. Shi, and Q. Yu,
+‘‘Dynamic wheat yield forecasts are improved by a hybrid approach using
+a biophysical model and machine learning technique,’’ Agricult. Forest
+Meteorol., vols. 285–286, May 2020, Art. no. 107922.
+[55] Y. Cai, K. Guan, D. Lobell, A. B. Potgieter, S. Wang, J. Peng, T. Xu,
+S. Asseng, Y. Zhang, L. You, and B. Peng, ‘‘Integrating satellite and
+climate data to predict wheat yield in Australia using machine learn-
+ing approaches,’’ Agricult. Forest Meteorol., vol. 274, pp. 144–159,
+Aug. 2019.
+[56] A. Gümüşçü, M. E. Tenekeci, and A. V. Bilgili, ‘‘Estimation of wheat
+planting date using machine learning algorithms based on available
+climate data,’’ Sustain. Comput., Informat. Syst., vol. 28, Dec. 2020,
+Art. no. 100308.
+[57] P. Nevavuori, N. Narra, and T. Lipping, ‘‘Crop yield prediction with deep
+convolutional neural networks,’’ Comput. Electron. Agricult., vol. 163,
+Aug. 2019, Art. no. 104859.
+[58] A. Koirala, K. B. Walsh, Z. Wang, and C. McCarthy, ‘‘Deep learning–
+method overview and review of use for fruit detection and yield estima-
+tion,’’ Comput. Electron. Agricult., vol. 162, pp. 219–234, Jul. 2019.
+[59] L. Kouadio, R. C. Deo, V. Byrareddy, J. F. Adamowski, S. Mushtaq,
+and V. P. Nguyen, ‘‘Artiﬁcial intelligence approach for the prediction
+of robusta coffee yield using soil fertility properties,’’ Comput. Electron.
+Agricult., vol. 155, pp. 324–338, Dec. 2018.
+[60] A. A. Gamboa, P. A. Caceres, H. Lamos, D. A. Zarate, and D. E. Puentes,
+‘‘Predictive model for cocoa yield in santander using supervised machine
+learning,’’ in Proc. 22nd Symp. Image, Signal Process. Artif. Vis.
+(STSIVA), Apr. 2019, pp. 1–5.
+[61] S. A. Gyamerah, P. Ngare, and D. Ikpe, ‘‘Probabilistic forecasting of crop
+yields via quantile random forest and Epanechnikov kernel function,’’
+Agricult. Forest Meteorol., vol. 280, Jan. 2020, Art. no. 107808.
+[62] B. Peng, K. Guan, W. Zhou, C. Jiang, C. Frankenberg, Y. Sun, L. He,
+and P. Köhler, ‘‘Assessing the beneﬁt of satellite-based solar-induced
+chlorophyll ﬂuorescence in crop yield prediction,’’ Int. J. Appl. Earth
+Observ. Geoinf., vol. 90, Aug. 2020, Art. no. 102126.
+[63] S. Khaki and L. Wang, ‘‘Crop yield prediction using deep neural net-
+works,’’ Frontiers Plant Sci., vol. 10, p. 621, May 2019.
+[64] L. Leroux, M. Castets, C. Baron, M.-J. Escorihuela, A. Bégué, and
+D. L. Seen, ‘‘Maize yield estimation in West Africa from crop process-
+induced combinations of multi-domain remote sensing indices,’’ Eur.
+J. Agronomy, vol. 108, pp. 11–26, Aug. 2019.
+[65] Y. Li, K. Guan, A. Yu, B. Peng, L. Zhao, B. Li, and J. Peng, ‘‘Toward
+building a transparent statistical model for improving crop yield pre-
+diction: Modeling rainfed corn in the U.S,’’ Field Crops Res., vol. 234,
+pp. 55–65, Mar. 2019.
+[66] M. Maimaitijiang, V. Sagan, P. Sidike, S. Hartling, F. Esposito, and
+F. B. Fritschi, ‘‘Soybean yield prediction from UAV using multimodal
+data fusion and deep learning,’’ Remote Sens. Environ., vol. 237,
+Feb. 2020, Art. no. 111599.
+[67] C. Zhang, L. Di, L. Lin, and L. Guo, ‘‘Machine-learned prediction of
+annual crop planting in the U.S. corn belt based on historical crop
+planting maps,’’ Comput. Electron. Agricult., vol. 166, Nov. 2019,
+Art. no. 104989.
+[68] A. Kocian, D. Massa, S. Cannazzaro, L. Incrocci, S. D. Lonardo,
+P. Milazzo, and S. Chessa, ‘‘Dynamic Bayesian network for crop
+growth prediction in greenhouses,’’ Comput. Electron. Agricult., vol. 169,
+Feb. 2020, Art. no. 105167.
+[69] S. Shahinfar and L. Kahn, ‘‘Machine learning approaches for early pre-
+diction of adult wool growth and quality in Australian merino sheep,’’
+Comput. Electron. Agricult., vol. 148, pp. 72–81, May 2018.
+[70] G. Sambasivam and G. D. Opiyo, ‘‘A predictive machine learning
+application in agriculture: Cassava disease detection and classiﬁcation
+with imbalanced dataset using convolutional neural networks,’’ Egyptian
+Informat. J., early access, Mar. 9, 2020, doi: 10.1016/j.eij.2020.02.007.
+[71] A. Ramcharan, K. Baranowski, P. McCloskey, B. Ahmed, J. Legg, and
+D. P. Hughes, ‘‘Deep learning for image-based cassava disease detec-
+tion,’’ Frontiers Plant Sci., vol. 8, p. 1852, Oct. 2017.
+[72] S. P. Mohanty, D. P. Hughes, and M. Salathé, ‘‘Using deep learning
+for image-based plant disease detection,’’ Frontiers Plant Sci., vol. 7,
+pp. 1–10, Sep. 2016.
+[73] A. Krizhevsky, I. Sutskever, and G. E. Hinton, ‘‘ImageNet classiﬁcation
+with deep convolutional neural networks,’’ in Proc. Adv. Neural Inf.
+Process. Syst., 2012, pp. 1–9.
+[74] C. Szegedy, W. Liu, Y. Jia, P. Sermanet, S. Reed, D. Anguelov, D. Erhan,
+V. Vanhoucke, and A. Rabinovich, ‘‘Going deeper with convolutions,’’ in
+Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Boston, MA,
+USA, Jun. 2015, pp. 1–9.
+[75] J. Amara, B. Bouaziz, and A. Algergawy, ‘‘A deep learning-based
+approach for banana leaf diseases classiﬁcation,’’ in Datenbanksys-
+teme für Business, Technologie und Web (BTW 2017)—Workshopband,
+B. Mitschang, D. Nicklas, F. Leymann, H. Schöning, M. Herschel,
+J. Teubner, T. Härder, O. Kopp, and M. Wieland, Eds. Bonn, Germany:
+Gesellschaft für Informatik e.V., 2017, pp. 79–88.
+[76] D. P. Hughes and M. Salathe, ‘‘An open access repository of images
+on plant health to enable the development of mobile disease diagnos-
+tic,’’ Comput. Soc., Cornell Univ., Ithaca, NY, USA, Tech. Rep., 2016.
+[Online]. Available: https://arxiv.org/abs/1511.08060
+[77] A. D. S. Ferreira, D. M. Freitas, G. G. D. Silva, H. Pistori, and
+M. T. Folhes, ‘‘Weed detection in soybean crops using ConvNets,’’ Com-
+put. Electron. Agricult., vol. 143, pp. 314–324, Dec. 2017.
+[78] A. Waheed, M. Goyal, D. Gupta, A. Khanna, A. E. Hassanien, and
+H. M. Pandey, ‘‘An optimized dense convolutional neural network model
+for disease recognition and classiﬁcation in corn leaf,’’ Comput. Electron.
+Agricult., vol. 175, Aug. 2020, Art. no. 105456.
+[79] L. A. M. Pereira, R. Y. M. Nakamura, G. F. S. D. Souza, D. Martins, and
+J. P. Papa, ‘‘Aquatic weed automatic classiﬁcation using machine learning
+techniques,’’ Comput. Electron. Agricult., vol. 87, pp. 56–63, Sep. 2012.
+[80] H. Jiang, C. Zhang, Y. Qiao, Z. Zhang, W. Zhang, and C. Song, ‘‘CNN
+feature based graph convolutional network for weed and crop recognition
+in smart farming,’’ Comput. Electron. Agricult., vol. 174, Jul. 2020,
+Art. no. 105450.
+4870
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+[81] D. Oppenheim and G. Shani, ‘‘Potato disease classiﬁcation using convo-
+lution neural networks,’’ Adv. Animal Biosci., vol. 8, no. 2, pp. 244–249,
+Jul. 2017.
+[82] T. Rumpf, A.-K. Mahlein, U. Steiner, E.-C. Oerke, H.-W. Dehne, and
+L. Plümer, ‘‘Early detection and classiﬁcation of plant diseases with
+support vector machines based on hyperspectral reﬂectance,’’ Comput.
+Electron. Agricult., vol. 74, no. 1, pp. 91–99, Oct. 2010.
+[83] M. M. Ozguven and K. Adem, ‘‘Automatic detection and classiﬁcation of
+leaf spot disease in sugar beet using deep learning algorithms,’’ Phys. A,
+Stat. Mech. Appl., vol. 535, Dec. 2019, Art. no. 122537.
+[84] M. Bah, A. Haﬁane, and R. Canals, ‘‘Deep learning with unsupervised
+data labeling for weed detection in line crops in UAV images,’’ Remote
+Sens., vol. 10, no. 11, p. 1690, Oct. 2018.
+[85] M. Kerkech, A. Haﬁane, and R. Canals, ‘‘Vine disease detection in
+UAV multispectral images using optimized image registration and deep
+learning segmentation approach,’’ Comput. Electron. Agricult., vol. 174,
+Jul. 2020, Art. no. 105446.
+[86] A. Olsen, D. A. Konovalov, B. Philippa, P. Ridd, J. C. Wood, J. Johns,
+W. Banks, B. Girgenti, O. Kenny, J. Whinney, B. Calvert, M. R. Azghadi,
+and R. D. White, ‘‘DeepWeeds: A multiclass weed species image dataset
+for deep learning,’’ Sci. Rep., vol. 9, no. 1, pp. 1–12, Dec. 2019.
+[87] K. Sudars, J. Jasko, I. Namatevs, L. Ozola, and N. Badaukis, ‘‘Dataset
+of annotated food crops and weed images for robotic computer vision
+control,’’ Data Brief, vol. 31, Aug. 2020, Art. no. 105833.
+[88] P. K. Sethy, N. K. Barpanda, A. K. Rath, and S. K. Behera, ‘‘Deep feature
+based rice leaf disease identiﬁcation using support vector machine,’’
+Comput. Electron. Agricult., vol. 175, Aug. 2020, Art. no. 105527.
+[89] B. Espejo-Garcia, N. Mylonas, L. Athanasakos, S. Fountas, and
+I. Vasilakoglou, ‘‘Towards weeds identiﬁcation assistance through
+transfer learning,’’ Comput. Electron. Agricult., vol. 171, Apr. 2020,
+Art. no. 105306.
+[90] N. Shah and S. Jain, ‘‘Detection of disease in cotton leaf using arti-
+ﬁcial neural network,’’ in Proc. Amity Int. Conf. Artif. Intell. (AICAI),
+Feb. 2019, pp. 473–476.
+[91] J. Yu, A. W. Schumann, Z. Cao, S. M. Sharpe, and N. S. Boyd, ‘‘Weed
+detection in perennial ryegrass with deep learning convolutional neural
+network,’’ Frontiers Plant Sci., vol. 10, p. 1422, Oct. 2019.
+[92] J. Parraga-Alava, K. Cusme, A. Loor, and E. Santander, ‘‘RoCoLe:
+A robusta coffee leaf images dataset for evaluation of machine learn-
+ing based methods in plant diseases recognition,’’ Data Brief, vol. 25,
+Aug. 2019, Art. no. 104414.
+[93] T. J. Glezakos, G. Moschopoulou, T. A. Tsiligiridis, S. Kintzios, and
+C. P. Yialouris, ‘‘Plant virus identiﬁcation based on neural networks with
+evolutionary preprocessing,’’ Comput. Electron. Agricult., vol. 70, no. 2,
+pp. 263–275, Mar. 2010.
+[94] S. Ramesh and D. Vydeki, ‘‘Recognition and classiﬁcation of paddy leaf
+diseases using optimized deep neural network with Jaya algorithm,’’ Inf.
+Process. Agricult., vol. 7, no. 2, pp. 249–260, Jun. 2020.
+[95] Ł. Chechlinski, B. Siemia¸tkowska, and M. Majewski, ‘‘A system for
+weeds and crops identiﬁcation—Reaching over 10 FPS on raspberry pi
+with the usage of MobileNets, DenseNet and custom modiﬁcations,’’
+Sensors, vol. 19, no. 17, p. 3787, Aug. 2019.
+[96] A. Wang, W. Zhang, and X. Wei, ‘‘A review on weed detection using
+ground-based machine vision and image processing techniques,’’ Com-
+put. Electron. Agricult., vol. 158, pp. 226–240, Mar. 2019.
+[97] Y. H. Kim, S. J. Yoo, Y. H. Gu, J. H. Lim, D. Han, and S. W. Baik,
+‘‘Crop pests prediction method using regression and machine learning
+technology: Survey,’’ IERI Procedia, vol. 6, pp. 52–56, 2014.
+[98] M. H. Saleem, J. Potgieter, and K. M. Arif, ‘‘Plant disease detection
+and classiﬁcation by deep learning,’’ Plants, vol. 8, no. 11, p. 468,
+Oct. 2019.
+[99] B. Liu and R. Bruch, ‘‘Weed detection for selective spraying: A review,’’
+Current Robot. Rep., vol. 1, no. 1, pp. 19–26, Mar. 2020.
+[100] D. Goldberg, B. Gornat, and D. Rimon, ‘‘Drip irrigation: Principles,
+design and agricultural practices,’’ in Drip Irrigation: Principles, Design
+and Agricultural Practices. Beit Dagan, Israel: Drip Irrigation Scientiﬁc
+Publications, 1976.
+[101] G. Hochmuth, ‘‘Drip irrigation,’’ in A Guide to the Manufacture, Per-
+formance, and Potential of Plastics in Agriculture, M. D. Orzolek.
+Amsterdam, The Netherlands: Elsevier, 2017, pp-1-197.
+[102] O. Adeyemi, I. Grove, Y. Domun, T. Norton, and S. Peets, ‘‘Dynamic
+neural network modelling of soil moisture content for predictive irrigation
+scheduling,’’ Sensors, vol. 18, no. 10, p. 3408, 2018.
+[103] D. Tseng, D. Wang, C. Chen, L. Miller, W. Song, J. Viers, S. Vougioukas,
+S. Carpin, J. A. Ojea, and K. Goldberg, ‘‘Towards automating precision
+irrigation: Deep learning to infer local soil moisture conditions from
+synthetic aerial agricultural images,’’ in Proc. IEEE 14th Int. Conf. Autom.
+Sci. Eng. (CASE), Aug. 2018, pp. 284–291.
+[104] R. Berenstein, R. Fox, S. McKinley, S. Carpin, and K. Goldberg,
+‘‘Robustly adjusting indoor drip irrigation emitters with the Toyota HSR
+robot,’’ in Proc. IEEE Int. Conf. Robot. Autom. (ICRA), May 2018,
+pp. 2236–2243.
+[105] R. G. Evans and E. J. Sadler, ‘‘Methods and technologies to improve
+efﬁciency of water use,’’ Water Resour. Res., vol. 44, no. 7, Jul. 2008,
+Art. no. W00E04.
+[106] M. Janani and R. Jebakumar, ‘‘A study on smart irrigation using machine
+learning,’’ Cell Cellular Life Sci. J., vol. 4, no. 2, pp. 1–8, 2019.
+[107] K. Jha, A. Doshi, and P. Patel, ‘‘Intelligent irrigation system using arti-
+ﬁcial intelligence and machine learning: A comprehensive review ISSN:
+2320-5407,’’ (Indore), Int. J. Adv. Res., vol. 6, no. 10, pp. 1493–1502,
+2018.
+[108] A. Vij, S. Vijendra, A. Jain, S. Bajaj, A. Bassi, and A. Sharma, ‘‘IoT and
+machine
+learning
+approaches
+for
+automation
+of
+farm
+irrigation
+system,’’ Procedia Comput. Sci., vol. 167, pp. 1250–1257, 2020.
+[Online]. Available: https://www.sciencedirect.com/science/article/pii/
+S1877050920309078
+[109] R. Kondaveti, A. Reddy, and S. Palabtla, ‘‘Smart irrigation system using
+machine learning and IOT,’’ in Proc. Int. Conf. Vis. Towards Emerg.
+Trends Commun. Netw. (ViTECoN), Mar. 2019, pp. 1–11.
+[110] M. J. Roberts, N. O. Braun, T. R. Sinclair, D. B. Lobell, and W. Schlenker,
+‘‘Comparing and combining process-based crop models and statistical
+models with some implications for climate change,’’ Environ. Res. Lett.,
+vol. 12, no. 9, Sep. 2017, Art. no. 095010.
+[111] F. Karandish and J. Šimunek, ‘‘A comparison of numerical and machine-
+learning modeling of soil water content with limited input data,’’
+J. Hydrol., vol. 543, pp. 892–909, Dec. 2016.
+[112] S. Sahoo, T. A. Russo, J. Elliott, and I. Foster, ‘‘Machine learning algo-
+rithms for modeling groundwater level changes in agricultural regions of
+the U.S,’’ Water Resour. Res., vol. 53, no. 5, pp. 3878–3895, May 2017.
+[113] J. Li, R. E. Yoder, L. O. Odhiambo, and J. Zhang, ‘‘Simulation of
+nitrate distribution under drip irrigation using artiﬁcial neural networks,’’
+Irrigation Sci., vol. 23, no. 1, pp. 29–37, Apr. 2004.
+[114] G. Kavianand, V. M. Nivas, R. Kiruthika, and S. Lalitha, ‘‘Smart drip
+irrigation system for sustainable agriculture,’’ in Proc. IEEE Technol.
+Innov. ICT Agricult. Rural Develop. (TIAR), Chennai, India, Jul. 2016,
+pp. 19–22, doi: 10.1109/TIAR.2016.7801206.
+[115] E. A. Abioye, M. S. Z. Abidin, M. S. A. Mahmud, S. Buyamin,
+M. K. I. AbdRahman, A. O. Otuoze, M. S. A. Ramli, and O. D. Ijike, ‘‘IoT-
+based monitoring and data-driven modelling of drip irrigation system for
+mustard leaf cultivation experiment,’’ Inf. Process. Agricult., early access,
+Jun. 24, 2020, doi: 10.1016/j.inpa.2020.05.004.
+[116] A.
+Seyedzadeh,
+S.
+Maroufpoor,
+E.
+Maroufpoor,
+J.
+Shiri,
+O. Bozorg-Haddad, and F. Gavazi, ‘‘Artiﬁcial intelligence approach
+to estimate discharge of drip tape irrigation based on temperature
+and
+pressure,’’
+Agricult.
+Water
+Manage.,
+vol.
+228,
+Feb.
+2020,
+Art. no. 105905.
+[117] Y. Peng, Y. Xiao, Z. Fu, Y. Dong, Y. Zheng, H. Yan, and X. Li, ‘‘Preci-
+sion irrigation perspectives on the sustainable water-saving of ﬁeld crop
+production in China: Water demand prediction and irrigation scheme
+optimization,’’ J. Cleaner Prod., vol. 230, pp. 365–377, Sep. 2019.
+[118] J. Shiri, B. Karimi, N. Karimi, M. H. Kazemi, and S. Karimi, ‘‘Simu-
+lating wetting front dimensions of drip irrigation systems: Multi criteria
+assessment of soft computing models,’’ J. Hydrol., vol. 585, Jun. 2020,
+Art. no. 124792.
+[119] M. N. Elnesr and A. A. Alazba, ‘‘Simulation of water distribution
+under surface dripper using artiﬁcial neural networks,’’ Comput. Electron.
+Agricult., vol. 143, pp. 90–99, Dec. 2017.
+[120] Y.-C. Chang, T.-W. Huang, and N.-F. Huang, ‘‘A machine learning
+based smart irrigation system with LoRa P2P networks,’’ in Proc. 20th
+Asia–Paciﬁc Netw. Oper. Manage. Symp. (APNOMS), Matsue, Japan,
+Sep. 2019, pp. 1–4, doi: 10.23919/APNOMS.2019.8893034.
+[121] G. Singh, D. Sharma, A. Goap, S. Sehgal, A. K. Shukla, and S. Kumar,
+‘‘Machine learning based soil moisture prediction for Internet of Things
+based smart irrigation system,’’ in Proc. 5th Int. Conf. Signal Pro-
+cess., Comput. Control (ISPCC), Solan, India, Oct. 2019, pp. 175–180,
+doi: 10.1109/ISPCC48220.2019.8988313.
+VOLUME 9, 2021
+4871
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+[122] R.
+Torres-Sanchez,
+H.
+Navarro-Hellin,
+A.
+Guillamon-Frutos,
+R. San-Segundo, M. C. Ruiz-Abellón, and R. Domingo-Miguel,
+‘‘A decision support system for irrigation management: Analysis and
+implementation of different learning techniques,’’ Water, vol. 12, no. 2,
+p. 548, Feb. 2020.
+[123] H.
+Navarro-Hellín,
+J.
+Martínez-del-Rincon,
+R.
+Domingo-Miguel,
+F. Soto-Valles, and R. Torres-Sánchez, ‘‘A decision support system
+for managing irrigation in agriculture,’’ Comput. Electron. Agricult.,
+vol. 124, pp. 121–131, Jun. 2016.
+[124] C. Goumopoulos, B. O’Flynn, and A. Kameas, ‘‘Automated zone-speciﬁc
+irrigation with wireless sensor/actuator network and adaptable decision
+support,’’ Comput. Electron. Agricult., vol. 105, pp. 20–33, Jul. 2014.
+[125] Z. Chen, S. Sun, Y. Wang, Q. Wang, and X. Zhang, ‘‘Temporal
+convolution-network-based models for modeling maize evapotranspira-
+tion under mulched drip irrigation,’’ Comput. Electron. Agricult., vol. 169,
+Feb. 2020, Art. no. 105206.
+[126] R. S. Alonso, I. Sittón-Candanedo, Ó. García, J. Prieto, and S. Rodríguez-
+González, ‘‘An intelligent edge-IoT platform for monitoring livestock and
+crops in a dairy farming scenario,’’ Ad Hoc Netw., vol. 98, Mar. 2020,
+Art. no. 102047.
+[127] D. Berckmans, ‘‘General introduction to precision livestock farming,’’
+Animal Frontiers, vol. 7, no. 1, pp. 6–11, Jan. 2017. [Online]. Available:
+https://academic.oup.com/af/article/7/1/6/4638786.
+[128] I. Halachmi and M. Guarino, ‘‘Editorial: Precision livestock farming:
+A ‘per animal’ approach using advanced monitoring technologies,’’
+Animal,
+vol.
+10,
+no.
+9,
+pp. 1482–1483,
+2016,
+doi:
+10.1017/
+S1751731116001142.
+[129] E. Villeneuve, A. A. Abi, C. Merlo, D. Masson, G. Terrasson, and
+A. Llaria, ‘‘Decision support in precision sheep farming,’’ IFAC-
+PapersOnLine, vol. 51, no. 34, pp. 236–241, 2019.
+[130] R. Dutta, D. Smith, R. Rawnsley, G. Bishop-Hurley, J. Hills, G. Timms,
+and D. Henry, ‘‘Dynamic cattle behavioural classiﬁcation using super-
+vised ensemble classiﬁers,’’ Comput. Electron. Agricult., vol. 111,
+pp. 18–28, Feb. 2015.
+[131] V. Pegorini, L. Z. Karam, C. Pitta, R. Cardoso, J. D. Silva,
+H. Kalinowski, R. Ribeiro, F. Bertotti, and T. Assmann, ‘‘In vivo pattern
+classiﬁcation of ingestive behavior in ruminants using FBG sensors and
+machine learning,’’ Sensors, vol. 15, no. 11, pp. 28456–28471, Nov. 2015.
+[132] E.
+Ebrahimie,
+F.
+Ebrahimi,
+M.
+Ebrahimi,
+S.
+Tomlinson,
+and
+K. R. Petrovski, ‘‘Hierarchical pattern recognition in milking parameters
+predicts mastitis prevalence,’’ Comput. Electron. Agricult., vol. 147,
+pp. 6–11, Apr. 2018.
+[133] E.
+Ebrahimie,
+F.
+Ebrahimi,
+M.
+Ebrahimi,
+S.
+Tomlinson,
+and
+K. R. Petrovski, ‘‘A large-scale study of indicators of sub-clinical
+mastitis in dairy cattle by attribute weighting analysis of milk composition
+features: High lighting the predictive power of lactose and electrical
+conductivity,’’ Hannah Dairy Res. Found., Ayr, Scotland, Tech. Rep.,
+2018, doi: 10.1017/S0022029918000249.
+[134] R. M. Hyde, P. M. Down, A. J. Bradley, J. E. Breen, C. Hudson,
+K. A. Leach, and M. J. Green, ‘‘Automated prediction of mastitis infection
+patterns in dairy herds using machine learning,’’ Sci. Rep., vol. 10, no. 1,
+pp. 1–8, Dec. 2020.
+[135] N. Esener, M. J. Green, R. D. Emes, B. Jowett, P. L. Davies, A. J. Bradley,
+and T. Dottorini, ‘‘Discrimination of contagious and environmental
+strains of streptococcus uberis in dairy herds by means of mass spectrom-
+etry and machine-learning,’’ Sci. Rep., vol. 8, no. 1, pp. 1–12, Dec. 2018.
+[136] M. Ebrahimi, M. Mohammadi-Dehcheshmeh, E. Ebrahimie, and
+K. R. Petrovski, ‘‘Comprehensive analysis of machine learning mod-
+els for prediction of sub-clinical mastitis: Deep learning and gradient-
+boosted trees outperform other models,’’ Comput. Biol. Med., vol. 114,
+Nov. 2019, Art. no. 103456.
+[137] S. Shariﬁ, A. Pakdel, M. Ebrahimi, J. M. Reecy, S. F. Farsani, and
+E. Ebrahimie, ‘‘Integration of machine learning and meta-analysis iden-
+tiﬁes the transcriptomic bio-signature of mastitis disease in cattle,’’ PLoS
+ONE, vol. 13, no. 2, Feb. 2018, Art. no. e0191227.
+[138] G. Machado, M. R. Mendoza, and L. G. Corbellini, ‘‘What variables
+are important in predicting bovine viral diarrhea virus? A random forest
+approach,’’ Veterinary Res., vol. 46, no. 1, p. 85, Dec. 2015.
+[139] S. G. Matthews, A. L. Miller, T. Plötz, and I. Kyriazakis, ‘‘Automated
+tracking to measure behavioural changes in pigs for health and welfare
+monitoring,’’ Sci. Rep., vol. 7, no. 1, Dec. 2017.
+[140] Y. Qiao, M. Truman, and S. Sukkarieh, ‘‘Cattle segmentation and con-
+tour extraction based on mask R-CNN for precision livestock farming,’’
+Comput. Electron. Agricult., vol. 165, Oct. 2019, Art. no. 104958.
+[141] K. Liakos, S. P. Moustakidis, G. Tsiotra, T. Bartzanas, D. Bochtis, and
+C. Parisses, ‘‘Machine learning based computational analysis method for
+cattle lameness prediction,’’ in Proc. HAICTA, 2017, pp. 128–139.
+[142] I. R. Morales, D. R. Cebrián, E. F. Blanco, and A. P. Sierra, ‘‘Early warn-
+ing in EGG production curves from commercial hens: A SVM approach,’’
+Comput. Electron. Agricult., vol. 121, pp. 169–179, Feb. 2016.
+[143] M. F. Hansen, M. L. Smith, L. N. Smith, M. G. Salter, E. M. Baxter,
+M. Farish, and B. Grieve, ‘‘Towards on-farm pig face recognition using
+convolutional neural networks,’’ Comput. Ind., vol. 98, pp. 145–152,
+Jun. 2018.
+[144] C. Fenlon, L. O’Grady, J. F. Mee, S. T. Butler, M. L. Doherty, and
+J. Dunnion, ‘‘A comparison of 4 predictive models of calving assistance
+and difﬁculty in dairy heifers and cows,’’ J. Dairy Sci., vol. 100, no. 12,
+pp. 9746–9758, Dec. 2017.
+[145] C. Fenlon, L. O’Grady, J. Dunnion, L. Shalloo, S. T. Butler, and
+M. L. Doherty, ‘‘A comparison of machine learning techniques for pre-
+dicting insemination outcome in Irish dairy cows,’’ in Proc. Irish Conf.
+Artif. Intell. Cogn. Sci., Dublin, Republic of Ireland, 2016, pp. 1–11.
+[146] M. R. Borchers, Y. M. Chang, K. L. Proudfoot, B. A. Wadsworth,
+A. E. Stone, and J. M. Bewley, ‘‘Machine-learning-based calving pre-
+diction from activity, lying, and ruminating behaviors in dairy cattle,’’
+J. Dairy Sci., vol. 100, no. 7, pp. 5664–5674, Jul. 2017.
+[147] C. Bahlo, P. Dahlhaus, H. Thompson, and M. Trotter, ‘‘The role of
+interoperable data standards in precision livestock farming in extensive
+livestock systems: A review,’’ Comput. Electron. Agricult., vol. 156,
+pp. 459–466, Jan. 2019.
+[148] A.
+D.
+Boursianis,
+M.
+S.
+Papadopoulou,
+P.
+Diamantoulakis,
+A. Liopa-Tsakalidi, P. Barouchas, G. Salahas, G. Karagiannidis,
+S. Wan, and S. K. Goudos, ‘‘Internet of Things (IoT) and agricultural
+unmanned aerial vehicles (UAVs) in smart farming: A comprehensive
+review,’’ Internet Things, Mar. 2020, Art. no. 100187.
+[149] D. Barhate and V. Nemade, ‘‘Comprehensive study on automated image
+detection by using robotics for agriculture applications,’’ in Proc. 3rd
+Int. Conf. Electron., Commun. Aerosp. Technol. (ICECA), Jun. 2019,
+pp. 637–641.
+[150] K. Jha, A. Doshi, P. Patel, and M. Shah, ‘‘A comprehensive review
+on automation in agriculture using artiﬁcial intelligence,’’ Artif. Intell.
+Agricult., vol. 2, pp. 1–12, Jun. 2019.
+[151] H. Tian, T. Wang, Y. Liu, X. Qiao, and Y. Li, ‘‘Computer vision technol-
+ogy in agricultural automation—A review,’’ Inf. Process. Agricult., vol. 7,
+no. 1, pp. 1–19, 2020.
+[152] Z. Zhai, J. F. Martínez, V. Beltran, and N. L. Martínez, ‘‘Decision support
+systems for agriculture 4.0: Survey and challenges,’’ Comput. Electron.
+Agricult., vol. 170, Mar. 2020, Art. no. 105256.
+[153] N. Kondo, M. Monta, and N. Noguchi, Agri-Robot (I)-Fundamentals
+and Theory. Tokyo, Japan: Corona Publishing Co. Ltd., 2004,
+pp. 56–58.
+[154] H. Sakai, T. Shiigi, N. Kondo, Y. Ogawa, and N. Taguchi, ‘‘Accurate
+position detecting during asparagus spear harvesting using a laser sensor,’’
+Eng. Agricult., Environ. Food, vol. 6, no. 3, pp. 105–110, 2013.
+[155] M. Monta and K. Namba, ‘‘Three-dimensional sensing system for agri-
+cultural robots,’’ in Proc. IEEE/ASME Int. Conf. Adv. Intell. Mechatron-
+ics, vol. 2, Jul. 2003, pp. 1216–1221.
+[156] A. De Preter, J. Anthonis, and J. De Baerdemaeker, ‘‘Development of a
+robot for harvesting strawberries,’’ IFAC-PapersOnLine, vol. 51, no. 17,
+pp. 14–19, 2018.
+[157] S. Hayashi, K. Shigematsu, S. Yamamoto, K. Kobayashi, Y. Kohno,
+J. Kamata, and M. Kurita, ‘‘Evaluation of a strawberry-harvesting
+robot in a ﬁeld test,’’ Biosyst. Eng., vol. 105, no. 2, pp. 160–171,
+Feb. 2010.
+[158] G.-J. Horng, M.-X. Liu, and C.-C. Chen, ‘‘The smart image recognition
+mechanism for crop harvesting system in intelligent agriculture,’’ IEEE
+Sensors J., vol. 20, no. 5, pp. 2766–2781, Mar. 2020.
+[159] J. Zhang, M. Karkee, Q. Zhang, X. Zhang, M. Yaqoob, L. Fu, and
+S. Wang, ‘‘Multi-class object detection using faster R-CNN and estima-
+tion of shaking locations for automated shake-and-catch apple harvest-
+ing,’’ Comput. Electron. Agricult., vol. 173, Jun. 2020, Art. no. 105384.
+[160] K. E. Kane and W. S. Lee, ‘‘Spectral sensing of different citrus varieties
+for precision agriculture,’’ in Proc. ASAE Annu. Meeting Amer. Soc.
+Agricult. Biol. Eng., 2006, p. 1.
+[161] A. Silwal, M. Karkee, and Q. Zhang, ‘‘A hierarchical approach to apple
+identiﬁcation for robotic harvesting,’’ Trans. ASABE, vol. 59, no. 5,
+pp. 1079–1086, 2016.
+4872
+VOLUME 9, 2021
+A. Sharma et al.: ML Applications for Precision Agriculture: A Comprehensive Review
+[162] X. Zhang, L. He, J. Zhang, M. D. Whiting, M. Karkee, and Q. Zhang,
+‘‘Determination of key canopy parameters for mass mechanical apple
+harvesting using supervised machine learning and principal component
+analysis (PCA),’’ Biosyst. Eng., vol. 193, pp. 247–263, May 2020.
+[163] Z. Zhang, C. Igathinathane, J. Li, H. Cen, Y. Lu, and P. Flores, ‘‘Tech-
+nology progress in mechanical harvest of fresh market apples,’’ Comput.
+Electron. Agricult., vol. 175, Aug. 2020, Art. no. 105606.
+[164] D. Pise and G. D. Upadhye, ‘‘Grading of harvested mangoes quality and
+maturity based on machine learning techniques,’’ in Proc. Int. Conf. Smart
+City Emerg. Technol. (ICSCET), Mumbai, India, Jan. 2018, pp. 1–6,
+doi: 10.1109/ICSCET.2018.8537342.
+[165] W. Wu, S. Ding, and J. Lv, ‘‘Application research of neural networks in
+fruit and vegetable harvesting robot,’’ in Proc. 10th World Congr. Intell.
+Control Autom., Jul. 2012, pp. 1790–1795.
+[166] N. Dlodlo and J. Kalezhi, ‘‘The Internet of Things in agriculture for
+sustainable rural development,’’ in Proc. Int. Conf. Emerg. Trends Netw.
+Comput. Commun. (ETNCC), Windhoek, Namibia, May 2015, pp. 13–18.
+[167] T. Ojha, S. Misra, and N. S. Raghuwanshi, ‘‘Wireless sensor networks
+for agriculture: The state-of-the-art in practice and future challenges,’’
+Comput. Electron. Agricult., vol. 118, pp. 66–84, Oct. 2015.
+[168] Digital Accelerometer ADXL345 Datasheet, Analog Devices Inc,
+Norwood, MA, USA, 2009.
+[169] HTU21D(F) Sensor Digital Relative, Sensiron, Meas. Specialties, Stäfa,
+Switzerland, Dec. 2011.
+[170] Humidity Sensor With Temperature Output HTU21D Datasheet, Texas
+Instrum., Dallas, TX, USA, Oct. 2013.
+[171] Humidity and Temperature Sensor IC SHT10, SHT11, SHT15 Datasheet,
+Sensirion, Stäfa, Switzerland, 2011.
+[172] Module,
+Raspberry
+Pi-Camera.
+Raspberry
+Pi
+Foundation.
+Sa
+WWW-dokumentti.
+Saatavissa.
+[Online].
+Available:
+https://www.
+raspberrypi.org/documentation/hardware/camera/[viitattu 1.4. 2020]
+[173] Semiconductor, Freescale. (Sep. 2010). Proximity Capacitive Touch
+Sensor Controller. MPR121. [Online]. Available: http://www.nxp.com/
+pages/proximity-capacitive-touch-sensor-controller:MPR121
+[174] Tekscan. (Jul. 2020). FlexiForce Standard Model A201. A201. [Online].
+Available: https://developer.microsoft.com/en-us/windows/kinect
+[175] APPLE, Docs. (2016). iBeacon for Developers-Apple Developer.
+[Online]. Available: https://developer.apple.com/ibeacon.
+[176] Y. L. Yang and C. Y. Choi, ‘‘Measurement of ﬂocculation activity of Sac-
+charomyces cerevisiae using a CdS photoconductive cell,’’ Biotechnol.
+Techn., vol. 12, no. 1, pp. 45–48, 1998.
+[177] HC-SR501 PIR Motion Detector, HC-SR501 datasheet, Unique-
+Bargains, China, 2016.
+[178] Color Light-to-Digital Converter With IR Filter TCS3472 Datasheet,
+TAOS, San Jose, CA, USA, 2012.
+[179] Muzdrikah, F. Siti, M. S. Nuha, and F. A. Rizqi, ‘‘Calibration of capacitive
+soil moisture sensor (SKU: SEN0193),’’ in Proc. 4th Int. Conf. Sci.
+Technol. (ICST), 2018.
+[180] Sparkfun, SparkFun Sound Detector. SEN 12642. Accessed: Apr. 2014.
+[Online]. Available: https://www.sparkfun.com/products/12642.
+[181] Ultrasonic Ranging Module HC-sr04, HC-SR04 datasheet, Freaks, Elec.,
+Shenzen, China, 2016.
+[182] Biosignasplux. Pulse and Oxygen in Blood Sensor (SPO2). Accessed:
+Jul. 2015. [Online]. Available: https://www.cooking-hacks.com/pulse-
+and-oxygen-in-blood-sensor-spo2-ehealth-medical
+[183] MaximIntegrated. Body Temperature Sensor. DS18B20. Accessed:
+Jul. 2019. [Online]. Available: https://www.cooking-hacks.com/body-
+temperature-sensor-ehealth-medical.
+[184] Standard
+Quick-Mount
+Bending
+Generator
+Piezoelectric
+Sensor
+Datasheet, Piezo Systems Inc., Cambridge, MA, USA, 2011.
+[185] D. R. Vincent, N. Deepa, D. Elavarasan, K. Srinivasan, S. H. Chauhdary,
+and C. Iwendi, ‘‘Sensors driven AI-based agriculture recommendation
+model for assessing land suitability,’’ Sensors, vol. 19, no. 17, p. 3667,
+Aug. 2019.
+[186] Y. Mekonnen, S. Namuduri, L. Burton, A. Sarwat, and S. Bhansali,
+‘‘Review—Machine learning techniques in wireless sensor network based
+precision agriculture,’’ J. Electrochem. Soc., vol. 167, no. 3, Jan. 2020,
+Art. no. 037522.
+[187] D. Shadrin, A. Menshchikov, A. Somov, G. Bornemann, J. Hauslage, and
+M. Fedorov, ‘‘Enabling precision agriculture through embedded sensing
+with artiﬁcial intelligence,’’ IEEE Trans. Instrum. Meas., vol. 69, no. 7,
+pp. 4103–4113, Jul. 2020.
+[188] J. J. Estrada-Lopez, A. A. Castillo-Atoche, J. Vazquez-Castillo, and
+E. Sanchez-Sinencio, ‘‘Smart soil parameters estimation system using an
+autonomous wireless sensor network with dynamic power management
+strategy,’’ IEEE Sensors J., vol. 18, no. 21, pp. 8913–8923, Nov. 2018.
+[189] K. P. Ferentinos and T. A. Tsiligiridis, ‘‘Adaptive design optimization
+of wireless sensor networks using genetic algorithms,’’ Comput. Netw.,
+vol. 51, no. 4, pp. 1031–1051, Mar. 2007.
+ABHINAV SHARMA received the B.Tech. degree
+from H. N. B. Garhwal University, Srinagar, India,
+in 2009, and the M.Tech. and Ph.D. degrees from
+the Govind Ballabh Pant University of Agricul-
+ture and Technology, India, in 2011 and 2016,
+respectively.
+He is currently working as an Assistant Profes-
+sor (Senior Scale) with the Department of Elec-
+trical and Electronics Engineering, University of
+Petroleum and Energy Studies, Dehradun. He has
+published number of research articles in Journals and Conferences. His
+research interests include adaptive array signal processing, smart antennas,
+artiﬁcial intelligence, and machine learning.
+ARPIT JAIN received the B.Eng. degree from
+SVITS, Indore, India, in 2007, the M.Eng. degree
+from Thapar University, Patiala, India, in 2009,
+and the Ph.D. degree from UPES, Dehradun, India,
+in 2018.
+He is currently working as an Assistant Pro-
+fessor (Selection Grade) with the Department of
+Electrical and Electronics Engineering, University
+of Petroleum and Energy Studies (UPES). He has
+over ten years of teaching and research experi-
+ence and a rich experience in curriculum design. His research interests
+include real-time control systems, fuzzy logic, machine learning, and neural
+networks.
+PRATEEK
+GUPTA
+(Student Member, IEEE)
+received the B.Tech. degree in computer sci-
+ence and engineering from Uttar Pradesh Tech-
+nical University, Lucknow, India, in 2008, the
+M.Tech. degree in computer science and engi-
+neering from the National Institute of Technology,
+Hamirpur, India, in 2011, and the Ph.D. degree
+from the Department of Computer Science and
+Engineering, Dr. B R Ambedkar National Institute
+of Technology, Jalandhar, India, in 2019. He is
+currently working as an Assistant Professor with the School of Computer
+Science, UPES, Dehradun. His research interests include optimization
+algorithms, wireless communications, and sensor networks.
+VINAY CHOWDARY received the B.Tech. and
+the
+M.Tech.
+degrees
+from
+MIST,
+JNTUH,
+Hyderabad, India, in 2005 and 2012, respectively,
+and the Ph.D. degree from UPES, Dehradun, India,
+in 2020. He is currently working as an Assistant
+Professor (Selection Grade) with the Department
+of Electrical and Electronics Engineering, Uni-
+versity of Petroleum and Energy Studies (UPES).
+He has an over 13 years of teaching and research
+experience and a rich experience in curriculum
+design. His research interests include embedded systems, the Internet of
+Things, wireless sensor networks, and advanced microcontrollers.
+VOLUME 9, 2021
+4873

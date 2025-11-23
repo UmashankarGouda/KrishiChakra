@@ -1,0 +1,40 @@
+### DOCUMENT INFO  
+- **Title/Topic**: Impact of agronomic practices on sustainable rice-wheat crop intensification in the eastern Indo-Gangetic Plains  
+- **Type**: Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed**: Rice-Wheat-Greengram system  
+- **Crops mentioned**: Rice, Wheat, Greengram  
+- **Regions covered**: Eastern Indo-Gangetic Plains (EIGP), India  
+
+### KEY FINDINGS  
+- **Yield improvements**:  
+  - Zero-till wheat (ZTW) produced **4.6% higher yield** than conventional tillage.  
+  - Direct-seeded rice (DSR) yields became comparable to puddled transplanted rice (PTR) by the fourth year.  
+  - System of Rice Intensification (SRI) and System of Wheat Intensification (SWI) showed comparable rice yields to conventional systems.  
+- **Soil health benefits**:  
+  - Conservation Agriculture (CA) practices (minimal soil disturbance, residue retention) improved soil health and reduced degradation.  
+  - Inclusion of greengram in rotation enhanced soil carbon and nitrogen accumulation.  
+- **Disease reduction**:  
+  - Residue retention reduced the need for burning, preserving soil microbiota and reducing greenhouse gas emissions.  
+- **Economic impact**:  
+  - CA-based systems yielded **10.8% higher net returns** than conventional systems.  
+  - Energy productivity under CA was **14–36% higher** than conventional methods.  
+
+### NUMERICAL DATA/TABLES  
+- **Water use**: DSR consumed **6.8% less water** than transplanted rice.  
+- **Global Warming Potential (GWP)**: CA-based systems reduced GWP by **8–10%** compared to conventional methods.  
+- **Residue burning impact**: Burning 1 ton of rice residue loses **5.5 kg N, 2.3 kg P, 25 kg K, and 1.2 kg S**.  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers**:  
+  - Adopt **zero-till practices** for wheat and greengram to improve yields and reduce costs.  
+  - Transition to **direct-seeded rice (DSR)** to save water and achieve comparable yields over time.  
+  - Integrate **greengram** into rotations to enhance soil health and profitability.  
+- **Best practices for crop rotation**:  
+  - Use **triple zero-till systems** (ZT DSR-ZT wheat-ZT greengram) for sustainability.  
+  - Retain **crop residues** to improve soil health and reduce environmental impact.  
+  - Prioritize **early wheat sowing** to avoid terminal heat stress and yield losses.  
+
+---  
+*Output is clean, structured, and ready for RAG applications.*

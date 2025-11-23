@@ -1,0 +1,35 @@
+### DOCUMENT INFO  
+- Title/Topic: Crop-Rotation Structured Classification Using Multi-Source Sentinel Images and LPIS for Crop Type Mapping  
+- Type: Research Paper  
+
+### KEY CONCEPTS  
+- Main crop rotations discussed: Inter-annual crop rotations, temporal-structured classification  
+- Crops mentioned: Corn, Barley, Other Cereals (e.g., common wheat), Rape seed, Protein (peas), Fiber plants, Forage crops, Permanent grassland, Fruit trees, Vegetables  
+- Regions covered: Study area in France (233 km² east of Paris), national 25-class land cover classification  
+
+### KEY FINDINGS  
+- **Yield improvements**: Temporal-structured classification improved overall accuracy (OA) by +2.6% to +4.6% depending on sensor data (Sentinel-1 radar, Sentinel-2 optical, or combined).  
+- **Soil health benefits**: Crop rotation patterns (e.g., Rape seed → Other Cereals at 97.09% probability) promote sustainable land use.  
+- **Disease reduction**: Not explicitly mentioned, but rotation logic reduces monoculture risks.  
+- **Economic impact**: Improved classification aids CAP (Common Agricultural Policy) monitoring and farmer declarations.  
+
+### NUMERICAL DATA/TABLES  
+- **Transition matrix examples**:  
+  - Rape seed → Other Cereals: 97.09%  
+  - Protein (peas) → Other Cereals: 94.85%  
+  - Permanent grassland stability: 94.45%  
+  - Fruit trees stability: 83.65%  
+- **Classification metrics**:  
+  - Radar-only OA: 89.2% (unstructured) → 91.9% (structured)  
+  - Optical-only OA: 82.4% → 87.0%  
+  - Combined OA: 89.0% → 91.6%  
+- **Parcel data**: Average area = 4.5 ha (σ = 6.5 ha).  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers**:  
+  - Adopt crop rotations like Rape seed → Cereals or Protein → Cereals for optimal classification and land use.  
+  - Maintain stable perennial crops (e.g., Permanent grassland, Fruit trees) for higher classification accuracy.  
+- **Best practices for crop rotation**:  
+  - Use multi-annual rotation data to improve remote sensing classification.  
+  - Avoid irregular rotations (e.g., Corn/Barley) that reduce classification accuracy.  
+  - Leverage LPIS (Land Parcel Identification System) for historical parcel-block data.

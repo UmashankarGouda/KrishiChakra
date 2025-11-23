@@ -1,0 +1,40 @@
+### DOCUMENT INFO  
+- **Title/Topic:** Crop rotations increased soil ecosystem multifunctionality by improving keystone taxa and soil properties in potatoes  
+- **Type:** Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed:** Potato–oat rotation (PO), potato–forage maize rotation (PFM), potato continuous cropping (PP)  
+- **Crops mentioned:** Potato (*Solanum tuberosum*), oat (*Avena sativa*), forage maize (*Zea mays*)  
+- **Regions covered:** Zhangjiakou, Hebei, China (meadow chestnut soil, elevation 1,420 m)  
+
+### KEY FINDINGS  
+- **Yield improvements:** Rotation cropping (PO and PFM) increased potato yield compared to continuous cropping (PP).  
+- **Soil health benefits:**  
+  - Increased soil pH and organic matter (SOM) in rotation systems.  
+  - Reduced total phosphorus (TP) and available phosphorus (AP) compared to PP.  
+  - Enhanced soil ecosystem multifunctionality (EMF) through improved microbial communities and keystone taxa.  
+- **Disease reduction:**  
+  - Rotation cropping reduced phytopathogenic fungi (e.g., *Alternaria*, *Fusarium*, *Verticillium dahiae*, *Gibberella*).  
+  - Increased beneficial fungi (e.g., *Schizothecium*, *Chaetomium*).  
+- **Economic impact:** Rotation cropping reduces reliance on fungicides, lowering environmental and health risks.  
+
+### NUMERICAL DATA/TABLES  
+- **Soil properties:**  
+  - pH: Higher in PO and PFM than PP.  
+  - SOM: Improved in rotation systems.  
+  - TP and AP: Significantly lower in PO and PFM than PP.  
+- **Microbial changes:**  
+  - Keystone taxa enriched in rotations: *Nitrospira.1*, *Lysinibacillus*, *Microlunatus.1*, *Sphingomonas.3*, *Bryobacter.1*, *Micromonospora*, *Schizothecium*.  
+  - Pathogenic fungi reduced by up to 50% in rotation systems.  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers:**  
+  - Adopt potato–oat or potato–forage maize rotations to improve soil health and yield.  
+  - Avoid continuous potato cropping to prevent soil degradation and disease buildup.  
+- **Best practices for crop rotation:**  
+  - Rotate with non-host crops (e.g., oats, maize) to disrupt pathogen cycles.  
+  - Monitor soil pH and SOM to sustain microbial diversity.  
+  - Reduce synthetic fungicide use by leveraging natural disease suppression.  
+
+---  
+*Output is cleaned, structured, and ready for RAG (Retrieval-Augmented Generation) applications.*

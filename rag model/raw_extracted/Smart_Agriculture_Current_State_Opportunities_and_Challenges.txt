@@ -1,0 +1,2300 @@
+Received 8 August 2024, accepted 19 September 2024, date of publication 1 October 2024, date of current version 14 October 2024.
+Digital Object Identifier 10.1109/ACCESS.2024.3471647
+Smart Agriculture: Current State, Opportunities,
+and Challenges
+BILAL AHMED
+1, HASNAT SHABBIR1, SYED RAMEEZ NAQVI
+1,2,
+AND LU PENG
+2, (Senior Member, IEEE)
+1Department of Electrical and Computer Engineering, COMSATS University Islamabad, Wah Campus, Wah Cantt. 47040, Pakistan
+2Department of Computer Science, Tulane University, New Orleans, LA 70118, USA
+Corresponding author: Lu Peng (lpeng3@tulane.edu)
+ABSTRACT
+Smart agriculture or precision farming is a rapidly evolving multidisciplinary field
+encompassing knowledge from agriculture, technology, data science, and environmental science to name
+a few. Amidst the large number of recent research publications related to smart agriculture and intelligent
+farming practices, a need arises to summarize their findings in a single consolidated review article. This
+work endeavors to summarize recent key technologies and applications of smart agriculture, delineate
+the prevalent challenges it faces, highlight its publicly available datasets for adoption, and offer some
+policy guidelines for stakeholders, assisting them in making informed decisions regarding technology
+adoption and investment. We conclude that smart agriculture can potentially revolutionize the agricultural
+sector, provided we overcome the challenges by ensuring effective collaboration among stakeholders,
+a strong infrastructure, digital literacy, adoption incentives, data privacy, interoperability, favorable policy
+frameworks, and continuous research and development.
+INDEX TERMS Smart agriculture, precision agriculture, agricultural technology, agricultural datasets, IoT
+in agriculture, smart sensors, applications of smart agriculture, success stories in agriculture.
+I. INTRODUCTION
+Smart agriculture (SA) proves to be a transformative
+paradigm in modern farming practices, using cutting-edge
+technologies to increase efficiency, productivity, and sus-
+tainability [1]. At its core, SA integrates a diverse array of
+technological components, starting with the deployment of
+sensors and Internet of Things (IoT) devices. SA operates on
+key principles such as optimization of resources, precision
+and accuracy in farming practices, data-driven decision-
+making, sustainability, and integration with market access
+platforms [2]. The key application areas of SA include crop
+growth, crop monitoring, livestock management, irrigation
+management, pest and disease control, supply chain opti-
+mization, and farm management systems etc.
+In the 1980s, the use of GPS technology laid the foundation
+for precision farming, enabling farmers to map and manage
+their fields with unprecedented accuracy. The rise of the
+IoT and sensor technologies ushered in an era of real-time
+The associate editor coordinating the review of this manuscript and
+approving it for publication was Amjad Mehmood
+.
+data collection from fields, enabling farmers to observe
+soil conditions, crop health, and weather patterns more
+comprehensively [3], [4]. The widespread application of
+artificial intelligence (AI) and machine learning in agriculture
+during the 2010s was a major advancement, where advanced
+analytics empowered farmers to make decisions based on
+data, optimizing resources and increasing productiveness.
+Drones and robotics gained prominence, automating various
+farming tasks and further enhancing precision [5], [6]. Thus
+the evolution of traditional farming into a technology-driven
+approach represents a profound shift in agricultural practices,
+enhancing efficiency, sustainability, and productivity. SA is
+continually evolving, integrating advanced technologies to
+optimize farming processes [7]. The emerging trends col-
+lectively aim to revolutionize farming methods to make
+them more effective, sustainable, and capable of meeting
+the increasing global food demand while minimizing the
+environmental impact [8]. Figure 1 shows an overview of SA.
+In [9], the three main development modes of SA i.e.
+facility agriculture, precision agriculture, and order agri-
+culture are discussed, along with the key technologies,
+144456
+ 2024 The Authors. This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 License.
+For more information, see https://creativecommons.org/licenses/by-nc-nd/4.0/
+VOLUME 12, 2024
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+FIGURE 1. Smart agriculture at a glance.
+applications, and security measures for each mode. From
+the perspectives of information technology and agricultural
+productivity, the security issues associated with SA are
+examined. Reference [10] explores the challenges and
+opportunities of SA related to environmental sustainability,
+economic viability, and social acceptability, as well as recent
+advancements in technologies like AI, cloud computing, big
+data analytics, blockchain, and IoT. Reference [11] focuses
+on the role of the IoT in SA, providing an overview of
+surveys and emerging agricultural IoT technologies including
+unmanned aerial vehicles, cloud/fog computing, software-
+defined networking, open-source IoT platforms, wireless
+technologies, and middleware platforms. Research gaps and
+future directions for agricultural IoT are also identified.
+Despite being available in abundance, the existing liter-
+ature on SA lacks comprehensive coverage of all related
+aspects, presenting a gap that this research aims to address.
+Table 1 summarizes focus of the existing survey articles
+in comparison to this work, and demonstrates the vast
+coverage of topics this manuscript promises. Our motivation
+behind this attempt is KNePSTreC-driven, which stands
+for advancing Knowledge on smart agricultural practices
+through effective Networking with our peers, influence
+Policy decisions, promote Sustainability, identify emerging
+Trends, and address critical Challenges in SA. Figure 2
+reflects our KNePSTreC framework. This study endeavors
+to provide a summary of recent advancements, benefits,
+challenges, datasets, emerging trends, and technologies in
+smart agriculture, all consolidated within a single review
+article −making it an encyclopedia on SA.
+For this survey, we have employed the Preferred Reporting
+Items for Systematic Reviews and Meta-Analyses (PRISMA)
+methodology. A literature search was done in the Science
+Direct Freedom Collection, Elsevier database, Web of
+Science - Core Collection, MDPI – Open access, and Springer
+Link Journals using the flowchart and the list of items of
+VOLUME 12, 2024
+144457
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+TABLE 1. Comparison with the existing survey articles.
+FIGURE 2. KNePSTreC framework summarizing motivation.
+this method. Keywords such as smart agriculture, precision
+agriculture, IoT in smart agriculture, IoT in agriculture, smart
+sensors, agricultural datasets, success stories in agriculture,
+and applications of smart agriculture were used to retrieve
+relevant studies. The searches were limited to the English
+language only. The research procedure was validated using
+the PRISMA checklist [29]. The authors identified records
+based on their titles and abstracts in the first step. Then the
+exclusion/inclusion criteria were applied to identify eligible
+records. Each author individually reviewed and resolved any
+differences in the titles and abstracts of the search results.
+Articles that discussed SA, PA, IoT in SA, IoT in agriculture,
+smart sensors, agricultural databases, success stories in agri-
+culture, and applications of smart agriculture were eligible
+for full-text screening. Disagreements were settled through
+conversation after full texts were reviewed by all authors
+for inclusion. Articles that discussed smart agriculture in
+relation to technological advancement were incorporated into
+this systematic review. Studies that used administrative or
+previously gathered data were also permitted as long as
+they met additional requirements. Studies released prior to
+2010 were not included in the analysis.
+The survey is organized as follows: Section II offers a
+concise overview of key technologies and innovations, while
+Section III delves into application areas. Section IV explores
+the benefits and challenges associated with smart agriculture,
+and Section V highlights relevant datasets. In Section VI,
+the initiatives and success stories in SA are summarized,
+followed by a discussion on future prospects in Section VII.
+Finally, Section VIII concludes the survey, encapsulating
+the key findings and insights gleaned. By presenting this
+detailed review, our aim is to contribute to the advancement
+of knowledge and development in SA practices.
+II. KEY TECHNOLOGIES AND INNOVATIONS
+PA involves utilizing technology to enhance crop yields,
+decrease resource wastage, and boost overall efficiency
+by strategically utilizing data, advanced technologies, and
+real-time information in agricultural management. Key
+elements include GPS technology, satellite imagery, and
+sensors for detailed data collection on conditions of soil,
+weather patterns, and crop health, which is then analyzed
+through machine learning and data analytics algorithms to
+produce practical insights. The main aim is to tailor inputs
+like water, fertilizers, and pesticides precisely to meet the
+unique needs of each field section, minimizing waste and
+optimizing resource utilization, while automated machinery
+and robotic systems are used for accurate tasks like planting,
+harvesting, monitoring, and maintenance.
+PA promotes sustainability in addition to increasing
+productivity by promoting responsible resource management.
+144458
+VOLUME 12, 2024
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+FIGURE 3. IoT applications in smart agriculture.
+By embracing the PA techniques, farmers can navigate chal-
+lenges such as climate change, variability in soil conditions,
+and the need for increased food production more efficiently
+and sustainably.
+A. INTERNET OF THINGS (IoT) DEVICES
+An Internet of Things (IoT) device is a physical device that is
+networked and has sensors, actuators, and software installed
+in it so that it can gather, exchange, and use data [30].
+These devices, ranging from everyday objects to specialized
+machinery, are designed to enhance connectivity, automation,
+and making decisions based on data in various domains.
+IoT devices are essential in advancing smart farming
+by gathering data in real time on various factors like soil
+moisture and animal behavior. This information is transmitted
+online, enabling remote monitoring and control for farm-
+ers [12]. In industries, IoT aids in predictive maintenance,
+inventory tracking, and energy optimization [31]. These
+devices also find use in smart homes, healthcare, and
+transportation, among others, showcasing their transforma-
+tive impact on different sectors through valuable insights,
+efficiency enhancement, and convenience [13], [14].
+Reference [32] delves into the most recent developments
+in IoT and sensor technologies for agriculture in addition to
+discussing their numerous applications. The major applica-
+tions include crop disease detection, irrigation monitoring,
+fertilizer administration, processing, logistics, forecasting,
+harvesting, monitoring climate conditions, and fire safety.
+Additionally, it presents a variety of sensors that can identify
+various plant diseases, livestock, moisture, nitrate, pH,
+electrical conductivity, CO2, temperature, humidity, light,
+weather station, water level, and flexible wearables. Figure 3
+shows some IoT applications in SA.
+Debnath and Saha [33] introduces a novel approach to SA
+by integrating IoT network with Machine Learning. The main
+innovation lies in its capability to identify brown-spot disease
+in rice paddies at an early stage, utilizing Convolutional
+Neural Networks (CNN) for the first time. Instead of the
+conventional methods, this project employs Deep Learning.
+It utilizes real-time data for image recognition and pre-
+processing. The pre-processing of data and feature extraction
+stages are facilitated by a custom image-processing tool.
+Additionally, an accompanying mobile application has been
+developed to provide farmers with access to this technology.
+Sarpal et Al. [35] address the challenges facing agri-
+culture, particularly in terms of low-yield production, due
+to limited infrastructure and resources. To overcome these
+challenges, the paper proposes an IoT-driven innovative
+approach. It introduces a sensor-based irrigation model
+that collects and analyzes data in the cloud for real-time
+monitoring. This data is then integrated into an Android
+application, providing farmers with an easy-to-use interface.
+The application allows farmers to manually control their
+farms or set timers for automated irrigation. Additionally,
+a Machine Learning model predicts suitable crops based on
+varying weather conditions. The application also includes a
+classified portal for direct buying and selling between farmers
+and customers, eliminating the need for intermediaries.
+A unique aspect of this research is the monitoring and
+control of farm equipment and crop prediction through a
+locally installed LCD display and keypad in farmers’ homes.
+Overall, the proposed framework aims to enhance agricultural
+productivity, improve farmers’ livelihoods, and contribute to
+economic growth in the nation in an energy-efficient and user-
+friendly manner.
+Gia et al. [34] have incorporated Edge and Fog computing,
+which involves processing data closer to the source, which
+is crucial for expanding functionality. In order to improve
+the capabilities of SA and farming applications, this study
+presents a system architecture and implementation that
+integrates AI at the local network level, or Edge AI. This is
+achieved through the utilization of Edge and Fog computing
+along with LPWAN technology for broad coverage. A sensor
+node, an Edge gateway, cloud servers, LoRa repeaters, a Fog
+gateway, and an end-user terminal application make up the
+suggested system. In particular, the study recommends using
+a CNN-based image compression technique at the Edge layer
+to provide data in a single message from several sensor nodes
+that are within the gateway’s range. Advanced compression
+methods are employed to significantly reduce data size, up to
+67%, while maintaining a low decompression error rate of
+below 5%. This innovative approach offers a novel solution
+for handling IoT data effectively. The system is depicted in
+Figure 4.
+Avcsar and Mowla [24] have thoroughly discussed five
+wireless communication protocols used in six diverse SA
+applications. They point out four challenges facing the SA
+adoption, especially in the context of wireless communica-
+tions. They believe that 1) cost, mainly driven by hardware
+resources and maintenance, 2) system security, 3) quality
+of communication, and 4) optimal system design are the
+primary challenges that still demand addressing. The authors
+further deliberate on the future trends in SA applications,
+which according to them, will mainly be driven by the quality
+and efficiency of communication. In another survey [27]
+Mowla et al. have collected a large number of recent works
+on the role of IoT and wireless sensor networks in the SA
+applications.
+VOLUME 12, 2024
+144459
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+FIGURE 4. 5-layer Sensor-Edge-Fog-Cloud-Terminal SA [34].
+B. ROBOTS AND DRONES
+Robots and Drones are revolutionizing SA by providing
+farmers and agronomists with advanced monitoring capa-
+bilities through aerial cameras and sensors. Robotics plays
+a vital role in the realm of SA, assisting in a new era of
+precision, efficiency, and automation. Agricultural robots are
+built to perform a multitude of functions, from planting
+and harvesting to weeding and monitoring, contributing to
+optimized farming practices [36]. In SA, robotic systems
+offer several advantages. They enhance operational efficiency
+by automating labor-intensive tasks, reducing dependence on
+manual labor, and mitigating labor shortages. Precision is a
+hallmark of agricultural robotics, with machines capable of
+precisely planting seeds, applying fertilizers, and performing
+other critical operations with minimal wastage [16].
+Reference [15] provides an overview of apple harvesting
+robots, including their development, structure, and operation
+process. It explains the principles behind apple harvesting
+robots and summarizes research on target fruit recognition,
+all-weather operation, and intelligent computing theory. The
+focus of research on apple harvesting robots is improving
+efficiency.
+These robots can navigate fields autonomously using GPS
+technology and advanced sensors, ensuring accurate and
+timely execution of tasks. By adopting robotic technolo-
+gies, farmers can improve productivity, optimize resource
+utilization, and respond effectively to the challenges posed by
+climate change and evolving agricultural demands, thereby
+contributing to a sustainable and technologically advanced
+future for agriculture [17], [37].
+Dharmasena et al. [38] introduce an automated system
+designed to efficiently manage climate and irrigation within
+a greenhouse. The system employs a cloud-connected mobile
+robot capable of monitoring humidity, soil moisture, temper-
+ature, and pH levels. Through image processing, the robot
+can detect unhealthy plants. Based on sensor data, a fuzzy
+controller controls the irrigation, humidifiers, and cooling
+and heating systems of the greenhouse. While onboard
+sensors record information about the surrounding climate,
+the mobile robot explores a pre-drawn greenhouse layout
+and gathers soil samples for analysis. Additionally, a robot-
+mounted camera captures images of the plants, allowing
+for detection of unhealthy crops utilizing leaf color and
+texture. Sharma and Borse [39] extensively outline the design
+and development of an autonomous mobile robot tailored
+for agriculture or plant nursery applications, encompassing
+plant disease detection, growth monitoring, and spraying
+functions for pesticides, fertilizers, and water. The proposed
+platform offers a compact, portable, and robust solution
+capable of autonomously surveying farmland. It efficiently
+identifies diseases, monitors plant growth, and administers
+appropriate measures such as spraying pesticides, fertilizers,
+and water as needed, enhancing overall crop management
+processes.
+Similarly, Drones offer a detailed perspective of agri-
+cultural areas, allowing for precise data collection and
+analysis [13], [40]. In SA, drones are utilized for various tasks
+such as monitoring crop health, assessing irrigation systems,
+and creating detailed field maps for PA practices [41].
+Farmers may make better crop management and more
+informed decisions thanks to the real-time data collected
+by drone flights, and enhance productivity while promoting
+sustainable farming practices [42]. Figure 5 shows drones in
+SA.
+In [43], authors gather corn field images weekly on a
+multi-spectral band using UAV and CubeSat from Planet
+Lab. They conduct various measurements with 28 nitrogen
+management treatments and four duplicates for experimen-
+tation. They specifically study 11 nitrogen management
+treatments and report that UAVs as well as CubeSat sensors
+can identify nitrogen stress before tasselling, and use the
+green chlorophyll index (CIg) to monitor changes in stress
+levels for various management strategies. The CIg of UAV
+data provides more detailed spatial information than CubeSat
+CIg due to its higher resolution when studying different
+nitrogen management practices in trial plots.
+144460
+VOLUME 12, 2024
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+FIGURE 5. Drone applications in smart agriculture.
+Shah et al. [44] suggest an automated method for plant
+identification utilizing a synthetic neural network capable
+of recognizing images of plant leaves using drones. The
+EfficientNet-B3 model is trained, resulting in an impressive
+success rate in identifying specific combinations of plants
+and diseases. To enhance accessibility, both an Android
+application and a website are developed, enabling farmers
+and users to conveniently detect diseases from plant leaves.
+Similarly, Kundu et al. [45] emphasize the advantages of
+employing drones in the identification and visualization of
+plant diseases. By employing an intelligent and automated
+data collection and classification system, the process of dis-
+ease detection becomes more streamlined and cost-efficient.
+They report that this method holds promise for notably
+enhancing the precision and effectiveness of plant disease
+detection and surveillance. Chen et al. [46] have used drones
+for irrigation systems management. They have achieved
+uniformity of water distribution for peanuts and cotton
+crops by using onboard cameras for irrigation uniformity
+evaluation.
+C. SENSORS
+Sensors are integral components of SA, driving the collection
+of real-time data essential for informed decision-making
+in farming practices. Deployed across fields and livestock,
+these sensors capture a spectrum of environmental parameters
+crucial for crop management. Soil moisture sensors gauge
+hydration levels, while temperature and humidity sensors
+provide insights into climate conditions [12].
+Crop health monitoring is achieved through a combination
+of various measurements by different sensors, such as
+moisture, nitrate, pH, electrical conductivity, CO2, temper-
+ature, humidity, light, water level, etc. Crop health is also
+monitored through sensors detecting chlorophyll levels and
+nutrient concentrations. Weather sensors offer precise data
+on atmospheric conditions. Livestock wearables incorporate
+sensors to monitor animal health and behavior. These devices
+collectively contribute to the optimization of resources and
+sustainable farming practices [47].
+A camera with a microcontroller, WiFi, smart remote
+devices, internet access, multiple sensing nodes for inter-
+facing, and sensor nodes in different places are all part of
+the SA system with IoT [48]. Such sensors include those
+that measure temperature, monitor soil moisture, use PIR
+technology to detect objects, people, and animals in the field,
+and GPS-based remote control robots that perform tasks like
+weeding, spraying, and moisture sensing.
+Electrical conductivity (EC) and pH sensors are crucial
+to smart agriculture because they allow soil and water
+conditions to be optimized to maximize crop output and
+growth. Farmers may use the real-time data from these
+sensors to make more informed decisions about fertilization
+and irrigation. EC sensors track salt levels to prevent soil
+degradation and manage nutrient levels. On the other hand,
+pH sensors evaluate the acidity of soil and water to ensure
+optimal nutrient availability. When combined with IoT tech-
+nologies, these sensors allow for accurate management and
+automated modifications, encouraging sustainable farming
+methods and effective use of resources. Farmers may lessen
+their influence on the environment and increase agricultural
+output by utilizing this technology.
+The advent of these smart sensors has enabled farmers
+to embrace precision agriculture, tailoring irrigation, fertil-
+ization, and pest control based on actual field conditions.
+This real-time monitoring not only enhances productiv-
+ity and yield but also optimizes resource application to
+minimize environmental impact. Sensors in SA exemplify
+the transformative power of technology, fostering a more
+efficient, sustainable, and data-driven approach to modern
+farming [49]. Garlando et al. [50] provide an overview of
+sensors utilized in SA, categorizing them into two main
+groups: sensors to measure the health of the plants and the
+quality of the fruit, as well as sensors to keep an eye on
+the environmental factors that support plant growth. It is
+shown that leveraging advancements in electronics and sensor
+technology is a straightforward approach to achieving various
+objectives in agriculture.
+D. ARTIFICIAL INTELLIGENCE (AI) AND MACHINE
+LEARNING (ML)
+AI and ML are at the forefront of revolutionizing SA, provid-
+ing farmers with powerful tools to optimize decision-making
+processes and enhance overall productivity. AI and ML
+algorithms leverage the large amounts of data gathered by
+drones, sensors, and other IoT devices in SA systems [51],
+[52]. In precision farming, AI systems use both historical
+and current data to forecast agricultural production, optimize
+irrigation schedules, and identify potential pest or disease
+outbreaks [53]. Machine learning algorithms can recognize
+patterns in crop images [54], helping farmers assess plant
+health and identify stress factors.
+Moreover, AI-driven robotic systems perform tasks like
+precision seeding, harvesting, and weeding, decreasing man-
+ual labor and increasing the effectiveness of operations [16].
+VOLUME 12, 2024
+144461
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+FIGURE 6. AI applications in smart agriculture.
+Predictive analytics based on machine learning can offer
+insights into market trends and assist farmers to make
+well-informed decisions regarding the selection of crop and
+pricing tactics [55]. The ability of AI and ML to adapt enables
+them to consistently improve and offer farmers precise and
+customized suggestions. In the ongoing development of
+SA, AI and ML will be crucial in transforming farming,
+ensuring it meets the growing worldwide need for food while
+becoming more sustainable, efficient, and resilient. Figure 6
+shows some of the AI applications in SA.
+Amara et al. [56] present a method to identify and
+categorize banana diseases using a CNN model. This
+approach aids farmers in promptly, economically, and effi-
+ciently detecting diseases affecting their crops. The system
+successfully identifies two banana diseases, Sigatoka and
+speckle, by analyzing images of affected leaves through
+a deep neural network model. Albuquerque et al. [57]
+introduce a deep learning method to identify water needs
+from aerial images of irrigation systems. This automated
+detection streamlines the irrigation system management,
+thereby decreasing maintenance time and costs. Initial
+findings, utilizing the Mask R-CNN neural network, indicate
+the feasibility of identifying water in UAV-captured images.
+The system identifies and prevents malfunctioning irrigation,
+which could lead to under or over-watering, by effectively
+implementing irrigation plans.
+Deep Learning has been successfully applied for crop
+classification and disease identification. Reenul et al. [58]
+have demonstrated that utilizing the attention-based deep
+network is a viable method for tackling such scenarios,
+specifically in the realm of weed and crop identification
+using a drone system. The main goal of this research is to
+examine vision transformers (ViT) and utilize them for plant
+categorization in the images captured by Unmanned Aerial
+Vehicles (UAV). Figure 7 shows an overview of the model
+utilized. Similarly, Qi et al. [59] have successfully applied a
+visual attention-based YOLOv5 model to the recognition of
+tomato disease identification.
+Mohyuddin et al. [23] have presented a comprehensive
+review of machine learning approaches for PA. The readers,
+exclusively interested in exploring the role of ML and AI in
+SA, are encouraged to go through the referenced article.
+E. DATA ANALYTICS
+Utilizing data analytics in SA is crucial for improving agricul-
+tural efficiency, providing instant evaluations, and increasing
+crop yields. The integration of modern technologies such
+as IoT devices, sensors, UAVs, and blockchain are used to
+generate vast quantities of data, which necessitate thorough
+examination to offer a scientific understanding of various
+factors affecting agriculture, including crop development,
+soil health, and climate variations. This data allows farmers
+to identify the optimal timing for planting, fertilizing, and
+harvesting, as well as identifying specific land areas requiring
+special attention. Furthermore, data analytics helps improve
+how resources like water are allocated to reduce waste
+and lessen environmental impacts. In the end, the use of
+data analytics in SA offers the potential to transform food
+production methods, making them more environmentally
+friendly, efficient, and resistant to challenges such as
+changing climates [60].
+Data analytics assist in assessing the effectiveness and
+impact of agricultural technologies and practices in SA
+through essential evaluation metrics. Important metrics
+encompass crop production, use of resources like water and
+fertilizers, consumption of water and energy, pest and disease
+control, soil health, economic feasibility, environmental
+influence, acceptance of new technology, accuracy and
+dependability of data, efficiency in operations, and quality
+and safety of food. Via these measurements, data analytics
+offer important information for improving agricultural activi-
+ties, promoting sustainable methods, and informing decisions
+made by farmers, researchers, and policymakers [61].
+Machine learning algorithms process vast datasets, which
+provide predictive models for disease outbreaks, crop produc-
+tivity, and efficient use of resources. These insights empower
+farmers to make strategic decisions, enhancing efficiency,
+minimizing risks, and promoting sustainable agricultural
+practices. Data analytics in smart agriculture not only
+improves operational productivity but also fosters resilience
+in the face of climate change, ensuring that modern farming
+remains adaptive, efficient, and capable of meeting the
+challenges of a rapidly evolving agricultural landscape [18].
+The promise of computing technologies such as machine
+learning, data analytics, wireless sensor networks, and the IoT
+in agriculture is demonstrated by Akhter et al. [4]. Through
+the use of data analytics and machine learning within an IoT
+system, it presents a prediction model for Apple disease in
+the apple orchards of the Kashmir valley.
+Rabhi et al. [62] have shown that addressing irrigation
+challenges in agriculture is paramount, with a shift from
+manual to smart irrigation driven by analyzing big data.
+This paper employs a method that integrates data mining
+algorithms like support vector machines and neural networks
+144462
+VOLUME 12, 2024
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+FIGURE 7. ViT model applied in smart agriculture [58].
+with remote sensing, and big data. The method entails
+integrating machine learning with the Apache Spark tool,
+Databricks, to forecast soil drought by measuring soil
+temperature and moisture.
+F. BLOCKCHAIN
+Blockchain technology is increasingly utilized in SA to boost
+transparency, traceability, and security in the agricultural
+supply chain. Through blockchain use in SA systems,
+a secure and unchangeable ledger is created to track all
+transactions from planting to distribution. This technology
+ensures data accuracy, minimizes the risk of fraud, and builds
+trust among stakeholders. Farmers can securely document
+crop production details, while consumers can follow the
+journey of agricultural products, promoting accountability
+and ethical standards. Smart contracts, also a part of
+blockchain technology, enable automatic and transparent
+agreement execution, simplifying tasks like payments and
+quality assurance. By leveraging blockchain in SA, the
+industry can address challenges related to food safety, fraud
+prevention, and supply chain efficiency, ultimately assisting
+in the development of a more sustainable, secure, and reliable
+global food system [63], [64]. Figure 8 shows some of the
+blockchain applications in SA.
+Kassanuk and Phasinam [65] shows that the involvement
+of middlemen, such as human-operated agencies, has led to
+issues like accessibility, efficiency, security, and immutabil-
+ity. This has resulted in financial losses, crop contamination,
+FIGURE 8. Blockchain in smart agriculture.
+and waste. Blockchain offers a decentralized ledger that
+records data from various parties involved in currency trans-
+actions. The central network depends on blockchain to record
+transaction history and related information, including com-
+pletion status, sender and recipient addresses, and transaction
+VOLUME 12, 2024
+144463
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+success details. Kassanuk and Phasinam [65] introduce a
+smart contracts framework employing blockchain. In this
+system, all participants in the blockchain-driven distribution
+network manage transactions among each other. To maintain
+openness and traceability across the whole supply chain
+ecosystem, all transactions are logged. To detect misuse,
+a group signature mechanism is employed. The system’s
+overall performance is evaluated based on trust between
+parties, system risk reduction, and transaction efficiency.
+III. APPLICATIONS OF SMART AGRICULTURE
+In what follows, we list a number of applications that have
+been revolutionized by the advent of SA technologies and
+practices.
+A. EFFECTIVE RESOURCE UTILIZATION
+SA transforms crop growth by leveraging advanced tech-
+nologies like IoT, sensors, and data analytics. Sensors
+monitor soil conditions, humidity, and nutrient levels in
+real time, providing precise data for informed decision-
+making [66]. Automated irrigation systems, guided by
+this data, ensure optimal water usage. Drones and satel-
+lites capture high-resolution images to assess crop health,
+identifying potential issues early [67]. Machine learning
+algorithms predict crop yields and recommend tailored
+strategies for planting and harvesting. SA thus fosters more
+efficient use of resources, reduces its negative effects on the
+environment, and enhances crop production for sustainable
+and technologically advanced farming practices [68].
+B. REMOTE CROP MONITORING
+SA revolutionizes crop monitoring through technologies like
+sensors, drones, and data analytics. Field-installed sensors
+gather real-time data on soil conditions, moisture levels, and
+nutrient content, ensuring precise resource management [69],
+[70]. Drones equipped with cameras and sensors conduct
+aerial surveillance, capturing detailed images for early
+detection of crop health issues, pests, and diseases [71].
+Data analytics processes this information, providing farmers
+with actionable insights. This proactive approach enables
+swift responses to potential challenges, optimizing crop
+health, minimizing losses, and eventually assisting in the
+development of more fruitful and sustainable crop monitoring
+methods in modern agriculture [72], [73].
+C. LIVESTOCK MANAGEMENT
+SA transforms livestock management by integrating IoT
+devices, wearables, and data analytics. Livestock wearables,
+equipped with sensors, monitor animal health, behavior, and
+location in real-time. This data is transmitted to a centralized
+system, allowing farmers to remotely track and assess the
+well-being of each animal [74]. Automated feeding systems
+and smart barns further streamline operations, ensuring opti-
+mal conditions for livestock. Predictive analytics algorithms
+help anticipate health issues, enabling early intervention.
+SA in livestock management enhances efficiency, minimizes
+resource wastage, and promotes animal welfare, fostering a
+more sustainable and technologically advanced approach to
+animal husbandry [75].
+D. IRRIGATION MANAGEMENT
+SA revolutionizes irrigation management through advanced
+technologies like IoT and data analytics. Weather data
+and soil moisture sensors guide automated irrigation sys-
+tems, ensuring precise and timely water delivery to crops.
+These systems are capable of being observed and man-
+aged remotely, thus optimizing water usage and reduc-
+ing wastage [76]. Drones equipped with sensors provide
+real-time aerial views, aiding in the assessment of irriga-
+tion effectiveness and identifying areas needing attention.
+Data analytics algorithms process this information, offering
+insights for improved irrigation scheduling [19]. SA in
+irrigation management enhances water efficiency, conserves
+resources, and promotes sustainable farming techniques in
+the scenario of evolving climate challenges.
+E. PEST AND DISEASE CONTROL
+SA transforms pest and disease control with innovative
+technologies. IoT devices and sensors continuously monitor
+fields, detecting early signs of pest infestations and dis-
+eases [77], [78]. Drones equipped with imaging technology
+provide high-resolution views, enabling precise identification
+of affected areas. This data is processed by ML and
+data analytics algorithms, predicting potential outbreaks
+and recommending targeted interventions [79]. Automated
+systems can then administer precise amounts of pesticides or
+deploy biological control methods. This data-driven approach
+in pest and disease control minimizes the chemicals used,
+lessens the environmental impact, and enhances overall crop
+health, all of which help to promote effective and sustainable
+farming practices in the SA era [26], [80].
+F. SUPPLY CHAIN MANAGEMENT
+SA optimizes supply chains by integrating IoT, blockchain,
+and data analytics technologies. Sensors and GPS devices
+monitor the movement of agricultural products at every stage,
+providing real-time data on location and conditions [81].
+Blockchain ensures transparent and secure record-keeping,
+enhancing traceability and accountability. Data analytics
+processes this information, offering insights for efficient
+inventory management, transportation planning, and demand
+forecasting. By minimizing delays, reducing waste, and
+improving overall transparency, SA contributes to a more
+streamlined, resilient, and sustainable agricultural supply
+chain, meeting the demands of modern markets and ensuring
+the delivery of quality products to consumers [82], [83].
+G. FARM MANAGEMENT
+SA introduces farm management systems, integrating tech-
+nologies like IoT and data analytics to streamline and enhance
+144464
+VOLUME 12, 2024
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+agricultural operations. These systems provide farmers with
+centralized platforms for monitoring and controlling various
+aspects of their farms [84]. Real-time data from sensors and
+devices offer awareness of soil conditions, crop health, and
+equipment status. Automated processes, guided by predictive
+analytics, optimize resource allocation, including water,
+fertilizers, and pesticides [85]. These intelligent systems
+also facilitate planning, scheduling, and decision-making,
+empowering farmers to enhance efficiency, minimize costs,
+and adopt sustainable practices for a more technologically
+advanced and productive farming future [20].
+IV. BENEFITS AND CHALLENGES
+A. BENEFITS
+The world is facing multiple challenges; climate change and
+overpopulation are the two primary of these. Climate-smart
+agriculture (CSA) is a beneficial approach to tackle these
+issues by focusing on increasing agricultural productivity,
+resilience, and reducing greenhouse gas emissions [86],
+[87], [88]. In developing countries, small-level farms play a
+very crucial role in the agriculture sector. So, making them
+adaptive to tackle climate effects is very important. CSA
+mainly focuses on the farmers’ benefit by helping them to
+have stable and higher incomes in a sustainable manner.
+The two most beneficial and commonly used CSA methods
+are water management and crop rotation. These methods
+can significantly reduce the adverse effects of unpredictable
+weather conditions. Additionally, having access to climate
+information services is becoming increasingly important as it
+helps in the realization of even basic CSA methods, like plan-
+tation and harvesting at the right times, much easier [22]. The
+adoption of CSA has highly benefited the farmers in Kenya
+to increase potato production. Potato yield increased by 61%
+with the use of seed management technology. This was
+followed by further increases of 50%, 41%, 40%, and 39%
+with soil nutrient management, crop improvement practices,
+and seed management, respectively [89]. In 2010, The Food
+and Agricultural Organization introduced CSA in Pakistan as
+an innovative and more sustainable approach in agriculture,
+aiming to the raise effective use of natural resources, boost
+adaptability, and increase agriculture productivity while also
+reducing greenhouse gas emissions. By implementing CSA
+practices and technologies, the adverse effects of climate
+change can be minimized on cotton products, both at the
+individual level and broader level. The results of this approach
+show several benefits, including harmonious germination,
+an increase in crop yields, bettered fiscal returns, and
+increased overall effectiveness in resource application [90].
+Crop yield prediction is a very challenging task in
+agriculture that has significant implications at various levels,
+from global to local fields. In order to predict crop yield,
+multiple factors need to be considered, like soil quality,
+weather conditions, environmental factors, and specific
+crop characteristics. Recently, Lin et al. [91] developed a
+transformer-based DNN model to predict crop yields at the
+county level across the United States while incorporating
+climate factors. The implementation of PA offers many
+benefits, including the capacity to increase crop yields,
+enhance crop quality, and reduce environmental impact [92].
+We may learn more about the interactions between variables
+such as the availability of water and nutrients, pests, diseases,
+and other field conditions during the growing season by
+modeling agricultural yields [93]. PA also acknowledges
+the fact that agricultural fields exhibit variations in both
+time and space, and it deals with these variations by
+gathering information, interpreting it, assessing it, and then
+implementing control measures. Different researchers have
+shown that PA is very beneficial when it comes to conserving
+water, energy in irrigation, and enhances profitability by
+ensuring the use of the right applications in different parts
+of farming [94].
+B. CHALLENGES
+Smart farming, a relatively recent concept, involves the use of
+information and communication technology for efficient farm
+management that prioritizes productivity, profitability, and
+the conservation of natural resources. However, the adoption
+of certain smart farming technologies in Brazil has faced
+challenges. These challenges include limited internet access
+in rural areas of Brazil, and the complexity of subjecting
+extensive data into software, which hinders analysis and
+interpretation. This highlights the issues with sourcing
+reliable information and technology features that should
+simplify data collection and analysis for better management.
+Additionally, the insufficient qualifications of the rural labor
+force present a significant socio-economic obstacle to the
+widespread adoption of smart farming technologies [95].
+Embracing CSA is seen as a viable approach to ensuring
+food security and effectively addressing climate risks.
+Various CSA technologies, such as agroforestry and soil and
+water conservation methods like zai, half-moon, tie/contour
+ridges, and conservation agriculture, along with climate
+information services, are considered promising for adapting
+to climate change in West Africa. Nevertheless, challenges
+like a lack of clear understanding and inadequate policy and
+financial support hinder CSA adoption. Addressing these
+challenges promptly is crucial. The success of CSA in West
+Africa hinges on farming households and national institutions
+comprehending the environmental, economic, and social
+challenges posed by climate change and taking proactive
+steps to develop and implement appropriate policies.
+SA is a field that leverages technology to efficiently over-
+see farming operations by monitoring and comprehending the
+ever-changing aspects of soil quality, crop growth, produc-
+tion, and management through creative methods. However,
+adopting this approach encounters several obstacles. One of
+the primary hurdles is the insufficient training in precision
+agriculture. Additionally, challenges stem from concerns
+related to the expenses involved, the returns on investment,
+and the absence of comprehensive analytics for SA data [96].
+VOLUME 12, 2024
+144465
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+The rapid growth of IoT technology has a big impact on
+various industries, including agriculture. This is changing
+the way agriculture is done and creating new opportunities.
+However, there are challenges to using IoT in agriculture,
+such as issues with the equipment and devices, setting up
+the necessary networks and infrastructure, dealing with signal
+interference, ensuring data security, and facing organizational
+hurdles. These challenges are connected to the deployment of
+smart agricultural technology and applications [97].
+The research [98] findings show that IoT components,
+which include both hardware and software, have made
+significant progress in the smart agriculture sector. Numerous
+advancements have been made, and IoT solutions have
+been deployed on extensive farms. Nonetheless, hurdles still
+hinder widespread IoT usage in farming. Economic efficiency
+and technical issues, along with policies promoting IoT
+integration in agriculture, are key concerns. In terms of
+economics, agriculture faces low profits due to inherent risks,
+prompting the need for a thorough cost-benefit analysis for
+IoT adoption in agriculture. Security and privacy are critical
+challenges as IoT in smart agriculture raises concerns about
+data and system protection from cyber threats. The limitations
+of IoT devices make the implementation of robust encryption
+algorithms challenging, leaving systems vulnerable to attacks
+that can compromise functionality.
+Mehedi at al. [99] have identified a number of challenges
+of utmost importance in remote-sensing based SA. Among
+several, they believe that irrigation decision support systems
+and spectral data challenges, are the two aspects that
+still demand attention by the scientific community. They
+argue that despite the technological advancements, seamless
+integration of various components, such as sensors on ground,
+and the airborne UAV, is essential, which puts stringent
+efficiency requirements on the decision support systems for
+real-time operations.
+One major challenge facing the adoption of SA worldwide,
+especially in the developing nations, which often gets over-
+looked, is the lack of regulations regarding farming practices.
+This usually leaves gaps in legal protection of farmers’ data,
+which in turn raises further challenges: 1) Unauthorized
+access of data collected through various sensors and devices,
+often leads to privacy breaches. 2) Unless the farmers’
+themselves control and manage their data, there can be an
+ambiguity over its ownership. This is a rising concern in the
+developing countries where farmers are usually not techni-
+cally trained, and therefore, data acquisition and management
+are often outsourced to third parties. 3) While data analytics
+provides valuable insights, it also raises a concern about data
+aggregation and usage. Refer to Amiri et al. [25], who have
+thoroughly discussed privacy issues in the context of SA.
+V. ONLINE DATASETS
+It is widely accepted that datasets serve as benchmarks
+for future research by allowing researchers to compare the
+performance of various techniques and algorithms. At the
+same time, the dissemination of valuable datasets allows
+FIGURE 9. Sub-set of images from corn dataset.
+researchers with different backgrounds and expertise to work
+with the same data, potentially leading to interdisciplinary
+insights and innovations. In what follows, we list and briefly
+discuss the datasets available to the public. Our selection
+is inspired by their number of citations, downloads, and
+usability:
+leftmargin=1em
+1) Wheat leaf rust [100]: Wheat leaf rust, mostly found
+in Hebei, Shanxi, Inner Mongolia, Henan, Shandong,
+Guizhou, Yunnan, Heilongjiang, and Jilin, is some-
+times referred to as wheat stalk rust and stripe rust.
+It mostly affects wheat leaves, causing sores that
+resemble herpes and infrequently developing in the
+leaf sheath and stem. There are 531 images in this
+dataset.
+2) Wheat leaf [101]: This dataset is derived from the wheat
+crop images in Ethiopia. The crop exhibited infections
+caused by viruses, bacteria, and fungi. Within this
+study, the primary focus was on two major diseases:
+Stripe Rust and Septoria in wheat leaf images. The
+dataset comprised 102 instances of healthy leaves,
+208 instances of leaves affected by stripe rust, and
+97 instances of septoria-detected wheat leaves.
+3) Rice leaf disease dataset [102]: The compiled dataset
+comprises 5932 images encompassing four disease
+types: Tungro (1308 images), Blast (1440 images),
+Brown spot (1600 images), and Bacterial Blight (1584
+images). The dataset is accessible in the data archive of
+Mendeley.
+4) Corn leaf disease [103]: This is an extensive dataset
+focused on classifying diseases affecting corn or
+maize plant leaves. It was created, utilizing data from
+the renowned PlantVillage and PlantDoc datasets.
+Throughout the dataset creation process, specific
+images deemed uninformative were eliminated to
+ensure data quality. This dataset contains 1306 Com-
+mon Rust images, 574 Gray Leaf Spot images, 1146
+Blight images, and 1162 healthy leaves images.
+5) Crop recommendation [104]: The dataset enables
+users to develop a predictive model for suggesting
+144466
+VOLUME 12, 2024
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+the most appropriate crops to cultivate on a specific
+farm, considering diverse parameters. It was created
+by enhancing existing datasets related to rainfall,
+climate, and fertilizer information, which were already
+accessible to India.
+6) Cauliflower [105]: The dataset comprises a total of
+656 images containing farmland scenes. Three different
+forms of diseases are found in each file: bacterial
+spot rot, black rot, and downy mildew. Furthermore,
+an image showcasing a disease-free cauliflower is
+incorporated.
+7) Cotton leaf [106]: This dataset contains images of
+cotton leaf. Digital cameras were used to create the
+dataset, and the pictures were acquired in various fields.
+It contains 127 images of Cercospora, Alternaria, Grey
+Mildew, Bacterial Blight, and healthy leaves.
+8) Rice
+brown
+spot
+[107]:
+This
+dataset
+contains
+3494 images of Rice flax spot. The latter is prevalent
+in all rice-growing areas of China, posing a significant
+threat to rice cultivation. The disease can manifest
+from the early seedling phase to the later harvest stage,
+causing harm to the above-ground sections of rice
+plants, primarily focusing on the leaves. The initial
+symptoms involve minor brown spots, which gradually
+enlarge into oval-shaped lesions.
+9) Diseases of maize in the field [108]: There are
+2355 images of maize leaves with different diseases in
+this dataset. The dataset includes cases of the following
+diseases: Phaeosphaeria Leaf Spot, Southern Rust,
+Common Rust, Northern Corn Leaf Blight, and Grey
+Leaf Spot. The cases were taken at different times and
+places in South Africa.
+10) Maize production dynamics [109]: This dataset con-
+tains information concerning maize cultivation within
+Salima District in central Malawi. The study primarily
+focused on the data from the 2004/05 season to the
+2018/19 season. The dataset includes details about
+the cultivated maize acreage, actual maize produc-
+tion, and maize yield. Additionally, it encompasses
+recorded rainfall and temperature data specific to the
+study region. The dataset also highlights maize prices
+prevailing within the research area.
+11) Temporal progress of maize diseases [110]: The dataset
+is intended to assess the temporal progress of four
+different diseases in corn: southern rust, Cercospora
+leaf spot, white spot, and spot blotch, as well as
+their correlation with climate variables. The latter
+includes daily temperature, humidity, rainfalls, and
+daily precipitation.
+12) Annotated apple leaf disease [111]: This dataset
+consists of labeled pictures of apple leaves afflicted by
+various diseases sourced from the PlantVillage dataset.
+It is used for research involving image segmentation
+methods. The annotations are structured following the
+Mask RCNN annotation style. This dataset is valuable
+in accurately locating the affected areas on the leaves,
+FIGURE 10. Sub-set of images from Banana & Maize Datasets.
+a crucial aspect for forecasting the extent of disease
+severity.
+13) Apple tree leaf disease segmentation [112]: This dataset
+includes apple leaf disease images from four different
+apple experimental demonstration stations at North-
+west China’s University of Agriculture and Forestry
+Science and Technology. The images were taken with
+a Glory V10 mobile phone, showing different disease
+levels. Around 51.9% were taken in a lab and 48.1%
+in cultivation fields, under various weather conditions
+and times of the day, featuring diseases like gray spot,
+leaf spot, rust, and brown spot.
+14) Banana leaf disease images [113]: This is a banana
+plant leaf image dataset. It was collected from various
+parts in the south of Ethiopia, where bananas are grown
+extensively, and Xanthomonas wilt and Segatoka leaf
+spot diseases are common. Using a smartphone, images
+of the diseased and healthy banana tree leaves were
+gathered.
+15) Sugarcane leaf disease dataset [114]: This is a
+Manually collected image dataset of sugarcane leaf
+diseases. It comprises five primary categories: Healthy,
+Mosaic, Redrot, Rust, and Yellow disease. These
+images were captured using smartphones of diverse
+configurations to ensure a wide range of variations.
+It is a balanced dataset encompassing 2569 images.
+The image sizes are not constant as they originate
+form various capturing devices; all images are in RGB
+format though.
+16) Diseased leaf and fruit images [115]: The dataset
+comprises images of diseased winter jujube fruits and
+leaves gathered in their natural environment, showing
+common symptoms from the greenhouse winter jujube
+orchard in Dali County, Shaanxi province, China.
+These images were captured using IoT sensors at
+various growth phases, with an additional 100 healthy
+leaves and fruits included as negative samples. Overall,
+the dataset contains 700 images of diseased winter
+jujube.
+17) Mango leaf disease [116]: The dataset comprises
+4000 mango leaf images, each with dimensions of
+VOLUME 12, 2024
+144467
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+FIGURE 11. Sub-set of images from Plant village dataset.
+240 × 320 pixels, presented in JPG format. Among
+these images, approximately 1800 showcase distinct
+mango leaves, while the remaining images have been
+generated through zooming and rotating techniques
+to provide variations. The dataset is categorized into
+eight classes, encompassing different health conditions
+of the mango leaves. Each of the eight classes
+contains 500 images, ensuring a balanced distribution
+of instances across the entire database.
+18) Tomato leaf disease [117]: The dataset comprises
+pictures of various diseases found on tomato leaves,
+such as Early Blight, Tomato Mosaic Virus, Leaf Mold,
+Target Spot, Tomato Yellow Leaf Curl Virus, Bacterial
+Spot, Spider Mites, Late Blight, Two Spotted Spider
+Mites, Septoria Leaf Spot, and Tomato Healthy. There
+are 1000 images for each disease, totaling 100,000
+images.
+19) Plant village [118]: This dataset contains images
+of diseased plant leaves together with their labels.
+It was developed for use in systems that identify plant
+diseases. It encompasses 54,303 images of different
+diseases in plant leaves.
+20) Cotton plant disease [119]: This dataset encompasses
+images of five major cotton plant diseases. The diseases
+are Army Worm, Aphids, Powdery Mildew, Bacterial
+Blight, and Target Spot. Furthermore, the dataset
+incorporates a collection of healthy leaf images, facil-
+itating comparison with the images of diseased plants.
+Its primary emphasis is on diseases that exclusively
+affect leaves, with no inclusion of reference images of
+diseases occurring on stems, buds, flowers, or bolls.
+21) Corn leaf diseases (NLB) [120]: The reason for creating
+this dataset was to use it with a drone to find and
+map diseases in Corn/Maize fields. The dataset has two
+main folders: one called Healthy for healthy plants,
+and the other called Diseased (NLB) for plants with
+diseases. Each folder has pictures that match its name.
+There are 4000 images in these two folders.
+22) Potato leaf disease detection [121]: This dataset
+contains images of potato leaf. There are three files in
+FIGURE 12. Sub-set of images from PlantifyDr Dataset.
+the dataset having 2000 images. Two files have images
+of potato leaves with diseases Early Blight and Night
+Blight and another file contains healthy potato leaf
+images.
+23) Potato and tomato [122]: This dataset is a smaller
+part of the well-known Plant Village dataset. It only
+focuses on two types of plants: potatoes and tomatoes.
+And each type has three categories: Early Blight, Late
+Blight, and Healthy. That makes a total of six groups.
+This dataset may be used to sort plants into different
+groups or to find a sick leaf. Pictures in the training
+set of this dataset were made smaller by cutting in the
+middle, turning a bit, and making them a bit blurry. This
+helped in making the dataset better for training.
+24) PlantifyDr [123]: This is a Plant leaf disease detection
+image dataset. It comprises 125,000 pictures in JPG
+format. These pictures show 10 different kinds of
+plants, including apples, bell peppers, cherries, citrus
+fruits, corn, grapes, peaches, potatoes, strawberries,
+and tomatoes. Altogether, 37 different diseases can
+affect these plants. The pictures have been changed a
+bit to make them better for learning, and are amenable
+to further alteration if desired.
+25) Grape disease [124]: Grape diseases result from
+diverse fungal, bacterial, and viral pathogens that can
+invade grapevines, causing decreased yield, inferior
+fruit quality, and sometimes, the demise of the plant
+itself. These diseases wield a substantial influence
+on the grape industry, impacting the production and
+quality of grapes utilized for wine, juice, and direct
+consumption. This dataset consists of 9027 images of
+grape leaves. It has four categories Black Rot, ESCA,
+Leaf Blight, and Healthy. Each category contains
+multiple images.
+26) GroundNut leaves [125]: This dataset is used to
+count leaves in a given image. It is part of a
+complete machine learning mobile app, which finds
+and measures how sick groundnut plants are. The
+dataset contains 166 images and their corresponding
+labeled XML files.
+144468
+VOLUME 12, 2024
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+27) Corn leaf infection [126]: This dataset comprises
+images of corn leaves partially infected by pests like
+Fall Army-worm. The dataset is divided into two
+categories: the first comprises 2000 healthy plant
+images, and the other comprises 2226 infected leaf
+images. A supplementary CSV file is also included
+that annotates the particular disease in the given image
+using a tool called VoTT.
+28) Crop statistics FAO - All countries [127]: Time-series
+statistics are recorded for 173 crops from 474 countries
+(including states, provinces and other affiliated regions
+in case of larger countries). These are divided into
+different groups like main crops, fruits, and vegetables.
+The datasets report land-use and yield for each category
+along with population of the region. The goal is to
+gather all this data to allow for efficient forecasting of
+essential crops worldwide.
+29) Crop production & climate change [128]: This dataset
+reports yield of wheat, maize, rice, and soybeans. They
+measure the amount of crops in tons for each hectare
+of land. This data is about crop production between
+2010 and 2016 for 48 countries.
+30) Mango leaf health detection [129]: This dataset
+includes pictures taken from drones that flew over
+mango farms and mango trees grown in backyards.
+There are 732 images along with their XML files.
+31) Leaf disease segmentation [130]: In this dataset, there
+are 588 images of leaves with disease and 588 masks
+of corresponding pictures. The latter show both the
+background and the sick parts of the leaves. The
+images, which were taken from PlantDoc images,
+belong to leaves from Apple, Bell Pepper, Corn
+and Potato. This dataset may be used for disease
+segmentation.
+32) Rice leaf diseases [131]: There are 120 JPG pictures of
+diseased rice leaves in this dataset. Based on the type
+of disease, the photos are categorized into three classes:
+bacterial leaf blight, brown spot, and leaf smut. Every
+class contains forty images.
+33) Rice leaves [132]: This dataset has pictures of four
+different diseases that affect rice plants. The pictures
+are split into two groups: one for training and one for
+validation. Each group has pictures sorted into four
+types based on the category of disease: BrownSpot,
+Healthy, Hispa, and LeafBlast. The pictures have
+different sizes and shapes. This dataset has 3355 JPG
+image files.
+Table 2 summarizes the characteristics of these datasets.
+Several other datasets that are not directly relevant to our
+study, but may be used as a reference for understanding
+the challenges associated with creating datasets and their
+usage, are also available online. One such example is by
+Mowla et al. [133], in which the authors have collected image
+samples for forest fire detection using a UAV, and highlighted
+several challenges in their usage. Any supervised machine
+learning application, be it the case of SA or not, will pose
+such challenges to researchers to overcome. Generally, there
+are four challenges that one must consider overcoming while
+adopting online datasets as follows:
+1) Data quality and accuracy: Inconsistent, erroneous,
+incomplete and outdated datasets are likely to yield
+inaccurate predictions.
+2) Standardization: Different datasets are likely to follow
+different standards and formats. This makes it practi-
+cally difficult −if not impossible −to integrate data
+from multiple sources and modalities.
+3) Initial cost: Being able to use online datasets often
+imposes a requirement for training beforehand, which
+is likely to incur a certain initial cost.
+4) Privacy and security: Depending upon the application,
+privacy and security of data may become crucial for
+confidentiality. This is specifically true for applications
+related to health, defence and agriculture.
+VI. SMART AGRICULTURE: RECOMMENDATIONS,
+INITIATIVES, AND SUCCESS STORIES
+A. RECOMMENDATIONS
+Agriculture plays a vital role in the economic growth.
+Therefore, introducing SA to rural regions will greatly benefit
+the farming sector. Approximately 85 percent of the global
+population will reside in developing nations by the year
+2030. This implies that these nations require data-driven
+cutting-edge technology to enhance agricultural output and
+boost their economies. This will not only boost their GDP
+but will also guarantee food security for their citizens.
+Emerging technologies such as AI, IoT, and smart farming
+are seen as possible answers to narrow the gap between
+food demand and production. When government initiatives
+back them, these technologies can improve agricultural
+sustainability and resource efficiency, resulting in higher
+production yields [134]. Smart farming utilizes IoT and
+cutting-edge technology to improve growing conditions by
+integrating sensors, computers, and AI. In Thailand, it greatly
+assisted farmers in enhancing crop yield and quality. Certain
+conditions must be met for it to be effective like farmers
+must be prepared to utilize this technology and be open to
+experimentation. The research [135] discovered that farmers
+are more inclined to embrace smart farming when they are
+prepared for the technology, embrace its utilization, engage
+in e-learning, and receive institutional support. Therefore
+farmers can be prepared by utilizing online resources
+and providing assistance from organizations before imple-
+menting smart farming techniques involving sensors and
+AI.
+Climate change is increasingly posing a major issue
+for agriculture globally. It presents a major obstacle for
+worldwide farming, impacting both the growth and delivery
+of crops. Therefore, numerous governments are investing
+significant funds into research for advanced agricultural
+practices. They are employing cutting-edge technologies
+VOLUME 12, 2024
+144469
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+TABLE 2. Datasets description.
+such as AI and data analytics. In South Korea, there is
+a migration of people from rural areas to urban centers,
+resulting in a shortage of farm workers. As per [136],
+utilizing innovative technologies can address these problems.
+CSA provides another approach to improve food security
+and reduce poverty. In areas such as Ghana, initiatives are
+directed towards enhancing farmers’ abilities to implement
+CSA techniques in various ecological regions. Factors like
+economic, environmental, socio-cultural, and institutional
+aspects contribute to shaping the adoption of CSA prac-
+tices [137].
+There are potential advantages of precision farming
+technologies, which have the ability to decrease costs and
+environmental impact. Yet, adoption levels in Europe have
+shown varying results. In Central Italy’s Plain of Tarquinia,
+a study revealed that farmers were hesitant to embrace preci-
+sion farming technologies [138]. In China, despite efforts to
+enhance food security at a national level, the implementation
+144470
+VOLUME 12, 2024
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+of precision technologies is not keeping pace with other
+advanced economies. In order to encourage more farmers
+to use advanced farming technologies (PFTs), policymakers
+and manufacturers need to ensure technology features meet
+farmers’ needs, engage end-users in the innovation process,
+and offer necessary support such as knowledge, training, and
+consulting services [139]. Agricultural policies play a crucial
+role in facilitating the exchange of information and initiatives
+among small and large farms. The recently introduced
+information-centric policies aim to provide farmers with
+increased knowledge about agriculture, enhance their farming
+abilities, and offer additional expert support. When farmers
+possess more information, they will not perceive the adoption
+of new technologies as challenging [140].
+In summary, advanced technologies like AI, IoT, and
+smart farming can help combat food shortages by boosting
+production and promoting sustainability. Innovative solutions
+such as CSA are required to address the challenges created by
+climate change. The precision farming techniques can help
+reduce environmental effects, but their adoption varies [141].
+Thus cooperative efforts, a strong infrastructure, digital
+literacy, adoption incentives, data security, standardization,
+and favorable policy frameworks are all necessary for the
+success of SA. Stakeholders may fully utilize SA to improve
+resilience, sustainability, and production in the agriculture
+industry by implementing these suggestions.
+B. SUCCESS STORIES
+Climate change is becoming a major threat to food security.
+Farmers are unable to tackle this situation due to their
+limited knowledge. A financed Bicol Agri-Water Project on
+Climate-Smart Farmers’ Field School (CFS) was introduced
+by USAID in Philippines with the aim of educating the
+farmers. This project spanned about two years covering two
+wet and two dry seasons in three different sites in Bicol,
+Philippines. Numerous farmers graduated from 14 villages
+−most of them were females. The CFS program conducted
+weekly sessions, focusing on imparting knowledge and skills
+related to climate change (CC) and CC adaptation (CCA)
+tactics. The outcomes of this endeavor were truly promising.
+The knowledge of the farmers on CC, CCA increased
+significantly, crop yield increased and the participating
+farmers experienced a welcome boost in their income levels.
+A commendable return on investment of 49 percent during
+the wet season and an even more impressive 55 percent
+during the dry season was reported. An increase in the women
+participation in decision-making was also observed [142].
+The Precision Farming Project was started in two districts
+of Tamil Nadu’s Dharmapuri and Krishnagiri in India in
+2004-05 [143]. It commenced with a small area of 250 acres
+and gradually increased to 500 acres in 2005-06 and 250 acres
+in 2006-07. The initial budget of this project was INR 720,000
+for a period of three years, and was carried out by the Tamil
+Nadu Agricultural University. Farmers received financial
+support of INR 75,000 for drip irrigation installation and
+another INR 40,000 for the expenses of crop production.
+The farmers were first hesitant to engage in this endeavor
+due to years of drought, the project gained momentum after
+the success of the first 100 farmers and the huge profits
+in their produce. Subsequently, more farmers registered for
+participation in the second and third years, mainly due to
+attractive 90 percent and 80 percent subsidies respectively.
+The Mau Escarpment generates a shadow of rain across
+the Nyando basin and relies on agriculture, primarily maize,
+beans, and sorghum, as well as mixed livestock farming. The
+region experiences an annual rainfall of 1200 mm: 35 percent
+in the minor rainy season, which runs from October to
+December, and the remaining 65 percent during the main
+growth season running from March to May. The onset of
+rainfall varies, affecting the length of the growing season, and
+hence the land degradation adversely affects farming.
+Three sizable community-based organizations–the North-
+East Community Development Programme (NECODEP),
+Friends of Katuk Odeyo (FOKO), and Kapsokale–have
+emerged from local communities in Nyando. These asso-
+ciations consist of around 50 volunteer groups from more
+than 100 villages, with 80 percent female members. Between
+2011 and 2015, they combined their resources to create
+the Nyando Innovation Fund, which increased from USD
+14,000 to USD 95,000. Nearly 90 percent of the local
+farmers sought loans from this fund, primarily for agricultural
+use, school fees, food, and small-scale trade activities. The
+community-based organizations have established smart farm
+(SF) demonstrations, including greenhouse farming and drip
+irrigation, as well as open field plots for seed multiplication.
+For knowledge and skill enhancement Farmers receive
+training through these organizations, often organized by
+Kenya’s Agricultural Society. They have also set up input
+supply shops, leading to a 50 percent decrease in the use
+of low-quality local seeds. Additionally, climate information
+services (CIS) access is also provided by these organizations,
+which are utilized by farmers for 70 percent of on-farm
+decision-making [28].
+The semi-arid climate of Wote, in eastern Kenya, is charac-
+terized by bimodal annual rainfall of 480-800 mm. The first
+rainy season, which occurs in April and May, results in short
+crop growth periods and significant water stress because of
+the uneven distribution of rainfall. In the last twenty years,
+around 25% of the land has been affected by erosion, mainly
+because of higher temperatures, increased evaporation, and
+occasional floods. This has negatively impacted agriculture,
+causing problems like pest infestations and disease outbreaks,
+such as Aflatoxin fungal disease, leading to significant
+losses in grain yields for farmers. Grain harvest has suffered
+particularly from aflatoxin fungal disease, leading to farmers
+losing up to half of their yield. Two community organizations
+(Kikumini-Muvau and Sinai-Kikeneani) were established in
+2014 in Wote. They initially covered seven villages and grew
+their membership in two years from 140 to 620 households,
+with women comprising 70%. The CBOs created a joint
+fund of 39,000 USD, allowing members to borrow for
+agricultural investments to manage climate-related risks.
+VOLUME 12, 2024
+144471
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+They also promote climate-smart technologies and crop
+diversification, with new crop varieties being cultivated by
+92% of households by the end of 2015, up from 72% in
+2014 [144].
+Overall, the research demonstrates that CSA techniques
+effectively increased levels of both macronutrients and
+micronutrients in the soil. These techniques are advantageous
+for adapting to climate change across various settings, with
+the most significant results seen in the surface layer of soil.
+VII. FUTURE TRENDS AND OUTLOOK
+A. EMERGING TRENDS
+In farming, new technologies are making a big difference.
+CSA and PA are two important ways we’re improving how
+we grow food. These methods help us deal with problems
+like climate change and bad weather [145]. CSA uses modern
+tools to make farms better, and helps the farmers produce
+more food while taking care of the environment. PA, on the
+other hand, helps them grow more crops without using too
+much water or other resources [146].
+Using fancy tools like sensors and drones helps farmers
+know more about their land. They can figure out when to
+water their crops and how to protect them from bugs. It’s
+like having a better plan for planting and growing food. New
+technology also means less work for farmers. Machines can
+help with tasks like planting seeds and picking fruits. This
+makes farming easier and helps us get more food from the
+same land. It’s all about making farming better and more
+sustainable for the future [146].
+Implementing blockchain technology guarantees the food
+supply chain’s traceability and transparency. It enables
+farmers and consumers to track produce from farm to table,
+ensuring authenticity, quality, and ethical practices. The
+integration of XAI, blockchain, and smart agriculture holds
+significant societal and economic consequences. Improved
+efficiency, transparency, and sustainability in the food
+industry could have positive impacts on farmers, consumers,
+and the global community [147].
+Urban agriculture and vertical farming are becoming
+more popular as cutting-edge responses to the problems
+caused by urbanization and land shortages. These methods
+entail cultivating crops in controlled urban contexts or in
+layers piled vertically. Technological advancements in LED
+lighting, hydroponics, and aeroponics are increasing the
+viability and efficiency of vertical farming. In comparison to
+conventional farming techniques, these systems require less
+water and land and can yield crops all year round, enhancing
+food security in metropolitan settings.
+The Internet of Things (IoT) is revolutionizing intelligent
+agriculture by integrating various systems and devices. The
+prevalence of smart sensors, automated irrigation systems,
+and tools for animal monitoring is on the rise. These devices
+provide continuous data streams that can be analyzed to
+improve decision-making processes. The advancement of 5G
+and low-power wide-area networks (LPWAN) is enabling
+real-time monitoring and control of agricultural activities,
+enhancing connectivity in remote areas. This interconnected-
+ness enables farmers to easily acquire and respond to crucial
+information, enhancing overall farm management.
+Integrating IoT devices for real-time monitoring of
+environmental conditions and crop health generates vast
+amounts of data. Data analytics assists in making decisions
+on this data, optimizing resources, and predicting trends.
+However, a framework is required to improve security and
+privacy in smart farms by utilizing blockchain technology’s
+decentralized nature. The framework must securely store
+and manage data from IoT devices in smart farms through
+a distributed ledger system, ensuring data integrity and
+validity [148].
+Robotics and automation are developing quickly, decreas-
+ing the need for physical labor and boosting operational effec-
+tiveness. Drones, autonomous harvesters, and autonomous
+tractors are being developed and used for planting, weeding,
+and harvesting. These devices provide consistent, accurate
+operation, which lowers labor costs and boosts production.
+Robotics and AI are combining to create more versatile and
+efficient robots that can learn and adapt to various farming
+settings.
+To collect and analyze data on temperature, humidity,
+pH levels, and soil moisture, IoT gateways connect a variety
+of sensors and equipment. By using edge computing to
+process data locally, these gateways lower latency and use
+less bandwidth. This enables real-time analysis for immediate
+actions like adjusting irrigation or activating pest control.
+They support multiple connectivity options, ensuring reliable
+data transmission even from remote areas, and integrate
+with cloud platforms for further analysis. Additionally,
+IoT gateways facilitate remote monitoring and control of
+agricultural operations. This allows farmers to adjust systems
+and receive alerts remotely. They also enable automation, and
+security through data encryption, and support applications
+like precision farming, livestock monitoring, greenhouse
+automation, and supply chain management, enhancing effi-
+ciency, sustainability, and productivity in agriculture. IoT
+gateways are rapidly advancing and revolutionizing the SA.
+There’s a growing emphasis on sustainability and envi-
+ronmental impact reduction. This includes the utilization
+of renewable energy sources, organic farming techniques,
+and minimizing chemical inputs. The implementation of 5G
+technology facilitates more rapid and secure data transmis-
+sion, crucial for real time monitoring, remote operation of
+machinery, and seamless connectivity in rural areas [149].
+Wearable devices for livestock and plants, such as smart
+collars for cattle or tags for monitoring individual plant
+health, provide continuous data on animal behavior and crop
+conditions, aiding in the early detection of health issues or
+stress factors [150].
+Cloud platforms allow the storage, processing, and analysis
+of large quantities of data gathered from IoT devices
+and sensors. These platforms offer flexible options for
+analyzing data in real-time and monitoring activities. This
+enables farmers to make educated choices regarding crop
+144472
+VOLUME 12, 2024
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+management, irrigation, and pest control. Cloud platforms
+improve operational efficiency and resource optimization by
+providing remote access to data and automation features.
+Additionally, they aid in incorporating advanced technologies
+like AI and machine learning, which result in predictive
+insights and enhanced farming techniques. In the end,
+cloud platforms help boost productivity, sustainability, and
+resilience in contemporary agriculture.
+The progress in biotechnology and genetic engineering,
+such as gene editing, is improving crop resilience, creating
+drought or disease-resistant types, and enhancing nutritional
+value [151]. These developments are aimed at transforming
+agricultural methods to be more effective, eco-friendly, and
+able to cope with growing worldwide food needs while
+reducing environmental harm.
+To ensure smooth data exchange between different devices
+and systems, communication protocols are essential in smart
+agriculture. These protocols like MQTT, Zigbee, LoRaWAN,
+and NB-IoT help in ensuring the dependable and effective
+transmission of data from sensors and IoT devices to
+central servers or cloud platforms. These protocols enable
+precision farming practices, enhance resource management,
+and improve agricultural productivity through real-time
+monitoring and control. The selection of protocol is based
+on factors such as range, power usage, and data rate needs,
+guaranteeing top-notch connectivity and efficiency in various
+agricultural settings. These protocols are developing very fast
+and are transforming the SA.
+B. POTENTIAL IN DEVELOPING COUNTRIES
+SA is really helpful in countries that are still growing. It helps
+fix problems and makes farming better. This kind of farming
+makes things work better by using resources well, so farmers
+can grow more food. This is super important in places where
+there isn’t a lot of stuff to use, and where the weather is
+changing a lot. Smart farming also helps farmers get the info
+they need. They can use apps on their phones or look things
+up online to learn about farming [152]. This helps them make
+smart choices about what to do on their farms. Plus, it’s easier
+for them to sell their crops and get fair prices because they can
+use websites and apps to connect with buyers. And they can
+get money and insurance more easily too.
+SA also helps farmers deal with changes in the weather.
+There are cool tools that help them use less water and know
+when bad weather might be coming. This way, they can be
+ready and keep their crops safe. Plus, smart farming creates
+more jobs in places where people live and work on farms.
+These new ideas help farmers use their resources better, make
+less waste, and grow more crops [153].
+In underdeveloped countries, technology can help small
+farmers improve their farms, leading to greater efficiency,
+higher crop production, and increased sale prices. SA helps
+improve crop yields and prevent pests and diseases to ensure
+food security. Advances in biotechnology for crop production
+can also improve food quality, especially in areas with limited
+access to nutritious food [154].
+Governments and support organizations are investing in
+smart farming to help farmers adopt these new technologies,
+offering discounted tools, training, and improved access to
+assistance. Smart farming practices also promote environ-
+mental sustainability by reducing chemical use, promoting
+soil health, and efficient water usage [155]. By incorporating
+these technologies, developing countries can enhance agri-
+cultural productivity, bridging the gap with wealthier nations
+and ensuring food security for everyone [156].
+C. RESEARCH DIRECTIONS
+Changes in SA research aims to improve farming by creating
+more efficient sensors to collect diverse information about
+soil, crops, insects, and weather. Scientists are enhanc-
+ing sensors to be more affordable and versatile in data
+collection, along with advancing computer capabilities for
+better data analysis and predictions. Additionally, researchers
+are utilizing big data tools to assist farmers in crop
+management, disease detection, and yield forecasting, while
+also focusing on ensuring seamless communication and
+energy efficiency among various farm devices for integrated
+functioning.
+Developing robust networks and protocols suitable for
+remote and rural areas is essential. Continued research is
+required on adaptable and cost-effective robotic systems for
+various farming tasks, like planting, harvesting, and precision
+spraying. Advancements in AI will assist in autonomous
+navigation and manipulation. Developing technologies in
+agriculture, such as precision irrigation systems, drought-
+tolerant crops, and weather prediction models, to aid with
+climate change adaptation. Exploration of blockchain tech-
+nology is essential in agriculture for transparent and secure
+data sharing across the supply chain. Research in scalability,
+interoperability, and real-time traceability of agricultural
+products is also needed [157].
+The research focus is on creating energy-efficient systems
+and renewable energy sources for smart agriculture to reduce
+dependence on fossil fuels and cut operational costs [158].
+Progress in biosensors for early disease, pest, and nutrient
+deficiency detection in crops, along with biotechnological
+methods for genetically modified crops with improved
+characteristics. Research works are in progress on developing
+user-friendly farm management software. It integrates dif-
+ferent data sources to offer farmers actionable insights for
+better decision-making and resource management [159]. The
+latest research investigates the social and economic effects
+of smart agriculture on rural communities, including factors
+like accessibility, affordability, and technology adoption by
+small-scale farmers [160], [161]. Research and discussions
+exploring creating appropriate regulatory frameworks and
+policies are also required. This will encourage innovation,
+protect data privacy, and promote widespread adoption
+of smart agriculture while considering ethical concerns
+[162], [163].
+Working together is really important for making research
+better and putting smart farming ideas into action. This means
+VOLUME 12, 2024
+144473
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+scientists, tech experts, farmers, people who make rules, and
+others all need to work together.
+VIII. KEY FINDINGS AND CONCLUSION
+Smart farming has made significant advancements, revo-
+lutionizing agricultural practices with the help of smart
+devices, AI, robots, and data in the past decade. Leveraging
+from these advancements, certain developing countries have
+taken an initiative to adopt smart agricultural practices, and
+have subsequently reported their findings, which deserve to
+be recognized at an international level. In the following,
+we summarize the key findings of our humble effort in
+collecting several such works, which have individually
+contributed towards the development and/or promotion of
+smart agriculture framework and practices.
+1) Several innovative technologies, such as sensors and
+drones for real-time monitoring of soil, weather,
+and crop conditions, AI and machine learning algo-
+rithms for predictive analytics, crop disease detection,
+and yield prediction, and blockchain for ensuring
+transparency and traceability in the supply chain,
+greatly improve the smart farming practices. This in
+turn allows farmers to optimize resources and make
+informed decisions.
+2) Optimizing inputs like water, fertilizers, and pesticides
+demonstrate enhanced productivity. At the same time,
+use of robots for planting, harvesting, and weeding
+ensure environmentally friendly farming practices,
+such as reducing chemical usage to preserve nature
+while ensuring ample food production. Efficient water
+usage based on real-time data allows for water conser-
+vation.
+3) Availability of open access online datasets for soil
+health, weather patterns, and crop yields encourage
+domestics farmers contribute their own data to improve
+models and predictions, and be an active part of the
+ecosystem.
+4) Rural economies witness jobs creation, improving
+infrastructure, and increasing market and financial
+access. Technology is developed to help farmers adapt
+to climate change by offering resilient crops, water
+management solutions, and predictive tools for extreme
+weather. The data gathered drives innovation, from AI
+predictive models to tailored farming solutions.
+5) The inclusion of SA by small-scale farmers in devel-
+oping regions is hindered by affordability, connectivity
+issues, and lack of training. Concerns surrounding
+privacy, security, and ownership arise during the
+gathering and sharing of large amounts of agricultural
+data, leading to the need for strong data protection
+measures. Inadequate infrastructure and poor connec-
+tivity in remote or underdeveloped areas impede the
+effective use of smart agriculture technologies. The
+technological gap between large commercial farms and
+small-scale farmers widens, hindering the potential
+benefits of smart agriculture.
+6) Developing appropriate regulations and policies that
+promote innovation and address ethical, legal, and
+social implications is essential.
+7) Overall, while SA can potentially revolutionize the
+agricultural sector, overcoming challenges related to
+accessibility, data security, and policy frameworks is
+necessary for its full potential to be realized. Collab-
+oration among stakeholders, continuous research and
+development, and a focus on inclusion is vital to ensure
+that smart agriculture benefits all farmers, enhances
+global food security, and encourages sustainable agri-
+cultural practices.
+REFERENCES
+[1] H. Bach and W. Mauser, ‘‘Sustainable agriculture and smart farming,’’
+in Earth Observation Open Science and Innovation. Cham, Switzerland:
+Springer, 2018, pp. 261–269.
+[2] E. F. I. Raj, M. Appadurai, and K. Athiappan, ‘‘Precision farming in
+modern agriculture,’’ in Smart Agriculture Automation Using Advanced
+Technologies: Data Analytics and Machine Learning, Cloud Architecture,
+Automation and IoT. Berlin, Germany: Springer, 2022, pp. 61–87.
+[3] M. Raj, S. Gupta, V. Chamola, A. Elhence, T. Garg, M. Atiquzzaman, and
+D. Niyato, ‘‘A survey on the role of Internet of Things for adopting and
+promoting agriculture 4.0,’’ J. Netw. Comput. Appl., vol. 187, Aug. 2021,
+Art. no. 103107.
+[4] R. Akhter and S. A. Sofi, ‘‘Precision agriculture using IoT data analytics
+and machine learning,’’ J. King Saud Univ.-Comput. Inf. Sci., vol. 34, no. 8,
+pp. 5602–5618, Sep. 2022.
+[5] K. R. Mukhamedova, N. P. Cherepkova, A. V. Korotkov, Z. B. Dagasheva,
+and M. Tvaronaviciene, ‘‘Digitalisation of agricultural production for
+precision farming: A case study,’’ Sustainability, vol. 14, no. 22, p. 14802,
+Nov. 2022.
+[6] A. Palaniswamy and Y. Rosaiah, ‘‘Precision farming with GIS: A way
+to meet the challenges of globalization,’’ in Proc. 1st Nat. Conf. Agri-
+Informatics (NCAI), Dharwad, India, 2002, pp. 44–46.
+[7] L. Ahmad, S. S. Mahdi, L. Ahmad, and S. S. Mahdi, ‘‘Feasibility and
+evaluation of precision farming,’’ in Satellite Farming: An Information
+and Technology Based Agriculture. Cham, Switzerland: Springer, 2018,
+pp. 149–166.
+[8] R. Sahoo, ‘‘Precision farming: Concepts, limitations, and opportunities
+in Indian agriculture,’’ in Resource Conserving Techniques in Crop
+Production. Jodhpur, India: Scientific Publishers, 2011, pp. 439–450.
+[9] X. Yang, L. Shu, J. Chen, M. A. Ferrag, J. Wu, E. Nurellari, and K. Huang,
+‘‘A survey on smart agriculture: Development modes, technologies, and
+security and privacy challenges,’’ IEEE/CAA J. Autom. Sinica, vol. 8, no. 2,
+pp. 273–302, Feb. 2021.
+[10] M. Thangatamilan, S. J. Suji Prasad, and S. Vivekanandan, ‘‘Smart
+agriculture: A survey on challenges and opportunities with recent advance-
+ments,’’ in Advances in Automation, Signal Processing, Instrumentation,
+and Control, V. L. N. Komanapalli, N. Sivakumaran, and S. Hampannavar,
+Eds., Singapore: Springer, 2021, pp. 1783–1793.
+[11] O. Friha, M. A. Ferrag, L. Shu, L. Maglaras, and X. Wang, ‘‘Internet
+of Things for the future of smart agriculture: A comprehensive survey
+of emerging technologies,’’ IEEE/CAA J. Autom. Sinica, vol. 8, no. 4,
+pp. 718–752, Apr. 2021.
+[12] M. Pyingkodi, K. Thenmozhi, K. Nanthini, M. Karthikeyan, S. Palarimath,
+V. Erajavignesh, and G. B. A. Kumar, ‘‘Sensor based smart agriculture
+with IoT technologies: A review,’’ in Proc. Int. Conf. Comput. Commun.
+Informat. (ICCCI), Jan. 2022, pp. 1–7.
+[13] N. Islam, M. M. Rashid, F. Pasandideh, B. Ray, S. Moore, and R. Kadel,
+‘‘A review of applications and communication technologies for Internet of
+Things (IoT) and unmanned aerial vehicle (UAV) based sustainable smart
+farming,’’ Sustainability, vol. 13, no. 4, p. 1821, Feb. 2021.
+[14] S. Terence and G. Purushothaman, ‘‘Systematic review of Internet of
+Things in smart farming,’’ Trans. Emerg. Telecommun. Technol., vol. 31,
+no. 6, p. e3958, Jun. 2020.
+[15] W. Jia, Y. Zhang, J. Lian, Y. Zheng, D. Zhao, and C. Li, ‘‘Apple harvesting
+robot under information technology: A review,’’ Int. J. Adv. Robotic Syst.,
+vol. 17, no. 3, May 2020, Art. no. 1729881420925310.
+144474
+VOLUME 12, 2024
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+[16] T. Wang, B. Chen, Z. Zhang, H. Li, and M. Zhang, ‘‘Applications of
+machine vision in agricultural robot navigation: A review,’’ Comput.
+Electron. Agricult., vol. 198, Jul. 2022, Art. no. 107085.
+[17] B. Zhang, Y. Xie, J. Zhou, K. Wang, and Z. Zhang, ‘‘State-of-the-art robotic
+grippers, grasping and control strategies, as well as their applications
+in agricultural robots: A review,’’ Comput. Electron. Agricult., vol. 177,
+Oct. 2020, Art. no. 105694.
+[18] H. Tian, T. Wang, Y. Liu, X. Qiao, and Y. Li, ‘‘Computer vision technology
+in agricultural automation—A review,’’ Inf. Process. Agricult., vol. 7, no. 1,
+pp. 1–19, 2020.
+[19] D. Vallejo-Gómez, M. Osorio, and C. A. Hincapié, ‘‘Smart irrigation
+systems in agriculture: A systematic review,’’ Agronomy, vol. 13, no. 2,
+p. 342, Jan. 2023.
+[20] R. Alfred, J. H. Obit, C. P. Chin, H. Haviluddin, and Y. Lim, ‘‘Towards
+paddy rice smart farming: A review on big data, machine learning, and
+rice production tasks,’’ IEEE Access, vol. 9, pp. 50358–50380, 2021.
+[21] S. Panno, S. Davino, A. G. Caruso, S. Bertacca, A. Crnogorac, A. Mandic,
+E. Noris, and S. Matic, ‘‘A review of the most common and economically
+important diseases that undermine the cultivation of tomato crop in the
+Mediterranean basin,’’ Agronomy, vol. 11, no. 11, p. 2188, Oct. 2021.
+[22] T. Mizik, ‘‘Climate-smart agriculture on small-scale farms: A systematic
+literature review,’’ Agronomy, vol. 11, no. 6, p. 1096, May 2021.
+[23] G. Mohyuddin, M. A. Khan, A. Haseeb, S. Mahpara, M. Waseem, and
+A. M. Saleh, ‘‘Evaluation of machine learning approaches for precision
+farming in smart agriculture system: A comprehensive review,’’ IEEE
+Access, vol. 12, pp. 60155–60184, 2024.
+[24] E. Avsar and M. N. Mowla, ‘‘Wireless communication protocols in smart
+agriculture: A review on applications, challenges and future trends,’’ Ad
+Hoc Netw., vol. 136, Nov. 2022, Art. no. 102982.
+[25] M. Amiri-Zarandi, R. A. Dara, E. Duncan, and E. D. G. Fraser, ‘‘Big
+data privacy in smart farming: A review,’’ Sustainability, vol. 14, no. 15,
+p. 9120, Jul. 2022.
+[26] S. Bangari, P. Rachana, N. Gupta, P. S. Sudi, and K. K. Baniya, ‘‘A survey
+on disease detection of a potato leaf using CNN,’’ in Proc. 2nd Int. Conf.
+Artif. Intell. Smart Energy (ICAIS), Feb. 2022, pp. 144–149.
+[27] M. N. Mowla, N. Mowla, A. F. M. S. Shah, K. M. Rabie, and T. Shongwe,
+‘‘Internet of Things and wireless sensor networks for smart agriculture
+applications: A survey,’’ IEEE Access, vol. 11, pp. 145813–145852, 2023.
+[28] J. W. Recha, P. Kimeli, V. Atakos, M. A. Radeny, and C. Mungai,
+‘‘Stories of success: Climate-smart villages in East Africa,’’ CGIAR Res.
+Program Climate Change, Agricult. Food Secur. (CCAFS), Wageningen,
+The Netherlands, Tech. Rep., 2017.
+[29] ABC. (2020). Prisma 2020 Checklist. [Online]. Available: https://www.
+prisma-statement.org/prisma-2020-checklist
+[30] S. Duang-Ek-Anong, S. Pibulcharoensit, and T. Phongsatha, ‘‘Technology
+readiness for Internet of Things (IoT) adoption in smart farming in
+Thailand,’’ Int. J. Simul., Syst., Sci. Technol., vol. 20, pp. 1–6, Oct. 2019.
+[31] P. Phupattanasilp and S.-R. Tong, ‘‘Augmented reality in the integrative
+Internet of Things (AR-IoT): Application for precision farming,’’ Sustain-
+ability, vol. 11, no. 9, p. 2658, May 2019.
+[32] A. Morchid, R. El Alami, A. A. Raezah, and Y. Sabbar, ‘‘Applications of
+Internet of Things (IoT) and sensors technology to increase food security
+and agricultural sustainability: Benefits and challenges,’’ Ain Shams Eng.
+J., vol. 15, no. 3, Mar. 2024, Art. no. 102509.
+[33] O. Debnath and H. N. Saha, ‘‘An IoT-based intelligent farming using
+CNN for early disease detection in rice paddy,’’ Microprocess. Microsyst.,
+vol. 94, Oct. 2022, Art. no. 104631.
+[34] T. N. Gia, L. Qingqing, J. P. Queralta, Z. Zou, H. Tenhunen, and
+T. Westerlund, ‘‘Edge AI in smart farming IoT: CNNs at the edge and fog
+computing with LoRa,’’ in Proc. IEEE AFRICON, May 2019, pp. 1–6.
+[35] D. Sarpal, R. Sinha, M. Jha, and P. Tn, ‘‘AgriWealth: IoT based farming
+system,’’ Microprocess. Microsyst., vol. 89, Mar. 2022, Art. no. 104447.
+[36] A. Pretto, S. Aravecchia, W. Burgard, N. Chebrolu, C. Dornhege, T. Falck,
+F. Fleckenstein, A. Fontenla, M. Imperoli, and R. Khanna, ‘‘Building
+an aerial–ground robotics system for precision farming: An adaptable
+solution,’’ IEEE Robot. Autom. Mag., vol. 28, no. 3, pp. 29–49, Sep. 2021.
+[37] C. Verdouw, B. Tekinerdogan, A. Beulens, and S. Wolfert, ‘‘Digital twins
+in smart farming,’’ Agricult. Syst., vol. 189, Apr. 2021, Art. no. 103046.
+[38] T. Dharmasena, R. D. Silva, N. Abhayasingha, and P. Abeygunawardhana,
+‘‘Autonomous cloud robotic system for smart agriculture,’’ in Proc.
+Moratuwa Eng. Res. Conf. (MERCon), Jul. 2019, pp. 388–393.
+[39] S. Sharma and R. Borse, ‘‘Automatic agriculture spraying robot with smart
+decision making,’’ in Proc. Int. Symp. Intell. Syst. Technol. Appl. Cham,
+Switzerland: Springer, 2016, pp. 743–758.
+[40] S. Tahilyani, S. Saxena, D. A. Karras, S. K. Gupta, C. K. Dixit, and B.
+Haralayya, ‘‘Deployment of autonomous vehicles in agricultural and using
+Voronoi partitioning,’’ in Proc. Int. Conf. Knowl. Eng. Commun. Syst.
+(ICKES), Dec. 2022, pp. 1–5.
+[41] Y. Cai, K. Guan, E. Nafziger, G. Chowdhary, B. Peng, Z. Jin, S. Wang,
+and S. Wang, ‘‘Detecting in-season crop nitrogen stress of corn for field
+trials using UAV- and CubeSat-based multispectral sensing,’’ IEEE J. Sel.
+Topics Appl. Earth Observ. Remote Sens., vol. 12, no. 12, pp. 5153–5166,
+Dec. 2019.
+[42] S. Yang, L. Hu, H. Wu, H. Ren, H. Qiao, P. Li, and W. Fan, ‘‘Integration
+of crop growth model and random forest for winter wheat yield estimation
+from UAV hyperspectral imagery,’’ IEEE J. Sel. Topics Appl. Earth Observ.
+Remote Sens., vol. 14, pp. 6253–6269, 2021.
+[43] Y. Cai, K. Guan, E. D. Nafziger, G. Chowdhary, B. Peng, Z. Jin, and
+S. W. Wang, ‘‘Detecting in-season crop nitrogen stress of corn for field
+trials using UAV- and CubeSat-based multispectral sensing,’’ in Proc. AGU
+Fall Meeting Abstr., Dec. 2019, pp. 5153–5166.
+[44] S. A. Shah, G. M. Lakho, H. A. Keerio, M. N. Sattar, G. Hussain,
+M. Mehdi, R. B. Vistro, E. A. Mahmoud, and H. O. Elansary, ‘‘Application
+of drone surveillance for advance agriculture monitoring by Android
+application using convolution neural network,’’ Agronomy, vol. 13, no. 7,
+p. 1764, Jun. 2023.
+[45] N. Kundu, G. Rani, V. S. Dhaka, K. Gupta, S. C. Nayak, S. Verma,
+M. F. Ijaz, and M. Woúniak, ‘‘IoT and interpretable machine learning
+based framework for disease prediction in pearl millet,’’ Sensors, vol. 21,
+no. 16, p. 5386, Aug. 2021.
+[46] A. Chen, V. Orlov-Levin, and M. Meron, ‘‘Applying high-resolution
+visible-channel aerial imaging of crop canopy to precision irriga-
+tion management,’’ Agricult. Water Manage., vol. 216, pp. 196–205,
+May 2019.
+[47] Y. Ye, S. Shen, P. Guo, X. Xu, C. Wan, and Z. Xu, ‘‘A portable Halbach
+NMR sensor for detecting the moisture content of soybeans,’’ IEEE Trans.
+Instrum. Meas., vol. 71, pp. 1–11, 2022.
+[48] P. Priya and G. Kaur, ‘‘Smart sensors for smart agriculture,’’ in Artificial
+Intelligence and IoT-Based Technologies for Sustainable Farming and
+Smart Agriculture. Hershey, PA, USA: IGI Global, 2021, pp. 175–191.
+[49] P. Rajak, A. Ganguly, S. Adhikary, and S. Bhattacharya, ‘‘Internet
+of Things and smart sensors in agriculture: Scopes and challenges,’’
+J. Agricult. Food Res., vol. 14, Dec. 2023, Art. no. 100776.
+[50] U. Garlando, L. Bar-On, A. Avni, Y. Shacham-Diamand, and D. Demarchi,
+‘‘Plants and environmental sensors for smart agriculture, an overview,’’ in
+Proc. IEEE SENSORS, Oct. 2020, pp. 1–4.
+[51] J. Alejandrino, R. Concepcion, V. J. Almero, M. G. Palconit, A. Bandala,
+and E. Dadios, ‘‘A hybrid data acquisition model using artificial
+intelligence and IoT messaging protocol for precision farming,’’ in Proc.
+IEEE 12th Int. Conf. Humanoid, Nanotechnol., Inf. Technol., Commun.
+Control, Environ., Manage. (HNICEM), Dec. 2020, pp. 1–6.
+[52] B. T. Kitano, C. C. T. Mendes, A. R. Geus, H. C. Oliveira, and
+J. R. Souza, ‘‘Corn plant counting using deep learning and UAV images,’’
+IEEE Geosci. Remote Sens. Lett., early access, Aug. 8, 2019, doi:
+10.1109/LGRS.2019.2930549.
+[53] S. Kumar, A. Jain, A. P. Shukla, S. Singh, R. Raja, S. Rani, G. Harshitha, M.
+A. AlZain, and M. Masud, ‘‘A comparative analysis of machine learning
+algorithms for detection of organic and nonorganic cotton diseases,’’ Math.
+Problems Eng., vol. 2021, pp. 1–18, Jun. 2021.
+[54] S. Sood and H. Singh, ‘‘An implementation and analysis of deep learning
+models for the detection of wheat rust disease,’’ in Proc. 3rd Int. Conf.
+Intell. Sustain. Syst. (ICISS), Dec. 2020, pp. 341–347.
+[55] Z. Ünal, ‘‘Smart farming becomes even smarter with deep learning—A
+bibliographical analysis,’’ IEEE Access, vol. 8, pp. 105587–105609, 2020.
+[56] J. Amara, B. Bouaziz, and A. Algergawy, ‘‘A deep learning-based approach
+for banana leaf diseases classification,’’ Gesellschaft für Informatik e.V.
+(GI), Bonn, Germany, Tech. Rep., 2017.
+[57] C. K. G. Albuquerque, S. Polimante, A. Torre-Neto, and R. C. Prati,
+‘‘Water spray detection for smart irrigation systems with mask R-CNN and
+UAV footage,’’ in Proc. IEEE Int. Workshop Metrology Agricult. Forestry
+(MetroAgriFor), Nov. 2020, pp. 236–240.
+[58] R. Reedha, E. Dericquebourg, R. Canals, and A. Hafiane, ‘‘Transformer
+neural network for weed and crop classification of high resolution UAV
+images,’’ Remote Sens., vol. 14, no. 3, p. 592, Jan. 2022.
+[59] J. Qi, X. Liu, K. Liu, F. Xu, H. Guo, X. Tian, M. Li, Z. Bao, and Y. Li,
+‘‘An improved YOLOv5 model based on visual attention mechanism:
+Application to recognition of tomato virus disease,’’ Comput. Electron.
+Agricult., vol. 194, Mar. 2022, Art. no. 106780.
+VOLUME 12, 2024
+144475
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+[60] P. Das, R. Banerjee, B. Juneja, A. Rangi, and N. Varshney, An Overview
+of Data Analytics in Smart Agriculture. Maharashtra, India: Bhumi
+Publishing, Dec. 2023, pp. 14–30.
+[61] J. L. Tsong and S. M. Khor, ‘‘Modern analytical and bioanalytical
+technologies and concepts for smart and precision farming,’’ Anal.
+Methods, vol. 15, no. 26, pp. 3125–3148, 2023.
+[62] L. Rabhi, N. Falih, L. Afraites, and B. Bouikhalene, ‘‘Digital agriculture
+based on big data analytics: A focus on predictive irrigation for smart
+farming in Morocco,’’ Indonesian J. Electr. Eng. Comput. Sci., vol. 24,
+no. 1, pp. 581–589, Oct. 2021.
+[63] S. Haveson, A. Lau, and V. Wong, Protecting Farmers in Emerging
+Markets With Blockchain. Newyork, NY, USA: Cornell Tech, 2017.
+[64] G. Sylvester, E-Agriculture in Action: Blockchain for Agriculture,
+Opportunities and Challenges. Rome, Italy: FAO, 2019.
+[65] T. Kassanuk and K. Phasinam, ‘‘Design of blockchain based smart
+agriculture framework to ensure safety and security,’’ Mater. Today, Proc.,
+vol. 51, pp. 2313–2316, Jan. 2022.
+[66] G. Huang, J.-Q. Huang, X.-Y. Chen, and Y.-X. Zhu, ‘‘Recent advances and
+future perspectives in cotton research,’’ Annu. Rev. Plant Biol., vol. 72,
+no. 1, pp. 437–462, Jun. 2021.
+[67] Z. Yang, C. Diao, and F. Gao, ‘‘Towards scalable within-season crop
+mapping with phenology normalization and deep learning,’’ IEEE J. Sel.
+Topics Appl. Earth Observ. Remote Sens., vol. 16, pp. 1390–1402, 2023.
+[68] Y. Ma and Z. Zhang, ‘‘A Bayesian domain adversarial neural network
+for corn yield prediction,’’ IEEE Geosci. Remote Sens. Lett., vol. 19,
+pp. 1–5, 2022.
+[69] M. A. Khan, A. Wahid, M. Ahmad, M. T. Tahir, M. Ahmed, S. Ahmad,
+and M. Hasanuzzaman, ‘‘World cotton production and consumption: An
+overview,’’ in Cotton Production and Uses: Agronomy, Crop Protection,
+and Postharvest Technologies. Singapore: Springer, 2020, pp. 1–7.
+[70] N. McDonald, E. S. Fogarty, A. Cosby, and P. McIlveen, ‘‘Technology
+acceptance, adoption and workforce on Australian cotton farms,’’ Agricul-
+ture, vol. 12, no. 8, p. 1180, Aug. 2022.
+[71] Z. Liu and S. Wang, ‘‘Broken corn detection based on an adjusted YOLO
+with focal loss,’’ IEEE Access, vol. 7, pp. 68281–68289, 2019.
+[72] D. A. Padilla, R. A. I. Pajes, and J. T. De Guzman, ‘‘Detection of
+corn leaf diseases using convolutional neural network with openmp
+implementation,’’ in Proc. IEEE 12th Int. Conf. Humanoid, Nanotechnol.,
+Inf. Technol., Commun. Control, Environ., Manage. (HNICEM), Dec. 2020,
+pp. 1–6.
+[73] P. Pal, R. P. Sharma, S. Tripathi, C. Kumar, and D. Ramesh, ‘‘Genetic
+algorithm optimized node deployment in IEEE 802.15.4 potato and
+wheat crop monitoring infrastructure,’’ Sci. Rep., vol. 11, no. 1, p. 8231,
+Apr. 2021.
+[74] A. Singh, Y. S. Jadoun, P. S. Brar, and G. Kour, Smart Technologies in
+Livestock Farming. Singapore: Springer, 2022, pp. 25–57.
+[75] R. Behera, S. Rai, D. Sathpathy, A. Sahu, M. Karunakaran, A. Talokdar,
+A. Singh, and A. Mandal, ‘‘Climate smart livestock production,’’ Innov.
+Farming, vol. 4, no. 1, pp. 15–18, 2019.
+[76] J. Sun, Z. Lai, L. Di, Z. Sun, J. Tao, and Y. Shen, ‘‘Multilevel deep
+learning network for county-level corn yield estimation in the US corn
+belt,’’ IEEE J. Sel. Topics Appl. Earth Observ. Remote Sens., vol. 13,
+pp. 5048–5060, 2020.
+[77] A. Jenifa, R. Ramalakshmi, and V. Ramachandran, ‘‘Cotton leaf disease
+classification using deep convolution neural network for sustainable cotton
+production,’’ in Proc. IEEE Int. Conf. Clean Energy Energy Efficient
+Electron. Circuit Sustain. Develop. (INCCES), Dec. 2019, pp. 1–3.
+[78] H. Amin, A. Darwish, A. E. Hassanien, and M. Soliman, ‘‘End-to-end deep
+learning model for corn leaf disease classification,’’ IEEE Access, vol. 10,
+pp. 31103–31115, 2022.
+[79] K. P. Panigrahi, A. K. Sahoo, and H. Das, ‘‘A CNN approach for
+corn leaves disease detection to support digital agricultural system,’’
+in Proc. 4th Int. Conf. Trends Electron. Informat. (ICOEI), Jun. 2020,
+pp. 678–683.
+[80] D. Zhang, Z. Wang, N. Jin, C. Gu, Y. Chen, and Y. Huang, ‘‘Evaluation of
+efficacy of fungicides for control of wheat fusarium head blight based on
+digital imaging,’’ IEEE Access, vol. 8, pp. 109876–109890, 2020.
+[81] E. D. Lioutas and C. Charatsari, ‘‘Smart farming and short food supply
+chains: Are they compatible?’’ Land Use Policy, vol. 94, May 2020,
+Art. no. 104541.
+[82] A. El Mane, Y. Chihab, K. Tatane, and R. Korchiyne, ‘‘Agriculture supply
+chain management based on blockchain architecture and smart contracts,’’
+Appl. Comput. Intell. Soft Comput., vol. 2022, pp. 1–23, Oct. 2022.
+[83] G. S. Sajja, K. P. Rane, K. Phasinam, T. Kassanuk, E. Okoronkwo, and P.
+Prabhu, ‘‘Towards applicability of blockchain in agriculture sector,’’ Mater.
+Today, Proc., vol. 80, pp. 3705–3708, Jan. 2023.
+[84] X. Wei, S. Zhu, S. Zhou, W. Zheng, and S. Li, ‘‘Identification of soybean
+origin by terahertz spectroscopy and chemometrics,’’ IEEE Access, vol. 8,
+pp. 184988–184996, 2020.
+[85] W. Tadesse, M. Sanchez-Garcia, S. G. Assefa, A. Amri, Z. Bishaw,
+F. C. Ogbonnaya, and M. Baum, ‘‘Genetic gains in wheat breeding and
+its role in feeding the world,’’ Crop Breeding, Genet. Genomics, vol. 1,
+no. 1, pp. 1–16, 2019.
+[86] T. Fanen and A. Olalekan, ‘‘Assessing the role of climate-smart
+agriculture in combating climate change, desertification and improving
+rural livelihood in northern Nigeria,’’ Afr. J. Agricult. Res., vol. 9, no. 15,
+pp. 1180–1191, Apr. 2014.
+[87] X. Bai, Y. Huang, W. Ren, M. Coyne, P. Jacinthe, B. Tao, D. Hui, J. Yang,
+and C. Matocha, ‘‘Responses of soil carbon sequestration to climate-smart
+agriculture practices: A meta-analysis,’’ Global Change Biol., vol. 25,
+no. 8, pp. 2591–2606, Aug. 2019.
+[88] T. O. Williams, M. L. Mul, O. O. Cofie, J. Kinyangi, R. B. Zougmoré,
+G. Wamukoya, M. Nyasimi, P. Mapfumo, C. I. Speranza, and D. Amwata,
+‘‘Climate smart agriculture in the African context,’’ CGIAR Res. Program
+Climate Change, Agricult. Food Secur. (CCAFS), Wageningen, The
+Netherlands, Tech. Rep., 2015.
+[89] P. Andati, E. Majiwa, M. Ngigi, R. Mbeche, and J. Ateka, ‘‘Effect of
+climate smart agriculture technologies on crop yields: Evidence from
+potato production in Kenya,’’ Climate Risk Manage., vol. 41, Jan. 2023,
+Art. no. 100539.
+[90] M. A. Imran, A. Ali, M. Ashfaq, S. Hassan, R. Culas, and C. Ma, ‘‘Impact
+of climate smart agriculture (CSA) practices on cotton production and
+livelihood of farmers in Punjab, Pakistan,’’ Sustainability, vol. 10, no. 6,
+p. 2101, Jun. 2018.
+[91] F. Lin, S. Crawford, K. Guillot, Y. Zhang, Y. Chen, X. Yuan, L. Chen,
+S. Williams, R. Minvielle, X. Xiao, D. Gholson, N. Ashwell, T. Setiyono,
+B. Tubana, L. Peng, M. Bayoumi, and N.-F. Tzeng, ‘‘MMST-ViT: Climate
+change-aware crop yield prediction via multi-modal spatial–temporal
+vision transformer,’’ in Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV),
+Oct. 2023, pp. 5751–5761.
+[92] R. Bongiovanni and J. Lowenberg-Deboer, ‘‘Precision agriculture and
+sustainability,’’ Precis. Agricult., vol. 5, no. 4, pp. 359–387, Aug. 2004.
+[93] A. Nyéki and M. Neményi, ‘‘Crop yield prediction in precision agricul-
+ture,’’ Agronomy, vol. 12, no. 10, p. 2460, Oct. 2022.
+[94] G. Alemaw and G. Agegnehu, ‘‘Precision agriculture and the need
+to introduce in Ethiopia,’’ Ethiopian J. Agricult. Sci., vol. 29, no. 3,
+pp. 139–158, 2019.
+[95] D. Pivoto, B. Barham, P. D. Waquil, C. R. Foguesatto, V. F. D. Corte,
+D. Zhang, and E. Talamini, ‘‘Factors influencing the adoption of smart
+farming by Brazilian grain farmers,’’ Int. Food Agribusiness Manage. Rev.,
+vol. 22, no. 4, pp. 571–588, Jun. 2019.
+[96] A. Salam and S. Shah, ‘‘Internet of Things in smart agriculture: Enabling
+technologies,’’ in Proc. IEEE 5th World Forum Internet Things (WF-IoT),
+Apr. 2019, pp. 692–695.
+[97] M. R. M. Kassim, ‘‘IoT applications in smart agriculture: Issues and
+challenges,’’ in Proc. IEEE Conf. Open Syst. (ICOS), Nov. 2020, pp. 19–24.
+[98] V. K. Quy, N. V. Hau, D. V. Anh, N. M. Quy, N. T. Ban, S.
+Lanza, G. Randazzo, and A. Muzirafuti, ‘‘IoT-enabled smart agriculture:
+Architecture, applications, and challenges,’’ Appl. Sci., vol. 12, no. 7,
+p. 3396, Mar. 2022.
+[99] I. M. Mehedi, M. S. Hanif, M. Bilal, M. T. Vellingiri, and T. Palaniswamy,
+‘‘Remote sensing and decision support system applications in preci-
+sion agriculture: Challenges and possibilities,’’ IEEE Access, vol. 12,
+pp. 44786–44798, 2024.
+[100] (2019). Wheat Leaf Rust Dataset. [Online]. Available: https://www.scidb.
+cn/en/detail?dataSetId=557575356182167552
+[101] H. Getachew. (2021). Wheat Leaf Dataset. [Online]. Available:
+https://data.mendeley.com/datasets/wgd66f8n6h/1
+[102] P. K. Sethy. (2020). Rice Leaf Disease Image Samples. [Online].
+Available: https://data.mendeley.com/datasets/fwcj7stb8r/1
+[103] (2020). Corn or Maize Leaf Disease Datase. [Online]. Available:
+https://www.kaggle.com/datasets/smaranjitghose/corn-or-maize-leaf-
+disease-dataset
+[104] (2020).
+Crop
+Recom-Mendation
+Dataset.
+[Online].
+Available:
+https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-
+dataset
+144476
+VOLUME 12, 2024
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+[105] (2022).
+Cauliflower
+Dataset.
+[Online].
+Available:
+https://www.
+kaggle.com/datasets/noamaanabdulazeem/cauliflower-dataset
+[106] B. Patil. (2021). Cotton Leaf Dataset. [Online]. Available: https://data.
+mendeley.com/datasets/6hm6pc3y43/2
+[107] Institute of Intelligent Machines, Chinese Academy of Sciences, Rice
+Brown Spot Dataset, V1, Science Data Bank, Hefei, China, Mar. 2019, doi:
+10.11922/sciencedb.p00001.00004.
+[108] H. Craze. (2022). Diseases of Maize in the Field. [Online]. Available:
+https://researchdata.up.ac.za/articles/dataset/Diseases_of_maize_in_the_
+field/20237613
+[109] H. Nyirenda. (2020). Maize Production Dynamics. [Online]. Available:
+https://data.mendeley.com/datasets/3sdrb8p2nx/1
+[110] R.
+M.
+Mesquini,
+A.
+D.
+P.
+Mattos,
+B. B. Rissato,
+and
+K. R. F. Schwan-Estrada.
+(2021).
+Temporal
+Progress
+of
+Maize
+Diseases. [Online]. Available: https://scielo.figshare.com/articles/dataset/
+Temporal_progress_of_maize_diseases/14279220/1
+[111] (2022).
+Annotated
+Apple
+Leaf
+Disease
+Dataset—Mask
+RCNN.
+[Online].
+Available:
+https://www.scidb.cn/en/detail?dataSetId=
+0e1f57004db842f99668d82183afd578
+[112] J. Feng and X. Chao. (2022). Apple Tree Leaf Disease Segmentation
+Dataset. [Online]. Available: https://www.scidb.cn/en/detail?dataSetId=
+0e1f57004db842f99668d82183afd578
+[113] Y. Hailu. (2021). Banana Leaf Disease Images. [Online]. Available:
+https://data.mendeley.com/datasets/rjykr62kdh/1
+[114] S. Daphal. (2022). Sugarcane Leaf Disease Dataset. [Online]. Available:
+https://data.mendeley.com/datasets/9424skmnrk/1
+[115] Y. Zhu, S. Zhang, C. Zhang, and J. Ding. (2020). Diseased Leaf
+and Friut Image Dataset.zip. [Online]. Available: https://figshare.
+com/articles/figure/Diseased_leaf_and_friut_image_dataset_zip/
+7217543/1
+[116] (2023). Mango Leaf Disease Dataset. [Online]. Available: https://www.
+kaggle.com/datasets/aryashah2k/mango-leaf-disease-dataset
+[117] (2020). Tomato Leaf Disease Detection. [Online]. Available: https://www.
+kaggle.com/datasets/kaustubhb999/tomatoleaf
+[118] (2018).
+Plantvillage
+Dataset.
+[Online].
+Available:
+https://www.
+kaggle.com/datasets/emmarex/plantdisease
+[119] (2023).
+Cotton
+Plant
+Disease.
+[Online].
+Available:
+https://www.
+kaggle.com/datasets/dhamur/cotton-plant-disease
+[120] (2021).
+Corn
+Leaf
+Dis—Eases(NLB).
+[Online].
+Available:
+https://www.kaggle.com/datasets/rabbityashow/corn-leaf-diseasesnlb
+[121] (2021). Potato Leaf Disease Detection. [Online]. Available: https://www.
+kaggle.com/datasets/sayannath235/potato-leaf-disease-detection
+[122] (2022).
+Potato-Tomato-Dataset.
+[Online].
+Available:
+https://www.
+kaggle.com/datasets/alyeko/potato-tomato-dataset
+[123] (2021).
+PLANTIFYDR
+Datase.
+[Online].
+Available:
+https://www.
+kaggle.com/datasets/lavaman151/plantifydr-dataset
+[124] (2023). Grape Disease Dataset. [Online]. Available: https://www.
+kaggle.com/datasets/rm1000/grape-disease-dataset-original
+[125] (2021). Groundnut Leaves Datase. [Online]. Available: https://www.
+kaggle.com/datasets/muhammadazeemabbas/groundnut-leaves-dataset
+[126] (2021).
+Corn
+Leaf
+Infection
+Dataset.
+[Online].
+Available:
+https://www.kaggle.com/datasets/qramkrishna/corn-leaf-infection-dataset
+[127] (2021). Crop Statistics FAO—All Countries. [Online]. Available:
+https://www.kaggle.com/datasets/raghavramasamy/crop-statistics-
+fao-all-countries
+[128] (2022).
+Crop
+Pro-Duction
+Climate
+Chang.
+[Online].
+Available:
+https://www.kaggle.com/datasets/thedevastator/the-relationship-between-
+crop-production-and-cli
+[129] (2023). Mango Leaf Health Detection Datase. [Online]. Available:
+https://www.kaggle.com/datasets/mohammadrafaykhan/mango-leaf-
+health-detection-dataset
+[130] (2021). Leaf Dis-Ease SEG-Mentation Dataset. [Online]. Available:
+https://www.kaggle.com/datasets/fakhrealam9537/leaf-disease-
+segmentation-dataset
+[131] (2020).
+Rice
+Leaf
+Diseases
+Dataset.
+[Online].
+Available:
+https://www.kaggle.com/datasets/vbookshelf/rice-leaf-diseases
+[132] (2019).
+Rice
+Leafs.
+[Online].
+Available:
+https://www.kaggle.com/
+datasets/shayanriyaz/riceleafs
+[133] M. N. Mowla, D. Asadi, K. N. Tekeoglu, S. Masum, and K. Rabie,
+‘‘UAVs-FFDB: A high-resolution dataset for advancing forest fire
+detection and monitoring using unmanned aerial vehicles (UAVs),’’ Data
+Brief, vol. 55, Aug. 2024, Art. no. 110706.
+[134] E. S. Mohamed, A. Belal, S. K. Abd-Elmabod, M. A. El-Shirbeny,
+A. Gad, and M. B. Zahran, ‘‘Smart farming for improving agricultural
+management,’’ Egyptian J. Remote Sens. Space Sci., vol. 24, no. 3,
+pp. 971–981, Dec. 2021.
+[135] S. Sayruamyat and W. Nadee, ‘‘Acceptance and readiness of Thai
+farmers toward digital technology,’’ in Smart Trends in Computing and
+Communications. Berlin, Germany: Springer, 2019, pp. 75–82.
+[136] C. Hyunjin, ‘‘A study on the change of farm using artificial intelligence
+focused on smart farm in Korea,’’ J. Phys., Conf., vol. 1642, no. 1,
+Sep. 2020, Art. no. 012025.
+[137] S. W. Anuga, C. Gordon, E. Boon, and J. M.-I. Surugu, ‘‘Determinants of
+climate smart agriculture (CSA) adoption among smallholder food crop
+farmers in the Techiman Municipality, Ghana,’’ Ghana J. Geography,
+vol. 11, no. 1, pp. 124–139, 2019.
+[138] J. Blasch, B. van der Kroon, P. van Beukering, R. Munster, S. Fabiani,
+P. Nino, and S. Vanino, ‘‘Farmer preferences for adopting precision
+farming technologies: A case study from Italy,’’ Eur. Rev. Agricult. Econ.,
+vol. 49, no. 1, pp. 33–81, Jan. 2022.
+[139] W. Li, B. Clark, J. A. Taylor, H. Kendall, G. Jones, Z. Li, S. Jin, C. Zhao,
+G. Yang, C. Shuai, X. Cheng, J. Chen, H. Yang, and L. J. Frewer, ‘‘A hybrid
+modelling approach to understanding adoption of precision agriculture
+technologies in Chinese cropping systems,’’ Comput. Electron. Agricult.,
+vol. 172, May 2020, Art. no. 105305.
+[140] Y. Vecchio, M. De Rosa, F. Adinolfi, L. Bartoli, and M. Masi, ‘‘Adoption
+of precision farming tools: A context-related analysis,’’ Land Use Policy,
+vol. 94, May 2020, Art. no. 104481.
+[141] V. Mazzia, A. Khaliq, F. Salvetti, and M. Chiaberge, ‘‘Real-time apple
+detection system using embedded systems with hardware accelerators: An
+edge AI application,’’ IEEE Access, vol. 8, pp. 9102–9114, 2020.
+[142] C. Binoya, ‘‘Climate smart farmers’ field school: The BICOL, Philippines
+experience: A success story,’’ Asia–Pacific Assoc. Agricult. Res. Institu-
+tions (APAARI), Bangkok, Thailand, Tech. Rep., 2018.
+[143] A. J. Gopu and R. Ravikumar, ‘‘A study on precision farming technologies
+and adoption in Tamil Nadu,’’ Tamil Nadu Agricult. Univ. (TNAU),
+Coimbatore, India, Tech. Rep., 2016.
+[144] B. Campbell, P. Thornton, A. M. Loboguerrero, D. Dinesh, and A. Nowak,
+Transforming Food Systems Under Climate Change Through Innovation.
+Cambridge, U.K.: Cambridge Univ. Press, 2023.
+[145] S. Hussain, A. Amin, M. Mubeen, T. Khaliq, M. Shahid, H. M. Hammad,
+S. R. Sultana, M. Awais, B. Murtaza, M. Amjad, and S. Fahad, ‘‘Climate
+smart agriculture (CSA) technologies,’’ in Building Climate Resilience in
+Agriculture. Cham, Switzerland: Springer, 2022, pp. 319–338.
+[146] S. Kakarla, Y. Ampatzidis, S. Park, G. Adosoglou, and P. Pardalos,
+‘‘Emerging sensing technologies for precision agriculture,’’ in Information
+and Communication Technologies for Agriculture—Theme I: Sensors.
+Cham, Switzerland: Springer, 2022, pp. 3–16.
+[147] H.-Y. Chen, K. Sharma, C. Sharma, and S. Sharma, ‘‘Integrating
+explainable artificial intelligence and blockchain to smart agriculture:
+Research prospects for decision making and improved security,’’ Smart
+Agricult. Technol., vol. 6, Dec. 2023, Art. no. 100350.
+[148] A. A. Aliyu and J. Liu, ‘‘Blockchain-based smart farm security framework
+for the Internet of Things,’’ Sensors, vol. 23, no. 18, p. 7992, Sep. 2023.
+[149] S. Kuznetsov. (2023). 5G-Powered Smart Farming Use Cases. [Online].
+Available:
+https://www.softeq.com/blog/benefits-of-5g-farming-use-
+cases-and-real-life-examples
+[150] J. Liu, ‘‘Chapter 11—Smart-agriculture: Wearable devices for plant
+protection,’’ in Wearable Physical, Chemical and Biological Sensors,
+E. Morales-Narvaez and C. Dincer, Eds., Amsterdam, The Netherlands:
+Elsevier, 2022, pp. 275–294.
+[151] N. G. Karavolias, W. Horner, M. N. Abugu, and S. N. Evanega,
+‘‘Application of gene editing for climate change in agriculture,’’ Frontiers
+Sustain. Food Syst., vol. 5, Sep. 2021, Art. no. 685801.
+[152] A. Samuel and S. Yeboah, ‘‘Unlocking the potential of techno-
+logical innovations for sustainable agriculture in developing coun-
+tries: Enhancing resource efficiency and environmental sustainability,’’
+Munich Pers. RePEc Arch. (MPRA), Munich, Germany, Tech. Rep.,
+Aug. 2023.
+[153] R. K. Goel, C. S. Yadav, S. Vishnoi, and R. Rastogi, ‘‘Smart agriculture—
+Urgent need of the day in developing countries,’’ Sustain. Comput.,
+Informat. Syst., vol. 30, Jun. 2021, Art. no. 100512.
+[154] S. Garg, N. P. Rumjit, and S. Roy, ‘‘Smart agriculture and nanotechnol-
+ogy: Technology, challenges, and new perspective,’’ Adv. Agrochem, vol. 3,
+no. 2, pp. 115–125, Jun. 2024.
+[155] E. Collado, A. Fossatti, and Y. Saez, ‘‘Smart farming: A potential solution
+towards a modern and sustainable agriculture in Panama,’’ AIMS Agricult.
+Food, vol. 4, no. 2, pp. 266–284, 2019.
+[156] S. Das, M. K. Ray, D. Panday, and P. K. Mishra, ‘‘Role of biotechnology
+in creating sustainable agriculture,’’ PLOS Sustainability Transformation,
+vol. 2, no. 7, Jul. 2023, Art. no. e0000069.
+VOLUME 12, 2024
+144477
+B. Ahmed et al.: Smart Agriculture: Current State, Opportunities, and Challenges
+[157] D. R. K. Saikanth, A. R. Saikia, R. Chintey, N. Talukdar, R. Bahadur,
+and A. Vasuki, ‘‘Smart agriculture: Technologies, practices, and future
+directions,’’ Int. J. Environ. Climate Change, vol. 13, no. 12, pp. 689–695,
+Dec. 2023.
+[158] D. Michielin. (2023). Feeding the Future: The Science of Smart Agri-
+culture. [Online]. Available: https://climateforesight.eu/articles/smart-
+agriculture-science/
+[159] V. Sharma, A. K. Tripathi, and H. Mittal, ‘‘Technological revolutions in
+smart farming: Current trends, challenges & future directions,’’ Comput.
+Electron. Agricult., vol. 201, Oct. 2022, Art. no. 107217.
+[160] A. Hanley, G. Brychkova, W. J. Barbon, S. M. Noe, C. Myae, P. S. Thant,
+P. C. McKeown, J. Gonsalves, and C. Spillane, ‘‘Community-level impacts
+of climate-smart agriculture interventions on food security and dietary
+diversity in climate-smart villages in Myanmar,’’ Climate, vol. 9, no. 11,
+p. 166, Nov. 2021.
+[161] A. Mujeyi, M. Mudhara, and M. Mutenje, ‘‘The impact of climate
+smart agriculture on household welfare in smallholder integrated crop–
+livestock farming systems: Evidence from Zimbabwe,’’ Agricult. Food
+Secur., vol. 10, no. 1, pp. 1–15, Dec. 2021.
+[162] N. K. Patra and S. C. Babu, ‘‘Institutional and policy process for climate-
+smart agriculture: Evidence from nagaland state, India,’’ J. Water Climate
+Change, vol. 14, no. 1, pp. 1–16, Jan. 2023.
+[163] J. Verschuuren, ‘‘Towards an EU regulatory framework for climate-smart
+agriculture: The example of soil carbon sequestration,’’ Transnational
+Environ. Law, vol. 7, no. 2, pp. 301–322, Jul. 2018.
+BILAL AHMED received the B.Sc. and M.Sc.
+degrees in electrical engineering from the Uni-
+versity of Engineering and Technology, Taxila,
+Pakistan, in 2005 and 2012 respectively. Currently,
+he is a Doctoral Researcher with the Department of
+Electrical and Computer Engineering, COMSATS
+University Islamabad, Wah Campus. He has been
+actively involved in various research areas. He has
+more than 18 years of industrial experience
+in these areas. He has published in renowned
+journals. His research interests include embedded systems, computer vision,
+artificial intelligence, and machine learning applications.
+HASNAT SHABBIR received the B.Sc. degree
+in electrical engineering from the Department of
+Electrical and Computer Engineering, COMSATS
+University Islamabad, Wah Campus, Wah Can-
+tonment, Pakistan, in 2022, where he is currently
+pursuing the M.S. degree. His research interests
+include computer vision, artificial intelligence,
+and machine learning applications.
+SYED RAMEEZ NAQVI received the M.Sc.
+degree in electronic engineering from The Uni-
+versity of Sheffield, U.K., in 2007, and the Ph.D.
+degree in computer engineering from Vienna
+University of Technology, Austria, in 2013. He is
+a full-time Faculty Member with the Department
+of Electrical and Computer Engineering, COM-
+SATS University Islamabad, Wah Campus, Wah
+Cantonment, Pakistan. He is doing a postdoctoral
+fellowship with the Department of Computer
+Science, Tulane University, New Orleans, LA, USA. Since the Ph.D.
+study, he has published more than 40 research articles in international
+journals and symposiums of high reputation, and carried out several funded
+research projects with various research and development organizations.
+His research interests include asynchronous logic, computer architecture,
+hardware optimization, and artificial intelligence.
+LU
+PENG
+(Senior Member, IEEE) received
+the Ph.D. degree in computer engineering from
+the University of Florida, in 2005. He joined the
+Computer Science Department, Tulane University,
+as the Yahoo! Founder Chair in science and
+engineering and a Professor, in August 2022. His
+research focuses on computer architecture, deep
+learning accelerators, quantum processors, and big
+data analytics. He is a Senior Member of ACM.
+He received the ORAU Ralph E. Powe Junior
+Faculty Enhancement Award, in 2007; and the Best Paper Award from
+IEEE International Green and Sustainable Computing Conference (IGSC),
+in 2019, and IEEE International Conference on Computer Design (ICCD)
+Processor Architecture Track, in 2001.
+144478
+VOLUME 12, 2024

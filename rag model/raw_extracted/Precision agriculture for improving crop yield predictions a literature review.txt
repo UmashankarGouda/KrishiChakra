@@ -1,0 +1,1056 @@
+TYPE Review 
+PUBLISHED 21 July 2025 
+DOI 10.3389/fagro.2025.1566201 
+OPEN ACCESS 
+EDITED BY 
+John R. Porter,  
+University of Copenhagen, Denmark  
+REVIEWED BY 
+Ste´ phane Cordeau,  
+UMR Agroe´ cologie, France  
+Nafees Akhter Farooqui,  
+K L University, India  
+*CORRESPONDENCE 
+Sarmistha Saha 
+sarmistha_pharmacol@yahoo.com 
+Nazih Y. Rebouh 
+rebukh-nya@rudn.ru 
+RECEIVED 24 January 2025 
+ACCEPTED 27 June 2025 
+PUBLISHED 21 July 2025 
+CITATION 
+Saha S, Kucher OD, Utkina AO and 
+Rebouh NY (2025) Precision agriculture for 
+improving crop yield predictions: a literature 
+review. 
+Front. Agron. 7:1566201. 
+doi: 10.3389/fagro.2025.1566201 
+COPYRIGHT 
+© 2025 Saha, Kucher, Utkina and Rebouh. This 
+is an open-access article distributed under the 
+terms of the Creative Commons Attribution 
+License (CC BY). The use, distribution or 
+reproduction in other forums is permitted, 
+provided the original author(s) and the 
+copyright owner(s) are credited and that the 
+original publication in this journal is cited, in 
+accordance with accepted academic 
+practice. No use, distribution or reproduction 
+is permitted which does not comply with 
+these terms. 
+Precision agriculture for 
+improving crop yield 
+predictions: a literature review 
+Sarmistha Saha 1*, Olga D. Kucher 2, Aleksandra O. Utkina 2 
+and Nazih Y. Rebouh 2* 
+1Department of Biotechnology, Institute of Applied Sciences & Humanities, GLA University, Mathura, 
+Uttar Pradesh, India, 2Department of Environmental Management, Institute of Environmental 
+Engineering, RUDN University, Moscow, Russia 
+Precision agriculture (PA) is a data-driven, technology-enabled farming 
+management strategy that monitors, quantiﬁes, and examines the 
+requirements of speciﬁc crops and ﬁelds. A key aim of precision agricultural 
+technologies is to optimize crop yield and quality, while also working to lower 
+operating costs and minimize environmental impact. This approach not only 
+enhances productivity but also promotes sustainable farming practices. In PA, it is 
+essential to leverage effective monitoring through sensing technologies, 
+implement robust management information systems, and proactively address 
+both inter- and intravariability within cropping systems. Crop yield simulations 
+using deep learning and machine learning (ML) techniques aid in understanding 
+the combined effects of pests, nutrient and water shortages, and other ﬁeld 
+variables during the growing season. On the other hand, remote sensing 
+techniques such as lidar imagery, radar, and multi- and hyperspectral data 
+presents valuable opportunities to enhance yield predictions by improving the 
+understanding of soil, climate, and other biophysical factors affecting crops. This 
+paper aims to highlight key gaps and opportunities for future research, focusing 
+on the evolving landscape of remote sensing and machine learning techniques 
+employed to enhance predictions of crop yield. In future, PA is likely to include 
+more focused use of sensor platforms and ML techniques can enhance the 
+effectiveness of agricultural practices. Additionally, the development of hybrid 
+systems that combine diverse ML approaches and signal processing techniques 
+will pave the way for more innovative and efﬁcient solutions in the ﬁeld. 
+KEYWORDS 
+precision agriculture, machine learning, deep learning, remote sensing, crop yield 
+1 Introduction 
+The World Health Organization (WHO) estimates that by 2030 and beyond, heat 
+stress, starvation, and disease would cause 250,000 fatalities yearly, demonstrating the real 
+and dangerous effects of climate change (WHO, 2023). In addition to the uncertain and 
+unforeseen future that climate change would bring, it is predicted that by 2050, there will be 
+Frontiers in Agronomy 
+01 
+frontiersin.org 
+Saha et al. 
+10.3389/fagro.2025.1566201 
+9.6 billion people on the planet (UN Report, 2024). Malnutrition is 
+already a major global concern, and climate change is making food 
+production even more stressful globally. Despite their dependence 
+on steady and regular weather patterns, agricultural practices 
+nonetheless have a major role in climate change. The use of 
+nitrogen-based fertilizers, on-farm waste management, fuel 
+consumption, and biological sources (such as enteric fermentation 
+by cattle) account for the majority of agricultural emissions 
+(ECCC, 2021). 
+Precision agriculture (PA), which uses modern methods to 
+increase crop yield while consuming the fewest resources possible, 
+represents a substantial departure from conventional agricultural 
+systems (Karunathilake et al., 2023; Rebouh et al., 2023a). Precision 
+agriculture is a data-driven approach that analyzes and manages 
+ﬁeld variability using a variety of tools, including sensors, drones, 
+GPS guidance systems, and machine learning algorithms (Linaza 
+et al., 2021). In order to make well-informed decisions pertaining to 
+certain areas of their farm, farmers can use this technique to 
+evaluate changes in crop health, soil composition, and moisture 
+levels (Case-Cohen, 2018) (Figure 1). By effectively using farm 
+inputs like fertilizer, herbicides, and water through real-time data 
+gathering and analysis, precision agriculture seeks to increase food 
+production worldwide while enhancing yield, efﬁciency, and 
+environmental sustainability (Gawande et al., 2023). By utilizing 
+automation, data analytics, and technological advancements, PA 
+also referred to as smart farming or precision farming; symbolizes a 
+paradigm shift in agricultural management. This multidisciplinary 
+approach enables farmers make informed decisions, modify 
+interventions, and maximize resource utilization based on real-
+time data insights. 
+In the ﬁeld of PA and crop production, accurate yield prediction 
+plays a vital role in promoting social and economic stability, 
+alongside enhancing food security (Karunathilake et al., 2023). By 
+anticipating crop yields in advance of harvest, farmers could 
+strategically plan and mitigate production risks. Accurate yield 
+forecasting plays a crucial role in enhancing food waste reduction, 
+improving operational efﬁciency, and promoting sustainable 
+agriculture. This approach not only optimizes resources but also 
+contributes to a more sustainable agricultural future. The pre­
+harvest yield estimation ﬁgures assist farmers in making critical 
+choices, such as ﬁguring out how much fertilizer to use. 
+Furthermore, possible hazards such as insect infestation and 
+drought occurrence can be recognized in advance so that the 
+appropriate measures can be taken (Lobell et al., 2015). 
+The potential to create yield prediction techniques that are more 
+accurate grows along with the volume and availability of data. Thus, 
+FIGURE 1 
+Graphical representation of factors involved in crop model predictor using deep learning and remote sensing. 
+Frontiers in Agronomy 
+02 
+frontiersin.org 
+Saha et al. 
+10.3389/fagro.2025.1566201 
+using artiﬁcial intelligence (AI) with big data management 
+approaches has been shown to be a successful strategy for handling 
+this massive amount of data. AI’s capacity to process vast volumes of 
+data has recently drawn signiﬁcant interest in precision agriculture 
+(El Behairy et al., 2023). A useful technique that can improve crop 
+production prediction based on several characteristics is machine 
+learning (ML), a subﬁeld of artiﬁcial intelligence. Using datasets that 
+have been taught using experience-based ﬁndings, machine learning 
+may extract knowledge from them and ﬁnd patterns and correlations 
+(Liakos et al., 2018). 
+Research on utilizing AI and remote sensing for agricultural 
+practices dates back to the early 1980s (Weiss et al., 2019). However, 
+recently there has been a noticeable growth in the use of these 
+methods and instruments for agricultural purposes. It is also 
+essential to comprehend how these tools are used, which 
+strategies are most frequently employed, and how assessments are 
+carried out, particularly in order to direct future research and 
+development. Thus, the present review aims to answer these 
+queries. The present review presents a constructive overview of 
+remote sensing and ML used in yield estimation and prediction. It 
+not only highlights successful approaches but also identiﬁes 
+important gaps and suggests areas for further research and 
+development. This study highlights the signiﬁcance of combining 
+various methods and factors to increase the precision and 
+dependability of yield prediction models by examining the 
+difﬁculties involved in data gathering and model construction. 
+2 Deep learning techniques 
+Deep learning is becoming a key technology in agriculture, 
+effectively managing spatiotemporal data and automatically 
+extracting important features without manual engineering (Tian 
+et al., 2021). Deep learning algorithms have the potential to enhance 
+decision-making by effectively uncovering hidden patterns in data, 
+leading to more informed and useful decision rules. Several crop 
+simulation models are widely recognized in the literature for their 
+effectiveness in agricultural research and analysis. Notable examples 
+include the Agricultural Production Systems Simulator (APSIM), 
+Crop Environment Resource Synthesis (CERES), World Food 
+Studies Simulation Model (WOFOST), Decision Support System 
+for Agriculture Technology Transfer (DSSAT), and AquaCrop 
+(Jones, 2003; Capa-Morocho et al., 2016). These models provide 
+valuable insights and support informed decision-making in 
+agricultural practices. Crop model predictor factors outperformed 
+meteorological variables in explaining production variability, 
+according to a study that evaluated their capacity to replicate crop 
+yield ﬂuctuations (Lecerf et al., 2019). 
+The three  layers  of  a deep learning model  are usually  the input  
+layer, the output layer, and the hidden/activation layer (Yang et al., 
+2019). They pass the input through a deep neural network with several 
+layers in order to produce predictions. Every layer examines the data to 
+extract unique features at various resolutions or granularities, which are 
+subsequently combined into more abstract features via a hierarchical 
+procedure (Nguyen et al., 2019). Because deep learning technology can 
+handle large datasets, learn intricate correlations between variables, and 
+use nonlinear functions, its application in agriculture has accelerated 
+(Tian et al., 2023). Deep learning has developed quickly with the advent 
+of  the big  data  age and  improvements in graphics processing units 
+(GPUs). Deep learning is a state-of-the-art technique with enormous 
+promise for picture processing and data analysis. It has been 
+successfully used in a variety of industries, including agriculture, and 
+has yielded outstanding results.23 Deep learning is a useful tool in 
+the ﬁeld of crop yield prediction since the accuracy of prediction 
+results depends on the extraction of factors controlling crop growth 
+(Tian et al., 2023). The particular application scenario, data quality, and 
+model parameter choice all affect how various deep learning models 
+estimate crop yield. Every architecture, starting with the ﬁrst deep 
+neural networks (DNNs) and progressing to convolutional neural 
+networks (CNNs), recurrent neural networks (RNNs), and their 
+signiﬁcant variations like long short-term memory networks 
+(LSTMs) and Bayesian neural networks (BNNs), has proven to be 
+highly effective in crop yield predictions. Russello (2018) predicted 
+crop yield using a Convolutional Neural Network based on satellite 
+images. Their model performed better than other machine learning 
+techniques and used 3D convolutions to capture spatiotemporal data. 
+Sharma et al. (2020) estimated wheat crops by combining CNNs 
+and LSTMs. They conducted trials using a raw image collection and 
+saw encouraging outcomes. With an accuracy of 74%, the suggested 
+CNN-LSTM fusion method beat other convolutional techniques, and it 
+also outperformed other deep learning models with 50% accuracy. 
+In order to predict the corn yield, another study combined 
+environmental elements like canopy surface temperature and water 
+stress index with vegetation indices like the normalized vegetation 
+index (NVDI) and Absorbed Photosynthetically Active Radiation 
+(APAR) (Table 1) (Wang et al., 2020). Fernandes et al (Fernandes 
+et al., 2017). observed that the selection of vegetation indices affects 
+agricultural yield. NDVIre, NDVI, and GNDVI all performed well for 
+ﬁeld variability, according to their study on maize yield prediction. 
+When compared to NDVI and GNDVI, Haghverdi et al. (2018) 
+found that NDVIre was a more effective way to predict crop 
+productivity. In order to evaluate the effectiveness of LSTM in 
+agricultural yield prediction, de Freitas Cunha and Silva (2020) 
+TABLE 1 List of different vegetative indices (VIs) that are used for yield 
+predictions and ﬁeld mapping. 
+Index 
+Reference 
+Normalized, Difference, Vegetation, Index (NDVI) 
+Wang et al., 2020 
+Ratio Vegetation Index (RVI) 
+Jordan et al., 1969 
+Enhanced Vegetation Index (EVI) 
+Huete et al., 2002 
+Soil-Adjusted Vegetation Index (SVI) 
+Huete et al., 1988 
+Land Surface Water Index (LSWI) 
+Zha et al., 2003 
+Normalized Difference Builtup Index (NDBI) 
+Deering et al., 1975 
+Triangular Vegetation Index (TVI) 
+Clevers, 1986 
+Infrared Percentage Vegetation Index (IPVI) 
+Richardson and 
+Wiegand, 1977 
+Difference Vegetation Index (DVI) 
+Crippen, 1990 
+Frontiers in Agronomy 
+03 
+frontiersin.org 
+Saha et al. 
+10.3389/fagro.2025.1566201 
+conducted thirty distinct train-test cycles. Since NDVI-based crop 
+yield prediction is only possible at a speciﬁc plant growth stage, while 
+weather-based prediction is possible prior to planting, their strategy 
+was to use weather and soil data rather than satellite data. 
+Additionally, Zhang et al. (2021) determined an appropriate VI for 
+agricultural yield prediction and discovered that the combination of 
+input data performs well for crop yield prediction. 
+The complex nonlinear relationships between input and 
+response variables are successfully revealed by deep neural 
+networks, in contrast to shallow networks with only one hidden 
+layer. They also eliminate the time-consuming manual feature-
+crafting process (LeCun et al., 2015). For efﬁcient training, they 
+require more advanced technology and optimization techniques. 
+The network’s convergence may be hampered by issues like 
+vanishing or inﬂating gradients, even if enhancing the hidden 
+layers may reduce classiﬁcation or regression errors (He K et al., 
+2016). In order to estimate agricultural yield, Sobhana et al. (2022) 
+devised an approach that combines geographic data with deep 
+neural networks. Along with developing a user interface known as 
+CROPUP, they developed a recommendation engine that uses deep 
+learning techniques like XGBoost to suggest appropriate crops. 
+When used, their methodology can increase crop yield and 
+efﬁciency, with an accuracy of 99.3% in all seasons (Sobhana 
+et al., 2022). In order to predict the yield of hybrid maize, Khaki 
+and Wang (2019) suggested a deep learning method for crop yield 
+prediction. This method used a deep neural network based on 
+environmental and genotype data. With an RMSE of 12.81 kg/1000 
+m2 and a validation correlation coefﬁcient of 0.814,34 the results 
+show that this model outperforms other popular techniques, such as 
+regression trees (RT), shallow neural networks (SNN), and Least 
+Absolute Shrinkage and Selection Operator (Lasso). 
+CNNs are more efﬁcient at locating important features in data 
+than conventional feedforward neural networks. Crop mapping and 
+yield prediction also make use of a 1D CNN applied along the 
+temporal or spectral dimension. Multitemporal images can be 
+effectively and efﬁciently classiﬁed using 1D CNN, as shown by 
+Zhong et al. (2019) Using multitemporal Landsat EVI data, the 
+authors classiﬁed summer crops by comparing the output of a 1D 
+CNN and an RNN. The 1D CNN outperformed CNN-, RF-, and 
+SVM-based techniques in the experiment in terms of accuracy and 
+FI score. This experiment showed how 1D CNN may express 
+temporal data for crop classiﬁcation. This method’s drawback is 
+that it ignores the spectral and spatial information seen in satellite 
+imagery. For crop mapping, Zhou et al. (2018) employed object-
+based image analysis, a classiﬁcation technique that is widely known 
+for high-resolution pictures. The authors created segments from 
+Sentinel-2 data using a segmentation method, then classiﬁed the 
+segments’ mean spectral vector using a 1D CNN. Although this 
+method captured spatial information by using the mean of the 
+segments, it failed to describe the time relation, which would have 
+increased accuracy. 
+Among the popular CNN variations for yield prediction are 2D­
+CNN, 3D-CNN, and YOLO. In particular, 3D-CNN is known as a 
+spatiotemporal method, whereas 2D-CNN is frequently referred to 
+as a spatial approach (Khaki et al., 2020). Yang et al. created a corn 
+yield prediction model using a 2D-CNN deep learning algorithm. 
+According to the study, 2D-CNN offers notable beneﬁts in terms of 
+feature extraction and categorization (Yang et al., 2021). Nevavuori 
+et al. (2020) used time series and multi-temporal data in a spatial– 
+temporal 3D-CNN architecture to forecast yield in the ﬁeld. The 
+prediction accuracy of the 3D-CNN model was higher than that of 
+the other models. Nevavuori et al. (2019) developed a crop yield 
+forecast model for wheat and barley using Convolutional Neural 
+Networks, which were based on Normalized Difference Vegetation 
+Index (NDVI) and RGB (a color model used for representing and 
+creating colors) data collected from drones. The ﬁnal results showed 
+that the CNN model could provide a particular deep learning model 
+for crops in Finland’s continental subarctic environment by 
+estimating yields based on RGB photos in a reasonable and 
+accurate manner. 
+RNNs are useful for a variety of applications, such as time series 
+analysis, handwriting recognition, picture captioning, machine 
+translation, natural language processing, and crop yield prediction 
+(Archana and Kumar, 2023). Nevertheless, RNNs have a problem 
+with vanishing or ballooning gradients, which makes it difﬁcult to 
+forecast long-term relationships. To overcome the vanishing 
+gradient problem in RNNs, Long Short-Term Memory (LSTM) 
+networks were created (Nevavuori et al., 2019). A rice yield 
+prediction model was created by Wang et al. (2023) using an 
+artiﬁcial neural network with Bidirectional Long Short-Term 
+Memory (Bi-LSTM). With an average inaccuracy of 25 kg/m2, the 
+results show that the Bi-LSTM prediction model does well in 
+predicting rice production. 
+3 Machine learning techniques 
+The ability of machine learning algorithms to solve big non­
+linear problems on their own using datasets from several (perhaps 
+related) sources is one of their key beneﬁts. Ma et al. (2021) created 
+a Bayesian Neural Network (BNN)-based maize yield prediction 
+model at the county level. This model forecasts maize yields in 
+atypical years brought on by major weather events with accuracy, in 
+addition to accurately estimating maize yields in regular years. The 
+prediction results’ average R2 is 0.77, offering a strong foundation 
+for projecting intra-seasonal crop yields. Ren et al. (2023) developed 
+an innovative hybrid strategy that combines deep learning methods 
+with the WOFOST model to enhance yield predictions. By using 
+tailored feature combinations for each growth stage, they conducted 
+a comprehensive analysis that achieved impressive results: a Mean 
+Relative Error (MRE) of 1.5, a Root Mean Square Error (RMSE) of 
+102.65 kg/ha, and an R-squared (R²) value of 0.98. This approach 
+provides reliable analytical data for different growth phases and 
+signiﬁcantly improves the accuracy of yield forecasting, beneﬁting 
+agricultural planning and decision-making. Chu and Yu (2020) 
+employed another model for crop yield prediction by combining 
+Back-Propagation Neural Networks (BPNNs) and Independently 
+Recurrent Neural Networks (IndRNN). 
+Software libraries with pre-built structures designed for DL 
+model implementation are known as deep-learning frameworks. In 
+Frontiers in Agronomy 
+04 
+frontiersin.org 
+Saha et al. 
+10.3389/fagro.2025.1566201 
+this approach, DL architectures have become easier to implement 
+and more accessible. Convolutional architectures for PyTorch 
+(Paszke et al., 2019), CNTK (Seide and Agarwal, 2016), and 
+MatConvNet (Vedaldi and Lenc, 2015) are the most widely used 
+DL frameworks. With the help of these frameworks’ powerful GPU 
+backend, networks with billions of parameters can be trained. A 
+machine learning library called Scikit-learn (2022) also incorporates 
+deep neural networks. 
+To further expand the data and make sure the model was 
+independent of rotation and ﬂips, data-augmentation techniques 
+like rotation and ﬂips were also included in the crop-mapping 
+(Du et al., 2019) and yield-prediction investigations. To overcome 
+the lack of training data, a few crop-mapping research employed 
+weakly supervised learning and the domain-adaptation technique 
+(Wang et al., 2020). Therefore, further reﬁnement of deep learning 
+model architectures and algorithms will be essential developments 
+in agricultural production forecasting. 
+4 Remote sensing techniques 
+Remote sensing photographs provide timely, consistent, and 
+cost-effective data for identifying and tracking the features of the 
+earth’s surface (Justice et al., 2002). Geological reconnaissance, 
+environmental monitoring, and agricultural productivity are just a 
+few key sectors where this technology proves invaluable. 
+Predicting agricultural yields before harvest is crucial for planning 
+and deciding on different policies. Conventional approaches are 
+expensive, subjective, and time-consuming. A number of issues also 
+inﬂuence the development of empirical models that use meteorological 
+data. Information on electromagnetic radiation was gathered using a 
+wide variety of sensors, including satellite images, aerial 
+photogrammetry, multispectral scanners in the air, high and low 
+spectral and spatial resolution, and ﬁeld-based spectrometer analysis 
+(Jennewein et al., 2024). Two types of ﬂuorescence are employed to 
+evaluate the physiological conditions of vegetation cover and stress 
+levels (Belasque et al., 2008). Between 400 and 600 nm is the 
+wavelength for blue-green ﬂuorescence, while between 650 and 800 
+nm is the wavelength for chlorophyll ﬂuorescence. They also found that 
+spectroscopic analysis can be utilized to evaluate in-plant diseases, 
+environmental stress levels, and nutritional deﬁciencies. 
+Important characteristics that are used in a variety of 
+agricultural applications are vegetation indices (VIs). For instance, 
+there are various uses for the normalized difference vegetation index 
+(NDVI) in crop monitoring (Karmakar et al., 2024). Leaf nitrogen 
+content can be estimated with the aid of the Angular Insensitivity 
+Vegetation Index (AIVI) (He et al., 2016). The Photochemical 
+Reﬂectance Index (PRI) can be used to analyze the severity of 
+plant diseases (Huang et al., 2008). Using linear non-linear 
+procedures, VIs are produced by combining remotely sensed data 
+at various wavelengths, usually in the red and infrared ranges 
+(Bhunia et al., 2021). In order to enhance early warning systems, 
+these measures have been used to evaluate crop growth status and 
+the effects of agroclimatic conditions, pests and diseases, water 
+stress, and management techniques on crop development. 
+4.1 Field sensors 
+The electromagnetic spectrum includes several key wavelengths 
+that are particularly effective for ﬂuorescence imaging. These 
+include the green (520–550 nm), blue (440 nm), red (690 nm), 
+far-red (740 nm), and near-infrared (800 nm) regions. Utilizing 
+these speciﬁc wavelengths can enhance the effectiveness of 
+ﬂuorescence imaging techniques (Coops et al., 2003). Lenk et al. 
+(2007) demonstrated the use of multispectral data and applications 
+to improve imaging techniques by discriminating fruit quality, 
+photosynthetic activities, tissue structures, and plant disease 
+symptoms. These techniques are an overview since they provide 
+three-dimensional spectral information in the form of pictures and 
+incorporate spectral characteristics from multiple areas. 
+The use of hyperspectral images in precision farming 
+applications has grown signiﬁcantly. According to Zaman et al. 
+(2011) remote sensing data provides an easy and affordable way to 
+differentiate between different land uses, such as horticultural crops 
+or orchards, and fruit trees. By evaluating the landscape’s intricate 
+monitoring characteristics, multi-temporal satellite imaging data 
+offer a means of identifying notable changes in land cover and 
+measuring the rates of change. The phases of crop growth and 
+agricultural phenology were not clearly deﬁned and are often hard 
+to explain because of variations in crop varieties, plant densities, 
+and crop cultivation techniques. 
+However, using spectral derivatives, continuous removal 
+transformations, and continuous wavelet transformations, 
+hyperspectral data are more sophisticated in detecting leaf 
+biochemical constituents or recognizing aberrant spectral features 
+impacted by pests and diseases. When leaf characteristics like 
+pigment concentration, other chemical components, or pest or 
+disease problems vary, the scattering from the leaf reacts 
+differently at different wavelengths (Knyazikhin et al., 2013). In 
+addition to the PRI for identifying wheat yellow rust (Huang et al., 
+2007) and the chlorophyll absorption ratio index (CARI) for 
+identifying wheat  powdery mildew (Zhang et al., 2012), a 
+blueshift was noted in the red-edge peak in the ﬁrst derivative of 
+rice plant spectral curves afﬂicted by rice leaf folder (Huang et al., 
+2012). However, the implementation of satellite hyperspectral 
+sensors in operational activities is not practical due to their 
+limited swaths and low temporal resolution. As a result, 
+operational crop monitoring rarely includes the detection of 
+nitrogen stress or the identiﬁcation of crop diseases and pests. 
+4.2 Satellite imagery 
+At the regional and local levels, agricultural production has 
+been evaluated and estimated using satellite data from Landsat, 
+SPOT, WorldView, and Sentinel-2, which have a medium spatial 
+resolution ranging from 10 to 100 meters (Mueller et al., 2012). 
+Crop yields and biomass have been assessed using images from 
+Landsat 5 TM and SPOT 4 (Noureldin et al., 2013). The issue of 
+small areas was resolved and excellent crop yield accuracy was 
+established using Quickbird, SPOT5, and Landsat satellite photos 
+Frontiers in Agronomy 
+05 
+frontiersin.org 
+Saha et al. 
+10.3389/fagro.2025.1566201 
+(Yang et al., 2009). Patel et al. (1991) established an empirical 
+correlation to estimate agricultural output using the ratio of NIR 
+and R spectral bands generated from IRS LISS data. Shirsath et al. 
+(2020) created crop yield maps after conducting a regional study on 
+crop yield using the Enhanced Vegetation Index obtained from 
+MODIES data. 
+4.3 Aerial photography 
+Airborne multispectral sensors generate high-resolution images 
+that feature accurate spatial resolutions and a wide range of spectral 
+bands. Recent studies by Torresan et al. (2016) and Manfreda et al. 
+(2018) highlight the growing recognition within the ecological 
+research community of aerial photography using Unmanned 
+Aerial Vehicles (UAVs). This innovative technology is proving to 
+be an invaluable tool for effectively monitoring vegetation and 
+ecosystems, opening up new possibilities for ecological 
+assessments and management. 
+It is possible to quantify spectral reﬂectance in the lab as well as 
+in the ﬁeld. To evaluate crop production, a range of ground optical 
+sensors, including spectrometers and high resolution hyperspectral 
+digital multispectral sensors, have been developed to gather 
+reﬂectance data in different spectrum regions (Ahamed et al., 
+2011). Numerous spectral bands collected spanning the 
+electromagnetic spectrum (350–2500 nm) are available using ﬁeld 
+spectroscopy, a form of ground-based remote sensing (Numata 
+et al., 2008). Spectroscopic data at the ground and leaf level in the 
+visible and infrared regions of the electromagnetic spectrum are 
+supported by the notion that light interacts with the plant and that a 
+green leaf’s reﬂectance properties play a role. Multidate optical 
+(visible and near-infrared) remote sensing data and multidate 
+microwave SAR (Synthetic Aperture Radar) satellite data are 
+utilized for wheat and other crops (Defourny et al., 2019). Crop 
+residues and intercrops can be identiﬁed using SAR time-series. 
+Additionally, it can be used to ﬁnd crop residues and intercrops. 
+In a recent study, crop management is improved to attain the 
+best possible production in terms of both quantity and quality by 
+using remote sensing to display the spatial variance in crop growth 
+of wheat (Rebouh et al., 2023b). In 2019, Sentinel-2, which has a 10 
+m resolution, was utilized to track changes in wheat growth under 
+various management techniques and the ﬁndings demonstrated 
+that Green Chlorophyll Index performs best in forecasting 
+crop yield. 
+5 Crop yield prediction study using 
+performance evaluation metrics 
+An important part of estimating is comparing model outputs to 
+real data. In order to effectively evaluate model performance and 
+distinguish between various learning models, it is important to 
+utilize appropriate evaluation metrics (Elavarasan et al., 2020). Key 
+performance indicators for regression models, such as the 
+coefﬁcient of determination (R-squared), mean absolute error 
+(MAE), mean squared error (MSE), root mean square error 
+(RMSE), and mean absolute percentage error (MAPE), play a 
+vital role in providing a comprehensive assessment of a model’s 
+accuracy and reliability. The Mean Absolute Error (MAE) serves as 
+a valuable tool for measuring the average signiﬁcance of errors in a 
+set of forecasts, as it calculates the arithmetic mean of the absolute 
+differences between predicted and actual observations (Ali et al., 
+2018). Similarly, the Mean Squared Error (MSE) provides insights 
+into the performance of the estimator by assessing how closely the 
+regression line aligns with the data points (Elavarasan et al., 2020). 
+To enhance the evaluation of model performance and facilitate 
+meaningful comparisons between different learning models, it is 
+crucial to utilize a range of evaluation metrics. Important 
+performance indicators for regression models include the 
+coefﬁcient of determination (R-squared), Mean Absolute Error 
+(MAE), Mean Squared Error (MSE), Root Mean Squared Error 
+(RMSE), and Mean Absolute Percentage Error (MAPE). 
+The Root Mean Square Error (RMSE) provides valuable insight 
+into the standard deviation of the residuals, illustrating how closely 
+the data points align with the best ﬁt line (Chakrabarty et al., 2021). 
+This helps pinpoint areas for improvement in our model. 
+Furthermore, the Coefﬁcient of Determination (R-squared) offers 
+a clear measure of how well our regression model captures the data, 
+demonstrating that developed framework outperforms the baseline 
+framework (Pant et al., 2021). Lastly, the Mean Absolute Percentage 
+Error (MAPE) allows us to calculate the average percentage errors, 
+showcasing the degree to which the forecasts differ from actual 
+outcomes (Elavarasan et al., 2020). For classiﬁcation difﬁculties, 
+classiﬁcation accuracy is still the most popular and useful metric. 
+6 Challenges and limitations 
+6.1 Geographical limitations 
+We must consider geographic differences because farming 
+practices, climate, and crop types vary by location. When 
+forecasting crops for different regions or countries, it’s essential to 
+combine data and recognize these differences. Collecting accurate 
+data on crop growth, soil, and climate can be challenging. High-
+quality data is crucial for deep learning, but issues like noise, 
+missing information, or poor quality can reduce the model’s 
+effectiveness. Soil nutrients, pests, diseases, and climate impact 
+crop yields, but their complex interactions complicate accurate 
+predictions (Figure 2).  Climate change and  natural disasters  
+create uncertainty, making long-term projections difﬁcult. 
+Current models often overlook key factors and have limitations 
+that need improvement. 
+6.2 Scalability and accessibility of 
+technology 
+Deep learning (DL) models can be highly effective for crop 
+prediction, but they often require signiﬁcant training time, 
+Frontiers in Agronomy 
+06 
+frontiersin.org 
+Saha et al. 
+10.3389/fagro.2025.1566201 
+FIGURE 2 
+Flowchart of the steps for data collection and analysis for AI and ML in crop yield prediction. 
+especially with multiple layers. Performance may vary, and the most 
+complex models do not always yield the best user experience. To 
+select the right crop prediction model, it’s important to analyze data 
+conditions, prediction needs, and model characteristics. Comparing 
+and evaluating different models will help identify the best ﬁt. 
+Additionally, consider factors like interpretability, computational 
+efﬁciency, data requirements, and practical application to enhance 
+your selection process. The difﬁculty lies in ﬁguring out how to 
+make the working model more accurate by training it on a larger 
+dataset, evaluating it to see how well it performs, and ﬁguring out 
+how micro-topological changes impact crop yield prediction 
+(Bramon et al., 2011). Examining the model’s substantial practical 
+implications for giving farmers, growers, and policymakers accurate 
+information on crop yield presents another difﬁculty. 
+Advancements in agricultural production prediction are poised to 
+transform the industry through the ongoing reﬁnement of deep 
+learning models and algorithms. By leveraging big data to analyze 
+soil, climate, and plant growth, these models will reveal valuable 
+insights and patterns, enhancing crop yield management and 
+forecasting accuracy. With added layers, complex connectivity, and 
+strategic parameter tuning, these models will effectively grasp intricate 
+data relationships. This empowers farmers to maximize yields while 
+minimizing resource use. Ultimately, improvements in predictive 
+modeling will boost the sustainability of agriculture, addressing 
+global food security challenges and paving the way for innovative 
+advancements in agricultural forecasting (Gamage et al., 2024). 
+Satellite data remains a highly effective method for surveying 
+extensive areas and monitoring agricultural changes on both regional 
+and national scales. By leveraging satellite imagery, we can gain 
+valuable insights for practical applications. However, it’s essential to 
+have a strong foundation in technical knowledge and skills to 
+effectively process this data and maximize its potential beneﬁts. To 
+extract relevant information for agricultural monitoring, the vast 
+amount of data from many sensors necessitates effective processing 
+and analysis techniques (Wu et al., 2022). Due to variations in 
+spectral range, data format, and geographical and temporal 
+resolution, integrating data from many sensors can be difﬁcult. 
+This may result in challenges with data fusion and processing, 
+which may impact crop monitoring’s precision and dependability 
+(Joshi et al., 2023). A number of variables, including sensor 
+calibration, atmospheric conditions, and data processing 
+techniques, can affect the consistency and quality of remote sensing 
+data from various sources. Additionally, this may make data fusion 
+and analysis challenging (Omia et al., 2023). Furthermore, the 
+Frontiers in Agronomy 
+07 
+frontiersin.org 
+Saha et al. 
+10.3389/fagro.2025.1566201 
+difﬁculty is in creating a strategy with possible variables that will 
+probably work well for all crops or certain crop types. 
+6.3 Data privacy and security concerns 
+Another big obstacle farmers face is negotiating proper data 
+rights in agriculture with Agriculture Technology Providers (ATPs). 
+It implies that to ensure a long-lasting and mutually beneﬁcial 
+partnership between farmers and ATPs, procedures for calculating 
+rewards, protecting rights, and conducting audits are necessary (Yu 
+et al., 2025). Clearer laws, farmers’ involvement in contract talks, 
+and the creation of marketplaces for digital commodities like data 
+and products derived from it are some possible remedies. It does, 
+however, recognize that these solutions are intricate and that their 
+success depends on stakeholder cooperation, regulation, and 
+education (Bryan and Richey, 2020). Concerns about data 
+ownership, sharing, and access rights must be addressed by 
+farmers and IT companies in order to safeguard sensitive data, 
+foster trust, and ensure compliance with data protection regulations 
+(Shawe and McAndrew, 2023). 
+6.4 Energy efﬁciency concerns 
+Big data, however, necessitates datacenters with upgraded 
+infrastructure that can handle and analyze data with greater 
+responsibility. A key consideration in the planning and 
+construction of contemporary datacenters is power usage. The 
+overall power used by computing systems is barely declining, 
+despite a continuous increase in the performance per watt ratio 
+(Al-Fares et al., 2008). Greenhouse gas emissions from this have a 
+signiﬁcant effect on the environment as well. Therefore, reducing 
+energy use and operating expenses is a critical consideration as the 
+datacenter’s size grows. The servers, storage, and connective 
+network infrastructure of future datacenters should be able to 
+manage big data applications with minimal energy consumption. 
+6.5 New developments and possible 
+inventions 
+In order to enhance overall performance, more models, frames, 
+or intricate structures are anticipated to take use of the spectral and 
+temporal dimensions of satellite data and combine additional 
+elements that have been extracted using different techniques. 
+Therefore, the application of both spatial (such as ﬁeld-measured 
+data) and historical (such as crop rotation histories) data to deep 
+learning methods, along with the incorporation of multisensor data, 
+satellite-derived crop phenology, and cropping practice information 
+(Adrian et al., 2021; Xu et al., 2021), constitute signiﬁcant future 
+directions that can result in cloud services to ensure globally 
+accurate crop mapping and area estimation results (Kussul et al., 
+2017). To enhance learning performance and reduce dependence on 
+in situ data, it is essential to further develop transfer learning 
+techniques. These techniques integrate crop phenology with 
+existing knowledge of agricultural practices. By using a model 
+that has been pretrained on a large dataset, we can more 
+effectively adapt it to improve prediction accuracy for the speciﬁc 
+target dataset. The geographical resolution and fragmentation of the 
+agricultural environment determine resolution bias, which is 
+inevitable (Waldner and Defourny, 2017). Resolution bias can 
+arise from pixels covering small ponds, canals, and other noncrop 
+objects, especially in mountainous regions. Therefore, by assessing 
+the effects of the combination of arable land pixels, an unbiased 
+estimator must be used to adapt the actual crop area in a given 
+location (Olofsson et al., 2014). 
+7 Conclusions 
+Crop yield and agricultural output can be signiﬁcantly 
+enhanced by addressing several key factors. These include 
+optimizing climate conditions, improving soil properties, ensuring 
+proper crop nutrient management, and maximizing crop canopy 
+volume and biomass. Additionally, maintaining adequate water 
+content while effectively managing diseases, weeds, and insects, as 
+well as selecting the right crop cultivars and varieties, can further 
+contribute to successful agricultural production. According to the 
+current review, deep learning models typically produce predictions 
+that are more accurate than those made by conventional machine 
+learning models. But it’s also critical to test models with different 
+feature counts and levels of complexity in order to identify the top-
+performing model. Lastly, we also discussed about the possible 
+challenges in estimating agricultural yields using these technologies. 
+Additionally, a fast, cost-effective, and efﬁcient way to track and 
+evaluate crop vigor and estimate crop production is using remote 
+sensing. A highly effective and realistic approach to yield prediction 
+could involve employing direct statistical and empirical models that 
+utilize minimal inputs. By integrating data collected from remote 
+sensing sensors with measured factors that reﬂect the biochemical 
+and biophysical properties of crops, we can enhance the input 
+components of these models. This method has the potential to 
+improve prediction accuracy and efﬁciency in yield forecasting. 
+While satellite data and processing capabilities are now advanced, 
+many organizations and agencies still use satellite-derived crop 
+monitoring methods to inform policymakers about crop production 
+and food security issues. Prediction accuracy is measured by 
+common performance metrics such as RMSE, MSE, MAE, and 
+MAPE. However, these approaches have not yet achieved near-real­
+time, accurate, and quantitative information about crops. 
+Furthermore, concentrating on modeling prediction uncertainty 
+can help with efﬁcient estimation of prediction result uncertainty, 
+enhancing the predictability and interpretability of forecasts. 
+Frontiers in Agronomy 
+08 
+frontiersin.org 
+Saha et al. 
+10.3389/fagro.2025.1566201 
+Author contributions 
+SS: Conceptualization, Data curation, Writing – original draft, 
+Writing – review & editing. OK: Writing – original draft, Writing – 
+review & editing. AU: Writing – original draft, Writing – review & 
+editing. NR: Writing – original draft, Writing – review & editing. 
+Funding 
+The author(s) declare that ﬁnancial support was received for 
+the research and/or publication of this article. This paper has been 
+supported by the RUDNUniversity Strategic Academic 
+Leadership Program. 
+Acknowledgments 
+Authors acknowledge their respective department and 
+institutions for providing support and facilities. 
+Conﬂict of interest 
+The authors declare that the research was conducted in the 
+absence of any commercial or ﬁnancial relationships that could be 
+construed as a potential conﬂict of interest. 
+Generative AI statement 
+The author(s) declare that no Generative AI was used in the 
+creation of this manuscript. 
+Publisher’s note 
+All claims expressed in this article are solely those of the authors 
+and do not necessarily represent those of their afﬁliated organizations, 
+or those of the publisher, the editors and the reviewers. Any product 
+that may be evaluated in this article, or claim that may be made by its 
+manufacturer, is not guaranteed or endorsed by the publisher. 
+References 
+Adrian, J., Sagan, V., and Maimaitijiang, M. (2021). Sentinel SAR-optical fusion for 
+crop type mapping using deep learning and Google Earth Engine. ISPRS J. 
+Photogramm. Remote Sens. 175, 215–235. doi: 10.1016/j.isprsjprs.2021.02.018 
+Ahamed, T., Tian, L., Zhang, Y., and Ting, K. C. (2011). A review of remote sensing 
+methods for biomass feedstock production. Biomass Bioen. 35, 2455–2469. 
+doi: 10.1016/j.biombioe.2011.02.028 
+Al-Fares, M., Loukissas, A., and Vahdat, A. (2008). “A scalable, commodity 
+datacenter network architecture,” in Proceedings of the ACM SIGCOMM Conference 
+on Data Communication. 63–74. 
+Ali, M., Deo, R. C., Downs, N. J., and Maraseni, T. (2018). Multi-stage committee 
+based extreme learning machine model incorporating the inﬂuence of climate 
+parameters and seasonality on drought forecasting. Comput. Electron. Agric. 152, 
+149–165. doi: 10.1016/j.compag.2018.07.013 
+Archana, S., and Kumar, S. P. (2023). A survey on deep learning based crop yield 
+prediction. Nat. Environ. pollut. Technol. 22, 579–592. doi: 10.46488/ 
+NEPT.2023.v22i02.004 
+Belasque, L., Gasparoto, M. C. G., and Marcassa, L. G. (2008). Detection of 
+mechanical and disease stresses in citrus plants by ﬂuorescence spectroscopy. Appl. 
+Opt. 47, 1922–1926. doi: 10.1364/AO.47.001922 
+Bhunia, G. S., Chatterjee, U., Kashyap, A., and Shit, P. K. (2021). Land reclamation 
+and restoration strategies for sustainable development: Geospatial technology based 
+approach (Elsevier: Netherlands). 
+Bramon, R., Boada, I., Bardera, A., Rodriguez, J., Feixas, M., Puig, J., et al. (2011). 
+Multimodal data fusion based on mutual in-formation. IEEE Trans. Vis. Comput. 
+Graph. 18, 1574–1587. doi: 10.1109/TVCG.2011.280 
+Bryan, S., and Richey, L. (2020). Data rights and privacy in agriculture: A global 
+perspective. J. Data Pri. Ethics 5, 112–123. 
+Capa-Morocho, M., Ines, A. V. M., Baethgen, W. E., Rodrı́guez-Fonseca, B., Han, E., 
+and Ruiz-Ramos, M. (2016). Crop yield outlooks in the Iberian Peninsula: Connecting 
+seasonal climate forecasts with crop simulation models. Agric. Syst. 149, 75–87. 
+doi: 10.1016/j.agsy.2016.08.008 
+Case-Cohen, A. L. (2018). Understanding the Soil Health Knowledge of Farmers in the 
+Yakima Valley, Evergreen State College. 
+Chakrabarty, A., Mansoor, N., Uddin, M. I., Al-Adaileh, M. H., Alsharif, N., and 
+Alsaade, F. W. (2021). Prediction approaches for smart cultivation: a comparative 
+study. Complexity 2021. doi: 10.1155/2021/5534379 
+Chu, Z., and Yu, J. (2020). An end-to-end model for rice yield prediction using deep 
+learning fusion. Comput. Electron. Agric. 174. doi: 10.1016/j.compag.2020.105471 
+Coops,  N.  C., Stone, C.,  Culvenor,  D. S.,  Chisholm, L.  A.,  and Merton,  R.  N.  
+(2003). Chlorophyll content in eucalypt vegetation at the leaf and canopy scales as 
+derived from high resolution spectral data. Tree Phys. 23, 23–31. doi: 10.1093/ 
+treephys/23.1.23 
+Clevers, J. P. W. (1986) The application of a vegetation index in correcting the 
+infrared reﬂectance for soil background. International Archives of Photogrammetry 
+and Remote Sensing, Balkema, Rotterdam, Boston 26(1), 221–226. 
+Crippen, R. E. (1990). Calculating the vegetation index faster.Remote Sensing of 
+Environment 34(1), 71–73. 
+Deenng, D. W., Haas, R. H., and Schell, J. A. (1975), Measuring forage productton of 
+gramng urnts from Landsat MSS data. Proceedings of the Tenth Internatmnal 
+Symposium on Remote Sensing of Environment, ERIM, Ann Arbor, MI, 1169–1178. 
+Defourny, P., Bontemps, S., Bellemans, N., Cara, C., Dedieu, G., Guzzonato, E., et al. 
+(2019). Near real-time agriculture monitoring at national scale at parcel resolution: 
+Performance assessment of the Sen2-Agri automated system in various cropping 
+systems around the world. Rem. Sens. Env. 221, 551–568. doi: 10.1016/j.rse.2018.11.007 
+de Freitas Cunha, R. L., and Silva, B. (2020). “Estimating crop yields with remote 
+sensing and deep learning,” in Proceedings of the 2020 IEEE Latin American GRSS & 
+ISPRS Remote Sensing Conference (LAGIRS), Santiago, Chile. 273–278. 
+Du, Z., Yang, J., Ou, C., and Zhang, T. (2019). Smallholder crop area mapped with a 
+semantic segmentation deep learning method. Remote Sens. 11, 888. doi: 10.3390/ 
+rs11070888 
+Elavarasan, D., Vincent, D. R., Srinivasan, K., and Chang, C.-Y. (2020). A hybrid CFS 
+ﬁlter and RF-RFE wrapper-based feature extraction for enhanced agricultural crop 
+yield prediction modeling. Agriculture 10, 400. doi: 10.3390/agriculture10090400 
+El Behairy, R. A., Arwash, H. M. E., El Baroudy, A. A., Ibrahim, M. M., Mohamed, E. 
+S., Rebouh, N. Y., et al. (2023). Artiﬁcial intelligence integrated GIS for land suitability 
+assessment of wheat crop growth in arid zones to sustain food security. Agronomy 13, 
+1281. doi: 10.3390/agronomy13051281 
+Environment and Climate Change Canada (ECCC) (2021). National inventory 
+report 1990–2019: greenhouse gas sources and sinks in Canada. Available online at: 
+https://publications.gc.ca/site/eng/9.506002/publication.html (Accessed December 19, 
+2022). 
+Gamage, A., Gangahagedara, R., Subasinghe, S., Gamage, J., Guruge, C., Senaratne, S., et al 
+(2017). Sugarcane yield prediction in Brazil using NDVI time series and neural networks 
+ensemble. Int. J. Remote Sens. 38, 4631–4644. doi: 10.1080/01431161.2017.1325531 
+Gamage, A.,  Gangahagedara,  R., Subasinghe,  S., et al.  (2024). Advancing  
+sustainability: The impact of emerging technologies in agriculture. Curr. Plant Biol. 
+40, 100420. doi: 10.1016/j.cpb.2024.100420 
+Gawande,  V., Saikanth,  D.  R.  K., Sumithra,  B.  S., Swamy, G. N.,  Chowdhury,  M.,  
+and Singh, B. V. (2023). Potential of precision farming technologies for eco­
+friendly agriculture. Int. J. Plant Soil Sci. 35, 101–112. doi: 10.9734/ijpss/2023/ 
+v35i193528 
+Haghverdi, A., Washington-Allen, R. A., and Leib, B. G. (2018). Prediction of cotton 
+lint yield from phenology of crop indices using artiﬁcial neural networks. Comput. 
+Electron. Agric. 152, 186–197. doi: 10.1016/j.compag.2018.07.021 
+Frontiers in Agronomy 
+09 
+frontiersin.org 
+Saha et al. 
+10.3389/fagro.2025.1566201 
+He, K., Zhang, X., Ren, S., and Sun, J. (2016). “Deep residual learning for image 
+recognition,” in Proceedings of the IEEE Conference on Computer Vision and Pattern 
+Recognition, Las Vegas, NV, USA. 770–778. 
+Huang, W., Lamb, D. W., Niu, Z., Zhang, Y., Liu, L., Wang, J., et al. (2007). 
+Identiﬁcation of yellow rust in wheat using in-situ spectral reﬂectance measurements 
+and airborne hyperspectral imaging. Precision Agric 8, 187–197. 
+Huang, W., Lamb, D. W., Niu, Z., Zhang, Y., Liu, L., and Wang, J. (2007). 
+Identiﬁcation of yellow rust in wheat using in-situ spectral reﬂectance measurements 
+and airborne hyperspectral imaging. Precis. Agric. 8, 187–197. doi: 10.1007/s11119­
+007-9038-9 
+Huang, J., Liao, H., Zhu, Y., Sun, J., Sun, Q., and Liu, X. (2012). Hyperspectral 
+detection of rice damaged by rice leaf folder (Cnaphalocrocis medinalis). Comput. 
+Electron. Agric. 82, 100–107. doi: 10.1016/j.compag.2012.01.002 
+Huete, A., Didan, K., Miura, T., Rodriguez, E. P., Gao, X., and Ferreira, L. G.. (2002). 
+Overview of the radiometric and biophysical performance of the MODIS vegetation 
+indices. Remote Sensing of Environment, 83, 195–213 
+Jennewein, J. S., Hively, W., Lamb, B. T., Daughtry, C. S. T., Thapa, R., Thieme, A., 
+et al. (2024). Spaceborne imaging spectroscopy enables carbon trait estimation in cover 
+crop and cash crop residues. Precis. Agric. 25, 2165–2197. doi: 10.1007/s11119-024­
+10159-4 
+Jones, J. W. (2003). The DSSAT cropping system model. Eur. J. Agron. 18, 235–265. 
+doi: 10.1016/S1161-0301(02)00107-7 
+Jordan, C. F. (1969). Derivation of leaf area index from quality of light on the forest 
+ﬂoor. Ecology, 50, 663–666. 
+Joshi, A., Pradhan, B., Gite, S., and Chakraborty, S. (2023). Remote-sensing data and 
+deep-learning techniques in crop mapping and yield prediction: A systematic review. 
+Remote Sens. 15. doi: 10.3390/rs15082014 
+Justice, C. O., Townshend, J. R. G., Vermata, E. F., Masuoka, E., Wolfe, R. E., Saleons, 
+N., et al. (2002). An overview of MODIS Land data processing and product status. 
+Remote Sens. Environ. 83, 3–15. doi: 10.1016/S0034-4257(02)00084-6 
+Karmakar, P., Teng, S. W., Murshed, M., Pang, S., Li, Y., and Lin, H. (2024). Crop 
+monitoring by multimodal remote sensing: A review. Rem. Sens. App.: Soc Env. 33, 
+101093. doi: 10.1016/j.rsase.2023.101093 
+Karunathilake, E. M. B. M., Le, A. T., Heo, S., Chung, Y. S., and Mansoor, S. (2023). 
+The path to smart farming: Innovations and opportunities in precision agriculture. 
+Agriculture 13, 1593. doi: 10.3390/agriculture13081593 
+Khaki, S., and Wang, L. (2019). Crop yield prediction using deep neural networks. 
+Front. Plant Sci. 2019, 10. doi: 10.3389/fpls.2019.00621 
+Khaki, S., Wang, L., and Archontoulis, S. V. (2020). A CNN-RNN framework for 
+crop yield prediction. Front. Plant Sci. 10, 1750. doi: 10.3389/fpls.2019.01750 
+Knyazikhin, Y., Schull, M. A., Stenberg, P., Mõttus, M., Rautiainen, M., Yang, Y., 
+et al. (2013). Hyperspectral remote sensing of foliar nitrogen content. Proc. Natl. Acad. 
+Sci. U.S.A. 110, E185–E192. doi: 10.1073/pnas.1210196109 
+Kussul, N., Lavreniuk, M., Skakun, S., and Shelestov, A. (2017). Deep learning 
+classiﬁcation of land cover and crop types using remote sensing data. IEEE Geosci. 
+Remote Sens. Lett. 14, 778–782. doi: 10.1109/LGRS.2017.2681128 
+Lecerf, R., Ceglar, A., López-Lozano, R., van der Velde, M., and Baruth, B. (2019). 
+Assessing the information in crop model and meteorological indicators to forecast crop 
+yield over Europe. Agric. Syst. 168, 191–202. doi: 10.1016/j.agsy.2018.03.002 
+LeCun, Y., Bengio, Y., and Hinton, G. (2015). Deep learning. Nature 521, 436. 
+doi: 10.1038/nature14539 
+Lenk, S., Chaerle, L., Pfundel, E. E., Langsdorf, G., Hagenbeek, D., Lichtenthaler, H. 
+K., et al. (2007). Multispectral ﬂuorescence and reﬂectance imaging at the leaf level and 
+its possible applications. J. Exp. Bot. 58, 807–814. doi: 10.1093/jxb/erl207 
+Liakos, K. G., Busato, P., Moshou, D., Pearson, S., and Bochtis, D. (2018). Machine 
+learning in agriculture: A review. Sensors 18, 2674. doi: 10.3390/s18082674 
+Linaza, M. T., Posada, J., Bund, J., Eisert, P., Quartulli, M., Döllner, J., et al. (2021). 
+Data-driven Artiﬁcial Intelligence applications for sustainable precision agriculture. 
+Agronomy 11, 1227. doi: 10.3390/agronomy11061227 
+Lobell, D., Thau, D., Seifert, C., Engle, E., and Little, B. (2015). A scalable satellite-
+based crop yield mapper. Rem. Sens. Env. 164. doi: 10.1016/j.rse.2015.04.021 
+Ma, Y., Zhang, Z., Kang, Y., and Özdo¢gan, M. (2021). Corn yield prediction and 
+uncertainty analysis based on remotely sensed variables using a Bayesian neural 
+network approach. Remote Sens. Environ. 259, 112408. doi: 10.1016/j.rse.2021.112408 
+Manfreda, S., McCabe, M., Miller, P., Lucas, R., Madrigal, V. P., Mallinis, G., et al. 
+(2018). On the use of unmanned aerial systems for environmental monitoring. Remote 
+Sens. 10, 641. doi: 10.3390/rs10040641 
+Mueller, N. D., Gerber, J. S., Johnston, M., Ray, D. K., Ramankutty, N., and Foley, J. 
+A. (2012). Closing yield gaps through nutrient and water management. Nature 490, 
+254–257. doi: 10.1038/nature11420 
+Nevavuori, P., Narra, N., Linna, P., and Lipping, T. (2020). Crop yield prediction 
+using multitemporal UAV data and spatio-temporal deep learning models. Remote 
+Sens. 12, 4000. doi: 10.3390/rs12234000 
+Nevavuori, P., Narra, N., and Lipping, T. (2019). Crop yield prediction with deep 
+convolutional neural networks. Comput. Electron. Agric. 163, 104859. doi: 10.1016/ 
+j.compag.2019.104859 
+́
+Nguyen, G., Dlugolinsky, S., Bobák, M., Tran, V., Lopez Garcı́
+., Heredia, I., et al. 
+́
+a, A
+(2019). Machine learning and deep learning frameworks and libraries for large-scale 
+data mining: A survey. Artif. Intell. Rev. 52, 77–124. doi: 10.1007/s10462-018-09679-z 
+Noureldin, N. A., Aboelghar, M. A., Saudy, H. S., and Ali, A. M. (2013). Rice yield 
+forecasting models using satellite imagery in Egypt. Egyptian J. Rem. Sens. Space Sci. 16, 
+125–131. doi: 10.1016/j.ejrs.2013.04.005 
+Numata, I., Roberts, D. A., Chadwick, O.a., Schimel, J. P., Galvão, L. S., and Soares, J. 
+V. (2008). Evaluation of hyperspectral data for pasture estimate in the Brazilian 
+Amazon using ﬁeld imaging spectrometers. Remote Sens. Env. 112, 1569–1583. 
+doi: 10.1016/j.rse.2007.08.014 
+Olofsson, P., Foody, G. M., Herold, M., Stehman, S. V., Woodcock, C. E., Michael, A., 
+et al. (2014). Good practices for estimating area and assessing accuracy of land change. 
+Remote Sens. Environ. 148, 42–57. doi: 10.1016/j.rse.2014.02.015 
+Omia, E., Bae, H., Park, E., Kim, M. S., Baek, I., Kabenge, I., et al. (2023). Remote 
+sensing in ﬁeld crop monitoring: A comprehensive review of sensor systems, data 
+analyses and recent advances. Remote Sens. 15. doi: 10.3390/rs15020354 
+Pant, J., Pant, R. P., Kumar, M., Pratap, D., and Pant, H. (2021). Materials Today: 
+proceedings Analysis of agricultural crop yield prediction using statistical techniques of 
+machine learning. Mater. Today: Proc. 46, 1–5. 
+Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., et al. (2019). and 
+antiga, L. Pytorch: an imperative style, high-performance deep learning library. Adv. 
+Neural Inf. Process Syst. 32, 8026–8037. doi: 10.48550/arXiv.1912.01703 
+Patel, N. K., Ravi, N., and Navalagund, R. R. (1991). Estimation of rice yield using 
+IRS-1A digital data in costal tract of Orissa. Int. J. Remote Sens. 12, 2259–2266. 
+doi: 10.1080/01431169108955256 
+Rebouh, N. Y., Khugaev, C. V., Utkina, A. O., Isaev, K. V., Mohamed, E. S., and 
+Kucher, D. E. (2023a). Contribution of eco-friendly agricultural practices in improving 
+and stabilizing wheat crop yield: A review. Agronomy 13, 2400. doi: 10.3390/ 
+agronomy13092400 
+Rebouh, N.  Y.,  Mohamed,  E.  S., Polityko,  P.  M.,  Dokukin, P. A.,  Kucher, D. E.,  
+Latati, M., et al. (2023b). Towards improving the precision agriculture management 
+of the wheat crop using remote sensing: a case study in Central Non-Black Earth 
+region of Russia. Egypt. J. Remote Sens. Space Sci. 26, 505–517. doi: 10.1016/ 
+j.ejrs.2023.06.007 
+Ren, Y., Li, Q., Du, X., Zhang, Y., Wang, H., Shi, G., et al. (2023). Analysis of corn 
+yield prediction potential at various growth phases using a process-based model and 
+deep learning. Plants 12, 446. doi: 10.3390/plants12030446 
+Richardson, A. J., and Wiegand, C. (1977). Distinguishing Vegetation from Soil 
+Background Information. Photogrammetric Engineering and Remote Sensing, 43, 
+1541–1552. 
+Russello, H. “Convolutional Neural Networks for Crop Yield Prediction Using 
+Satellite Images,” Master Thesis, University of Amsterdam, 2018. 
+Scikit-Learn (2022). Available online at: https://scikit-learn.org/stable/index.html 
+(Accessed March 1, 2022). 
+Seide, F., and Agarwal, A. (2016). “Cntk: microsoft’s open-source deep-learning 
+toolkit,” in Proceedings of the 22nd ACM SIGKDD International Conference on 
+Knowledge Discovery and Data Mining, New York, NY, USA. 2135. 
+Sharma, S., Rai, S., and Krishnan, N. C. (2020). Wheat crop yield prediction using 
+deep LSTM model. arXiv. doi: 10.48550/arXiv.2011.01498 
+Shawe, R., and McAndrew, I. R. (2023). Increasing threats to United States of 
+America infrastructure based on cyber-attacks. J. Software Eng. Appl. 16, 530–547. 
+doi: 10.4236/jsea.2023.1610027 
+Shirsath, P. B., Sehgal, V. K., and Aggarwal, P. K. (2020). Downscaling regional crop 
+yields to local scale using remote sensing. Agric. (Switzerland) 10, 1–14. doi: 10.3390/ 
+agriculture10030058 
+Sobhana, M., Chowdary, S. C., Indira, D. N. V. S. L.S., and Kumar, K. K. (2022). 
+CROPUP—A crop yield prediction and recommendation system with geographical data 
+using DNN and XGBoost. Int. J. Recent Innov. Trends Comput. Commun. 10, 53–62. 
+doi: 10.17762/ijritcc.v10i11.5780 
+Tian, H., Wang, P., Tansey, K., Han, D., Zhang, J., Zhang, S., et al. (2021). A deep 
+learning framework under attention mechanism for wheat yield estimation using 
+remotely sensed indices in the Guanzhong Plain, Pr China. Int. J. Appl. Earth Obs. 
+Geoinf. 102, 102375. doi: 10.1016/j.jag.2021.102375 
+Tian, T., Zhong, C., Lin, X., Wei, Z., and Hakonarson, H. (2023). Complex 
+hierarchical structures in single-cell genomics data unveiled by deep hyperbolic 
+manifold learning. Genome Res. 33, 232–246. doi: 10.1101/gr.277068.122 
+Torresan, C., Berton, A., Carotenuto, F., Di Gennaro, S. F., Gioli, B., Matese, A., et al. 
+(2016). Forestry applications of UAVs in Europe: a review. International Journal of 
+Remote Sensing, 38 (8–10), 2427–2447. 
+United Nations (2024). “United Nations, Department of Economic and Social 
+Affairs, Population Division,” in World Population Prospects 2024, Online Edition. 
+Vedaldi, A., and Lenc, K. (2015). “Matconvnet: convolutional neural networks for 
+matlab,” in Proceedings of the 23rd ACM international conference on Multimedia, 
+Brisbane, Australia. 689–692. 
+Waldner, F., and Defourny, P. (2017). Where can pixel counting area estimates meet 
+user-deﬁned accuracy requirements? Int. J. Appl. Earth Obs. Geoinf. 60, 1–10. 
+doi: 10.1016/j.jag.2017.03.014 
+Frontiers in Agronomy 
+10 
+frontiersin.org 
+Saha et al. 
+10.3389/fagro.2025.1566201 
+Wang, S., Chen, W., Xie, S. M., Azzari, G., and Lobell, D. B. (2020). Weakly 
+supervised deep learning for segmentation of remote sensing imagery. Remote Sens. 12, 
+207. doi: 10.3390/rs12020207 
+Wang, Y., Zhao, W., Tang, X., Liu, Y., Tang, H., Guo, J., et al. (2023). “Plasma rice 
+yield prediction based on Bi-LSTM model,” in Proceedings of the Second International 
+Conference on Electronic Information Engineering, Big Data, and Computer Technology 
+(EIBDCT 2023), Xishuangbanna, China, Vol. 68. 
+Weiss, M., Jacob, F., and Duveiller, G.. Remote sensing for agricultural applications: 
+A meta-review. (2019). Remote Sens. Env. 236. 
+World Health Organization (WHO) (2023). Fact sheets: climate change and health. Available 
+online at: https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health 
+(Accessed October 12, 2023). 
+Wu, B., Zhang, M., Zeng, H., Tian, F., Potgieter, A. B., Qin, X., et al. (2022). 
+Challenges and opportunities in remote sensing-based crop monitoring: a review. Natl. 
+Sci. Rev. 10, nwac290. doi: 10.1093/nsr/nwac290 
+Xu, J., Yang, J., Xiong, X., Li, H., Huang, J., Ting, K. C., et al. (2021). Towards 
+interpreting multi-temporal deep learning models in crop mapping. Remote Sens. 
+Environ. 264, 112599. doi: 10.1016/j.rse.2021.112599 
+Yang, C., Everitt, J. H., and Bradford, J. M. (2009). Evaluating high resolution SPOT 5 satellite 
+imagery to estimate crop yield. Precis. Agric. 10, 292–303. doi: 10.1007/s11119-009-9120-6 
+Yang, W., Nigon, T., Hao, Z., Paiao, G. D., Fernández, F. G., Mulla, D., et al. (2021). 
+Estimation of corn yield based on hyperspectral imagery and convolutional neural 
+network. Comp. Electr. Agric. 184, 106092. doi: 10.1016/j.compag.2021.106092 
+Yang, X., Yang, H., Zhang, F., Fan, X., Ye, Q., and Feng, Z. (2019). A random-
+weighted plane Gaussian artiﬁcial neural network. Neural Comput. Applic. 31, 8681–8692. 
+doi: 10.1007/s00521-019-04457-6 
+Yu, Z., Hou, E., Pompeo, J., Huffaker, R., Wang, M., Zhao, Y., et al. (2025). 
+Agriculture technology providers’ perspectives of data rights and obligations in 
+agriculture reﬂected by farm data value chain. Sus. Futures 9, 100585. doi: 10.1016/ 
+j.sftr.2025.100585 
+Zaman, Q. U., Esau, T. J., Schumann, A. W., Percival, D. C., Chang, Y. K., Read, S. M., 
+et al. (2011). Development of prototype automated variable rate sprayer for real-time 
+spot-application of agrochemicals in wild blueberry ﬁelds. Comp. Elect. Agric. 76, 175– 
+182. doi: 10.1016/j.compag.2011.01.014 
+Zha, Y., Gao, J., and Ni, S. (2003) Use of Normalized Difference Built-Up Index in 
+Automatically Mapping Urban Areas from TM Imagery. International Journal of 
+Remote Sensing, 24, 583–594. 
+Zhang,  J.  c., Yuan,  L., Wang,  J.  h.,  Huang, W.  J.,  Chen,  L.,  Zhang,  D.  Y., et al.  
+(2012). Spectroscopic leaf level detection of powdery mildew for winter wheat using 
+continuous wavelet analysis. J. Integr. Agric. 11, 1474–1484. doi: 10.1016/S2095­
+3119(12)60147-6 
+Zhang, L., Zhang, Z., Luo, Y., Cao, J., Xie, R., and Li, S. (2021). Integrating satellite-
+derived climatic and vegetation indices to predict smallholder maize yield 
+using deep learning. Agric. For. Meteorol. 311, 108666. doi: 10.1016/ 
+j.agrformet.2021.108666 
+Zhong,  L., Hu,  L.,  and  Zhou, H. (2019).  Deep  learning  based  multi-temporal  
+crop classiﬁcation. Remote Sens. Environ. 221, 430–443. doi: 10.1016/ 
+j.rse.2018.11.032 
+Zhou, Z., Li, S., and Shao, Y. (2018). “Object-oriented crops classiﬁcation for 
+remote sensing images based on convolutional neural network,” in Proceedings of the 
+SPIE—The International Society for Optical Engineering, Berlin, Germany, 10–12 
+September 2018. 
+Frontiers in Agronomy 
+11 
+frontiersin.org 

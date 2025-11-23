@@ -1,0 +1,29 @@
+### DOCUMENT INFO  
+- **Title/Topic:** Crop Rotation Modeling for Deep Learning-Based Parcel Classification from Satellite Time Series  
+- **Type:** Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed:** Permanent cultures (meadows, vineyards, pastures), alternating corn-wheat-rapeseed rotations.  
+- **Crops mentioned:** Oats, wheat, mixed cereal, rapeseed, legumes, alfalfa, maize, barley, rye, potato, soybean, sorghum, sunflower, triticale, vineyard, meadows, wood pastures.  
+- **Regions covered:** Auvergne-Rhône-Alpes region (France), specifically the 31TFM Sentinel-2 tile (110×110 km² area centered at 4.31N, 46.44E).  
+
+### KEY FINDINGS  
+- **Yield improvements:** Multi-year modeling improves crop classification accuracy by 6.6 mIoU points over single-year methods.  
+- **Soil health benefits:** Not explicitly mentioned, but crop rotation is highlighted as critical for agricultural optimization.  
+- **Disease reduction:** Not discussed.  
+- **Economic impact:** The Common Agricultural Policy (CAP) allocates ~50 billion euros annually in subsidies, emphasizing the need for accurate crop monitoring.  
+
+### NUMERICAL DATA/TABLES  
+- **Dataset size:** 103,602 parcels with 3 years of annotations (2018–2020).  
+- **Crop distribution (top 3):**  
+  - Meadow: 184,489 declarations  
+  - Maize: 42,006 declarations  
+  - Wheat: 27,921 declarations  
+- **Sentinel-2 data:** 10 spectral bands at 10m resolution, 25TB/year over Europe.  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers:** Leverage multi-year satellite data and crop rotation patterns to improve classification accuracy.  
+- **Best practices for crop rotation:** Use models combining inter-annual (past crop declarations) and intra-annual (satellite time series) dynamics for optimal results.  
+
+---  
+*Note: Extracted data focuses on the paper’s methodological contributions and dataset; specific agronomic practices (e.g., soil health) are inferred but not detailed in the source text.*

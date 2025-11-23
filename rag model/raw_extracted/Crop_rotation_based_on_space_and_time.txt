@@ -1,0 +1,457 @@
+2016 IEEE International Conference on Technological Innovations in ICT For Agriculture and Rural Development                  
+(TIAR 2016) 
+ 
+ 
+23 
+978-1-5090-0615-1/16/$31.00 ©2016 IEEE 
+ 
+Crop Rotation Based On Space and Time 
+  
+ 
+ 
+ 
+Atchatha.M 
+Department of Information technology 
+Easwari Engineering college, 
+Chennai,India. 
+akshathamurali95@gmail.com 
+ 
+Abstract--- The growth of any organic farming needs 
+vital energy source which will keep flourish and also 
+increase yield. Crops need nutrients. But we used to 
+substitute by fertilizers, which can result in 
+agriculture runoffs or extra input from the farmers. 
+This paper tries to suggest an alternate for this 
+dependency by introducing the crop rotation based 
+on the space and time. Agriculture can be conceived 
+as management of land parcels and improving the 
+productivity. It serves only contemporary society and 
+also our future generations. The major factor lies in 
+the part of productivity by using the landscape 
+structure and crop management. 
+ 
+Keywords: 
+agriculture runoff, crop rotation, contemporary 
+society 
+ 
+I.INTRODUCTION 
+ 
+It is expected that the world’s population will reach 
+9.2 billion people, 34 percent higher than today by 
+2050[1]. Much of this growth will happen in 
+developing countries. To keep up with rising 
+populations and income growth, global food 
+production must increase by 70 percent in order to 
+be able to feed the world. Precision agriculture is 
+the call of the day, wherein the soil, a complex 
+mixture of all micro and macro nutrients, is 
+accurately mapped for its compositions so as to 
+reduce the dependence on the artificial additives 
+like fertilizers. NASA has been very supportive, 
+along with IBM, in providing services to farmers of 
+US for getting better yield through precision 
+agriculture [2]. The data obtained from on the field 
+sensors and remote sensing helps analyze the 
+condition of the soil, get its nutritional property. 
+Though this can’t be equal to that of the direct 
+observation by the farmers it is more useful when 
+implementing for larger farms. India is an agro 
+based country, ranked 7th on the Gross Domestic  
+ 
+MaitreyiJayakumar 
+Department of Information Technology 
+Easwari Engineering College 
+Chennai,India 
+mitujay17@gmail.com 
+ 
+Product (GDP) with the 2nd largest population in  
+the world, with almost 50% of its population 
+depending on agriculture yet having only 17.1% of 
+GDP contribution [3]. The land under cultivation is 
+drastically decreasing having to meet the habitation 
+requirement 
+of 
+the 
+exponentially 
+growing 
+population. Thus there is a demand for more crop 
+production in a comparatively small plot, leading to 
+increased utilization of artificial crop enhancers 
+like fertilizers which make the soil less cultivable 
+every time it is used. Also there have been 
+incidents in Gujarat where the supply of potato 
+crops was so high than demand, which lead to 
+wastage of the crops [4]. This scenario in Gujarat 
+could have been avoided if only the alternative to 
+these crops were properly analyzed. 
+Agricultural runoff has been a major cause of the 
+water pollution these days and they may cause 
+many kinds of diseases in both humans and animals 
+that consume or live in it. Also additional nutrients 
+mean wastage of fertilizers which is actually an 
+additive cost that can be cut short to provide better 
+profit to the farmers. Thus an optimal solution 
+would be to study the soil pattern and aid with only 
+those nutrients as required. In case of nutrients 
+when lesser than the required, organic farming 
+could be used. There has been more than one way 
+to analyze the soil nutrient content. 
+In this paper, we go in for this precision farming by 
+remote sensing. It aims at providing a solution to 
+these issues by introducing the concept of crop 
+rotation based on space and time. The paper has 
+been classified into four phases, the first section 
+deals with the introduction. Second being the 
+analysis of the past and current trends. Then, the 
+proposed methodology. Last the conclusion and 
+future indications. 
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:48:29 UTC from IEEE Xplore.  Restrictions apply. 
+2016 IEEE International Conference on Technological Innovations in ICT For Agriculture and Rural Development                  
+(TIAR 2016) 
+ 
+ 
+24 
+978-1-5090-0615-1/16/$31.00 ©2016 IEEE 
+ 
+ 
+Keywords: 
+Precision agriculture, nutritional property 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure.1. [15].Agriculture Map of Gujarat 
+ 
+II.PROPOSED MODEL 
+ 
+ A.Phase I: Sensing And gathering the data:  
+ 
+Sudduth et al [5] and Adamchuk et al [6] gave a 
+broad overview of the various types of the sensors. 
+Hak-Jin Kim et al [7] did an extensive study on the 
+techniques used for the site specific crop 
+management, where fertilizers are applied based on 
+the spatial requirement. The approaches to nutrient 
+sensing can be broadly classified into the 
+categories, which include electrochemical sensing 
+that uses ion selective electrodes(ISE) to generate a 
+voltage proportional to the nutrient observed 
+,optical sensing that uses reflectance spectroscopy 
+to detect the level of energy reflected/absorbed by 
+the nutrients, Mechanical sensors which measure 
+the force from a tool engaged in the soil, Acoustic 
+sensors that quantify a sound produced by the 
+interacting tool, Pneumatic sensors that assess the 
+ability to inject air into the soil and electrical and 
+electromagnetic sensors that measure the electrical 
+properties of the affected composition of the tested 
+soil[8]. NIRS technology has been applied in many 
+fields including food industry, petrochemical 
+industry, and in agriculture because of its testing 
+speed, low cost, and non-destructive as well as 
+real-time testing [9]. Sneha J.Bansod et al[8] gave an 
+overview on the NIR spectroscopy based soil 
+nitrogen 
+sensing, 
+wherein 
+the 
+multivariate 
+calibration techniques for improved accuracy are 
+briefed. The idea of on the go soil macronutrient 
+sensing has its roots in as early as 1990s. Adsett et 
+al [10] designed a tractor-mounted field monitoring 
+system prototype to measure soil nitrate levels in 
+the fields using ISEs, giving a response time of less 
+than 20s. Viscarra Rossel et al [11] built a soil 
+analysis system comprising a batch-type mixing 
+chamber with two inlets. Adamchuk et al [12] 
+developed an automated sampling system for soil 
+pH electrode in direct contact with moist soil 
+collected by the sampling system, which could 
+measure the pH while taking soil samples at a pre-
+selected depth between 0 and 20 cm every 8s. Veris 
+Mobile Sensor Platform made in Veris Technology 
+Inc.,Salina, Kansas,Usa[12] is a commercially viable 
+prototype to sense the soil on the go. Though there 
+are so many approaches and tools for on the go soil 
+nutrient sensing, there are still the issues like 
+clogging of the soil sampler because of varying 
+size of the soil particles, variation in the color 
+range comparatively on conversions to better 
+comparable coloring schemes. Each nutrient has its       
+own frequency called as spectral signature which is 
+specific to that particular element. We can use this 
+variation to extract the data from the image 
+observed. 
+ 
+B. Phase II: Decision Making 
+ 
+The crop to be grown on a particular plot depends 
+on various factors like the soil’s nutrient content, 
+variation based on the local demand and current 
+resource demand expectancy which depends on the 
+probable crop the neighbors will grow. These 
+factors when properly analyzed will lead to a better 
+profit. There is sure to be a variation in the level of 
+nutrients in the soil in within the given plot of the 
+soil, and to neutralize this, farmers usually do 
+tilling. But it has been found that tilling can result 
+in a loss of topsoil which contains the much 
+essential organic humus, so no-till farming is 
+preferred. But the problem remains unsolved in this 
+case, so we go on for the remote sensing, wherein 
+the additive fertilizers are only added in the places 
+where they are needed. This can still be refined by 
+instead going for a more organic solution, wherein 
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:48:29 UTC from IEEE Xplore.  Restrictions apply. 
+2016 IEEE International Conference on Technological Innovations in ICT For Agriculture and Rural Development                  
+(TIAR 2016) 
+ 
+ 
+25 
+978-1-5090-0615-1/16/$31.00 ©2016 IEEE 
+ 
+we plant only the crop suitable for the conditions in 
+that particular place which can substitute the 
+deficient nutrient for the next plantation. For 
+instance, in case of nitrogen deficiency, we can 
+grow leguminous plants that can fix nitrogen for 
+the better soil nitrogen content in the next cycle. 
+But this does not mean any crop that is suitable can 
+be grown. Only those crops that have a demand in 
+the market and can produce considerable profit can 
+be grown. Also if the crop is produced in surplus, 
+even if the demand is high, there is a dip in the 
+profit produced. So we need to consider the crops 
+grown in the neighboring fields too. 
+Keywords: 
+Site specific crop management, on the go sensors, 
+stray light, spectral signature, top soil, no-till 
+farming, remote sensing, leguminous plants 
+ 
+III.METHODOLOGY 
+ 
+Indian subcontinent has many villages. Indian 
+farmers cannot afford a sophisticated on the go 
+sensor. Every village can have a solar powered 
+battery backup hover which flies at a particular 
+range above the ground, sensing the soil nutrients 
+using IR absorption spectrum, capturing the 
+sunlight in a battery during the daytime and 
+collecting the data during the night to avoid stray 
+light, so as to provide an improved and accurate 
+mapping of nutrients so that, Instead of depending 
+on artificial fertilizers, farmer can grow specific 
+crops, in the specific place that suits it, within the 
+field. For instance, if a soil has lower nitrogen 
+content farmers can grow. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure.2. Block diagram for the proposed 
+methodology. 
+plants with nodules which would fix nitrogen for 
+the next cycle or employ slash and burn for that 
+particular region in case of potassium deficit. In 
+this paper, we consider the nitrogen requirement of 
+potato, onion and chickpea plants. Potato plants 
+require nitrogen content of 170 kg per hectare, and 
+onions requirement is 155 kg per hectare while 
+chickpea being a plant with nodule, needs only 
+20kg per hectare. So we grow chickpea to improve 
+the nitrogen level in the soil [14]. 
+Keywords: 
+IR absorption spectrum. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure.3 [16].IR absorption spectrum of N-H 
+ 
+ 
+IV.ALGORITHM 
+ 
+ 
+ 
+The data are collected and scrutinized for various 
+nutrient contents in the soil. The area of land is 
+considered in terms of m2. The current considered 
+pixel value is taken as x. If the value of ‘x’ lies in 
+the range of N-H between 3300 and 3500, plot the 
+area in red. If the value of ‘x’ lies in the range of 
+N-O between 1345 and 1385, plot the area in blue. 
+If the value of pixel is neither of the above range 
+plot the area in white. Separate the three areas into 
+red, blue and white. Considering the area of the 
+red, if the area is greater than 170, then plant the 
+potato in that area. If the area of red lies between 
+83 and 170, then plant onion. If the area of red has 
+neither of the above values plant chickpea. Thus, 
+making various analysis and having the exact data, 
+It is being sent to the repository, to be the main 
+knowledge and resource hub of new agriculture 
+technology 
+to 
+the 
+upliftment 
+of 
+farming 
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:48:29 UTC from IEEE Xplore.  Restrictions apply. 
+2016 IEEE International Conference on Technological Innovations in ICT For Agriculture and Rural Development                  
+(TIAR 2016) 
+ 
+ 
+26 
+978-1-5090-0615-1/16/$31.00 ©2016 IEEE 
+ 
+community' so that they store all the information 
+available and later deliver it to the farmers for 
+development and improvement in their farming 
+practices. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure.4. the decision tree of the choice 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+figure.5[17]. IR absorption spectrum of  N-O 
+ 
+V.CONCLUSION 
+ 
+ 
+Everybody know agriculture is vital role of Indian 
+economy and also the backbone of India. The 60 
+percent villages of India depend agriculture Smart 
+farming is the need of the day, but not all farmers 
+can afford to own smart machines. So we go in for 
+a common hover in the hub that can gather the data 
+and analyze it both locally in field and global 
+demand can be checked. The methodology will 
+help to improve the net profit of the farmers having 
+a better organic farming practice. The method will 
+help to get rid of poverty of farmers and 
+agricultural runoff. Nowadays the information 
+technology plays key role in agriculture industry. 
+ 
+ 
+REFERENCE 
+ 
+ 
+[1] V. I. Adamchuk, J. W. Hummel, M. T. Morgan and 
+S. K. Upadhyaya, Comput. Electron. Agric., 2004, 
+44, 71–91. 
+[2] Hak-Jin Kim,*a Kenneth A. Sudduth b and John W. 
+Hummel B, Soil macronutrient sensing for precision 
+agriculture, 
+Journal 
+of 
+Environmental 
+Monitoring,2009, pp.1810-1824 
+[3] Sneha J. Bansod and Shubhada Thakre, Near 
+Infrared 
+Spectroscopy 
+based 
+Soil 
+Nitrogen 
+measurement - A Review, International Journal of 
+Current Engineering and Technology, Vol.4, No.1 
+(Feb 2014) ,pp.268-272 
+[4] K. A. Sudduth, J. W. Hummel and S. J. Birrell, in 
+The State of Site-Specific Management for 
+Agriculture, ed. F. J. Pierce and E. J. Sadler,ASA-
+CSSA-SSSA, Madison, WI, 1997, pp.183–210. 
+[5] Xiaofei A., Minzan L., Lihua Z., Yumeng L. and 
+Hong S. (2013), A portable soil nitrogen detector 
+based on NIRS, Springer Science. 
+[6] J. F. Adsett and G. C. Zoerb, Proceedings of the 
+1991 Symposium on Automated Agriculture for the 
+21st Century, Chicago, 1991 
+[7] R. A. Viscarra Rossel and C. Walter, Geoderma, 
+2004, 119, 9–20. 
+[8] V. I. Adamchuk, M. T. Morgan and D. R. Ess, 
+Trans. ASAE, 1999,42, 885–891. 
+[9] http://www.research.ibm.com/ 
+articles/precision_agriculture.shtml 
+[10] http://earthobservatory.nasa.gov/Features/Precision
+Farming/ 
+[11] http://www.financialexpress.com/article/markets/co
+mmodities/excess-arrivals-of- 
+potato-in-mandis-
+pull-down-prices/65361/ 
+[12] http://www.mapsofindia.com/maps/gujarat/gujarata
+griculture.htm 
+[13] http://www.chem.ucla.edu/~webspectra/irintro.html 
+[14] http://www.tradingeconomics.com/india/gdp-from-
+agriculture 
+[15] http://www.smart-fertilizer.com/nutrient-
+requirements 
+[16] https://www.google.co.in/url?sa=i&rct=j&q=&esrc
+=s&source=images&cd=&cad=rja&uact=8&ved=&
+url=http%3A%2F%2Forgchem.colorado.edu%2FSp
+ectroscopy%2Firtutor%2Faminesir.html&bvm=bv.1
+15339255,d.c2E&psig=AFQjCNGTs9dmCIdriB6M
+-MnpsxbV2nlN7A&ust=1456668522328056 
+[17] https://www.google.co.in/url?sa=i&rct=j&q=&esrc
+=s&source=images&cd=&cad=rja&uact=8&ved=&
+url=http%3A%2F%2Forgchem.colorado.edu%2FSp
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:48:29 UTC from IEEE Xplore.  Restrictions apply. 
+2016 IEEE International Conference on Technological Innovations in ICT For Agriculture and Rural Development                  
+(TIAR 2016) 
+ 
+ 
+27 
+978-1-5090-0615-1/16/$31.00 ©2016 IEEE 
+ 
+ectroscopy%2Firtutor%2Faminesir.html&bvm=bv.1
+15339255,d.c2E&psig=AFQjCNGTs9dmCIdriB6M
+-MnpsxbV2nlN7A&ust=1456668522328056 
+ 
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:48:29 UTC from IEEE Xplore.  Restrictions apply. 

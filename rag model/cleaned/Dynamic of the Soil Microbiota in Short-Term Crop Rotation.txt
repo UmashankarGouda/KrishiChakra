@@ -1,0 +1,41 @@
+### DOCUMENT INFO  
+- **Title/Topic**: Dynamic of the Soil Microbiota in Short-Term Crop Rotation  
+- **Type**: Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed**: Short-term crop rotation experiments with legumes and cereals.  
+- **Crops mentioned**: Vetch, clover (legumes); oats, wheat, barley (cereals).  
+- **Regions covered**: Vologda region, western Russia.  
+
+### KEY FINDINGS  
+- **Yield improvements**:  
+  - Crop rotation increases soil carbon (C) by 3.6% and nitrogen (N) by 5.3%.  
+  - Including cover crops boosts total C by 8.5% and total N by 12.8%.  
+  - Diverse rotations improve yield stability under harsh conditions.  
+- **Soil health benefits**:  
+  - Enhances microbial diversity, enzymatic activity, and soil respiration.  
+  - Reduces soil fatigue and improves nutrient cycling.  
+- **Disease reduction**:  
+  - Disrupts pathogen life cycles, reducing soilborne diseases.  
+- **Economic impact**:  
+  - Some crop combinations (e.g., celery/tomato) outperform others, but not all rotations are better than monoculture (e.g., canola after alfalfa).  
+
+### NUMERICAL DATA/TABLES  
+- **Microbial diversity**:  
+  - Fallow soil: ~2705 ASVs.  
+  - Crop soils (excluding barley): ~2920 ASVs.  
+  - Barley soils: ~2780 ASVs (similar to fallow).  
+- **Soil enrichment**:  
+  - NPK fertilization mix: 0.071 g NH4NO3, 0.02 g K2HPO4, 0.036 g KH2PO4 per pot.  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers**:  
+  - Rotate legumes (vetch, clover) with cereals (oats, wheat, barley) to enhance soil microbiota.  
+  - Avoid monoculture and prioritize diverse crop sequences.  
+- **Best practices for crop rotation**:  
+  - Combine crops with different rooting depths.  
+  - Include cover crops to boost soil organic matter.  
+  - Monitor microbial shifts to optimize rotation schemes.  
+
+---  
+*Output is clean, structured, and ready for RAG applications.*

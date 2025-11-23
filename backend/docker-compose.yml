@@ -1,0 +1,97 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: krishichakra
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # FastAPI RAG API server
+  app:
+    build: .
+    container_name: krishichakra-api
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/krishichakra
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/0
+      EMBEDDING_MODEL: provider-6/qwen3-embedding-4b
+      GENERATION_MODEL: provider-3/deepseek-v3
+      BASE_URL: https://api.a4f.co/v1
+      API_KEY: ${API_KEY}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./knowledge_base:/app/knowledge_base:ro
+    restart: unless-stopped
+
+  # Celery worker for RAG processing
+  worker:
+    build: .
+    container_name: krishichakra-worker
+    command: celery -A app.rag.celery_tasks worker --loglevel=info --concurrency=2
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/krishichakra
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/0
+      EMBEDDING_MODEL: provider-6/qwen3-embedding-4b
+      GENERATION_MODEL: provider-3/deepseek-v3
+      BASE_URL: https://api.a4f.co/v1
+      API_KEY: ${API_KEY}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./knowledge_base:/app/knowledge_base:ro
+    restart: unless-stopped
+
+  # Celery Flower for monitoring
+  flower:
+    build: .
+    container_name: krishichakra-flower
+    command: celery -A app.rag.celery_tasks flower --port=5555
+    ports:
+      - "5555:5555"
+    environment:
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/0
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:

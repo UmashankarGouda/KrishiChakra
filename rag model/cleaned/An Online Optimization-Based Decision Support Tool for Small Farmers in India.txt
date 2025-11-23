@@ -1,0 +1,28 @@
+### DOCUMENT INFO  
+- **Title/Topic**: An Online Optimization-Based Decision Support Tool for Small Farmers in India  
+- **Type**: Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed**: Crop planning and rotation optimization using Markov Decision Processes (MDPs) and reinforcement learning.  
+- **Crops mentioned**: Beetroot, bottle brinjal, cabbage, cauliflower, cucumber, French beans, green capsicum, tomato.  
+- **Regions covered**: India (focus on small farmers in Telangana).  
+
+### KEY FINDINGS  
+- **Yield improvements**: Access to decision support tools can reduce revenue risk and improve yields by optimizing crop choices.  
+- **Soil health benefits**: Crop rotation prevents soil-borne pests and diseases by avoiding consecutive planting of crops from the same family.  
+- **Disease reduction**: Sequential planting constraints (e.g., avoiding same-family crops) reduce disease risk.  
+- **Economic impact**: Algorithmic crop planning preserves utility and matches offline planning performance with reduced computational costs.  
+
+### NUMERICAL DATA/TABLES  
+- **Simulation duration**: January 1, 2022 – December 31, 2022 (26 timesteps of 14 days each).  
+- **Key parameters**: Smoothing parameter (θ = 0.5), discount factor (γ = 0.95), constraint violation penalty (k = -1e5).  
+- **Performance**: Achieved equivalent cumulative revenue to offline methods with reduced runtime.  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers**:  
+  - Use decision support tools to optimize crop rotations based on real-time market prices and seasonal constraints.  
+  - Avoid planting crops from the same family consecutively to reduce disease risk.  
+- **Best practices for crop rotation**:  
+  - Align planting schedules with crop calendars and seasonality data.  
+  - Prioritize crops with stable relative profitability and harvest frequency.  
+  - Monitor market prices dynamically to adjust planting decisions.

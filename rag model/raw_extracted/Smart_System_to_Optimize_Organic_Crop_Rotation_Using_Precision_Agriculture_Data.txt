@@ -1,0 +1,692 @@
+979-8-3503-4215-4/23/$31.00 ©2023 IEEE 
+ 
+Smart System to Optimize Organic Crop  
+Rotation Using Precision Agriculture Data   
+ 
+Ransinghe R.A.D.M  
+Department of Computer Science and 
+Software Engineering 
+Sri Lanka Institute of Information 
+Technology 
+Malabe, Sri Lanka 
+dranasinghe99@gmail.com 
+ 
+Ihalagedara I.H.U.B 
+Department of Computer Science and   
+Software Engineering 
+Sri Lanka Institute of Information  
+Technology 
+Malabe, Sri Lanka 
+uihalagedara@gmail.com 
+Samarakoon S.M.A.D 
+Department of Computer Science and 
+Software Engineering 
+Sri Lanka Institute of Information 
+Technology 
+Malabe, Sri Lanka 
+anjana.dinethra@gmail.com 
+ 
+Udara Srimath S.Samaratunge 
+Arachchilllage 
+Department of Computer Science and   
+Software Engineering 
+Sri Lanka Institute of Information  
+Technology 
+Malabe, Sri Lanka 
+udara.s@sliit.lk  
+Waththaladeniya N.M 
+Department of Computer Science and 
+Software Engineering 
+Sri Lanka Institute of Information 
+Technology 
+Malabe, Sri Lanka 
+mwattale@gmail.com 
+N.Kodagoda 
+Department of Computer Science and   
+Software Engineering 
+Sri Lanka Institute of Information  
+Technology 
+Malabe, Sri Lanka 
+nuwan.k@sliit.lk
+Abstract—Optimizing organic crop rotation and effectively 
+managing pests and diseases remain a significant challenge for 
+farmers. In this research, we propose a Smart System to 
+Optimize Organic Crop Rotation using Precision Agriculture 
+Data. The system leverages Internet of Things (IoT) technology, 
+machine learning (ML) algorithms, and cloud computing to 
+enhance decision-making and improve productivity in organic 
+farming. The proposed system integrates multiple components 
+to provide farmers with informed decisions for optimized crop 
+rotation. Soil sensors collect data on soil health, which is then 
+analyzed using a multi-objective optimization technique to 
+determine the best crop for a given soil sample. Real-time 
+weather data is incorporated to enable climate-resilient farming 
+practices and help farmers make educated choices in selecting 
+crops and implementing rotation plans. Additionally, a cloud 
+computing-based model is developed for pest and disease 
+identification, providing farmers with effective solutions to 
+combat these challenges in organic methodologies. By 
+leveraging IoT, ML, and cloud computing, our system proposes 
+farmers a more efficient and effective approach to managing 
+their crops. The system provides real-time data-driven 
+recommendations on fertilizer selection and crop rotation, 
+leading to improved crop growth, increased yields, and reduced 
+environmental impact. Moreover, by adopting organic farming 
+practices, the system contributes to the sustainable development 
+of the agricultural sector. 
+Keywords—Smart system, organic farming, crop rotation, 
+precision agriculture, IoT, machine learning, cloud computing, 
+pest 
+management, 
+climate-resilient 
+farming, 
+sustainable 
+agriculture. 
+I. INTRODUCTION  
+To pursuit of sustainable agriculture, this research aims to 
+develop an integrated smart agricultural system that 
+encompasses crucial functionalities to enhance organic 
+farming practices. The primary focus lies on optimized crop 
+rotation, precision agriculture data integration, smart pest and 
+disease management, and climate-aware decision support. The 
+core functionality of the system revolves around optimized 
+crop rotation and soil analytics. [1] By utilizing real-time data 
+from IoT sensors, the system will assess soil parameters and 
+crop growth patterns to generate personalized crop rotation 
+plans and most optimized crops for a particular soil in real 
+time.This approach maximizes crop yields, fosters sustainable 
+practices, and reduces reliance on synthetic fertilizers. 
+Another vital aspect of our research is the integration of 
+precision agriculture data. By analyzing weather patterns, crop 
+health, and soil variability, farmers will gain valuable insights 
+into resource-efficient crop management. This data-driven 
+approach optimizes agricultural practices and minimizes 
+environmental impacts. To combat challenges posed by pests 
+and diseases, we propose a web-based platform with image 
+recognition and augmented reality (AR) capabilities. This 
+smart system empowers farmers to swiftly identify and 
+manage pests and diseases using non-chemical solutions, 
+promoting organic farming sustainability. [2] Additionally, 
+this research envisions a climate-aware decision support 
+system. Analyzing local weather conditions, including 
+temperature, precipitation, humidity, wind patterns, and 
+extreme events, farmers will receive climate-specific 
+recommendations for crop selection and cultivation strategies. 
+This approach bolsters crop resilience against climate change 
+and optimizes yields under varying weather conditions. By 
+unifying these diverse functionalities, this integrated smart 
+agricultural system seeks to empower farmers with an all-
+encompassing solution. The fusion of technology, data-driven 
+insights, and sustainable practices will pave the way for a 
+more resilient, productive, and environmentally conscious 
+organic farming sector, contributing to the broader goals of 
+global food security and sustainable agriculture. 
+II. BACKGROUND STUDY 
+Agriculture is an essential area of the global 
+economy, providing food, fiber, and raw materials to various 
+industries. However, conventional farming practices would 
+engender negative environmental impacts such as soil 
+degradation, water pollution, and biodiversity loss. As a 
+result, there is an increasing demand for sustainable 
+agricultural practices that prioritize social fairness, economic 
+viability, and environmental protection. 
+Organic farming has emerged as a promising 
+alternative that focuses on natural inputs and the preservation 
+2023 7th International Symposium on Multidisciplinary Studies and Innovative Technologies (ISMSIT) | 979-8-3503-4215-4/23/$31.00 ©2023 IEEE | DOI: 10.1109/ISMSIT58785.2023.10304948
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:45:46 UTC from IEEE Xplore.  Restrictions apply. 
+ 
+ 
+of soil health. Key components of organic farming include 
+crop rotation and soil analytics. Crop rotation involves 
+alternating different crops in a single field, improving soil 
+fertility, reducing erosion, and controlling pests and diseases. 
+Soil analytics, on the other hand, utilizes advanced 
+technologies to monitor soil properties such as moisture, 
+temperature, and nutrient levels, enabling farmers to make 
+informed decisions about crop selection and management. 
+The use of external nitrogen, phosphorus, and 
+potassium (NPK) fertilizers in conventional agriculture has 
+been a common practice to provide additional nutrients 
+necessary for plant growth and development. However, the 
+use of external fertilizers has been associated with several 
+negative effects on soil health and the environment. Nitrogen 
+fertilizers, for instance, can lead to groundwater pollution by 
+adding nitrates and can harm aquatic ecosystems. Phosphorus 
+fertilizers can contribute to soil degradation and potassium 
+fertilizers can lead to soil salinization. Frequent use of 
+external fertilizers can make it harder for plants to absorb 
+nutrients and water, resulting in reduced growth and yield [2]. 
+Careful management of external NPK fertilizers is 
+essential to avoid these negative impacts on soil health and 
+the environment. Crop rotation, as an alternative to external 
+fertilizers, offers several benefits to agricultural and soil 
+systems. It reduces weed, insect, and plant disease 
+occurrence, improves soil physical, chemical, and biological 
+characteristics, and enhances water retention capacity and 
+aggregate stability. Additionally, crop rotation reduces 
+greenhouse gas emissions by reducing the need for nitrogen 
+fertilizer and promotes nitrogen fixation by rhizobacteria in 
+leguminous crops. 
+The importance of organic farming and crop rotation 
+in sustainable agriculture is further emphasized in various 
+research papers. IoT-based soil nutrient analysis and 
+monitoring systems have been developed to address the 
+challenges faced by farmers, enabling real-time data 
+collection on soil conditions, and optimizing agricultural 
+practices [5]. Climate-resilient organic farming techniques, 
+incorporating precision agriculture technologies and weather 
+monitoring, have been proposed to adapt to changing weather 
+patterns and enhance crop productivity while minimizing 
+environmental impacts [6] [7]. ML algorithms, and image 
+processing have been utilized for insect identification and 
+disease recognition in crops [8] [9]. 
+III. METHODOLOGY 
+A. Crop Rotation Creation with Precision Agriculture Data 
+Our research aims to provide farmers with a tool to 
+facilitate organic crop rotation based on precise data gathered 
+through IoT devices, focusing primarily on the Nuwara Eliya 
+district in Sri Lanka. This research is twofold, interlinking 
+agricultural 
+considerations 
+(50%) 
+and 
+technological 
+applications (50%). 
+1) Platform and User Interface :The system comprises a 
+mobile application, allowing farmers to input parameters, 
+including soil's NPK level, area temperature, prior crops' 
+data, pest attack history, desired crop rotation duration, and 
+crop family choices. This data is transmitted to a cloud-hosted 
+API, integrated with a rule engine, which processes this 
+information using expert-defined rules to generate a 
+personalized crop rotation plan returned to the user. An 
+accompanying web-based rule editor (Drools Workbench) 
+enables agricultural experts to continuously refine the rule-
+base, reflecting evolving agricultural insights [3].  
+2) Implementation: The core of the system is a rule-based 
+engine developed using the Drools framework, deployed on 
+a KIE server. Drools was selected due to its capability to 
+handle complex decision logic and the flexibility to modify 
+rules without changing the core application [4]. 
+3) Rule Definition:For the targeted region (Nuwaraeliya), 
+we identified viable crop [5]families (Vegetables and Root 
+Crops) based on climatic and soil characteristics. For 
+vegetables, optimal soil composition should be Nitrogen (N): 
+0.1-0.2%, Phosphorus (P): 0.05-0.1%, and Potassium (K): 
+0.2-0.3% [5]. For root crops, it's Nitrogen (N): 0.75-1%, 
+Phosphorus (P): 0.375-0.5%, and Potassium (K): 1.25-1.5% . 
+4) The rule engine operates sequentially : 
+a) Validates the compatibility of the NPK values 
+against crop family choices. 
+b) Assesses the feasibility of cultivating selected crops 
+based on soil health. 
+c) Evaluates past pest attacks and suggests alternative 
+crops if necessary. 
+d) Factors in area-specific temperature, suggesting 
+crops that thrive in those conditions. 
+Fig. 1. Data collection to crop rotation recommendation. 
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:45:46 UTC from IEEE Xplore.  Restrictions apply. 
+ 
+ 
+e) Constructs a crop rotation schedule based on the 
+farmer's desired timeframe, with each crop's unique 
+cultivation period considered. 
+ 
+B. Soil based crop recommendation 
+Soil-Based Crop Recommendation Component aims to 
+recommend the most suitable crops for a given agricultural 
+field based on soil nutrient levels. In fig.2. it shows an 
+overview diagram of the soil-based crop recommendation 
+component. To achieve this, an IoT NPK (Nitrogen, 
+Phosphorus, and Potassium) sensor (JXBS-3001-NPK-RS) 
+was deployed in the target field to measure the soil nutrient 
+concentrations. [6] . When configuring the NPK sensor with 
+the Arduino module NodeMCU ESP8266 was used because 
+of its ability for wireless WIFI communication.  
+Those gathered data from the NPK sensor is then used with 
+an algorithm to find the Crop Suitability Index (CSI)  and 
+generated a dataset with relevant N P K levels and most 
+suitable crop. The CSI represents the compatibility of each 
+crop with specific NPK levels in the soil, enabling effective 
+crop recommendations. Additionally, an external dataset was 
+acquired from reputable agricultural sources, containing 
+information about ideal soil compositions and crops that thrive 
+under specific NPK level ranges. Then both data sets are used 
+to train a machine learning model to ensure the effectiveness 
+of the component. The datasets underwent pre-processing to 
+remove outliers and handle missing values, ensuring data 
+quality and consistency.  
+Three 
+ML 
+models 
+were 
+considered 
+for 
+crop 
+recommendation: Regression Model, Decision Tree Model, 
+and Random Forest Model. The external dataset was divided 
+into training and testing sets. Each model was trained on the 
+training set and evaluated using its accuracy. [7]Among the 
+evaluated models, the Random Forest Model showed the 
+highest accuracy in predicting the optimal crop for a particular 
+soil sample. The trained Random Forest model was 
+continuously fed real-time NPK data from the sensor and 
+processed it to recommend the most suitable crop based on the 
+current soil conditions. [8] [9]. 
+The Mobile application was developed and configured 
+with a python back end where NPK sensor data is taken in and 
+returns the most optimized crops for a particular soil sample 
+in real time which resulting in high yields with low fertilizers. 
+The integration of the Soil-Based Crop Recommendation 
+Component with the Smart System enabled seamless 
+communication and data exchange between components. The 
+combined outputs from each component were fused using data 
+binding techniques, and the decision-making process utilized 
+the combined information to determine the best-suited crop 
+rotation plan for the agricultural field.  
+C. Crop suggesion using real time weather data  
+Therefore, predicting the weather for a given time is part 
+of the weather recommendation component. The information 
+we gather, such as the temperature and humidity, is used in 
+this process. We can collect this weather-related data with the 
+aid of our unique apparatus, which combines a DHT 11 sensor 
+and an Arduino Uno board. The device performs as a weather 
+sleuth, constantly keeping an eye on the temperature and 
+humidity levels outside. So might discover what the weather 
+typically does by looking at the data our equipment collects. 
+We can learn when it will be sunny, wet, or humid, for 
+instance. Farmers should be aware crops that support different 
+kind of weather patterns [10]. According to the weather 
+patterns, farmers are advised on which crops are most likely 
+to thrive on their farms at certain times of year. 
+Furthermore, it predicts the weather in the future based on 
+empirical data. This system foretells the future by analyzing 
+what has already occurred. This aids farmers in anticipating 
+the weather and preparing for it. The system provides 
+recommendations on when to sow and produce crops based on 
+the collected data and projections. Crops that thrive in certain 
+conditions can be recommended when indications suggest a 
+warm and rainy environment. From this, a tool has been 
+developed that provides farmers with weather information and 
+planting advice. The unique tool analyzes the weather, 
+determines its implications, and then offers guidance to 
+farmers. It's akin to having a weather and farming-savvy 
+companion constantly available for advice. This is how 
+research advances and educates farming. 
+D. Object detection using yolov5 and augmented reality 
+Through the flexible Three.js platform, this research aims 
+to establish a novel and ground-breaking methodology that 
+strategically converges the exceptional accuracy of the 
+YOLOv5 object detection model with the immersive and 
+interactive potentials of AR. The main goal of the research is 
+to offer a highly sophisticated solution that is both novel and 
+well-suited for the complex and multifaceted problem of 
+precise pest identification in the ever-changing and 
+convoluted agricultural landscape. 
+1) YOLOv5 Model for Precise Pest Detection : The 
+thorough collection of an enormous and extraordinarily 
+varied dataset, which includes a broad range of crops and 
+possible pest species, forms the core of this study[19]. Every 
+pest instance in this dataset has been painstakingly vetted and 
+prepped, and bounding boxes have been placed precisely to 
+annotate each case of the pest. The YOLOv5 model goes 
+through a tough training routine after this painstaking 
+Fig. 2. Overview diagram of soil-based crop recommendation 
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:45:46 UTC from IEEE Xplore.  Restrictions apply. 
+ 
+ 
+annotation procedure, which is strengthened further by the 
+judicious insertion of innovative data augmentation 
+techniques[16]. A battery of tests using well-known metrics 
+including precision, recall, and F1-score are used to assess the 
+model’s 
+accuracy 
+and 
+effectiveness 
+rigorously 
+and 
+thoroughly in the field of pest detection. This thorough 
+evaluation approach makes sure that the model is perfectly 
+tailored to function well in real-world scenarios of pest 
+2) Enhanced 
+Augmented 
+Reality 
+with 
+Three.js:A 
+sophisticated virtual world that painstakingly replicates the 
+subtleties of real agricultural landscapes is painstakingly built 
+using the potent powers built into Three.js[20]. The 
+augmented reality experience thrives in this dynamic virtual 
+environment that was meticulously created. Precision camera 
+calibration and a precise and smooth spatial alignment are 
+made possible by the expert tracking and integration of AR 
+markers[17]. Pests are automatically detected and seamlessly 
+placed onto the real-time augmented reality picture, giving 
+users an immersive and dynamic experience that allows them 
+to seamlessly combine the virtual and real worlds[18]. Users 
+are given the opportunity to explore the augmented world 
+thanks to this potent capability, which also makes it possible 
+for them to acquire contextual information in a thorough and 
+interesting way. 
+3) Integration, Rigorous Testing, and Expert Insights: 
+An integrated system that demonstrates incredible potential 
+is the result of the seamless integration of YOLOv5's detailed 
+and excellent object detection precision and Three.js' 
+immersive AR capabilities. In order to confirm the system's 
+robustness and inherent adaptability across the spectrum of 
+varying 
+conditions 
+encountered 
+in 
+real-world 
+pest 
+management scenarios, this integrated system goes through 
+extensive and meticulous testing across a variety of diverse 
+and complex scenarios. Additionally, seasoned agricultural 
+professionals' unique ideas and criticism are extremely 
+helpful in guiding iterative refinements, ensuring that the 
+integrated system remains attuned to the subtle and intricate 
+nuances of real-world pest management dynamics. 
+In conclusion, this research is not merely an exploration of 
+technological prowess; it is a testament to the transformative 
+potential of symbiotic innovation. The seamless harmony 
+between the precision-driven object detection capabilities of 
+YOLOv5 and the immersive AR potentials of Three.js 
+signifies a remarkable advancement in the realm of pest 
+management within agriculture [21]. The implications are 
+profound, promising a reimagined landscape of decision-
+making that is bolstered by enhanced productivity, 
+sustainability, and resilience within the critical domain of pest 
+management. 
+IV. RESULTS AND DISCUSSIONS 
+A. Evaluation of the Organic Crop Rotation System Using 
+Precision Agriculture Data 
+Upon deploying the Smart System for Organic Crop 
+Rotation in the Nuwara Eliya district, several notable 
+outcomes and implications emerged. 
+1) System's Recommendations Validity:Upon evaluation, 
+the recommendations provided by the system largely aligned 
+with the expert advice and traditional knowledge of the 
+region. This validation strengthens the system's credibility 
+and emphasizes the importance of precision data in modern 
+agriculture. 
+2) NPK Discrepancies:In instances where farmers' soil 
+NPK levels deviated from the ideal, the system's 
+recommendations for organic fertilizers and interventions 
+were consistent with best practices. This highlighted the 
+system's ability to provide actionable insights based on 
+precision data. As depicted in table 01 when standard levels 
+for N,P,K differs then metnioned organic fetilizers will 
+propse by system. 
+TABLE I. FERTILIZER RECOMENDATION 
+Nutrient 
+Standard Level 
+Organic Fertilizers 
+Nitrogen (N) 
+0.1-0.2% 
+Compost, fish meal 
+Phosphorus (P) 
+0.05-0.1% 
+rock phosphate 
+Potassium (K) 
+0.1-0.2% 
+Wood ash 
+ 
+3) Scalability Considerations:Given the success in 
+Nuwara Eliya, discussions around expanding the system's 
+rule base to include more districts have been initiated. This 
+will necessitate additional collaborations with local 
+agricultural experts from those districts. 
+The integration of precision agricultural data into the 
+decision-making process of organic crop rotation showcases 
+promising potential. The system, with further refinements, 
+could serve as a benchmark for other districts in Sri Lanka 
+and potentially for similar agricultural settings worldwide. 
+B. Crop Recommendation using real time soil data 
+The Soil-Based Crop Recommendation Component 
+yielded valuable insights, showcasing its potential for 
+precision agriculture. This adaptability to changing soil 
+conditions emphasizes the system's practicality. The 
+algorithm accurately calculated the Crop Suitability Index 
+(CSI) using real-time NPK sensor data and generated a 
+dataset. Three machine learning models were considered for 
+crop recommendation, Regression Model, Decision Tree 
+Model, and Random Forest Model. Noticeably Random 
+Forest Model demonstrated high accuracy in predicting 
+optimal crops based on real-time NPK levels as shown in 
+Fig.3.  
+             The Regression Model operates by establishing 
+relationships between the NPK levels and historical crop 
+data. It generates a mathematical equation that captures the 
+correlations between these variables. When presented with 
+current NPK data, the Regression Model uses this equation to 
+predict the most suitable crop based on its understanding of 
+past 
+associations. 
+While 
+this 
+model 
+provides 
+a 
+straightforward prediction, its accuracy is limited by its linear 
+Fig. 3. Accuracy of the machine learning models used. 
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:45:46 UTC from IEEE Xplore.  Restrictions apply. 
+ 
+ 
+nature and the assumption of a constant relationship between 
+NPK levels. The Decision Tree Model, on the other hand, 
+takes a more intricate approach. It constructs a decision tree 
+which is a branching structure where each node represents a 
+condition based on NPK levels, and each leaf node 
+corresponds to a recommended crop. This model evaluates 
+the NPK data by traversing the decision tree from the root 
+node to a leaf node. At each branching point, it makes 
+decisions based on the NPK values, ultimately arriving at a 
+specific crop recommendation. The Random Forest Model 
+enhances the recommendation process by aggregating the 
+predictions of multiple decision trees. It creates an ensemble 
+of decision trees, each trained on a different subset of the 
+data. When new NPK data is presented, each individual tree 
+in the ensemble provides its own recommendation. The 
+Random 
+Forest 
+Model 
+then 
+combines 
+these 
+recommendations to arrive at a final crop recommendation. 
+This ensemble approach improves prediction accuracy and 
+robustness. Hence configuring the Crop Recommendation 
+Component to the Smart System for Better Organic Crop 
+Rotation, it highlighted how different parts of the system 
+work together. Techniques that combine data made our 
+decisions about crop rotation stronger. This whole Smart 
+System, which uses real-time NPK data and machine 
+learning, helps farmers make better decisions that take care 
+of the environment. 
+C. Crop suggession using real time weather data 
+ 
+After collecting and analyzing the weather data 
+using smart devices, we discovered some important things. 
+We noticed that during hot and dry times, certain crops like 
+tomatoes and peppers tend to do well. On the other hand, 
+when it's rainy and a bit cooler, crops like lettuce and spinach 
+seem to thrive. Additionally, it turned out that the weather 
+forecasts were a good match for what transpired. As a result, 
+farmers may find our smart device to be a beneficial planning 
+tool [11]. For instance, if our device alerts them that the 
+upcoming week will be bright, they might choose to grow 
+crops that benefit from sunlight.  
+TABLE II. WEATHER BASED CROP RECOMENDATION 
+Weather 
+Conditions 
+Average 
+Temperature 
+(°C) 
+Average 
+Humidity (%) 
+Recommended 
+Crops 
+Hot and Dry 
+30°C 
+40% 
+Tomatoes, 
+Peppers 
+Rainy 
+and 
+Cooler 
+22°C 
+65% 
+Lettuces, 
+Spinach 
+Consistent 
+Rainfall 
+25°C 
+80% 
+Rice, Corn 
+Warm and Dry 
+28°C 
+35% 
+Melons, 
+Sunflowers 
+ 
+The average temperature, humidity, and recommended crops 
+are all included in table 02 along with the weather data. 
+Farmers can choose the best crop rotation practices by 
+carefully weighing these elements in tandem. Even though 
+our smart system recommendations typically come true, 
+farmers should be adaptable because the weather might 
+occasionally change unexpectedly. 
+ 
+The unique aspect is that our technology does more 
+than just provide weather information; it also makes 
+agricultural planting recommendations [12] as shown in the 
+fig.4. Farmers now have an easier time deciding what to 
+cultivate and when. It's like having a helpful friend who is an 
+expert on weather and farming. The forecasts we made 
+weren't always accurate, though, as we discovered. Guessing 
+the weather can be challenging, especially when it changes 
+unexpectedly [13]. Because of this, even though our device is 
+useful, it's still a good idea for farmers to keep an eye on the 
+skies in case something happens. 
+D. Pest detection with yolov5 and augmented reality 
+ 
+The comprehensive assessment metrics covering 
+recall, accuracy, precision, and F1 score like shown in the fig. 
+5, provide a quantified look at the effectiveness of the React 
+Native-YOLO augmented reality solution for pest overlay in 
+real situations. 
+The actual application highlights the smooth combination of 
+YOLO's sophisticated pest detection skills, React Native's 
+dynamic user interface, and augmented reality's immersive 
+possibilities. This synthesis appears as a powerful tool to 
+seamlessly incorporate digital pest markers into physical 
+environments, enhancing in-the-moment interaction. 
+Fig. 4. Weather based crop recommendation UI output. 
+Fig. 5.  F1-Confidence curve 
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:45:46 UTC from IEEE Xplore.  Restrictions apply. 
+ 
+ 
+Beyond numerical quantities, the discussion's core 
+issues are involved. According to figure5, digital pest 
+indicators are integrated with the physical environment to 
+create an augmented reality that adds richness to user 
+experiences. The interactive aspect is highlighted; users 
+actively interact with virtual overlays in their current context 
+in addition to identifying them. This combination opens the 
+door for a wide range of uses, from agricultural analyses to 
+public health interventions. Additionally, the combination of 
+these technologies resonates with a wider range of immersive 
+and computer vision domains. The future is brighter with 
+improved real-time detection, increased engagement, and a 
+wider range of applications. 
+V. CONCLUSION 
+This research successfully introduced a Smart System for 
+Optimized Organic Crop Rotation, harnessing the capabilities 
+of the IoT, ML, and cloud computing to address prevalent 
+challenges in organic farming. Through real-time soil health 
+analytics and climate-sensitive data processing, would 
+instrumental for farmers to make decisions about the exact 
+time period of crop rotations in turns, save from pest attacks, 
+and suggest remedies for diseases. Notably, the cloud 
+computing-based model for pest and disease identification 
+emerged as a pivotal tool, bridging traditional farming 
+methodologies with modern technological solutions. By 
+integrating these technological advancements with traditional 
+agricultural practices, we believe our system not only 
+optimizes organic farming but also propels the agricultural 
+sector closer to its sustainability goals. 
+VI. REFERENCES 
+ 
+[1] M. Dhanaraju, P. Chenniappan, K. Ramalingam, S. Pazhanivelan 
+and R. Kaliaperumal, "Smart Farming: Internet of Things (IoT)-
+Based Sustainable Agriculture.," Agriculture 2022, vol. 12, 2022.  
+[2] U. S. S. Samaratunge Arachchillage, D. H. L. Amarasinghe, M. C. 
+Kirindegamaarachchi, A. B. L. and F. W. M. K. S. S. W., "Smart 
+Intelligent Floriculture Assistant Agent (SIFAA)," in IEEE, 
+Colombo, Sri Lanka, 2021.  
+[3] Drools, "https://www.drools.org/," REDHAT, 01 01 2018. [Online]. 
+Available: https://www.drools.org/. [Accessed 10 08 2023]. 
+[4] baeldung, "baeldung," 28 July 2020. [Online]. Available: 
+https://www.baeldung.com/drools. [Accessed 08 August 2023]. 
+[5] P. B. Dharmasena, "Current Status of Land Degradation in Nuwara 
+Eliya District," ResearchGate, 2014. 
+[6] R, Madhumathi & Arumuganathan, Thangaraj & R, Shruthi, "Soil 
+NPK and Moisture analysis using Wireless Sensor Networks," in 
+ResearchGate, 2020.  
+[7] Senthil Kumar Swami Durai, Mary Divya Shamili, "Smart farming 
+using Machine Learning and Deep Learning techniques," Decision 
+Analytics Journal, vol. Volume 3, 2022.  
+[8] Senapaty MK, Ray A, Padhy N, "oT-Enabled Soil Nutrient Analysis 
+and Crop Recommendation Model for Precision Agriculture," 
+Computers, vol. 3, 2023.  
+[9] Dipto, Shakib Mahmud & Iftekher, Asif & Ghosh, Tomalika & 
+Reza, Md Tanzim & Alam, Md. Ashraful., "Suitable Crop 
+Suggesting System Based on N.P.K. Values Using Machine 
+Learning Models," in 2021 IEEE Asia-Pacific Conference on 
+Computer Science and Data Engineering (CSDE), 2021.  
+[10] Yinhong Kang, Shahbaz Khan, Xiaoyi Ma, "Climate change impacts 
+on crop yield, crop water productivity and food security," 
+ScienceDirect, p. 19, 2009.  
+[11] A, Priyadharshini; Chakraborty, Swapneel; Kumar, Aayush; 
+Pooniwala, Omen Rajendra, "Intelligent Crop Recommendation 
+System using Machine Learning," 2021.  
+[12] Preethi, Priya Sandhya, S. Vidhya, T.Sasilatha, "CROPS 
+RECOMMENDATION BASED ON SOILS AND WEATHER 
+PREDICTION," 2018.  
+[13] J Madhuri, M Indiramma, "Artificial neural networks based 
+integrated crop recommendation system using soil and climatic 
+parameters," IJST, p. 11, 2021.  
+[14] N. &. I. M. D. &. B. G. F. &. S. Y. &. G. Y. Chamara, "Ag-IoT for 
+crop and environment monitoring: Past, present, and future.," 
+Agricultural Systems 203(3):103497, vol. 203, 2022.  
+[15] y. k. h. w. k. aHina Bhanbhro, "A Symbol Recognition System for 
+Single-Line Diagrams Developed Using a Deep-Learning 
+Approach," 2023.  
+[16] W. A. I. U. Bandara, K. A. D. K. S. Kuruppuarachchi, N. N. D. 
+Maduwantha, U. S. S. Samaratunge Arachchillage, T. A. D. T. N. D. 
+Alwis and T. A. Kuruppu, "Smart Intelligent Pineapple Farming 
+Assistant Agent (SIPFAA)," in 4th International Conference on 
+Advancements in Computing (ICAC), Colombo Sri Lanka, 2022.  
+[17] Zeel Doshi, Subhash Nadkarni, Rashi Agrawal, Neepa Shah, 
+"AgroConsultant: Intelligent Crop Recommendation System Using 
+Machine Learning Algorithms," 2018.  
+[18] T.S. Illandara, H.L.H. De Silva, K.S.H. Madurawala, B.R.D. 
+Dayasena, Udara Srimath, S. Samaratunge Arachchillage, "Smart 
+Intelligent Advisory Agent for Farming Community," in 2nd 
+International Conference on Advancements in Computing (ICAC), 
+Malabe, Sri Lanka, 2020.  
+[19] anamalta, mateus mendes, torres farinha, "Augmented Reality 
+Maintenance Assistant Using YOLOv5," 2021.  
+[20] shun-hsiang Hsu, ho-tin hung, yu-Qi li, chai-ming chang, "Defect 
+inspection of indoor components in buildings using deep learning 
+object detection and augmented reality," 2023.  
+[21] Shandilya, Khanduja, Vidhi, "Intelligent Farming System With 
+Weather Forecast Support and Crop Prediction," 2020.  
+[22] Noordin, Nurul Aidayana Mohammad, "dental augmented reality-
+augmented reality(AR) based on the deep learning for dental 
+education," 2023.  
+ 
+ 
+Fig. 6. Pest Detection of the model 
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:45:46 UTC from IEEE Xplore.  Restrictions apply. 

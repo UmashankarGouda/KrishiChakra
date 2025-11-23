@@ -1,0 +1,39 @@
+### DOCUMENT INFO  
+- **Title/Topic:** Role of Cover Crops and Crop Rotation in Soil Management  
+- **Type:** Article  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed:** Alternating crops (e.g., corn, wheat, potatoes, oats) with legumes (e.g., soybeans, peas, beans) and brassicas (e.g., cabbage).  
+- **Crops mentioned:**  
+  - Non-legumes: Barley, buckwheat, oats, oilseed radish, rapeseed, rye, ryegrass, triticale, wheat.  
+  - Legumes: Alfalfa, cowpea, crimson clover, faba bean, pea, serradella, soybean, sunn hemp, vetch.  
+- **Regions covered:** General principles applicable globally, with examples from diverse climates.  
+
+### KEY FINDINGS  
+- **Yield improvements:** Crop rotation stabilizes yields by preventing nutrient depletion and pest buildup.  
+- **Soil health benefits:**  
+  - Cover crops improve soil structure, organic matter, water retention, and nutrient cycling (e.g., nitrogen fixation by legumes).  
+  - Crop rotation enhances microbial diversity and reduces compaction.  
+- **Disease reduction:** Disrupts pest/disease cycles (e.g., wheat breaks disease cycles from soybeans/corn).  
+- **Economic impact:** Reduces reliance on synthetic fertilizers and pesticides, lowering input costs.  
+
+### NUMERICAL DATA/TABLES  
+- **Cover crop benefits:**  
+  - Physical: Increases water infiltration by 20–30%, reduces erosion by 50–90%.  
+  - Chemical: Boosts soil organic carbon by 10–15%.  
+  - Biological: Enhances nitrogen fixation (e.g., legumes add 50–200 kg N/ha).  
+- **Crop rotation rules:**  
+  - Minimum consecutive break: 4 years.  
+  - Maximum crop frequency: 20% for any single crop.  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers:**  
+  - Integrate legumes (e.g., vetch, clover) to fix nitrogen and reduce fertilizer use.  
+  - Rotate deep-rooted crops (e.g., radish) with shallow-rooted ones to improve soil structure.  
+- **Best practices for crop rotation:**  
+  - Follow a 4-year plan (e.g., corn → wheat → potatoes → oats).  
+  - Combine with cover crops for erosion control and weed suppression.  
+  - Prioritize diversity to maximize soil health and resilience.  
+
+---  
+*Extracted key information is concise, structured, and ready for RAG applications.*

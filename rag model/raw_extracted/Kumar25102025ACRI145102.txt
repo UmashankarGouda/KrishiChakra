@@ -1,0 +1,2097 @@
+_____________________________________________________________________________________________________ 
+ 
+++ Assistant Professor; 
+# Scientist (Agronomy); 
+† Ph.D. Research Scholar; 
+*Corresponding author: Email: agronomyanil@gmail.com; 
+ 
+Cite as: Mallikarjun Koli, T. Laxman, Mohit Kashyap, Anil Kumar, Durgesh Nandan, Manjul Jain, Sonu Bajad, and Mayank 
+Kumar. 2025. “Interaction Effect of Crop Rotation and Diversification on Soil Health and Productivity: A Review”. Archives of 
+Current Research International 25 (10):57–72. https://doi.org/10.9734/acri/2025/v25i101547. 
+ 
+ 
+ 
+Archives of Current Research International 
+ 
+Volume 25, Issue 10, Page 57-72, 2025; Article no.ACRI.145102 
+ISSN: 2454-7077 
+ 
+ 
+ 
+ 
+Interaction Effect of Crop Rotation and 
+Diversification on Soil Health and 
+Productivity: A Review 
+ 
+Mallikarjun Koli a++, T. Laxman b#, Mohit Kashyap c†,  
+Anil Kumar d++*, Durgesh Nandan e++, Manjul Jain d++,  
+Sonu Bajad f† and Mayank Kumar g† 
+ 
+a Department of Agronomy, R.C.S.M. College of Agribusiness Management, Sangli-416415, 
+Maharashtra, India. 
+b Agricultural Research Station, (PJTAU) Nathnaipally, Medak District -502 313, Telanagana, India. 
+c Department of Soil Science, CSK HPKV, Palampur -176062, India. 
+d Department of Agronomy, School of Agriculture, Eklavya University, Damoh-470661,  
+Madhya Pradesh, India. 
+e Department of Agronomy, School of Agriculture, Sanskriti University, Mathura, Uttar Pradesh, India. 
+f Department of Genetics & Plant Breeding, School of Agriculture, Eklavya University, Damoh-470661, 
+Madhya Pradesh, India. 
+g Department of Soil Science and Agricultural Chemistry, Chandra Shekhar Azad University of 
+Agriculture and Technology, Kanpur, Uttar Pradesh- 208002, India. 
+ 
+Authors’ contributions 
+ 
+This work was carried out in collaboration among all authors. All authors read and approved the final 
+manuscript. 
+ 
+Article Information 
+ 
+DOI: https://doi.org/10.9734/acri/2025/v25i101547  
+ 
+Open Peer Review History: 
+This journal follows the Advanced Open Peer Review policy. Identity of the Reviewers, Editor(s) and additional Reviewers, peer 
+review comments, different versions of the manuscript, comments of the editors, etc are available here: 
+https://pr.sdiarticle5.com/review-history/145102  
+ 
+ 
+Received: 02/08/2025 
+Published: 07/10/2025 
+ 
+Review Article 
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+58 
+ 
+ABSTRACT 
+ 
+Crop diversification and crop rotation are pillar practices of sustainable farming, counteracting the 
+ecological and productivity problems of monocultures. Rotation brings in temporal diversity through 
+disruption of pest and disease cycles, organic matter turnover, and nutrient dynamics, while 
+diversification using intercropping, relay cropping, cover cropping, or agroforestry adds spatial and 
+functional diversity, use efficiency of resources, and stability. When combined, these measures 
+produce synergistic advantages that are greater than the sum of their separate impacts. Functional 
+complementarity within crops increases nutrient and water uptake, diverse organic inputs 
+accumulate soil organic carbon and stabilize soil aggregates, and greater habitat heterogeneity 
+promotes favorable microbial communities and natural pest control. Experimental results reveal 
+diversified rotations to enhance soil physical, chemical, and biological attributes, reinforce microbial 
+processes, and promote yield stability under climatic stress. Even with these benefits, adoption is 
+still limited by socioeconomic factors, labor needs, and a lack of region-specific evidence. Gaps in 
+the research involve long-term, multi-site trials, mechanistic experiments connecting crop traits to 
+microbial processes, and economic evaluation of trade-offs. Practitioner advice stresses beginning 
+with small-scale adoption, focusing on legumes and cover crops, tracking soil health indicators, and 
+combining with conservation agriculture practices. In general, the interactive use of diversification 
+and crop rotation is central to constructing robust agroecosystems that ensure productivity, 
+minimize input reliance, and support climate change adaptation and international sustainability 
+efforts. 
+ 
+ 
+Keywords: Crop rotation; crop diversification; nutrient imbalance; climate change. 
+ 
+1. INTRODUCTION 
+ 
+Crop rotation, which refers to the temporal 
+rotation of diverse crops on the same unit of 
+land, and crop diversification, involving the 
+combination of more than one crop species in 
+space and/or time (e.g., intercropping, relay 
+cropping, cover cropping, and agroforestry), are 
+identified as foundation practices of sustainable 
+agriculture. Both approaches solve the inherent 
+problems of intensive monoculture systems of 
+the present day that tend to lead to land 
+degradation, 
+nutrient 
+imbalance, 
+pest 
+and 
+disease accumulation, and yield variability (Fan 
+et al., 2025). 
+ 
+Although 
+each 
+practice 
+has 
+been 
+widely 
+researched alone, it is their interactive effects 
+that offer the most hope for developing resilient 
+agroecosystems. 
+Rotations 
+offer 
+temporal 
+diversity that breaks cycles of pests, enhances 
+the turnover of soil organic matter, and increases 
+nutrient dynamics, while diversification by way of 
+spatial or functional inclusion of crops improves 
+ecological niches, raises resource-use efficiency, 
+and promotes above- and below-ground diversity 
+(Hernández-Ochoa et al., 2022). Together, these 
+practices can produce synergistic effects, such 
+as diversified rotations involving legumes, cover 
+crops, or deep-rooted plants enhance soil 
+aggregation, promote microbial activity, and 
+buffer climatic instability more than plain cereal–
+cereal rotations (Sharma et al., 2021). 
+The 
+significance 
+of 
+these 
+interactions 
+is 
+highlighted in the context of global sustainability 
+objectives 
+and 
+climate 
+change 
+adaptation. 
+Healthy soils with greater organic carbon, 
+balanced cycling of nutrients, and strong 
+microbial communities are not only more 
+productive but also sequester carbon, store 
+water, and minimize reliance on external 
+chemical 
+additions. 
+In 
+addition, 
+diversified 
+rotation 
+diversification 
+systems 
+have 
+been 
+demonstrated to stabilize yields when faced with 
+climatic stress, lower greenhouse gas emissions, 
+and enhance ecosystem services like pollination 
+and natural pest control (Gómez-Macpherson et 
+al., 2024). 
+ 
+Crop diversification is essential in improving 
+productivity, soil health, and ecosystem services 
+through improving spatial and temporal diversity 
+by the use of practices like intercropping and 
+crop rotation (Li, et al., 2025). Within various crop 
+groups, 
+legumes 
+are 
+usually 
+favored 
+in 
+diversification because they have the capacity to 
+fix nitrogen from the atmosphere using symbiotic 
+relationships and provide organic inputs. All 
+these activities have a positive impact on the soil 
+microbial population, enhance soil fertility, and 
+increase 
+crop 
+yield 
+(Jia 
+et 
+al., 
+2024). 
+Notwithstanding these well-known advantages, 
+the 
+specific 
+mechanisms 
+by 
+which 
+crop 
+diversification with legumes affect biological 
+processes in the soil and drive the enhancement 
+of soil functions, ecosystem services, and 
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+59 
+ 
+aggregate 
+productivity 
+are 
+still 
+subject 
+to 
+uncertainty (Ditzler et al., 2021). 
+ 
+Crop diversification and rotation are central 
+tenets 
+of 
+sustainable 
+agricultural 
+systems. 
+Through the change of crop type over time 
+through rotation and combining several crops at 
+a single time through diversification methods like 
+intercropping, agroforestry, or mixed systems, 
+these processes play an important role in 
+rejuvenating soil fertility, avoiding degradation, 
+and 
+improving 
+stress 
+resistance 
+against 
+environmental 
+and 
+biotic 
+stresses. 
+Their 
+combined impact is manifest on physical, 
+chemical, and biological aspects of soil health, 
+which collectively support long-term productivity 
+and general ecosystem stability (Hufnagel et al., 
+2020). 
+ 
+Rotations and diverse systems largely enhance 
+structure and aggregation of soil through the 
+inclusion of crop species with differing root 
+structures and organic residue inputs. Fibrous-
+rooted cereals aggregate surface soils well, 
+whereas deep-rooted legumes and perennials 
+form macropores to promote gas exchange and 
+root penetration (Shah et al., 2021). These 
+operations improve tilth, increase porosity, 
+reduce 
+bulk 
+density, 
+and 
+improve 
+soil 
+aggregation. 
+Besides, 
+crop 
+diversification 
+minimizes soil erosion hazards through the 
+maintenance of year-round ground cover by the 
+application of cover crops, green manures, and 
+intercrops, which prevent wind and water 
+erosion, especially in sloping and marginal areas. 
+Crop residue retention forms a protective mulch 
+cover that reduces splash erosion and surface 
+runoff. In addition, diversified rotation leads to 
+better water dynamics through higher infiltration 
+rates and water-holding capacity as a result of 
+increased soil organic matter (Liang et al., 2023). 
+Cereal crops with large root systems create 
+biopores that favor deeper penetration of water, 
+an issue of specific interest in rainfed cropping 
+systems where water supply is the most limiting 
+factor to crop growth. 
+ 
+Crop 
+diversification 
+and 
+rotation 
+have 
+a 
+significant effect on soil chemical fertility through 
+enhanced nutrient cycling and availability. The 
+incorporation of legumes adds biologically fixed 
+nitrogen to the soil, decreasing synthetic fertilizer 
+reliance while increasing nutrient-use efficiency. 
+Perennial deep-rooted crops like sunflower, 
+pigeon pea, and safflower also complement 
+nutrient dynamics by bringing subsoil layers into 
+nutrient cycling and redistributing the recovered 
+nutrients into the upper profile, thus benefiting 
+the following shallow-rooted crops like cereals 
+and vegetables (Zhang et al., 2024). Integration 
+of crop diversity also ensures a constant supply 
+of organic matter by residues, root exudates, and 
+green manures, which as a whole enhance soil 
+carbon sequestration.  
+ 
+ 
+ 
+Fig. 1. Conceptual diagram of crop rotation and diversification (CRD) as a strategy for 
+promoting sustainable agriculture 
+(Source, Zou et al., 2024) 
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+60 
+ 
+ 
+ 
+Fig. 2. Rhizosphere microbial composition is a key determinant of plant growth and soil health 
+(Source, Xing et al., 2025) 
+ 
+High soil organic carbon not only plays a central 
+role in fertility but also an important mechanism 
+for climate change mitigation. In addition, the 
+addition of diverse crop species promotes a well-
+balanced nutrient matrix (Khan et al., 2024): 
+legumes add nitrogen content, cereals give 
+carbonous residues, and oilseeds offer sulfur-
+containing materials. Such an equal nutrient 
+input avoids soil nutrient loss and assists in 
+minimizing the hazard of acidification and salinity 
+accumulation that usually follows repeated 
+monocropping regimes (Belete & Yadete, 2023). 
+ 
+The biological aspect of soil health also gains 
+considerably 
+with 
+crop 
+rotation 
+and 
+diversification. Varied rotations enrich microbial 
+communities within rhizospheres, promoting the 
+growth of desirable organisms like rhizobia, 
+mycorrhizal fungi, and phosphorus-solubilizing 
+bacteria. This augmented microbial richness 
+reinforces essential soil processes such as 
+nutrient 
+mineralization, 
+organic 
+residue 
+decomposition, and pathogen suppression in the 
+soil. Diversity in rotation also avoids pathogenic 
+microbe dominance, thus keeping a microbial 
+ecosystem in equilibrium. Likewise, fauna in soil 
+like earthworms, nematodes, and collembola 
+prosper under systems with constant input of 
+organic matter (Pareek, 2013). For example, 
+earthworm densities are greater in diversified 
+legume–cereal rotations owing to good food 
+supply and soil conditions and their activity 
+facilitates 
+nutrient 
+cycling 
+and 
+aggregate 
+formation in the soil by burrowing and grazing. 
+Crop rotations also promote pest and disease 
+suppression by breaking the life cycles of soil-
+borne 
+diseases 
+and 
+pests. 
+For 
+instance, 
+alternation of cereals with non-host broadleaf 
+crops drastically minimizes the prevalence of 
+take-all disease in wheat. Moreover, spatial 
+diversification strategies like intercropping water 
+down host presence and hence decrease 
+inoculum density and pest pressure (Ratnadass 
+et al., 2012). 
+ 
+The overall enhancement of soil physical, 
+chemical, and biological characteristics offered 
+by crop rotation and diversification provide long-
+term ecosystem services that are essential for 
+sustainable agriculture. Improved soil health 
+provides a more stable and larger long-term crop 
+output 
+at 
+the 
+same 
+time 
+as 
+decreasing 
+dependency on expensive outside inputs like 
+fertilizers and pesticides. Such systems further 
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+61 
+ 
+contribute to climate resilience by insulating 
+against rainfall and temperature variability, 
+improving the physical properties of soil water, 
+sequestering carbon, and retaining nutrient 
+supplies, hence decreasing susceptibility to 
+drought, floods, and heat stress. In addition, 
+increased soil organic carbon is a greenhouse 
+gas mitigation strategy through the sequestration 
+of carbon for long periods, while legume 
+inclusion in rotations lowers nitrous oxide 
+emissions as a result of decreased fertilizer use 
+(Hazra, 2001). Crop diversification at the 
+landscape and field levels conserves biodiversity 
+through habitat provision of beneficial soil 
+organisms, pollinators, and natural enemies of 
+insects. Lastly, the ecological functions of 
+diversified 
+cropping 
+systems 
+also 
+involve 
+decreasing environmental degradation by limiting 
+erosion, nutrient losses, and chemical reliance, 
+hence reducing risks of water pollution, soil 
+acidification, and salinization (Sharma et al., 
+2021). 
+ 
+ 
+ 
+Fig. 3. Ecological service effects of crop diversity on soil health. 
+(Source, Xing et al., 2025) 
+ 
+ 
+ 
+Fig. 4. Pattern of crop rotation and diversification 
+ 
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+62 
+ 
+2. DETERMINANTS 
+OF 
+DIVERSIFIED 
+CROP ROTATION ADOPTION 
+ 
+Various studies indicated that land fragmentation 
+has been identified as one of the significant 
+factors affecting the adoption of diversified crop 
+rotation (DCR). Fragmentation restricts optimal 
+resource allocation, raises the cost of production, 
+and causes suboptimal utilization of factor inputs. 
+Fragmentation also causes extra travel time 
+losses, wasted spaces within field boundaries, 
+restricted surveillance, and avoidance of using 
+standardized 
+equipment. 
+Such 
+challenges 
+impede agricultural growth and lower the viability 
+of restructuring programs aimed at alleviating 
+such inefficiencies. Additionally, the incentive to 
+increase 
+productivity 
+on 
+farmland 
+by 
+smallholders through expanding area is weak, 
+and unwillingness to diversify crops stems from 
+low 
+yields 
+of 
+some 
+species, 
+decreasing 
+landholdings owing to population pressure, and 
+natural 
+resource 
+depletion 
+(Mekuria 
+& 
+Mekonnen, 2018). 
+ 
+As per, farmers with many small plots of land are 
+more likely to adopt fewer new technologies, 
+resort to monocropping, and try to reduce travel 
+distances among plots. In contrast, a rise in total 
+farm size promotes diversification of crops using 
+rotation, lowers cost per unit of production, and 
+increases adoption interest. However, diffusion of 
+knowledge (cultivation information, technical 
+expertise, 
+and 
+adoption 
+methods) 
+and 
+intervention efficacy (e.g., enhanced production 
+and economic yield) are still essential but 
+unexplored topics. Large knowledge gaps exist in 
+training and extension programs that would make 
+DCR's large-scale adoption possible (Mesfin et 
+al., 2011). 
+ 
+Uncertainty 
+in 
+market 
+conditions, 
+unstable 
+outputs, erratic availability of inputs, and low 
+farmer consciousness add to the complexity of 
+adoption 
+in 
+low-income 
+countries. 
+These 
+differences render DCR's diffusion, adoption 
+potential, and profitability 
+strongly context-
+dependent 
+(Ridier 
+et 
+al., 
+2021) 
+Besides, 
+agriculture-related 
+risks 
+and 
+uncertainties, 
+especially 
+the 
+mismatch 
+between 
+farmer 
+decision-making and subsequent realization of 
+profits, deter diversification. Several other socio-
+economic variables, such as the availability of 
+crop insurance, farmers' previous experience 
+with new technologies, financial status, and even 
+decision-maker 
+age, 
+also 
+strongly 
+affect 
+adoption. All these factors should be taken into 
+account carefully while developing policies, 
+strategies, 
+and 
+extension 
+programs 
+for 
+encouragements of crop diversification at scale 
+(Avemegah et al., 2024). 
+ 
+ 
+  
+Fig. 5. Diagrammatic representation of the importance of DCR for food security and soil health 
+management 
+(Source, Shah et al., 2021) 
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+63 
+ 
+2.1 Conceptual Framework: How Rotation 
+× Diversification Interact 
+ 
+Crop rotation and diversification interact best 
+when interpreted through ecological principles 
+and soil–plant–microbe feedbacks. Combined, 
+they produce functional complementarity, break 
+pest and disease cycles, and maintain soil 
+physical, chemical, and biological processes 
+(Kelly & Ilbery, 1995). 
+ 
+2.2 Functional 
+Complementarity 
+in 
+Resource Use 
+ 
+Various crops have differing rooting depths, 
+canopy structures, nutrient requirements, and 
+residue characteristics. When these are rotated 
+or mixed, such as cereals and legumes, shallow-
+rooted crops and deep-rooted ones, or rapid-
+growing annuals and perennials, rotations and 
+diversification 
+complement 
+each 
+other 
+to 
+enhance water and nutrient capture, especially 
+nitrogen, 
+phosphorus, 
+and 
+micronutrients 
+(Zimmerer & Vanek, 2016). They minimize inter-
+annual nutrient mining risk by spreading nutrient 
+requirement over time and ensuring long-term 
+availability of resources to soil organisms, 
+resulting in wider and more stable biota of the 
+soil. For example, rotation of maize with soybean 
+and the use of cover crops maximizes nitrogen 
+cycling efficiency and minimizes the need for 
+fertilizers, while deep-rooted crops like sunflower 
+or pigeon pea enhance recovery of nutrients in 
+the subsoil (Paut et al., 2020). 
+ 
+2.3 Interruption of Pest and Disease 
+Cycles 
+ 
+Spatial diversification and temporal rotation 
+create heterogeneity that disrupts the life cycles 
+of 
+monophagous 
+pests 
+and 
+pathogens. 
+Decreased continuity of the host decreases 
+inoculum pressure, whereas elevated habitat 
+heterogeneity strengthens natural enemies. In 
+cereal cropping, rotation retards the carry-over of 
+diseases 
+like 
+Fusarium 
+spp., 
+while 
+the 
+incorporation of legumes represses nematode 
+populations by means of non-host effects. As 
+with intercropping with aromatic or trap crops, 
+insect pest accumulation can be repressed. 
+Combined, rotation and diversification serve as 
+an ecological barrier that minimizes the use of 
+synthetic pesticides (Li et al., 2021). 
+ 
+2.4 Varied Organic Inputs and Carbon 
+Cycling 
+ 
+Another critical means of interaction occurs 
+through the heterogeneity of residues into the 
+soil. Rotations and diversified systems add litter 
+with varying carbon-to-nitrogen ratios, lignin, and 
+polyphenol levels. The heterogeneity leads to a 
+wider diversity of decomposer communities, 
+promotes 
+complementary 
+decomposition 
+processes with both rapid and slow turnover 
+pools, and builds soil organic matter fractions 
+that 
+stabilize 
+nutrients 
+and 
+increase 
+soil 
+structure. The persistent incorporation of varied 
+residues enhances soil carbon sequestration 
+capacity 
+and 
+enhances 
+long-term 
+nutrient 
+retention (Hufnagel et al., 2020). 
+ 
+2.5 Soil Physical Advantages 
+ 
+Rotating crop varieties with contrasting rooting 
+structures also alters physical structure in soil. 
+Rooted crops produce biopores, disrupt sealed 
+layers like plough pans, and enhance water 
+permeability. 
+Dense 
+fibrous-rooted 
+plants 
+stabilize aggregates and avert erosion, and cover 
+crops and green manures establish surface 
+cover that minimizes raindrop impact and surface 
+sealing. In the long run, this heterogeneity 
+improves porosity, decreases bulk density, 
+enhances aggregate stability, and increases 
+water-holding capacity and forms a sturdy 
+physical basis for sustained productivity (Bodner 
+et al., 2021).  
+ 
+2.6 Microbial 
+and 
+Biochemical 
+Interactions 
+ 
+Plant diversity strongly affects rhizosphere 
+microbial communities such as bacteria, fungi, 
+and 
+arbuscular 
+mycorrhizal 
+fungi 
+(AMF). 
+Diversified root exudates deliver sources of 
+energy to a broad number of microbes, whereas 
+useful symbionts like nitrogen-fixing rhizobia and 
+phosphorus-mobilizing mycorrhizae flourish in 
+diversified systems. These conditions enhance 
+soil enzyme activities that accelerate nutrient 
+mineralization rates, and they facilitate functional 
+redundancy of microbial guilds that enhances the 
+stability of soil processes under environmental 
+stress like drought or heat (Wang et al., 2021). 
+ 
+2.7 Feedback 
+Loops 
+and 
+Emergent 
+Properties 
+ 
+The 
+preceding 
+pathways 
+are 
+extremely 
+interactive 
+and 
+collectively 
+create 
+positive 
+feedback 
+loops. 
+For 
+instance, 
+enhanced 
+microbial diversity enhances decomposition of 
+varied residues, and this enhances nutrient 
+availability for the following crops. Increased 
+nutrient cycling enhances vigorous plant growth 
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+64 
+ 
+ 
+ 
+Fig. 6. Pathways of crop rotation and diversification 
+ 
+that recycles more organic matter into the soil, 
+and increased soil structure favors increased 
+microbial activity and root penetration, further 
+enhancing system resilience. These feedbacks 
+create emergent benefits exceeding the impacts 
+of rotation or diversification independently, 
+leading to improved yield stability, lowered 
+reliance on external inputs, and lasting soil health 
+improvements. 
+ 
+3. IMPACTS 
+ON 
+SOIL 
+PHYSICAL, 
+CHEMICAL, 
+AND 
+BIOLOGICAL 
+PROPERTIES 
+ 
+3.1 Soil Physical Properties 
+ 
+Crop 
+diversification 
+and 
+rotation 
+have 
+a 
+significant impact on soil physical properties. 
+Incorporating high-root-biomass crops, deep-
+rooted crops, and cover crops in rotation systems 
+favors the production of root-derived binding 
+agents and fungal hyphal proliferation, which 
+collectively 
+increase 
+the 
+stability 
+of 
+soil 
+aggregates and enhance structural integrity. 
+Such varied sequences also reduce surface 
+crusting and compaction, favoring the growth of 
+roots. 
+Intercrops 
+with 
+differences 
+in 
+root 
+architecture 
+still 
+enhance 
+macroporosity                       
+and both infiltration and water-retention capacity. 
+These benefits result in increased soil resistance 
+to 
+droughts 
+and 
+an 
+improved 
+physical              
+crop-growing environment (Delgado & Gomez, 
+2024). 
+3.2 Soil Chemical Properties 
+ 
+The chemical attributes of the soil are also 
+significantly enhanced in diversified rotations. 
+Legume-based cover crop systems are likely to 
+build soil organic carbon (SOC) through greater 
+returns of biomass and less fallow. Crop residue 
+quality, especially its carbon-to-nitrogen ratio, is 
+a key factor in SOC stabilization and the creation 
+of long-term carbon pools. Legume addition 
+enhances 
+nutrient 
+cycling 
+through 
+the 
+contribution of biologically fixed nitrogen to the 
+next crop. In addition, diversified sequences that 
+involve combinations of species and different 
+residue qualities minimize nutrient leaching and 
+enhance nutrient retention. Crop diversification 
+also indirectly enhances phosphorus availability 
+by promoting higher colonization and activity of 
+mycorrhizal fungi, which immobilize otherwise 
+unavailable soil P (Maiti et al., 2011). 
+ 
+3.3 Soil Biological Properties 
+ 
+Soil biological processes are probably the most 
+sensitive to crop rotation and diversification. 
+Rotations that involve several functional groups 
+promote higher microbial richness and functional 
+gene diversity, such as genes for carbon and 
+nitrogen cycling. Intercropping and perennial 
+cover 
+crop 
+presence 
+maintain 
+rhizosphere 
+activity year-round and have an active microbial 
+community even without cash crops. Some crop 
+rotations also benefit the formation of vigorous 
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+65 
+ 
+mycorrhizal networks and microbial consortia, 
+improving nutrient acquisition and plant growth 
+by the next crop. Notably, diversified systems 
+tend to foster the establishment of disease-
+suppressive soils, wherein microbial populations 
+suppress soilborne pathogens through resource 
+competition, antibiosis, or induced systemic 
+resistance of host plants (Zhang et al., 2020). 
+ 
+4. IMPACT 
+ON 
+PRODUCTIVITY 
+AND 
+CROP YIELD 
+ 
+4.1 Yield and Yield Stability 
+ 
+Diversified rotations and intercropping systems 
+generally enhance crop productivity compared 
+with monoculture systems, particularly when 
+assessed over the medium to long term. 
+Numerous comparative studies demonstrate that 
+mean yields are higher in diversified systems due 
+to improved soil fertility, better nutrient cycling, 
+and reduced pest and disease pressures. 
+Beyond 
+yield 
+levels, 
+diversification 
+also 
+contributes significantly to yield stability. By 
+distributing production risk between various 
+species and by increasing the resilience of the 
+system to environmental shocks like drought, 
+flooding, and pest and disease episodes, 
+diversified rotations minimize inter-annual yield 
+variability. Another key advantage is in nutrient-
+use efficiency. Diverse systems tend to realize 
+greater 
+nitrogen-use 
+efficiency 
+(NUE) 
+and 
+phosphorus-use efficiency (PUE) due to the 
+matching of nutrient supply and demand, 
+enhanced biological nitrogen fixation by legumes, 
+and increased mobilization of nutrients by 
+mycorrhizal 
+associations. 
+Therefore, 
+these 
+combined impacts lead to higher and more 
+consistent productivity and reduced dependence 
+on external inputs (Ogundari, 2013). 
+ 
+4.2 Quality and Market Impacts 
+ 
+Besides 
+impacting 
+yields, 
+rotation 
+and 
+diversification plans also have an impact on crop 
+quality 
+and 
+market 
+access. 
+Crop 
+quality 
+characteristics such as cereal protein, root and 
+fruit sugar content, and micronutrient levels tend 
+to increase when the rotation involves legumes 
+or 
+deep-rooted 
+species 
+that 
+bring 
+about 
+otherwise inaccessible nutrients. For instance, 
+legumes add biologically fixed nitrogen that can 
+improve the protein quality of ensuing cereals, 
+whereas deep-rooted varieties like pigeon pea or 
+sunflower can enhance micronutrient access for 
+ensuing crops. In addition to these physiological 
+gains, diversification presents farmers with 
+possibilities to diversify products as well as 
+markets. Through the production of several 
+species or crops per system, farmers are able to 
+diversify market risks, meet consumer demand 
+for diversified products, and enhance farm 
+profitability overall. Therefore, diversification 
+increases not just the ecological sustainability but 
+also the economic viability of crop production 
+(Beillouin et al., 2021). 
+ 
+5. ADVANTAGES 
+OF 
+DIVERSIFIED 
+CROP ROTATION ON SOIL HEALTH 
+ 
+Diversified crop rotation (DCR) is generally 
+acclaimed as a pillar of sustainable agriculture 
+because it can sustain and improve the health of 
+the soil. By incorporating crops that have 
+different rooting depths, nutrient requirements, 
+growth forms, and residue characteristics, DCR 
+enhances the structure, fertility, and microbial life 
+of the soil while also enhancing the resilience to 
+climatic and biological stresses at the same time. 
+The holistic advantages of DCR on soil health 
+can be classified under physical, chemical, and 
+biological enhancements, as well as ecosystem 
+and long-term sustainability benefits (Bhaduri et 
+al., 2022). 
+ 
+5.1 Physical Benefits 
+ 
+Rotations with diversification play a great role in 
+enhancing physical soil properties. Various root 
+architectures exert complementary impacts on 
+the soil: the surface-rooted cereals aggregate 
+surface soil particles, whereas deep-rooted 
+legumes and oilseeds form channels to enhance 
+aeration and water flow. This action improves soil 
+aggregation, porosity, compaction reduction, and 
+tilth, hence giving the roots a good environment 
+for growth. The use of cover crops and high-
+canopy species also gives a protective cover 
+over the soil surface, minimizing the risk of water 
+and wind erosion. The surface residues of crops 
+left on the surface serve as mulch, which 
+protects the soil from raindrop impact and 
+surface runoff. In addition, diversified rotations 
+enhance soil organic matter content, which has a 
+vital function to enhance water dynamics by 
+augmenting infiltration, raising water-holding 
+capacity, and lowering evaporative losses. This 
+is especially essential in rainfed systems where 
+water limitation is a productivity constraint (Ijaz et 
+al., 2019). 
+ 
+5.2 Chemical Benefits 
+ 
+Soil 
+chemical 
+fertility 
+is 
+enhanced 
+under 
+diversified crop rotations through enhanced 
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+66 
+ 
+nutrient cycling and availability. Leguminous 
+crops grown in rotations are responsible for fixing 
+atmospheric nitrogen by symbiosis with rhizobia, 
+thus lowering reliance on synthetic nitrogen 
+fertilizers and making nitrogen available as soon 
+and easily as it is needed by the next crop. 
+Inclusion of residues with different carbon-to-
+nitrogen 
+(C:N) 
+ratios 
+brings 
+about 
+SOC 
+accumulation in the soil, which increases cation 
+exchange capacity, nutrient storage, and long-
+term fertility. Perennial crops like pigeon pea or 
+safflower bring nutrients from subsoil horizons 
+and redistribute them to the upper layers, with 
+these nutrients being available to shallow-rooted 
+crops during subsequent seasons. Diversified 
+rotations, in this manner, ensure a balanced 
+nutrient content, avoiding nutrient deficiency, 
+reducing soil acidification, and enhancing soil 
+buffering capacity (Beillouin et al., 2021). 
+ 
+5.3 Biological Benefits 
+ 
+Biological 
+characteristics 
+of 
+the 
+soil 
+are 
+significantly improved with diversified rotations. A 
+greater diversity of crops promotes microbial 
+diversity in the rhizosphere, promoting the growth 
+of beneficial organisms like mycorrhizal fungi, 
+nitrogen-fixing 
+microbes, 
+and 
+phosphate-
+solubilizing microbes. These microcommunities 
+catalyze important processes like organic matter 
+decomposition, 
+nutrient 
+mineralization, 
+and 
+natural suppression of soil-borne pathogens. 
+Likewise, soil fauna like earthworms, nematodes, 
+and collembola are benefited by the higher 
+organic matter and residue input that is attendant 
+on DCR. Their feeding and burrowing contribute 
+further to aggregation, soil aeration, and nutrient 
+cycling. Rotations also serve as a good method 
+of disease and pest control through breaking of 
+the life cycle of insect pests and soil-borne 
+diseases. For example, switching host crops with 
+non-host crops minimizes inoculum accumulation 
+in the soil and thus decreases disease pressure 
+as well as chemical pesticide dependence 
+(Kremen & Miles, 2012). 
+ 
+5.4 Ecosystem and Long-Term Benefits 
+ 
+The collective enhancements of soil physical, 
+chemical, 
+and 
+biological 
+well-being 
+under 
+multiple cropping rotations are reflected in the 
+greater ecosystem services and sustainable 
+agriculture over the long term. Such soils with 
+greater organic matter content and improved 
+structure are more resistant to climate stresses 
+like droughts, floods, and extreme temperature 
+variations and thus stabilize crop yields under 
+varying climatic conditions. Enhanced fertility and 
+natural pest control minimize the use of synthetic 
+fertilizers and pesticides, reducing the cost of 
+production while limiting environmental pollution 
+from 
+agrochemicals. 
+Over 
+the 
+long 
+term, 
+diversified 
+rotations 
+preserve 
+sustainable 
+productivity through soil fertility conservation, 
+improved biodiversity, carbon sequestration, and 
+erosion, 
+salinization, 
+and 
+acidification 
+degradation risk avoidance. DCR, therefore, not 
+only maintains current crop production but also 
+enhances ecosystem stability and resilience, and 
+is an important practice to apply for regenerative 
+and climate-resilient agriculture. 
+ 
+6. DYNAMICS OF SOIL MICROBIOME      
+IN 
+CROP 
+ROTATION 
+AND 
+DIVERSIFICATION 
+ 
+Crop rotation and diversification significantly 
+impact the structure, diversity, and functionality 
+of microbial communities in the soil. Various 
+crops exude different root exudates and residues 
+that 
+influence 
+rhizosphere 
+populations 
+of 
+microbes. Such microbial dynamic turnover is a 
+key driver of nutrient cycling, soil aggregation, 
+and pathogen suppression (Yang et al., 2023). 
+ 
+6.1 Microbial Diversity and Shifts in 
+Communities 
+ 
+Rotations involving legumes, cereals, and root 
+crops promote varied microbial niches and thus 
+increase both bacterial and fungal richness. 
+Diversified systems tend to enhance beneficial 
+microbes like Rhizobium, Azotobacter, and 
+arbuscular mycorrhizal fungi (AMF), leading to 
+enhanced nutrient uptake and plant stability. 
+Monocropping tends to lower microbial diversity 
+and promote a rise in host-specific pathogens 
+(Shu & Huang, 2022). 
+ 
+6.2 Functional Benefits 
+ 
+The agronomic advantages of crop rotation and 
+diversification are most strongly associated with 
+microbial action. Microorganisms in the soil 
+control important processes of nutrient cycling 
+such as nitrogen mineralization, solubilization of 
+phosphorus, and mobilization of micronutrients. 
+Microorganisms also stabilize fungal hyphae and 
+microbial 
+polysaccharides, 
+improving 
+soil 
+structure to enhance porosity and water-holding 
+capacity. In addition, rotated diversification 
+interrupts pathogen life cycles and encourages 
+beneficial microbial antagonists like Trichoderma 
+and Pseudomonas spp., which serve to minimize 
+the frequency of soil-borne diseases. (Liu et al., 
+2023).  
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+67 
+ 
+ 
+ 
+Fig. 7. Conceptual diagram of crop rotation and diversification (CRD) for managing pests and 
+diseases while suppressing weed germination and growth 
+(Source, Zou et al., 2024) 
+ 
+6.3 Trade-offs and Limitations 
+ 
+Even with these advantages, some trade-offs 
+and restraints must be recognized. The beneficial 
+impacts of microbial enrichment can take years 
+to accrue, especially in soils with compromised 
+biological activity. Also, some crop residues have 
+the potential to lead to pathogen accumulation; 
+for instance, repeated cultivation of maize tends 
+to favor the growth of Fusarium spp., which 
+underscores the importance of balanced rotation 
+planning. In addition, intensive tillage procedures 
+that accompany some rotation schemes tend to 
+alter 
+microbial 
+habitats, 
+hence 
+somewhat 
+neutralizing biodiversity benefits. 
+ 
+7. REALISTIC 
+ROTATION 
+AND 
+DIVERSIFICATION STRATEGIES  
+ 
+Realistic 
+crop 
+rotation 
+and 
+diversification 
+strategies 
+should 
+be 
+informed 
+by 
+design 
+principles that balance both crop productivity and 
+soil health. One of the fundamental principles is 
+having multiple functional groups, including 
+cereals, legumes, oilseeds, and both shallow-
+rooted and deep-rooted species, in sequences to 
+have maximum use efficiency of resources. The 
+incorporation of cover crops among cash crops 
+serves to sustain living roots, minimize soil 
+erosion, and introduce organic biomass into the 
+system. There is also a need for residue 
+management; a balance in residue quality is 
+essential to prevent immobilization of nitrogen, 
+which can be attained by following high-carbon 
+residues with legumes or the use of starter 
+nitrogen. Of equal significance is the requirement 
+to disrupt pest and disease cycles by not 
+repeating the host crops and adding trap or non-
+host varieties. Lastly, successful design needs to 
+be responsive to local limitations, e.g., soil, 
+climate, market access, and labor, so that the 
+system is both pragmatic and remunerative (Van 
+Oijen & Douma, 2000). 
+ 
+Exemplary instances of these approaches are 
+seen in various settings. In a temperate cereals 
+system, a common sequence would be wheat 
+followed by a legume like pea or bean, next a 
+cover crop like vetch or rye, and lastly barley. In 
+a tropical smallholder context, a good sequence 
+would consist of maize followed by cowpea 
+intercrop, next groundnut, and ending with a 
+fallow phase with a quick-growing cover crop like 
+mucuna. 
+On 
+mixed 
+farms 
+incorporating    
+livestock, rotation may include a cereal crop, 
+then 
+a 
+legume 
+offering 
+soil 
+fertility                       
+value and forage, then a perennial pasture or 
+forage period, followed by a return to cereal 
+cropping. 
+ 
+7.1 Example Sequences  
+ 
+✓ Temperate cereal systems: Wheat → 
+legume 
+(pea/bean) 
+→ 
+cover 
+crop 
+(vetch/rye) → barley. 
+✓ Tropical smallholder systems: Maize → 
+cowpea intercrop → groundnut → fallow 
+with fast-growing cover (mucuna). 
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+68 
+ 
+Table 1. Comparison of monocropping and diversified crop rotations 
+ 
+Aspect 
+Monocropping 
+Diversified Rotations / Intercropping 
+Soil Fertility 
+Continuous nutrient mining; higher 
+dependence on synthetic 
+fertilizers. 
+Improves nutrient cycling (legumes fix N, 
+deep-rooted crops recover subsoil 
+nutrients). 
+Soil Organic 
+Matter (SOM) 
+Declines over time due to uniform 
+residues. 
+Builds SOM through diverse residue 
+quality and cover crop biomass. 
+Pest & Disease 
+Pressure 
+High, due to continuous host 
+presence; requires more 
+pesticides. 
+Disrupts pest/pathogen cycles; increases 
+beneficial organisms. 
+Soil Physical 
+Properties 
+Risk of compaction and reduced 
+aggregate stability. 
+Improves porosity, aggregation, and 
+water-holding capacity. 
+Microbial Diversity 
+Low, with dominance of host-
+specific microbes and pathogens. 
+High, with functional redundancy, 
+enhanced AMF, and beneficial microbes. 
+Yield (Short-term) 
+Often higher initially due to 
+specialization and input use. 
+May be slightly lower in the short term 
+due to competition and complexity. 
+Yield (Long-term) 
+Declines due to soil degradation 
+and pest buildup. 
+More stable over years; resilience to 
+drought, pests, and climate variability. 
+Nutrient-Use 
+Efficiency 
+Low efficiency; high leaching and 
+wastage. 
+Higher NUE/PUE due to synchronized 
+supply-demand and biological N fixation. 
+Labor & 
+Management 
+Simple, less labor-intensive. 
+Requires more knowledge, planning, and 
+sometimes more labor. 
+Profitability 
+Short-term profits possible with 
+marketable monocrops. 
+Long-term profitability higher due to 
+reduced input costs and diversified 
+market opportunities. 
+Environmental 
+Impact 
+Greater pollution risk (fertilizer 
+runoff, pesticide use). 
+Lower environmental footprint; 
+contributes to carbon sequestration and 
+biodiversity. 
+ 
+✓ Mixed farms with livestock: Cereal → 
+legume that provides forage → perennial 
+pasture/forage → cereal. 
+ 
+7.2 Region-Specific Examples (India) 
+ 
+✓ Rice–pulse system: Rice (kharif) → 
+lentil/chickpea 
+(rabi) 
+→ 
+short-duration 
+mungbean (summer). 
+✓ Maize-based rotation: Maize (kharif) → 
+potato/pea (rabi) → fodder crop or short-
+duration pulse (summer). 
+✓ Oilseed diversification: Soybean (kharif) 
+→ wheat (rabi) → mungbean (summer). 
+✓ Sugarcane 
+intercropping 
+system: 
+Sugarcane (18 months) intercropped with 
+soybean/groundnut in the early stages → 
+followed by a pulse or fodder crop. 
+✓ Horticultural integration: Maize (kharif) 
+→ onion/garlic (rabi) → leafy vegetables or 
+mungbean (summer). 
+ 
+8. CASE 
+STUDIES 
+AND 
+EMPIRICAL 
+EVIDENCE  
+ 
+Empirical research on various agroecosystems 
+continually shows diversified sequences of crops 
+and intercropping arrangements augment soil 
+health 
+and 
+productivity 
+compared 
+to 
+monoculture. Diversified systems build up soil 
+organic carbon (SOC) and microbial biomass 
+due to higher and more diverse organic inputs, 
+along with maintaining more functionally diverse 
+microbial 
+communities. 
+Numerous 
+studies 
+document lower frequency and severity of 
+soilborne 
+diseases 
+in 
+diversified 
+rotations, 
+primarily because pest–pathogen cycles are 
+interrupted and disease-suppressive microbial 
+communities are enhanced. Long-term field trials 
+have demonstrated that the incorporation of 
+legumes enhances biological nitrogen fixation, 
+thus minimizing the need for synthetic nitrogen 
+fertilizer and increasing crop performance in 
+following years. Moreover, diversified systems 
+tend to have higher stability of yield under 
+changing 
+climatic 
+conditions, 
+and 
+offer 
+a 
+measure of protection against drought, heat, and 
+outbreaks of pests. Outcomes are never uniform; 
+responses are influenced by soil type, climatic 
+conditions, crop species, and management 
+practices. This emphasizes the role of local 
+adaptation, 
+site-specific 
+cropping 
+sequence 
+design, and long-term observation to intercept 
+the cumulative effects of rotation × diversification 
+practices. 
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+69 
+ 
+9. KNOWLEDGE GAPS AND RESEARCH 
+PRIORITIES 
+ 
+Despite the evidence of benefits from crop 
+rotation and diversification, there are still 
+knowledge gaps critical to their adoption and 
+optimization at larger scales. Long-term, multi-
+site experiments are urgently needed that 
+specifically address the interactive effects of 
+rotation and diversification between contrasting 
+soils, climates, and farming systems. Mechanistic 
+research connecting crop functional traits root 
+exudation patterns and litter chemistry to 
+changes in microbial community structure and 
+processes 
+of 
+nutrient 
+cycling 
+is 
+underinvestigated. 
+Economic 
+assessments 
+considering labor requirements, market access, 
+and risk management are needed to assess 
+trade-offs and offer practical suggestions for 
+farmers. The creation of model frameworks and 
+decision-support systems can facilitate the 
+planning 
+of optimized 
+cropping sequences 
+tailored to regional environments and balancing 
+productivity, 
+environmental 
+integrity, 
+and 
+profitability. Lastly, social, institutional, and policy 
+research 
+covering 
+adoption 
+challenges, 
+extension approaches, and incentive systems is 
+necessary to bridge scientific knowledge and 
+farmer practice and push large-scale transitions 
+to diversified, resilient agroecosystems. 
+ 
+10. PRACTITIONER RECOMMENDATIONS 
+ 
+Practical implementation of diversification and 
+crop rotation can be done by beginning with 
+small scale, where farmers experiment with 
+diversified rotations on a part of their farm to 
+learn before expanding. Highest priority should 
+be given to the use of legumes and cover crops, 
+as they make the largest contribution to soil 
+nitrogen 
+and 
+soil 
+organic 
+carbon 
+(SOC) 
+development. Farmers are invited to track soil 
+health indicators—organic matter levels, water 
+infiltration, compaction, and simple biological 
+surrogates—annually to gauge progress and 
+inform 
+management 
+changes. 
+Combining 
+frequent pest scouting with planned crop rotation 
+reduces host crop continuity and represses 
+disease pressure. Furthermore, the rewards of 
+diversification 
+are 
+highest 
+when 
+used 
+in 
+conjunction 
+with 
+conservation 
+agriculture 
+strategies, like minimum tillage and retaining 
+crop residues, that collectively strengthen soil 
+structure, water use efficiency, and biological 
+processes. 
+ 
+11. CONCLUSIONS 
+ 
+Crop rotation and crop diversification, both 
+utilized together, create strong and durable 
+increases in soil health and agricultural yield. 
+Their interaction, especially when structured in 
+terms of complementary plant functional traits 
+and fit for local agroecological conditions, 
+generates synergistic effects such as increased 
+SOC accumulation, augmented nutrient cycling, 
+higher 
+microbial 
+diversity 
+and 
+functioning, 
+minimized pest and disease pressure, and 
+increased yield stability. Notably, these effects 
+accumulate over time and necessitate regular 
+management, 
+customized 
+approaches, 
+and 
+localized 
+adjustment. 
+Long-term, 
+integrated 
+research is indispensable to comprehensively 
+document the cumulative effects of these 
+practices. In the end, rotation and diversification 
+are 
+foundation 
+approaches 
+to 
+establishing 
+robust, 
+sustainable 
+agroecosystems 
+that 
+minimize input reliance with the promotion of 
+food security and environmental health. 
+ 
+DISCLAIMER (ARTIFICIAL INTELLIGENCE) 
+ 
+Author(s) hereby declare that NO generative AI 
+technologies such as Large Language Models 
+(ChatGPT, COPILOT, etc) and text-to-image 
+generators have been used during writing or 
+editing of this manuscript.  
+ 
+COMPETING INTERESTS 
+ 
+Authors have declared that no competing 
+interests exist. 
+ 
+REFERENCES 
+ 
+Avemegah, E., Bennett, E. A., Ulrich-Schad, J. 
+D., Wang, T., Eaton, W. M., Sieverding, H. 
+L., ... & Clay, D. E. (2024). Understanding 
+farmers’ 
+adoption 
+of 
+diversified 
+crop 
+rotations in South Dakota, USA: An 
+examination of the roles of sense of place 
+and social responsibility. Agroecology and 
+Sustainable Food Systems, 48(7), 934–
+960. 
+Beillouin, D., Ben‐Ari, T., Malézieux, E., Seufert, 
+V., & Makowski, D. (2021). Positive but 
+variable effects of crop diversification on 
+biodiversity 
+and 
+ecosystem 
+services. 
+Global Change Biology, 27(19), 4697–
+4710. 
+ 
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+70 
+ 
+Belete, T., & Yadete, E. (2023). Effect of mono 
+cropping 
+on 
+soil 
+health 
+and 
+fertility 
+management for sustainable agriculture 
+practices: A review. Plant Sci, 11, 192–
+197. 
+Bhaduri, D., Sihi, D., Bhowmik, A., Verma, B. C., 
+Munda, S., & Dari, B. (2022). A review on 
+effective soil health bio-indicators for 
+ecosystem 
+restoration 
+and                 
+sustainability. Frontiers in Microbiology, 
+13, 938481. 
+Bodner, G., Mentler, A., & Keiblinger, K.          
+(2021). Plant roots for sustainable soil 
+structure 
+management 
+in 
+cropping 
+systems. 
+In 
+The 
+root 
+systems 
+in 
+sustainable agricultural intensification (pp. 
+45–90). 
+Delgado, A., & Gómez, J. A. (2024). The soil: 
+Physical, 
+chemical, 
+and 
+biological 
+properties. In Principles of Agronomy for 
+Sustainable 
+Agriculture 
+(pp. 
+15–30). 
+Cham: Springer International Publishing. 
+Ditzler, L., van Apeldoorn, D. F., Pellegrini, F., 
+Antichi, D., Bàrberi, P., & Rossing, W. A. 
+(2021). Current research on the ecosystem 
+service potential of legume inclusive 
+cropping systems in Europe: A review. 
+Agronomy for Sustainable Development, 
+41(2), 26. 
+Fan, H., Miao, R., Guo, C., Bao, X., He, W., Sun, 
+Y., & Zhao, C. (2025). Research on the 
+effect of diversified cropping on crop 
+quality: A review. Agriculture, 15(5), 456. 
+Gómez-Macpherson, H., Villalobos, F. J., & 
+Fereres, 
+E. 
+(2024). 
+Cropping 
+and                      
+farming 
+systems. 
+In 
+Principles 
+of 
+Agronomy for Sustainable Agriculture (pp. 
+549–559). Cham: Springer International 
+Publishing. 
+Hazra, C. R. (2001). Crop diversification in India. 
+In Minas K. Papademetriou & F. J. Dent 
+(Eds.), Crop diversification in the Asia-
+Pacific Region (pp. 32–50). Bangkok, 
+Thailand: 
+Food 
+and 
+Agriculture 
+Organization 
+of 
+the 
+United                        
+Nations, Regional Office for Asia and the 
+Pacific. 
+Hernández-Ochoa, I. M., Gaiser, T., Kersebaum, 
+K. 
+C., 
+Webber, 
+H., 
+Seidel, 
+S. 
+J., 
+Grahmann, K., & Ewert, F. (2022). Model-
+based 
+design 
+of 
+crop 
+diversification 
+through new field arrangements in spatially 
+heterogeneous 
+landscapes: 
+A 
+review. 
+Agronomy for Sustainable Development, 
+42(4), 74. 
+Hufnagel, J., Reckling, M., & Ewert, F. (2020). 
+Diverse approaches to crop diversification 
+in 
+agricultural 
+research: 
+A 
+review. 
+Agronomy for Sustainable Development, 
+40(2), 14. 
+Ijaz, M., Nawaz, A., Ul-Allah, S., Rizwan, M. S., 
+Ullah, A., Hussain, M., ... & Ahmad, S. 
+(2019). 
+Crop 
+diversification 
+and                          
+food 
+security. 
+In 
+Agronomic 
+Crops:  
+Volume 
+1: 
+Production 
+Technologies           
+(pp. 
+607–621). 
+Singapore: 
+Springer 
+Singapore. 
+Jia, J., Zhang, J., Li, Y., Xie, M., Wang, G., & 
+Zhang, J. (2024). Land use intensity 
+constrains 
+the 
+positive 
+relationship 
+between 
+soil 
+microbial 
+diversity 
+and 
+multifunctionality. Plant and Soil, 503(1), 
+141–154. 
+Kelly, C. E., & Ilbery, B. W. (1995). Defining and 
+examining 
+rural 
+diversification: 
+A 
+framework for analysis. Tijdschrift voor 
+economische en sociale geografie, 86(2), 
+177–185. 
+Khan, M. T., Aleinikovienė, J., & Butkevičienė, L. 
+M. (2024). Innovative organic fertilizers 
+and 
+cover 
+crops: 
+Perspectives 
+for 
+sustainable agriculture in the era of climate 
+change 
+and 
+organic 
+agriculture. 
+Agronomy, 14(12), 2871. 
+Kremen, C., & Miles, A. (2012). Ecosystem 
+services in biologically diversified versus 
+conventional farming systems: Benefits, 
+externalities, and trade-offs. Ecology and 
+Society, 17(4). 
+Li, J., Huang, L., Zhang, J., Coulter, J. A., Li, L., 
+& Gan, Y. (2019). Diversifying crop rotation 
+improves system robustness. Agronomy 
+for Sustainable Development, 39(4), 38. 
+Li, R., He, Z., He, P., Yang, R., Ma, D., Li, Y., ... 
+& Zhang, Z. (2025). Crop diversification 
+improves productivity and soil health by 
+regulating fungal diversity. Soil and Tillage 
+Research, 252, 106628. 
+Liang, Z., Xu, Z., Cheng, J., Ma, B., Cong, W. F., 
+Zhang, C., ... & Groot, J. C. (2023). 
+Designing diversified crop rotations to 
+advance sustainability: A method and an 
+application. Sustainable Production and 
+Consumption, 40, 532–544. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+71 
+ 
+Liu, B., Schroeder, J., Ahnemann, H., Poeplau, 
+C., 
+& 
+Tebbe, 
+C. 
+C. 
+(2023). 
+Crop 
+diversification improves the diversity and 
+network structure of the prokaryotic soil 
+microbiome 
+at 
+conventional 
+nitrogen 
+fertilization. Plant and Soil, 489(1), 259–
+276. 
+Maiti, D., Toppo, N. N., & Variar, M. (2011). 
+Integration of crop rotation and arbuscular 
+mycorrhiza (AM) inoculum application for 
+enhancing 
+AM 
+activity 
+to 
+improve 
+phosphorus nutrition and yield of upland 
+rice (Oryza sativa L.). Mycorrhiza, 21(8), 
+659–667. 
+Mekuria, 
+W., 
+& 
+Mekonnen, 
+K. 
+(2018). 
+Determinants 
+of 
+crop–livestock 
+diversification 
+in 
+the 
+mixed 
+farming 
+systems: Evidence from central highlands 
+of Ethiopia. Agriculture & Food Security, 
+7(1), 1–15. 
+Mesfin, W., Fufa, B., & Haji, J. (2011). Pattern, 
+trend 
+and 
+determinants 
+of 
+crop 
+diversification: Empirical evidence from 
+smallholders in eastern Ethiopia. Journal 
+of 
+Economics 
+and 
+Sustainable 
+Development, 2(8), 78–89. 
+Ogundari, K. (2013). Crop diversification and 
+technical 
+efficiency 
+in 
+food 
+crop 
+production: A study of peasant farmers in 
+Nigeria. International Journal of Social 
+Economics, 40(3), 267–287. 
+Pareek, N. (2013). The role of soil microfauna in 
+maintaining 
+soil 
+health. 
+Centre 
+of 
+Advanced 
+Faculty 
+Training 
+in 
+Plant 
+Pathology. 
+Paut, R., Sabatier, R., & Tchamitchian, M. 
+(2020). Modelling crop diversification and 
+association effects in agricultural systems. 
+Agriculture, Ecosystems & Environment, 
+288, 106711. 
+Ratnadass, A., Fernandes, P., Avelino, J., & 
+Habib, 
+R. 
+(2012). 
+Plant 
+species                    
+diversity for sustainable management of 
+crop 
+pests 
+and 
+diseases 
+in 
+agroecosystems: A review. Agronomy                      
+for Sustainable Development, 32(1), 273–
+303. 
+Ridier, A., Roussy, C., & Chaib, K. (2021). 
+Adoption 
+of 
+crop 
+diversification 
+by 
+specialized grain farmers in south-western 
+France: Evidence from a choice-modelling 
+experiment. Review of Agricultural, Food 
+and Environmental Studies, 102(3), 265–
+283. 
+ 
+Shah, K. K., Modi, B., Pandey, H. P., Subedi, A., 
+Aryal, G., Pandey, M., & Shrestha, J. 
+(2021). 
+Diversified 
+crop 
+rotation: 
+An 
+approach 
+for 
+sustainable 
+agriculture 
+production. 
+Advances 
+in 
+Agriculture, 
+2021(1), 8924087. 
+Sharma, G., Shrestha, S., Kunwar, S., & Tseng, 
+T. M. (2021). Crop diversification for 
+improved weed management: A review. 
+Agriculture, 11(5), 461. 
+Shu, W. S., & Huang, L. N. (2022). Microbial 
+diversity 
+in 
+extreme 
+environments.                  
+Nature Reviews Microbiology, 20(4), 219–
+235. 
+Van 
+Oijen, 
+A., 
+& 
+Douma, 
+S. 
+(2000). 
+Diversification strategy and the roles of the 
+centre. Long Range Planning, 33(4), 560–
+578. 
+Wang, J., Wang, J., He, J. Z., Zhu, Y. G., Qiao, 
+N. H., & Ge, Y. (2021). Arbuscular 
+mycorrhizal fungi and plant diversity drive 
+restoration of nitrogen‐cycling microbial 
+communities. Molecular Ecology, 30(16), 
+4133–4146. 
+Xing, Y., Wang, X., & Mustafa, A. (2025). 
+Exploring 
+the 
+link 
+between 
+soil                          
+health 
+and 
+crop 
+productivity.         
+Ecotoxicology and Environmental Safety, 
+289, 117703. 
+Yang, X., Hu, H. W., Yang, G. W., Cui, Z. L., & 
+Chen, Y. L. (2023). Crop rotational 
+diversity 
+enhances 
+soil 
+microbiome 
+network complexity and multifunctionality. 
+Geoderma, 436, 116562. 
+Zhang, J., Van Der Heijden, M. G., Zhang,                        
+F., & Bender, S. F. (2020). Soil biodiversity 
+and 
+crop 
+diversification 
+are 
+vital 
+components 
+of 
+healthy 
+soils 
+and 
+agricultural 
+sustainability. 
+Frontiers 
+of 
+Agricultural Science and Engineering, 7(3), 
+236. 
+Zhang, W., Liang, Y., Wang, W., & Chen, F. 
+(2024). Long-term effects of crop rotation 
+on soil fertility and nutrient cycling: 
+Methodology 
+and 
+impact 
+analysis. 
+Geographical Research Bulletin, 3, 282–
+285. 
+Zimmerer, K. S., & Vanek, S. J. (2016). Toward 
+the integrated framework analysis of 
+linkages among agrobiodiversity, livelihood 
+diversification, ecological systems, and 
+sustainability amid global change. Land, 
+5(2), 10. 
+ 
+ 
+ 
+ 
+ 
+ 
+Koli et al.; Arch. Curr. Res. Int., vol. 25, no. 10, pp. 57-72, 2025; Article no.ACRI.145102 
+ 
+ 
+ 
+72 
+ 
+Zou, Y., Liu, Z., Chen, Y., Wang, Y., & Feng, S. 
+(2024). Crop rotation and diversification in 
+China: Enhancing sustainable agriculture 
+and resilience. Agriculture, 14(9), 1465. 
+ 
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual 
+author(s) and contributor(s) and not of the publisher and/or the editor(s). This publisher and/or the editor(s) disclaim responsibility for 
+any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content. 
+ 
+© Copyright (2025): Author(s). The licensee is the journal publisher. This is an Open Access article distributed under the terms 
+of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0), which permits unrestricted use, 
+distribution, and reproduction in any medium, provided the original work is properly cited.  
+ 
+ 
+ 
+Peer-review history: 
+The peer review history for this paper can be accessed here: 
+https://pr.sdiarticle5.com/review-history/145102  

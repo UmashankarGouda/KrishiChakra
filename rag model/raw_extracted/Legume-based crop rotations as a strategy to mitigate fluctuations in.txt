@@ -1,0 +1,1571 @@
+European Journal of Agronomy 159 (2024) 127267
+Available online 3 July 2024
+1161-0301/© 2024 The Author(s). Published by Elsevier B.V. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+Legume-based crop rotations as a strategy to mitigate fluctuations in 
+fertilizer prices? A case study on bread wheat genotypes in northern Spain 
+using life cycle and economic assessment 
+Mareike Weiner a,b,*, Simon Moakes a,c, María Dolores Raya-Sereno d,e, Julia Cooper f,g 
+a Research Institute of Organic Agriculture FiBL, Ackerstrasse 113, Frick 5070, Switzerland 
+b Carbotech AG, St. Alban-Vorstadt 19, Basel 4052, Switzerland 
+c IBERS, Aberystwyth University, Aberystwyth SY23 3EE, UK 
+d Department of Agricultural Production, CEIGRAM, Universidad Polit´ecnica de Madrid, Madrid 28040, Spain 
+e Environmental Remote Sensing and Spectroscopy Laboratory (SpecLab), Spanish National Research Council (CSIC), Albasanz 26-28, Madrid 28037, Spain 
+f School of Natural and Environmental Sciences, Newcastle University, Newcastle Upon Tyne NE1 7RU, UK 
+g Organic Research Centre, Trent Lodge, Stroud Road, Cirencester GL7 6JN, UK   
+A R T I C L E  I N F O   
+Keywords: 
+LCA 
+Environmental impact 
+Gross margin 
+Agriculture 
+Nitrogen 
+Pre-crop effect 
+A B S T R A C T   
+Today’s agricultural production is heavily dependent on synthetic nitrogen (N) fertilizer. Its energy-intensive 
+production and use are associated with a number of environmental burdens, such as global warming and ma­
+rine eutrophication. Furthermore, fertilizer prices are subject to high volatility and have been rising steadily for 
+years. One strategy to reduce the dependence on synthetic N fertilizer is to include legumes in the crop rotation, 
+but it is important that this practice is economically viable to be adopted by farmers. Through gross margin 
+analysis and life cycle assessment (LCA), we quantified the economic and environmental impacts of introducing 
+grain legumes into rainfed bread wheat rotations in northern Spain. The analysis covered the full two-year se­
+quences of barley-wheat, rapeseed-wheat and vetch-wheat. We further investigated the effect of four different 
+bread wheat genotypes on the environmental and economic performance. In this case study, replacing synthetic 
+N fertilizer with legume-fixed N in a two-year cropping rotation decreased most of the analysed environmental 
+impacts. Modelled greenhouse gas emissions were 24 % lower for vetch-wheat compared to barley-wheat and 
+11 % lower compared to rapeseed-wheat. Despite higher wheat yield, the vetch-wheat rotation had an 18 % 
+lower gross margin than the rapeseed rotation and a 1 % higher gross margin than the barley rotation. The 
+sensitivity analysis showed that only when fertilizer and wheat grain prices were more than doubled, that the 
+legume rotation became more profitable than the other rotations. Consequently, farmers would require a 
+financial incentive to include legumes in crop rotations and reduce environmental impacts.   
+1. Introduction 
+On a global scale, the agricultural sector is a significant contributor 
+to anthropogenic global warming. Driven by population and economic 
+growth, greenhouse gas (GHG) emissions from agriculture are projected 
+to increase further (Mohammed et al., 2019). Developing mitigation 
+strategies is crucial, but it is equally important that these practices are 
+economically viable and adopted by farmers. One strategy is to reduce 
+the use of synthetic nitrogen (N) fertilizer, as it causes emissions of 
+carbon dioxide (CO2) via the energy-intensive production process and of 
+nitrous oxide (N2O) via application (Smith et al., 2008). However, 
+climate change is not the only risk, as N fertilizer flows exceed the 
+so-called planetary boundaries (Steffen et al., 2015). Synthetic N fer­
+tilizer application is also a major source of ammonia (NH3) emissions 
+that have significant environmental impacts such as eutrophication and 
+acidification (Xu et al., 2019), and may cause surface and ground-water 
+pollution by nitrates (Quemada et al., 2013). Improving the efficiency 
+and/or reducing synthetic N fertilizer inputs would therefore, poten­
+tially reduce both pre-farm CO2 emissions from fertilizer production and 
+on-farm emissions from the application (e.g. N2O, NH3, NO3
+- ). 
+Several studies across different climate zones indicate that incorpo­
+rating grain legumes into crop rotations can decrease N fertilizer 
+* Corresponding author at: Research Institute of Organic Agriculture FiBL, Ackerstrasse 113, Frick 5070, Switzerland. 
+E-mail address: DEP-FSS@fibl.org (M. Weiner).  
+Contents lists available at ScienceDirect 
+European Journal of Agronomy 
+journal homepage: www.elsevier.com/locate/eja 
+https://doi.org/10.1016/j.eja.2024.127267 
+Received 14 September 2023; Received in revised form 20 February 2024; Accepted 25 June 2024   
+European Journal of Agronomy 159 (2024) 127267
+2
+requirements during both the legume production year and in the sub­
+sequent year, reducing the environmental impact of these production 
+systems (Barton et al., 2014; Brock et al., 2016; Costa et al., 2021; 
+MacWilliam et al., 2014). However, it is crucial that the subsequent crop 
+efficiently uses the N introduced into the soil by the atmospheric bio­
+logical fixation of the legumes (Quemada et al., 2020). In this context, 
+genetic variation in the ability to use this legacy N is the focus of studies 
+on bread wheat in Egypt and central Spain. Noureldin et al. (2013) found 
+genotypic differences in N uptake and utilization efficiency under 
+different N fertilizer levels. The same applies to Raya-Sereno et al. 
+(2023) who compared genotypes with a different root architecture and 
+their response to varying N fertilizer levels and pre-crops. However, 
+these studies were purely agronomic, and most studies that focus on 
+environmental impacts did not include different genotypes in their 
+assessment. Using a life cycle assessment (LCA) approach, we explored 
+the potential of combining reduced N fertilizer inputs using a legume 
+pre-crop and genetic diversity to improve N uptake and utilization 
+efficiency. 
+The strategy of reducing synthetic N fertilizer inputs is attractive not 
+only from an environmental point of view but also to reduce costs and 
+exposure to price fluctuations for the farmer. Fertilizer prices are subject 
+to high fluctuations and have been rising steadily for years. High energy 
+prices, strong demand and limited supply, caused the price of urea 
+ammonium nitrate (UAN) to increase fivefold between January 2021 
+and March 2022 (Hebebrand and Laborde, 2022; Trading Economics, 
+2022). As a result, we included an economic evaluation in this study and 
+performed a sensitivity analysis with varying fertilizer and grain prices, 
+given the high price uncertainty. In addition, we repeated the sensitivity 
+analysis with a premium and discount for the grain protein content in 
+order to take a qualitative aspect into account. A protein premium or 
+discount is common for bread wheat, but varies greatly depending on 
+the region. 
+The specific objective of this study was to quantify the economic and 
+environmental impacts of introducing grain legumes into rainfed bread 
+wheat rotations in northern Spain. The analysis covered the 2-year se­
+quences of barley-wheat, rapeseed-wheat and vetch-wheat. Using gross 
+margin analysis and LCA, we aimed to answer the following research 
+questions for this study: (i) Does incorporating legumes into a crop 
+rotation cost-effectively reduce the environmental impact of bread 
+wheat production through reduced N fertilizer input? (ii) Are legume- 
+based crop rotations a viable mitigation strategy for fluctuations in 
+fertilizer prices? (iii) Does the choice of bread wheat genotype affect the 
+environmental and economic performance? 
+2. Material and methods 
+2.1. Case study 
+The two on-farm trials were part of a European H2020 project (So­
+lACE) that explored the potential for improved varieties and agronomic 
+interventions to improve crop production under water and nutrient 
+stressed conditions. The trials were conducted under field conditions in 
+the 2020 harvest year in Northern Spain in Vi˜nalta (42◦01’N, 04◦55’W, 
+772 m a.s.l.) and Villamuera de la Cueza (42◦25’, 04◦69’, 829 m a.s.l), 
+hereinafter referred to as Site BY and Site RD respectively (“BY” and 
+“RD” represent the pre-crops barley and rapeseed). According to K¨oppen 
+(1923), the climate of the area is classified as warm-summer Mediter­
+ranean climate (Csb). The mean annual temperature is 12 ◦C, and the 
+mean annual rainfall is 440 mm (based on 1985–2015 data). The study 
+year was slightly drier than normal with mean rainfall of 391 mm at 
+Villamuera and 341 mm at Vi˜nalta. The mean annual temperatures were 
+slightly cooler: 10 ◦C at Villamuera and 11 ◦C at Vi˜nalta. Precipitation 
+occurs mainly in autumn and spring. The soil is mapped as a Cambic 
+Calcisol (World Reference Base for Soil Resources, 2014) with a sandy 
+clay loam topsoil for the two sites. 
+We conducted a split-split-plot experiment with 96 plots (1.8 m x 
+12.8 m each plot; replicated four times) at each site, considering pre- 
+crop as the main factor, wheat genotypes as the subplot and N fertil­
+ization as the sub-subplot. Four bread wheat (Triticum aestivum L.) ge­
+notypes were included based on their level of drought-tolerance. Touzy 
+et al. (2019) tested 210 European genotypes in four water stress sce­
+narios and grouped them according to their susceptibility to water 
+stress. We selected genotypes from all clusters: Mustang as 
+drought-tolerant; Cellule as intermediate; and Nogal and Lutescens as 
+susceptible to water stress (more information on the genotype charac­
+teristics is provided in the supplementary material, chapter 2). 
+Prior to the trial, in the 2018 harvest season, barley was grown at 
+Vi˜nalta (Site BY) and rapeseed at Villamuera (Site RD). Afterwards, each 
+field was divided into 4 replicate blocks, each with one-half planted to a 
+legume and one-half planted to a non-legume. The legume pre-crop 
+species vetch (Vicia sativa L.) used as grain was cultivated at both 
+sites; whilst non-legume species were barley (Hordeum vulgare L.) at Site 
+BY and rapeseed (Brassica napus L.) at Site RD. Vetch was sown in 
+November 2018, rapeseed in October 2018 and barley in January 2019. 
+All pre-crops were harvested in early summer 2019, with the residues 
+being incorporated into the soil. The 8 main plots at each site were then 
+divided into a series of genotype subplots. The selected wheat genotypes 
+were sown on the same date, at the end of October or the beginning of 
+November 2019, at a rate of 160 kg ha−1. At tillering, wheat plots were 
+split into three N fertilization sub-subplots, a control treatment and two 
+treatments with different fertilizer rates. Therefore, an interaction of N 
+and pre-crop was created for each genotype. 
+Nitrogen fertilizer was split into two applications and broadcast on 
+wheat plots at two growth stages (GS) (Meier, 1997): at tillering (GS22) 
+and at stem elongation (GS36–37). Each sub-subplot received a con­
+ventional fertilizer; ammonium nitrate sulphate (26 % N), at one of the 
+two rates; adjusted (ADJ) or recommended (REC) rate (Table 1). The 
+REC rate (110.5 kg N ha−1) was calculated based on the N requirements 
+of wheat for an expected yield of 3700 kg ha−1 with the decision support 
+system FertiliCalc (Villalobos et al., 2020). As the fertilizer rates were 
+adjusted according to the soil inorganic N content (Nmin) in the upper 
+0.6 m before the first N application, the REC treatments for wheat plots 
+with a legume pre-crop received 32.5 kg N ha−1 less fertilizer than the 
+ones without a legume pre-crop. The ADJ rate for wheat plots with a 
+legume pre-crop was half the REC rate (39 kg N ha−1), and the ADJ rate 
+of the wheat plots without a legume pre-crop was equal to the REC rate 
+for wheat plots with a legume pre-crop. The ADJ rate was set to reflect 
+typical farmer adjustments to the N fertiliser rate based on soil analysis 
+that indicates improved N availability. The control sub-subplots (MIN) 
+did not receive any N input. Given that the MIN treatment is not 
+representative of common practice, its results are exclusively presented 
+in the supplementary material (Tables 8–11). 
+Based on soil tests, phosphorus and potassium fertilizers were 
+applied at a consistent rate before wheat sowing to ensure adequate P 
+and K availability. Plant protection products (including herbicides and 
+fungicides) were applied according to common farm practice (Table 1). 
+An experimental combine undertook harvest in late July or early August 
+2020, and the wheat grain yield (GY, kg ha−1) was recorded. A grain 
+sub-sample was taken for laboratory analysis, where the grain N con­
+centration (GNC, %N) (see supplementary material, Table 2) and 
+moisture content (%) were measured. Straw was left on the field as a 
+residue. 
+2.2. Life cycle assessment 
+We used a cradle-to-farm gate LCA approach to quantify and 
+compare the environmental impacts of selected genotype, pre-crop 
+species and fertilizer input combinations associated with bread wheat 
+production. Upstream production of farm inputs (e.g. seed, fertilizer) 
+and their use in the field (e.g. operation of machines) were included 
+within the system boundary. They were organised into the following 
+process groups: tillage, sowing, fertilization, plant protection, harvest 
+M. Weiner et al.                                                                                                                                                                                                                                 
+European Journal of Agronomy 159 (2024) 127267
+3
+and field emissions. A summary of the inventory data collected is pre­
+sented in Table 1. For this study, we assumed that storage and grain 
+drying takes place outside the farm gate at the processing stage as the 
+focus was at the field level. Background data for externally sourced in­
+puts, e.g. the impacts of the production of fertilizers and pesticides, were 
+included using the ecoinvent 3.7.1 LCI database. As vetch seeds were not 
+available in the database, we used fava bean seeds instead. No co- 
+product allocation was required, as the straw was incorporated into 
+the soil as part of tillage for the following crop. 
+We assessed the collected data through the tool FarmLCA (Meier and 
+Moakes, 2019; Schader et al., 2014). The model uses an LCA framework 
+and is supported by biophysical systems modelling. It utilizes a modular 
+approach to model farm systems and their emissions on an annual basis. 
+The quantity of crop residue was not measured but calculated based on 
+the IPCC 2019 Tier 2 guidelines, which estimate above and below 
+ground residues from the wheat grain yield. Emissions of nitrous oxide 
+(N2O) were calculated with IPCC (2019) disaggregated emission factors, 
+whilst ammonia emissions from crops were calculated utilising 
+EMEP/EEA (2019) (NH3 at Tier 2, NOx at Tier 1) and nitrate losses were 
+estimated using the SQCB method (Faist Emmenegger et al., 2009). A 
+full description of the model and a table of methods used to estimate 
+each field emission type is included in the supplementary material, 
+chapter 1. The ecoinvent 3.7.1 LCI database (Wernet et al., 2016) is 
+incorporated as the model’s inventory database. We selected six 
+system-relevant midpoint impact categories, which are part of the 
+IMPACT World+ (Midpoint version 1.28) LCIA methodology set (Bulle 
+et al., 2019): The Global Warming Potential (GWP) (over a 100-year 
+timeframe) reflected in the impact category climate change 
+shorter-term, fossil energy use, marine and freshwater eutrophication, 
+freshwater acidification, and water scarcity. To address the uncertainty 
+related to the LCA method, we presented the results based on a second 
+method, namely the Ecological Scarcity 2021 (BAFU, 2021), in the 
+sensitivity analysis. 
+Table 1 
+Inventory of inputs for the cultivation of 1 hectare bread wheat in Spain as part of this study.    
+Site BY 
+Site RD   
+leg. pre-crop 
+non-leg. pre-crop 
+leg. pre-crop 
+non-leg. pre-crop   
+wheat 
+wheat 
+wheat 
+wheat   
+ADJ 
+REC 
+ADJ 
+REC 
+ADJ 
+REC 
+ADJ 
+REC 
+N 
+kg ha−1 
+39 
+78 
+78 
+110.5 
+39 
+78 
+78 
+110.5 
+P2O5 
+kg ha−1 
+36 
+36 
+36 
+36 
+36 
+36 
+36 
+36 
+K2O 
+kg ha−1 
+60 
+60 
+60 
+60 
+60 
+60 
+60 
+60 
+Fertilizing 
+passes ha−1 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+Pesticides1 
+kg a.i. ha−1 
+0.93 
+0.93 
+0.93 
+0.93 
+0.43 
+0.43 
+0.43 
+0.43 
+Pesticide application 
+passes ha−1 
+2 
+2 
+2 
+2 
+3 
+3 
+3 
+3 
+Seeds 
+kg ha−1 
+160 
+160 
+160 
+160 
+160 
+160 
+160 
+160 
+Tillage2 
+passes ha−1 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+1 Site BY: Tribenuron-methyl 0.56 kg a.i. ha−1, Metsulfuron-methyl 0.28 kg a.i. ha−1, Triazol 0.09 kg a.i. ha−1 
+Site RD: Fluazifop-P-butyl 0.19 kg a.i. ha−1, Mesotrione 0.15 kg a.i. ha−1, Triazol 0.09 kg a.i. ha−1. 
+2 Site BY: 1 x chisel, 1 x cultivator; Site RD: 1 x disc harrow, 1 x cultivator. 
+Table 2 
+Results of the environmental and economic assessment of the two-year rotations at Site BY (top) and Site RD (bottom) per hectare and year.  
+Site BY  
+legume pre-crop/vetch-wheat 
+non-legume pre-crop/barley-wheat   
+ADJ 
+REC 
+ADJ 
+REC 
+Wheat yield 
+kg FM 
+6578 
+±
+1219 
+7245 
+±
+1084 
+4884 
+±
+1177 
+6467 
+±
+1042 
+Wheat yield 
+kg DM 
+5975 
+±
+1102 
+6577 
+±
+979 
+4437 
+±
+1068 
+5882 
+±
+943 
+Gross margin 
+EUR 
+402 
+±
+91 
+445 
+±
+81 
+354 
+±
+88 
+487 
+±
+78 
+Revenue 
+EUR 
+793 
+±
+91 
+856 
+±
+81 
+816 
+±
+88 
+966 
+±
+78 
+Costs 
+EUR 
+391 
+±
+0 
+411 
+±
+0 
+462 
+±
+0 
+480 
+±
+0               
+Climate change (s) 
+kg CO2-eq 
+1297 
+±
+24.76 
+1472 
+±
+21.99 
+1747 
+±
+23.99 
+1913 
+±
+21.18 
+Fossil energy use 
+MJ deprived 
+10456 
+±
+0 
+11237 
+±
+0 
+12909 
+±
+0 
+13555 
+±
+0 
+Marine eutr. 
+kg N N-lim-eq 
+14.95 
+±
+0.44 
+15.48 
+±
+0.41 
+17.20 
+±
+0.48 
+17.22 
+±
+0.46 
+Freshwater eutr. 
+kg PO4 P-lim-eq 
+0.2066 
+±
+0 
+0.2072 
+±
+0 
+0.2005 
+±
+0 
+0.2010 
+±
+0 
+Freshwater acid. 
+kg SO2-eq 
+1.9E-05 
+±
+0 
+2.4E-05 
+±
+0 
+3.3E-05 
+±
+0 
+3.7E-05 
+±
+0 
+Water scarcity 
+m3 world-eq 
+903 
+±
+0 
+928 
+±
+0 
+1464 
+±
+0 
+1485 
+±
+0  
+Site RD  
+legume pre-crop/vetch-wheat 
+non-legume pre-crop/rapeseed-wheat   
+ADJ 
+REC 
+ADJ 
+REC 
+Wheat yield 
+kg FM 
+8086 
+±
+1696 
+7229 
+±
+1474 
+7575 
+±
+1514 
+6998 
+±
+1424 
+Wheat yield 
+kg DM 
+7248 
+±
+1515 
+6503 
+±
+1’318 
+6795 
+±
+1377 
+6283 
+±
+1’284 
+Gross margin 
+EUR 
+551 
+±
+127 
+449 
+±
+111 
+647 
+±
+114 
+575 
+±
+107 
+Revenue 
+EUR 
+936 
+±
+127 
+855 
+±
+111 
+1071 
+±
+114 
+1016 
+±
+107 
+Costs 
+EUR 
+385 
+±
+0 
+406 
+±
+0 
+424 
+±
+0 
+441 
+±
+0               
+Climate change (s) 
+kg CO2-eq 
+1334 
+±
+34.04 
+1478 
+±
+29.61 
+1512 
+±
+30.94 
+1634 
+±
+28.85 
+Fossil energy use 
+MJ deprived 
+10609 
+±
+0 
+11390 
+±
+0 
+11432 
+±
+0 
+12078 
+±
+0 
+Marine eutr. 
+kg N N-lim-eq 
+14.32 
+±
+0.63 
+15.40 
+±
+0.49 
+15.12 
+±
+0.60 
+15.78 
+±
+0.61 
+Freshwater eutr. 
+kg PO4 P-lim-eq 
+0.2072 
+±
+0 
+0.2078 
+±
+0 
+0.1958 
+±
+0 
+0.1963 
+±
+0 
+Freshwater acid. 
+kg SO2-eq 
+1.9E-05 
+±
+0 
+2.4E-05 
+±
+0 
+2.7E-05 
+±
+0 
+3.1E-05 
+±
+0 
+Water scarcity 
+m3 world-eq 
+902 
+±
+0 
+927 
+±
+0 
+913 
+±
+0 
+934 
+±
+0  
+M. Weiner et al.                                                                                                                                                                                                                                 
+European Journal of Agronomy 159 (2024) 127267
+4
+2.3. Economic assessment 
+A gross margin analysis was conducted to determine the economic 
+viability of each treatment on a per hectare basis. The economic 
+assessment complemented the environmental assessment, using the 
+same input data in parallel. Revenue for by-products, such as straw, 
+were not accounted for, as it was left on the field as a residue and not 
+sold. Unless otherwise stated, the revenue and cost data per unit of input 
+or output was based on the agricultural statistics of the Spanish Ministry 
+of Agriculture (Gobierno de Espa˜na, 2023) for the years 2019 and 2020. 
+Prices for mineral fertilizers were calculated based on their nutrient 
+value (N, P, K) consistent with the ecoinvent LCI database (1.06; 0.9; 
+0.62 EUR/kg nutrient). The costs for machinery operations and pesti­
+cides are based on the dataset incorporated into the FarmLCA tool. 
+Machinery costs derive from KTBL (Kuratorium für Technik und Bau­
+wesen in der Landwirtschaft e.V, 2020), as it is the most comprehensive, 
+reliable and suitable dataset for assessing farm systems across Europe. 
+Whilst specific to Germany, processes and data are relevant to com­
+mercial agriculture within the EU. Machinery costs included deprecia­
+tion, interests for the capital invested in the machine, storage, insurance, 
+fees, repairs and maintenance. Other costs associated with the use of a 
+machine were the diesel and labour costs, which depend on the working 
+time. Wages were adapted to Spanish market conditions in 2019 and 
+2020 and based on (Gobierno de Espa˜na, 2023). Pesticide costs have 
+been calculated based on the online shop myAgrar (AgrarOnline GmbH, 
+2020). All plant protection products containing the active ingredient (a. 
+i.) of interest were screened, and the average price was calculated 
+considering the different proportions of the a.i. in the products. Land 
+costs, such as taxes or rent, were not accounted for. 
+2.4. Functional units 
+For the LCA of a single year of bread wheat production, we selected a 
+functional unit based on land management (per hectare) and on 
+production-output (per kg). However, as the pre-crops are composed of 
+species with varying compositions (protein, etc.), the results for the two 
+years of crop rotation (pre-crop and bread wheat) are presented only as 
+per hectare results following Nemecek et al. (2015). The per kg results 
+for the one year of wheat cultivation can be found in the supplementary 
+material (Table 12), but since they do not provide any additional in­
+formation on the 2-year crop rotation, the results are not discussed in 
+this study. The per hectare results for the crop rotation were calculated 
+by summing the environmental impacts and gross margin of the year of 
+pre-crop cultivation and the subsequent bread wheat cultivation and 
+then dividing it by the number of years of the crop rotation (two). The 
+gross margin is expressed in Euro per hectare and year (EUR ha−1 yr−1). 
+3. Results 
+Wheat grown after a legume, in this case, vetch, resulted in 18 % 
+higher yield than wheat grown after barley. In the ADJ treatments, the 
+legume rotation received a lower N input (39 vs. 78 kg N ha−1), but 
+wheat yield was still 26 % higher on average than wheat following 
+barley. In the REC treatments (78 vs. 110.5 kg N ha−1) it was, on 
+average, 11 % higher than wheat grown after barley. 
+The wheat yield after vetch compared to rapeseed was, on average, 
+6 % (ADJ) and 3 % (REC) higher. Moreover, yields differed strongly 
+between genotypes, ranging from 4 % to 22 % higher yield for the 
+legume-wheat rotation. 
+Table 2 summarises the agronomic, economic and environmental 
+indicator results for the trials, to allow for further discussion. The results 
+are presented for the two-year rotations per hectare and year. 
+3.1. Environmental impact under reduced fertilizer input 
+In this study, the introduction of a legume in the crop rotation and 
+the associated reduction in N fertilizer use generally led to lower envi­
+ronmental impacts per hectare for most of the analysed impact cate­
+gories. The GHG emissions of the vetch-wheat rotation were 24 % lower 
+than those of the barley-wheat rotation and 11 % lower than those of the 
+rapeseed-wheat rotation (see Fig. 1a). 
+The differences between the two types of rotations are mainly due to 
+(i) the impact of pre-crop cultivation with different inputs and agricul­
+tural practices, (ii) the impact of fertilizer production (pre-farm) influ­
+enced by the different N fertilizer rates in the year of wheat cultivation 
+and (iii) the field emissions (e.g. N2O), which are mainly influenced by 
+the rate of N fertilizer applied (on-farm) and the quantity of residues 
+from wheat cultivation. 
+The results for most of the other impact categories were in line with 
+this trend of lower impacts. The per hectare impacts on marine eutro­
+phication (BY: −12 %; RD: −4 %) freshwater acidification (BY: −39 %; 
+RD: −26 %), water scarcity (BY: −38 %; RD: −1 %) and energy use (BY: 
+−18 %; RD: −6 %) were lower for all treatments in the vetch-wheat 
+rotation. Only the impacts on freshwater eutrophication deviate from 
+these results. More P2O5 fertilizer was used in vetch cultivation 
+compared to rapeseed and barley, which resulted in a 3 % (BY) and 6 % 
+(RD) higher impact on freshwater eutrophication for the legume-wheat 
+rotation. 
+3.2. Economic viability of legume-based cropping rotations 
+The economic results indicated that the vetch-wheat rotation was 
+less profitable than the rapeseed-wheat rotation, but similarly profitable 
+to the barley-wheat rotation. The lower N fertilizer use in the legume- 
+wheat rotations saved about 8 % of the total costs in the year of wheat 
+cultivation. In addition, the costs of growing vetch as a pre-crop were 
+9 % lower than for rapeseed and 22 % lower than for barley. However, 
+revenue for vetch was 52 % lower, which resulted in a negative gross 
+margin in the year of pre-crop cultivation. In the year of wheat culti­
+vation, the revenue for the vetch-wheat rotation at Site BY was 18 % 
+higher, but the negative gross margin from the pre-crop year reduced the 
+total gross margin, resulting in only 1 % higher gross margin considering 
+both years. At Site RD, the difference in revenue in the second year of the 
+rotation was 5 % higher for the vetch-wheat rotation compared to 
+rapeseed-wheat. As a result, the overall gross margin for the two-year 
+sequence was 18 % lower for the vetch-wheat compared to the 
+rapeseed-wheat rotation. 
+3.3. Sensitivity analysis 
+In order to address uncertainties associated with the results of the 
+environmental analysis, we employed a secondary LCA method, namely 
+the Ecological Scarcity method (BAFU, 2021). The method uses "eco-­
+factors" to assign weights to the impact categories, based on the distance 
+to predefined targets. The greater the eco-factor, expressed in eco-points 
+(EP), the higher the environmental impact. The EP of all 20 impact 
+categories add up to the total EP. Table 3 shows the total EP and the EP 
+of the impact category global warming, which is comparable to climate 
+change in the Impact World+ method. More detailed results with the 
+Ecological Scarcity method can be found in the supplementary material 
+(Table 14). 
+Despite variations in numerical values due to differing units, the 
+analysis reveals consistent outcomes across both methods, underscoring 
+the robustness of our findings amidst uncertainty. 
+Farm-level economics varied considerably depending on location 
+and pre-crop species. In addition, fertilizer and grain prices have been 
+very volatile in recent years. The price of UAN increased by up to 455 % 
+between 2020 and 2023 (Trading Economics, 2022). The price of wheat 
+increased by up to 139 % (finanzen.net GmbH, 2023). We conducted a 
+sensitivity analysis of the gross margin at different fertilizer and wheat 
+prices. However, such scenarios would also potentially cause an increase 
+in barley, rapeseed and vetch prices due to higher production costs and 
+M. Weiner et al.                                                                                                                                                                                                                                 
+European Journal of Agronomy 159 (2024) 127267
+5
+Fig. 1. Impact on a) climate change, measured in CO2-eq per hectare and year, b) marine eutrophication, measured in kg N N-lim-eq per hectare and year, and c) 
+freshwater acidification, measured in kg SO2-eq per hectare and year, of the vetch-wheat and barley-wheat (Site BY) as well as vetch-wheat and rapeseed-wheat 
+rotations (Site RD). “Fertilization” includes the impact of fertilizer production and application by broadcaster; “field emissions” includes the direct and indirect 
+soil emissions from fertilizer application. 
+M. Weiner et al.                                                                                                                                                                                                                                 
+European Journal of Agronomy 159 (2024) 127267
+6
+alternative use in feedstuffs. In nine scenarios, we increased the N-fer­
+tilizer price by 250 % and 500 % and the wheat grain price by 100 % 
+and 200 %. The difference in gross margin between the legume-wheat 
+rotation and the corresponding rotation without legumes is shown 
+aggregated over all genotypes in Fig. 2. 
+The results of the sensitivity analysis confirmed the robustness of the 
+results, as the trends remained mostly the same considering the strong 
+price increases. After increasing the N fertilizer price by a factor of three 
+and a half, the result changed only marginally. The vetch-wheat became 
+more profitable than the barley-wheat rotation (Fig. 2). However, even 
+after increasing the N fertilizer price by a factor of six, the legume-wheat 
+rotation was still financially less attractive than the rapeseed-wheat 
+rotation, although the difference in gross margin decreased. An in­
+crease in wheat grain price favoured the higher yielding rotations, which 
+were the legume-wheat rotations (except genotype Mustang at Site RD, 
+supplementary material Table 6). The difference in gross margin shrank 
+but was still higher for the rapeseed-wheat rotations. An increase of both 
+N and wheat prices in different variations made the legume-wheat 
+rotation also slightly more profitable than the rapeseed-wheat rotation. 
+When it comes to the economic result, grain yield is a very decisive 
+variable. Therefore, during the last decades cultivar breeding has 
+focused on boosting yield. But not only quantity, also the quality is 
+important for selling bread wheat, which is associated with processing 
+attributes, such as the grain protein content (Geyer et al., 2022). How­
+ever, several studies have demonstrated an inverse relationship between 
+grain yield and grain protein content (e.g. Oury and Godin, 2007; Laidig 
+et al., 2017). Commonly, for bread wheat a premium is paid for a high 
+protein content, but if it is too low and not suitable for baking, it can only 
+be sold at a lower price for use as feed. In this study, no price premium or 
+discount was applied, but to reflect this common practice, we have 
+included a 21 % (40 EUR/t) premium for a protein content >12 % and a 
+10 % (19 EUR/t) discount for a protein content <10 % in the sensitivity 
+analysis. As prices and ranges can vary widely, we have decided to base 
+the analysis on values that are common in the region. We repeated the 
+sensitivity analysis, including the protein premium/discount and the 
+results changed slightly (Fig. 3). Protein content tended to be higher for 
+wheat grown after barley and rapeseed than after vetch. In contrast to 
+Fig. 2, in the baseline scenario and with a 3.5-fold increase in the price of 
+Table 3 
+Sensitivity analysis of the environmental results using a second LCA method. Results reflect the two-year rotation at Site BY (top) and Site RD (bottom) per ha and year.  
+Site BY  
+Ecological Scarcity method 2021 
+Impact World+
+total eco-points 
+global warming 
+climate change (s)   
+million EP 
+million EP 
+kg CO2-eq 
+Pre-crop 
+Vetch 
+11.83 
+±
+0.07 
+1.38 
+±
+0.02 
+1385 
+±
+23.37  
+Barley 
+12.92 
+±
+0.08 
+1.64 
+±
+0.02 
+1830 
+±
+22.59            
+Nitrogen 
+ADJ 
+11.99 
+±
+0.10 
+1.33 
+±
+0.03 
+1522 
+±
+24.37  
+REC 
+12.75 
+±
+0.05 
+1.68 
+±
+0.01 
+1692 
+±
+21.59            
+Genotype 
+Nogal 
+12.36 
+±
+0.08 
+1.50 
+±
+0.02 
+1604 
+±
+10.41  
+Cellule 
+12.26 
+±
+0.06 
+1.56 
+±
+0.02 
+1636 
+±
+9.30  
+Mustang 
+12.37 
+±
+0.09 
+1.51 
+±
+0.02 
+1608 
+±
+12.39  
+Lutescens 
+12.50 
+±
+0.07 
+1.46 
+±
+0.02 
+1580 
+±
+9.25  
+Site RD  
+Ecological Scarcity method 2021 
+Impact World+
+total eco-points 
+global warming 
+climate change (s)   
+million EP 
+million EP 
+kg CO2-eq 
+Pre-crop 
+Vetch 
+5.14 
+±
+0.05 
+0.70 
+±
+0.01 
+1406 
+±
+31.82  
+Rapeseed 
+5.58 
+±
+0.03 
+0.85 
+±
+0.01 
+1573 
+±
+29.90            
+Nitrogen 
+ADJ 
+5.14 
+±
+0.04 
+0.71 
+±
+0.01 
+1423 
+±
+32.49  
+REC 
+5.59 
+±
+0.03 
+0.85 
+±
+0.01 
+1556 
+±
+29.23            
+Genotype 
+Nogal 
+5.37 
+±
+0.03 
+0.77 
+±
+0.01 
+1483 
+±
+8.68  
+Cellule 
+5.27 
+±
+0.04 
+0.81 
+±
+0.01 
+1532 
+±
+11.16  
+Mustang 
+5.39 
+±
+0.05 
+0.77 
+±
+0.01 
+1482 
+±
+14.66  
+Lutescens 
+5.42 
+±
+0.03 
+0.75 
+±
+0.01 
+1461 
+±
+7.01  
+Fig. 2. Price scenarios for the sensitivity of the gross margin in EUR per hectare and year for each site. Average gross margin across all genotypes and fertilization 
+levels (ADJ & REC). Price scenarios refer to the units (EUR per kg wheat/EUR per kg N). 
+M. Weiner et al.                                                                                                                                                                                                                                 
+European Journal of Agronomy 159 (2024) 127267
+7
+N fertilizer, the barley-wheat rotation had a higher gross margin than 
+the vetch-wheat rotation. The same was observed when the wheat grain 
+price increased. However, in the scenarios with a combination of both 
+prices the vetch-wheat rotations were more profitable than 
+barley-wheat. Only if the wheat grain price increased by a factor of three 
+and the N fertilizer price increased by a factor of six, vetch-wheat out­
+performed rapeseed-wheat. 
+3.4. Differences in genotypes 
+The results remained consistent across most indicators for all geno­
+types. Variations were observed exclusively in indicators directly or 
+indirectly influenced by yield, such as gross margin, impact on climate 
+change and on marine eutrophication. Cellule had a 45 % higher gross 
+margin than Lutescens, considering the two-year rotation. The drought- 
+resistant genotype Mustang had a 24 % higher gross margin than 
+Lutescens and 2 % higher gross margin than Nogal, which are classified 
+as susceptible to water stress. On a per hectare basis for the two-year 
+rotation, the highest-yielding genotype Cellule had a 4 % higher 
+impact for climate change than the lowest-yielding genotype Lutescens. 
+The impact is greater for the genotypes with higher yields, mainly 
+because the estimated amount of crop residues is greater and their 
+decomposition leads to higher N2O emissions. Regarding marine 
+eutrophication, higher yield leads to higher N uptake and, thus, lower 
+nitrate leaching. Cellule had a 7 % lower impact on marine 
+eutrophication per hectare than Lutescens on a two-year basis. 
+As Cellule was the highest-yielding genotype, its protein content was 
+on average the lowest of the four genotypes. Its protein content was 
+below 12 % in all treatments and mostly even below 10 %. The above 
+results are presented without a protein premium/discount, but Fig. 4 
+illustrates the effects if the protein content were taken into account. On 
+average, wheat grain of the Cellule genotype would have to be sold as 
+feed, but it would still be the genotype with the highest gross margin due 
+to its high yield. Lutescens, on the other hand, had a comparatively high 
+protein content and would have received a premium at site RD, but 
+would continue to be the genotype with the lowest gross margin. 
+4. Discussion 
+4.1. Environmental impact of legumes in crop rotations 
+Replacing synthetic N fertilizer with legumes that can fix N, as part of 
+a two-year cropping rotation, decreased the modelled impact on climate 
+change and marine eutrophication. In the present study, 32.5 (REC) and 
+39 (ADJ) kg N ha−1 in the form of ammonium nitrate sulphate fertilizer 
+were saved when legumes were included in the crop rotation, leading to 
+a reduction in emissions and energy consumption associated with the 
+production, transport and use of fertilizer. 
+Using vetch before wheat resulted in average energy (MJdeprived ha−1 
+yr−1) savings of 18 % compared to the barley-wheat rotation and 6 % 
+Fig. 3. Price scenarios including a protein premium/discount for the sensitivity of the gross margin in EUR per hectare and year for each site. Average gross margin 
+across all genotypes and fertilization levels (ADJ & REC). Price scenarios refer to the units (EUR per kg wheat/EUR per kg N). 
+Fig. 4. Comparison of genotypes under consideration of a protein premium/discount in the gross margin in EUR per hectare and year for each site. Average gross 
+margin across both fertilization levels (ADJ & REC). Protein premium of 40 EUR/t wheat grain if grain protein content >12 % and 19 EUR/t discount if <10 %. 
+M. Weiner et al.                                                                                                                                                                                                                                 
+European Journal of Agronomy 159 (2024) 127267
+8
+compared to rapeseed-wheat. This result is comparable to that of a study 
+by Nemecek et al. (2008), in which N fertilizer input was reduced by 
+23 kg ha−1, which resulted in fossil fuel savings of 14 % by replacing 
+wheat with peas in one year of a five-year crop rotation. 
+For the two-year sequence, greenhouse gas emissions were 24 % 
+lower for vetch-wheat (total 1385 kg CO2-eq ha−1 yr−1) compared to the 
+barley-wheat rotation (total 1830 kg CO2-eq ha−1 yr−1) at Site BY, and 
+11 % lower for vetch-wheat (total 1406 kg CO2-eq ha−1 yr−1) compared 
+to rapeseed-wheat (total 1573 kg CO2-eq ha−1 yr−1) at Site RD. The total 
+quantity of CO2-eq ha−1 emitted for one year of wheat cultivation varies 
+quite strongly when comparing other studies on wheat production (e.g. 
+from 364 kg CO2-eq ha−1 in Barton et al., 2014 to 3720 kg CO2-eq ha−1 
+in Naudin et al., 2014). Differences in yield and field emissions can be 
+due to the location, such as the experiment in Barton et al., 2014 took 
+place in Australia with differences in climate, precipitation and soil 
+properties. Furthermore, different methods may be used to estimate field 
+emissions, and background data for e.g. fertilizer production may come 
+from different databases or database versions. Moreover, different types 
+of fertilizer and the energy mix of its producing country can lead to 
+differences in impacts. Or simply the amount of fertilizer applied. In 
+Naudin et al., 2014, 190 kg ha−1 of ammonium nitrate was used, so 
+depending on the database, fertilizer production and transport can 
+already lead to more than 1600 kg CO2-eq ha−1. 
+Nevertheless, our observation of a proportional reduction in emis­
+sions due to substitution by legumes and the associated reduction in N 
+fertilizer use is in line with the results of other studies. In Nemecek et al. 
+(2008), N fertilizer was reduced by 23 kg N ha−1 when wheat was 
+replaced by peas in the rotation, resulting in 11 % lower CO2-eq ha−1. 
+The lentil and dry pea rotations in MacWilliam et al. (2014) reduced the 
+effects on global warming by 17–22 % and the introduction of lupin 
+pre-crops reduced greenhouse gas emissions by 30 %. 
+In this study, an average of 159 kg CO2-eq ha−1 can be attributed to 
+the production and transport of the additional fertilizer used in the 
+barley and rapeseed-wheat rotation in the year of wheat production. The 
+other main contributor to the impact on climate change is field emis­
+sions, which were reduced by an average of 102 kg CO2-eq ha−1 in the 
+legume rotations. Field emissions in this case mainly reflect nitrogen 
+oxides (N2O), whose global warming potential is about 300 times higher 
+than that of CO2. Nitrogen oxide emissions are caused by losses from the 
+N fertilizer input and through the decomposition of crop residues. As a 
+result, the higher yielding treatments, which were mainly the legume- 
+wheat rotations, had higher N2O emissions, due to a greater estimated 
+quantity of crop residue, but overall lower emissions, due to lower fer­
+tilizer inputs. 
+Apart from these aspects, emissions from legume crops may well be 
+higher due to greater N levels within the field residues, and this is re­
+flected in the IPCC 2019 Tier 2 methodology adopted here. Biological 
+nitrogen fixation is not included as a direct source of N2O because of the 
+lack of evidence of significant emissions arising from the fixation process 
+itself. Rochette and Janzen (2005) concluded that the N2O emissions 
+induced by the growth of legume crops may be estimated solely as a 
+function of the above-ground and below-ground N inputs from crop 
+residue. For this assessment, soil organic changes were not considered, 
+therefore, the release of N by mineralisation of soil organic matter as a 
+result of a change of land use or management is not included. 
+Freshwater acidification was lower for the vetch-wheat rotation 
+compared to both barley-wheat and rapeseed-wheat, (39 % and 26 %, 
+respectively). It was mainly caused by ammonia volatilization. Espe­
+cially in alkaline soils, ammonium (NH4
++), which was part of the N fer­
+tilizer used in this study, can be converted into ammonia gas (NH3) and 
+emitted into the atmosphere. It can travel long distances and is deposited 
+in soils and waterways via rain, altering their acidity, which can harm 
+species (Bulle et al., 2019). However, this risk is much higher for fer­
+tilizers containing urea (Brentrup et al., 2001). According to Peoples 
+et al. (1995a, as cited in Crews and Peoples, 2004), legume pre-crops 
+could reduce the risk of ammonia volatilization during crop residue 
+deposition but at the same time, potentially result in higher denitrifi­
+cation losses of N2O (Hansen et al., 2021; Sanz-Cobena et al., 2014). 
+Nevertheless, the increase in N2O emissions caused mainly by legume 
+residue decomposition is compensated by the reduction in direct and 
+indirect emissions associated with N fertilizer savings (Guardia et al., 
+2019). 
+Regardless of the source of N, a higher yield is associated with 
+greater biomass that takes up more N. As a result, less nitrate is available 
+for leaching into groundwater, rivers and subsequently, coastal marine 
+ecosystems where it can cause eutrophication. Reducing the N input in 
+the first place can reduce this risk of marine eutrophication. In this 
+study, part of the synthetic N fertilizer was replaced by legume pre- 
+crops, but also legumes can promote nitrate leaching before the subse­
+quent crop can take it up. Only few studies provide insights into this 
+topic and uncertainties are high (Crews and Peoples, 2004; Masoni et al., 
+2015). In the underlying model of this study, nitrate emissions are 
+calculated based on the SQCB tool (Mireille Faist Emmenegger et al., 
+2009). Overall, the use of the pre-crop vetch before wheat resulted in a 
+12 % lower impact on marine eutrophication compared to the 
+barley-wheat rotation but only a 4 % lower impact compared to the 
+rapeseed-wheat rotation. In this study, the two years of the rotation were 
+modelled separately, and the impacts were then summed. Therefore, 
+most of the nitrate provided by the legume pre-crop was modelled as lost 
+when residues were incorporated into the soil, whereas some of it would 
+likely be taken up by the wheat crop following the legumes. As a result, 
+the reduction in the impact on marine eutrophication from the intro­
+duction of legume pre-crops estimated in this study may be even greater 
+than we have reported. 
+The impact on water scarcity was 38 % (BY) and 1 % (RD) lower for 
+the vetch-wheat rotation. In the ecoinvent LCI database, the impact on 
+water scarcity was much greater for barley seed than for fava bean seed 
+used to model vetch, which was unavailable in the database. We chose 
+fava bean seed, as their cultivation is quite similar to vetch, however, 
+fava bean seed in the database are not specific to Spain and have a higher 
+yield than vetch in this study. As a result, the impact per kg is lower and 
+therefore might be slightly underestimated. However, for most impact 
+categories the contribution of seed to the overall impact is between 0 % 
+and 20 %. Only water scarcity is largely driven by the seed and in the 
+case of the barley seed from the database, mainly caused by irrigation. If 
+the vetch grown to produce the seed used in our trial were rainfed, we 
+would expect the fava bean seed to be a good proxy, but if they were 
+irrigated, the result would be quite different. 
+Freshwater eutrophication was the only impact category where the 
+impact of the vetch-wheat rotation was slightly higher (3 % BY; 6 % 
+RD), due to the larger quantity of P2O5 fertilizer used in the vetch 
+cultivation in this study. 
+This study highlights the positive role legumes can play in reducing 
+reliance on synthetic N fertilizer and the problems of assessing multi- 
+year cropping rotations due to differing products (e.g. protein con­
+tent). It remains difficult to assess the true productivity of a crop rotation 
+without using alternative functional units, which may not be compara­
+ble to mainstream studies. Furthermore, modelling of nitrogen transfer 
+between crop years is challenging within an LCA focus when most as­
+sessments are on an annual basis. Therefore, emissions from lost nutri­
+ents, and especially crops such as legumes can be overestimated. 
+The results of this study are limited to two trials in northern Spain 
+with different non-legume pre-crops in one year. A different climate or 
+weather during the growing season can strongly influence the perfor­
+mance of different crops. Consequently, our results are specific to the 
+assessed year (2020), and the conclusions drawn should not be gener­
+alised beyond this context. Nevertheless, most researchers reported that 
+a precedent legume crop increases the performance of subsequent ce­
+reals compared to non-legume crops (Angus et al., 2015; Gan et al., 
+2015). Though, whilst the response to N fertilization of the subsequent 
+wheat will greatly depend on the N supply from the pre-crop (Cernay 
+et al., 2018), the N supply might be low if the pre-crop growth is limited. 
+M. Weiner et al.                                                                                                                                                                                                                                 
+European Journal of Agronomy 159 (2024) 127267
+9
+On-farm trials such as this case study offer numerous benefits for 
+agricultural research. They provide a real-world setting that allows re­
+searchers to evaluate the performance of agricultural practices under 
+authentic conditions. As the research takes place on the farmers’ own 
+fields and on topics that are relevant to them, farmers are more inter­
+ested, motivated and more likely to adopt the practices later on 
+(Kyveryga, 2019). On-farm trials foster collaboration between re­
+searchers and farmers, promote hybridisation of knowledge and ensure 
+that the results are both scientifically sound and applicable to the 
+farming community (Lacoste et al., 2022). However, on-farm trials are 
+also associated with risks. Indeed, we were unable to use the data from 
+2021 because the fertilization plan was not adhered to. Nevertheless, 
+our results are consistent with those of other studies and provide an 
+insight into the topic from an environmental and economic perspective. 
+4.2. Economic viability of legume-based crop rotations 
+From an economic perspective, partial substitution of synthetic N 
+fertilizer with legume-fixed N in the year of wheat cultivation led on 
+average to (i) lower N fertilizer costs of about 8 % of total costs; (ii) 
+higher revenues of 18 % (BY) and 5 % (RD) due to higher yields; and (iii) 
+a 32 % (BY) and 11 % (RD) higher gross margin. Thus, in the year of 
+wheat cultivation, it tends to be more profitable to use legumes as pre- 
+crops (see also Nemecek et al., 2015). However, several studies have 
+shown that the cultivation of a legume in the preceding year is less 
+profitable for the farmer when subsidies are not accounted for (e.g. 
+Brock et al., 2016; Preissel et al., 2015). There may be differences 
+depending on the choice of legume pre-crop. This study was limited to a 
+single legume pre-crop, vetch, whose grains were sold as fodder. The 
+costs for cultivating vetch were 22 % lower than for barley and 9 % 
+lower compared to rapeseed. However, the revenue of vetch was 52 % 
+lower than barley and rapeseed. As a result, the gross margin for culti­
+vating vetch was negative and positive for the other pre-crops. Thus, 
+taking into account the results of the two-year crop rotation lead on 
+average to a lower gross margin of −18 % for vetch-wheat compared to 
+rapeseed-wheat and 1 % higher gross margin compared to barley-wheat. 
+In the context of this case study, we can conclude that using a legume 
+pre-crop before bread wheat results in a lower environmental impact but 
+its profitability is strongly dependent on the pre-crop species. While the 
+wheat-rotation with vetch was similarly profitable to barley, it could not 
+compete with rapeseed when assessing the two years of crop rotation. 
+Therefore, farmers would require some form of financial incentive to 
+change rotations and reduce environmental impacts. This is in line with 
+the results from Barton et al. (2014), who compared a lupin-wheat with 
+a wheat-wheat crop rotation. In their study, an incentive of 93$ per 
+tonne of carbon dioxide equivalents reduced would be required to 
+promote the inclusion of legumes in the crop rotation. 
+The results of this study are limited to the pre-crops vetch, barley and 
+rapeseed. The fact that the difference between the results of the two non- 
+legume pre-crops, barley and rapeseed, in this study was quite sub­
+stantial shows that not only the choice of legume pre-crop, but also the 
+counterfactual can strongly influence the result. In addition, the culti­
+vation of the same crop in the year preceding the non-legume pre-crops 
+may resulted in a potential side-effect on agronomic outcomes due to 
+increased disease pressure. Further research in this field with other 
+legume and non-legume pre-crops over a longer period of time could be 
+of great benefit to the literature. The agronomic effect of different break- 
+crops on the wheat yield has been investigated in many studies. Kirke­
+gaard et al. (2008) and Angus et al. (2015) showed that rapeseed is 
+superior to other break crops in terms of more efficient N recovery, high 
+levels of residual N and suppression of cereal pathogens. Wheat 
+following barley, on the other hand, was similar to wheat following 
+wheat, thus missing the break-crop benefits. 
+A limitation of this study is that a small part of the economic data 
+(machinery and pesticide costs) originated from a German cost database 
+implemented in our model. Although these values may vary for Spain, 
+absolute values of the parameters were not crucial to the analysis, but 
+rather their relative values were important for comparing the treat­
+ments. The key variables for the analysis were gathered from Spanish 
+databases. Furthermore, the sensitivity analysis with varying fertilizer 
+and wheat grain prices showed that only a very strong increase in the N 
+fertilizer price (+500 %) and the wheat price (+100 %) made the 
+legume-wheat rotation more profitable in direct comparison to the 
+rapeseed-wheat rotation. An increase in the wheat grain price or N 
+fertilizer price alone did not change the overall result. Hence, from an 
+economic perspective, legumes outperform most alternative crops only 
+in the face of very strong price fluctuations. 
+If a premium (>12 %) or discount (<10 %) for the grain protein 
+content is taken into account, a 500 % increase in the N fertiliser price 
+and a 200 % increase in the grain price are needed to make the vetch- 
+wheat rotation more profitable than rapeseed-wheat. The vetch-wheat 
+rotations tend to have a lower protein content than the rapeseed and 
+barley-wheat rotations. This is in line with the well-documented inverse 
+relationship of protein content and yield, since the vetch-wheat rota­
+tions in this study had a higher grain yield. 
+4.3. Effect of different bread wheat genotypes 
+The results showed an effect of genotype only on variables influenced 
+by yield. The high-yielding genotype Cellule was identified as moder­
+ately drought-tolerant in a panel of 210 European genotypes (Touzy 
+et al., 2019). The low-yielding genotype Lutescens, on the other hand, 
+was identified as susceptible to water stress. Li et al., (2019) associated 
+tolerance to drought with a greater rooting depth. Genotypes with more 
+developed root systems can access more soil resources, such as N and 
+water, and increase or stabilize yield and N use efficiency under 
+low-input conditions (Lassaletta et al., 2023). The deep roots of the 
+genotype Mustang were identified by Odone et al. (2023). Additionally, 
+Touzy et al. (2019) categorized Mustang as drought-tolerant, which is 
+further supporting the association between deep roots and its ability to 
+withstand drought conditions. 
+The two-year gross margin of the highest yielding genotype Cellule 
+was 45 % higher than that of the lowest yielding genotype Lutescens. 
+However, Cellule had the lowest grain protein content of all four ge­
+notypes tested, so that on average a protein discount would be incurred, 
+while Lutescens would receive a protein premium. Despite this, the 
+Cellule genotype would still have the highest gross margin due to its 
+high yield and Lutescens the lowest. This indicates that yield tends to be 
+more important than protein content when it comes to overall 
+profitability. 
+When analysing the environmental impact of the second year of 
+wheat cultivation on a per hectare basis, the higher yielding genotypes 
+had higher N2O emissions (climate change) due to the greater amount of 
+decomposing crop residues, but less nitrate leaching (marine eutrophi­
+cation) due to greater nitrogen offtake. 
+This study is limited by the inclusion of four genotypes selected to 
+represent the varying degrees of drought tolerance. While this selection 
+provides valuable insight, it does not capture the full range of genetic 
+diversity within the wider wheat population, highlighting the impor­
+tance of considering additional genotypes in future studies. 
+5. Conclusion 
+In this case study, the introduction of legumes into the crop rotation, 
+to replace part of the synthetic N fertilizer, decreased most environ­
+mental impacts per hectare when assessing the two years of crop rota­
+tion. However, in comparison to the pre-crop rapeseed the trade-off was 
+lower profitability for the farmer, as the cost savings from reduced fer­
+tilizer use could not compensate for the poor economic outcome of 
+legume cultivation. Only with very strongly increased fertilizer and 
+grain prices, the legume pre-crop vetch did slightly outperform rape­
+seed. This highlights the importance of exploring financial incentives to 
+M. Weiner et al.                                                                                                                                                                                                                                 
+European Journal of Agronomy 159 (2024) 127267
+10
+encourage farmers to include legumes in their crop rotations, especially 
+as reducing synthetic fertilizers by 20 % by 2030 is an objective of the 
+European Green Deal Farm to Fork strategy. Crop rotations with le­
+gumes could also play a key role for human consumption as part of the 
+so-called “planetary healthy” diet recommended by the EAT-Lancet 
+Commission. 
+The choice of bread wheat genotype had a strong effect on the eco­
+nomic performance in this study. The moderately drought-tolerant ge­
+notype Cellule generated the highest gross margin, even if a discount 
+was applied due to its low grain protein content. The genotype Mustang, 
+which is classified as drought-tolerant and deep-rooted, ranked second 
+after Cellule. The evidence for whether genotypes with deep or powerful 
+root systems are better suited to reduced fertilizer conditions with 
+legume pre-crops remains unclear. Therefore, further studies with a 
+larger range of genotypes and conditions over a longer period of time are 
+needed to confirm whether such root traits consistently make a signifi­
+cant difference. 
+CRediT authorship contribution statement 
+Mareike Weiner: Writing – review & editing, Writing – original 
+draft, Visualization, Validation, Methodology, Formal analysis, 
+Conceptualization. Simon Moakes: Writing – review & editing, Vali­
+dation, Methodology, Formal analysis, Conceptualization. María 
+Dolores Raya-Sereno: Writing – review & editing, Investigation, 
+Conceptualization. Julia Cooper: Writing – review & editing, 
+Supervision. 
+Declaration of Competing Interest 
+The authors declare the following financial interests/personal re­
+lationships which may be considered as potential competing interests: 
+Mareike Weiner reports financial support was provided by Horizon 
+Europe. 
+Data availability 
+Data will be available online (European Commission website) in the 
+near future 
+Acknowledgements 
+We would like to acknowledge the following individuals for their 
+valuable contributions to this article. Florian Hediger for his technical 
+assistance as well as Catherine Pfeifer for proof reading the article. 
+This study received funding from the European Union’s Horizon 
+2020 Research and Innovation Program under grant agreement N◦
+727247 (SolACE - https://www.solace-eu.net/). 
+Appendix A. Supporting information 
+Supplementary data associated with this article can be found in the 
+online version at doi:10.1016/j.eja.2024.127267. 
+References 
+AgrarOnline GmbH, 2020. myAgrar Onlineshop. Retrieved August 30, 2020, from http 
+s://www.myagrar.de/. 
+Angus, J.F., Kirkegaard, J.A., Hunt, J.R., Ryan, M.H., Ohlander, L., Peoples, M.B., 2015. 
+Break crops and rotations for wheat. Crop Pasture Sci. 66 (6), 523–552. https://doi. 
+org/10.1071/CP14252. 
+BAFU, 2021. ¨Okofaktoren Schweiz 2021 gem¨ass der Methode der ¨okologischen 
+Knappheit. Methodische Grundlagen und Anwendung auf die Schweiz. Bundesamt 
+für Umwelt, Bern. Umw. -Wissen Nr. 2121, 260. 
+Barton, L., Thamo, T., Engelbrecht, D., Biswas, W.K., 2014. Does growing grain legumes 
+or applying lime cost effectively lower greenhouse gas emissions from wheat 
+production in a semi-arid climate? J. Clean. Prod. 83, 194–203. https://doi.org/ 
+10.1016/j.jclepro.2014.07.020. 
+Brentrup, F., Küsters, J., Kuhlmann, H., Lammel, J., 2001. Application of the Life Cycle 
+Assessment methodology to agricultural production: an example of sugar beet 
+production with different forms of nitrogen fertilisers. Eur. J. Agron. 14 (3), 
+221–233. https://doi.org/10.1016/S1161-0301(00)00098-8. 
+Brock, P.M., Muir, S., Herridge, D.F., Simmons, A., 2016. Cradle-to-farmgate greenhouse 
+gas emissions for 2-year wheat monoculture and break crop–wheat sequences in 
+south-eastern Australia. Crop Pasture Sci. 67 (8), 812. https://doi.org/10.1071/ 
+CP15260. 
+Bulle, C., Margni, M., Patouillard, L., Boulay, A., Bourgault, M., Bruille, G., de, V., 
+Cao, V., Hauschild, M., Henderson, A., Humbert, S., Kashef-Haghighi, S., 
+Kounina, A., Laurent, A., Levasseur, A., Liard, G., Rosenbaum, R.K., Roy, P.‑O., 
+Shaked, S., Fantke, P., Jolliet, O., 2019. Impact World+: a globally regionalized life 
+cycle impact assessment method. Int. J. Life Cycle Assess. 24 (9), 1653–1674. 
+https://doi.org/10.1007/s11367-019-01583-0. 
+Cernay, C., Makowski, D., Pelzer, E., 2018. Preceding cultivation of grain legumes 
+increases cereal yields under low nitrogen input conditions. Environ. Chem. Lett. 16, 
+631–636. https://doi.org/10.1007/s10311-017-0698-z. 
+Costa, M.P., Reckling, M., Chadwick, D., Rees, R.M., Saget, S., Williams, M., Styles, D., 
+2021. Legume-modified rotations deliver nutrition with lower environmental impact 
+(Article). Front. Sustain. Food Syst. 5, 656005. https://doi.org/10.3389/ 
+fsufs.2021.656005. 
+Crews, T., Peoples, M., 2004. Legume versus fertilizer sources of nitrogen: ecological 
+tradeoffs and human needs. Agric. Ecosyst. Environ. 102 (3), 279–297. https://doi. 
+org/10.1016/j.agee.2003.09.018. 
+finanzen.net GmbH, 2023. Weizen Hist. | Finanz. ch. Retrieved February 2, 2023, from 
+https://www.finanzen.ch/rohstoffe/historisch/weizenpreis/euro/ 1.8.2020_ 
+2.2.2023.  
+Gan, Y., Hamel, C., O’Donovan, J.T., Cutforth, H., Zentner, R.P., Campbell, C.A., Niu, Y., 
+Poppy, L., 2015. Diversifying crop rotations with pulses enhances system 
+productivity. Sci. Rep. 5, 14625 https://doi.org/10.1038/srep14625. 
+Geyer, M., Mohler, V., Hartl, L., 2022. Genetics of the inverse relationship between grain 
+yield and grain protein content in common wheat. Plants 11, 2146 https://doi.org/ 
+10.3390/ plants11162146.  
+Gobierno de Espa˜na, 2023. Estadísticas agrarias: Economía. Minist. De. Agric., Pesca Y. 
+Aliment. ´oN. Retrieved Novemb. 18, 2023, (https://www.mapa.gob.es/es/ 
+estadistica/temas/estadisticas-agrarias/economia/).  
+Guardia, G., Aguilera, E., Vallejo, A., Sanz-Cobena, A., Alonso-Ayuso, M., Quemada, M., 
+2019. Effective climate change mitigation through cover cropping and integrated 
+fertilization: a global warming potential assessment from a 10-year field experiment. 
+J. Clean. Prod. 241, 118307 https://doi.org/10.1016/j.jclepro.2019.118307. 
+Hansen, E.M.Ø., Hauggaard-Nielsen, H., Justes, E., Ambus, P., Mikkelsen, T.N., 2021. 
+The influence of grain legume and tillage strategies on CO2 and N2O gas exchange 
+under varied environmental conditions. Agriculture 11 (5), 464. https://doi.org/ 
+10.3390/agriculture11050464. 
+Hebebrand, C., Laborde, D., 2022. High fertilizer prices contribute to rising global food 
+security concerns. Retrieved September 30, 2022, from https://www.ifpri.org/blog/ 
+high-fertilizer-prices-contribute-rising-global-food-security-concerns.. 
+Kirkegaard, J., Christen, O., Krupinsky, J., Layzell, D., 2008. Break crop benefits in 
+temperate wheat production. Field Crops Res 107 (3), 185–195. https://doi.org/ 
+10.1016/j.fcr.2008.02.010. 
+K¨oppen, W.P., 1923. Die Klim. der Erde: Grundriss der Klima Walter De. Greyter Co. 
+https://doi.org/10.1515/9783111491530. 
+Kuratorium für Technik und Bauwesen in der Landwirtschaft e.V, 2020. Web-Anwend. 
+Retrieved September 12, 2020, from https://www.ktbl.de/webanwendungen.  
+Kyveryga, P.M., 2019. On-farm research: experimental approaches, analytical 
+frameworks, case studies, and impact. Agron. J. 111 (6), 2633–2635. https://doi. 
+org/10.2134/agronj2019.11.0001. 
+Lacoste, M., Cook, S., McNee, M., Gale, D., Ingram, J., Bellon-Maurel, V., Hall, A., 2022. 
+On-Farm Experimentation to transform global agriculture. Nat. Food 3 (1), 11–18. 
+https://doi.org/10.1038/s43016-021-00424-4. 
+Laidig, F., Piepho, H.P., Rentel, D., Drobek, T., Meyer, U., Huesken, A., 2017. Breeding 
+progress, environmental variation and correlation of winter wheat yield and quality 
+traits in German official variety trials and on-farm during 1983–2014. Theor. Appl. 
+Genet. 130, 223–245. https://doi.org/10.1007/s00122-016-2810-3. 
+Lassaletta, L., Einarsson, R., Quemada, M., 2023. Nitrogen use efficiency of tomorrow. 
+Nat. Food 4 (4), 281–282. https://doi.org/10.1038/s43016-023-00740-x. 
+Li, X., Ingvordsen, C.H., Weiss, M., Rebetzke, G.J., Condon, A.G., James, R.A., 
+Richards, R.A., 2019. Deeper roots associated with cooler canopies, higher 
+normalized difference vegetation index, and greater yield in three wheat populations 
+grown on stored soil water. J. Exp. Bot. 70 (18), 4963–4974. https://doi.org/ 
+10.1093/jxb/erz232. 
+MacWilliam, S., Wismer, M., Kulshreshtha, S., 2014. Life cycle and economic assessment 
+of Western Canadian pulse systems: The inclusion of pulses in crop rotations. Agric. 
+Syst. 123, 43–53. https://doi.org/10.1016/j.agsy.2013.08.009. 
+Masoni, A., Mariotti, M., Ercoli, L., 2015. Nitrate leaching from forage legume crops and 
+residual effect on Italian ryegrass (Advance online publication). Agrochimica. 
+https://doi.org/10.12871/0021857201515. 
+Meier, 1997. Phenological growth stages and BBCH-identification keys of weed species. 
+In: Growth Stages of Mono- and Dicotyledonous Plants. Blackwell Wissenschafts- 
+Verlag, Berlin, Germany https://agris.fao.org/agris-search/search.do? 
+recordid=us201300311612.  
+Meier, M., Moakes, S., 2019. Swiss animal production adapted to local ecosystem 
+boundaries: Production potential and eco-efficiency within different bio-geographic 
+regions in Switzerland. Report NFP 69 NOVANIMAL. 
+Mireille Faist Emmenegger, Jürgen Reinhard, & Rainer Zah. (2009). SQCB - 
+Sustainability Quick Check for Biofuels. Second draft, 18th February 2009 - 
+M. Weiner et al.                                                                                                                                                                                                                                 
+European Journal of Agronomy 159 (2024) 127267
+11
+Intermediate Background Report. With contributions from T. Ziep, R. Weichbrodt, 
+Prof. Dr. V. Wohlgemuth, FHTW Berlin and A. Roches, R. Freiermuth Knuchel, Dr. G. 
+Gaillard, Agroscope Reckenholz-T¨anikon. https://www.researchgate.net/profile/ 
+rainer-zah/publication/230725635_sqcb_-_sustainability_quick_check_for_biofuels_ 
+second_draft_18th_february_2009_-_intermediate_background_report_with_ 
+contributions_from_t_ziep_r_weichbrodt_prof_dr_v_wohlgemuth_fhtw_berlin_and_a_ 
+roche. 
+Mohammed, A., Li, Z., Olushola Arowolo, A., Su, H., Deng, X., Najmuddin, O., Zhang, Y., 
+2019. Driving factors of CO2 emissions and nexus with economic growth, 
+development and human health in the Top Ten emitting countries. Resour. Conserv. 
+Recycl. 148, 157–169. https://doi.org/10.1016/j.resconrec.2019.03.048. 
+Naudin, C., van der Werf, H.M., Jeuffroy, M.‑H., Corre-Hellou, G., 2014. Life cycle 
+assessment applied to pea-wheat intercrops: A new method for handling the impacts 
+of co-products. J. Clean. Prod. 73, 80–87. https://doi.org/10.1016/j. 
+jclepro.2013.12.029. 
+Nemecek, T., Hayer, F., Bonnin, E., Carrou´ee, B., Schneider, A., Vivier, C., 2015. 
+Designing eco-efficient crop rotations using life cycle assessment of crop 
+combinations. Eur. J. Agron. 65, 40–51. https://doi.org/10.1016/j.eja.2015.01.005. 
+Nemecek, T., Richthofen, J., von, S., Dubois, G., Casta, P., Charles, R., Pahl, H., 2008. 
+Environmental impacts of introducing grain legumes into European crop rotations. 
+Eur. J. Agron. 28 (3), 380–393. https://doi.org/10.1016/j.eja.2007.11.004. 
+Noureldin, N.A., Saudy, H.S., Ashmawy, F., Saed, H.M., 2013. Grain yield response index 
+of bread wheat cultivars as influenced by nitrogen levels. Ann. Agric. Sci. 58 (2), 
+147–152. https://doi.org/10.1016/j.aoas.2013.07.012. 
+Odone, A., Popovic, O., Thorup-Kristensen, K., 2023. Deep roots: implications for 
+nitrogen uptake and drought tolerance among winter wheat cultivars. Plant Soil 
+1–20. https://doi.org/10.1007/s11104-023-06255-5. 
+Oury, F.X., Godin, C., 2007. Yield and grain protein concentration in bread wheat: How 
+to use the negative relationship between the two characters to identify favourable 
+genotypes? Euphytica 157, 45–57. https://doi.org/10.1007/s10681-007-9395-5. 
+Preissel, S., Reckling, M., Schl¨afke, N., Zander, P., 2015. Magnitude and farm-economic 
+value of grain legume pre-crop benefits in Europe: a review. Field Crops Res. 175, 
+64–79. https://doi.org/10.1016/j.fcr.2015.01.012. 
+Quemada, M., Baranski, M., Nobel-de Lange, M., Vallejo, A., Cooper, J.M., 2013. Meta- 
+analysis of strategies to control nitrate leaching in irrigated agricultural systems and 
+their effects on crop yield. Agric. Ecosyst. Environ. 174, 1–10. https://doi.org/ 
+10.1016/j.agee.2013.04.018. 
+Quemada, M., Lassaletta, L., Leip, A., Jones, A., Lugato, E., 2020. Integrated management 
+for sustainable cropping systems: looking beyond the greenhouse balance at the field 
+scale. In: Global Change Biology. Advance online publication. https://doi.org/ 
+10.1111/gcb.14989 
+Raya-Sereno, M.D., Pancorbo, J.L., Alonso-Ayuso, M., Gabriel, J.L., Quemada, M., 2023. 
+Winter wheat genotype ability to recover nitrogen supply by precedent crops under 
+combined nitrogen and water scenarios. Field Crops Res. 290, 108758 https://doi. 
+org/10.1016/j.fcr.2022.108758. 
+Rochette, P., Janzen, H.H., 2005. Towards a Revised Coefficient for Estimating N2O 
+Emissions from Legumes. Nutr. Cycl. Agroecosyst. 73 (2-3), 171–179. https://doi. 
+org/10.1007/s10705-005-0357-9. 
+Sanz-Cobena, A., García-Marco, S., Quemada, M., Gabriel, J.L., Almendros, P., 
+Vallejo, A., 2014. Do cover crops enhance N₂O, CO₂ or CH₄ emissions from soil in 
+Mediterranean arable systems? Sci. Total Environ. 466-467, 164–174. https://doi. 
+org/10.1016/j.scitotenv.2013.07.023. 
+Schader, C., Jud, K., Meier, M.S., Kuhn, T., Oehen, B., Gattinger, A., 2014. Quantification 
+of the effectiveness of greenhouse gas mitigation measures in Swiss organic milk 
+production using a life cycle assessment approach. J. Clean. Prod. 73, 227–235. 
+https://doi.org/10.1016/j.jclepro.2013.11.077. 
+Smith, P., Martino, D., Cai, Z., Gwary, D., Janzen, H., Kumar, P., McCarl, B., Ogle, S., 
+O’Mara, F., Rice, C., Scholes, B., Sirotenko, O., Howden, M., McAllister, T., Pan, G., 
+Romanenkov, V., Schneider, U., Towprayoon, S., Wattenbach, M., Smith, J., 2008. 
+Greenhouse gas mitigation in agriculture. Philos. Trans. R. Soc. Lond. Ser. B Biol. Sci. 
+363 (1492), 789–813 https://doi.org/10.1098/rstb.2007.2184.  
+Steffen, W., Richardson, K., Rockstr¨om, J., Cornell, S.E., Fetzer, I., Bennett, E.M., 
+Biggs, R., Carpenter, S.R., Vries, W., de, Wit, de, C.A., Folke, C., Gerten, D., 
+Heinke, J., Mace, G.M., Persson, L.M., Ramanathan, V., Reyers, B., S¨orlin, S., 2015. 
+Sustainability. Planetary boundaries: Guiding human development on a changing 
+planet. Science 347 (6223), 1259855 https://doi.org/10.1126/science.1259855.  
+Touzy, G., Rincent, R., Bogard, M., Lafarge, S., Dubreuil, P., Mini, A., Deswarte, J.‑C., 
+Beauchˆene, K., Le Gouis, J., Praud, S., 2019. Using environmental clustering to 
+identify specific drought tolerance QTLs in bread wheat (T. Aestivum L.). Theor. 
+Appl. Genet. 132 (10), 2859–2880. https://doi.org/10.1007/s00122-019-03393-2. 
+Trading Economics, 2022. Urea Ammonium Nitrate. Retrieved September 30, 2022, from 
+https://tradingeconomics.com/commodity/urea-ammonium.  
+Villalobos, F.J., Delgado, A., L´opez-Bernal, ´A., Quemada, M., 2020. Fertilicalc: a decision 
+support system for fertilizer management. Int. J. Plant Prod. 14 (2), 299–308. 
+https://doi.org/10.1007/s42106-019-00085-1. 
+Wernet, G., Bauer, C., Steubing, B., Reinhard, J., Moreno-Ruiz, E., Weidema, B., 2016. 
+The ecoinvent database version 3 (part I): overview and methodology. Int. J. Life 
+Cycle Assess. 21 (9), 1218–1230. https://doi.org/10.1007/s11367-016-1087-8. 
+World Reference Base for Soil Resources, 2014. International soil classification system 
+for naming soils and creating legends for soil maps. (World Soil Resour. Rep. No. 
+106). 
+Xu, R., Tian, H., Pan, S., Prior, S.A., Feng, Y., Batchelor, W.D., Chen, J., Yang, J., 2019. 
+Global ammonia emissions from synthetic nitrogen fertilizer applications in 
+agricultural systems: empirical and process-based estimates and uncertainty. Glob. 
+Change Biol. 25 (1), 314–326. https://doi.org/10.1111/gcb.14. 
+M. Weiner et al.                                                                                                                                                                                                                                 

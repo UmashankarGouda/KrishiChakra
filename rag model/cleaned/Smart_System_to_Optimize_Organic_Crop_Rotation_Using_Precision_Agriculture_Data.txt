@@ -1,0 +1,43 @@
+### DOCUMENT INFO  
+- **Title/Topic**: Smart System to Optimize Organic Crop Rotation Using Precision Agriculture Data  
+- **Type**: Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed**:  
+  - Vegetable and root crop rotations (e.g., legumes, leafy greens, tubers).  
+  - Climate-resilient rotations based on real-time weather data.  
+- **Crops mentioned**:  
+  - Vegetables (optimal NPK: N 0.1–0.2%, P 0.05–0.1%, K 0.2–0.3%).  
+  - Root crops (optimal NPK: N 0.75–1%, P 0.375–0.5%, K 1.25–1.5%).  
+- **Regions covered**:  
+  - Nuwara Eliya district, Sri Lanka (primary focus).  
+
+### KEY FINDINGS  
+- **Yield improvements**:  
+  - Data-driven crop recommendations increased yields by optimizing NPK levels and crop suitability.  
+- **Soil health benefits**:  
+  - Reduced reliance on synthetic fertilizers, improved water retention, and enhanced aggregate stability.  
+  - Lower greenhouse gas emissions due to decreased nitrogen fertilizer use.  
+- **Disease reduction**:  
+  - Crop rotation reduced pest/disease incidence by breaking life cycles (e.g., via legume inclusion).  
+- **Economic impact**:  
+  - Lower input costs (reduced fertilizer/pesticide use) and higher productivity from optimized rotations.  
+
+### NUMERICAL DATA/TABLES  
+- **Soil nutrient thresholds**:  
+  - Vegetables: N 0.1–0.2%, P 0.05–0.1%, K 0.2–0.3%.  
+  - Root crops: N 0.75–1%, P 0.375–0.5%, K 1.25–1.5%.  
+- **Model accuracy**:  
+  - Random Forest Model achieved the highest accuracy for crop recommendations.  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers**:  
+  - Use IoT sensors (NPK, weather) to guide crop selection and rotation schedules.  
+  - Prioritize leguminous crops to naturally fix nitrogen and reduce fertilizer dependency.  
+- **Best practices for crop rotation**:  
+  - Rotate crops from different families to disrupt pest/disease cycles.  
+  - Integrate real-time weather data to adapt rotations for climate resilience.  
+  - Continuously update rotation plans using soil analytics and machine learning insights.  
+
+---  
+*Output cleaned and structured for RAG (Retrieval-Augmented Generation) applications.*

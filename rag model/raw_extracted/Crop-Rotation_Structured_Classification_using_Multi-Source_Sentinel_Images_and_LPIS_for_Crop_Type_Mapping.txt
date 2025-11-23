@@ -1,0 +1,522 @@
+CROP-ROTATION STRUCTURED CLASSIFICATION USING MULTI-SOURCE SENTINEL
+IMAGES AND LPIS FOR CROP TYPE MAPPING
+S. Bailly1, S. Giordano1, L. Landrieu1, N. Chehata1,2
+1. Univ. Paris-Est, LASTIG MATIS, IGN, ENSG, F-94160 Saint-Mande, France
+2 : EA G&E Bordeaux INP / Universit´e Bordeaux Montaigne, France
+ABSTRACT
+Automatic analysis of Sentinel image time series is rec-
+ommended for monitoring agricultural land use in Europe.
+To improve classiﬁcation capacities, we propose a tempo-
+ral structured classiﬁcation combining Sentinel images and
+former vintages of the Land-Parcel Identiﬁcation System.
+Inter-annual crop rotations are learned and combined with the
+satellite images using a Conditional Random Field. The pro-
+posed methodology is tested on a 233 km2 study area located
+in France and with a 25 categories national nomenclature.
+The classiﬁcation results are globally improved.
+Index Terms— Classiﬁcation, Temporal regularization,
+Conditional Random Fields, Agriculture, Monitoring, Sen-
+tinel.
+1. INTRODUCTION
+Sentinel image time series exhibit unprecedented character-
+istics that are perfectly tailored with agriculture monitoring.
+Spatial resolution of both optical and radar images are very
+consistent with a parcel-level approach. More remarkably,
+the high temporal frequency of acquisition (5-6 days) and the
+fact that this program is at least maintained until 2030 pave
+the way to chronicle short and long-term evolutions. In Eu-
+rope, several use-cases for agricultural monitoring with Sen-
+tinel images have been proposed [1] such as for example crop
+monitoring, controlling Common Agricultural Policy (CAP)
+payments with remote sensing, updating and quality control
+of the Land Parcel Identiﬁcation System (LPIS) or precision
+farming at the farm-level. In the LPIS, the information on
+the agricultural parcels (cover types and areas) are usually
+derived from annual declaration by the farmers followed by
+manual controls by national paying agencies.
+In this context, recent studies have assessed the classiﬁ-
+cation accuracy that can be obtained with Sentinel images on
+agricultural land covers [2, 3, 4, 5]. However, in all of them
+the nomenclature is restricted to few and most frequent annual
+crops. Classes known to be challenging to determine with re-
+mote sensing such as permanent grassland or permanent crops
+are not taken into account. Furthermore when a parcel-based
+approach is used, small parcels are usually ignored (< 250 ha
+in [4]).
+To overcome this issue, we believe that modelling the
+spatio-temporal structures concerning agricultural parcels in
+combination with the Sentinel image time series, can lead to
+signiﬁcant gains in accuracy with more exhaustive nomencla-
+tures. These structures are of different types and can concern
+for example (i) the choice of a crop type on a given parcel (an-
+nual or multi-annual crop rotations), (ii) local similarities in
+events (ploughing, seeding or harvesting dates) or (iii) man-
+agement practices for the parcels belonging to a same farmer.
+In this paper, we investigate the modelling and the integration
+in the classiﬁcation of inter-annual crop rotation information.
+Two different approaches can be used to model rotations.
+The ﬁrst one consists in using a priori agronomist expert
+knowledge. Several models have been proposed and assessed
+[6].
+However, the models are strongly dependent on the
+study area and have no adaptation capacity to environmental
+or agricultural management changes. The second approach
+is learning rotations as way of overcoming the limitations
+driven by the expert knowledge a priori approaches.
+The
+data that can be used for learning are the former versions of
+LPIS. This method has recently been studied by [7]. Never-
+theless, only very few studies have focused on the integration
+of crop rotation information into classiﬁcation pipelines. A
+prediction model based on the Markov logic is proposed by
+[7]. However, there is no combination with remote sensing
+observations.
+The objective of this paper is then to propose a method to
+integrate the crop rotation temporal structure into a Sentinel-
+based classiﬁcation process and to assess the capacity of the
+method to improve classiﬁcation results. The methodology
+is explained in Section 2, the experimental set-up (study area
+and datasets) along with result analysis are proposed in Sec-
+tion 3. Conclusions are drawn in Section 4.
+2. METHODOLOGY
+The classiﬁcation method proposed is made up with a data
+term (Section 2.1) combined with a Conditional Random
+Fields (CRF) for temporal structured prediction (Section 2.2).
+1950
+978-1-5386-7150-4/18/$31.00 ©2018 IEEE
+IGARSS 2018
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:47:25 UTC from IEEE Xplore.  Restrictions apply. 
+2.1. Parcel-based multi-source and multi-temporal clas-
+siﬁcation
+The data term is obtained with common state-of-the art meth-
+ods. Sentinel images were automatically downloaded from
+the French national mirror Peps [8] (Sentinel-1) in the Ground
+Range Detected (GRD) format and from the national down-
+stream service Theia [9] (Sentinel-2) in ground geometry and
+calibrated in Top of Canopy (TOC) reﬂectance. Dual polari-
+sation GRD Sentinel-1 images were ﬁrst calibrated to σ0 radar
+backscattering coefﬁcient. Orthorectiﬁcation is performed us-
+ing the SRTM digital terrain model and the georeferencing in-
+formation supplied with the GRD ﬁles. The speckle is slightly
+removed using a simple 5 × 5 Lee ﬁlter [10]. An extra radar
+feature (
+σ0V H
+σ0V V ) is computed. This ratio is known as being
+more independent to the slope and moisture content effects of
+each agricultural parcel [11]. For optical images, the missing
+data (clouds) are ﬁlled in using provided cloud masks with a
+multi-temporal spline interpolation. Average and standard de-
+viation of these 3 radar channels and the 10 optical reﬂectance
+bands are then computed for each date of the satellite time se-
+ries for each agricultural parcel geometry of the LPIS. At the
+parcel-based level, a Random Forest classiﬁer is used. Deci-
+sion tree votes are gathered to model the data term probabili-
+ties p(yn|xn) of Equation 2, yn being the agricultural classes
+considered and xn the parcel-based multi-source and multi-
+temporal time serie features.
+2.2. Temporal-structured classiﬁcation of parcels
+In order to model the temporal structure of the crop rotations,
+we used the graphical model given in Figure 1. This ﬁrst order
+Markov chain can be generalized to greater orders. However,
+because of the speciﬁcations of LPIS data, only the ﬁrst order
+has been applied and assessed in this paper. Indeed, the LPIS
+are known at the parcel-block level (i.e. a group of contigu-
+ous parcels with the same operator but possibly different land
+covers) before 2015. The agricultural parcel class of a given
+n year is modeled by a random variable Yn. We consider this
+variable only inﬂuenced by the previous year variable Yn−1.
+The satellite observations of each n year Xn are taken into
+account with a Conditional Random Field (CRF).
+X1
+∅
+X2
+∅
+Xn−1
+∅
+Xn
+S1-2
+Y1
+LPIS
+parcel-block
+Y2
+LPIS
+parcel-block
+Yn−1
+LPIS
+parcel
+Yn
+LPIS
+parcel
+...
+2010
+2011
+2015
+2016
+Fig. 1. Conditional Random Field.
+With such a modelling and under the hypothesis of the
+independance between transitions Yn and observations Xn,
+the factorisation of the graphical model given in Figure 1 can
+be written with Equation 2.
+pθ(y|x) ∝p(y1) × p(y1|x1) ×
+n
+Y
+i=2
+(p(yi|yi−1) × p(yi|xi))
+(1)
+Nevertheless, the use of X = {X1, X2, ..., Xn−1} in
+dashed line in Figure 1 is not necessary. The former LPIS
+versions give a robust knowledge of the realization of the
+random variables Y
+= {Y1, Y2, ..., Yn−1}.
+Indeed, errors
+concerning crop types in the initial declaration by farmers
+are in minority and furthermore this information is thereafter
+controlled by National Paying Agencies. Therefore, we pro-
+pose a simpler form given in Equation 2. The data term is
+estimated with the Random Forest method (Section 2.1) and
+a temporal structure term p(yn|yn−1) is necessary.
+pθ(yn|xn, y1, . . . , yn−1) ∝p(yn|yn−1)
+|
+{z
+}
+temporal structure
+× p(yn|xn)
+|
+{z
+}
+data term
+(2)
+To estimate the regularization term p(yn|yn−1), we learn
+a transition matrix c
+M built up with a series of parcel-block
+LPIS. An hypothesis of spatio-temporal homogeneity of the
+parcels is considered. Only geometrically stable and pure in
+terms of land cover parcel-blocks are used. Equation 3 shows
+how to estimate the p(yn|yn−1) with past agricultural land
+cover transitions.
+d
+Mk,l = nk,l
+nk
+with nk,l the number of transitions k →l (for all parcels of all
+years considered) and nk the number of occurences of the
+agricultural class k (for all the parcels of the n-1 ﬁrst years)
+(3)
+3. RESULTS
+3.1. Experimental Set-up
+The method has been tested on a 233 km2 study area located
+60 km at the East of Paris. A national 25 classes land cover
+classiﬁcation was used to estimate the transition matrix of
+Equation 3 on a French department administrative area (5 915
+km2). 36 891 geometrically stable and pure in terms of land
+covers parcel blocks contribute to the estimation of the c
+M
+matrix.
+As for the data term, only the land cover classes present
+on the study area were learned. This agricultural classes and
+the number parcels considered are Corn (350 parcels), Barley
+(158), Other Cereals (889), Rape seed (85), Protein (peas)
+(76), Fiber plants (76), Forage crops (46), Permanent grass-
+land (725), Fruit trees (30), Vegetables (131). These classes
+are categories and can possibly gather a large number of agri-
+cultural land covers (16 different classes for Other Cereals)
+on the department area. The average area of the parcels on the
+1951
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:47:25 UTC from IEEE Xplore.  Restrictions apply. 
+study area is 4.5 ha with high standard deviation (σ = 6.5 ha).
+The 2016 parcel-based LPIS has been used for training and
+validation of the data term.
+Table 1 gives the number of features used for the estima-
+tion of the data term. Sentinel-2 acquisition technical prob-
+lems on the particular orbit covering the study area had lim-
+ited the amount of optical images available.
+Sentinel-1 (radar)
+Sentinel-2 (optical)
+Number of dates
+85
+12
+Features per date
+6
+20
+Total
+509
+240
+Table 1. Features used for the estimation of the data term.
+In the following a conﬁguration named unstructured cor-
+responds to the results of the parcel-based classiﬁcation. The
+Random Forest was trained with 100 decision trees using all
+aggregated attributes from Table 1 and a maximum depth of
+the trees of 15. Then a second conﬁguration called struc-
+tured in the rest of the paper corresponds the product of the
+two probabilities deﬁned in Equation 2 for classiﬁcation. The
+2015 parcel-based LPIS was needed to determine the neces-
+sary previous land cover observed on a parcel. 5 years (2010-
+2014) of the parcel-block LPIS were used for the estimation
+of the transition matrix. For the unstructured and temporal
+structured classiﬁcation, 50% of the parcels were used for
+training and 50% for validation, and the results proposed are
+the average of 10 iterations.
+The classiﬁcation was assessed with global metrics (over-
+all accuracy (OA), weighted (F-score-w) and unweighted F-
+score by the number of samples of each classes) and per-class
+metrics (F-score, recall and precision).
+3.2. Result analysis
+The transition matrix estimated contains very relevant infor-
+mation. For instance, strong inter-annual crop rotation are
+observed. The probability to grow Other Cerals (common
+wheat) after Rape seed is 97.09% or Protein (peas) to Other
+Cereals (94.85%). The permanent grassland remains stable
+(94.45%), such as permanent crops like Fruit trees (83.65%).
+Table 2 shows the global results after 10 iterations. The
+results are proposed only with the radar features or the opti-
+cal features (Table 1) or with their aggregation. Taking into
+account the temporal structure improves all the global metrics
+for all the feature conﬁgurations. In OA, we observe a gain of
++2.7% for the radar conﬁguration, +4.6% for the optical and
++2.6% for the combined optical and radar one).
+However the improvement of classiﬁcation accuracy is
+not homogeneous for the different agricultural classes. Ta-
+ble 3 evaluates the effect of taking into account the temporal
+structure on each class, with the optical and radar features.
+First, we can notice that there is a strong improvement
+on the stable over time agricultural classes such as Perma-
+Table 2. Global classiﬁcation metrics after 10 iterations.
+Unstructured
+Conﬁguration
+Overall
+Unweighted
+Weighted
+Accuracy
+F-score
+F-score
+OA
+F-score
+F-score-w
+Radar
+0.892
+0.734
+0.878
+Optical
+0.824
+0.624
+0.809
+Radar+Optical
+0.890
+0.744
+0.885
+Structured
+Radar
+0.919
+0.776
+0.911
+Optical
+0.870
+0.675
+0.853
+Radar+Optical
+0.916
+0.762
+0.906
+nent grasslands (+8.7% in F score) and Fruit trees (+93% in
+F score). Almost all the Fruit trees validation samples were
+classiﬁed as Permanent grasslands in the unstructured con-
+ﬁguration. The temporal structure is also useful to separate
+classes that have similar data terms. This is for example the
+cases for Forage crops (+70.5% in F score) and Permanent
+grasslands. These two classes are very similar in the optical
+and radar features. As a result, Forage crops are almost for
+the most part classiﬁed as permanent grasslands. The tempo-
+ral structure enables to make the distinction.
+Then, for annual crops that are used with regular rota-
+tion patterns, the class metrics are improved. (Protein (peas)
+(+0.4%), Rape seed (+1%), Other Cereals (+0.7%). How-
+ever, when the transitions are less respected by farmers, the
+temporal structure can cause a loss in the classiﬁcation accu-
+racy. This is the case for Corn (−6.3%) or Barley (−8.2%).
+For the Barley class, the decrease (Recall) is partially due to
+the misclassiﬁcation of the Fiber Plants class. For Corn and
+Barley the decrease could be explained by the fact that these
+crops are used in 3-years rotation, a structure that the 1st-oder
+Markov chain can not capture completely.
+Finally, there is a major drawback with the Fiber plants
+class (−97.4% in F score). For that particular case, the data
+term is reliable (97.4% in F-score) and after temporal regu-
+larization almost all the Fiber plants are classiﬁed as Barley.
+The result could be explained by the fact that there is a very
+small amount of geometrically stable Fiber plants on the area.
+The strong general transition rule learned for the Fiber plants
+could not be useful for those speciﬁc parcels.
+4. CONCLUSION
+In conclusion, we proposed a framework to take into account
+the crop rotation temporal structure in the classiﬁcation. The
+classiﬁcation is globally improved. The method is based on
+learning both data term and temporal structure. As a result,
+it can be easily applied to other areas. Indeed, the LPIS are
+produced at national scale each year. Results have however
+to be produced on numerous and diverse areas. Several im-
+1952
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:47:25 UTC from IEEE Xplore.  Restrictions apply. 
+Table 3. Effect on temporal structure on Class Metrics
+Class
+F-score
+Recall
+Precision
+Unstructured
+Corn
+0.941
+0.929
+0.953
+Barley
+0.898
+0.937
+0.862
+Other cereals
+0.947
+0.956
+0.9378
+Rape seed
+0.959
+0.975
+0.944
+Protein
+0.949
+0.932
+0.968
+Fiber plants
+0.974
+1
+0.950
+Forage crops
+0
+0.1
+0
+Permanent grasslands
+0.868
+0.814
+0.930
+Fruit trees
+0.010
+0.090
+0
+Vegetables
+0.895
+0.914
+0.877
+Class
+Structured
+Corn
+0.878
+0.831
+0.935
+Barley
+0.816
+0.785
+0.849
+Other cereals
+0.954
+0.941
+0.968
+Rape seed
+0.969
+0.985
+0.954
+Protein
+0.953
+0.967
+0.939
+Fiber plants
+0 0
+0.1
+0
+Forage crops
+0.705
+0.778
+0.648
+Permanent grasslands
+0.955
+0.943
+0.967
+Fruit trees
+0.940
+1
+0.892
+Vegetables
+0.451
+0.970
+0.297
+provement of the method can be proposed. Greater order of
+the Markov chain could be tested in the future with the up-
+coming parcel-based versions of the LPIS. Other structures
+could also be modeled such as spatial relationship between
+parcels.The exhaustiveness and the few mistakes contained in
+the LPIS give valuable label information. The approach pro-
+posed is this paper will be tested in prototype of operational
+systems. In this article we only assessed the effet of temporal
+structure after 1-year of satellite observations. The objective
+would be to apply the method to partial time series to propose
+a pre-ﬁlled LPIS declaration for the farmers
+5. REFERENCES
+[1] European Commission,
+“Towards
+future
+coper-
+nicus
+service
+components
+in
+support
+to
+agricul-
+ture?,”
+https://ec.europa.eu/jrc/sites/
+jrcsh/files/Copernicus_concept_note_
+agriculture.pdf, 2016.
+[2] M. Immitzer, F. Vuolo, and C. Atzberger, “First experi-
+ence with sentinel-2 data for crop and tree species clas-
+siﬁcations in central europe,” Remote Sensing, vol. 8,
+no. 3, pp. 166, 2016.
+[3] J. Inglada, M. Arias, B. Tardy, O. Hagolle, S. Valero,
+D. Morin, G. Dedieu, G. Sepulcre, S. Bontemps, P. De-
+fourny, et al., “Assessment of an operational system for
+crop type map production using high temporal and spa-
+tial resolution satellite optical imagery,” Remote Sens-
+ing, vol. 7, no. 9, pp. 12356–12379, 2015.
+[4] N. Kussul, G. Lemoine, F. J. Gallego, S. V. Skakun,
+M. Lavreniuk, and A. Y. Shelestov,
+“Parcel-based
+crop classiﬁcation in ukraine using landsat-8 data and
+sentinel-1a data,” IEEE Journal of Selected Topics in
+Applied Earth Observations and Remote Sensing, vol.
+9, no. 6, pp. 2500–2508, 2016.
+[5] GISAT,
+“Czech agriculture national demonstra-
+tor,”
+http://www.esa-sen2agri.org/
+wp-content/uploads/docs/CzechAgri%
+20Final%20Report%201.2.pdf, 2017.
+[6] J. Dury, N. Schaller, F. Garcia, A. Reynaud, and J. E.
+Bergez, “Models to support cropping plan and crop ro-
+tation decisions. a review,” Agronomy for sustainable
+development, vol. 32, no. 2, pp. 567–580, 2012.
+[7] J. Osman, J. Inglada, and J.-F. Dejoux, “Assessment of
+a markov logic model of crop rotations for early crop
+mapping,” Computers and Electronics in Agriculture,
+vol. 113, pp. 234–243, 2015.
+[8] CNES, “Plateforme d’exploitation des produits sentinel.
+https://peps.cnes.fr/rocket/,” 2017, Ac-
+cessed on December 6, 2017.
+[9] THEIA, “Pˆole th´ematique surfaces continentales theia.
+https://theia.cnes.fr/,” 2017, Accessed on
+December 6, 2017.
+[10] J.-S. Lee,
+“Digital image enhancement and noise ﬁl-
+tering by use of local statistics,” IEEE transactions on
+pattern analysis and machine intelligence, vol. 2, no. 2,
+pp. 165–168, 1980.
+[11] A. Veloso, S. Mermoz, A. Bouvet, T. Le Toan,
+M. Planells, J.-F. Dejoux, and E. Ceschia, “Understand-
+ing the temporal behavior of crops using sentinel-1 and
+sentinel-2-like data for agricultural applications,” Re-
+mote Sensing of Environment, vol. 199, pp. 415–426,
+2017.
+1953
+Authorized licensed use limited to: BMS Institute of Technology. Downloaded on October 31,2025 at 08:47:25 UTC from IEEE Xplore.  Restrictions apply. 

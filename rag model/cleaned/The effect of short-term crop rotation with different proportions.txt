@@ -1,0 +1,37 @@
+### DOCUMENT INFO  
+- **Title/Topic:** The effect of short-term crop rotation with different proportions of sunflower on cellulolytic activity of the soil  
+- **Type:** Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed:** 5-field short-term crop rotations with varying sunflower proportions (20%, 40%, 60%)  
+- **Crops mentioned:** Sunflower, pea, winter wheat, corn, winter rye  
+- **Regions covered:** Left Bank Forest-Steppe of Ukraine (Kharkiv region)  
+
+### KEY FINDINGS  
+- **Soil health benefits:**  
+  - Higher sunflower proportion in crop rotations increased cellulolytic activity (microbial decomposition of cellulose).  
+  - Maximum cellulolytic activity (28.6%) observed in soil with 60% sunflower rotation.  
+  - Clean fallow (no plants) showed minimal cellulolytic activity despite moisture retention.  
+- **Moisture dynamics:**  
+  - Soil moisture varied with crop rotation; highest moisture (15.6%) in 0–30 cm layer with 20% sunflower rotation.  
+  - Sunflower residues influenced microbial activity more than moisture alone.  
+- **Microbial activity:**  
+  - Cellulose-degrading microorganisms (e.g., *Pseudomonas*, *Actinomycetaceae*) thrived in sunflower-rich rotations.  
+  - Activity was highest in deeper soil layers (20–30 cm) compared to surface (0–10 cm).  
+
+### NUMERICAL DATA/TABLES  
+- **Cellulolytic activity by sunflower proportion (2020–2021 averages):**  
+  - **20% sunflower:** 2.2% (0–10 cm), 2.9% (10–20 cm), 4.1% (20–30 cm).  
+  - **60% sunflower:** 5.1% (0–30 cm).  
+- **Soil moisture:** 15.6% in 0–30 cm layer (20% sunflower rotation).  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers:**  
+  - Incorporate higher sunflower proportions (e.g., 60%) in rotations to enhance soil microbial activity and organic matter decomposition.  
+  - Avoid long fallow periods; plant residues (especially sunflower) are critical for maintaining cellulolytic activity.  
+- **Best practices for crop rotation:**  
+  - Combine sunflower with grains (wheat, rye) and legumes (pea) to balance soil health and moisture retention.  
+  - Prioritize agrophysical conditions (e.g., mulch, soil structure) to extend microbial activity during dry periods (July–August).  
+
+---  
+*Output is cleaned of citations, references, and navigation text for RAG-ready extraction.*

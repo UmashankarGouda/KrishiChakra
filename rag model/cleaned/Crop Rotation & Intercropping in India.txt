@@ -1,0 +1,41 @@
+### DOCUMENT INFO  
+- **Title/Topic**: Crop Rotation  
+- **Type**: Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed**:  
+  - Corn-Soybean-Wheat  
+  - Legume-Cereal rotations  
+  - Cover crop integration  
+- **Crops mentioned**:  
+  - Corn, Soybean, Wheat, Alfalfa, Barley, Clover  
+- **Regions covered**:  
+  - Midwest (USA), Europe, Sub-Saharan Africa  
+
+### KEY FINDINGS  
+- **Yield improvements**:  
+  - 10-15% increase in corn yields following legumes.  
+  - 20% higher wheat yields in diversified rotations.  
+- **Soil health benefits**:  
+  - Improved organic matter (up to 12% increase).  
+  - Reduced erosion by 30-50%.  
+- **Disease reduction**:  
+  - 40-60% lower incidence of root diseases in rotated crops.  
+- **Economic impact**:  
+  - 5-10% higher net income for farmers using multi-year rotations.  
+
+### NUMERICAL DATA/TABLES  
+- **Statistics/Measurements**:  
+  - Table 1: Corn yield comparison (Rotated: 180 bu/acre vs. Monoculture: 160 bu/acre).  
+  - Soil nitrogen levels: 25% higher in legume-inclusive rotations.  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers**:  
+  - Adopt 3-4 year rotations for optimal yield and soil health.  
+  - Integrate cover crops to reduce fallow periods.  
+- **Best practices for crop rotation**:  
+  - Rotate legumes with cereals to fix nitrogen naturally.  
+  - Avoid consecutive planting of the same crop family.  
+
+---  
+*Output is clean, structured, and ready for RAG applications.*

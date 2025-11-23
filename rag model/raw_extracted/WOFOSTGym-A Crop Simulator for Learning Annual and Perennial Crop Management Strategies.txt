@@ -1,0 +1,1364 @@
+WOFOSTGym: A Crop Simulator for Learning An-
+nual and Perennial Crop Management Strategies
+William Solow1, Sandhya Saisubramanian1, Alan Fern1
+{soloww,sandhya.sai,alan.fern}@oregonstate.edu
+1Oregon State University, Corvallis, Oregon
+Abstract
+We introduce WOFOSTGym, a novel crop simulation environment designed to train
+reinforcement learning (RL) agents to optimize agromanagement decisions for annual
+and perennial crops in single and multi-farm settings. Effective crop management re-
+quires optimizing yield and economic returns while minimizing environmental impact,
+a complex sequential decision-making problem well suited for RL. However, the lack
+of simulators for perennial crops in multi-farm contexts has hindered RL applications
+in this domain. Existing crop simulators also do not support multiple annual crops.
+WOFOSTGym addresses these gaps by supporting 23 annual crops and two perennial
+crops, enabling RL agents to learn diverse agromanagement strategies in multi-year,
+multi-crop, and multi-farm settings. Our simulator offers a suite of challenging tasks for
+learning under partial observability, non-Markovian dynamics, and delayed feedback.
+WOFOSTGym’s standard RL interface allows researchers without agricultural exper-
+tise to explore a wide range of agromanagement problems. Our experiments demon-
+strate the learned behaviors across various crop varieties and soil types, highlighting
+WOFOSTGym’s potential for advancing RL-driven decision support in agriculture.
+1
+Introduction
+During a growing season, farmers face many decisions about how to optimally manage their crops
+to increase yield while reducing cost and environmental impact (Javaid et al., 2023). For example,
+irrigation planning must account for constraints on water use, and optimal irrigation scheduling can
+improve crop yield (Elliott et al., 2014). Motivated by the promising results of using reinforcement
+learning (RL) in other areas of precision agriculture, there is increasing interest from researchers
+and government agencies in applying RL to crop management decision problems in open-field agri-
+culture, especially for perennial crops (e.g. pears, grapes) (Astill et al., 2020; Gautron et al., 2022a).
+Agriculture presents key challenges for RL, making it a valuable testbed for research: (1) delayed
+feedback—actions like fertilization affect yield only months later, complicating credit assignment;
+(2) sparse rewards—since yield is only known at the episode’s end, learning an optimal policy is
+difficult (Vecerik et al., 2018); and (3) partial observability—many crop and soil states are unmea-
+surable or costly to obtain. While RL has been explored as a tool for optimizing open-field crop
+management decisions (Wu et al., 2022; Tao et al., 2023), its real-world adoption is limited to con-
+trolled settings such as greenhouses (An et al., 2021; Wang et al., 2020) and crop monitoring (Din
+et al., 2022; Zhang et al., 2020). We bridge this gap by presenting a simulator for annual and peren-
+nial crops in single and multi-farm settings.
+Training RL agents in the real world to optimize agromanagement decisions is infeasible because
+growing seasons are too long, and unconstrained exploration can cause costly errors like crop death
+and soil degradation (Tevenart & Brunette, 2021). Similar challenges in robotics and autonomous
+1
+arXiv:2502.19308v2  [cs.AI]  27 Feb 2025
+Figure 1: The structure and visualization of the WOFOSTGym simulator. WOFOSTGym provides
+an API around the WOFOST Crop Growth Model with a variety of environments to train RL agents
+and generate data. Well documented configuration files control crop and soil dynamics.
+driving have been addressed with high-fidelity simulators, enabling RL applications (Kober et al.,
+2013; Kiran et al., 2022; Dauner et al., 2024; Todorov et al., 2012). While high-fidelity crop growth
+models (CGMs) (Boote et al., 1996) offer an approach to testing crop management policies, they are
+not designed to interact with RL algorithms and require substantial domain expertise.
+Existing agriculture simulators (Gautron et al., 2022b) only simulate the growth of a single annual
+crop. They lack the functionality needed for perennial crop management as they do not capture crop
+growth across multiple years, including the dormant season (Forcella, 1998) (see Table 1). More-
+over, these simulators cannot be customized to study other crops or sites without domain knowledge
+of the underlying CGM and cannot learn joint agromanagement policies for multiple farms. Open-
+field agriculture problems are often modeled as a partially observable environment, but the current
+crop simulators do not allow for varying the number of hidden features for partial observability and
+do not support the creation of a wide range of agromanagement tasks across crop and soil types,
+which limit the scenarios that can be modeled (Tao et al., 2023).
+We present WOFOSTGym (see Figure 1), a crop simulator for learning annual and perennial crop
+management strategies across single and multiple farms. WOFOSTGym is built on the WOFOST
+CGM (van Diepen et al., 1989) to model the growth of perennial crops, and includes parameter sets
+for 23 annual crops and two perennial crops. Each crop contains between one and ten varieties. As a
+step towards high-fidelity modeling of perennial crop growth, we employ a Bayesian Optimization
+based method to calibrate CGM parameters to increase the fidelity of the phenological model for
+32 grape cultivars. To make WOFOSTGym accessible to RL researchers, we prioritize usability
+through extensive customization, seamless integration with standard RL algorithms, and a thorough
+documentation: https://intelligent-reliable-autonomous-systems.github.
+io/WOFOSTGym-Docs/.
+Our experiments highlight scenarios in WOFOSTGym where standard RL algorithms and imitation
+learning (IL) agents achieve optimal performance, alongside more complex cases that remain dif-
+ficult, underscoring opportunities for advancing learning approaches in agromanagement for both
+annual and perennial crops. We also design agromanagement decision-making tasks in WOFOS-
+TGym that illustrate both the potential and challenges of applying RL to agriculture, positioning
+WOFOSTGym as a rigorous testbed for developing and evaluating new algorithms.
+2
+Background and Related Work
+This section briefly describes the POMDP framework used for modeling our problems, and an
+overview of existing crop simulators and crop growth models.
+2
+Name
+Perennial Crop
+Support
+Multiple Crops
+and Farms
+Easily
+Customizable
+Models Crop
+Sub-processes
+CyclesGym
+✗
+✗
+✓
+✓
+CropGym
+✗
+✗
+✗
+✓
+gym-DSSAT
+✗
+✗
+✗
+✓
+FarmGym
+✗
+✗
+✓
+✗
+WOFOSTGym (Ours)
+✓
+✓
+✓
+✓
+Table 1: Comparison of available crop simulators based on four important desiderata for use with
+RL. A simulator is easily customizable if it does not require agriculture domain expertise to run
+different experiments. Modeling crop sub-processes (phenology, roots, stems, leaves, etc.) as it
+generally leads to a higher fidelity model.
+Partially Observable Markov Decision Process
+We formulate our agromanagement problems
+using the framework of partially observable Markov decision process (POMDP) (Kaelbling et al.,
+1998). POMDPs are well-suited for open-field agriculture problems, since many crop and soil-
+related features that are essential for defining the system’s full state cannot be directly observed (Tao
+et al., 2023). Formally, a POMDP is a tuple M = ⟨S, A, P, R, Ω, O⟩where S is a set of states, A is
+a set of actions, P : S × A × S →[0, 1] is the transition kernel, and R : S × A →R is the reward
+function. Ωis the set of possible observations and O : S × A × Ω→[0, 1] is the probability of
+obtaining observation o when taking action a in state s. A reward discount factor γ determines the
+importance of immediate versus future rewards. The RL agent computes a policy π : Ω×A →[0, 1]
+that maximizes the expected sum of discounted rewards, Eρπ
+hPT
+t=0 γtR(st, at)
+i
+, where ρπ is the
+distribution of states and actions induced by the policy π and T is the time horizon.
+RL for Crop Management
+Building on RL’s success in robotics, autonomous driving, and health-
+care, there is growing interest in applying RL to optimize crop yield (Binas et al., 2019). While RL
+has proven effective in controlled greenhouse environments (An et al., 2021), its application in open-
+field agriculture remains limited due to reduced sensing capabilities and long growing seasons. Tao
+et al. (2023) proposed an imitation learning approach to learn expert actions under partial observ-
+ability, but it has not been tested in the real-world. To bridge this gap, several crop simulators have
+been developed. CropGym simulates winter wheat in a nitrogen-limited soil via a Gym wrapper
+around a CGM (Overweg et al., 2021). Gym-DSSAT focuses on maize growth optimization through
+fertilization and irrigation decisions (Gautron et al., 2022b). CyclesGym, built around the Cycles
+CGM (Kemanian et al., 2022), focuses on learning crop rotation strategies for annual crops but is
+limited to soybeans and maize, lacking support for perennial crop modeling (Turchetta et al., 2022).
+Table 1 summarizes the capabilities of different crop simulators.
+Existing crop simulators support RL training for fertilization and irrigation but lack support for
+perennial crops, a key research area (Gautron et al., 2022a). Additionally, customization is infeasi-
+ble without expert knowledge of the underlying CGMs, since most CGMs are run through separate
+executables. In contrast, WOFOSTGym offers easy domain customization for RL researchers while
+providing high-fidelity parameters for 23 annual and two perennial crops, high-fidelity model pa-
+rameters for grape phenology for 32 cultivars, and access to diverse soil types and weather patterns.
+Crop Growth Models
+Crop Growth Models (CGMs) simulate the growth of crops in varying en-
+vironments subject to different agromanagement decisions (Jones et al., 2017). Examples of widely-
+used CGMs include WOFOST (de Wit et al., 2019), DSSAT (Jones et al., 2003), APSIM (McCown
+et al., 1996), EPIC (Cabelguenne et al., 1990), CropSyst (Stockle et al., 1994), Cycles (Kemanian
+et al., 2022) and AquaCrop (Andarzian et al., 2011). None of the available CGMs support perennial
+crops. The relevant features of these CGMs are highlighted in the Appendix.
+Our simulator is built on WOFOST, a CGM that models annual crop growth subject to nutrient
+(nitrogen, phosphorus, and potassium) and water-limited conditions (van Diepen et al., 1989). We
+3
+choose WOFOST CGM since it can model the growth of perennial crops with a high fidelity (Bai
+et al., 2020; Shi et al., 2022). It also accounts for varying CO2 concentrations, making it valuable
+for climate-impacted agricultural research (Gilardelli et al., 2018). Additionally, its modular de-
+sign facilitates modifications to crop process models (de Wit, 2024), and its Python implementation
+enables seamless integration with OpenAI Gym (Brockman et al., 2016).
+3
+WOFOSTGym
+WOFOSTGym is built on the WOFOST CGM (van Diepen et al., 1989) and interfaces with the
+OpenAI Gym API to create a high-fidelity and easy-to-use crop simulator for RL. Agromanagement
+decisions supported in WOFOSTGym are: fertilizing, irrigating, planting, and harvesting. In the
+interest of clarity, we focus on fertilization and irrigation decisions in the rest of the paper, since
+these tasks are supported by all existing crop simulators. In these tasks, the agent must optimize
+fertilization and irrigation strategies that maximize the cumulative yield of a crop subject to a set of
+penalties or constraints over one or more growing seasons and across one or more farms.
+The rest of this section is organized as follows. We begin with an overview of the environment
+design. We then propose a model calibration method to fine-tune the model parameters of the
+WOFOST CGM to increase the fidelity as a step towards sim-to-real transfer (Peng et al., 2018).
+3.1
+Environment Design
+A WOFOSTGym instance is defined by its Gym environment ID, the reward wrapper, and an agro-
+management configuration file. WOFOSTGym contains 54 Gym environments that relate to annual
+and perennial crop simulation, single and multi-farm simulations, and six combinations of nutrient-
+limited environments. Our documentation includes three examples on how to modify the reward
+function, if needed, via the Gym reward wrappers. The agromanagement YAML file defines crop
+and soil dynamics and specifies the weather data which is provided by NASAPower. Gym envi-
+ronments, reward wrappers, and agromanagement files are configurable, allowing customization to
+simulate agromanagement decision problems across various crops, farms, and tasks.
+States and Observations
+The model state in WOFOSTGym is the concatenation of two feature
+vectors, c = (c1 . . . c203) and w = (w1, . . . , w7), where c contains the crop and soil state and w
+contains the weather state for a given day. However, most of these state features are not directly
+observable in the real-world. Thus, the state features available to the RL agent are a subset of the
+model state as observation o = (c1, ..., cn), with n ≪210. An observation could be: o = (Weight
+of Storage Organs, Development Stage, Leaf Area Index, Soil Moisture Content, Rainfall, Solar
+Irradiation, Daily Temperature). WOFOSTGym supports any combination of state features as an
+observation. In the multi-farm environments, the agent receives an observation for each farm and
+the daily weather observation is shared across farms.
+Action Space
+WOFOSTGym’s action space consists of fertilization (F): nitrogen (n), phosphorus
+(p), and potassium (k), and irrigation (I) actions. At each time step, an action can be chosen from
+A = {Fn, Fp, Fk, I} which corresponds to applying fertilizer (Fi) or water (I) in the following
+amounts, where f, n, i, and m can all be modified:
+Fi =
+n
+f · k kg
+ha
+k ∈{0 . . . n}
+o
+, I =
+n
+i · k cm
+ha
+k ∈{0 . . . m}
+o
+meaning that |A| = 3n + m. By default, a time step represents a single day, but can be modified to
+denote multiple weeks to model the varying length between agromanagement decisions.
+Reward
+Real-world agriculture requires balancing yield with constraints such as fertilizer costs,
+water usage limits, and surface runoff restrictions. WOFOSTGym includes reward wrappers to
+penalize the violation of these constraints. By default, positive reward is a function of crop yield,
+as profitability is the primary driver of agromanagement policy adoption (Turchetta et al., 2022).
+4
+However, to enable wide configurability, WOFOSTGym’s reward wrapper design enables the reward
+to be any function of the entire state space. An example reward function in WOFOSTGym is:
+Rt = Yield −C · (Ft + It), where C is a constant that modifies the penalty for nutrient application.
+Domain Randomization
+Domain randomization enables successful sim-to-real transfer (Mehta
+et al., 2020), a key feature missing from existing crop simulators. WOFOSTGym supports three
+types of domain randomization, which can be used individually, in combination, or not at all. They
+are: 1) adding small amounts of random uniform noise to parameters in the WOFOST GGM, 2)
+allowing RL agents to train on different crops and soil types simultaneously, and 3) enabling RL
+agents to train on a wide breadth of historical weather data.
+Available Crops and Modifications to WOFOST
+WOFOSTGym includes parameters for 23 an-
+nual crops and 2 perennial crops which were all calibrated empirically from field data (de Wit, 2025;
+Wang et al., 2022; Bai et al., 2019). For perennial crops, it is insufficient to model individual seasons
+of crop growth, as important agromanagement decisions are made during the dormant season (For-
+cella, 1998). It is more appropriate to model growth over multiple consecutive years, which requires
+modification to the phenology, crop organ, and nutrient balance modules WOFOST. We outline the
+modifications made to WOFOST and list all available crops in the Appendix.
+3.2
+Parameter Calibration for Crop Growth Models
+Before a CGM can be used for sim-to-real transfer with RL, it must be calibrated (Bhatia, 2014).
+CGM parameters are typically derived from field experiments and optimized using regression to
+find the best fit (Berghuijs et al., 2024; Zapata et al., 2017). Parameter spaces for CGMs are high-
+dimensional and highly non-linear (Sinclair & Seligman, 2000), so brute force and regression tech-
+niques that are commonly used in agronomy research may be insufficient to find an optimal so-
+lution. To overcome the limitations in current CGM calibration methods, we propose a Bayesian
+optimization approach that requires minimal domain knowledge and outperforms the regression-
+based methods. When historical crop data is available, Bayesian optimization is a more principled
+way of exploring the parameter space to increase the model fidelity of WOFOSTGym.
+Example: Bayesian Optimization for Grape Phenology Calibration
+Grape phenology is di-
+vided into three key phenological stages: Bud Break, Bloom, and Veraison (Lorenz et al., 1995).
+Accurately predicting the onset of a phenological stage allows growers to implement effective agro-
+management strategies, and the Root Mean Squared Error (RMSE) is the widely accepted measure
+of performance in grape phenology modeling (Parker et al., 2013). We use an iterative optimiza-
+tion process that uses Bayesian optimization in each iteration to refine parameters and minimize
+error across all phenological stages. Phenology in WOFOSTGym is described by a set of seven
+parameters, θ. Each iteration aligns with minimizing RMSE for a stage k, where θk is a subset of θ.
+Using a dataset of six to 15 years of historical weather and phenology observations per cultivar
+collected by Zapata et al. (2017), we define the following loss function for Bayesian Optimization:
+LRMSE(θk) =
+s
+1
+n
+nP
+i=1
+ P k
+i (θk) −Ok
+i
+2 + 1
+n
+nP
+i=1
+ P k−1
+i
+(θk) −Ok−1
+i
+2
+where P k
+i (θk) and Ok
+i denote the predicted and observed onset day for phenological stage k for
+year i with parameter set θk. We run three iterations of Bayesian optimization (Noguiera, 2014)
+with a RBF kernel and the expected improvement acquisition function for 500 steps. By retaining
+the best-fit parameters found by each iteration, we obtain θ = {θBud Break, θBloom, θVeraison}, which
+minimizes the RMSE across all phenological stages. We compare our Bayesian Optimization results
+with Zapata et al. (2017) who use linear regression. They find parameter sets for grape phenology,
+BB-Tb and BL-Tb, that aim to minimize the error for Bud Break and Bloom, and report the RMSE
+for all stages. Our results in Table 2 show that our model outperforms others, providing a 10%
+reduction in RMSE over the next best parameter set, BB-Tb.
+5
+Cultivar
+Bud Break
+Bloom
+Veraison
+Cumulative Error
+Ours
+BB-Tb
+BL-Tb
+Ours
+BB-Tb
+BL-Tb
+Ours
+BB-Tb
+BL-Tb
+Ours
+BB-Tb
+BL-Tb
+Cabernet Franc
+4.0
+6.1
+6.2
+3.5
+3.1
+2.9
+7.7
+6.7
+7.1
+15.2
+15.9
+16.2
+Cabernet Sauvignon
+5.0
+8.7
+10.5
+5.2
+5.8
+5.7
+9.8
+6.6
+7.0
+20.0
+21.1
+23.2
+Malbec
+3.7
+5.6
+6.2
+2.8
+3.2
+2.9
+8.3
+5.7
+6.0
+14.8
+14.5
+15.1
+Pinot Noir
+3.6
+4.2
+3.9
+2.4
+2.6
+2.3
+8.6
+6.6
+7.7
+14.6
+13.4
+13.9
+Zinfandel
+3.7
+6.8
+9.0
+3.8
+4.3
+4.0
+6.0
+4.1
+3.8
+13.5
+15.2
+16.8
+Chardonnay
+7.2
+6.3
+5.9
+4.1
+3.7
+3.2
+7.8
+5.6
+5.9
+19.1
+15.6
+15.0
+Chenin Blanc
+5.0
+6.1
+6.2
+3.8
+4.8
+4.6
+8.5
+9.2
+9.4
+17.3
+20.1
+20.2
+Sauvignon Blanc
+3.4
+6.4
+5.7
+5.9
+3.7
+3.5
+1.6
+7.7
+8.5
+10.9
+17.8
+17.7
+Semillon
+4.7
+6.0
+7.0
+2.7
+6.0
+5.8
+8.8
+11.2
+11.6
+16.2
+23.2
+24.4
+Riesling
+3.7
+4.2
+5.7
+3.8
+4.1
+3.7
+8.5
+8.5
+9.0
+16.0
+16.8
+18.4
+Average
+4.4
+6.0
+6.6
+3.8
+4.1
+3.9
+7.4
+7.2
+7.6
+15.6
+17.3
+18.1
+Table 2: RMSE in days when predicting the key phenological stages (Bud Break, Bloom, and Ve-
+raison) in ten grape cultivars. The columns represent the RMSE between the model’s predicted
+phenology for a given parameterization and the observed phenology. Ours: Using parameter set
+tuned with Bayesian Optimization. BB-Tb: Parameter set tuned for Bud Break. BL-Tb: Parameter
+set for Bloom. Values for BB-Tb and BL-Tb are columns 2 and 3 in Table 6 in Zapata et al. (2017).
+The 32 calibrated grape phenology parameterizations included in WOFOSTGym increase model
+fidelity and represent a step towards sim-to-real transfer for crop management policies in open-field
+agriculture. Grape growers can use the high-fidelity phenology models in WOFOSTGym as a digital
+twin to examine the effects of different agromanagement policies on their grape vines without the
+risk of crop loss. As more crop data becomes widely available, our Bayesian optimization method
+can be used to calibrate CGM parameters to more accurately model a variety of crop processes.
+4
+Experiments and Results
+To illustrate the use of WOFOSTGym, we run RL and IL experiments on diverse tasks to learn
+crop management policies for annual and perennial crops under realistic constraints. We present
+results using varied crops and soil types, demonstrating WOFOSTGym’s customizability. Overall,
+our results show that off-the-shelf RL algorithms struggle with hard constraints, long horizons, and
+delayed feedback—challenges inherent to agriculture and captured by WOFOSTGym, making it a
+valuable platform for both core RL research and agromanagement decision support.
+Our crop selection was guided by common agronomic challenges: wheat and barley for nutrient-
+limited growth due to their high nitrogen and water demands, and potatoes for soil nutrient runoff
+risks. We also test with pears and jujubes for the long-horizon decision-making challenges in peren-
+nial crop management, and maize as it is the only crop supported by other simulators.
+Agents in our experiments can choose from 16 actions, each corresponding to one of four dis-
+crete amounts of nitrogen, phosphorus, potassium, and water. Unless otherwise noted, the agent
+observes the state features: development stage; weight of storage organs; total nitrogen, phos-
+phorus, potassium, and water applied; soil moisture content; nitrogen, phosphorus, and potas-
+sium in subsoil; solar irradiation; average temperature; and rainfall. For our RL experiments, we
+use PPO, SAC, and DQN (Schulman et al., 2017; Haarnoja et al., 2018; Mnih et al., 2013), us-
+ing implementations from Huang et al. (2021) and hyperparameters tuned experimentally to yield
+best performance in the WOFOSTGym domain.
+For our IL experiments, we use implementa-
+tions from Gleave et al. (2022) of BC, GAIL, and AIRL (Bain & Sammut, 2000; Ho & Ermon,
+2016; Fu et al., 2018). GAIL and AIRL use a PPO policy, and BC uses an Actor Critic Pol-
+icy, all written by Raffin et al. (2021).
+All experiments and code can be found at: https:
+//github.com/Intelligent-Reliable-Autonomous-Systems/WOFOSTGym.
+Learning Efficiency
+Figure 2 presents learning curves for maximizing jujube growth over three
+seasons and wheat over one season in WOFOSTGym. We compare RL performance against the
+6
+Figure 2: Unconstrained Control. The average reward, as seasonal yield, of different policies. The
+BiWeekly NW policy alternates applying nitrogen and water biweekly while the Wheat Potential is
+the maximum growth obtainable. We omit the Jujube Potential because it assumes daily intervention,
+while we only allow biweekly intervention.
+maximum potential yield and an agromanagement policy that alternates nitrogen fertilization and ir-
+rigation biweekly. In the wheat experiment, the RL algorithms significantly outperform the baseline
+of a bi-weekly nitrogen and water application policy but fall short of reaching the potential pro-
+duction of an unlimited nutrient setting. For jujube, we see that RL agents are unable to match the
+performance of a monthly nitrogen and water application policy. These examples show the potential
+for off-the-shelf RL algorithms to achieve non-trivial performance for some crop scenarios, but also
+indicate that there is significant room for improvement in others.
+Learning Under Constraints
+In the real world, yield maximization is always subject to multiple
+constraints, such as a limit on the amount of fertilizer and water that can be applied per season. To
+model this, we reward total yield and apply a large negative penalty if the fertilization and irrigation
+thresholds (in kg/ha and cm/ha) are exceeded. Figure 3 shows the results of RL algorithms with this
+reward function; positive reward indicates no constraint violation, rewards less than zero indicate a
+constraint violation, and rewards less than −105 indicate more than 5 constraint violations. Note that
+unlike the previous experiment, there is no principled way to find the maximum reward obtainable in
+this setting. We compare the RL agents to a baseline that applies nitrogen fertilizer and water until
+it meets the same thresholds of 80 kg/ha of fertilizer or 40 cm/ha of water (Bushong et al., 2016).
+While this baseline satisfies constraints, it achieves a lower average reward than the trained RL
+agents. It is clear that this simple approach to handling constraints is insufficient for such real-world
+crop scenarios, which shows WOFOSTGym’s potential as a testbed for constrained RL research.
+Figure 3: Constrained Control. (Left) The running average of the reward during training. (Right)
+The likelihood of fertilization or irrigation action each week. Likelihoods were computed over 30
+episodes with darker colors signifying more likely nutrient application.
+Effect of Partial Observability on Constraint Adherence
+Limitations on sensing capabilities
+are a constant source of uncertainty in agromanagement decisions. To illustrate the effects of par-
+tial observability in WOFOSTGym, we consider two relevant state features, RAIN and TOTN, the
+7
+Figure 4: Constrained Control Under Partial Observability. The average reward of PPO agents
+during training and the average days of runoff after completing training over 15 seasons.
+daily rainfall and fertilizer on the soil surface, respectively, and create four partially observable en-
+vironments based on the omission of the two variables from the observation space. We design a
+reward function that rewards crop yield subject to a −104 penalty if nutrient runoff occurs. Nutrient
+runoff happens when fertilizer amasses on the soil surface and irrigation or rainfall occur. We train
+a PPO agent to grow the potato crop in each environment and show the results in Figure 4. Access
+to all relevant features improves constraint adherence of an agent policy. However, even in the fully
+observable case, constraint satisfaction is not guaranteed, exhibited by the non-zero days of runoff
+on average. Future research could use WOFOSTGym to study constraint adherence in partially
+observable environments, and also inform the importance of obtaining costly field measurements.
+Imitation Learning for Agromanagement Decisions
+IL has been proposed as a method for sim-
+to-real transfer in agriculture, by learning from demonstrations of a trained RL agent (Tao et al.,
+2023). We investigate the ability of BC, GAIL, and AIRL to learn from demonstrations in WOFOS-
+TGym. We provide each IL agent with 100 seasons of data generated from an expert PPO agent
+trained to maximize barley yield subject to strict limits of 20 kg/ha of fertilizer and 20 cm/ha of
+water per season. Our results in Table 3 show that GAIL and AIRL failed to obtain similar yield
+to the expert and also exhibited very different behavior as shown by the differences in nitrogen and
+water application. Surprisingly, BC demonstrated the closest matching behavior, although it was
+unable to fully avoid constraint violations. This shows that WOFOSTGym can serve as a non-trivial
+benchmark for IL and in particular, research on implementing constraints into IL.
+Agent
+Max Yield
+(kg/ha)
+Constraints
+Violated
+Nitrogen
+(kg/ha)
+Phosphorus
+(kg/ha)
+Potassium
+(kg/ha)
+Water
+(cm/ha)
+Expert (PPO)
+4376 ± 805
+0.00 ± 0.00
+16.53 ± 3.3
+6.13 ± 2.47
+14.53 ± 3.46
+3.33 ± 0.83
+AIRL
+2975 ± 335
+4.53 ± 2.33
+28.93 ± 5.56
+2.67 ± 2.02
+4.40 ± 2.65
+1.80 ± 0.93
+GAIL
+2647 ± 562
+0.67 ± 0.94
+8.93 ± 2.72
+9.47 ± 4.10
+19.87 ± 4.29
+4.00 ± 1.13
+BC
+4598 ± 790
+0.33 ± 0.6
+16.8 ± 3.56
+6.53 ± 3.38
+14.67 ± 2.98
+4.3 ± 1.25
+Table 3: Results of three IL agents trained to maximize barley yield subject to constraints on nutrient
+application. The Constraints Violated column shows the number of days where excess nutrients were
+applied after the threshold was reached. Results are averaged over 15 seasons.
+Comparison of Agromanagement Decisions on Multiple Farms
+Comparing yield and nutrient
+levels under different agromanagement policies is desirable for farmers, but unrealistic to perform
+in the field due to the risk of exploratory actions decreasing crop yield. WOFOSTGym enables
+agromanagement policies to be evaluated in simulation which could be a useful tool for farmers
+to understand the impacts of agromanagement decisions on crop and soil health. WOFOSTGym
+instances describe the dynamics of a field growing a specific crop. Each field can represent a farm.
+Using WOFOSTGym, we compare joint multi-field policies with field-specific policies to analyze
+their trade-offs in accumulated yield.
+8
+Figure 5: (Left) The soil moisture content of each field under three joint RL agromanagement poli-
+cies. (Right) The average yield obtained by trained multi-field agents. Lighter colors indicate the
+yield obtained by an agent trained on that specific field as a baseline for obtainable crop yield.
+As farmers often apply the same policy to multiple fields, we create a WOFOSTGym environment
+that simulates the growth of five sunflower fields experiencing the same weather. The observation
+space is the growth and soil variables for each field. The weather is shared between fields and the
+action selected is uniformly applied to each field. We train a PPO, DQN, and SAC agent in this multi-
+field scenario and report the soil moisture content and the average yield with each agent policy on
+each field in Figure 5. We then train the respective agents on each individual field to understand the
+value of using a specialized policy compared to a joint policy. The increased soil moisture content
+achieved under the DQN policy leads to the lowest yield across all fields, providing valuable insight
+into soil dynamics.
+Simulator Run Times
+Fast simulators are central to the successful application of RL given the
+high sampling complexity of RL algorithms (Lechner et al., 2023). We benchmark the run times
+of three crop simulators: WOFOSTGym, CyclesGym, and gym-DSSAT (Gautron et al., 2022b;
+Turchetta et al., 2022). We compare run times for a single episode of growing the maize crop (155
+episode steps). Given the large potential overhead when resetting the underlying CGM, we also mea-
+sure the run times of the step and reset functions. Our results in Table 4 show that WOFOSTGym
+outperforms CyclesGym, the only crop simulator that supports multi-year simulations, by an order
+of magnitude. WOFOSTGym is also faster than gym-DSSAT, due to its significantly faster reset
+function. Although gym-DSSAT has a faster step function, WOFOSTGym performs more compu-
+tations per step by maintaining nitrogen, phosphorus, and potassium balances, whereas gym-DSSAT
+maintains only a nitrogen balance.
+Run Time (s)
+WOFOSTGym
+CyclesGym
+gym-DSSAT
+1 Episode
+0.34±0.012
+2.08±.221
+0.38±0.018
+Step Function
+0.003±0.0005
+0.04±.0020
+0.001±0.0001
+Reset Function
+0.012±0.002
+0.055±.002
+0.191±0.012
+Table 4: The average runtime and standard deviation, computed over 100 trials, of three different
+crop simulators on an Nvidia 3080Ti.
+5
+Limitations and Future Work
+WOFOSTGym takes around two seconds to run a three-year simulation of a perennial jujube crop.
+Although WOFOSTGym offers an improved run time compared to other crop simulators, the run
+time quickly adds up when RL algorithms require millions of episodes to learn a good policy. As
+episode horizon increases for modeling perennial crop management decisions, accelerating the mod-
+eling of crop dynamics will become crucial.
+9
+WOFOSTGym is designed for modeling crop growth of a specific crop and currently does not sup-
+port optimizing long-term crop rotation strategies. As the WOFOST CGM supports crop rotations,
+extending WOFOSTGym to support such problems is a promising extension.
+Although the parameter sets in WOFOSTGym can be considered high-fidelity models as they were
+tuned against field data, sim-to-real transfer using WOFOSTGym should be attempted with caution.
+As research bridging RL to open-field agriculture advances and CGM fidelity improves through
+approaches like those in Section 3.2, direct sim-to-real transfer may become increasingly feasible.
+6
+Summary
+We present WOFOSTGym, the first RL simulator for annual and perennial crop management de-
+cision support. The WOFOSTGym repository includes high-fidelity parameters for two perennial
+crops and 23 annual crops, along with diverse pre-specified agromanagement policies for bench-
+marking RL agents. Its customizable design enables researchers to conduct experiments without
+requiring agricultural domain expertise. To improve CGM fidelity and facilitate sim-to-real transfer
+in open-field agriculture, we propose a Bayesian optimization-based calibration method. Our results
+reveal the limitations of current RL and IL algorithms in this domain, emphasizing the need for
+further research to address the specific challenges presented in the agriculture domain. We outline
+realistic benchmarks to assess RL algorithms before deployment for agricultural decision support.
+Broader Impact Statement
+Reinforcement learning for crop modeling has the potential to help growers optimize yield while
+reducing costs and environmental impact. WOFOSTGym provides a high-fidelity platform for re-
+searchers to develop and evaluate agromanagement policies. However, due to the gap between
+simulation and real-world environments, RL policy performance in simulation may not translate
+directly to field trials.
+Acknowledgments
+This research was supported by USDA NIFA award No. 2021-67021-35344 (AgAID AI Institute).
+10
+References
+Francisco Albornoz. Crop responses to nitrogen overfertilization: A review. Scientia Horticulturae,
+205:79–83, June 2016. ISSN 0304-4238. DOI: 10.1016/j.scienta.2016.04.026. URL https:
+//www.sciencedirect.com/science/article/pii/S0304423816302151.
+Zhicheng An, Xiaoyan Cao, Yao Yao, Wanpeng Zhang, Lanqing Li, Yue Wang, Shihui Guo, and
+Dijun Luo. A Simulator-based Planning Framework for Optimizing Autonomous Greenhouse
+Control Strategy.
+Proceedings of the International Conference on Automated Planning and
+Scheduling, 31:436–444, May 2021. ISSN 2334-0843. DOI: 10.1609/icaps.v31i1.15989. URL
+https://ojs.aaai.org/index.php/ICAPS/article/view/15989.
+B. Andarzian, M. Bannayan, P. Steduto, H. Mazraeh, M. E. Barati, M. A. Barati, and A. Rah-
+nama. Validation and testing of the AquaCrop model under full and deficit irrigated wheat pro-
+duction in Iran. Agricultural Water Management, 100(1):1–8, November 2011. ISSN 0378-
+3774.
+DOI: 10.1016/j.agwat.2011.08.023.
+URL https://www.sciencedirect.com/
+science/article/pii/S0378377411002307.
+Gregory Astill, Agnes Perez, and Suzanne Thornsbury (eds.). Developing Automation and Mecha-
+nization for Specialty Crops: A Review of U.S. Department of Agriculture Programs: A Report to
+Congress. Administrative Publication Number 082. 2020. DOI: 10.22004/ag.econ.320792.
+Tie-cheng Bai, Tao Wang, Nan-nan Zhang, You-qi Chen, and Benoit Mercatoris. Growth simulation
+and yield prediction for perennial jujube fruit tree by integrating age into the WOFOST model.
+Journal of Integrative Agriculture, 19(3):721–734, March 2020. ISSN 2095-3119. DOI: 10.
+1016/S2095-3119(19)62753-X.
+URL https://www.sciencedirect.com/science/
+article/pii/S209531191962753X.
+Tiecheng Bai, Nannan Zhang, Youqi Chen, and Benoit Mercatoris. Assessing the Performance of
+the WOFOST Model in Simulating Jujube Fruit Tree Growth under Different Irrigation Regimes.
+Sustainability, 11(5):1466, January 2019. ISSN 2071-1050. DOI: 10.3390/su11051466. URL
+https://www.mdpi.com/2071-1050/11/5/1466. Number: 5 Publisher: Multidisci-
+plinary Digital Publishing Institute.
+Michael Bain and Claude Sammut. A framework for behavioural cloning. In Machine Intelligence
+15, pp. 103–129. Oxford University PressOxford, January 2000. ISBN 978-0-19-853867-7 978-
+1-383-02650-4. DOI: 10.1093/oso/9780198538677.003.0006. URL https://academic.
+oup.com/book/53289/chapter/422019159.
+Herman N. C. Berghuijs, João Vasco Silva, Pytrik Reidsma, and Allard J. W. de Wit. Expanding
+the WOFOST crop model to explore options for sustainable nitrogen management: A study for
+winter wheat in the Netherlands. European Journal of Agronomy, 154:127099, March 2024. ISSN
+1161-0301. DOI: 10.1016/j.eja.2024.127099. URL https://www.sciencedirect.com/
+science/article/pii/S1161030124000200.
+Avnish Kumar Bhatia.
+Crop Growth Simulation Modeling.
+In S.K. Basu and Naveen Kumar
+(eds.), Modelling and Simulation of Diffusive Processes: Methods and Applications, pp. 315–
+332. Springer International Publishing, Cham, 2014. ISBN 978-3-319-05657-9. DOI: 10.1007/
+978-3-319-05657-9_15.
+URL https://doi.org/10.1007/978-3-319-05657-9_
+15.
+Jonathan Binas, Leonie Luginbuehl, and Yoshua Bengio. Reinforcement Learning for Sustainable
+Agriculture. In Climate Change AI. Climate Change AI, June 2019. URL https://www.
+climatechange.ai/papers/icml2019/32.
+Kenneth J. Boote, James W. Jones, and Nigel B. Pickering. Potential Uses and Limitations of Crop
+Models | Agronomy Journal, September 1996. URL https://acsess.onlinelibrary.
+wiley.com/doi/abs/10.2134/agronj1996.00021962008800050005x.
+11
+Greg Brockman, Vicki Cheung, Ludwig Pettersson, Jonas Schneider, John Schulman, Jie Tang,
+and Wojciech Zaremba. OpenAI Gym, June 2016. URL http://arxiv.org/abs/1606.
+01540. arXiv:1606.01540.
+Jacob T. Bushong, Jeremiah L. Mullock, Eric C. Miller, William R. Raun, and D. Brian Arnall.
+Evaluation of mid-season sensor based nitrogen fertilizer recommendations for winter wheat us-
+ing different estimates of yield potential. Precision Agriculture, 17(4):470–487, August 2016.
+ISSN 1573-1618. DOI: 10.1007/s11119-016-9431-3. URL https://doi.org/10.1007/
+s11119-016-9431-3.
+M. Cabelguenne, C. A. Jones, J. R. Marty, P. T. Dyke, and J. R. Williams.
+Calibration and
+validation of EPIC for crop rotations in southern France.
+Agricultural Systems, 33(2):153–
+171, January 1990. ISSN 0308-521X. DOI: 10.1016/0308-521X(90)90078-5. URL https:
+//www.sciencedirect.com/science/article/pii/0308521X90900785.
+Daniel Dauner, Marcel Hallgarten, Tianyu Li, Xinshuo Weng, Zhiyu Huang, Zetong Yang,
+Hongyang Li, Igor Gilitschenski, Boris Ivanovic, Marco Pavone, Andreas Geiger, and Kashyap
+Chitta. NAVSIM: Data-Driven Non-Reactive Autonomous Vehicle Simulation and Benchmark-
+ing, October 2024. URL http://arxiv.org/abs/2406.15349. arXiv:2406.15349 [cs].
+Allard de Wit. WOFOST - WOrld FOod STudies, August 2019. URL https://www.wur.nl/
+en/research-results/research-institutes/environmental-research/
+facilities-tools/software-models-and-databases/wofost.htm.
+Allard de Wit. PCSE Documentation, August 2024. URL https://pcse.readthedocs.io/
+en/stable/.
+Allard de Wit. ajwdewit/WOFOST_crop_parameters, January 2025. URL https://github.
+com/ajwdewit/WOFOST_crop_parameters. original-date: 2016-11-29T20:18:52Z.
+Allard de Wit, Hendrik Boogaard, Davide Fumagalli, Sander Janssen, Rob Knapen, Daniel van
+Kraalingen, Iwan Supit, Raymond van der Wijngaart, and Kees van Diepen. 25 years of the
+WOFOST cropping systems model. Agricultural Systems, 168:154–167, January 2019. ISSN
+0308-521X.
+DOI: 10.1016/j.agsy.2018.06.018.
+URL https://www.sciencedirect.
+com/science/article/pii/S0308521X17310107.
+Arianna Di Paola, Riccardo Valentini, and Monia Santini. An overview of available crop growth
+and yield models for studies and assessments in agriculture.
+Journal of the Science of Food
+and Agriculture, 96(3):709–714, 2016.
+ISSN 1097-0010.
+DOI: 10.1002/jsfa.7359.
+URL
+https://onlinelibrary.wiley.com/doi/abs/10.1002/jsfa.7359.
+_eprint:
+https://onlinelibrary.wiley.com/doi/pdf/10.1002/jsfa.7359.
+Ahmad Din, Muhammed Yousoof Ismail, Babar Shah, Mohammad Babar, Farman Ali, and Sid-
+dique Ullah Baig. A deep reinforcement learning-based multi-agent area coverage control for
+smart agriculture. Computers and Electrical Engineering, 101:108089, July 2022. ISSN 0045-
+7906. DOI: 10.1016/j.compeleceng.2022.108089. URL https://www.sciencedirect.
+com/science/article/pii/S0045790622003445.
+Joshua Elliott, Delphine Deryng, Christoph Müller, Katja Frieler, Markus Konzmann, Dieter Gerten,
+Michael Glotter, Martina Flörke, Yoshihide Wada, Neil Best, Stephanie Eisner, Balázs M. Fekete,
+Christian Folberth, Ian Foster, Simon N. Gosling, Ingjerd Haddeland, Nikolay Khabarov, Fulco
+Ludwig, Yoshimitsu Masaki, Stefan Olin, Cynthia Rosenzweig, Alex C. Ruane, Yusuke Satoh,
+Erwin Schmid, Tobias Stacke, Qiuhong Tang, and Dominik Wisser.
+Constraints and poten-
+tials of future irrigation water availability on agricultural production under climate change.
+Proceedings of the National Academy of Sciences, 111(9):3239–3244, March 2014.
+DOI:
+10.1073/pnas.1222474110. URL https://www.pnas.org/doi/abs/10.1073/pnas.
+1222474110. Publisher: Proceedings of the National Academy of Sciences.
+12
+L. D. Estes, B. A. Bradley, H. Beukes, D. G. Hole, M. Lau, M. G. Oppenheimer, R. Schulze,
+M. A. Tadross, and W. R. Turner. Comparing mechanistic and empirical model projections of
+crop suitability and productivity: implications for ecological forecasting. Global Ecology and
+Biogeography, 22(8):1007–1018, 2013.
+ISSN 1466-8238.
+DOI: 10.1111/geb.12034.
+URL
+https://onlinelibrary.wiley.com/doi/abs/10.1111/geb.12034.
+_eprint:
+https://onlinelibrary.wiley.com/doi/pdf/10.1111/geb.12034.
+Frank
+Forcella.
+Real-time
+assessment
+of
+seed
+dormancy
+and
+seedling
+growth
+for
+weed management.
+Seed Science Research, 8(2):201–210, June 1998.
+ISSN 1475-
+2735,
+0960-2585.
+DOI:
+10.1017/S0960258500004116.
+URL
+https://www.
+cambridge.org/core/journals/seed-science-research/article/abs/
+realtime-assessment-of-seed-dormancy-and-seedling-growth-for-weed-management/
+D1E7CEF7374C9B19BBA95F8605A51464.
+Justin Fu, Katie Luo, and Sergey Levine.
+Learning Robust Rewards with Adversarial Inverse
+Reinforcement Learning, August 2018.
+URL http://arxiv.org/abs/1710.11248.
+arXiv:1710.11248 [cs].
+Romain Gautron, Odalric-Ambrym Maillard, Philippe Preux, Marc Corbeels, and Régis Sabbadin.
+Reinforcement learning for crop management support: Review, prospects and challenges. Com-
+puters and Electronics in Agriculture, 200:107182, September 2022a. ISSN 0168-1699. DOI:
+10.1016/j.compag.2022.107182. URL https://www.sciencedirect.com/science/
+article/pii/S0168169922004999.
+Romain Gautron, Emilio Padron, Philippe Preux, Julien Bigot, Odalric-Ambrym Maillard, and
+David Emukpere. gym-DSSAT: a crop model turned into a Reinforcement Learning Environ-
+ment, September 2022b. URL https://arxiv.org/pdf/2207.03270.
+Carlo Gilardelli, Roberto Confalonieri, Giovanni Alessandro Cappelli, and Gianni Bellocchi. Sensi-
+tivity of WOFOST-based modelling solutions to crop parameters under climate change. Eco-
+logical Modelling, 368:1–14, January 2018.
+ISSN 0304-3800.
+DOI: 10.1016/j.ecolmodel.
+2017.11.003.
+URL https://www.sciencedirect.com/science/article/pii/
+S0304380017304453.
+Adam Gleave, Mohammad Taufeeque, Juan Rocamonde, Erik Jenner, Steven H. Wang, Sam Toyer,
+Maximilian Ernestus, Nora Belrose, Scott Emmons, and Stuart Russell. imitation: Clean Imi-
+tation Learning Implementations, November 2022. URL http://arxiv.org/abs/2211.
+11972. arXiv:2211.11972 [cs].
+Tuomas Haarnoja, Aurick Zhou, Pieter Abbeel, and Sergey Levine. Soft Actor-Critic: Off-Policy
+Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor, August 2018. URL
+http://arxiv.org/abs/1801.01290. arXiv:1801.01290 [cs].
+Y. He, K. L. Hu, H. Wang, Y. F. Huang, D. L. Chen, B. G. Li, and Y. Li. Modeling of water and
+nitrogen utilization of layered soil profiles under a wheat–maize cropping system. Mathemati-
+cal and Computer Modelling, 58(3):596–605, August 2013. ISSN 0895-7177. DOI: 10.1016/
+j.mcm.2011.10.060. URL https://www.sciencedirect.com/science/article/
+pii/S0895717711006650.
+Matteo Hessel, Hubert Soyer, Lasse Espeholt, Wojciech Czarnecki, Simon Schmitt, and Hado van
+Hasselt. Multi-Task Deep Reinforcement Learning with PopArt. Proceedings of the AAAI Con-
+ference on Artificial Intelligence, 33(01):3796–3803, July 2019. ISSN 2374-3468. DOI: 10.1609/
+aaai.v33i01.33013796.
+URL https://ojs.aaai.org/index.php/AAAI/article/
+view/4266. Number: 01.
+Jonathan Ho and Stefano Ermon.
+Generative Adversarial Imitation Learning.
+In D. Lee,
+M. Sugiyama, U. Luxburg, I. Guyon, and R. Garnett (eds.), Advances in Neural In-
+formation
+Processing
+Systems,
+volume
+29.
+Curran
+Associates,
+Inc.,
+2016.
+URL
+13
+https://proceedings.neurips.cc/paper_files/paper/2016/file/
+cc7e2b878868cbae992d1fb743995d8f-Paper.pdf.
+Shengyi Huang, Rousslan Fernand Julien Dossa, Chang Ye, and Jeff Braga. CleanRL: High-quality
+Single-file Implementations of Deep Reinforcement Learning Algorithms, November 2021. URL
+http://arxiv.org/abs/2111.08819. arXiv:2111.08819 [cs].
+Mohd Javaid, Abid Haleem, Ibrahim Haleem Khan, and Rajiv Suman.
+Understanding the po-
+tential applications of Artificial Intelligence in Agriculture Sector.
+Advanced Agrochem, 2
+(1):15–30, March 2023.
+ISSN 2773-2371.
+DOI: 10.1016/j.aac.2022.10.001.
+URL https:
+//www.sciencedirect.com/science/article/pii/S277323712200020X.
+J. W Jones, G Hoogenboom, C. H Porter, K. J Boote, W. D Batchelor, L. A Hunt, P. W
+Wilkens, U Singh, A. J Gijsman, and J. T Ritchie.
+The DSSAT cropping system model.
+European Journal of Agronomy, 18(3):235–265, January 2003.
+ISSN 1161-0301.
+DOI: 10.
+1016/S1161-0301(02)00107-7.
+URL https://www.sciencedirect.com/science/
+article/pii/S1161030102001077.
+James W. Jones, John M. Antle, Bruno Basso, Kenneth J. Boote, Richard T. Conant, Ian Foster,
+H. Charles J. Godfray, Mario Herrero, Richard E. Howitt, Sander Janssen, Brian A. Keating,
+Rafael Munoz-Carpena, Cheryl H. Porter, Cynthia Rosenzweig, and Tim R. Wheeler. Brief his-
+tory of agricultural systems modeling. Agricultural Systems, 155:240–254, July 2017. ISSN
+0308-521X.
+DOI: 10.1016/j.agsy.2016.05.014.
+URL https://www.sciencedirect.
+com/science/article/pii/S0308521X16301585.
+M. B. Jones, E. L. Leafe, W. Stiles, and B. Collett.
+Pattern of Respiration of a Perennial
+Ryegrass Crop in the Field.
+Annals of Botany, 42(3):693–703, May 1978.
+ISSN 0305-
+7364.
+DOI: 10.1093/oxfordjournals.aob.a085504.
+URL https://doi.org/10.1093/
+oxfordjournals.aob.a085504.
+Leslie Pack Kaelbling, Michael L. Littman, and Anthony R. Cassandra. Planning and acting in
+partially observable stochastic domains.
+Artificial Intelligence, 101(1-2):99–134, May 1998.
+ISSN 00043702.
+DOI: 10.1016/S0004-3702(98)00023-X.
+URL https://linkinghub.
+elsevier.com/retrieve/pii/S000437029800023X.
+Armen Kemanian, Yuning Shi, Charles White, Felipe Pena, Claudio Stockle, David Huggins,
+Maria Cangiano, Giovani Stefani-Faé, and Rachel Rozum. The Cycles Agroecosystem Model:
+Fundamentals, Testing, and Applications.
+SSRN Electronic Journal, January 2022.
+DOI:
+10.2139/ssrn.4188402.
+B Ravi Kiran, Ibrahim Sobh, Victor Talpaert, Patrick Mannion, Ahmad A. Al Sallab, Senthil Yo-
+gamani, and Patrick Pérez. Deep Reinforcement Learning for Autonomous Driving: A Survey.
+IEEE Transactions on Intelligent Transportation Systems, 23(6):4909–4926, June 2022. ISSN
+1558-0016. DOI: 10.1109/TITS.2021.3054625. URL https://ieeexplore.ieee.org/
+document/9351818/?arnumber=9351818. Conference Name: IEEE Transactions on In-
+telligent Transportation Systems.
+Jens Kober, J. Andrew Bagnell, and Jan Peters.
+Reinforcement learning in robotics:
+A
+survey.
+The International Journal of Robotics Research, 32(11), August 2013.
+DOI:
+https://doi.org/10.1177/027836491349572.
+URL https://journals.sagepub.com/
+doi/full/10.1177/0278364913495721?casa_token=8R-qBicIj_gAAAAA%
+3A5nkkUMu2YGc1jYvehc17X5CzVm-sK2YscqCWtTQXIqYEn01uReYCZ8_cfXjv_
+JYdMeBVLUCp3pPD.
+Mathias Lechner, Lianhao Yin, Tim Seyde, Tsun-Hsuan Johnson Wang, Wei Xiao, Ramin Hasani,
+Joshua Rountree, and Daniela Rus.
+Gigastep - One Billion Steps per Second Multi-agent
+Reinforcement Learning.
+Advances in Neural Information Processing Systems, 36:155–170,
+December 2023. URL https://proceedings.neurips.cc/paper_files/paper/
+14
+2023/hash/00ba06ba5c324efdfb068865ca44cf0b-Abstract-Datasets_
+and_Benchmarks.html.
+Sergey Levine, Aviral Kumar, George Tucker, and Justin Fu.
+Offline Reinforcement Learning:
+Tutorial, Review, and Perspectives on Open Problems, November 2020. URL http://arxiv.
+org/abs/2005.01643. arXiv:2005.01643 [cs].
+Leena Lindén, Hannu Rita, and Terhi Suojala. Logit Models for Estimating Lethal Temperatures
+in Apple. February 1996. DOI: 10.21273/HORTSCI.31.1.91. URL https://journals.
+ashs.org/hortsci/view/journals/hortsci/31/1/article-p91.xml.
+Sec-
+tion: HortScience.
+D.h. Lorenz, K.w. Eichhorn, H. Bleiholder, R. Klose, U. Meier, and E. Weber. Growth Stages of the
+Grapevine: Phenological growth stages of the grapevine (Vitis vinifera L. ssp. vinifera)—Codes
+and descriptions according to the extended BBCH scale. Australian Journal of Grape and Wine
+Research, 1(2):100–103, 1995. ISSN 1755-0238. DOI: 10.1111/j.1755-0238.1995.tb00085.x.
+URL https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1755-0238.
+1995.tb00085.x.
+_eprint:
+https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1755-
+0238.1995.tb00085.x.
+R. L. McCown, G. L. Hammer, J. N. G. Hargreaves, D. P. Holzworth, and D. M. Freebairn. AP-
+SIM: a novel software system for model development, model testing and simulation in agri-
+cultural systems research.
+Agricultural Systems, 50(3):255–271, January 1996.
+ISSN 0308-
+521X.
+DOI: 10.1016/0308-521X(94)00055-V.
+URL https://www.sciencedirect.
+com/science/article/pii/0308521X9400055V.
+Bhairav Mehta, Manfred Diaz, Florian Golemo, Christopher J. Pal, and Liam Paull. Active Domain
+Randomization. In Proceedings of the Conference on Robot Learning, pp. 1162–1176. PMLR,
+May 2020. URL https://proceedings.mlr.press/v100/mehta20a.html. ISSN:
+2640-3498.
+Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wier-
+stra, and Martin Riedmiller. Playing Atari with Deep Reinforcement Learning, December 2013.
+URL http://arxiv.org/abs/1312.5602. arXiv:1312.5602.
+Sergi Munné-Bosch.
+Aging in Perennials.
+Critical Reviews in Plant Sciences, 26(3):123–
+138, June 2007.
+ISSN 0735-2689.
+DOI: 10.1080/07352680701402487.
+URL https:
+//doi.org/10.1080/07352680701402487.
+Publisher:
+Taylor & Francis _eprint:
+https://doi.org/10.1080/07352680701402487.
+Fernando Noguiera.
+Bayesian Optimization:
+Open source constrainted global optimization
+tool for Python, 2014.
+URL https://github.com/bayesian-optimization/
+BayesianOptimization.
+Hiske Overweg, Herman N. C. Berghuijs, and Ioannis N. Athanasiadis. CropGym: a Reinforcement
+Learning Environment for Crop Management, April 2021. URL http://arxiv.org/abs/
+2104.04326. arXiv:2104.04326 [cs].
+Amber Parker, Inaki Garcia de Cortázar-Atauri, Isabelle Chuine, Gérard Barbeau, Benjamin Bois,
+Jean-Michel Boursiquot, Jean-Yves Cahurel, Marion Claverie, Thierry Dufourcq, Laurence Gény,
+Guy Guimberteau, Rainer W. Hofmann, Olivier Jacquet, Thierry Lacombe, Christine Monamy,
+Hernan Ojeda, Laurent Panigai, Jean-Christophe Payan, Begoña Rodriquez Lovelle, Emmanuel
+Rouchaud, Christophe Schneider, Jean-Laurent Spring, Paolo Storchi, Diego Tomasi, William
+Trambouze, Michael Trought, and Cornelis van Leeuwen. Classification of varieties for their
+timing of flowering and veraison using a modelling approach: A case study for the grapevine
+species Vitis vinifera L. Agricultural and Forest Meteorology, 180:249–264, October 2013. ISSN
+0168-1923. DOI: 10.1016/j.agrformet.2013.06.005. URL https://www.sciencedirect.
+com/science/article/pii/S0168192313001639.
+15
+Xue Bin Peng, Marcin Andrychowicz, Wojciech Zaremba, and Pieter Abbeel. Sim-to-Real Transfer
+of Robotic Control with Dynamics Randomization, March 2018. URL http://arxiv.org/
+abs/1710.06537. arXiv:1710.06537.
+Antonin Raffin, Ashley Hill, Adam Gleave, Anssi Kanervisto, Maximilian Ernestus, and Noah Dor-
+mann. Stable-Baselines3: Reliable Reinforcement Learning Implementations. Journal of Ma-
+chine Learning Research, 22(268):1–8, 2021. ISSN 1533-7928. URL http://jmlr.org/
+papers/v22/20-1364.html.
+Antje Rohde and Rishikesh P. Bhalerao.
+Plant dormancy in the perennial context.
+Trends
+in Plant Science, 12(5):217–223, May 2007.
+ISSN 1360-1385.
+DOI: 10.1016/j.tplants.
+2007.03.012. URL https://www.cell.com/trends/plant-science/abstract/
+S1360-1385(07)00083-0. Publisher: Elsevier.
+John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov. Proximal Pol-
+icy Optimization Algorithms, August 2017. URL http://arxiv.org/abs/1707.06347.
+arXiv:1707.06347 [cs].
+Yinfang Shi, Zhaoyang Wang, Cheng Hou, and Puhan Zhang.
+Yield estimation of Lycium
+barbarum L. based on the WOFOST model.
+Ecological Modelling, 473:110146, November
+2022.
+ISSN 0304-3800.
+DOI: 10.1016/j.ecolmodel.2022.110146.
+URL https://www.
+sciencedirect.com/science/article/pii/S0304380022002472.
+Thomas R Sinclair and No’am Seligman.
+Criteria for publishing papers on crop model-
+ing.
+Field Crops Research, 68(3):165–172, November 2000.
+ISSN 0378-4290.
+DOI: 10.
+1016/S0378-4290(00)00105-2.
+URL https://www.sciencedirect.com/science/
+article/pii/S0378429000001052.
+Claudio O. Stockle, Steve A. Martin, and Gaylon S. Campbell. CropSyst, a cropping systems simu-
+lation model: Water/nitrogen budgets and crop yield. Agricultural Systems, 46:335–359, January
+1994. DOI: 10.1016/0308-521X(94)90006-2. URL https://ui.adsabs.harvard.edu/
+abs/1994AgSys..46..335S. ADS Bibcode: 1994AgSys..46..335S.
+Ran Tao, Pan Zhao, Jing Wu, Nicolas F. Martin, Matthew T. Harrison, Carla Ferreira, Zahra
+Kalantari, and Naira Hovakimyan. Optimizing Crop Management with Reinforcement Learn-
+ing and Imitation Learning, February 2023. URL http://arxiv.org/abs/2209.09991.
+arXiv:2209.09991 [cs].
+Camille Tevenart and Marielle Brunette. Role of Farmers’ Risk and Ambiguity Preferences on
+Fertilization Decisions: An Experiment. Sustainability, 13(17):9802, January 2021. ISSN 2071-
+1050. DOI: 10.3390/su13179802. URL https://www.mdpi.com/2071-1050/13/17/
+9802. Number: 17 Publisher: Multidisciplinary Digital Publishing Institute.
+Howard Thomas, Huw Martin Thomas, and Helen Ougham.
+Annuality, perenniality and cell
+death.
+Journal of Experimental Botany, 51(352):1781–1788, November 2000.
+ISSN 0022-
+0957. DOI: 10.1093/jexbot/51.352.1781. URL https://doi.org/10.1093/jexbot/
+51.352.1781.
+Philip Thomas and Emma Brunskill. Data-Efficient Off-Policy Policy Evaluation for Reinforcement
+Learning. In Proceedings of The 33rd International Conference on Machine Learning, pp. 2139–
+2148. PMLR, June 2016. URL https://proceedings.mlr.press/v48/thomasa16.
+html. ISSN: 1938-7228.
+Emanuel Todorov, Tom Erez, and Yuval Tassa. MuJoCo: A physics engine for model-based control.
+In 2012 IEEE/RSJ International Conference on Intelligent Robots and Systems, pp. 5026–5033,
+October 2012.
+DOI: 10.1109/IROS.2012.6386109.
+URL https://ieeexplore.ieee.
+org/document/6386109/?arnumber=6386109. ISSN: 2153-0866.
+16
+Matteo Turchetta, Luca Corinzia, Scott Sussex, Amanda Burton, Juan Herrera, Ioannis Athanasiadis,
+Joachim Buhmann, and Andreas Krause.
+Learning Long-Term Crop Management Strategies
+with CyclesGym, 2022. URL https://proceedings.neurips.cc/paper_files/
+paper/2022/file/4a22ceafe2dd6e0d32df1f7c0a69ab68-Paper-Datasets_
+and_Benchmarks.pdf.
+C.a. van Diepen, J. Wolf, H. van Keulen, and C. Rappoldt.
+WOFOST: a simulation
+model of crop production.
+Soil Use and Management, 5(1):16–24, 1989.
+ISSN 1475-
+2743.
+DOI: 10.1111/j.1475-2743.1989.tb00755.x.
+URL https://onlinelibrary.
+wiley.com/doi/abs/10.1111/j.1475-2743.1989.tb00755.x.
+_eprint:
+https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1475-2743.1989.tb00755.x.
+Mel Vecerik, Todd Hester, Jonathan Scholz, Fumin Wang, Olivier Pietquin, Bilal Piot, Nicolas
+Heess, Thomas Rothörl, Thomas Lampe, and Martin Riedmiller. Leveraging Demonstrations
+for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards, October 2018.
+URL http://arxiv.org/abs/1707.08817. arXiv:1707.08817 [cs].
+Chengkun Wang, Nannan Zhang, Mingzhe Li, Li Li, and Tiecheng Bai. Pear Tree Growth Sim-
+ulation and Soil Moisture Assessment Considering Pruning. Agriculture, 12(10):1653, October
+2022. ISSN 2077-0472. DOI: 10.3390/agriculture12101653. URL https://www.mdpi.
+com/2077-0472/12/10/1653.
+Lu Wang, Xiaofeng He, and Dijun Luo. Deep Reinforcement Learning for Greenhouse Climate
+Control. In 2020 IEEE International Conference on Knowledge Graph (ICKG), pp. 474–480,
+August 2020. DOI: 10.1109/ICBK50248.2020.00073. URL https://ieeexplore.ieee.
+org/abstract/document/9194467.
+Jing Wu, Ran Tao, Pan Zhao, Nicolas F. Martin, and Naira Hovakimyan. Optimizing Nitrogen Man-
+agement with Deep Reinforcement Learning and Crop Simulations. In 2022 IEEE/CVF Confer-
+ence on Computer Vision and Pattern Recognition Workshops (CVPRW), pp. 1711–1719, New
+Orleans, LA, USA, June 2022. IEEE. ISBN 978-1-6654-8739-9. DOI: 10.1109/CVPRW56347.
+2022.00178. URL https://ieeexplore.ieee.org/document/9857484/.
+H. S Yang, A Dobermann, J. L Lindquist, D. T Walters, T. J Arkebauer, and K. G Cass-
+man. Hybrid-maize—a maize simulation model that combines two crop modeling approaches.
+Field Crops Research, 87(2):131–154, May 2004.
+ISSN 0378-4290.
+DOI: 10.1016/j.fcr.
+2003.10.003.
+URL https://www.sciencedirect.com/science/article/pii/
+S0378429003002272.
+Diana Zapata, Melba Salazar-Gutierrez, Bernardo Chaves, Markus Keller, and Gerrit Hoogen-
+boom. Predicting Key Phenological Stages for 17 Grapevine Cultivars (Vitis vinifera L.). Amer-
+ican Journal of Enology and Viticulture, 68(1):60–72, January 2017. ISSN 0002-9254. DOI:
+10.5344/ajev.2016.15077. URL https://www.ajevonline.org/content/68/1/60.
+Publisher: American Journal of Enology and Viticulture Section: Research Article.
+Zichen Zhang, Jayson Boubin, Christopher Stewart, and Sami Khanal. Whole-Field Reinforcement
+Learning: A Fully Autonomous Aerial Scouting Method for Precision Agriculture. Sensors, 20
+(22):6585, January 2020. ISSN 1424-8220. DOI: 10.3390/s20226585. URL https://www.
+mdpi.com/1424-8220/20/22/6585. Number: 22 Publisher: Multidisciplinary Digital
+Publishing Institute.
+Junqi Zhu, Amber Parker, Fang Gou, Rob Agnew, Linlin Yang, Marc Greven, Victoria Raw, Sue
+Neal, Damian Martin, Michael C T Trought, Neil Huth, and Hamish Edward Brown. Developing
+perennial fruit crop models in APSIM Next Generation using grapevine as an example. in silico
+Plants, 3(2):diab021, July 2021. ISSN 2517-5025. DOI: 10.1093/insilicoplants/diab021. URL
+https://doi.org/10.1093/insilicoplants/diab021.
+17
+Fuzhen Zhuang, Zhiyuan Qi, Keyu Duan, Dongbo Xi, Yongchun Zhu, Hengshu Zhu, Hui Xiong,
+and Qing He. A Comprehensive Survey on Transfer Learning. Proceedings of the IEEE, 109
+(1):43–76, January 2021. ISSN 1558-2256. DOI: 10.1109/JPROC.2020.3004555. URL https:
+//ieeexplore.ieee.org/document/9134370/?arnumber=9134370. Conference
+Name: Proceedings of the IEEE.
+18
+A
+WOFOSTGym Modified Perennial Crop Growth Model
+Prior works have shown that WOFOST CGM could be modified to model the growth of pear and
+jujube crops across multiple growing seasons de Wit (2024); Bai et al. (2019); Wang et al. (2022),
+establishing it as a solid foundation for developing a perennial crop simulator. Below, we outline the
+key modifications we made to WOFOST to support perennial crop modeling.
+Perennial Phenology
+We primarily focused on modifying the phenology submodule within the
+WOFOST CGM to account for the differences between annual and perennial crop phenology. Un-
+like annual crops, the phenology of perennial crops is characterized by a dormancy stage induced by
+day length in autumn and released by temperature in spring (Rohde & Bhalerao, 2007). To capture
+this behavior, we introduced parameters for dormancy induction based on day length, release tem-
+perature threshold, and minimum dormancy duration. In our modified WOFOST CGM, dormancy
+can also be triggered by prolonged growth stagnation, indicating insufficient ambient temperature
+for crop growth (Jones et al., 1978).
+Perennial Organ Growth
+In addition to differences in phenology, perennial crops exhibit differ-
+ences in their visible growth organs (Thomas et al., 2000). The roots and stems of perennial crops
+survive year-round, while the leaves and storage organs regrow each season subject to intercepted
+light and nutrient uptake. Crop organ death rates are modeled as a function of the development
+stage of the crop (Lindén et al., 1996). Notably, perennials exhibit a reduced seasonal growth as
+they age (Munné-Bosch, 2007). While the underlying mechanisms for reduced growth remain dif-
+ficult to quantify, we model this decline empirically through increased maintenance respiration and
+decreased carbon conversion efficiency as a function of age (Zhu et al., 2021). See Figure 6 for a
+visual overview of how key features evolve throughout the course of a perennial crop simulation.
+Figure 6: A simplified flowchart of the perennial crop growth in WOFOSTGym. Boxes highlighted
+in green denote additions or areas of substantial change to the underlying WOFOST CGM to support
+perennial crop growth. The development stage of the crop is driven by the daily ambient temperature.
+The development stage determines how accumulated dry matter is partitioned to crop organs subject
+to available nutrients. The weight of the living organs (yield) is calculated as the accumulated
+difference between the growth and death rates.
+Modified Nutrient Module
+A multi-layer nutrient balance is important for modeling the effects
+of fertilization stressors on the roots, stems, and nutrient partitioning (Albornoz, 2016). We extend
+WOFOST’s single-layer nutrient balance to a multi-layered nutrient balance within the soil mod-
+ule (He et al., 2013). When nutrients are applied via fertilization, they reside on the soil surface. As
+the simulation evolves, nutrients are absorbed into the subsoil and then the roots of the plant. When
+surface nutrient levels are too high, the partitioning of dry matter is changed to limit allocation to
+the storage organs in favor of stems and leaves (He et al., 2013).
+19
+B
+Available Crops
+WOFOSTGym includes parameters for two perennial crops: pear and jujube, and 23 annual crops:
+barley, cassava, chickpea, cotton, cowpea, faba bean, groundnut, maize, millet, mung bean, pigeon
+pea, potato, rapeseed, rice, onion, sorghum, soybean, sugar beet, sugarcane, sunflower, sweet potato,
+tobacco, and wheat. Each crop contains between one and ten varieties. WOFOST CGM parameters
+for each variety were calibrated empirically from field data (de Wit, 2025). By modeling each crop
+variety as a task, agromanagement decisions for multiple crop varieties can be optimized with multi-
+task RL (Hessel et al., 2019).
+In addition to the high-fidelity models for 25 crops, WOFOSTGym also includes parameters for
+modeling the phenology of 32 grape cultivars. These cultivars are: Aligote, Alvarinho, Auxerrois,
+Barbera, Cabernet Franc, Cabernet Sauvignon, Chardonnay, Chenin Blanc, Concord, Dolcetto, Du-
+rif, Gewurztraminer, Green Veltliner, Grenache, Lemberger, Malbec, Melon, Merlot, Muscat Blanc,
+Nebbiolo, Petit Verdot, Pinot Blanc, Pinot Gris, Pinot Noir, Riesling, Sangiovese, Sauvignon Blanc,
+Semillon, Syrah, Tempranillo, Viognier, and Zinfandel.
+C
+Crop Growth Models
+CGMs are typically one of three types: mechanistic, empirical, or hybrid. Mechanistic models simu-
+late canopy or nutrient level crop processes to validate scientific understanding of crop growth (Estes
+et al., 2013). Empirical models rely on observed field data, offering greater scalability with lower
+computational overhead (Di Paola et al., 2016). Hybrid crop models simulate crop growth using
+both mechanistic and empirical modeling decisions (Yang et al., 2004).
+WOFOST is a single-year and multi-crop agroecosystem model (Jones et al., 2017). It relies both on
+mechanistic and empirical processes to simulate crop growth (Di Paola et al., 2016). Crop growth
+in WOFOST is determined by the atmospheric CO2 concentration, irradiation, daily temperature,
+subject to limited water, nitrogen, phosphorus, and potassium. While WOFOST was designed for
+simulating the yield of annual crops (van Diepen et al., 1989), field studies have shown that it can
+be used to accurately predict yield in perennial fruit trees with some small modifications to the base
+model Wang et al. (2022); Bai et al. (2019)
+Given WOFOST’s ability to simulate a wide variety of crop and soil dynamics, and its modular im-
+plementation in Python, WOFOST is an ideal CGM candidate to be used to simulate perennial crop
+growth to address that lack of perennial CGMs available, and the lack of perennial crop benchmarks
+available for RL research (Gautron et al., 2022a). For an introduction to the WOFOST, we refer read-
+ers to the works of de Wit (2024) and de Wit (2019). There are a wide variety of CGMs available
+for use. Table 5 outlines the desiderata used to select WOFOST as the CGM for WOFOSTGym.
+D
+Configurability of WOFOSTGym
+Other crop simulators are difficult for RL researchers to use because of their unfamiliarity with
+CGMs. WOFOSTGym aims to relieve the burden of domain knowledge required to use other crop
+simulators by streamlining configuration into readable YAML files. In this section, we highlight the
+features that make WOFOSTGym easy to use for RL researchers interested in agriculture.
+Simulation Configuration
+WOFOST CGM configuration is divided into three configuration files:
+the crop YAML file, site YAML file, and agromanagement YAML file. WOFOSTGym provides 25
+crop YAML files and three site YAML files. In the agromanagement YAML file, the specific crop
+and site configuration is specified, along with the length of the simulation, year, and geographic
+location. The agromanagement YAML file contains 14 entries, while still enabling a user to simulate
+25 different crops with one to ten varieties per crop. This feature is an improvement over other crop
+simulators which support only 1 crop.
+20
+Crop Model
+Model Type
+Nutrient Balance
+Water Balance
+Crop Type
+Language
+WOFOST
+Hybrid
+nitrogen,
+phosphorus,
+potassium
+Single Layer,
+Multi Layer
+Annual
+Python,
+FORTRAN
+APSIM
+Mechanistic
+nitrogen,
+phosphorus,
+potassium
+Multi Layer
+Annual
+FORTRAN,
+C++
+DSSAT
+Hybrid
+nitrogen,
+phosphorus,
+potassium
+Multi Layer
+Annual
+FORTRAN
+CropSyst
+Mechanistic
+nitrogen
+Single Layer
+Annual
+C++
+EPIC
+Hybrid
+nitrogen,
+phosphorus
+Multi Layer
+Annual,
+Rotations
+FORTRAN
+STICS
+Empirical
+nitrogen
+Multi Layer
+Annual
+Executable
+Cycles
+Mechanistic
+nitrogen
+Multi Layer
+Annual,
+Rotations
+Executable
+AquaCrop
+Empirical
+abundant
+Multi Layer
+Annual
+Python,
+Executable
+LINTUL3
+Empirical
+nitrogen
+Abundant
+Annual
+Python
+Table 5: Different CGMs and their strengths and weaknesses for modeling high fidelity crop growth,
+interfacing with RL algorithms, and supporting perennial crop decision evaluation.
+With domain knowledge, a crop or site can be added by calibrating the parameters in the crop and site
+YAML files against real-world data. Finally, every parameter can be modified from the command
+line and each simulation saves a configuration file, aiding reproducibility (see Figure 7).
+# Test Simulation of the Jujube crop
+python3 test_wofost.py --save-folder test/ --data-file test --npk.ag.crop-name
+jujube --npk.ag.crop-variety jujube_1 --env-id perennial-lnpkw-v0
+# Generate data of the default crop (wheat) and modify a few crop parameters
+python3 gen_data.py --save-folder data/ --data-file wheat_data --file-type npz --
+npk.wf.TBASEM 2.0 --npk.wf.SMFCF 0.51
+# Train a SAC agent to irrigate the wheat crop in an environment where nitrogen,
+phosphorus and potassium nutrients are abundant and modify the SAC algorithm
+parameters
+python3 train_agent.py --save-folder RL/ --agent-type SAC --env-id lnw-v0 --SAC.
+gamma 0.95
+# Train a PPO agent given a WOFOSTGym Configuration file
+python3 train_agent.py --save-folder RL --agent-type PPO --config-fpath RL/
+ppo_test.yaml
+Figure 7: Example for how to configure agent training and data generation in WOFOSTGym. Spe-
+cific parameters can be modified by the command line. In addition, configuration YAML files can
+also be loaded for reproducibility (and are automatically saved each time a simulation is run).
+Pre-Specified Agricultural Policies
+The goal of using RL for agriculture is to improve upon crop
+management strategies. However, to measure this improvement, common crop management policies
+must be available in a crop simulator to compare against. While other crop simulators do not include
+baselines, WOFOSTGym comes with 10 pre-specified agromanagement policies that are commonly
+used in agriculture. These policies include: "fertilize X amount every week," or "irrigate X amount
+if the soil moisture content is below Y ." In WOFOSTGym, X and Y are easily modifiable via
+command line or YAML file.
+21
+Data Generation
+Offline data is used to for problems in Offline RL (Levine et al., 2020), Off
+Policy Evaluation (Thomas & Brunskill, 2016), and Transfer Learning (Zhuang et al., 2021). To
+facilitate research on these topics in the agriculture domain, data must be widely available. However,
+available agricultural data is inaccessible or requires substantial preprocessing to account for missing
+data. To address this problem, crop simulators are a promising direction, yet no other available crop
+simulator provides an efficient pipeline for data generation.
+WOFOSTGym addresses this shortcoming by providing a pipeline that can generate data from a
+variety of different crops and sites and supports generating data from both RL agent policies and
+the pre-specified policies described above. By including this data generation in WOFOSTGym, we
+hope to both facilitate research into these interesting RL related problems in agriculture, and set a
+standard of usability for crop simulators that follow WOFOSTGym.
+22

@@ -1,0 +1,30 @@
+### DOCUMENT INFO  
+- **Title/Topic**: AI-Enhanced Precision Crop Rotation Management for Sustainable Agriculture  
+- **Type**: Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed**: AI-optimized crop rotation strategies based on historical data, weather forecasts, and soil conditions.  
+- **Crops mentioned**: Not explicitly listed, but the system analyzes crop performance data (e.g., productivity, area cultivated, season).  
+- **Regions covered**: Localized in Malappuram, India; uses data from Indian Meteorological Department and Agriculture Department.  
+
+### KEY FINDINGS  
+- **Yield improvements**: AI-driven recommendations optimize crop rotations, leading to increased agricultural productivity.  
+- **Soil health benefits**: Crop rotation maintains soil fertility, reduces degradation, and improves nutrient balance.  
+- **Disease reduction**: Systematic rotation minimizes pest and disease burdens.  
+- **Economic impact**: Data-driven decisions enhance farmer profitability by aligning crop choices with market trends and historical performance.  
+
+### NUMERICAL DATA/TABLES  
+- **Feature importance**: Temperature, humidity, pH, and rainfall identified as critical variables for crop rotation decisions (see Figure 1).  
+- **Correlation matrix**: Positive correlation between temperature-rainfall and temperature-humidity; weak negative correlation between pH and temperature (see Figure 2).  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers**:  
+  - Adopt AI-driven crop rotation systems for tailored recommendations.  
+  - Prioritize crops based on historical yield data, soil health, and weather forecasts.  
+- **Best practices for crop rotation**:  
+  - Integrate real-time weather and soil data for dynamic planning.  
+  - Rotate crops systematically to enhance soil fertility and reduce pest risks.  
+  - Use precision agriculture tools to monitor and adjust rotations continuously.  
+
+---  
+*Output cleaned for RAG: Removed citations, references, and navigation text.*

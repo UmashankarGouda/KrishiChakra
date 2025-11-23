@@ -1,0 +1,41 @@
+### DOCUMENT INFO  
+- **Title/Topic:** Managing climatic risks in rice–wheat cropping system for enhanced productivity in middle Gangetic plains of India  
+- **Type:** Research Paper  
+
+### KEY CONCEPTS  
+- **Main crop rotations discussed:** Rice–Wheat Cropping System (RWCS)  
+- **Crops mentioned:** Rice (*Rajendra Mahsuri-1*), Wheat (*HD-2967*), Summer Green Gram  
+- **Regions covered:** Middle Indo-Gangetic Plains (IGP), Bihar, India (17 villages across 13 districts)  
+
+### KEY FINDINGS  
+- **Yield improvements:**  
+  - Timely sown rice achieved **5.2 t/ha** yield, while late-sown rice had lower productivity.  
+  - Wheat sown before **15 November** yielded **4.9 t/ha**.  
+  - Overall system productivity reached **10.1 t/ha** with a cropping intensity of **300%** (including summer green gram).  
+- **Soil health benefits:** Early rice transplanting and timely wheat sowing reduced climatic stresses (e.g., terminal heat in wheat).  
+- **Disease reduction:** Timely sowing avoided overlapping of critical phenological stages with adverse weather (e.g., low temperatures during rice flowering).  
+- **Economic impact:**  
+  - Community irrigation using **3-hp single-phase pumps** reduced irrigation costs to **INR 300/ha** (vs. INR 6000/ha for diesel pumps).  
+  - Higher water productivity (**85.8% increase**) in timely sown rice.  
+
+### NUMERICAL DATA/TABLES  
+- Rice yield: **5.2 t/ha** (timely) vs. lower (late-sown).  
+- Wheat yield: **4.9 t/ha** (timely sown).  
+- System productivity: **10.1 t/ha** (rice–wheat + green gram).  
+- Cropping intensity: **300%**.  
+- Irrigation cost comparison:  
+  - Diesel pump: **INR 6000/ha**.  
+  - Single-phase pump: **INR 300/ha**.  
+
+### CONCLUSIONS  
+- **Main recommendations for farmers:**  
+  - Transplant rice early (**15–20 June**) using assured irrigation to enable timely wheat sowing (**before 15 November**).  
+  - Adopt community irrigation with **3-hp single-phase pumps** for cost efficiency.  
+  - Include summer green gram to maximize cropping intensity.  
+- **Best practices for crop rotation:**  
+  - Align planting dates to avoid climatic risks (e.g., terminal heat in wheat, low temperatures during rice flowering).  
+  - Use long-duration rice varieties (e.g., *Rajendra Mahsuri-1*, 150 days) for timely harvest.  
+  - Apply **2–3 irrigations** to wheat based on soil type and evaporative demand.  
+
+---  
+*Output cleaned for RAG: Removed citations, references, and navigation text.*
